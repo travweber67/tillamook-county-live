@@ -409,11 +409,41 @@ function setPill(id, text, cls) {
 }
 
 /* ---------- weather alerts (NWS) ---------- */
+/* Tsunami warning card (top of Today, above everything): rendered
+   ONLY while an active alert whose event is exactly "Tsunami
+   Warning" is in the ORC057 feed. Tsunami watches and advisories
+   do NOT trigger it — they ride the normal banner/list handling
+   below. The card's words are the alert's own, verbatim (headline,
+   instruction, description, times, areas); no guidance is added
+   or paraphrased. When no warning is active the card is emptied
+   and hidden — no placeholder, no trace. A failed alerts fetch
+   leaves the card exactly as it was. */
+function renderTsunamiCard(feats) {
+  const card = $('tsunami-card');
+  if (!card) return;
+  const hit = (feats || []).find(f => ((f.properties || {}).event || '').trim() === 'Tsunami Warning');
+  if (!hit) { card.innerHTML = ''; card.hidden = true; return; }
+  const p = hit.properties || {};
+  let h = '<h2 class="tsunami-title">🌊 TSUNAMI WARNING</h2>';
+  if (p.headline) h += '<p class="tsunami-headline">' + esc(p.headline) + '</p>';
+  if (p.instruction) h += '<div class="tsunami-text">' + esc(p.instruction) + '</div>';
+  if (p.description) h += '<div class="tsunami-text">' + esc(p.description) + '</div>';
+  const times = [];
+  if (p.effective || p.sent) times.push('Issued ' + fmtDayTime(new Date(p.effective || p.sent)));
+  if (p.expires || p.ends) times.push('until ' + fmtDayTime(new Date(p.expires || p.ends)));
+  if (times.length) h += '<p class="tsunami-meta">' + esc(times.join(' · ')) + '</p>';
+  if (p.areaDesc) h += '<p class="tsunami-areas"><strong>Areas:</strong> ' + esc(p.areaDesc) + '</p>';
+  if (p.senderName) h += '<p class="tsunami-meta">Source: ' + esc(p.senderName) + ', via the National Weather Service</p>';
+  card.innerHTML = h;
+  card.hidden = false;
+}
+
 async function loadAlerts() {
   const body = $('alerts-body');
   try {
     const d = await getJSON(NWS_ALERTS_URL, { 'Accept': 'application/geo+json' });
     const feats = d.features || [];
+    renderTsunamiCard(feats);
     const banner = $('alert-banner');
     if (!feats.length) {
       body.innerHTML = '<p class="no-alerts">✅ No active watches, warnings, or advisories for Tillamook County right now.</p>';

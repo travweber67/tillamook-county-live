@@ -192,6 +192,32 @@ h2{font-weight:700;letter-spacing:-.01em}
 .alert-banner strong{color:#5f1212}
 @media (max-width:920px){.alert-banner{width:calc(100% - 24px)}}
 
+/* Tsunami warning card — exists only while a Tsunami Warning is
+   active for the county (rendered by renderTsunamiCard in app.js).
+   Emergency red in the site's frosted language: translucent
+   gradient + backdrop blur + rounded corners, white text so it
+   reads the same in dark and light themes. A slow box-shadow
+   pulse draws the eye; off under reduced-motion. */
+.tsunami-card{
+  padding:18px;border-radius:var(--radius);color:#fff;
+  background:linear-gradient(160deg, rgba(196,18,26,.94), rgba(122,10,17,.96));
+  border:2px solid rgba(255,138,128,.9);
+  backdrop-filter:blur(14px) saturate(1.35);-webkit-backdrop-filter:blur(14px) saturate(1.35);
+  box-shadow:0 12px 36px rgba(196,18,26,.45);
+  animation:tsunamiPulse 2.2s ease-in-out infinite;
+}
+.tsunami-card[hidden]{display:none}
+@keyframes tsunamiPulse{
+  0%,100%{box-shadow:0 12px 36px rgba(196,18,26,.40)}
+  50%{box-shadow:0 12px 46px rgba(255,45,32,.80)}
+}
+@media (prefers-reduced-motion: reduce){.tsunami-card{animation:none}}
+.tsunami-title{margin:0 0 8px;font-size:1.75rem;line-height:1.1;letter-spacing:.02em;color:#fff}
+.tsunami-headline{margin:0 0 10px;font-weight:700;font-size:1.05rem;line-height:1.4}
+.tsunami-text{white-space:pre-line;margin:0 0 10px;line-height:1.5}
+.tsunami-meta{margin:0 0 6px;font-size:.92rem;opacity:.94}
+.tsunami-areas{margin:0 0 6px;line-height:1.45}
+
 /* ---------- Views ---------- */
 .views{max-width:1200px;margin:0 auto;padding:16px 20px 8px}
 .view{display:flex;flex-direction:column;gap:16px;min-width:0}

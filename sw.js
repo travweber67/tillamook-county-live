@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v6)
+/* Tillamook County Live — service worker (tcl-v7)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -53,10 +53,17 @@
  * tcl-v6 (2026-11-15): trail tap targets — the visible trail line
  * renders at 2.5px, too thin for a finger, so each trail also
  * carries an invisible 14px hit line that takes the taps.
+ *
+ * tcl-v7 (2026-11-15): tsunami warning card at the very top of
+ * Today. Rendered only while the ORC057 alerts feed carries an
+ * alert whose event is exactly "Tsunami Warning"; the card's
+ * words are the alert's own. Watches/advisories keep the normal
+ * banner handling. Tested locally against a clearly synthetic
+ * fixture only — never against live data.
  */
 'use strict';
 
-var VERSION = 'tcl-v6';
+var VERSION = 'tcl-v7';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -64,8 +71,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=6',
-  'app.js?v=6',
+  'style.css?v=7',
+  'app.js?v=7',
   'manifest.webmanifest',
   'county.geojson',
   'ohv-trails.geojson',
