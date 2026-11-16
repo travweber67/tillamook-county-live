@@ -33,49 +33,44 @@ const GAUGES = [
   { site: '14301340', label: 'Nehalem River at Nehalem',          sub: 'Tidal reach — the stage is the number that matters here', lat: 45.7178, lon: -123.8898 }
 ];
 
-/* OHV ride areas — labeled staging-area pins on the Travel map.
+/* OHV ride areas — staging-area dots on the Travel map.
    Coordinates are the staging areas riders navigate to, each one
    cross-checked against two independent sources (ODF's booking
    channel, GNIS, USFS-linked listings, the Oregon Hikers Field
    Guide) — full sourcing in research/ohv-parks-trails.md §7.
    Trask and Lyda Camp are deliberately absent: no staging point
-   for either could be verified to that standard. The label is part
-   of the marker icon itself (a chip in a divIcon — the codebase's
-   markers position reliably from first paint, its popups open on
-   tap; a permanent tooltip was tried first and sat stale after
-   the hidden-view init). The four forest staging points cluster
-   inside ~100 px of map at county zoom, so their chips all ride
-   west of their dots with a per-area vertical offset (chipDy, px)
-   that stacks them in latitude order — Rogers, Browns, Diamond
-   Mill, Jordan Creek — at a steady pitch, verified by screenshot
-   at 390 px (zoom 9) and 1280 px (zoom 10). Sand Lake stands
-   alone and wears its chip on top. */
+   for either could be verified to that standard. The markers are
+   plain dots, like the map's other layers; the name and the rider
+   info (classes, permit, season) live in the tap popup. (Travis,
+   2026-11-15: the first build wore each name as an always-on chip
+   in the marker icon — five permanent pills ate the map, so the
+   chips are gone and the name shows on tap only.) */
 const OHV_AREAS = [
-  { name: 'Browns Camp OHV Area', label: 'Browns Camp', lat: 45.6108, lon: -123.3490, chipDy: -33,
+  { name: 'Browns Camp OHV Area', lat: 45.6108, lon: -123.3490,
     meta: 'Tillamook State Forest · OR-6, Beaver Dam Rd (MP 33) · Oregon Dept. of Forestry',
     body: "The forest's main staging area and campground, and the recommended first stop for new riders. Motorcycle, quad and 4WD trails from easy to challenging — part of the 250+ miles across the forest's OHV areas. Side-by-sides (Class IV) only on signed 4WD trails and gravel roads.",
     fees: 'Oregon ATV permit required — $10, good for two years. Day use is free.',
     season: 'Campground reservable (reservation-only from 2026) and seasonal — closes Nov 2 for winter. Trails open year-round, fire rules permitting.',
     url: 'https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx', linkText: 'ODF OHV trails page' },
-  { name: 'Rogers Camp Trailhead', label: 'Rogers Camp', lat: 45.6226, lon: -123.3757, chipDy: -55,
+  { name: 'Rogers Camp Trailhead', lat: 45.6226, lon: -123.3757,
     meta: 'Tillamook State Forest · OR-6 summit · Oregon Dept. of Forestry',
     body: 'Day-use staging at the highway summit — the second door into the Browns Camp trail system, with the same mix of motorcycle, quad and 4WD trails. Also the trailhead for the Nels Rogers hiking trail to University Falls.',
     fees: 'Oregon ATV permit required — $10, good for two years.',
     season: 'Day use only — no campground here. Trails open year-round, fire rules permitting.',
     url: 'https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx', linkText: 'ODF OHV trails page' },
-  { name: 'Jordan Creek OHV Area', label: 'Jordan Creek', lat: 45.5372, lon: -123.5686, chipDy: -15,
+  { name: 'Jordan Creek OHV Area', lat: 45.5372, lon: -123.5686,
     meta: 'Tillamook State Forest · Jordan Creek Rd, 2 mi off OR-6 (MP 18) · Oregon Dept. of Forestry',
     body: 'Motorcycle, quad and 4WD trails in the Jordan Creek drainage, with a small campground and staging area — the quieter end of the forest system. Side-by-sides (Class IV) only on signed 4WD trails and gravel roads.',
     fees: 'Oregon ATV permit required — $10, good for two years. Day use is free.',
     season: 'Campground seasonal — closes Nov 2 for winter. Trails open year-round, fire rules permitting.',
     url: 'https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx', linkText: 'ODF OHV trails page' },
-  { name: 'Diamond Mill OHV Area', label: 'Diamond Mill', lat: 45.6041, lon: -123.5480, chipDy: -8,
+  { name: 'Diamond Mill OHV Area', lat: 45.6041, lon: -123.5480,
     meta: 'Tillamook State Forest · North Fork Rd off OR-6 (MP 22.8) · Oregon Dept. of Forestry',
     body: 'The motorcycle one: mostly single-track trails for motorcycles only — technical riding, not a quad or 4WD area. Staging area plus a campground rebuilt for 2026 (16 sites, first-come, first-served).',
     fees: 'Oregon ATV permit required — $10, good for two years. Day use is free.',
     season: "Campground open year-round on ODF's status list. Trails open year-round, fire rules permitting.",
     url: 'https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx', linkText: 'ODF OHV trails page' },
-  { name: 'Sand Lake Recreation Area', label: 'Sand Lake', lat: 45.2880, lon: -123.9580,
+  { name: 'Sand Lake Recreation Area', lat: 45.2880, lon: -123.9580,
     meta: 'Siuslaw National Forest · Galloway Rd, near Pacific City · U.S. Forest Service',
     body: '1,076 acres of open sand dunes — all OHV classes ride the open sand. This pin is West Winds, the day-use OHV staging area; three campgrounds (Sandbeach, East Dunes, West Winds) ring the dunes.',
     fees: 'Oregon ATV permit required, plus a recreation fee/pass for the day-use lot, the campgrounds and the open sand itself.',
@@ -177,7 +172,7 @@ function initMap() {
   if (typeof L === 'undefined') return; // Leaflet CDN failed; panels still work
   /* Framing: the old center/zoom 10 cropped the county's east side
      (the OR-6 OHV pins) off a phone screen entirely. Phones now open
-     a step wider and a touch east so every labeled OHV pin is in
+     a step wider and a touch east so every OHV pin is in
      frame; desktop keeps zoom 10 with the center nudged east. */
   map = L.map('map', { scrollWheelZoom: false }).setView(
     window.innerWidth <= 920 ? [45.49, -123.76] : [45.50, -123.84],
@@ -214,19 +209,14 @@ function initMap() {
   L.marker([45.4716, -123.8456], { icon: pin('🧀') }).addTo(map)
     .bindPopup('<strong>Tillamook Creamery (approx.)</strong><br>4165 Highway 101 N, Tillamook');
 
-  // OHV ride areas: a labeled pin per staging area (name chip in
-  // the marker icon, tap for the popup with classes / permit /
-  // season), in a layer of its own so riders can toggle it like
-  // the live layers.
+  // OHV ride areas: a plain dot per staging area, tap for the
+  // popup with classes / permit / season, in a layer of its own
+  // so riders can toggle it like the live layers.
   ohvLayer = L.layerGroup().addTo(map);
   OHV_AREAS.forEach(a => {
-    const chipStyle = a.chipDy != null
-      ? ' style="transform:translate(-112%,calc(-50% + ' + a.chipDy + 'px))"' : '';
     const icon = L.divIcon({
-      className: 'ohv-pin', iconSize: [24, 24], iconAnchor: [12, 12],
-      html: '<span class="ohv-dot"></span><span class="ohv-chip'
-        + (a.chipDy != null ? ' ohv-chip-west' : '') + '"' + chipStyle
-        + '>🏍️ ' + esc(a.label) + '</span>'
+      className: 'ohv-pin', iconSize: [28, 28], iconAnchor: [14, 14],
+      html: '<span class="ohv-dot"></span>'
     });
     const m = L.marker([a.lat, a.lon], { icon }).addTo(ohvLayer);
     m.bindPopup('<strong>' + esc(a.name) + '</strong><br>' + esc(a.meta)

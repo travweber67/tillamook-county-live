@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v3)
+/* Tillamook County Live — service worker (tcl-v4)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -35,10 +35,18 @@
  * into the new version's data cache before old caches are deleted.
  * Paths are resolved relative to this worker's scope, so the same
  * file behaves on the custom domain and on a github.io subpath.
+ *
+ * tcl-v4 (2026-11-15): two phone fixes from Travis's review — the
+ * bottom tab bar's safe-area padding is scoped to installed /
+ * fullscreen display modes (in a browser tab it added ~45px of
+ * empty bar under the buttons), and the Travel map's OHV markers
+ * are plain dots whose name + info live in the tap popup (the
+ * always-on name chips ate the map). Shell stamps bump to
+ * style.css?v=4 / app.js?v=4.
  */
 'use strict';
 
-var VERSION = 'tcl-v3';
+var VERSION = 'tcl-v4';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -46,8 +54,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=3',
-  'app.js?v=3',
+  'style.css?v=4',
+  'app.js?v=4',
   'manifest.webmanifest',
   'county.geojson',
   'img/icon-192.png',
