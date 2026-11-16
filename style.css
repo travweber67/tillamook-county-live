@@ -3186,3 +3186,157 @@ html[data-theme="dark"] .fresh-toggle{
 }
 .fresh-toggle .alert-chev{width:26px;height:26px;padding:0}
 .fresh-toggle-label{font-size:.74rem;color:var(--accent)}
+
+/* ===== UI PARITY — Columbia County Live's lessons, applied (Nov 15, 2026) =====
+   Travis: "take all the UI notes and everything I've had you fix on
+   Columbia County Live and copy that over." Every rule below ports a
+   fix CCL learned the hard way — most of them from Travis's phone
+   screenshots of the live site — so this site never repeats them.
+   Audit trail: research/ui-parity-checklist.md. */
+
+/* P-1 — the forecast strip's backing panel is gone in BOTH themes.
+   CCL v87's root cause: Round 3 stripped the panel with a plain
+   #forecast-week-card rule, but the round-2 dark rule —
+   html[data-theme="dark"] #forecast-week-card — outranks it on
+   specificity, so on a dark-theme phone the panel never left. TCL
+   inherited the same pair of rules verbatim. This twin carries the
+   same specificity as the round-2 dark rule and comes later in the
+   file, so it wins: no background, border, shadow or blur behind the
+   pills, ever. The pills keep their own individual frosted style;
+   the heading and place line keep the over-photo white. */
+html[data-theme="dark"] #forecast-week-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:2px 2px 0;
+}
+
+/* P-2 — Events: the shared events card steps aside (CCL v87-3), and
+   the list groups one card per day (CCL v88, Travis: "the days
+   should be blocked together on the same card instead of hourly
+   cards"). The card keeps no chrome of its own — its courthouse
+   photo stands alone as a picture with rounded corners, the heading,
+   filter pills and notes float on the view's background photo — and
+   renderEvents wraps each day in a .event-day-card: the date is the
+   card's header (on the card, not orange text floating over the
+   photo — CCL's floating dates failed over warm photos), and the
+   day's events sit inside it, separated by hairlines and air. */
+#events-card{
+  background:none;border:none;border-radius:0;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  padding:0 2px;overflow:visible;
+}
+#events-card .card-photo{margin:0 0 14px;border-radius:var(--radius);overflow:hidden}
+#events-card .card-head h2{color:#fff;text-shadow:0 1px 10px rgba(12,26,16,.55)}
+#events-card .card-head .updated{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#events-card .card-note{color:rgba(255,255,255,.88);text-shadow:0 1px 6px rgba(12,26,16,.55)}
+#events-card .card-note a{color:#fff}
+.event-day-card{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:var(--radius);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  padding:14px 16px 8px;margin:0 0 14px;
+}
+html[data-theme="dark"] .event-day-card{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+}
+.event-day-card .event-date{margin:0 0 4px;color:var(--warm)}
+.event-day-card .event-row{border-bottom:none;border-top:1px solid var(--border);padding:8px 0}
+.event-day-card .event-date + .event-row{border-top:none}
+#events-body .loading,#events-body .no-alerts{color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(12,26,16,.6)}
+#events-body .status-note{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);border-radius:12px;
+  color:var(--text);padding:10px 12px;margin:0 0 14px;
+}
+html[data-theme="dark"] #events-body .status-note{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);color:var(--text);
+}
+
+/* P-3 — note/callout contrast in the dark theme (CCL's white-on-white
+   lesson). The base .status-note pairs a near-white box (#f2f7fb)
+   with var(--muted) text; at dusk --muted turns light sage (#a9bba2),
+   which on that box is light-on-light — unreadable. The dark theme
+   gets the deep-green pairing. The incidents list's override set
+   white text expecting open air; over the photo it now rides a glass
+   chip in both themes instead of the pale box. */
+html[data-theme="dark"] .status-note{
+  background:rgba(26,43,32,.88);color:#cfe0cb;
+  border-color:rgba(196,226,196,.28);
+}
+.incidents-list .status-note{
+  background:rgba(253,250,240,.92);color:var(--muted);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  text-shadow:none;
+}
+html[data-theme="dark"] .incidents-list .status-note{
+  background:rgba(13,23,16,.78);color:#e8f2e4;
+}
+
+/* P-4 — directory-style entries inside topic cards are their own
+   little cards, never divider rows (CCL v87-2's lesson, in the form
+   this codebase already uses for entries inside a card — the Help
+   view's mini-card treatment). The boat ramps in the Bay & Bar card,
+   the ride areas in the OHV card and the parks list were hairline
+   rows running together inside one card; now each entry stands on
+   its own panel with real gaps. The Help view's stronger ID-scoped
+   full-glass rules still win there, as they should. */
+.card .dir-list{gap:10px}
+.card .dir-item{
+  background:var(--panel-2);border:1px solid var(--border);border-radius:12px;
+  padding:12px 14px;
+}
+.card .dir-item.dir-invite{
+  border:1px dashed var(--warm);background:rgba(233,164,74,.10);
+}
+
+/* P-5 — the cross-promo footer link takes the standard card glass
+   (CCL v87-4). The rule ships in this stylesheet from the CCL copy;
+   R3-3b left it at a near-clear fill (rgba(244,241,228,.08), no
+   blur), which against a photo reads as plain glass next to the
+   frosted cards. It now wears the same recipe as every other card —
+   cream glass by day, deep-green glass at dusk — so the trap can't
+   spring if the link is ever placed. */
+.cascade-footer-link{
+  background:linear-gradient(180deg,rgba(253,250,240,.86),rgba(249,244,229,.76));
+  -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 1px 2px rgba(20,32,16,.10),0 16px 36px rgba(20,32,16,.18);
+  color:var(--accent-dark,#1e4228);
+}
+html[data-theme="dark"] .cascade-footer-link{
+  background:linear-gradient(180deg,rgba(26,43,32,.85),rgba(13,23,16,.77));
+  border-color:rgba(196,226,196,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 16px 36px rgba(0,0,0,.35);
+  color:#bfe3c8;
+}
+
+/* P-6 — update toast (CCL v86): a new service worker has taken over —
+   offer the refresh, never force it. Same cream-and-border voice as
+   the offline note; floats clear of the phone tab bar. */
+.update-toast{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:1300;
+  width:max-content;max-width:calc(100% - 24px);
+  display:flex;align-items:center;gap:12px;
+  background:#fff6dd;border:1px solid #e6cf87;border-radius:999px;
+  color:#6d5200;font-size:.92rem;padding:9px 10px 9px 18px;
+  box-shadow:0 8px 28px rgba(43,52,30,.25);
+}
+.update-toast-msg{min-width:0}
+.update-toast-go{
+  font:inherit;font-weight:700;cursor:pointer;white-space:nowrap;
+  background:var(--accent);color:#fff;border:1px solid var(--accent-dark);
+  border-radius:999px;padding:7px 14px;
+}
+.update-toast-no{
+  font:inherit;cursor:pointer;background:none;border:none;color:#6d5200;
+  font-size:1rem;line-height:1;padding:6px 8px;
+}
+@media (max-width:899px){.update-toast{bottom:96px}}
+html[data-theme="dark"] .update-toast{background:rgba(40,32,10,.96);border-color:#8a6d2f;color:#f5d9a0}
+html[data-theme="dark"] .update-toast-no{color:#f5d9a0}
+

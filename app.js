@@ -2981,16 +2981,27 @@ function renderEvents() {
   const today = todayStrPT();
   let html = '';
   if (shown.length) {
-    let lastDate = '';
-    html = shown.map(ev => {
-      const head = ev.date !== lastDate
-        ? '<div class="event-date">' + esc(fmtDay(new Date(ev.date + 'T12:00:00'))) + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>' : '';
-      lastDate = ev.date;
-      return head + '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
+    /* UI parity (2026-11-15): one card per day — the date is the day
+       card's header and the day's events sit inside it, separated.
+       (Columbia County Live's v88 structure, Travis's call: "the days
+       should be blocked together on the same card instead of hourly
+       cards.") */
+    const groups = [];
+    shown.forEach(ev => {
+      let g = groups[groups.length - 1];
+      if (!g || g.date !== ev.date) { g = { date: ev.date, rows: [] }; groups.push(g); }
+      g.rows.push(ev);
+    });
+    html = groups.map(g => {
+      const head = '<div class="event-date">' + esc(fmtDay(new Date(g.date + 'T12:00:00'))) + (g.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>';
+      const rows = g.rows.map(ev =>
+        '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
         + '<span class="event-title">' + (ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>' : esc(ev.title)) + '</span>'
         + (ev.source === 'Facebook'
           ? '<span class="event-fb-tag">Facebook</span>' + (ev.location ? '<span class="event-src">' + esc(ev.location) + '</span>' : '')
-          : '<span class="event-src">' + esc(ev.source || '') + '</span>') + '</div>';
+          : '<span class="event-src">' + esc(ev.source || '') + '</span>') + '</div>'
+      ).join('');
+      return '<section class="event-day-card">' + head + rows + '</section>';
     }).join('');
   } else {
     html = '<p class="no-alerts">' + ({
@@ -3955,7 +3966,60 @@ initHome();
    Registration failure is silent: the site works exactly as before without it. */
 function initOffline() {
   if ('serviceWorker' in navigator) {
-    try { navigator.serviceWorker.register('sw.js').catch(() => {}); } catch (e) { /* no worker, no problem */ }
+    try {
+      /* Update path (ported from Columbia County Live v86, 2026-11-15).
+         Register with updateViaCache 'none' so the browser always asks
+         the network whether sw.js changed, and ask again every time
+         the app returns to the foreground — an installed app kept
+         alive in recents otherwise runs the old build indefinitely.
+         When a new worker takes over, the page never reloads itself:
+         it offers one small toast, and the refresh happens only on
+         the tap. */
+      /* Arm the toast for any controller change AFTER the first claim:
+         a first-ever visit starts uncontrolled, and its own install
+         claiming the page is not an update — but a later change in the
+         same session is, so the flag flips instead of staying false. */
+      let updateArmed = !!navigator.serviceWorker.controller;
+      let updateToastShown = false;
+      const showUpdateToast = () => {
+        if (updateToastShown || $('update-toast')) return;
+        updateToastShown = true;
+        const es = homeLang() === 'es';
+        const bar = document.createElement('div');
+        bar.id = 'update-toast';
+        bar.className = 'update-toast';
+        bar.setAttribute('role', 'status');
+        const msg = document.createElement('span');
+        msg.className = 'update-toast-msg';
+        msg.textContent = es ? 'Hay una versión nueva del sitio.' : 'A fresh version is ready — tap to refresh';
+        const go = document.createElement('button');
+        go.type = 'button';
+        go.className = 'update-toast-go';
+        go.textContent = es ? 'Actualizar' : 'Refresh';
+        go.addEventListener('click', () => { window.location.reload(); });
+        const no = document.createElement('button');
+        no.type = 'button';
+        no.className = 'update-toast-no';
+        no.setAttribute('aria-label', es ? 'Descartar' : 'Dismiss');
+        no.textContent = '✕';
+        no.addEventListener('click', () => { bar.remove(); });
+        bar.append(msg, go, no);
+        document.body.appendChild(bar);
+      };
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!updateArmed) { updateArmed = true; return; }
+        showUpdateToast();
+      });
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+        .then((reg) => {
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+              try { reg.update().catch(() => {}); } catch (e) { /* older browser */ }
+            }
+          });
+        })
+        .catch(() => {});
+    } catch (e) { /* no worker, no problem */ }
   }
   const note = $('offline-note');
   if (!note) return;
@@ -6398,7 +6462,11 @@ async function goFetchSources() {
       .then(d => { out.alerts = (d.features || []).map(f => f.properties || {}); })
       .catch(() => { out.alerts = null; }),
     getSnapshot("roads.json").then(d => { out.roads = d; }).catch(() => { out.roads = null; }),
-    getSnapshot("ferry.json").then(d => { out.ferry = d; }).catch(() => { out.ferry = null; }),
+    /* No ferry.json job (2026-11-15): the Westport ferry module is
+       retired on TCL (no ferry in this county, no ferry trip type in
+       the UI), but this sweep kept fetching its snapshot — a 404 in
+       the console on every load. out.ferry stays null, which the
+       (unreachable) ferry check already treats as n/a. */
     (async () => {
       try {
         if (!forecastUrlCache[town.name]) {
