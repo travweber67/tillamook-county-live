@@ -1,0 +1,77 @@
+{
+ "about": "The Community Screensaver photo pool for Tillamook County Live. Every entry runs in the screensaver's slow cycle with its credit line. Entries marked \"starter\": true are the seed pool \u2014 verified-license photographs (Wikimedia Commons, public domain / CC0 / CC BY / CC BY-SA) already used elsewhere on the site; full credits live in the footer pull-down and research/photo-credits.md. Community submissions NEVER land in this file directly: they arrive by email, are reviewed by a person, and only approved photos are added.",
+ "photos": [
+  {
+   "src": "img/tc/cape-kiwanda-haystack-rock.jpg",
+   "location": "Cape Kiwanda & Haystack Rock, Pacific City",
+   "credit": "Z3lvs",
+   "starter": true
+  },
+  {
+   "src": "img/tc/garibaldi-tillamook-bay.jpg",
+   "location": "Garibaldi & Tillamook Bay",
+   "credit": "Kingofthedead",
+   "starter": true
+  },
+  {
+   "src": "img/tc/cape-meares-lighthouse-wide.jpg",
+   "location": "Cape Meares Lighthouse",
+   "credit": "Davidkasdan",
+   "starter": true
+  },
+  {
+   "src": "img/tc/rockaway-beach-twin-rocks.jpg",
+   "location": "Twin Rocks, Rockaway Beach",
+   "credit": "Gary Halvorson, Oregon State Archives",
+   "starter": true
+  },
+  {
+   "src": "img/tc/nehalem-bay-sunset.jpg",
+   "location": "Nehalem Bay at sunset",
+   "credit": "Jsayre64",
+   "starter": true
+  },
+  {
+   "src": "img/tc/tillamook-state-forest.jpg",
+   "location": "Tillamook State Forest",
+   "credit": "Mattsjc",
+   "starter": true
+  },
+  {
+   "src": "img/tc/munson-creek-falls.jpg",
+   "location": "Munson Creek Falls",
+   "credit": "RickObst",
+   "starter": true
+  },
+  {
+   "src": "img/tc/netarts-bay-aerial.jpg",
+   "location": "Netarts Bay from above",
+   "credit": "Meronim",
+   "starter": true
+  },
+  {
+   "src": "img/tc/sand-lake.jpg",
+   "location": "Sand Lake estuary",
+   "credit": "icetsarina",
+   "starter": true
+  },
+  {
+   "src": "img/tc/dory-boat-pacific-city.jpg",
+   "location": "Dory boat coming in at Cape Kiwanda",
+   "credit": "Oregon Department of Fish & Wildlife",
+   "starter": true
+  },
+  {
+   "src": "img/tc/manzanita-neahkahnie.jpg",
+   "location": "Neahkahnie Mountain from Manzanita beach",
+   "credit": "Kingofthedead",
+   "starter": true
+  },
+  {
+   "src": "img/tc/three-arch-rocks-oceanside.jpg",
+   "location": "Three Arch Rocks, Oceanside",
+   "credit": "M.O. Stevens",
+   "starter": true
+  }
+ ]
+}

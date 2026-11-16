@@ -1,0 +1,119 @@
+{
+ "fetched_at": "2026-11-16T04:33:10Z",
+ "status": "ok",
+ "note": "16 cameras verified live from the TripCheck inventory.",
+ "cameras": [
+  {
+   "name": "Barview Jetty Lookout (USCG)",
+   "lat": 45.5703,
+   "lon": -123.95608,
+   "route": "LOCAL",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/Barview%20Jetty%20Lookout_pid4457.jpg"
+  },
+  {
+   "name": "Cape Kiwanda Dr @ Webb Park Rd.",
+   "lat": 45.21548,
+   "lon": -123.96946,
+   "route": "LOCAL",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/Pelican%20Brewing_pid4640.jpg"
+  },
+  {
+   "name": "OR6 at Gales Creek Rd",
+   "lat": 45.61255,
+   "lon": -123.24407,
+   "route": "OR6",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/ORE6%20at%20Gales%20Creek%20Rd_pid4554.jpg"
+  },
+  {
+   "name": "OR6 at Lees Camp",
+   "lat": 45.58953,
+   "lon": -123.53511,
+   "route": "OR6",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/Lees%20Camp_pid1655.JPG"
+  },
+  {
+   "name": "OR6 at Fairview WB",
+   "lat": 45.46689,
+   "lon": -123.75859,
+   "route": "OR6",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/ORE6%20at%20Fairview%20WB_pid4399.jpg"
+  },
+  {
+   "name": "OR6 at Olsen Rd",
+   "lat": 45.46213,
+   "lon": -123.79162,
+   "route": "OR6",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/ORE6%20at%20Olsen%20Rd%20EB_pid4397.jpg"
+  },
+  {
+   "name": "US101 at Seaside MP 22.50 SB",
+   "lat": 45.97442,
+   "lon": -123.92736,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20MP22.50%20SB_pid4401.jpg"
+  },
+  {
+   "name": "US101 at Seaside",
+   "lat": 45.96512,
+   "lon": -123.92425,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/Seaside_pid652.jpg"
+  },
+  {
+   "name": "US101 at Cannon Beach NB",
+   "lat": 45.90996,
+   "lon": -123.94987,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20Cannon%20Beach%20SB_pid4431.jpg"
+  },
+  {
+   "name": "US101 at Lincoln City -  Logan Rd",
+   "lat": 44.99569,
+   "lon": -124.00531,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/LincolnCityLogan_pid633.jpg"
+  },
+  {
+   "name": "US101 at Lincoln City",
+   "lat": 44.99569,
+   "lon": -124.00531,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/LincolnCityUS101_pid634.jpg"
+  },
+  {
+   "name": "US101 at Lincoln City - D River Wayside",
+   "lat": 44.96706,
+   "lon": -124.01688,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20Lincoln%20City%20at%20D%20River_pid2989.JPG"
+  },
+  {
+   "name": "US26 at Quartz Creek",
+   "lat": 45.84196,
+   "lon": -123.51895,
+   "route": "US26",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/26Quartzcrk_pid1786.JPG"
+  },
+  {
+   "name": "US26 at Sunset Rest Area",
+   "lat": 45.79717,
+   "lon": -123.46215,
+   "route": "US26",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US26%20at%20Sunset%20Rest%20Area_pid2310.JPG"
+  },
+  {
+   "name": "US26 at Timber Jct",
+   "lat": 45.7596,
+   "lon": -123.30139,
+   "route": "US26",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US26%20at%20Timber%20Jct_pid2736.JPG"
+  },
+  {
+   "name": "US26 at Timber Jct",
+   "lat": 45.7596,
+   "lon": -123.30139,
+   "route": "US26",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US26%20at%20Timber%20Jct%20W_pid5092.jpg"
+  }
+ ]
+}
