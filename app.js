@@ -264,15 +264,24 @@ function initMap() {
   map.on('popupclose', e => {
     if (trailPopup && e.popup === trailPopup) { clearTrailHi(); trailPopup = null; }
   });
-  trailLayer = L.geoJSON(null, {
-    style: { color: '#ea580c', weight: 2.5, opacity: 0.85 },
+  // Two copies of the same data: a visible line (2.5px is the
+  // right weight on the map but no finger can hit it) and an
+  // invisible 14px hit line that takes the taps.
+  const trailVis = L.geoJSON(null, {
+    interactive: false,
+    style: { color: '#ea580c', weight: 2.5, opacity: 0.85 }
+  });
+  const trailHit = L.geoJSON(null, {
+    style: { color: '#ea580c', weight: 14, opacity: 0 },
     onEachFeature: (f, layer) => layer.on('click', e => selectTrail(f, e.latlng))
-  }).addTo(map);
+  });
+  trailLayer = L.layerGroup([trailHit, trailVis]).addTo(map);
   map.on('layerremove', e => {
     if (e.layer === trailLayer) { if (trailPopup) map.closePopup(); clearTrailHi(); }
   });
   fetch('ohv-trails.geojson').then(r => r.json()).then(gj => {
-    trailLayer.addData(gj);
+    trailHit.addData(gj);
+    trailVis.addData(gj);
   }).catch(() => { /* trails are an extra; the map stands without them */ });
 
   // Toggleable live layers

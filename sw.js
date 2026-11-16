@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v5)
+/* Tillamook County Live — service worker (tcl-v6)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -49,10 +49,14 @@
  * layer — ohv-trails.geojson (267 named trails grouped from 709
  * source segments) joins the precache shell; tapping a trail names
  * it and highlights every segment sharing its name.
+ *
+ * tcl-v6 (2026-11-15): trail tap targets — the visible trail line
+ * renders at 2.5px, too thin for a finger, so each trail also
+ * carries an invisible 14px hit line that takes the taps.
  */
 'use strict';
 
-var VERSION = 'tcl-v5';
+var VERSION = 'tcl-v6';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -60,8 +64,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=5',
-  'app.js?v=5',
+  'style.css?v=6',
+  'app.js?v=6',
   'manifest.webmanifest',
   'county.geojson',
   'ohv-trails.geojson',
