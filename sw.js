@@ -13,7 +13,7 @@
  */
 'use strict';
 
-var VERSION = 'tcl-v1';
+var VERSION = 'tcl-v2';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
