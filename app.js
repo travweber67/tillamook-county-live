@@ -167,7 +167,7 @@ setInterval(tickClock, 1000); tickClock();
 /* ---------- map + layers ---------- */
 let map = null, quakeLayer = null, aircraftLayer = null, shipLayer = null,
     fireLayer = null, issLayer = null, issMarker = null, salmonLayer = null,
-    ohvLayer = null;
+    ohvLayer = null, trailLayer = null, trailHiLayer = null;
 function initMap() {
   if (typeof L === 'undefined') return; // Leaflet CDN failed; panels still work
   /* Framing: the old center/zoom 10 cropped the county's east side
@@ -227,6 +227,54 @@ function initMap() {
       { maxWidth: 280 });
   });
 
+  // OHV trails: the ODF-designated motorized trail network of the
+  // Tillamook State Forest, baked into ohv-trails.geojson at build
+  // time (267 named trails grouped from 709 source segments — see
+  // tools/build-ohv-trails.py in the project folder). The layer is
+  // created empty so the layers control below can list it right
+  // away; the fetch fills it in. Tapping a line names the trail in
+  // a popup and lights up every segment sharing that name in the
+  // highlight pane; closing the popup (a tap on empty map closes
+  // it) clears the light. Sand Lake has no lines — the dunes are
+  // open riding with no designated routes in the source data.
+  map.createPane('trailhi');
+  map.getPane('trailhi').style.zIndex = 450;
+  map.getPane('trailhi').style.pointerEvents = 'none';
+  trailHiLayer = L.layerGroup().addTo(map);
+  let trailPopup = null;
+  const clearTrailHi = () => { trailHiLayer.clearLayers(); };
+  const selectTrail = (f, latlng) => {
+    clearTrailHi();
+    L.geoJSON(f, { pane: 'trailhi', interactive: false,
+      style: { color: '#0b1220', weight: 8, opacity: 0.45 } }).addTo(trailHiLayer);
+    L.geoJSON(f, { pane: 'trailhi', interactive: false,
+      style: { color: '#fde047', weight: 4.5, opacity: 1 } }).addTo(trailHiLayer);
+    const p = f.properties;
+    const pop = L.popup({ maxWidth: 280 })
+      .setLatLng(latlng)
+      .setContent('<strong>' + esc(p.name) + '</strong>'
+        + '<br>' + esc(p.forest) + ' · ODF designated OHV trail'
+        + '<br>🥾 Open to: ' + esc(p.classes)
+        + '<br>⛰️ Difficulty: ' + esc(p.difficulty)
+        + '<br>📏 About ' + p.miles + ' mi of trail'
+        + '<br>🟢 Status: ' + esc(p.status));
+    trailPopup = pop;
+    pop.openOn(map);
+  };
+  map.on('popupclose', e => {
+    if (trailPopup && e.popup === trailPopup) { clearTrailHi(); trailPopup = null; }
+  });
+  trailLayer = L.geoJSON(null, {
+    style: { color: '#ea580c', weight: 2.5, opacity: 0.85 },
+    onEachFeature: (f, layer) => layer.on('click', e => selectTrail(f, e.latlng))
+  }).addTo(map);
+  map.on('layerremove', e => {
+    if (e.layer === trailLayer) { if (trailPopup) map.closePopup(); clearTrailHi(); }
+  });
+  fetch('ohv-trails.geojson').then(r => r.json()).then(gj => {
+    trailLayer.addData(gj);
+  }).catch(() => { /* trails are an extra; the map stands without them */ });
+
   // Toggleable live layers
   quakeLayer = L.layerGroup().addTo(map);
   aircraftLayer = L.layerGroup().addTo(map);
@@ -243,6 +291,7 @@ function initMap() {
   const layersCtl = L.control.layers(null, {
     '🌧️ Weather radar (NOAA)': radarLayer,
     '🏍️ OHV ride areas': ohvLayer,
+    '🥾 OHV trails': trailLayer,
     '✈️ Aircraft (ADS-B)': aircraftLayer,
     '🔥 Wildfire perimeters': fireLayer,
     '🛰️ Space station (ISS)': issLayer,
@@ -6071,6 +6120,7 @@ const LANG_ES = {
   legship: '<i class="dot dot-ship"></i> Barco (AIS)',
   legfire: '<i class="dot dot-fire"></i> Incendio forestal',
   legohv: '<i class="dot dot-ohv"></i> Zona de OHV',
+  legtrail: '<i class="trail-swatch"></i> Sendero de OHV',
   legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los incendios y la estación espacial.',
   roadsh2: '🚗 US-101, OR-6 y carreteras',
   incidentsh3: 'Incidentes en la carretera — ODOT TripCheck',

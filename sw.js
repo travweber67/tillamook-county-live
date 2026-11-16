@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v4)
+/* Tillamook County Live — service worker (tcl-v5)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -43,10 +43,16 @@
  * are plain dots whose name + info live in the tap popup (the
  * always-on name chips ate the map). Shell stamps bump to
  * style.css?v=4 / app.js?v=4.
+ *
+ * tcl-v5 (2026-11-15): the Travel map gains the ODF-designated OHV
+ * trail network of the Tillamook State Forest as its own toggleable
+ * layer — ohv-trails.geojson (267 named trails grouped from 709
+ * source segments) joins the precache shell; tapping a trail names
+ * it and highlights every segment sharing its name.
  */
 'use strict';
 
-var VERSION = 'tcl-v4';
+var VERSION = 'tcl-v5';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -54,10 +60,11 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=4',
-  'app.js?v=4',
+  'style.css?v=5',
+  'app.js?v=5',
   'manifest.webmanifest',
   'county.geojson',
+  'ohv-trails.geojson',
   'img/icon-192.png',
   'img/icon-512.png',
   'img/icon-maskable-512.png',
