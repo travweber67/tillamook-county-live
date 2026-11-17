@@ -101,7 +101,7 @@
  */
 'use strict';
 
-var VERSION = 'tcl-v10';
+var VERSION = 'tcl-v11'; // v11 = always open on Today at the top (Travis, 2026-11-16): saved-view restore removed (tcl-view-v1 no longer read or written, stale value cleared at boot), browser scroll restoration set to manual, page scrolls to top on load; theme, language, pins, town pick and other saved preferences untouched; cache-bust ?v=11
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
