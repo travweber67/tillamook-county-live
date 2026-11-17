@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v9)
+/* Tillamook County Live — service worker (tcl-v10)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -85,10 +85,23 @@
  * files and no new SHELL entries: the card is markup in
  * index.html, styles in style.css and logic in app.js.
  * Shell stamps bump to style.css?v=9 / app.js?v=9.
+ *
+ * tcl-v10 (2026-11-16): the founding sponsor spots land in the
+ * repo (they existed only in the preview, as one clustered
+ * block of three) — and land as FOUR spots (Travis's call:
+ * Tillamook gets four founding spots; Columbia County has
+ * three), spread evenly through Today's flow as individual
+ * frosted cards on the house cells' .in-flow treatment: Spot 1
+ * at the top under a floating "Presented by" head, Spot 2
+ * after the Commute Verdict, Spot 3 after Tonight & Tomorrow,
+ * Spot 4 after the County Briefing. All four open: $49/mo,
+ * free 30-day pilot, founding closes January 31, 2027, claim
+ * mailto per spot, EN/ES. No new files and no new SHELL
+ * entries. Shell stamps bump to style.css?v=10 / app.js?v=10.
  */
 'use strict';
 
-var VERSION = 'tcl-v9';
+var VERSION = 'tcl-v10';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -96,8 +109,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=9',
-  'app.js?v=9',
+  'style.css?v=10',
+  'app.js?v=10',
   'offline-map/offline-map.css',
   'offline-map/offline-map.js',
   'offline-map/vendor/maplibre-gl.css',

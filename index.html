@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=1">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=1">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=1">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -150,7 +150,7 @@ document.documentElement.setAttribute("data-theme",t);})();
      (CSS in the v4 layer; the margins grow a little to hold them and
      they vanish entirely below 1440px). SOLD, these two cards are paid
      placements. While unsold they carry house content only — this
-     view's ONE paid-format invitation is the founding panel below,
+     view's ONE paid-format invitation is the founding spots below,
      never a second "your logo here" box. -->
 <div class="rail-zone" aria-label="Sponsor spaces">
   <aside class="rail-card rail-left">
@@ -211,9 +211,32 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 
 
-<!-- v74: YOUR PINS — below the founding sponsor panel on Today
+<!-- tcl-v10 (2026-11-16): FOUR FOUNDING SPOTS, SPREAD THROUGH TODAY —
+     the founding panel existed only in the preview (tcl-v9) as one
+     clustered block of three. Travis's call: Tillamook gets FOUR
+     founding spots (Columbia County has three), spread evenly
+     through Today's flow as individual frosted cards — the .in-flow
+     treatment the two house cells have carried since v55 — and it
+     lands in the repo directly in this spread form. All four are
+     OPEN invitations (the 112-business bench is built; nobody has
+     been contacted). The header and the foot note live here with
+     Spot 1; Spot 2 stands after the Commute Verdict, Spot 3 after
+     Tonight & Tomorrow, and Spot 4 after the County Briefing. -->
+<div class="founding-head" id="founding-panel">
+  <p class="founding-eyebrow" data-i18n="fseyebrow">Presented by our Founding Sponsors</p>
+  <p class="founding-foot" data-i18n="fsfoot">Every founding sponsor keeps a permanent &ldquo;Founding Sponsor &middot; 2026&rdquo; badge — even if they later change tiers. Founding closes January 31, 2027 — after that, no new founding sponsors ever.</p>
+</div>
+<article class="founding-cell invite in-flow">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="fs1eyebrow">Founding Sponsor · Spot 1 of 4 — Open</p>
+  <h3 data-i18n="fs1h3">Your business here</h3>
+  <p data-i18n="fs1p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+  <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%201" data-i18n="fs1cta">Claim spot 1 &rarr;</a>
+</article>
+
+<!-- v74: YOUR PINS — below the first founding spot on Today
      (moved in v74 at Travis's call: the founding sponsor's paid top
-     spot comes first; the pins render directly underneath the panel).
+     spot comes first; the pins render directly underneath it).
      Pinned cards render here as live
      copies in pin order; the originals never move (pins are shortcuts,
      not moves). The zone is hidden while nothing is pinned. -->
@@ -259,6 +282,15 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div id="commute-verdict" class="commute-verdict"><p class="loading">Checking the corridor…</p></div>
   <p class="card-note small" data-i18n="commutenote">The one-line answer for the drive right now. The full picture — incidents, cameras and the bays — lives on the Travel tab.</p>
 </section>
+
+<!-- tcl-v10: founding Spot 2, spread through Today (see Spot 1). -->
+<article class="founding-cell invite in-flow">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="fs2eyebrow">Founding Sponsor · Spot 2 of 4 — Open</p>
+  <h3 data-i18n="fs2h3">Your business here</h3>
+  <p data-i18n="fs2p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+  <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%202" data-i18n="fs2cta">Claim spot 2 &rarr;</a>
+</article>
 
 <section class="card go-card" id="go-card" aria-label="Before you go — a go or no-go check for the drive or the water">
   <div class="card-head">
@@ -338,6 +370,15 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div id="plan-body" class="panel-body"><p class="loading">Looking ahead to tonight and tomorrow…</p></div>
 </section>
 
+<!-- tcl-v10: founding Spot 3, spread through Today (see Spot 1). -->
+<article class="founding-cell invite in-flow">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 4 — Open</p>
+  <h3 data-i18n="fs3h3">Your business here</h3>
+  <p data-i18n="fs3p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+  <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%203" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
+</article>
+
 <section class="card band-card schools-card" id="schools-card" aria-label="School closures and delays — the Tillamook County districts">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/events-night.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
@@ -382,6 +423,15 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
   <p class="install-help" id="briefing-note" hidden></p>
 </section>
+
+<!-- tcl-v10: founding Spot 4, spread through Today (see Spot 1). -->
+<article class="founding-cell invite in-flow">
+  <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
+  <p class="cell-eyebrow" data-i18n="fs4eyebrow">Founding Sponsor · Spot 4 of 4 — Open</p>
+  <h3 data-i18n="fs4h3">Your business here</h3>
+  <p data-i18n="fs4p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
+  <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%204" data-i18n="fs4cta">Claim spot 4 &rarr;</a>
+</article>
 
 <!-- v40: end-of-Today signpost. The briefing is the LAST card on Today;
      a visitor who scrolled to it (Lety, via the 4C's group) had hit a
@@ -1315,7 +1365,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>
