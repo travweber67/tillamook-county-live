@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v7)
+/* Tillamook County Live — service worker (tcl-v8)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -60,10 +60,23 @@
  * words are the alert's own. Watches/advisories keep the normal
  * banner handling. Tested locally against a clearly synthetic
  * fixture only — never against live data.
+ *
+ * tcl-v8 (2026-11-16): offline map download on the Travel map,
+ * the same feature Columbia County Live shipped as its v94
+ * (Travis approved 2026-11-16). A '⬇ Offline map' button opens a
+ * full-screen MapLibre map fed by a Tillamook County PMTiles pack
+ * (Protomaps/OSM z0-15 plus a low-roads overlay) that a visitor
+ * downloads once (about 13.5 MB) into OPFS and uses with no
+ * signal. The module css/js, the MapLibre and PMTiles vendor
+ * files and the glyphs join the SHELL precache; the packs
+ * themselves are NOT precached — they live in OPFS via the
+ * in-app download. Live overlays stay online-only and the
+ * offline view says so in EN and ES. Shell stamps bump to
+ * style.css?v=8 / app.js?v=8.
  */
 'use strict';
 
-var VERSION = 'tcl-v7';
+var VERSION = 'tcl-v8';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -71,8 +84,35 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=7',
-  'app.js?v=7',
+  'style.css?v=8',
+  'app.js?v=8',
+  'offline-map/offline-map.css',
+  'offline-map/offline-map.js',
+  'offline-map/vendor/maplibre-gl.css',
+  'offline-map/vendor/maplibre-gl.js',
+  'offline-map/vendor/pmtiles.js',
+  'offline-map/glyphs/Noto Sans Regular/0-255.pbf',
+  'offline-map/glyphs/Noto Sans Regular/256-511.pbf',
+  'offline-map/glyphs/Noto Sans Regular/512-767.pbf',
+  'offline-map/glyphs/Noto Sans Regular/768-1023.pbf',
+  'offline-map/glyphs/Noto Sans Regular/1024-1279.pbf',
+  'offline-map/glyphs/Noto Sans Regular/1280-1535.pbf',
+  'offline-map/glyphs/Noto Sans Regular/1536-1791.pbf',
+  'offline-map/glyphs/Noto Sans Regular/1792-2047.pbf',
+  'offline-map/glyphs/Noto Sans Regular/2048-2303.pbf',
+  'offline-map/glyphs/Noto Sans Regular/8192-8447.pbf',
+  'offline-map/glyphs/Noto Sans Regular/8448-8703.pbf',
+  'offline-map/glyphs/Noto Sans Medium/0-255.pbf',
+  'offline-map/glyphs/Noto Sans Medium/256-511.pbf',
+  'offline-map/glyphs/Noto Sans Medium/512-767.pbf',
+  'offline-map/glyphs/Noto Sans Medium/768-1023.pbf',
+  'offline-map/glyphs/Noto Sans Medium/1024-1279.pbf',
+  'offline-map/glyphs/Noto Sans Medium/1280-1535.pbf',
+  'offline-map/glyphs/Noto Sans Medium/1536-1791.pbf',
+  'offline-map/glyphs/Noto Sans Medium/1792-2047.pbf',
+  'offline-map/glyphs/Noto Sans Medium/2048-2303.pbf',
+  'offline-map/glyphs/Noto Sans Medium/8192-8447.pbf',
+  'offline-map/glyphs/Noto Sans Medium/8448-8703.pbf',
   'manifest.webmanifest',
   'county.geojson',
   'ohv-trails.geojson',
