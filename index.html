@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=1">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=1">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=1">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -618,6 +618,24 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note" data-i18n="tidesnote">Three bays, three NOAA stations. For the launch, the crab pots, the clam beds or a beach hour, here is the next turn of the tide at Garibaldi (Tillamook Bay), Netarts Bay and Nehalem Bay.</p>
       <div id="tides-body" class="panel-body"><p class="loading">Loading NOAA tide predictions…</p></div>
       <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (Garibaldi 9437540, Netarts Bay 9437262, Nehalem 9437908), in feet above mean lower low water. Wind and river flow push real water off the prediction — a flooding river runs the bay higher — so treat the times as the plan, not a promise. Nestucca Bay has no NOAA prediction station of its own; the Pacific City launch works off the Garibaldi pattern.</p>
+    </div>
+
+    <div class="card" id="crab-card">
+      <div class="card-head">
+        <h2 data-i18n="crabh2">🦀 Crabbing Index — Tillamook Bay</h2>
+        <span class="updated" id="crab-updated"></span>
+      </div>
+      <p class="card-note" data-i18n="crabnote">When should you throw the pots in this week? This index scores each of the next seven days for crabbing from a boat in Tillamook Bay — the slack-tide window, the wind, the rain, how much fresh water the bay&rsquo;s five rivers are pushing in, and the season — and names the best hours of every day. Slack water is when crab walk and feed (ODFW&rsquo;s own guidance); the classic bay plan is to set pots an hour or so before high slack and fish through the turn. Scored at Garibaldi, the bay&rsquo;s reference harbor.</p>
+      <div id="crab-body" class="panel-body"><p class="loading">Scoring the next seven days on the bay…</p></div>
+      <p class="subhead" data-i18n="crabrulesh">The rules, in short (ODFW)</p>
+      <div class="crab-rules">
+        <p data-i18n="crabseason"><strong>Season:</strong> Tillamook Bay is open for Dungeness crab all year, 24 hours a day. The Oct&nbsp;16 – Nov&nbsp;30 closure is ocean waters only — it does not apply inside the bay.</p>
+        <p data-i18n="crablicense"><strong>License:</strong> everyone 12 and older needs an Oregon shellfish license to crab.</p>
+        <p data-i18n="crabbag"><strong>Limit:</strong> 12 Dungeness crab per person per day — males only. Females and undersized crab go back.</p>
+        <p data-i18n="crabsize"><strong>Size:</strong> 5¾ inches minimum, measured straight across the back (caliper), in front of the points.</p>
+        <p data-i18n="crabgear"><strong>Gear:</strong> up to 3 pots, rings or baited lines per person. Pot buoys must be marked with your name, plus your address, phone number, ODFW ID or vessel ID.</p>
+      </div>
+      <p class="card-note small" data-i18n="crabnote2">The index is an estimate, built live from NOAA tide predictions, the National Weather Service forecast and USGS river gauges — the bay always has the last word. The rules above are a summary; the final word is <a href="https://myodfw.com/articles/oregon-shellfish-regulations" target="_blank" rel="noopener">ODFW&rsquo;s shellfish regulations</a>, and shellfish safety closures sit with the <a href="https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx" target="_blank" rel="noopener">Oregon Department of Agriculture</a> (hotline <a href="tel:+18004482474">1-800-448-2474</a>) — check both the day you go.</p>
     </div>
 
     <div class="card" id="fishing-card">
@@ -1297,7 +1315,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=8"></script>
+<script src="app.js?v=9"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>

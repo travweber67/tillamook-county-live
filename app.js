@@ -4730,6 +4730,308 @@ function initTides() {
 }
 initTides();
 
+/* ---------- crabbing index: the week's best hours on the bay ----------
+   Travis asked for it plainly (2026-11-16): a quick index that says, at
+   what time of what day, whether it is worth throwing crab pots from a
+   boat in Tillamook Bay. The science it stands on, all sourced:
+   - ODFW's crabbing guidance: slack water — the turn at high or low
+     tide — is the best time to crab; crabs walk and forage when the
+     current stops pushing them around, and gear stays put. Pots soak
+     1–2 hours, rings 15–30 minutes. The classic bay plan sets pots an
+     hour or so before high slack and fishes through the turn into the
+     first of the ebb; high slack also pushes salt water deep into the
+     bay, which keeps crab active farther inside — so a high slack
+     scores a notch above a low one.
+   - Season: fall is the best bay crabbing of the year (post-molt crabs
+     hardened and feeding, Sep–Nov); summer is molt season, when many
+     crabs are soft and light; winter crabs are full but the weather
+     does the talking. (ODFW + Oregon crabbing guides, see
+     research/crabbing-index.md.)
+   - Fresh water: Tillamook Bay is fed by five rivers (Miami, Kilchis,
+     Wilson, Trask, Tillamook). Heavy runoff drops the bay's salinity
+     and pushes crab toward the mouth; a flooding river makes the upper
+     bay poor and the bar worse. The two gauged feeders (Wilson
+     14301500 + Trask 14302480, USGS flows) stand in for the five.
+   - Wind and rain come from the same NWS gridpoint forecast the
+     Forecast card reads, at Garibaldi — the bay's reference harbor,
+     whose NOAA station (9437540) also supplies the week's tides.
+   The score is 100 points of season (10) + slack timing against
+   daylight (30) + wind (25) + rain (20) + river runoff (15, fading
+   with distance — today's rivers say little about day six). It is an
+   estimate and says so on the card; the rules summary is ODFW's,
+   quoted from the shellfish regulations page, and the card links out
+   instead of copying closure status, which can change overnight. */
+const CRAB_RIVERS = ['14301500', '14302480']; // Wilson + Trask flows
+const CRAB_SEASON = [7, 6, 5, 5, 4, 3, 3, 5, 9, 10, 10, 7]; // Jan..Dec, of 10
+const CRAB_RUNOFF_W = [1, 1, 0.6, 0.4, 0.25, 0.25, 0.25]; // by day offset
+const CRAB_L = {
+  en: {
+    loading: 'Scoring the next seven days on the bay…',
+    today: 'Today', bestWindow: 'Best window', highSlack: 'high slack', lowSlack: 'low slack',
+    great: 'Great', good: 'Good', fair: 'Fair', poor: 'Poor',
+    noTides: 'The NOAA tide predictions didn\'t load just now, so the index is sitting this one out — the official tide times live at <a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=9437540" target="_blank" rel="noopener">NOAA Tides &amp; Currents (Garibaldi)</a>.',
+    partial: 'The forecast didn\'t reach every day — those days are scored on the tides, the rivers and the season alone.',
+    noWindow: 'No slack in the window this day'
+  },
+  es: {
+    loading: 'Puntuando los próximos siete días en la bahía…',
+    today: 'Hoy', bestWindow: 'Mejor horario', highSlack: 'marea alta en calma', lowSlack: 'marea baja en calma',
+    great: 'Excelente', good: 'Bueno', fair: 'Regular', poor: 'Malo',
+    noTides: 'Las predicciones de marea de NOAA no cargaron esta vez, así que el índice se toma un descanso — las horas oficiales están en <a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=9437540" target="_blank" rel="noopener">NOAA Tides &amp; Currents (Garibaldi)</a>.',
+    partial: 'El pronóstico no cubrió todos los días — esos días se puntúan solo con las mareas, los ríos y la temporada.',
+    noWindow: 'Sin calma en la ventana de este día'
+  }
+};
+const CRAB_WHY = {
+  en: {
+    seasonPrime: 'prime fall season', seasonMolt: 'summer molt — many soft shells',
+    windLight: 'light wind', windChop: 'a choppy breeze', windStrong: 'strong wind for a small boat',
+    rainDry: 'a dry day', rainLikely: 'rain likely', rainDay: 'rain most of the day',
+    runLow: 'rivers low and clear', runHigh: 'heavy runoff pushing crab toward the mouth',
+    runFlood: 'rivers near flood — poor and unsafe',
+    slackDay: 'the slack falls in daylight', slackDark: 'the best slack falls after dark',
+    plain: 'an ordinary day on the bay'
+  },
+  es: {
+    seasonPrime: 'temporada alta de otoño', seasonMolt: 'muda de verano — muchos cangrejos blandos',
+    windLight: 'viento ligero', windChop: 'brisa movida', windStrong: 'viento fuerte para un bote pequeño',
+    rainDry: 'día seco', rainLikely: 'lluvia probable', rainDay: 'lluvia casi todo el día',
+    runLow: 'ríos bajos y claros', runHigh: 'mucha escorrentía empujando los cangrejos hacia la desembocadura',
+    runFlood: 'ríos cerca de inundación — malo e inseguro',
+    slackDay: 'la calma cae con luz de día', slackDark: 'la mejor calma cae de noche',
+    plain: 'un día común en la bahía'
+  }
+};
+let crabDays = null;   // computed rows, or null while loading
+let crabTidesFailed = false;
+let crabPartialWx = false;
+function crabLang() { try { return homeLang() === 'es' ? 'es' : 'en'; } catch (e) { return 'en'; } }
+function crabPtParts(ms) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric'
+  }).formatToParts(new Date(ms));
+  const get = t => parseInt((parts.find(p => p.type === t) || {}).value, 10);
+  return { y: get('year'), m: get('month'), d: get('day') };
+}
+function crabPtKey(ms) {
+  const p = crabPtParts(ms);
+  return p.y + '-' + String(p.m).padStart(2, '0') + '-' + String(p.d).padStart(2, '0');
+}
+function crabTideUrl() {
+  const parts = todayStrPT().split('-').map(Number);
+  const base = Date.UTC(parts[0], parts[1] - 1, parts[2]);
+  return 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=' + tideYmd(base)
+    + '&end_date=' + tideYmd(base + 8 * 864e5) + '&station=9437540&product=predictions&datum=MLLW'
+    + '&time_zone=lst_ldt&interval=hilo&units=english'
+    + '&application=tillamookcountylive&format=json';
+}
+function crabWindMax(s) {
+  if (!s) return 0;
+  const nums = String(s).match(/\d+/g);
+  return nums ? Math.max.apply(null, nums.map(Number)) : 0;
+}
+function crabPopInfer(short) {
+  const s = String(short || '').toLowerCase();
+  if (!/rain|shower|drizzle|storm/.test(s)) return 0;
+  if (/likely/.test(s)) return 70;
+  if (/slight chance/.test(s)) return 20;
+  if (/chance/.test(s)) return 40;
+  return 60;
+}
+function crabWindScore(w, gust) {
+  const pts = [[0, 25], [5, 25], [8, 22], [10, 19], [12, 16], [15, 11], [18, 7], [20, 4], [25, 1], [30, 0]];
+  let s = 0;
+  if (w <= 0) s = 25;
+  else if (w >= 30) s = 0;
+  else {
+    for (let i = 1; i < pts.length; i++) {
+      if (w <= pts[i][0]) {
+        s = pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * (w - pts[i - 1][0]) / (pts[i][0] - pts[i - 1][0]);
+        break;
+      }
+    }
+  }
+  if (gust && gust >= w + 10) s -= (gust - w - 10) * 0.3;
+  return Math.max(0, s);
+}
+async function crabForecastByDay() {
+  const pts = await getJSON('https://api.weather.gov/points/45.5597,-123.9116');
+  const fc = await getJSON(pts.properties.forecast);
+  const byDay = {};
+  (fc.properties.periods || []).forEach(p => {
+    const key = crabPtKey(new Date(p.startTime).getTime());
+    const e = byDay[key] = byDay[key] || {};
+    const slot = p.isDaytime ? 'day' : 'night';
+    const pop = p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value != null
+      ? p.probabilityOfPrecipitation.value : null;
+    e[slot] = { wind: crabWindMax(p.windSpeed), gust: crabWindMax(p.windGust), pop, short: p.shortForecast };
+  });
+  return byDay;
+}
+async function crabRunoffRead() {
+  const d = await getJSON('https://waterservices.usgs.gov/nwis/iv/?format=json&sites='
+    + CRAB_RIVERS.join(',') + '&parameterCd=00060&period=P3D');
+  let nowSum = 0, agoSum = 0, any = false;
+  (d.value.timeSeries || []).forEach(ts => {
+    const vals = ((ts.values[0] && ts.values[0].value) || [])
+      .filter(v => v.value !== '-999999')
+      .map(v => ({ t: new Date(v.dateTime).getTime(), v: parseFloat(v.value) }))
+      .filter(v => !isNaN(v.v));
+    if (!vals.length) return;
+    any = true;
+    const last = vals[vals.length - 1];
+    nowSum += last.v;
+    const target = last.t - 24 * 3600e3;
+    let best = vals[0], bd = Infinity;
+    vals.forEach(v => { const dd = Math.abs(v.t - target); if (dd < bd) { bd = dd; best = v; } });
+    agoSum += best.v;
+  });
+  if (!any) return null;
+  return { flow: nowSum, rising: agoSum > 0 && nowSum > agoSum * 1.15 };
+}
+function crabRunoffScore(read) {
+  if (!read) return { score: 9, band: 'unknown' };
+  const f = read.flow;
+  let score, band;
+  if (f < 800) { score = 15; band = 'low'; }
+  else if (f < 2500) { score = 11; band = 'moderate'; }
+  else if (f < 6000) { score = 5; band = 'high'; }
+  else { score = 0; band = 'flood'; }
+  if (read.rising && score > 0) score = Math.max(0, score - 2);
+  return { score, band };
+}
+function crabComputeDay(key, ymd, preds, fcByDay, runoff, idx) {
+  const sun = almDay({ y: ymd.y, m: ymd.m - 1, d: ymd.d }, TOWNS[1]); // Garibaldi
+  let best = null;
+  preds.filter(p => crabPtKey(p.t) === key).forEach(p => {
+    const start = p.t - 75 * 60000, end = p.t + 60 * 60000;
+    let frac = 0;
+    if (sun.rise && sun.set) {
+      const ov = Math.min(end, sun.set.getTime()) - Math.max(start, sun.rise.getTime());
+      frac = Math.max(0, ov) / (end - start);
+    }
+    const score = 30 * (p.type === 'H' ? 1 : 0.8) * (0.3 + 0.7 * frac);
+    if (!best || score > best.tideScore) {
+      best = { t: p.t, v: p.v, type: p.type, start, end, frac, tideScore: score };
+    }
+  });
+  const tideScore = best ? best.tideScore : 9;
+  const season = CRAB_SEASON[ymd.m - 1];
+  const wx = fcByDay ? fcByDay[key] : null;
+  const wxMain = wx ? (wx.day || wx.night) : null;
+  let windScore = 13, rainScore = 10, wind = null, pop = null;
+  if (wxMain) {
+    wind = wxMain.wind;
+    windScore = crabWindScore(wxMain.wind, wxMain.gust);
+    pop = wxMain.pop != null ? wxMain.pop
+      : (wx.night && wx.night.pop != null ? wx.night.pop : crabPopInfer(wxMain.short));
+    rainScore = Math.max(2, 20 * (1 - pop / 100));
+  } else crabPartialWx = true;
+  const w = CRAB_RUNOFF_W[idx];
+  const runoffPart = w * runoff.score + (1 - w) * 9;
+  const total = Math.round(season + tideScore + windScore + rainScore + runoffPart);
+  const band = total >= 75 ? 'great' : total >= 60 ? 'good' : total >= 42 ? 'fair' : 'poor';
+  return { key, ymd, noonMs: Date.UTC(ymd.y, ymd.m - 1, ymd.d, 20), best, total, band,
+    season, wind, pop, runoffBand: runoff.band, idx, wxKnown: !!wxMain };
+}
+function crabWhy(d) {
+  const W = CRAB_WHY[crabLang()];
+  const pos = [], neg = [];
+  if (d.season >= 9) pos.push(W.seasonPrime);
+  if (d.season <= 3) neg.push(W.seasonMolt);
+  if (d.wxKnown) {
+    if (d.wind <= 8) pos.push(W.windLight);
+    else if (d.wind >= 18) neg.push(W.windStrong);
+    else if (d.wind >= 15) neg.push(W.windChop);
+    if (d.pop <= 20) pos.push(W.rainDry);
+    else if (d.pop >= 70) neg.push(W.rainDay);
+    else if (d.pop >= 45) neg.push(W.rainLikely);
+  }
+  if (d.idx <= 2) {
+    if (d.runoffBand === 'low') pos.push(W.runLow);
+    else if (d.runoffBand === 'high') neg.push(W.runHigh);
+    else if (d.runoffBand === 'flood') neg.push(W.runFlood);
+  }
+  if (d.best) {
+    if (d.best.frac >= 0.85) pos.push(W.slackDay);
+    else if (d.best.frac <= 0.05) neg.push(W.slackDark);
+  }
+  const line = neg.slice(0, 2).concat(pos.slice(0, 2)).slice(0, 3);
+  return line.length ? line.join(' · ') : W.plain;
+}
+function renderCrab() {
+  const body = $('crab-body');
+  if (!body) return;
+  const L = CRAB_L[crabLang()];
+  if (crabTidesFailed) {
+    body.innerHTML = '<p class="fallback">' + L.noTides + '</p>';
+    return;
+  }
+  if (!crabDays) {
+    body.innerHTML = '<p class="loading">' + L.loading + '</p>';
+    return;
+  }
+  const loc = crabLang() === 'es' ? 'es-US' : 'en-US';
+  const dayFmt = new Intl.DateTimeFormat(loc, {
+    timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric'
+  });
+  let html = crabDays.map(d => {
+    const name = dayFmt.format(new Date(d.noonMs));
+    const tag = d.idx === 0 ? '<span class="crab-today-tag">' + L.today + '</span>' : '';
+    let win;
+    if (d.best) {
+      win = L.bestWindow + ' <strong>' + fmtTime(new Date(d.best.start)) + ' – '
+        + fmtTime(new Date(d.best.end)) + '</strong> · '
+        + (d.best.type === 'H' ? L.highSlack : L.lowSlack) + ' '
+        + fmtTime(new Date(d.best.t)) + ' (' + num(d.best.v, 1) + ' ft)';
+    } else win = L.noWindow;
+    return '<div class="crab-day r-' + d.band + (d.idx === 0 ? ' crab-today' : '') + '">'
+      + '<div class="crab-day-main"><div class="crab-day-name">' + esc(name) + tag + '</div>'
+      + '<div class="crab-window">🦀 ' + win + '</div>'
+      + '<div class="crab-why">' + esc(crabWhy(d)) + '</div></div>'
+      + '<div class="crab-score"><span class="crab-pill">' + L[d.band] + '</span>'
+      + '<div class="crab-meter"><span style="width:' + d.total + '%"></span></div>'
+      + '<div class="crab-num">' + d.total + ' / 100</div></div></div>';
+  }).join('');
+  if (crabPartialWx) html += '<p class="small">' + L.partial + '</p>';
+  body.innerHTML = html;
+}
+async function loadCrab() {
+  if (!$('crab-body')) return;
+  let preds = null;
+  try {
+    const d = await getJSON(crabTideUrl());
+    preds = (d.predictions || []).map(p => ({
+      t: tideInstant(p.t), v: parseFloat(p.v), type: p.type
+    })).filter(p => !isNaN(p.t) && !isNaN(p.v)).sort((a, b) => a.t - b.t);
+  } catch (e) { /* handled below — the card declines honestly */ }
+  if (!preds || !preds.length) { crabTidesFailed = true; renderCrab(); return; }
+  crabTidesFailed = false;
+  let fcByDay = null;
+  try { fcByDay = await crabForecastByDay(); } catch (e) { fcByDay = null; }
+  let runoff = { score: 9, band: 'unknown' };
+  try { runoff = crabRunoffScore(await crabRunoffRead()); } catch (e) { /* neutral */ }
+  crabPartialWx = false;
+  const parts = todayStrPT().split('-').map(Number);
+  const base = Date.UTC(parts[0], parts[1] - 1, parts[2]);
+  crabDays = [];
+  for (let i = 0; i < 7; i++) {
+    const dt = new Date(base + i * 864e5);
+    const ymd = { y: dt.getUTCFullYear(), m: dt.getUTCMonth() + 1, d: dt.getUTCDate() };
+    const key = ymd.y + '-' + String(ymd.m).padStart(2, '0') + '-' + String(ymd.d).padStart(2, '0');
+    crabDays.push(crabComputeDay(key, ymd, preds, fcByDay, runoff, i));
+  }
+  setUpdated('crab-updated');
+  renderCrab();
+}
+function initCrab() {
+  loadCrab();
+  setInterval(loadCrab, 30 * 60 * 1000);
+  const btn = $('lang-btn');
+  if (btn) btn.addEventListener('click', () => setTimeout(renderCrab, 80));
+}
+initCrab();
+
 /* ---------- see the station: ISS pass predictions ---------- */
 /* X20 Round 9. The Sky card always knew where the station IS (a dot on
    the map, a lat/lon line) but never when to LOOK — and the look-up
@@ -5717,6 +6019,7 @@ const FINDER_SECTIONS = [
   { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Wilson, Trask, Nehalem and Nestucca', keys: 'river rivers level levels gauge gauges flood height wilson trask nehalem nestucca kilchis miami' },
   { id: 'tides-card',    title: 'Bay Tides',                 sub: 'Next high and low tide at Garibaldi, Netarts and Nehalem', keys: 'tide tides high low slack fishing dock ramp bay garibaldi netarts nehalem' },
+  { id: 'crab-card',     title: 'Crabbing Index — Tillamook Bay', sub: 'The best day and hours to crab this week, scored from tides, wind, rain and the rivers', keys: 'crab crabs crabbing dungeness pots rings slack index best day garibaldi bay boat' },
   { id: 'quakes-card',   title: 'Earthquakes — last 30 days', sub: 'USGS earthquakes near the county', keys: 'earthquake earthquakes quake quakes tremor seismic shook' },
   { id: 'fires-card',    title: 'Wildfires',                 sub: 'Interagency wildfire incidents', keys: 'fire fires wildfire wildfires smoke burn burning' },
   { id: 'air-card',      title: 'Air & Smoke',               sub: 'Air Quality Index, fine particles, and the day\u2019s smoke outlook', keys: 'air quality aqi smoke breathe breathing pm25 lungs asthma dust wood stove' },
@@ -6209,6 +6512,15 @@ const LANG_ES = {
   tidesh2: '🌊 Mareas de las bahías',
   tidesnote: 'Las tres bahías del condado suben y bajan con el océano dos veces al día. Para la rampa de botes, el muelle, la orilla para cangrejos o una hora de pesca, aquí está el próximo cambio de marea en las tres estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (Garibaldi 9437540, bahía de Netarts 9437262, Nehalem 9437908), en pies sobre el nivel medio de la bajamar. El viento y el caudal de los ríos empujan el agua real fuera de la predicción — un río en crecida sube más la bahía — así que toma las horas como el plan, no como una promesa. La bahía de Nestucca no tiene estación propia de predicción de NOAA; el embarcadero de Pacific City sigue el patrón de Garibaldi.',
+  crabh2: '🦀 Índice de cangrejos — Bahía de Tillamook',
+  crabnote: '¿Cuándo conviene echar las trampas esta semana? Este índice puntúa cada uno de los próximos siete días para pescar cangrejos desde un bote en la bahía de Tillamook — la ventana de aguas en calma, el viento, la lluvia, cuánta agua dulce empujan los cinco ríos de la bahía y la temporada — y nombra las mejores horas de cada día. En aguas en calma los cangrejos caminan y se alimentan (es la guía del propio ODFW); el plan clásico de la bahía es poner las trampas una hora antes de la pleamar en calma y pescar durante el cambio de marea. Puntuado en Garibaldi, el puerto de referencia de la bahía.',
+  crabrulesh: 'Las reglas, en corto (ODFW)',
+  crabseason: '<strong>Temporada:</strong> la bahía de Tillamook está abierta para el cangrejo Dungeness todo el año, las 24 horas del día. El cierre del 16 de octubre al 30 de noviembre es solo para aguas del océano — no aplica dentro de la bahía.',
+  crablicense: '<strong>Licencia:</strong> toda persona de 12 años o más necesita una licencia de mariscos de Oregón para pescar cangrejos.',
+  crabbag: '<strong>Límite:</strong> 12 cangrejos Dungeness por persona al día — solo machos. Las hembras y los cangrejos bajo la medida se devuelven al agua.',
+  crabsize: '<strong>Tamaño:</strong> mínimo de 5¾ pulgadas, medido en línea recta a través del caparazón (calibre), por delante de las puntas.',
+  crabgear: '<strong>Equipo:</strong> hasta 3 trampas, aros o líneas con cebo por persona. Las boyas de las trampas deben llevar tu nombre, más tu dirección, número de teléfono, ID de ODFW o ID de la embarcación.',
+  crabnote2: 'El índice es una estimación, construido en vivo desde las predicciones de marea de NOAA, el pronóstico del Servicio Meteorológico Nacional y los medidores de ríos del USGS — la bahía siempre tiene la última palabra. Las reglas de arriba son un resumen; la palabra final la tiene el <a href="https://myodfw.com/articles/oregon-shellfish-regulations" target="_blank" rel="noopener">reglamento de mariscos de ODFW</a>, y los cierres por seguridad de mariscos están en el <a href="https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx" target="_blank" rel="noopener">Departamento de Agricultura de Oregón</a> (línea directa <a href="tel:+18004482474">1-800-448-2474</a>) — revisa ambos el día que vayas.',
   fishh2: 'Conteos de peces — las presas',
   fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
   fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',

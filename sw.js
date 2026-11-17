@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v8)
+/* Tillamook County Live — service worker (tcl-v9)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -73,10 +73,22 @@
  * in-app download. Live overlays stay online-only and the
  * offline view says so in EN and ES. Shell stamps bump to
  * style.css?v=8 / app.js?v=8.
+ *
+ * tcl-v9 (2026-11-16): the Crabbing Index card joins Outdoors,
+ * below Bay Tides (Travis directed 2026-11-16; built first as
+ * a preview the same day). It scores each of the next seven
+ * days for crabbing from a boat in Tillamook Bay — season,
+ * the slack-tide window against daylight, wind, rain, and
+ * Wilson + Trask runoff — computed live in app.js from the
+ * same keyless NOAA / NWS / USGS feeds the site already
+ * reads, with ODFW's rules summarized on the card. No new
+ * files and no new SHELL entries: the card is markup in
+ * index.html, styles in style.css and logic in app.js.
+ * Shell stamps bump to style.css?v=9 / app.js?v=9.
  */
 'use strict';
 
-var VERSION = 'tcl-v8';
+var VERSION = 'tcl-v9';
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -84,8 +96,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=8',
-  'app.js?v=8',
+  'style.css?v=9',
+  'app.js?v=9',
   'offline-map/offline-map.css',
   'offline-map/offline-map.js',
   'offline-map/vendor/maplibre-gl.css',
