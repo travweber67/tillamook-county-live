@@ -1,0 +1,11 @@
+{
+ "fetched_at": "2026-11-20T16:22:50Z",
+ "sources": [
+  {
+   "name": "Facebook public events (discover search)",
+   "status": "not_configured",
+   "note": "No Facebook event source is wired for Tillamook County Live yet."
+  }
+ ],
+ "events": []
+}

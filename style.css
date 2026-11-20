@@ -1353,7 +1353,7 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
 /* ---------- founding sponsor panel (full glass surface #2) ---------- */
 .founding-panel{
   position:relative;border-radius:20px;overflow:hidden;isolation:isolate;
-  background:#2a2118 url("img/dusk/founding-sunset.jpg") center 62%/cover no-repeat;
+  background:#2a2118 url("img/dusk/bay-night.jpg") center 62%/cover no-repeat;
   box-shadow:0 2px 3px rgba(30,40,20,.18),0 18px 40px rgba(30,40,20,.22);
 }
 .founding-inner{
@@ -1365,7 +1365,7 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
   margin:0 0 14px;font-size:.76rem;font-weight:800;letter-spacing:.14em;
   text-transform:uppercase;color:#f2c078;
 }
-.founding-cells{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.founding-cells{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .founding-cell{
   background:rgba(251,248,238,.08);border:1px solid rgba(255,255,255,.24);
   border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0;
@@ -1428,7 +1428,7 @@ body.sponsor-on{overflow:hidden}
 }
 .founding-cta.alt{background:transparent;color:#f5efdd;border-color:rgba(245,239,221,.6)}
 .founding-foot{margin:14px 0 0;font-size:.8rem;color:#cfd6ba}
-@media (max-width:760px){.founding-cells{grid-template-columns:1fr}}
+@media (max-width:899px){.founding-cells{grid-template-columns:1fr}}
 
 /* ---------- featured local (Slot C) + featured event (Slot D) ---------- */
 .featured-local{
@@ -2426,6 +2426,12 @@ html[data-theme="dark"] .drawer-photo-line{color:#d8dfc8}
 .founding-head .founding-eyebrow{margin:0 0 6px;text-shadow:0 1px 8px rgba(10,16,8,.6)}
 .founding-head .founding-foot{margin:0;color:#e9e4cd;text-shadow:0 1px 8px rgba(10,16,8,.6)}
 .founding-cell.invite.in-flow{border-color:rgba(233,164,74,.65)}
+/* tcl-v12 (2026-11-18): the four cells now live in one .founding-cells
+   grid under the founding head — on desktop all four sit in ONE row
+   across the top (repeat(4,1fr)), the way Columbia County Live's
+   founding cards sit in one bar; single column below 900px. The grid
+   is a bare layout wrapper: no sheet behind the cards, each cell
+   keeps its own in-flow glass and the grid gap separates them. */
 
 /* --- 5 · the Bend run summit pair ------------------------------------
    Two large lead cameras under the Mt. Hood subhead; the figcaption

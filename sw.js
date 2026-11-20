@@ -1,4 +1,4 @@
-/* Tillamook County Live — service worker (tcl-v10)
+/* Tillamook County Live — service worker (tcl-v13)
  *
  * Strategy by request kind — live data is NEVER cached:
  *  - Navigations, shell code (CSS/JS), the county GeoJSON, the manifest:
@@ -98,10 +98,26 @@
  * free 30-day pilot, founding closes January 31, 2027, claim
  * mailto per spot, EN/ES. No new files and no new SHELL
  * entries. Shell stamps bump to style.css?v=10 / app.js?v=10.
+ *
+ * tcl-v11 (2026-11-16): always open on Today at the top (Travis's
+ * call): saved-view restore removed, browser scroll restoration set
+ * to manual, page scrolls to top on load; theme, language, pins,
+ * town pick and other saved preferences untouched. Shell stamps bump
+ * to style.css?v=11 / app.js?v=11.
+ *
+ * tcl-v12 (2026-11-18, Travis's call): the four founding spots sit
+ * together under one head in a .founding-cells grid — 2x2 on desktop,
+ * single column on phones, with spots 2-4 weaving down Today on
+ * phones. Shell stamps bump to style.css?v=12 / app.js?v=12.
+ *
+ * tcl-v13 (2026-11-20, launch day): the v11 startup rule and the
+ * v12 founding grid are merged into one publish tree (the repo held
+ * v11, the local tree held v12). Shell stamps bump to
+ * style.css?v=13 / app.js?v=13.
  */
 'use strict';
 
-var VERSION = 'tcl-v11'; // v11 = always open on Today at the top (Travis, 2026-11-16): saved-view restore removed (tcl-view-v1 no longer read or written, stale value cleared at boot), browser scroll restoration set to manual, page scrolls to top on load; theme, language, pins, town pick and other saved preferences untouched; cache-bust ?v=11
+var VERSION = 'tcl-v13'; // v13 = launch-day merge (2026-11-20): v11 always-open-on-Today startup rule + v12 founding-cells grid with phone weave; cache-bust ?v=13
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -109,8 +125,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=10',
-  'app.js?v=10',
+  'style.css?v=13',
+  'app.js?v=13',
   'offline-map/offline-map.css',
   'offline-map/offline-map.js',
   'offline-map/vendor/maplibre-gl.css',
