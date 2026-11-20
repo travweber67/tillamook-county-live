@@ -3032,6 +3032,36 @@ function mergeFbInto(events, fbSnap) {
   });
   return out;
 }
+/* Community events (data/community-events.json): hand-added by the site
+   team from the county Facebook groups - flyers and posts that never
+   become formal Facebook events or calendar entries. Merged last;
+   calendar and Facebook-event entries win date+title collisions.
+   Entries may carry a note (a details line under the row), an img
+   (the event's flyer photo, shown under the row) and a community flag
+   the renderer uses to keep them visible past the 16-row cap. */
+let communityEventsSnapPromise = null;
+function getCommunityEventsSnap() {
+  if (!communityEventsSnapPromise) {
+    communityEventsSnapPromise = getSnapshot('community-events.json').catch(() => null);
+  }
+  return communityEventsSnapPromise;
+}
+function mergeCommunityInto(events, cSnap) {
+  const base = events || [];
+  if (!cSnap || !Array.isArray(cSnap.events)) return base.slice();
+  const seen = new Set(base.map(ev => ev.date + '|' + normalizeEventTitle(ev.title)));
+  const out = base.slice();
+  cSnap.events.forEach(ev => {
+    if (!ev || !ev.date || !ev.title) return;
+    const key = ev.date + '|' + normalizeEventTitle(ev.title);
+    if (seen.has(key)) return; // a calendar or FB-event entry already covers it
+    seen.add(key);
+    out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: ev.source || 'Facebook',
+               url: ev.url || '', location: ev.location || '', note: ev.note || '',
+               img: ev.img || '', community: true });
+  });
+  return out;
+}
 function eventDayDiff(dateStr) {
   const [y, m, d] = dateStr.split('-').map(Number);
   const [ty, tm, td] = todayStrPT().split('-').map(Number);
@@ -3048,6 +3078,99 @@ function eventMatchesFilter(ev, filter) {
   }
   return diff >= -0; // 'all' = today onward within the snapshot window
 }
+/* ---------- REDESIGN (Nov 19, 2026, shipped as CCL v121; ported to Tillamook 2026-11-20 as tcl-v14): events as cards ----------
+   Travis asked for the Keep It Local pattern instead of the day-block
+   calendar: a mini-month (desktop) / swipeable day-pill strip (mobile)
+   for picking a day, then one frosted card per event — date badge,
+   title, when, place, source pill, and the ＋ Add calendar button
+   INSIDE the card (the old row layout let the button hang off the
+   card's right edge on phones). Same merged snapshot, same 16-row cap
+   + community exemption, same evcal keys — only the
+   presentation changed. */
+let cevDay = null;      // 'YYYY-MM-DD' picked in the mini-month / pill strip
+let cevOpen = false;    // "See more events" expanded
+const CEV_FIRST = 8;
+const CEV_MON3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const CEV_DOW3 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+function cevParts(dateStr) { const p = String(dateStr || '').split('-').map(Number); return { y: p[0], m: p[1], d: p[2] }; }
+function cevLongDate(dateStr) {
+  return new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' })
+    .format(new Date(dateStr + 'T12:00:00'));
+}
+function cevCard(ev, today) {
+  const p = cevParts(ev.date);
+  const dow = new Date(ev.date + 'T12:00:00').getDay();
+  let h = '<article class="cev-card" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
+  h += '<div class="cev-badge" aria-hidden="true"><span class="cev-mon">' + CEV_MON3[p.m - 1] + '</span>'
+    + '<span class="cev-daynum">' + p.d + '</span><span class="cev-dow">' + CEV_DOW3[dow] + '</span></div>';
+  h += '<div class="cev-main">';
+  h += '<h3 class="cev-title">' + (ev.url
+    ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>'
+    : esc(ev.title)) + '</h3>';
+  h += '<p class="cev-when">' + esc(cevLongDate(ev.date)) + (ev.time ? ' · ' + esc(ev.time) : '')
+    + (ev.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</p>';
+  if (ev.location) h += '<p class="cev-place">' + esc(ev.location) + '</p>';
+  if (ev.note) h += '<p class="cev-note">' + esc(ev.note) + '</p>';
+  if (ev.img) h += '<img class="cev-photo" src="' + esc(ev.img) + '" alt="' + esc(ev.title) + '" loading="lazy" decoding="async">';
+  h += '<div class="cev-actions">';
+  if (!evcalIsCancelled(ev)) {
+    h += '<button type="button" class="evcal-btn" data-evcal="' + esc(evcalKeyOf(ev))
+      + '" title="Add this event to your calendar">＋ Add</button>';
+  }
+  if (ev.source === 'Facebook') h += '<span class="event-fb-tag">Facebook</span>';
+  else if (ev.source) h += '<span class="cev-src">' + esc(ev.source) + '</span>';
+  h += '</div></div></article>';
+  return h;
+}
+function cevMiniMonth(baseList) {
+  const today = todayStrPT();
+  const tp = cevParts(today);
+  const y = tp.y, m = tp.m;
+  const evDays = {};
+  baseList.forEach(ev => { const p = cevParts(ev.date); if (p.y === y && p.m === m) evDays[p.d] = true; });
+  const first = new Date(y, m - 1, 1).getDay();
+  const days = new Date(y, m, 0).getDate();
+  const monthName = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' })
+    .format(new Date(y, m - 1, 1));
+  let h = '<div class="cev-mini-head">' + esc(monthName) + '</div><table class="cev-mini-cal"><thead><tr>';
+  ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].forEach(d => { h += '<th>' + d + '</th>'; });
+  h += '</tr></thead><tbody><tr>';
+  let cell = 0;
+  for (let i = 0; i < first; i++) { h += '<td></td>'; cell++; }
+  for (let d = 1; d <= days; d++) {
+    if (cell > 0 && cell % 7 === 0) h += '</tr><tr>';
+    const ds = y + '-' + String(m).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+    const has = !!evDays[d];
+    const cls = ((has ? ' has' : '') + (ds === today ? ' today' : '') + (cevDay === ds ? ' sel' : '')).trim();
+    h += '<td class="' + cls + '">' + (has
+      ? '<button type="button" data-cev-day="' + ds + '" aria-pressed="' + (cevDay === ds)
+        + '" aria-label="Events on ' + CEV_MON3[m - 1] + ' ' + d + '">' + d + '</button>'
+      : String(d)) + '</td>';
+    cell++;
+  }
+  while (cell % 7 !== 0) { h += '<td></td>'; cell++; }
+  h += '</tr></tbody></table>';
+  return h;
+}
+function cevPills(baseList) {
+  const today = todayStrPT();
+  const evDays = {};
+  baseList.forEach(ev => { evDays[ev.date] = true; });
+  const tp = cevParts(today);
+  let h = '';
+  for (let i = 0; i < 14; i++) {
+    const dt = new Date(tp.y, tp.m - 1, tp.d + i);
+    const ds = dt.getFullYear() + '-' + String(dt.getMonth() + 1).padStart(2, '0')
+      + '-' + String(dt.getDate()).padStart(2, '0');
+    h += '<button type="button" class="cev-pill' + (ds === today ? ' today' : '') + (cevDay === ds ? ' sel' : '')
+      + '" data-cev-day="' + ds + '" aria-pressed="' + (cevDay === ds)
+      + '" aria-label="Events on ' + esc(cevLongDate(ds)) + '">'
+      + '<span class="cev-pill-dow">' + CEV_DOW3[dt.getDay()] + '</span>'
+      + '<span class="cev-pill-num">' + dt.getDate() + '</span>'
+      + (evDays[ds] ? '<span class="cev-pill-dot" aria-hidden="true"></span>' : '') + '</button>';
+  }
+  return h;
+}
 function renderEvents() {
   const body = $('events-body');
   if (!eventsCache) return;
@@ -3055,32 +3178,44 @@ function renderEvents() {
   const evs = (snap.events || []).slice().sort((a, b) =>
     a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
-  const shown = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter)).slice(0, 16);
+  const inFilter = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter));
+  /* The 16-row cap keeps the card compact, but hand-picked community
+     events always render: they were added on purpose, and some (a
+     December fundraiser, a season-long campaign) sort past the cap. */
+  const shown = inFilter.slice(0, 16);
+  inFilter.slice(16).forEach(ev => { if (ev.community) shown.push(ev); });
+  shown.sort((a, b) => a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
+                      : (a.date < b.date ? -1 : 1));
   const today = todayStrPT();
+  /* Keep the add-to-calendar key map complete: the ＋ Add buttons are
+     rendered directly into the cards now, and the delegated click
+     handler in initEvCal resolves them through evcalByKey. */
+  evcalByKey = {};
+  (snap.events || []).forEach(ev => { evcalByKey[evcalKeyOf(ev)] = ev; });
   let html = '';
   if (shown.length) {
-    /* UI parity (2026-11-15): one card per day — the date is the day
-       card's header and the day's events sit inside it, separated.
-       (Columbia County Live's v88 structure, Travis's call: "the days
-       should be blocked together on the same card instead of hourly
-       cards.") */
-    const groups = [];
-    shown.forEach(ev => {
-      let g = groups[groups.length - 1];
-      if (!g || g.date !== ev.date) { g = { date: ev.date, rows: [] }; groups.push(g); }
-      g.rows.push(ev);
-    });
-    html = groups.map(g => {
-      const head = '<div class="event-date">' + esc(fmtDay(new Date(g.date + 'T12:00:00'))) + (g.date === today ? ' <span class="event-today-badge">Today</span>' : '') + '</div>';
-      const rows = g.rows.map(ev =>
-        '<div class="event-row"><span class="event-time">' + esc(ev.time || '') + '</span>'
-        + '<span class="event-title">' + (ev.url ? '<a href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + esc(ev.title) + '</a>' : esc(ev.title)) + '</span>'
-        + (ev.source === 'Facebook'
-          ? '<span class="event-fb-tag">Facebook</span>' + (ev.location ? '<span class="event-src">' + esc(ev.location) + '</span>' : '')
-          : '<span class="event-src">' + esc(ev.source || '') + '</span>') + '</div>'
-      ).join('');
-      return '<section class="event-day-card">' + head + rows + '</section>';
-    }).join('');
+    let list = shown;
+    if (cevDay) list = shown.filter(ev => ev.date === cevDay);
+    const collapsed = !cevDay && !cevOpen && list.length > CEV_FIRST;
+    const visible = collapsed ? list.slice(0, CEV_FIRST) : list;
+    html += '<div class="cev-wrap">';
+    html += '<div class="cev-mini">' + cevMiniMonth(shown) + '</div>';
+    html += '<div class="cev-side">';
+    html += '<div class="cev-pills" aria-label="Pick a day">' + cevPills(shown) + '</div>';
+    html += '<div class="cev-list-head">' + (cevDay
+      ? '<h3 class="cev-list-h">' + esc(cevLongDate(cevDay)) + '</h3>'
+        + '<button type="button" class="cev-reset" data-cev-reset="1">‹ Coming up</button>'
+      : '<h3 class="cev-list-h">What&rsquo;s coming up</h3>') + '</div>';
+    if (visible.length) html += visible.map(ev => cevCard(ev, today)).join('');
+    else html += '<p class="cev-none">Nothing listed for that day yet.</p>';
+    if (!cevDay && list.length > CEV_FIRST) {
+      html += '<div class="cev-more-wrap"><button type="button" class="cev-more" data-cev-more="1" aria-expanded="'
+        + cevOpen + '">' + (cevOpen
+          ? 'Show fewer events'
+          : 'See more events <span class="cev-more-n">(' + (list.length - CEV_FIRST) + ' more)</span>')
+        + '</button></div>';
+    }
+    html += '</div></div>';
   } else {
     html = '<p class="no-alerts">' + ({
       today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
@@ -3098,7 +3233,33 @@ function renderEvents() {
       : '📘 Plus public events from Facebook — the big ones; not every flyer gets listed there.') + '</p>';
   }
   body.innerHTML = html;
+  /* Keep the picked day's pill in view after a re-render. */
+  if (cevDay) {
+    const sel = body.querySelector('.cev-pill.sel');
+    if (sel && sel.scrollIntoView) { try { sel.scrollIntoView({ block: 'nearest', inline: 'center' }); } catch (e) { /* older browser */ } }
+  }
 }
+function cevResetView() { cevDay = null; cevOpen = true; renderEvents(); }
+function initCevNav() {
+  const body = $('events-body');
+  if (!body || body.dataset.cevNav) return;
+  body.dataset.cevNav = '1';
+  body.addEventListener('click', e => {
+    const t = e && e.target;
+    if (!t || typeof t.closest !== 'function') return;
+    const dayBtn = t.closest('[data-cev-day]');
+    if (dayBtn) {
+      const ds = dayBtn.getAttribute('data-cev-day');
+      cevDay = (cevDay === ds) ? null : ds;
+      cevOpen = false;
+      renderEvents();
+      return;
+    }
+    if (t.closest('[data-cev-reset]')) { cevDay = null; cevOpen = false; renderEvents(); return; }
+    if (t.closest('[data-cev-more]')) { cevOpen = !cevOpen; renderEvents(); }
+  });
+}
+initCevNav();
 function initEventFilters() {
   const wrap = $('event-filters');
   if (!wrap) return;
@@ -3121,6 +3282,8 @@ async function loadEvents() {
     eventsCache = snap;
     const fbSnap = await getFbEventsSnap();
     eventsCache.events = mergeFbInto(snap.events || [], fbSnap);
+    const cSnap = await getCommunityEventsSnap();
+    eventsCache.events = mergeCommunityInto(eventsCache.events, cSnap);
     renderEvents();
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Events snapshot unavailable right now.</p>';
@@ -3966,19 +4129,28 @@ function homeApplyBadges() {
   const body = $('events-body');
   if (!body) return;
   const want = homeTown ? homeTown.name : '';
-  const hasBadges = !!body.querySelector('.event-home-badge');
+  const hasBadges = !!body.querySelector('.cev-home-badge');
   if (body.dataset.homeBadged === want && hasBadges === !!want) return; // converged — observer-safe
-  body.querySelectorAll('.event-home-badge').forEach(el => el.remove());
-  body.querySelectorAll('.event-row-home').forEach(el => el.classList.remove('event-row-home'));
-  if (want) {
-    body.querySelectorAll('.event-row').forEach(row => {
-      const src = row.querySelector('.event-src');
-      if (src && src.textContent.indexOf(want) !== -1) {
-        row.classList.add('event-row-home');
-        const badge = document.createElement('span');
-        badge.className = 'event-home-badge';
-        badge.textContent = '📍 Your town';
-        row.appendChild(badge);
+  body.querySelectorAll('.cev-home-badge').forEach(el => el.remove());
+  body.querySelectorAll('.cev-card-home').forEach(el => el.classList.remove('cev-card-home'));
+  if (want && eventsCache && eventsCache.events) {
+    const byKey = {};
+    eventsCache.events.forEach(ev => { byKey[evcalKeyOf(ev)] = ev; });
+    body.querySelectorAll('.cev-card').forEach(card => {
+      const ev = byKey[card.getAttribute('data-evkey') || ''];
+      if (!ev) return;
+      /* Same match the old rows used: the town name in the event's
+         source (city calendars) or its location (Facebook events). */
+      const hay = (ev.source || '') + ' ' + (ev.location || '');
+      if (hay.indexOf(want) !== -1) {
+        card.classList.add('cev-card-home');
+        const slot = card.querySelector('.cev-actions');
+        if (slot) {
+          const badge = document.createElement('span');
+          badge.className = 'cev-home-badge event-home-badge';
+          badge.textContent = '📍 Your town';
+          slot.appendChild(badge);
+        }
       }
     });
   }
@@ -6111,16 +6283,12 @@ function finderGo(hit) {
     loadForecast(hit.town);
     finderJump($('forecast-card'));
   } else if (hit.kind === 'event') {
-    if (typeof currentEventFilter !== 'undefined' && currentEventFilter !== 'all') {
-      const allBtn = $('event-filters').querySelectorAll('.event-filter-btn')
-        .find(b => b.dataset.filter === 'all');
-      if (allBtn) allBtn.click();
-    }
+    if (typeof cevResetView === 'function') cevResetView();
     finderJump($('events-card'));
     setTimeout(() => {
-      const rows = $('events-body').querySelectorAll('.event-row');
-      for (const r of rows) {
-        const t = r.querySelector('.event-title');
+      const cards = $('events-body').querySelectorAll('.cev-card');
+      for (const r of cards) {
+        const t = r.querySelector('.cev-title');
         if (t && finderNorm(t.textContent) === finderNorm(hit.eventTitle)) { finderFlashEl(r, true); break; }
       }
     }, 500);
