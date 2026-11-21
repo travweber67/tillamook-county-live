@@ -3184,7 +3184,13 @@ function mergeFbInto(events, fbSnap) {
    calendar and Facebook-event entries win date+title collisions.
    Entries may carry a note (a details line under the row), an img
    (the event's flyer photo, shown under the row) and a community flag
-   the renderer uses to keep them visible past the 16-row cap. */
+   the renderer uses to keep them visible past the 16-row cap.
+   Entries may also carry featured / paid flags (Travis's events model,
+   Nov 21, 2026): in the Today scroller the order is featured first,
+   then free events, then paid events that did not buy featured; on the
+   calendar every event shows on its own date, chronological, and a
+   featured event just keeps its Featured tag there. Featured is $19
+   per event, set by hand when a payment lands. */
 let communityEventsSnapPromise = null;
 function getCommunityEventsSnap() {
   if (!communityEventsSnapPromise) {
@@ -3204,7 +3210,8 @@ function mergeCommunityInto(events, cSnap) {
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: ev.source || 'Facebook',
                url: ev.url || '', location: ev.location || '', note: ev.note || '',
-               img: ev.img || '', community: true });
+               img: ev.img || '', community: true,
+               featured: !!ev.featured, paid: !!ev.paid });
   });
   return out;
 }
@@ -3263,6 +3270,7 @@ function cevCard(ev, today) {
     h += '<button type="button" class="evcal-btn" data-evcal="' + esc(evcalKeyOf(ev))
       + '" title="Add this event to your calendar">＋ Add</button>';
   }
+  if (ev.featured) h += '<span class="event-featured-tag">Featured</span>';
   if (ev.source === 'Facebook') h += '<span class="event-fb-tag">Facebook</span>';
   else if (ev.source) h += '<span class="cev-src">' + esc(ev.source) + '</span>';
   h += '</div></div></article>';
@@ -9855,15 +9863,21 @@ function evsIsSpecial(ev) {
   return /free|giveaway|bazaar|boutique|market|tree lighting|gingerbread|parade|beach cleanup|photos with santa|breakfast with santa/i
     .test((ev.title || '') + ' ' + (ev.note || ''));
 }
+/* Scroller tiers (Travis's events model, Nov 21, 2026): featured
+   events first, then free events, then paid events that did not buy
+   featured. Unflagged events (county calendar, Facebook) ride in the
+   free tier; the paid flag is set on hand-added entries. */
+function evsTier(ev) { return ev.featured ? 0 : (ev.paid ? 2 : 1); }
 function evsCardHtml(ev, used) {
   const img = evsImgFor(ev, used);
   const key = esc(evcalKeyOf(ev));
   return '<a class="evs-card" href="#events-card" data-evkey="' + key + '">'
     + '<img class="evs-img" src="' + esc(img) + '" alt="" loading="lazy" decoding="async">'
     + '<span class="evs-body"><span class="evs-when">' + esc(evsWhen(ev))
-    + (evsIsSpecial(ev) ? '<span class="evs-tag">Special</span>' : '') + '</span>'
+    + (ev.featured ? '<span class="evs-tag evs-tag-featured">Featured</span>'
+       : evsIsSpecial(ev) ? '<span class="evs-tag">Special</span>' : '') + '</span>'
     + '<span class="evs-title">' + esc(ev.title || '') + '</span>'
-    + (ev.note ? '<span class="evs-loc">' + esc(ev.note) + '</span>' : '')
+    + (ev.note ? '<span class="evs-note">' + esc(ev.note) + '</span>' : '')
     + '<span class="evs-loc">' + esc(ev.location || ev.source || '') + '</span></span></a>';
 }
 function evsOpenEvent(key) {
@@ -9892,13 +9906,16 @@ function buildEventScroller() {
     seen.add(k);
     upcoming.push(ev);
   });
-  /* Specials first, then soonest — the CCL pick order. With only a
-     few events (Tillamook's data is thin) it shows exactly those:
+  /* Tier order (Travis's events model, Nov 21, 2026): featured
+     first, then free events, then paid events that did not buy
+     featured; soonest first inside each tier. With only a few
+     events (Tillamook's data is thin) it shows exactly those:
      no filler, no duplicates, and the section stays hidden when
      there is nothing coming up. */
   upcoming.sort((a, b) =>
-    ((evsIsSpecial(b) ? 1 : 0) - (evsIsSpecial(a) ? 1 : 0))
-    || (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+    (evsTier(a) - evsTier(b))
+    || (a.date < b.date ? -1 : a.date > b.date ? 1 : 0)
+    || (parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)));
   const picks = upcoming.slice(0, 10);
   if (!picks.length) { sec.hidden = true; return; }
   const used = new Set();
