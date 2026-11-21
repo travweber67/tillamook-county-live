@@ -4512,3 +4512,28 @@ body.tcl-rd .cev-card.kind-comm{border-left:4px solid #e07b2a}
 body.tcl-rd .cev-card.kind-muni{border-left:4px solid #3d648c}
 html[data-theme="dark"] body.tcl-rd .cev-card.kind-comm{border-left-color:#f2a94b}
 html[data-theme="dark"] body.tcl-rd .cev-card.kind-muni{border-left-color:#6f97bd}
+
+/* ---- V31. EDGE ARROWS — FINAL GUTTER DESIGN (Travis, 2026-11-21;
+   ported from Columbia County Live v144): the arrows leave the card
+   row entirely. On desktop the scroller wrap narrows by 54px a side
+   and the arrows sit in those gutters as big plain glyphs — no
+   circle, no button face — so cards scroll past BESIDE them and are
+   never covered. Applies to both scrollers (events + news), which
+   share .sc-wrap/.sc-edge. The V19-4 direction-aware show/hide and
+   the click wiring are unchanged; phones keep pure swipe. */
+@media (min-width:900px){
+  body.tcl-rd .sc-wrap{margin:0 54px}
+  body.tcl-rd .sc-edge{
+    width:48px;height:96px;border-radius:0;
+    background:none;border:none;box-shadow:none;
+    color:#b95e06;font-size:2.9rem;
+    text-shadow:0 1px 0 rgba(255,255,255,.85),0 0 12px rgba(255,255,255,.7);
+  }
+  body.tcl-rd .sc-edge-l{left:-54px}
+  body.tcl-rd .sc-edge-r{right:-54px}
+  body.tcl-rd .sc-edge:hover{background:none;color:#e85d04}
+}
+html[data-theme="dark"] body.tcl-rd .sc-edge{
+  background:none;color:#ffb066;
+  text-shadow:0 1px 3px rgba(0,0,0,.6),0 0 12px rgba(0,0,0,.4);
+}
