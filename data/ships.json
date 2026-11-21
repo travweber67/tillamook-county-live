@@ -1,76 +1,46 @@
 {
- "fetched_at": "2026-11-21T21:21:40Z",
+ "fetched_at": "2026-11-21T21:51:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28137,
-   "lon": -124.04672,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-21 21:22:03.490454544 +0000 UTC"
+   "mmsi": 367788590,
+   "lat": 46.18863,
+   "lon": -123.85525,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-21 21:52:12.303049034 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
-   "sog_kn": 0,
-   "cog": 60.6,
-   "heading": 169,
-   "updated": "2026-11-21 21:22:08.324986806 +0000 UTC"
+   "mmsi": 367384780,
+   "name": "CAROLYN DOROTHY",
+   "lat": 46.21088,
+   "lon": -123.77813,
+   "sog_kn": 0.3,
+   "cog": 162.4,
+   "heading": 61,
+   "updated": "2026-11-21 21:52:01.788845954 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.21154,
+   "lon": -123.77696,
+   "sog_kn": 0.1,
+   "cog": 74.8,
+   "heading": 72,
+   "updated": "2026-11-21 21:51:57.943822924 +0000 UTC"
   },
   {
    "mmsi": 368084380,
    "name": "FATE HUNTER",
-   "lat": 46.18803,
-   "lon": -123.85823,
+   "lat": 46.18801,
+   "lon": -123.85818,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 161,
    "heading": 511,
-   "updated": "2026-11-21 21:22:24.158591873 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16784,
-   "lon": -123.91438,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 21:22:12.306600314 +0000 UTC"
-  },
-  {
-   "mmsi": 368327020,
-   "name": "GRACEE B",
-   "lat": 46.2708,
-   "lon": -123.94662,
-   "sog_kn": 0.2,
-   "cog": 266.1,
-   "heading": 511,
-   "updated": "2026-11-21 21:22:06.230412263 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16869,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 334.1,
-   "heading": 97,
-   "updated": "2026-11-21 21:22:02.529815022 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16809,
-   "lon": -123.9143,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-21 21:22:18.542774315 +0000 UTC"
+   "updated": "2026-11-21 21:52:24.460335412 +0000 UTC"
   }
  ]
 }

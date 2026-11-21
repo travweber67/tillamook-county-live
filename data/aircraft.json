@@ -1,87 +1,47 @@
 {
- "fetched_at": "2026-11-21T21:21:40Z",
+ "fetched_at": "2026-11-21T21:51:41Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "899087",
-   "callsign": "EVA004",
-   "type": "B789",
-   "alt_ft": 39000,
-   "gs_kn": 486.5,
-   "track": 98.63,
-   "lat": 45.318283,
-   "lon": -124.731118
+   "hex": "a59b5e",
+   "callsign": "UAL2416",
+   "type": "A320",
+   "alt_ft": 37000,
+   "gs_kn": 407.1,
+   "track": 178.73,
+   "lat": 45.265255,
+   "lon": -123.159552
   },
   {
-   "hex": "a9f2c6",
-   "callsign": "CKS442",
-   "type": "B744",
-   "alt_ft": 38000,
-   "gs_kn": 533.7,
-   "track": 347.01,
-   "lat": 45.911214,
-   "lon": -123.807884
+   "hex": "a83569",
+   "callsign": "QXE2052",
+   "type": "E75L",
+   "alt_ft": 31000,
+   "gs_kn": 381.2,
+   "track": 178.2,
+   "lat": 45.601734,
+   "lon": -123.147743
   },
   {
-   "hex": "a83d91",
-   "callsign": "N63YH",
-   "type": "S22T",
-   "alt_ft": 11025,
-   "gs_kn": 118.9,
-   "track": 194.62,
-   "lat": 45.013686,
-   "lon": -123.104821
+   "hex": "ad3344",
+   "callsign": "N95KW",
+   "type": "P46T",
+   "alt_ft": 23000,
+   "gs_kn": 280.3,
+   "track": 354.47,
+   "lat": 45.551132,
+   "lon": -122.916756
   },
   {
-   "hex": "a06d88",
-   "callsign": "N12683",
+   "hex": "a6a5e7",
+   "callsign": "N5274V",
    "type": "C172",
-   "alt_ft": 1000,
-   "gs_kn": 77.4,
-   "track": 208.55,
-   "lat": 45.42453,
-   "lon": -122.974352
-  },
-  {
-   "hex": "a8b5ad",
-   "callsign": "QXE2434",
-   "type": "E75L",
-   "alt_ft": 3175,
-   "gs_kn": 216.9,
-   "track": 33.91,
-   "lat": 45.66323,
-   "lon": -122.917992
-  },
-  {
-   "hex": "a149c1",
-   "callsign": "SKW3378",
-   "type": "E75L",
-   "alt_ft": 4000,
-   "gs_kn": 207.0,
-   "track": 301.77,
-   "lat": 45.600617,
-   "lon": -122.875832
-  },
-  {
-   "hex": "a4b7d7",
-   "callsign": "ASA235",
-   "type": "B739",
-   "alt_ft": 3000,
-   "gs_kn": 173.7,
-   "track": 118.93,
-   "lat": 45.674423,
-   "lon": -122.825608
-  },
-  {
-   "hex": "a5c4e2",
-   "callsign": "ASA1461",
-   "type": "B739",
-   "alt_ft": 4150,
-   "gs_kn": 240.9,
-   "track": 339.08,
-   "lat": 45.536407,
-   "lon": -122.801056
+   "alt_ft": 2525,
+   "gs_kn": 109.9,
+   "track": 338.1,
+   "lat": 45.228944,
+   "lon": -122.914034
   }
  ]
 }
