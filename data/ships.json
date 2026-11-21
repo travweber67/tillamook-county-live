@@ -1,96 +1,94 @@
 {
- "fetched_at": "2026-11-21T22:51:42Z",
+ "fetched_at": "2026-11-21T23:21:42Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493007,
-   "name": "CG47207",
-   "lat": 46.28132,
-   "lon": -124.04696,
-   "sog_kn": 0.1,
+   "mmsi": 367788590,
+   "lat": 46.18864,
+   "lon": -123.85525,
+   "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-21 22:52:15.402814059 +0000 UTC"
+   "updated": "2026-11-21 23:22:12.193073797 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.20858,
-   "lon": -123.77451,
-   "sog_kn": 1.4,
-   "cog": 235.6,
-   "heading": 42,
-   "updated": "2026-11-21 22:52:12.365441591 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16838,
-   "lon": -123.91837,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-21 22:52:23.224541151 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16845,
-   "lon": -123.91406,
-   "sog_kn": 0,
-   "cog": 0,
+   "mmsi": 368327020,
+   "lat": 46.27078,
+   "lon": -123.94665,
+   "sog_kn": 0.2,
+   "cog": 288.9,
    "heading": 511,
-   "updated": "2026-11-21 22:52:04.679931876 +0000 UTC"
+   "updated": "2026-11-21 23:22:11.590931052 +0000 UTC"
   },
   {
-   "mmsi": 538011145,
-   "name": "FORTUNE BREEZE",
-   "lat": 46.21109,
-   "lon": -123.77732,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04671,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-21 23:21:58.545666266 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28132,
+   "lon": -124.04675,
    "sog_kn": 0,
-   "cog": 145.9,
-   "heading": 61,
-   "updated": "2026-11-21 22:52:21.92850586 +0000 UTC"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.2024,
-   "lon": -123.79882,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-21 22:52:09.874917836 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16813,
-   "lon": -123.91426,
-   "sog_kn": 0,
-   "cog": 10.5,
+   "cog": 191.1,
    "heading": 511,
-   "updated": "2026-11-21 22:51:58.407748907 +0000 UTC"
+   "updated": "2026-11-21 23:22:02.90334033 +0000 UTC"
   },
   {
-   "mmsi": 538090732,
-   "name": "NORDIC MERCHANTS",
-   "lat": 46.12778,
-   "lon": -124.44763,
-   "sog_kn": 12.6,
-   "cog": 66.5,
-   "heading": 75,
-   "updated": "2026-11-21 22:52:00.15636894 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.25135,
+   "lon": -123.96767,
+   "sog_kn": 5.6,
+   "cog": 101.5,
+   "heading": 100,
+   "updated": "2026-11-21 23:21:53.69226243 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19989,
-   "lon": -123.76056,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91405,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-21 22:52:13.573488199 +0000 UTC"
+   "cog": 315,
+   "heading": 97,
+   "updated": "2026-11-21 23:21:51.758091612 +0000 UTC"
+  },
+  {
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 46.21979,
+   "lon": -124.27702,
+   "sog_kn": 6.5,
+   "cog": 124.7,
+   "heading": 141,
+   "updated": "2026-11-21 23:21:57.879272875 +0000 UTC"
+  },
+  {
+   "mmsi": 366951000,
+   "name": "USCGC ELM",
+   "lat": 46.20748,
+   "lon": -123.76903,
+   "sog_kn": 0,
+   "cog": 221,
+   "heading": 131,
+   "updated": "2026-11-21 23:22:17.124565517 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86174,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "SEATTLE",
+   "updated": "2026-11-21 23:21:56.407096042 +0000 UTC"
   }
  ]
 }
