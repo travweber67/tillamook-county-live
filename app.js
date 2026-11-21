@@ -289,7 +289,7 @@ function initMap() {
   // Toggleable live layers
   quakeLayer = L.layerGroup().addTo(map);
   aircraftLayer = L.layerGroup().addTo(map);
-  shipLayer = L.layerGroup();
+  shipLayer = L.layerGroup().addTo(map);
   salmonLayer = L.layerGroup();
   fireLayer = L.layerGroup().addTo(map);
   issLayer = L.layerGroup().addTo(map);
@@ -304,6 +304,7 @@ function initMap() {
     '🏍️ OHV ride areas': ohvLayer,
     '🥾 OHV trails': trailLayer,
     '✈️ Aircraft (ADS-B)': aircraftLayer,
+    '🚢 Ships (AIS)': shipLayer,
     '🔥 Wildfire perimeters': fireLayer,
     '🛰️ Space station (ISS)': issLayer,
     '🫨 Earthquakes': quakeLayer
@@ -1699,6 +1700,28 @@ function heatModel(fish, dayOffset) {
     }
   };
 }
+/* Columbia River reference tables for the salmon-run module ported
+   from Columbia County Live (river-mile polyline + town river miles).
+   They used to live inside the retired river-ETA block; the salmon
+   code below still reads them, so they stay. */
+const RIVER_LINE = [
+  [46.2528, -124.0265, 0], [46.2459, -123.8250, 6], [46.1875, -123.8063, 12],
+  [46.1328, -123.6100, 23], [46.1599, -123.4313, 29], [46.1064, -123.1841, 40],
+  [46.1494, -122.8806, 53], [46.1769, -122.9556, 62], [46.2542, -122.9139, 68],
+  [46.1399, -122.5489, 80], [45.9625, -122.4352, 90], [45.8569, -122.4083, 96],
+  [45.7042, -122.3306, 105], [45.5742, -122.4056, 112], [45.5611, -122.0069, 127],
+  [45.7014, -121.5194, 145], [45.6931, -121.2903, 160], [45.6056, -121.1806, 173],
+  [45.4639, -120.8736, 189], [45.6972, -120.4708, 204], [45.7167, -119.9986, 218]
+];
+const TOWN_RIVER = {
+  'St. Helens': { lat: 45.8647, lon: -122.8064, rm: 86 },
+  'Columbia City': { lat: 45.8950, lon: -122.8103, rm: 82 },
+  'Rainier': { lat: 46.0897, lon: -122.9361, rm: 68 },
+  'Scappoose': { lat: 45.7547, lon: -122.8769, rm: 90 },
+  'Clatskanie': { lat: 46.1056, lon: -123.2036, rm: 60 },
+  'Vernonia': { lat: 45.8597, lon: -123.1900, rm: 62 },
+  'Warren': { lat: 45.8194, lon: -122.8494, rm: 89 }
+};
 function verdictHTML(fish, model) {
   const townName = (homeTown && homeTown.name) || 'St. Helens';
   const tref = TOWN_RIVER[townName] || TOWN_RIVER['St. Helens'];
@@ -2840,144 +2863,67 @@ async function loadSteelhead() {
   }
 }
 
-/* ---------- ships "passing soon" (build batch 2026-11-04, ADD 4 / R2) ----------
-   MarineTraffic's redesign is hated for burying the simple near-me list;
-   this IS that list: vessels sorted by when they pass the visitor's home
-   town. The ETA projects each AIS position onto a Columbia River
-   reference line (river miles), reads direction off course vs. the
-   channel bearing, and divides the along-river distance by the
-   along-river speed. Honesty rules: no ETA when the position report is
-   stale (>20 min), the along-river speed is under a knot, or the ship is
-   heading away — the row says so instead of inventing a time. */
-// [lat, lon, river mile], Astoria -> Portland (RM from the USACE channel survey, approx.)
-const RIVER_LINE = [
-  [46.245, -123.795, 14], [46.190, -123.440, 44], [46.105, -123.250, 56],
-  [46.090, -122.954, 68], [45.965, -122.795, 80], [45.860, -122.820, 86],
-  [45.700, -122.800, 95], [45.620, -122.674, 106]
-];
-// Where each home town meets the river: river mile + the name to print.
-const TOWN_RIVER = {
-  'St. Helens': { rm: 86, at: 'St. Helens' },
-  'Columbia City': { rm: 84, at: 'Columbia City' },
-  'Warren': { rm: 88, at: 'Warren' },
-  'Scappoose': { rm: 90, at: 'Scappoose' },
-  'Rainier': { rm: 68, at: 'Rainier' },
-  'Clatskanie': { rm: 57, at: 'Clatskanie' },
-  'Vernonia': { rm: 86, at: 'St. Helens (nearest river point)' }
-};
-function riverProject(lat, lon) {
-  let best = null;
-  for (let i = 0; i < RIVER_LINE.length - 1; i++) {
-    const A = RIVER_LINE[i], B = RIVER_LINE[i + 1];
-    const dx = B[1] - A[1], dy = B[0] - A[0];
-    const L2 = dx * dx + dy * dy;
-    let t = L2 ? ((lon - A[1]) * dx + (lat - A[0]) * dy) / L2 : 0;
-    t = Math.max(0, Math.min(1, t));
-    const px = A[1] + t * dx, py = A[0] + t * dy;
-    const d2 = (lon - px) * (lon - px) + (lat - py) * (lat - py);
-    if (!best || d2 < best.d2) {
-      best = { d2, rm: A[2] + t * (B[2] - A[2]),
-               bearing: (Math.atan2(dx, dy) * 180 / Math.PI + 360) % 360 };
-    }
-  }
-  return best;
-}
+/* ---------- ships: live AIS vessel positions on the coast map ----------
+   Positions are a fetcher snapshot (data/ships.json): the fetcher
+   listens to AISStream's free-tier websocket server-side (their
+   stream refuses browser connections, and the API key never ships
+   to the site) and snapshots what it hears inside a generous
+   north-coast box — Columbia mouth to Newport, roughly 100 NM
+   offshore — deliberately NOT clipped to the county line (Travis,
+   2026-11-21: ships off the coast a ways belong on the map too).
+   The legend line stamps when positions were collected and grays
+   when the snapshot is stale or the collector reported trouble; a
+   failed collection says so plainly instead of inventing traffic —
+   the Coast Conditions card's honesty rules, applied to ships. */
 function parseAisTime(s) {
   const m = String(s || '').match(/(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2}):(\d{2})/);
   return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +m[6])) : null;
 }
-function shipEtaInfo(s, townRef, snapMs) {
-  const out = { dir: null, etaMin: null, moving: false, rm: null, toward: false };
-  if (s.lat == null || s.lon == null) return out;
-  const proj = riverProject(s.lat, s.lon);
-  if (!proj) return out;
-  out.rm = proj.rm;
-  out.moving = s.sog_kn != null && s.sog_kn >= 0.5;
-  if (!out.moving || s.cog == null) return out;
-  const dot = Math.cos((s.cog - proj.bearing) * Math.PI / 180);
-  out.dir = dot > 0.35 ? 'up' : dot < -0.35 ? 'down' : null;
-  if (!out.dir) return out;
-  const dRm = townRef.rm - proj.rm;
-  out.toward = (out.dir === 'up' && dRm > 0.5) || (out.dir === 'down' && dRm < -0.5);
-  const reported = parseAisTime(s.updated);
-  const ageMin = reported ? (snapMs - reported.getTime()) / 60000 : null;
-  const alongKn = Math.abs(dot) * s.sog_kn;
-  if (out.toward && alongKn >= 1 && ageMin != null && ageMin <= 20) {
-    const eta = Math.abs(dRm) * 0.868976 / alongKn * 60; // river miles are statute
-    if (eta <= 12 * 60) out.etaMin = eta;
-  }
-  return out;
-}
-function renderShipEtas(ships, fetchedAt) {
-  const townName = (homeTown && homeTown.name) || 'St. Helens';
-  const townRef = TOWN_RIVER[townName] || TOWN_RIVER['St. Helens'];
-  const snapMs = fetchedAt ? new Date(fetchedAt).getTime() : Date.now();
-  const snapAgeMin = Math.max(0, (Date.now() - snapMs) / 60000);
-  const rows = ships.map(s => ({ s, info: shipEtaInfo(s, townRef, snapMs) }));
-  const rank = r => r.info.etaMin != null ? 0 : r.info.moving ? 1 : 2;
-  rows.sort((a, b) => {
-    const d = rank(a) - rank(b);
-    if (d) return d;
-    if (a.info.etaMin != null && b.info.etaMin != null) return a.info.etaMin - b.info.etaMin;
-    const da = a.info.rm == null ? 999 : Math.abs(a.info.rm - townRef.rm);
-    const db = b.info.rm == null ? 999 : Math.abs(b.info.rm - townRef.rm);
-    return da - db;
-  });
-  const head = snapAgeMin > 20
-    ? '<p class="incident-scope">This snapshot\'s positions are ' + Math.round(snapAgeMin)
-      + ' min old — too old for honest ETAs, so none are shown.</p>'
-    : '';
-  return head + rows.map(({ s, info }) => {
-    const dirTxt = info.dir === 'up' ? '▲ Upriver (toward Portland)'
-      : info.dir === 'down' ? '▼ Downriver (toward Astoria)'
-      : info.moving ? 'Underway' : 'Moored or anchored';
-    let etaTxt = '';
-    if (info.etaMin != null) {
-      etaTxt = info.etaMin < 2
-        ? 'Passing ' + townRef.at + ' right about now'
-        : 'Passes ' + townRef.at + ' ≈ ' + fmtTime(new Date(Date.now() + info.etaMin * 60000))
-          + ' — ' + fmtAway(Math.round(info.etaMin)) + ' at its current reported speed';
-    } else if (info.moving && info.dir) {
-      etaTxt = info.toward
-        ? 'Heading toward ' + townRef.at + ' — no ETA shown (position too old or speed too low to call)'
-        : 'Heading away from ' + townRef.at + ' for now';
-    }
-    return '<div class="ship-row"><div><div class="river-name">🚢 ' + esc(s.name || ('MMSI ' + s.mmsi)) + '</div>'
-      + '<div class="river-sub">' + esc(dirTxt) + (etaTxt ? ' · ' + esc(etaTxt) : '') + '</div>'
-      + '<div class="river-sub">' + (s.destination ? 'Bound for ' + esc(s.destination) : 'Destination not broadcast')
-      + '</div></div><div class="river-nums"><div class="big">' + (s.sog_kn != null ? num(s.sog_kn, 1) + ' kt' : '—') + '</div>'
-      + '<div class="river-sub">' + (s.cog != null ? 'course ' + num(s.cog, 0) + '°' : '') + '</div></div></div>';
-  }).join('');
-}
-
-/* ---------- snapshot: ships ---------- */
 async function loadShips() {
-  return; // TCL v1: no Columbia River ship traffic — module retired
-
-  const body = $('ships-body');
+  const note = $('ships-updated');
   try {
     const snap = await getSnapshot('ships.json');
-    setSnapUpdated('ships-updated', snap.fetched_at);
     const ships = snap.ships || [];
     if (shipLayer) {
       shipLayer.clearLayers();
       ships.forEach(s => {
         if (s.lat == null || s.lon == null) return;
+        const rep = parseAisTime(s.updated);
         L.marker([s.lat, s.lon], { icon: emojiIcon('🚢', 22) }).addTo(shipLayer)
           .bindPopup('<strong>' + esc(s.name || ('MMSI ' + s.mmsi)) + '</strong>'
-            + (s.sog_kn != null ? '<br>' + num(s.sog_kn, 1) + ' kt' : '')
-            + (s.destination ? '<br>Bound for ' + esc(s.destination) : ''));
+            + (s.type ? '<br>' + esc(s.type) : '')
+            + (s.sog_kn != null
+                ? '<br>' + num(s.sog_kn, 1) + ' knots'
+                  + (s.cog != null ? ' · course ' + num(s.cog, 0) + '°' : '')
+                : '')
+            + (s.destination ? '<br>Bound for ' + esc(s.destination) : '')
+            + (rep ? '<br>Reported ' + fmtTime(rep) : ''));
       });
     }
-    if (snap.status === 'ok' && ships.length) {
-      body.innerHTML = renderShipEtas(ships, snap.fetched_at);
-    } else if (snap.status === 'ok') {
-      body.innerHTML = '<p class="no-alerts">No vessels broadcasting AIS inside the county box at the last collection — the river has quiet stretches, especially at night.</p>';
-    } else {
-      body.innerHTML = '<p class="status-note">🛠️ River traffic is wired end-to-end — the map layer, panel, and collector are built. Ship positions come from AISStream\'s free tier, which needs a free API key added to our fetcher (a person has to do the 2-minute signup; we don\'t create accounts silently). The moment that key lands, live Columbia River ships appear here and on the map.</p>';
+    if (note) {
+      const d = new Date(snap.fetched_at);
+      const ageMin = isNaN(d) ? null
+        : Math.max(0, (Date.now() - d.getTime()) / 60000);
+      if (snap.status === 'ok' && ageMin != null && ageMin <= 45) {
+        note.textContent = 'positions collected ' + fmtDayTime(d) + ' · '
+          + ships.length + (ships.length === 1 ? ' vessel' : ' vessels')
+          + ' in range';
+        note.classList.remove('stale-note');
+      } else if (snap.status === 'ok') {
+        note.textContent = 'positions collected '
+          + (isNaN(d) ? '—' : fmtDayTime(d))
+          + ' — getting old, treat as approximate';
+        note.classList.add('stale-note');
+      } else {
+        note.textContent = snap.note || 'Ship positions unavailable right now.';
+        note.classList.add('stale-note');
+      }
     }
   } catch (e) {
-    body.innerHTML = '<p class="fallback">⚠️ River traffic snapshot unavailable right now.</p>';
+    if (note) {
+      note.textContent = 'Ship positions unavailable right now.';
+      note.classList.add('stale-note');
+    }
   }
 }
 
@@ -3847,6 +3793,7 @@ loadRivers();
 loadQuakes();
 loadFires();
 loadAircraft();
+loadShips();
 loadISS();
 loadRoads();
 loadRouteAhead();
@@ -3858,6 +3805,7 @@ setInterval(loadRivers, 10 * 60 * 1000);
 setInterval(loadQuakes, 30 * 60 * 1000);
 setInterval(loadFires, 15 * 60 * 1000);
 setInterval(loadAircraft, 45 * 1000);
+setInterval(loadShips, 5 * 60 * 1000);
 setInterval(loadISS, 15 * 1000);
 setInterval(loadRoads, 10 * 60 * 1000);
 setInterval(loadRouteAhead, 30 * 60 * 1000);
@@ -4203,7 +4151,7 @@ function renderHome() {
       renderHomePicker();
       homeApplyBadges();
       loadGlance(); // restore the county-wide next-event tile
-      loadShips(); // ETAs fall back to the St. Helens river point
+      loadShips(); // refresh ship positions for the new home town
     });
     homeRefreshCalNote();
     townFillForecast(homeTown);
@@ -4330,7 +4278,7 @@ function homeApplyAll(flyMap) {
   if (flyMap && map) { try { map.flyTo([homeTown.lat, homeTown.lon], 12); } catch (e) { /* map is decorative here */ } }
   homeApplyBadges();
   homeGlancePass();
-  loadShips(); // the passing-soon ETAs are computed at the home town
+  loadShips(); // refresh ship positions for the new home town
 }
 function initHome() {
   homeLoadPref();
@@ -6766,7 +6714,7 @@ const LANG_ES = {
   legfire: '<i class="dot dot-fire"></i> Incendio forestal',
   legohv: '<i class="dot dot-ohv"></i> Zona de OHV',
   legtrail: '<i class="trail-swatch"></i> Sendero de OHV',
-  legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los incendios y la estación espacial.',
+  legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los barcos, los incendios y la estación espacial.',
   roadsh2: '🚗 US-101, OR-6 y carreteras',
   incidentsh3: 'Incidentes en la carretera — ODOT TripCheck',
   myrouteh3: '📷 Mi ruta — las cámaras de tu viaje, en orden de manejo',

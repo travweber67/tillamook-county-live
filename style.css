@@ -560,6 +560,7 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .dot-fire{background:#ea580c}
 .dot-ohv{background:#ea580c;border:1.5px solid #7c2d12}
 .legend-note{flex-basis:100%;font-size:.75rem}
+.stale-note{color:var(--muted);font-style:italic}
 .status-note{
   color:var(--muted);font-size:.88rem;background:#f2f7fb;
   border:1px dashed var(--border);border-radius:12px;padding:10px 12px;margin:0;
