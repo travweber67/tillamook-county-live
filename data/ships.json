@@ -1,94 +1,65 @@
 {
- "fetched_at": "2026-11-21T23:21:42Z",
+ "fetched_at": "2026-11-21T23:51:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 303679000,
+   "lat": 46.16937,
+   "lon": -123.91362,
+   "sog_kn": 0,
+   "cog": 311.8,
+   "heading": 511,
+   "updated": "2026-11-21 23:52:17.088467667 +0000 UTC"
+  },
+  {
+   "mmsi": 367531260,
+   "lat": 46.16871,
+   "lon": -123.91395,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-21 23:52:08.868184873 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.14445,
+   "lon": -124.22061,
+   "sog_kn": 7.2,
+   "cog": 343.1,
+   "heading": 14,
+   "updated": "2026-11-21 23:51:56.596709681 +0000 UTC"
+  },
+  {
+   "mmsi": 367161930,
+   "name": "PACIFIC CONQUEST",
+   "lat": 46.16889,
+   "lon": -123.91378,
+   "sog_kn": 0.1,
+   "cog": 99.9,
+   "heading": 511,
+   "updated": "2026-11-21 23:51:54.931659483 +0000 UTC"
+  },
+  {
    "mmsi": 367788590,
-   "lat": 46.18864,
+   "name": "PROTECTOR",
+   "lat": 46.18863,
    "lon": -123.85525,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-21 23:22:12.193073797 +0000 UTC"
+   "updated": "2026-11-21 23:52:14.708036148 +0000 UTC"
   },
   {
-   "mmsi": 368327020,
-   "lat": 46.27078,
-   "lon": -123.94665,
-   "sog_kn": 0.2,
-   "cog": 288.9,
-   "heading": 511,
-   "updated": "2026-11-21 23:22:11.590931052 +0000 UTC"
-  },
-  {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-21 23:21:58.545666266 +0000 UTC"
-  },
-  {
-   "mmsi": 366999922,
-   "name": "CG47284",
-   "lat": 46.28132,
-   "lon": -124.04675,
-   "sog_kn": 0,
-   "cog": 191.1,
-   "heading": 511,
-   "updated": "2026-11-21 23:22:02.90334033 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.25135,
-   "lon": -123.96767,
-   "sog_kn": 5.6,
-   "cog": 101.5,
-   "heading": 100,
-   "updated": "2026-11-21 23:21:53.69226243 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91405,
-   "sog_kn": 0,
-   "cog": 315,
-   "heading": 97,
-   "updated": "2026-11-21 23:21:51.758091612 +0000 UTC"
-  },
-  {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 46.21979,
-   "lon": -124.27702,
-   "sog_kn": 6.5,
-   "cog": 124.7,
-   "heading": 141,
-   "updated": "2026-11-21 23:21:57.879272875 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20748,
-   "lon": -123.76903,
-   "sog_kn": 0,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.25883,
+   "lon": -123.96918,
+   "sog_kn": 4.7,
    "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-21 23:22:17.124565517 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86174,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "SEATTLE",
-   "updated": "2026-11-21 23:21:56.407096042 +0000 UTC"
+   "heading": 218,
+   "updated": "2026-11-21 23:52:14.253309333 +0000 UTC"
   }
  ]
 }
