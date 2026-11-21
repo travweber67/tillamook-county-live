@@ -1,77 +1,77 @@
 {
- "fetched_at": "2026-11-21T19:51:39Z",
+ "fetched_at": "2026-11-21T20:21:39Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.28121,
+   "lon": -124.04686,
+   "sog_kn": 0,
+   "cog": 86.4,
+   "heading": 119,
+   "updated": "2026-11-21 20:22:01.353328701 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28132,
+   "lon": -124.04675,
+   "sog_kn": 0,
+   "cog": 191.1,
+   "heading": 511,
+   "updated": "2026-11-21 20:22:03.03210284 +0000 UTC"
+  },
+  {
+   "mmsi": 369702000,
+   "name": "COASTAL RELIANCE",
+   "lat": 46.25249,
+   "lon": -124.09716,
+   "sog_kn": 11.8,
+   "cog": 236.1,
+   "heading": 224,
+   "updated": "2026-11-21 20:22:17.503187112 +0000 UTC"
+  },
   {
    "mmsi": 367529030,
    "name": "CONNOR FOSS",
    "lat": 46.19049,
    "lon": -123.82971,
    "sog_kn": 0,
-   "cog": 259.6,
-   "heading": 167,
-   "updated": "2026-11-21 19:52:16.362945723 +0000 UTC"
+   "cog": 230,
+   "heading": 168,
+   "updated": "2026-11-21 20:21:56.407063955 +0000 UTC"
   },
   {
-   "mmsi": 366855000,
-   "name": "FLORIDA",
-   "lat": 46.21304,
-   "lon": -123.77853,
-   "type_code": 80,
-   "type": "Tanker",
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-21 19:52:15.916115816 +0000 UTC"
-  },
-  {
-   "mmsi": 538011145,
-   "name": "FORTUNE BREEZE",
-   "lat": 46.1922,
-   "lon": -123.87077,
-   "sog_kn": 6.8,
-   "cog": 85.3,
-   "heading": 84,
-   "updated": "2026-11-21 19:51:37.002384514 +0000 UTC"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20374,
-   "lon": -123.79532,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-21 19:52:09.872975646 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19993,
-   "lon": -123.7605,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16847,
+   "lon": -123.9141,
    "sog_kn": 0,
-   "cog": 337.4,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-21 19:51:35.853141059 +0000 UTC"
+   "updated": "2026-11-21 20:22:03.183211666 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19642,
-   "lon": -123.7971,
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16784,
+   "lon": -123.9144,
    "sog_kn": 0,
-   "cog": 171,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-21 19:51:42.307373371 +0000 UTC"
+   "updated": "2026-11-21 20:22:11.108572196 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86174,
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.1656,
+   "lon": -123.92199,
    "sog_kn": 0,
-   "cog": 286.9,
-   "heading": 307,
-   "updated": "2026-11-21 19:52:08.647916969 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-21 20:22:16.392146482 +0000 UTC"
   }
  ]
 }
