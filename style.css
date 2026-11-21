@@ -935,6 +935,7 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
 }
 .finder-box:focus-within{border-color:var(--accent)}
 .finder-icon{font-size:1.15rem;line-height:1}
+.finder-icon{display:inline-flex}.finder-icon img{width:23px;height:23px;border-radius:50%;display:block}
 #finder-input{
   flex:1;min-width:0;background:none;border:none;outline:none;
   color:var(--text);font:inherit;font-size:1.05rem;
@@ -2330,6 +2331,7 @@ html[data-theme="dark"] .drawer-actions{border-top-color:rgba(244,241,228,.16)}
 html[data-theme="dark"] .drawer-action{background:rgba(244,241,228,.06);color:#eef0e2;border-color:rgba(244,241,228,.18)}
 .drawer-action:hover{border-color:var(--warm)}
 .drawer-action-ico{font-size:1.1rem;line-height:1;flex:none}
+.drawer-view span[aria-hidden="true"]{display:inline-flex}.drawer-view span[aria-hidden="true"] img,.getapp-ico img,.drawer-action-ico img{width:22px;height:22px;border-radius:50%;display:block}
 .drawer-action-img{width:24px;height:24px;border-radius:50%;flex:none}
 /* Refinements round (Travis, Nov 11): the three utility controls —
    Get the app / Display / Light — as pill buttons inside the drawer,

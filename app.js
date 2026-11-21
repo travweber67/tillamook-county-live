@@ -371,7 +371,7 @@ function initMapTools() {
   if (nearBtn) {
     nearBtn.addEventListener('click', () => {
       if (!map || !navigator.geolocation) return;
-      nearBtn.textContent = '📍 Locating…';
+      nearBtn.textContent = 'Locating…';
       navigator.geolocation.getCurrentPosition(pos => {
         const lat = pos.coords.latitude, lon = pos.coords.longitude;
         if (meMarker) meMarker.remove();
@@ -2180,7 +2180,7 @@ function renderDayPlan() {
       : 'the forecast still loading, so this call leans on the'
         + ' tide alone for now';
   }
-  const why = '<p class="quad-why">🎣 <strong>' + quadDayLabel(quadDay)
+  const why = '<p class="quad-why"><strong>' + quadDayLabel(quadDay)
     + ': ' + QUAD_CORNERS[call].name + '.</strong> The river has '
     + tidePhrase + ' at Walker Island, with ' + wxPhrase + ' — '
     + QUAD_CORNERS[call].line + '</p>';
@@ -3584,7 +3584,7 @@ function initShare() {
         try {
           await navigator.clipboard.writeText(payload.url);
           shareBtn.textContent = '✅ Link copied — paste it anywhere';
-          setTimeout(() => { shareBtn.textContent = '📤 Share this page'; }, 3500);
+          setTimeout(() => { shareBtn.textContent = 'Share this page'; }, 3500);
         } catch (e) { /* clipboard unavailable */ }
       }
     });
@@ -3919,7 +3919,7 @@ async function initSince() {
   } catch (e) { /* signal unavailable this visit */ }
 
   if (!prev) {
-    body.innerHTML = '<p class="since-welcome">👋 <strong>First visit?</strong> This spot keeps watch between your visits. Come back later and it will tell you what changed while you were away — new weather alerts, river movement, and new events on the calendar.</p>';
+    body.innerHTML = '<p class="since-welcome"><strong>First visit?</strong> This spot keeps watch between your visits. Come back later and it will tell you what changed while you were away — new weather alerts, river movement, and new events on the calendar.</p>';
     card.hidden = false;
   } else if (cur.alerts || cur.riverFt != null || cur.evKeys) {
     const when = fmtDayTime(new Date(prev.t));
@@ -4176,7 +4176,7 @@ function homeSavePref() {
    hit the temporal dead zone and throw. */
 function homeLang() { try { return langCur; } catch (e) { return 'en'; } }
 function homeTownLabelHTML() {
-  return (homeLang() === 'es' ? '🏠 Tu pueblo: ' : '🏠 Your town: ')
+  return (homeLang() === 'es' ? 'Tu pueblo: ' : 'Your town: ')
     + '<strong>' + esc(homeTown.name) + '</strong>';
 }
 function homeEventsLabel() {
@@ -4201,7 +4201,7 @@ function renderHome() {
   if (homeTown) {
     body.innerHTML = '<p class="home-status"><span id="home-status-label">' + homeTownLabelHTML() + '</span> '
       + '<span id="home-cal-note"></span></p>'
-      + '<p class="town-line" id="town-forecast">🌤️ Reading today\'s forecast for ' + esc(homeTown.name) + '…</p>'
+      + '<p class="town-line" id="town-forecast">Reading today\'s forecast for ' + esc(homeTown.name) + '…</p>'
       + '<p class="town-line" id="town-river">🌊 Reading the river gauges…</p>'
       + '<div class="home-actions">'
       + '<button class="share-btn primary" id="home-events-btn" type="button">' + homeEventsLabel() + '</button>'
@@ -4886,7 +4886,7 @@ function voiceSetBtn(on) {
   const btn = $('briefing-listen-btn');
   if (!btn) return;
   btn.classList.toggle('speaking', on);
-  btn.textContent = on ? '⏹ Stop the briefing' : '🔊 Hear the briefing';
+  btn.textContent = on ? 'Stop the briefing' : 'Hear the briefing';
   if (btn.setAttribute) btn.setAttribute('aria-pressed', on ? 'true' : 'false');
 }
 function voiceStop() {
@@ -5305,7 +5305,7 @@ function renderCrab() {
     } else win = L.noWindow;
     return '<div class="crab-day r-' + d.band + (d.idx === 0 ? ' crab-today' : '') + '">'
       + '<div class="crab-day-main"><div class="crab-day-name">' + esc(name) + tag + '</div>'
-      + '<div class="crab-window">🦀 ' + win + '</div>'
+      + '<div class="crab-window">' + win + '</div>'
       + '<div class="crab-why">' + esc(crabWhy(d)) + '</div></div>'
       + '<div class="crab-score"><span class="crab-pill">' + L[d.band] + '</span>'
       + '<div class="crab-meter"><span style="width:' + d.total + '%"></span></div>'
@@ -5519,7 +5519,7 @@ function renderPasses() {
     let count = '';
     if (vis.start <= now) count = ' — <strong>it\'s overhead right now, look up!</strong>';
     else if (vis.start - now < 3 * 3600e3) count = ' — starts <strong>' + passAway(vis.start - now) + '</strong>';
-    h += '<p class="iss-pass-hero">👀 <strong>Next pass you can actually see: '
+    h += '<p class="iss-pass-hero"><strong>Next pass you can actually see: '
       + esc(fmtDayTime(new Date(vis.start))) + '</strong>' + count + '<br>'
       + 'Rises in the ' + passCompass(vis.riseAz) + ' at ' + fmtTime(new Date(vis.start))
       + ', climbs to <strong>' + Math.round(vis.peakEl) + '° up</strong> in the ' + passCompass(vis.peakAz)
@@ -6206,7 +6206,7 @@ function watchRenderState() {
   const state = $('watch-state'), status = $('watch-status'), btn = $('watch-btn');
   if (!state || !status || !btn) return;
   const watching = !!watchTimer;
-  state.textContent = watching ? '🔔 Watching' : 'Not watching';
+  state.textContent = watching ? 'Watching' : 'Not watching';
   btn.textContent = watching ? '⏹ Stop watching' : '🔔 Start watching';
   let notifLine;
   if (!('Notification' in window)) notifLine = 'This browser doesn\'t offer notifications to web pages, so the watch reports in the log' + (watchVoiceOn() ? ' and out loud' : '') + ' only.';
@@ -6674,22 +6674,22 @@ const LANG_ES = {
   __title: 'Tillamook County Live — Carreteras, ríos, mareas y clima para el condado de Tillamook, Oregón',
   tabtoday: 'Hoy',
   helpview: 'Ayuda comunitaria',
-  helph2: '🤝 Ayuda comunitaria',
+  helph2: 'Ayuda comunitaria',
   helpintro: 'Comida gratuita, líneas de crisis, ayuda con el alquiler, las facturas de servicios y los pañales, apoyo para familias, veteranos y recuperación — la ayuda que este condado ya ofrece, reunida en un solo lugar. Todo aquí es gratuito, con una excepción honesta: el centro de salud cobra según los ingresos, y su anuncio lo dice. Toca cualquier número de teléfono para llamar. Cada anuncio se verificó contra el sitio web propio del servicio.',
   help911: 'En una emergencia, llama al 911.',
-  helpsafe: '📞 Línea de crisis de SAFE — (503) 397-6161 · 24/7',
+  helpsafe: 'Línea de crisis de SAFE — (503) 397-6161 · 24/7',
   ebth3: 'Tarjeta EBT de Oregon — la app ebtEDGE',
   ebtdesc: 'La app oficial para las tarjetas EBT Oregon Trail: revisa tus saldos de comida y efectivo, mira tus depósitos y cambia tu PIN. El DHS de Oregon señala solo a ebtEDGE — las demás apps de EBT no son oficiales, no les confíes tu tarjeta.',
   ebtplay: 'Descargarla en Google Play',
   ebtapple: 'Descargarla en el App Store',
   ebtweb: 'Sitio web de ebtEDGE',
   ebtphone: 'Saldo por teléfono, sin necesidad de smartphone',
-  helpmh: '📞 Crisis de salud mental — (503) 782-4499 · 24/7',
-  helpfoodh: '🍞 Comida — despensas y comidas gratuitas',
-  helpcrisish: '🛟 Crisis y seguridad',
-  helpmoneyh: '🏠 Ayuda con dinero y vivienda',
-  helpfamilyh: '👶 Familia y salud',
-  helpvetsh: '🎖️ Veteranos, ayuda legal y recuperación',
+  helpmh: 'Crisis de salud mental — (503) 782-4499 · 24/7',
+  helpfoodh: 'Comida — despensas y comidas gratuitas',
+  helpcrisish: 'Crisis y seguridad',
+  helpmoneyh: 'Ayuda con dinero y vivienda',
+  helpfamilyh: 'Familia y salud',
+  helpvetsh: 'Veteranos, ayuda legal y recuperación',
   dwhelpfood: 'Comida gratuita',
   dwhelpcrisis: 'Crisis y seguridad',
   dwhelpmoney: 'Ayuda con dinero y vivienda',
@@ -6717,16 +6717,16 @@ const LANG_ES = {
   fs4p: 'Uno de solo cuatro lugares fundadores, para siempre — tu nombre y logo en la página de Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
   fs4cta: 'Reclama el lugar 4 &rarr;',
   fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
-  coasth2: '🌊 Condiciones de la costa',
+  coasth2: 'Condiciones de la costa',
   coastbar: 'Barra de la bahía de Tillamook · Garibaldi',
   coastsurf: 'Oleaje alto',
   coastflood: 'Inundaciones',
   coastnote: "La fila de la barra es el reporte propio de la Guardia Costera para la bahía de Tillamook, publicado por el Servicio Meteorológico Nacional cada cuatro horas aproximadamente — <a href=\"https://www.weather.gov/pqr/AllBars\" target=\"_blank\" rel=\"noopener\">el reporte completo de la barra</a>. Las barras de Netarts y Nehalem no tienen reporte oficial, así que no se muestra condición para ellas. El oleaje y las inundaciones vienen de las alertas en vivo del Servicio Meteorológico Nacional para el condado y su costa.",
-  driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
+  driveh2: 'Tu viaje — ¿cuánto dura el manejo?',
   drivefrom: 'Desde',
   driveto: 'Hasta',
   drivenote: 'Tiempo típico — sin tráfico en vivo. El tiempo viene del servicio gratuito de rutas OSRM, recorriendo la ruta a las velocidades señaladas en condiciones normales — un cierre, un deslave o un choque en la OR-6 o la US-101 cambiarán el viaje real.',
-  aircrafth2: '✈️ Aviones sobre el condado',
+  aircrafth2: 'Aviones sobre el condado',
   aircraftnote: 'Aviones: receptores ADS-B de la comunidad vía adsb.fi. Se actualiza automáticamente.',
   __finderPh: 'Busca lo que sea — prueba «ferry», «marea alta», «hora de cuentos», un pueblo…',
   tagline: 'Carreteras · Ríos · Mareas · El clima — Condado de Tillamook, Oregón',
@@ -6734,11 +6734,11 @@ const LANG_ES = {
   herotitle: 'Todo lo que pasa en el condado, <em>en una sola mirada en vivo.</em>',
   heropromise: 'La US-101 y la OR-6, los niveles de los ríos Wilson, Trask, Nehalem y Nestucca, las mareas de las bahías, las alertas del clima y los eventos de esta semana — reunidos de fuentes públicas oficiales y actualizados todo el día.',
   striproads: '<span class="pulse-dot" aria-hidden="true"></span>Carreteras y puente',
-  striprivers: '🌊 Niveles del río',
-  stripalerts: '⚠️ Alertas del clima',
-  stripsky: '✈️ El cielo y la estación espacial',
-  stripferry: '⛴️ El ferry Oscar B',
-  stripevents: '📅 Eventos',
+  striprivers: 'Niveles del río',
+  stripalerts: 'Alertas del clima',
+  stripsky: 'El cielo y la estación espacial',
+  stripferry: 'El ferry Oscar B',
+  stripevents: 'Eventos',
   stickyriver: 'Río',
   stickyferry: 'Bahía y bar',
   stickyevents: 'Eventos',
@@ -6753,23 +6753,23 @@ const LANG_ES = {
   glriversub: 'Medidor de Port Westward · USGS',
   glevents: 'Próximo evento',
   finderhint: 'Una sola búsqueda en todas las tarjetas de esta página, los nueve pueblos y los calendarios de eventos — toca un resultado y la página te lleva directo.',
-  homeh2: '📍 Tu pueblo',
-  sinceh2: '🧭 Mientras no estabas',
-  watchh2: '🔔 La Vigilancia del Condado',
+  homeh2: 'Tu pueblo',
+  sinceh2: 'Mientras no estabas',
+  watchh2: 'La Vigilancia del Condado',
   watchnote: 'Todo lo demás en esta página espera a que vengas a mirar. La vigilancia no. Deja esta página abierta — en una pestaña, instalada en tu pantalla de inicio o en la pared — y revisa el Servicio Meteorológico Nacional y la lista de incidentes de ODOT cada dos minutos. Si se publica una alerta nueva o cambia la lista de carreteras mientras no estás mirando, te avisa: una notificación en este dispositivo donde el navegador las ofrece, una línea en el registro de abajo y — si marcas la casilla — dice las alertas nuevas en voz alta.',
-  watchbtn: '🔔 Empezar a vigilar',
+  watchbtn: 'Empezar a vigilar',
   watchlimits: 'Límites honestos: la vigilancia solo funciona mientras esta página está abierta en este dispositivo — cerrar la pestaña la detiene, y un teléfono puede pausar una pestaña en segundo plano. Es una ayuda, nunca un reemplazo del Servicio Meteorológico Nacional, la Radio Meteorológica de NOAA ni las alertas de emergencia del condado de Tillamook.',
-  briefh2: '📋 El Resumen del Condado',
+  briefh2: 'El Resumen del Condado',
   briefnote: 'Las respuestas de hoy en un solo lugar — armadas desde los paneles en vivo de esta página y marcadas con la hora en que se preparó. Cópialas como una nota para un mensaje familiar, el grupo del vecindario, donde se reúna el condado. ¿Vas a manejar? Toca <strong>🔊 Escuchar el resumen</strong> y tu teléfono te lo lee en voz alta — primero las alertas del clima.',
-  briefcopy: '📋 Copiar el resumen',
-  briefshare: '📤 Compartir como texto',
-  brieflisten: '🔊 Escuchar el resumen',
-  planh2: '🌙 Esta noche y mañana',
+  briefcopy: 'Copiar el resumen',
+  briefshare: 'Compartir como texto',
+  brieflisten: 'Escuchar el resumen',
+  planh2: 'Esta noche y mañana',
   plannote: 'La revisión de la noche — lo que hay que dejar listo antes de dormir: el clima de esta noche, el manejo de mañana por la mañana, las mareas de mañana en la bahía y lo que hay mañana. Armado de las mismas fuentes oficiales que el resto de esta página.',
-  almanach2: '🌅 El Almanaque del Condado',
+  almanach2: 'El Almanaque del Condado',
   almanacnote: 'La salida y la puesta del sol, el crepúsculo y la luna se calculan en esta página desde las posiciones del sol y la luna — no hay ninguna fuente detrás que pueda quedarse vieja, y como todo almanaque impreso son buenos con unos minutos de margen. Las horas son para el pueblo nombrado en el panel; elige un pueblo de residencia arriba y el almanaque lo sigue.',
-  mapnear: '📍 Cerca de mí',
-  mapfull: '⛶ Pantalla completa',
+  mapnear: 'Cerca de mí',
+  mapfull: 'Pantalla completa',
   legtown: '<i class="dot dot-town"></i> Pueblo',
   leggauge: '<i class="dot dot-gauge"></i> Medidor del río',
   legquake: '<i class="dot dot-quake"></i> Terremoto (30 días)',
@@ -6780,21 +6780,21 @@ const LANG_ES = {
   legohv: '<i class="dot dot-ohv"></i> Zona de OHV',
   legtrail: '<i class="trail-swatch"></i> Sendero de OHV',
   legnote: 'Usa el botón de capas (arriba a la derecha del mapa) para activar el radar, los aviones, los barcos, los incendios y la estación espacial.',
-  roadsh2: '🚗 US-101, OR-6 y carreteras',
+  roadsh2: 'US-101, OR-6 y carreteras',
   incidentsh3: 'Incidentes en la carretera — ODOT TripCheck',
-  myrouteh3: '📷 Mi ruta — las cámaras de tu viaje, en orden de manejo',
-  routeaheadh2: '🧭 Ruta por delante — el pronóstico del corredor',
+  myrouteh3: 'Mi ruta — las cámaras de tu viaje, en orden de manejo',
+  routeaheadh2: 'Ruta por delante — el pronóstico del corredor',
   routeaheadnote: 'Las próximas horas en los dos corredores del condado — la US-101 por la costa y la OR-6 por el cañón del río Wilson — para que el hielo, la niebla o el agua de tormenta aparezcan aquí antes que en el parabrisas. Pronóstico por hora del Servicio Meteorológico Nacional.',
-  bendh2: '🏔️ El viaje a Bend — condiciones en los pasos',
+  bendh2: 'El viaje a Bend — condiciones en los pasos',
   bendnote: 'Fuera del condado, incluido porque el viaje empieza aquí: las dos rutas que usa este condado para ir a Bend — la US-26 sobre el monte Hood por Government Camp, y la US-20 por el paso Santiam. Cámaras e incidentes de ODOT TripCheck; pronósticos de los pasos del Servicio Meteorológico Nacional. La pregunta que responde esta tarjeta: ¿hay nieve en el paso?',
   camerash3: 'Cámaras de carretera',
   roadsnote: "Los datos de carreteras los recoge nuestro recolector de las fuentes públicas de ODOT TripCheck cada pocos minutos y se muestran con su hora de captura — nunca fingen ser más frescos de lo que son. Detalle oficial completo: <a href=\"https://www.tripcheck.com/\" target=\"_blank\" rel=\"noopener\">TripCheck</a>. ¿Viajas a Portland? Un cierre de la OR-6 significa un desvío largo — la US-26 al norte o la OR-18 al sur — revisa antes de salir, no después.",
-  shipsh2: '🚢 Tráfico del río Columbia',
+  shipsh2: 'Tráfico del río Columbia',
   shipsnote: 'Barcos ordenados por cuándo pasarán por tu pueblo de residencia — St. Helens hasta que elijas uno en «Hazlo tuyo» en la pestaña Hoy. Los tiempos estimados usan la velocidad actual reportada por cada barco, así que un barco que reduce la velocidad llega más tarde. Posiciones en vivo de AISStream, actualizadas más o menos cada cinco minutos.',
-  ferryh2: '⛴️ El ferry Oscar B — Westport, OR ↔ Cathlamet, WA',
-  ferryminih2: '⛴️ El ferry Oscar B — de un vistazo',
+  ferryh2: 'El ferry Oscar B — Westport, OR ↔ Cathlamet, WA',
+  ferryminih2: 'El ferry Oscar B — de un vistazo',
   ferryminnote: 'Dónde está el barco sale de su horario impreso: el cruce toma unos 12 minutos y el ferry no tiene rastreador en vivo.',
-  ferryplanh3: '🧭 No pierdas el barco — ¿a qué hora tienes que salir?',
+  ferryplanh3: 'No pierdas el barco — ¿a qué hora tienes que salir?',
   fpdiror: 'Hacia Washington',
   fpdirwa: 'De regreso a Oregón',
   fpnote: 'Los tiempos de manejo son típicos para la US-30 / OR-47 en condiciones normales — tu viaje variará, y el barco no espera. El plan añade 10 minutos de margen en el muelle para estacionar, pagar (solo efectivo o cheque) y cargar.',
@@ -6815,20 +6815,20 @@ const LANG_ES = {
   evcalnote: '¿Vas a ir? Toca <strong>＋ Agregar</strong> en cualquier evento y llega a tu propio calendario — con la hora convertida y la página oficial adjunta — para que tu teléfono te lo recuerde el mismo día.',
   eventsnote: "Recogido por nuestro recolector de los calendarios oficiales del condado y las ciudades. Fuentes oficiales: <a href=\"https://www.tillamookcounty.gov/\" target=\"_blank\" rel=\"noopener\">Condado de Tillamook</a> · <a href=\"https://www.tillamookor.gov/\" target=\"_blank\" rel=\"noopener\">Ciudad de Tillamook</a>",
   eventadd: '¿Tiene un negocio o grupo local? Agregue su evento →',
-  alertsh2: '⚠️ Alertas del clima',
+  alertsh2: 'Alertas del clima',
   alertslink: 'Servicio Meteorológico Nacional — oficina de Portland →',
-  forecasth2: '🌦️ Pronóstico',
+  forecasth2: 'Pronóstico',
   skyh2: 'En el cielo ahora mismo',
   skyall: 'Todo el tráfico',
   skylow: 'Bajo y local',
   skyground: 'En tierra',
   skynote: 'Aviones: receptores ADS-B de la comunidad vía adsb.fi. Posición de la estación espacial: wheretheiss.at. Las horas de paso se calculan en esta página desde la órbita publicada de la estación. Todo se actualiza automáticamente.',
-  riversh2: '🌊 Niveles del río',
+  riversh2: 'Niveles del río',
   riversnote: 'Las alertas de inundación, cuando se emiten, aparecen en Alertas del clima, arriba. Las lecturas son datos provisionales del USGS.',
-  tidesh2: '🌊 Mareas de las bahías',
+  tidesh2: 'Mareas de las bahías',
   tidesnote: 'Las tres bahías del condado suben y bajan con el océano dos veces al día. Para la rampa de botes, el muelle, la orilla para cangrejos o una hora de pesca, aquí está el próximo cambio de marea en las tres estaciones de NOAA del condado.',
   tidesnote2: 'Las <em>predicciones</em> de marea de NOAA Tides &amp; Currents (Garibaldi 9437540, bahía de Netarts 9437262, Nehalem 9437908), en pies sobre el nivel medio de la bajamar. El viento y el caudal de los ríos empujan el agua real fuera de la predicción — un río en crecida sube más la bahía — así que toma las horas como el plan, no como una promesa. La bahía de Nestucca no tiene estación propia de predicción de NOAA; el embarcadero de Pacific City sigue el patrón de Garibaldi.',
-  crabh2: '🦀 Índice de cangrejos — Bahía de Tillamook',
+  crabh2: 'Índice de cangrejos — Bahía de Tillamook',
   crabnote: '¿Cuándo conviene echar las trampas esta semana? Este índice puntúa cada uno de los próximos siete días para pescar cangrejos desde un bote en la bahía de Tillamook — la ventana de aguas en calma, el viento, la lluvia, cuánta agua dulce empujan los cinco ríos de la bahía y la temporada — y nombra las mejores horas de cada día. En aguas en calma los cangrejos caminan y se alimentan (es la guía del propio ODFW); el plan clásico de la bahía es poner las trampas una hora antes de la pleamar en calma y pescar durante el cambio de marea. Puntuado en Garibaldi, el puerto de referencia de la bahía.',
   crabrulesh: 'Las reglas, en corto (ODFW)',
   crabseason: '<strong>Temporada:</strong> la bahía de Tillamook está abierta para el cangrejo Dungeness todo el año, las 24 horas del día. El cierre del 16 de octubre al 30 de noviembre es solo para aguas del océano — no aplica dentro de la bahía.',
@@ -6840,47 +6840,47 @@ const LANG_ES = {
   fishh2: 'Conteos de peces — las presas',
   fishnote: 'Cada salmón que va hacia el alto Columbia pasa por la presa Bonneville, donde el Cuerpo de Ingenieros los cuenta en las escalas de peces. El día publicado más reciente suele ir uno o dos días detrás del calendario — los conteos se registran en video y se revisan antes de publicarse.',
   fishnote2: 'Conteos: Cuerpo de Ingenieros del Ejército de EE. UU., publicados por el Fish Passage Center y Columbia Basin Research (DART). Un cero es una respuesta real, no un vacío — significa que los contadores no vieron ninguno ese día.',
-  trackerh2: '🎣 Rastreador de salmones',
+  trackerh2: 'Rastreador de salmones',
   methodh3: 'El plan del día — pesca con la corriente',
   methodnote: 'Con corriente fuerte es hora del plunking y del ancla; cuando la corriente muere, es hora del curricán (trolling). Elige tu método y el plan resalta tus horarios.',
-  steelh2: '🎣 Steelhead — los ríos pequeños',
+  steelh2: 'Steelhead — los ríos pequeños',
   steelnote: '¿Es hoy un buen día para pescar steelhead? No hay conteos para estos arroyos a mitad de temporada — las trampas de los criaderos se cuentan, pero los números se publican después — así que esto juzga el día, no los peces: temporada, caudal, claridad del agua, frío y clima. Toca un río para ver el desglose completo.',
   steelhours: 'Regla general de Oregón: la pesca de steelhead es legal desde una hora antes del amanecer hasta una hora después del atardecer — el reglamento de cada río puede añadir excepciones, así que revisa el tuyo.',
-  quakesh2: '🫨 Terremotos — últimos 30 días',
-  firesh2: '🔥 Incendios forestales',
+  quakesh2: 'Terremotos — últimos 30 días',
+  firesh2: 'Incendios forestales',
   firesnote: 'Datos oficiales de incidentes del Centro Nacional Interagencial de Incendios (WFIGS). Para avisos de evacuación, sigue siempre a la Oficina de Manejo de Emergencias del Condado de Tillamook e InciWeb.',
-  airh2: '🌫️ Aire y humo',
+  airh2: 'Aire y humo',
   airnote: 'La otra cosa invisible sobre el condado — lo que lleva el aire que respiras. Humo de estufas de leña en las noches quietas de invierno, humo de incendios en verano. Aquí está el Índice de Calidad del Aire para el pueblo de la tarjeta de Pronóstico de arriba, y hacia dónde dice el modelo que va.',
   airnote2: "Una estimación modelada del modelo atmosférico de Open-Meteo (Copernicus CAMS) — no hay un monitor oficial de calidad del aire en el condado, así que léelo como una buena guía, no como un medidor en un poste. Lecturas y alertas oficiales: <a href=\"https://www.airnow.gov/\" target=\"_blank\" rel=\"noopener\">AirNow</a>.",
   schoolsh2: 'Escuelas — Cierres y retrasos',
   schoolsnote: 'En las mañanas de tormenta o inundación, los distritos deciden temprano y publican primero en sus propios sitios y aplicaciones. Esta tarjeta es un tablero actualizado a mano: con clima tranquilo está en espera y muestra dónde publica cada distrito; en una mañana difícil lleva el reporte de ese día para cada distrito, verificado contra la publicación del propio distrito antes de subirlo aquí.',
   schoolsnote2: 'No existe ninguna fuente automática de cierres para estos distritos, así que este tablero se actualiza a mano en las mañanas de tormenta — y el sitio del propio distrito es siempre la última palabra para tu familia.',
-  abouth2: '🌲 Acerca de Tillamook County Live',
+  abouth2: 'Acerca de Tillamook County Live',
   aboutp1: 'Tillamook County Live es una sola mirada en vivo al condado de Tillamook, Oregón — la US-101 y la OR-6, los ríos Wilson, Trask, Nehalem y Nestucca con sus niveles de inundación, las mareas de las tres bahías del condado, el reporte de la barra de la bahía de Tillamook, las alertas del clima y lo que hay en el condado — reunido de fuentes públicas oficiales y actualizado todo el día. Lo construye y lo opera <strong>Nomad Development Group</strong>, un pequeño estudio de Oregón, con datos públicos gratuitos y alojamiento gratuito — así es como una página como esta puede existir para un condado de 32,000 personas. Es la hermana menor de Columbia County Live, un condado al norte.',
   aboutp2: '<strong>Por qué es gratis — y qué se queda gratis.</strong> El centro de esta página son datos de seguridad pública: alertas del clima, niveles de los ríos y de inundación, condiciones de las carreteras y de la barra. Ese centro es gratis, no lleva patrocinadores, y así se queda — nunca estará detrás de un muro de pago. Esa promesa es la razón de ser de esta página. La sección de Ayuda comunitaria mantiene esa misma promesa: la ayuda gratuita del condado — despensas de comida, líneas de crisis, ayuda con el alquiler y las facturas de servicios, apoyo para familias y veteranos — reunida en un solo lugar, gratis para todo el que la necesite.',
   aboutsupporth: 'Cómo se paga esta página',
   aboutp3: 'Ahora mismo, con honestidad: no se paga — corre con las mismas fuentes públicas gratuitas y el mismo alojamiento gratuito que su hermana, y con el tiempo de su operador. Todavía no hay programa de patrocinadores en esta página. Cuando el apoyo local abra, se anunciará aquí primero, y nunca tocará el centro de seguridad gratuito de arriba.',
-  aboutbtn: '✉️ Escribe al sitio',
+  aboutbtn: 'Escribe al sitio',
   aboutnote: '¿Ves un número equivocado, un horario viejo o un anuncio que debería estar aquí? Ese botón abre un correo para la persona que opera esta página. Las correcciones del condado son lo que mantiene confiable una página como esta — escribir no cuesta nada y no compromete a nada.',
-  freshh2: '🕐 ¿Qué tan fresca es esta página?',
+  freshh2: '¿Qué tan fresca es esta página?',
   freshspan: 'las edades se actualizan cada 30 s',
   freshnote: 'Cada número aquí nombra su fuente y su edad. Verde es fresco, ámbar está envejeciendo, rojo significa tratar el panel como viejo y revisar la fuente oficial. Si una fuente se queda callada, este tablero lo muestra en vez de esconderlo.',
   shareh2: 'Ten Tillamook County Live a la mano',
   sharep: 'Gratis, sin anuncios, sin registro. Ponla en tu pantalla de inicio como una app, envíasela a un vecino que maneja por la OR-6 — o apoya una tableta en el mostrador y toca <strong>Pantalla en pared</strong>: las respuestas del condado, grandes y rotando, hechas para la pantalla que ya está encendida.',
-  sharebtn: '📤 Compartir esta página',
-  installbtn: '📱 Agregar a pantalla de inicio',
-  wallbtn: '📺 Pantalla en pared',
-  saverbtn: '🖥️ Protector de pantalla',
-  saverh2: '📸 El protector de pantalla de la comunidad',
+  sharebtn: 'Compartir esta página',
+  installbtn: 'Agregar a pantalla de inicio',
+  wallbtn: 'Pantalla en pared',
+  saverbtn: 'Protector de pantalla',
+  saverh2: 'El protector de pantalla de la comunidad',
   saverp1: 'La pantalla en pared rota las respuestas del condado. El protector de pantalla es el cuarto más tranquilo: fotografías del condado, cambiando despacio, con el reloj y solo las respuestas que tú fijas — hecho para quedarse encendido en una tableta de cocina, un mostrador o el televisor de una sala de espera. Se actualiza solo desde las mismas fuentes en vivo que esta página, nunca pide nada, y se va con un solo toque.',
-  saverstart: '🖥️ Iniciar el protector de pantalla',
+  saverstart: 'Iniciar el protector de pantalla',
   savertip: '¿Lo vas a poner en un televisor o en una pantalla de oficina? Abre esta página con <strong>?display=1</strong> al final de la dirección y el protector de pantalla inicia solo — guarda esa dirección en el navegador del televisor y aparecerá sin más.',
   saverpinsh: 'Tus respuestas en la pantalla',
   saverspinsp: 'Fija las respuestas que te importan con los botones de aquí abajo. El protector de pantalla muestra tus fijadas, lo bastante grandes para leerse desde el otro lado del cuarto. Las fijadas se guardan solo en este aparato, y puedes cambiarlas cuando quieras.',
   savershareh: 'Comparte tu foto del condado',
   saversharep: 'Las fotografías del protector de pantalla vienen del propio condado — y la tuya podría ser una de ellas. Envía una foto que hayas tomado en cualquier lugar del condado de Tillamook y, una vez aprobada, se une al conjunto por el que pasan todos los protectores de pantalla, con tu nombre. Gratis, siempre.',
   saverways: 'Una manera fácil, sin cuenta y sin iniciar sesión: envía tu foto por correo a nomadov3rland@gmail.com con tu nombre y dónde la tomaste. Eso es todo.',
-  saveremailbtn: '📧 Envía tu foto por correo',
+  saveremailbtn: 'Envía tu foto por correo',
   saverformbtn: 'Usa el formulario rápido de fotos &rarr;',
   saverreview: 'Una puerta honesta: cada foto la mira una persona antes de unirse al conjunto — el lugar, la imagen y el permiso. Nada aparece automáticamente, y una foto que no es tuya para compartir nunca se publica.',
   dirh2: 'Servicios locales — los pequeños',
@@ -6934,14 +6934,14 @@ const LANG_ES = {
   footercreditsmeta: 'Los datos públicos detrás de esta página y los fotógrafos detrás de sus fotos',
   footerdata: 'Datos: Servicio Meteorológico Nacional (Portland) · Servicio Geológico de EE. UU. (USGS, medidores de ríos) · pronósticos fluviales NWPS de NOAA · NOAA Tides &amp; Currents (mareas de las bahías) · NOAA nowCOAST (radar) · NIFC WFIGS (incendios forestales) · colaboradores de adsb.fi (aviones, ODbL) · wheretheiss.at (posición de la EEI) · CelesTrak / NORAD (órbita de la EEI, para predicciones de paso) · Open-Meteo / Copernicus CAMS (modelo de calidad del aire) · colaboradores de OpenStreetMap. Los datos de captura (carreteras, cámaras, eventos) los recoge un pequeño programa recolector de los operadores oficiales — ODOT TripCheck y los calendarios del condado y las ciudades — y se etiquetan con la hora en que se recogieron. Condiciones de la barra: reportes de barras del Servicio Meteorológico Nacional en Portland y el Puerto de Garibaldi. El modelo de capas de rastreo en vivo está inspirado en God&rsquo;s Eye View (código abierto, de Bilawal Sidhu), cuyo DATA_SOURCES.md nos señaló varias de estas fuentes públicas.',
   footerdisc: 'Esta página reúne datos públicos por conveniencia. Antes de viajar con clima severo o agua alta, confirma las condiciones con las fuentes oficiales enlazadas arriba.',
-  pinsh2: '📌 Tus fijadas',
+  pinsh2: 'Tus fijadas',
   pinsclear: 'Desfijar todo',
   installh2: 'Pon Tillamook County Live en tu pantalla de inicio',
   installp: 'Instalada, se abre en pantalla completa como una app — sin barra de direcciones, con su propio ícono y el condado a un toque. Gratis, y se sigue actualizando todo el día.',
-  installcardbtn: '📱 Instalar la app',
+  installcardbtn: 'Instalar la app',
   getappbtn: 'Obtén la app',
-  getapptitle: '📱 Pon Tillamook County Live en tu pantalla de inicio',
-  getappinstall: '📱 Instalar ahora — un toque',
+  getapptitle: 'Pon Tillamook County Live en tu pantalla de inicio',
+  getappinstall: 'Instalar ahora — un toque',
   gastep0fb: '<strong>Primero — estás dentro del navegador de Facebook, y ese no puede agregar apps a la pantalla de inicio.</strong> Toca los <strong>tres puntos</strong> en la esquina superior y elige <strong>Abrir en el navegador externo</strong> o <strong>Abrir en Chrome</strong>. Luego sigue los pasos de abajo.',
   gastep0ios: '<strong>Primero — abre esta página en Safari.</strong> Estás dentro del navegador de otra app, y agregar desde ahí parece que funcionó, pero el ícono nunca aparece — es una regla de Apple, no un error tuyo. Toca el ícono de compartir y elige <strong>Abrir en Safari</strong>, luego sigue los pasos de abajo.',
   gaiosh: 'En iPhone y iPad (en Safari)',
@@ -6960,9 +6960,9 @@ const LANG_ES = {
   gaother: '¿Otro teléfono o navegador? Mira las demás instrucciones',
   ganosee: '<strong>¿No ves el ícono?</strong> Revisa tu última página de inicio — los íconos nuevos suelen caer ahí. En iPhone también puedes deslizar hasta la Biblioteca de apps y buscar «Tillamook».',
   signpostline: 'Eso es todo por Hoy — el resto del condado está a un toque:',
-  signposttravel: '🌊 Bahía y carreteras en Viajes',
-  signpostoutdoors: '🎣 Aire libre',
-  signpostmore: '📅 Eventos y más',
+  signposttravel: 'Bahía y carreteras en Viajes',
+  signpostoutdoors: 'Aire libre',
+  signpostmore: 'Eventos y más',
   dwdrive: 'Tu viaje — tiempos de manejo',
   dwcoast: 'Condiciones de la costa',
   dwgo: 'Antes de salir',
@@ -6991,8 +6991,8 @@ const LANG_ES = {
   dwair: 'Aire y humo',
   dwevents: 'Eventos',
   dwnews: 'Noticias locales',
-  newsscrollh2: '📰 Buenas noticias del condado',
-  newsh2: '📰 Buenas noticias del condado',
+  newsscrollh2: 'Buenas noticias del condado',
+  newsh2: 'Buenas noticias del condado',
   newsbackview: '‹ Volver',
   newsnote: 'Historias locales de las propias redacciones del condado, reunidas por Oregon Civic Newsstand. Toca una historia para leerla aquí.',
   newsseeall: 'Ver todas las noticias',

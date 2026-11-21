@@ -33,7 +33,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=3">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=31">
+<link rel="stylesheet" href="style.css?v=32">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=2">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -119,7 +119,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
 <section class="finder hero-finder" id="finder-card" aria-label="Find anything on this page">
   <div class="finder-box">
-    <span class="finder-icon" aria-hidden="true">🔎</span>
+    <span class="finder-icon" aria-hidden="true"><img src="img/icons/icon-search.png" alt=""></span>
     <input id="finder-input" type="search" enterkeyhint="go" autocomplete="off" spellcheck="false"
       placeholder="Find anything — try &ldquo;bar report&rdquo;, &ldquo;high tide&rdquo;, &ldquo;OHV&rdquo;, &ldquo;storytime&rdquo;, a town&hellip;"
       aria-label="Search this page: sections, towns, and events">
@@ -145,7 +145,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <div id="alert-banner" class="alert-banner" hidden></div>
 
-<div id="offline-note" class="offline-note" data-i18n="offlinenote" hidden>📶 You&rsquo;re offline — this phone is showing the last readings it collected. Their real ages are on the <a href="#freshness-card">freshness board</a> below; confirm with official sources before you travel.</div>
+<div id="offline-note" class="offline-note" data-i18n="offlinenote" hidden>You&rsquo;re offline — this phone is showing the last readings it collected. Their real ages are on the <a href="#freshness-card">freshness board</a> below; confirm with official sources before you travel.</div>
 
 <main class="views">
 
@@ -279,7 +279,7 @@ document.documentElement.setAttribute("data-theme",t);})();
      top); mobile stays pure swipe. -->
 <section class="ev-scroll" id="ev-scroll" aria-label="County Events — events, sliding" hidden>
   <div class="ev-scroll-head">
-    <h2>County Events</h2>
+    <img class="card-ico" src="img/icons/icon-events.png" alt="" aria-hidden="true"><h2>County Events</h2>
   </div>
   <div class="sc-wrap">
     <div class="ev-scroll-viewport" id="ev-scroll-viewport">
@@ -298,7 +298,7 @@ document.documentElement.setAttribute("data-theme",t);})();
      not moves). The zone is hidden while nothing is pinned. -->
 <section class="frontpage" id="frontpage" hidden aria-label="Your pins — live copies of the cards you pinned on Today">
   <div class="frontpage-head">
-    <h2 data-i18n="pinsh2">📌 Your pins</h2>
+    <img class="card-ico" src="img/icons/icon-event-pin.png" alt="" aria-hidden="true"><h2 data-i18n="pinsh2">Your pins</h2>
     <button class="pin-clear" id="frontpage-clear" type="button" data-i18n="pinsclear">Unpin all</button>
   </div>
   <div class="frontpage-list" id="frontpage-list"></div>
@@ -309,7 +309,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card since-card" id="since-card" hidden aria-label="What changed since your last visit">
   <div class="card-head">
-    <h2 data-i18n="sinceh2">🧭 Since you were away</h2>
+    <img class="card-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h2 data-i18n="sinceh2">Since you were away</h2>
     <button class="since-dismiss" id="since-dismiss" type="button" aria-label="Dismiss this briefing">✕</button>
   </div>
   <div id="since-body" class="panel-body"><p class="loading">Checking what changed…</p></div>
@@ -317,7 +317,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card home-card" id="home-card" aria-label="Your town">
   <div class="card-head">
-    <h2 data-i18n="homeh2">📍 Your town</h2>
+    <img class="card-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"><h2 data-i18n="homeh2">Your town</h2>
   </div>
   <div id="home-body" class="panel-body"><p class="loading">Loading your town picker…</p></div>
 </section>
@@ -334,7 +334,7 @@ document.documentElement.setAttribute("data-theme",t);})();
      cannot be checked says so in gray — it never guesses green. -->
 <section class="card coast-card" id="coast-card" aria-label="Coast conditions — the bar, high surf and flooding, in plain language">
   <div class="card-head">
-    <h2 data-i18n="coasth2">🌊 Coast Conditions</h2>
+    <img class="card-ico" src="img/icons/icon-waves.png" alt="" aria-hidden="true"><h2 data-i18n="coasth2">Coast Conditions</h2>
     <span class="updated" id="coast-updated"></span>
   </div>
   <div class="coast-tsunami" id="coast-tsunami" hidden></div>
@@ -369,13 +369,13 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card go-card" id="go-card" aria-label="Before you go — a go or no-go check for the drive or the water">
   <div class="card-head">
-    <h2>🛟 Before You Go</h2>
+    <img class="card-ico" src="img/icons/icon-lifebuoy.png" alt="" aria-hidden="true"><h2>Before You Go</h2>
     <span class="updated" id="go-updated"></span>
   </div>
   <p class="card-note">The last look before the keys. Pick the trip, where you're headed, and when you're leaving, and this card runs the page's own live checks — weather alerts, the roads, the forecast for that hour, the tide window, and how much light you'll have — then answers with one verdict.</p>
   <div class="go-trips" id="go-trips" role="group" aria-label="What kind of trip">
-    <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true">🚗 The drive</button>
-    <button class="go-trip-btn" type="button" data-go-trip="river" aria-pressed="false">🎣 On the water</button>
+    <button class="go-trip-btn active" type="button" data-go-trip="commute" aria-pressed="true">The drive</button>
+    <button class="go-trip-btn" type="button" data-go-trip="river" aria-pressed="false">On the water</button>
   </div>
   <div class="go-whenrow">
     <label class="go-field">Leaving
@@ -434,7 +434,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card plan-card" id="plan-card" aria-label="Tonight and tomorrow — the evening planning brief">
   <div class="card-head">
-    <h2 data-i18n="planh2">🌙 Tonight &amp; tomorrow</h2>
+    <img class="card-ico" src="img/icons/icon-moon.png" alt="" aria-hidden="true"><h2 data-i18n="planh2">Tonight &amp; tomorrow</h2>
     <span class="updated" id="plan-updated"></span>
   </div>
   <p class="card-note" data-i18n="plannote">The evening check — what to sort out before bed: tonight's weather, tomorrow morning's drive, tomorrow&rsquo;s bay tides, and what's on tomorrow. Assembled from the same official sources as the rest of this page.</p>
@@ -481,7 +481,7 @@ document.documentElement.setAttribute("data-theme",t);})();
      Desktop arrows at the scroller's edges, never on top. -->
 <section class="news-scroll" id="news-scroll" aria-label="Good news around the county — local stories, sliding" hidden>
   <div class="news-scroll-head">
-    <h2 data-i18n="newsscrollh2">📰 Good news around the county</h2>
+    <img class="card-ico" src="img/icons/icon-news.png" alt="" aria-hidden="true"><h2 data-i18n="newsscrollh2">Good news around the county</h2>
   </div>
   <div class="sc-wrap">
     <div class="news-scroll-viewport" id="news-scroll-viewport">
@@ -496,15 +496,15 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="briefh2">📋 The County Briefing</h2>
+    <img class="card-ico" src="img/icons/icon-clipboard.png" alt="" aria-hidden="true"><h2 data-i18n="briefh2">The County Briefing</h2>
     <span class="updated" id="briefing-updated"></span>
   </div>
-  <p class="card-note" data-i18n="briefnote">Today's answers in one place — assembled from the live panels on this page and stamped with the time it was put together. Copy it as a note for a family text, the neighborhood group, anywhere the county gathers. Driving? Tap <strong>🔊 Hear the briefing</strong> and your phone reads it aloud instead — weather alerts first.</p>
+  <p class="card-note" data-i18n="briefnote">Today's answers in one place — assembled from the live panels on this page and stamped with the time it was put together. Copy it as a note for a family text, the neighborhood group, anywhere the county gathers. Driving? Tap <strong>Hear the briefing</strong> and your phone reads it aloud instead — weather alerts first.</p>
   <div class="briefing-view" id="briefing-view"><p class="briefing-loading">Putting today's briefing together…</p></div>
   <div class="briefing-actions">
-    <button class="share-btn primary" id="briefing-copy-btn" type="button" data-i18n="briefcopy">📋 Copy the briefing</button>
-    <button class="share-btn" id="briefing-share-btn" type="button" hidden data-i18n="briefshare">📤 Share as text</button>
-    <button class="share-btn" id="briefing-listen-btn" type="button" hidden data-i18n="brieflisten">🔊 Hear the briefing</button>
+    <button class="share-btn primary" id="briefing-copy-btn" type="button" data-i18n="briefcopy">Copy the briefing</button>
+    <button class="share-btn" id="briefing-share-btn" type="button" hidden data-i18n="briefshare">Share as text</button>
+    <button class="share-btn" id="briefing-listen-btn" type="button" hidden data-i18n="brieflisten">Hear the briefing</button>
   </div>
   <p class="install-help" id="briefing-note" hidden></p>
 </section>
@@ -518,9 +518,9 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="today-signpost" id="today-signpost">
   <p class="signpost-line" data-i18n="signpostline">That's everything for Today — the rest of the county is one tap away:</p>
   <div class="signpost-chips">
-    <button class="signpost-chip" type="button" data-signpost-view="travel" data-i18n="signposttravel">🌊 Bay &amp; roads in Travel</button>
-    <button class="signpost-chip" type="button" data-signpost-view="outdoors" data-i18n="signpostoutdoors">🎣 Outdoors</button>
-    <button class="signpost-chip" type="button" data-signpost-view="more" data-i18n="signpostmore">📅 Events &amp; More</button>
+    <button class="signpost-chip" type="button" data-signpost-view="travel" data-i18n="signposttravel">Bay &amp; roads in Travel</button>
+    <button class="signpost-chip" type="button" data-signpost-view="outdoors" data-i18n="signpostoutdoors">Outdoors</button>
+    <button class="signpost-chip" type="button" data-signpost-view="more" data-i18n="signpostmore">Events &amp; More</button>
   </div>
 </div>
 
@@ -543,10 +543,10 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card map-card" id="map-card">
       <div class="map-toolbar" id="map-toolbar">
-        <button class="map-tool-btn" id="map-near-btn" type="button" data-i18n="mapnear">📍 Near me</button>
+        <button class="map-tool-btn" id="map-near-btn" type="button" data-i18n="mapnear">Near me</button>
         <span class="map-towns" id="map-towns" aria-label="Fly the map to a town"></span>
-        <button class="map-tool-btn" id="map-full-btn" type="button" data-i18n="mapfull">⛶ Full screen</button>
-        <button class="map-tool-btn" id="offline-map-btn" type="button"><span id="offline-map-btn-label">⬇ Offline map</span></button>
+        <button class="map-tool-btn" id="map-full-btn" type="button" data-i18n="mapfull">Full screen</button>
+        <button class="map-tool-btn" id="offline-map-btn" type="button"><span id="offline-map-btn-label">Offline map</span></button>
       </div>
       <div id="map" role="application" aria-label="Map of Tillamook County, Oregon"></div>
       <div class="map-legend">
@@ -565,7 +565,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="drive-card">
       <div class="card-head">
-        <h2 data-i18n="driveh2">🧭 Your Commute — how long's the drive?</h2>
+        <img class="card-ico" src="img/icons/icon-car.png" alt="" aria-hidden="true"><h2 data-i18n="driveh2">Your Commute — how long's the drive?</h2>
       </div>
       <div class="drive-controls">
         <div class="drive-row">
@@ -584,7 +584,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="bay-card">
       <div class="card-photo photo-bay"><img src="img/card-bay.jpg" alt="Garibaldi and Tillamook Bay, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/bay-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2>🌊 Bay &amp; Bar — Tillamook Bay</h2>
+        <img class="card-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true"><h2>Bay &amp; Bar — Tillamook Bay</h2>
       </div>
       <p class="card-note">Out here, the bar decides. Tillamook Bay's bar is watched by the Coast Guard station at Garibaldi, and the National Weather Service posts its condition and restrictions about every four hours — read the current report before you cross, never last night's.</p>
       <div class="panel-body">
@@ -596,16 +596,16 @@ document.documentElement.setAttribute("data-theme",t);})();
         <p class="card-note small">The county's other two bays are different water: <strong>Netarts Bay</strong> has no published bar report at all, and the <strong>Nehalem bar is officially unmonitored</strong> — the Coast Guard's word there is VHF channel 16 and local knowledge. No condition is shown for either bay here, because nobody official publishes one.</p>
         <h3 class="subhead">Boat ramps &amp; launches</h3>
         <div class="dir-list">
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5577,-123.9111" target="_blank" rel="noopener" aria-label="Open Port of Garibaldi in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.portofgaribaldi.org/" target="_blank" rel="noopener">Port of Garibaldi — launch &amp; moorage</a></h3><p class="dir-meta">Garibaldi · Tillamook Bay</p><p class="dir-desc">The bay's working port: public launch, annual and guest moorage, launch passes, RV park. Port office, 402 South 7th Street.</p><span class="dir-go">📍 Directions in Google Maps</span></div><div class="dir-contact"><a class="dir-call" href="tel:+15033223292">&#128222; (503) 322-3292</a></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470958,-123.890908" target="_blank" rel="noopener" aria-label="Open Memaloose Point Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Memaloose Point Boat Launch</h3><p class="dir-meta">Tillamook · Tillamook Bay / Tillamook River · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Bayocean Road.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.431364,-123.945949" target="_blank" rel="noopener" aria-label="Open Netarts Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Netarts Landing Boat Launch</h3><p class="dir-meta">Netarts · Netarts Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock at Netarts Bay Drive &amp; Netarts Basin Boat Road. The dock slants toward the water at low tide (OSMB, Sept. 2026).</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.706728,-123.886013" target="_blank" rel="noopener" aria-label="Open Nehalem Bay Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Nehalem Bay Boat Launch (county)</h3><p class="dir-meta">Nehalem · Nehalem Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Tideland Road at Highway 101 — the county ramp, distinct from the state park ramp below.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6894,-123.9332" target="_blank" rel="noopener" aria-label="Open Nehalem Bay State Park boat ramp in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=142" target="_blank" rel="noopener">Nehalem Bay State Park boat ramp</a></h3><p class="dir-meta">Manzanita · Nehalem Bay · Oregon State Parks</p><p class="dir-desc">Bayside day-use ramp; the boat docks are seasonal, typically mid-May to mid-October.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.21572,-123.971089" target="_blank" rel="noopener" aria-label="Open Hungry Harbor Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Hungry Harbor Boat Launch — the dory launch</h3><p class="dir-meta">Pacific City · Cape Kiwanda · County Parks</p><p class="dir-desc">Dory boats and small authorized ocean craft only: a concrete and plank ramp onto the beach — launch and land straight through the surf.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.196365,-123.966625" target="_blank" rel="noopener" aria-label="Open Pacific City Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Pacific City Boat Launch</h3><p class="dir-meta">Pacific City · Nestucca River · County Parks</p><p class="dir-desc">Motorized concrete ramp off Sunset Drive. OSMB (Sept. 2026) warns of a drop-off at the ramp end and a sand bar partly blocking it, worst at low tide.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.476719,-123.80803" target="_blank" rel="noopener" aria-label="Open Sollie Smith Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Sollie Smith Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Motorized concrete ramp at Wilson River Loop &amp; Latimer Road — the lower-Wilson take-out, beside the Sollie Smith gauge on the River Levels card.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470721,-123.73921" target="_blank" rel="noopener" aria-label="Open Mills Bridge Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Mills Bridge Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Drift boats, unimproved, six miles east of Tillamook on Highway 6.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
-          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.494951,-123.846007" target="_blank" rel="noopener" aria-label="Open Parks Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Parks Landing Boat Launch</h3><p class="dir-meta">Tillamook · Kilchis River · County Parks</p><p class="dir-desc">Motorized concrete ramp on Idaville Loop Road, half a mile east of Highway 101.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5577,-123.9111" target="_blank" rel="noopener" aria-label="Open Port of Garibaldi in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.portofgaribaldi.org/" target="_blank" rel="noopener">Port of Garibaldi — launch &amp; moorage</a></h3><p class="dir-meta">Garibaldi · Tillamook Bay</p><p class="dir-desc">The bay's working port: public launch, annual and guest moorage, launch passes, RV park. Port office, 402 South 7th Street.</p><span class="dir-go">Directions in Google Maps</span></div><div class="dir-contact"><a class="dir-call" href="tel:+15033223292">&#128222; (503) 322-3292</a></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470958,-123.890908" target="_blank" rel="noopener" aria-label="Open Memaloose Point Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Memaloose Point Boat Launch</h3><p class="dir-meta">Tillamook · Tillamook Bay / Tillamook River · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Bayocean Road.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.431364,-123.945949" target="_blank" rel="noopener" aria-label="Open Netarts Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Netarts Landing Boat Launch</h3><p class="dir-meta">Netarts · Netarts Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock at Netarts Bay Drive &amp; Netarts Basin Boat Road. The dock slants toward the water at low tide (OSMB, Sept. 2026).</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.706728,-123.886013" target="_blank" rel="noopener" aria-label="Open Nehalem Bay Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Nehalem Bay Boat Launch (county)</h3><p class="dir-meta">Nehalem · Nehalem Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Tideland Road at Highway 101 — the county ramp, distinct from the state park ramp below.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6894,-123.9332" target="_blank" rel="noopener" aria-label="Open Nehalem Bay State Park boat ramp in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=142" target="_blank" rel="noopener">Nehalem Bay State Park boat ramp</a></h3><p class="dir-meta">Manzanita · Nehalem Bay · Oregon State Parks</p><p class="dir-desc">Bayside day-use ramp; the boat docks are seasonal, typically mid-May to mid-October.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.21572,-123.971089" target="_blank" rel="noopener" aria-label="Open Hungry Harbor Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Hungry Harbor Boat Launch — the dory launch</h3><p class="dir-meta">Pacific City · Cape Kiwanda · County Parks</p><p class="dir-desc">Dory boats and small authorized ocean craft only: a concrete and plank ramp onto the beach — launch and land straight through the surf.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.196365,-123.966625" target="_blank" rel="noopener" aria-label="Open Pacific City Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Pacific City Boat Launch</h3><p class="dir-meta">Pacific City · Nestucca River · County Parks</p><p class="dir-desc">Motorized concrete ramp off Sunset Drive. OSMB (Sept. 2026) warns of a drop-off at the ramp end and a sand bar partly blocking it, worst at low tide.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.476719,-123.80803" target="_blank" rel="noopener" aria-label="Open Sollie Smith Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Sollie Smith Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Motorized concrete ramp at Wilson River Loop &amp; Latimer Road — the lower-Wilson take-out, beside the Sollie Smith gauge on the River Levels card.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470721,-123.73921" target="_blank" rel="noopener" aria-label="Open Mills Bridge Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Mills Bridge Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Drift boats, unimproved, six miles east of Tillamook on Highway 6.</p><span class="dir-go">Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.494951,-123.846007" target="_blank" rel="noopener" aria-label="Open Parks Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Parks Landing Boat Launch</h3><p class="dir-meta">Tillamook · Kilchis River · County Parks</p><p class="dir-desc">Motorized concrete ramp on Idaville Loop Road, half a mile east of Highway 101.</p><span class="dir-go">Directions in Google Maps</span></div></article>
         </div>
         <p class="card-note small">Launch list: Tillamook County Parks' own boat-launch page, with current-status notes from the Oregon State Marine Board's Sept. 2026 access report. The Pacific City dory fleet — more than 300 flat-bottom boats — launches off the beach at Cape Kiwanda because there is no harbor there; mornings are launch time, so watch from clear of the launch lanes.</p>
       </div>
@@ -614,7 +614,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="roads-card">
       <div class="card-photo photo-pano"><img src="img/card-bridge-pano.jpg" alt="Garibaldi and the south shore of Tillamook Bay, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/roads-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="roadsh2">🚗 US-101, OR-6 &amp; Roads</h2>
+        <img class="card-ico" src="img/icons/icon-road.png" alt="" aria-hidden="true"><h2 data-i18n="roadsh2">US-101, OR-6 &amp; Roads</h2>
         <span class="updated" id="roads-updated"></span>
       </div>
       <div id="bridge-body" class="panel-body"><p class="loading">Loading road status…</p></div>
@@ -622,9 +622,9 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
     <div class="card" id="cameras-card">
       <div class="card-head">
-        <h2>📷 Road cameras</h2>
+        <img class="card-ico" src="img/icons/icon-camera.png" alt="" aria-hidden="true"><h2>Road cameras</h2>
       </div>
-      <h3 class="subhead" data-i18n="myrouteh3">📷 My Route — your commute cameras, in driving order</h3>
+      <h3 class="subhead" data-i18n="myrouteh3">My Route — your commute cameras, in driving order</h3>
       <div id="myroute-body" class="panel-body"><p class="loading">Loading route cameras…</p></div>
       <h3 class="subhead" data-i18n="camerash3">Road cameras</h3>
       <div id="cameras-body" class="panel-body"><p class="loading">Loading camera list…</p></div>
@@ -652,7 +652,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="routeahead-card">
       <div class="card-head">
-        <h2 data-i18n="routeaheadh2">🧭 Route Ahead — the Corridor Forecast</h2>
+        <img class="card-ico" src="img/icons/icon-compass.png" alt="" aria-hidden="true"><h2 data-i18n="routeaheadh2">Route Ahead — the Corridor Forecast</h2>
       </div>
       <p class="card-note" data-i18n="routeaheadnote">The next stretch of hours on the county&rsquo;s two corridors — US-101 along the coast and OR-6 up the Wilson River canyon — so ice, fog, or storm water on the drive shows up here before it shows up on the windshield. Hourly from the National Weather Service.</p>
       <div id="routeahead-body" class="panel-body"><p class="loading">Loading the corridor forecast…</p></div>
@@ -662,7 +662,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="aircraft-card">
       <div class="card-head">
-        <h2 data-i18n="aircrafth2">✈️ Aircraft Overhead</h2>
+        <img class="card-ico" src="img/icons/icon-plane.png" alt="" aria-hidden="true"><h2 data-i18n="aircrafth2">Aircraft Overhead</h2>
         <span class="updated" id="sky-updated"></span>
       </div>
       <div class="sky-filters" id="sky-filters" role="group" aria-label="Filter aircraft">
@@ -684,7 +684,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card band-card" id="alerts-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-sky.jpg" alt="" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="alertsh2">⚠️ Weather Alerts</h2>
+        <img class="card-ico" src="img/icons/icon-alert.png" alt="" aria-hidden="true"><h2 data-i18n="alertsh2">Weather Alerts</h2>
         <span class="updated" id="alerts-updated"></span>
       </div>
       <div id="alerts-body" class="panel-body"><p class="loading">Loading alerts from the National Weather Service…</p></div>
@@ -695,17 +695,17 @@ document.documentElement.setAttribute("data-theme",t);})();
          one county-wide forecast, no town picker -->
     <div class="forecast-top" id="forecast-week-card">
       <div class="card-head forecast-head">
-        <h2 data-i18n="forecasth2">🌦️ Forecast</h2>
+        <img class="card-ico" src="img/icons/icon-weather.png" alt="" aria-hidden="true"><h2 data-i18n="forecasth2">Forecast</h2>
         <span class="updated" id="forecast-updated"></span>
       </div>
-      <p class="wx-place">📍 Tillamook County</p>
+      <p class="wx-place">Tillamook County</p>
       <div id="forecast-week" class="forecast-week" aria-label="Seven-day forecast"><p class="loading small">Loading the week…</p></div>
       <div class="strip-tools" id="forecast-week-tools"></div>
     </div>
 
     <div class="card band-card" id="forecast-card">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/band-mountain.jpg" alt="" loading="lazy" decoding="async"></div>
-      <div class="card-head"><h2>🌦️ Forecast — day &amp; night</h2></div>
+      <div class="card-head"><img class="card-ico" src="img/icons/icon-weather.png" alt="" aria-hidden="true"><h2>Forecast — day &amp; night</h2></div>
       <div id="forecast-body" class="panel-body"><p class="loading">Loading forecast…</p></div>
     </div>
 
@@ -722,7 +722,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="card photo-card" id="rivers-card">
       <div class="card-photo photo-dock"><img src="img/card-dock.jpg" alt="The Wilson River in the Tillamook State Forest, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/rivers-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2 data-i18n="riversh2">🌊 River Levels</h2>
+        <img class="card-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true"><h2 data-i18n="riversh2">River Levels</h2>
         <span class="updated" id="rivers-updated"></span>
       </div>
       <div id="rivers-body" class="panel-body"><p class="loading">Loading USGS gauge readings…</p></div>
@@ -731,7 +731,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="tides-card">
       <div class="card-head">
-        <h2 data-i18n="tidesh2">🌊 Bay Tides</h2>
+        <img class="card-ico" src="img/icons/icon-waves.png" alt="" aria-hidden="true"><h2 data-i18n="tidesh2">Bay Tides</h2>
         <span class="updated" id="tides-updated"></span>
       </div>
       <p class="card-note" data-i18n="tidesnote">Three bays, three NOAA stations. For the launch, the crab pots, the clam beds or a beach hour, here is the next turn of the tide at Garibaldi (Tillamook Bay), Netarts Bay and Nehalem Bay.</p>
@@ -741,7 +741,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="crab-card">
       <div class="card-head">
-        <h2 data-i18n="crabh2">🦀 Crabbing Index — Tillamook Bay</h2>
+        <img class="card-ico" src="img/icons/icon-crab.png" alt="" aria-hidden="true"><h2 data-i18n="crabh2">Crabbing Index — Tillamook Bay</h2>
         <span class="updated" id="crab-updated"></span>
       </div>
       <p class="card-note" data-i18n="crabnote">When should you throw the pots in this week? This index scores each of the next seven days for crabbing from a boat in Tillamook Bay — the slack-tide window, the wind, the rain, how much fresh water the bay&rsquo;s five rivers are pushing in, and the season — and names the best hours of every day. Slack water is when crab walk and feed (ODFW&rsquo;s own guidance); the classic bay plan is to set pots an hour or so before high slack and fish through the turn. Scored at Garibaldi, the bay&rsquo;s reference harbor.</p>
@@ -759,14 +759,14 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="ohv-card">
       <div class="card-head">
-        <h2>🏍️ OHV — Ride Areas</h2>
+        <img class="card-ico" src="img/icons/icon-mountain.png" alt="" aria-hidden="true"><h2>OHV — Ride Areas</h2>
       </div>
       <p class="card-note">This county is Oregon's OHV backyard: three riding areas in the Tillamook State Forest off OR-6, plus the Sand Lake dunes. The forest's three areas together hold more than 250 miles of trails (ODF's figure, all three combined). Every staging area below — plus Rogers Camp at the OR-6 summit — is pinned and labeled on the Travel map; tap a pin for trail classes, permits and seasons.</p>
       <div class="dir-list">
-        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6108,-123.3490" target="_blank" rel="noopener" aria-label="Open Browns Camp OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Browns Camp OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · OR-6 · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails from easy to challenging, with a campground and staging area; day use is free unless you take a campsite. The campground moves to reservation-only for 2026, and the forest's seasonal OHV campgrounds close November 2 for winter (ODF).</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
-        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5372,-123.5686" target="_blank" rel="noopener" aria-label="Open Jordan Creek OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Jordan Creek OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails with campground and staging; part of the same 250+ mile forest system. Its developed campground is in the seasonal group that closes November 2.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
-        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6041,-123.5480" target="_blank" rel="noopener" aria-label="Open Diamond Mill OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Diamond Mill OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">The different one: mostly single-track trails for motorcycles only — technical riding, not a quad or 4WD area. Campground and staging on site.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
-        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.2880,-123.9580" target="_blank" rel="noopener" aria-label="Open Sand Lake Recreation Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.fs.usda.gov/recarea/siuslaw/recreation/recarea/?recid=42689" target="_blank" rel="noopener">Sand Lake Recreation Area</a></h3><p class="dir-meta">Near Pacific City · Siuslaw National Forest</p><p class="dir-desc">1,076 acres of open sand dunes between Cape Lookout and Cape Kiwanda, with three campgrounds, dispersed camping and a day-use staging area, open year-round. A fee applies at the campgrounds, the day-use lot and on the open sand itself.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6108,-123.3490" target="_blank" rel="noopener" aria-label="Open Browns Camp OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Browns Camp OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · OR-6 · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails from easy to challenging, with a campground and staging area; day use is free unless you take a campsite. The campground moves to reservation-only for 2026, and the forest's seasonal OHV campgrounds close November 2 for winter (ODF).</p><span class="dir-go">See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5372,-123.5686" target="_blank" rel="noopener" aria-label="Open Jordan Creek OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Jordan Creek OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails with campground and staging; part of the same 250+ mile forest system. Its developed campground is in the seasonal group that closes November 2.</p><span class="dir-go">See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6041,-123.5480" target="_blank" rel="noopener" aria-label="Open Diamond Mill OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Diamond Mill OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">The different one: mostly single-track trails for motorcycles only — technical riding, not a quad or 4WD area. Campground and staging on site.</p><span class="dir-go">See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.2880,-123.9580" target="_blank" rel="noopener" aria-label="Open Sand Lake Recreation Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.fs.usda.gov/recarea/siuslaw/recreation/recarea/?recid=42689" target="_blank" rel="noopener">Sand Lake Recreation Area</a></h3><p class="dir-meta">Near Pacific City · Siuslaw National Forest</p><p class="dir-desc">1,076 acres of open sand dunes between Cape Lookout and Cape Kiwanda, with three campgrounds, dispersed camping and a day-use staging area, open year-round. A fee applies at the campgrounds, the day-use lot and on the open sand itself.</p><span class="dir-go">See it in Google Maps</span></div></article>
       </div>
       <p class="card-note"><strong>Check before you go:</strong> <a href="http://tillamookstateforest.blogspot.com/" target="_blank" rel="noopener">Tillamook State Forest blog — ODF's running status log</a> · <a href="https://www.oregon.gov/odf/fire/pages/restrictions.aspx" target="_blank" rel="noopener">ODF fire restrictions &amp; closures map</a> · <a href="https://www.oregon.gov/ODF/Recreation/Pages/Camp.aspx" target="_blank" rel="noopener">ODF campground status table</a></p>
       <p class="card-note small">Fire season rewrites the rules: at <strong>High</strong> fire danger, OHV use runs only before 1 PM and after 8 PM; at <strong>Extreme</strong>, off-road use is restricted. Every rider needs an Oregon ATV operating permit — $10, good for two years — from the <a href="https://store.oregonstateparks.org/" target="_blank" rel="noopener">Oregon State Parks store</a> or an agent. Side-by-sides (Class IV) are allowed only on signed 4WD trails and gravel roads inside the forest's OHV areas.</p>
@@ -774,7 +774,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="parks-card">
       <div class="card-head">
-        <h2>🏖️ Parks, Beaches &amp; Trails</h2>
+        <img class="card-ico" src="img/icons/icon-outdoors.png" alt="" aria-hidden="true"><h2>Parks, Beaches &amp; Trails</h2>
       </div>
       <p class="card-note">Three capes, a string of state parks, and the county's own parks and trails. Statuses below are what the official pages said when this page was built — each entry links to its own page, which is always the final word.</p>
       <div class="dir-list">
@@ -794,7 +794,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     </div>
     <section class="card almanac-card" id="almanac-card" aria-label="The county almanac — today's daylight and the moon">
   <div class="card-head">
-    <h2 data-i18n="almanach2">🌅 The County Almanac</h2>
+    <img class="card-ico" src="img/icons/icon-sunrise.png" alt="" aria-hidden="true"><h2 data-i18n="almanach2">The County Almanac</h2>
     <span class="updated" id="almanac-updated"></span>
   </div>
   <div id="almanac-body" class="panel-body"><p class="loading">Working out today's light…</p></div>
@@ -803,7 +803,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="quakes-card">
       <div class="card-head">
-        <h2 data-i18n="quakesh2">🫨 Earthquakes — last 30 days</h2>
+        <img class="card-ico" src="img/icons/icon-quake.png" alt="" aria-hidden="true"><h2 data-i18n="quakesh2">Earthquakes — last 30 days</h2>
         <span class="updated" id="quakes-updated"></span>
       </div>
       <div id="quakes-body" class="panel-body"><p class="loading">Loading USGS earthquake data…</p></div>
@@ -811,7 +811,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="fires-card">
       <div class="card-head">
-        <h2 data-i18n="firesh2">🔥 Wildfires</h2>
+        <img class="card-ico" src="img/icons/icon-fire.png" alt="" aria-hidden="true"><h2 data-i18n="firesh2">Wildfires</h2>
         <span class="updated" id="fires-updated"></span>
       </div>
       <div id="fires-body" class="panel-body"><p class="loading">Loading interagency wildfire data (NIFC WFIGS)…</p></div>
@@ -820,7 +820,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
     <div class="card" id="air-card">
       <div class="card-head">
-        <h2 data-i18n="airh2">🌫️ Air &amp; Smoke</h2>
+        <img class="card-ico" src="img/icons/icon-air.png" alt="" aria-hidden="true"><h2 data-i18n="airh2">Air &amp; Smoke</h2>
         <span class="updated" id="air-updated"></span>
       </div>
       <p class="card-note" data-i18n="airnote">The other invisible thing over the county — what&rsquo;s in the air you&rsquo;re breathing. Wood-stove smoke on still winter nights, wildfire smoke in summer. Here&rsquo;s the Air Quality Index for the town on the Forecast card above, and where the model says it goes from here.</p>
@@ -875,7 +875,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="card photo-card" id="creamery-card">
       <div class="card-photo"><img src="img/tc/tillamook-creamery.jpg" alt="The Tillamook Creamery on Highway 101 north of Tillamook, Oregon" loading="lazy" decoding="async"></div>
       <div class="card-head">
-        <h2>🧀 Tillamook Creamery — Visitor Center</h2>
+        <img class="card-ico" src="img/icons/icon-cheese.png" alt="" aria-hidden="true"><h2>Tillamook Creamery — Visitor Center</h2>
       </div>
       <p class="card-note">The county&rsquo;s front porch: free self-guided tours above the cheese floor, the farm exhibit hall, samples, a dining hall and the ice-cream counter. Open 7 days a week, 10 AM – 6 PM, closed Thanksgiving and Christmas. No reservation needed for the self-guided visit.</p>
       <div class="panel-body">
@@ -886,7 +886,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <div class="card" id="fair-card">
       <div class="card-head">
-        <h2>🎡 Tillamook County Fair</h2>
+        <img class="card-ico" src="img/icons/icon-ferris.png" alt="" aria-hidden="true"><h2>Tillamook County Fair</h2>
       </div>
       <p class="card-note">Four days every August at the fairgrounds in Tillamook — livestock, grandstand shows and the Pig-N-Ford races, a fair tradition for over 40 years; the fair itself dates to 1891. The next fair is <strong>August 11–14, 2027</strong>, the fair&rsquo;s own announced dates. The fairgrounds hosts events the rest of the year too.</p>
       <div class="panel-body">
@@ -919,7 +919,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card freshness-card" id="freshness-card">
   <div class="card-head">
-    <h2 data-i18n="freshh2">🕐 How fresh is this page?</h2>
+    <img class="card-ico" src="img/icons/icon-clock.png" alt="" aria-hidden="true"><h2 data-i18n="freshh2">How fresh is this page?</h2>
     <span class="updated" data-i18n="freshspan">ages update every 30 sec</span>
   </div>
   <p class="card-note" data-i18n="freshnote">Every number here names its source and its age. Green is fresh, amber is aging, red means treat the panel as stale and check the official source. If a feed ever goes quiet, this board shows it instead of hiding it.</p>
@@ -930,14 +930,14 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="card band-card watch-card" id="watch-card" aria-label="The county watch — get told when a warning posts or a closure hits the roads">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ships-night.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="watchh2">🔔 The County Watch</h2>
+    <img class="card-ico" src="img/icons/icon-bell.png" alt="" aria-hidden="true"><h2 data-i18n="watchh2">The County Watch</h2>
     <span class="updated" id="watch-state">Not watching</span>
   </div>
   <p class="card-note" data-i18n="watchnote">Everything else on this page waits for you to come and look. The watch doesn't. Leave this page open — in a tab, installed on your home screen, or up on the wall — and it checks the National Weather Service and the county&rsquo;s roads every two minutes. If a new warning posts, or a closure lands on US-101 or OR-6 while you're not looking, it tells you: a notification on this device where the browser offers them, a line in the log below, and — if you tick the box — it says new warnings out loud.</p>
   <div id="watch-status" class="watch-status"><p class="loading">Setting up the watch…</p></div>
   <div class="watch-actions">
-    <button class="share-btn primary" id="watch-btn" type="button" data-i18n="watchbtn">🔔 Start watching</button>
-    <label class="watch-voice"><input type="checkbox" id="watch-voice"> 🔊 Also say new warnings out loud</label>
+    <button class="share-btn primary" id="watch-btn" type="button" data-i18n="watchbtn">Start watching</button>
+    <label class="watch-voice"><input type="checkbox" id="watch-voice"> Also say new warnings out loud</label>
   </div>
   <ul class="watch-log" id="watch-log"></ul>
   <p class="card-note small" data-i18n="watchlimits">Honest limits: the watch only runs while this page is open on this device — closing the tab stops it, and a phone may pause a background tab. It's a convenience, never a replacement for the National Weather Service, NOAA Weather Radio, or Tillamook County emergency alerts.</p>
@@ -949,14 +949,14 @@ document.documentElement.setAttribute("data-theme",t);})();
     <p data-i18n="sharep">Free, no ads, no sign-up. Put it on your home screen like an app, send it to a neighbor who drives OR-6 — or prop a tablet on the counter and tap <strong>Wall display</strong>: the county's answers, big and rotating, made for the screen that's already on.</p>
   </div>
   <div class="share-actions">
-    <button class="share-btn primary" id="share-btn" type="button" data-i18n="sharebtn">📤 Share this page</button>
-    <button class="share-btn" id="install-btn" type="button" data-i18n="installbtn">📱 Add to home screen</button>
-    <button class="share-btn" id="wall-btn" type="button" data-i18n="wallbtn">📺 Wall display</button>
-    <button class="share-btn" id="saver-btn" type="button" data-i18n="saverbtn">🖥️ Screensaver</button>
-    <button class="share-btn" id="print-btn" type="button">🖨️ Print the county sheet</button>
+    <button class="share-btn primary" id="share-btn" type="button" data-i18n="sharebtn">Share this page</button>
+    <button class="share-btn" id="install-btn" type="button" data-i18n="installbtn">Add to home screen</button>
+    <button class="share-btn" id="wall-btn" type="button" data-i18n="wallbtn">Wall display</button>
+    <button class="share-btn" id="saver-btn" type="button" data-i18n="saverbtn">Screensaver</button>
+    <button class="share-btn" id="print-btn" type="button">Print the county sheet</button>
   </div>
-  <p class="print-note">🖨️ The county sheet is one printed page with today&rsquo;s answers — made for the fridge door, the library bulletin board, and the shop counter. Posting it where neighbors pass by is this site&rsquo;s favorite kind of advertising.</p>
-  <p class="lang-note" data-i18n="langnote">🌎 ¿Hablas español? Tap the lighthouse logo up top to open the menu, then tap <strong>En español</strong> — this page&rsquo;s headings, buttons and notes switch to Spanish. Live readings, alerts and event listings keep arriving in English from their official sources.</p>
+  <p class="print-note">The county sheet is one printed page with today&rsquo;s answers — made for the fridge door, the library bulletin board, and the shop counter. Posting it where neighbors pass by is this site&rsquo;s favorite kind of advertising.</p>
+  <p class="lang-note" data-i18n="langnote">¿Hablas español? Tap the lighthouse logo up top to open the menu, then tap <strong>En español</strong> — this page&rsquo;s headings, buttons and notes switch to Spanish. Live readings, alerts and event listings keep arriving in English from their official sources.</p>
   <p class="install-help" id="install-help" hidden></p>
 </section>
 
@@ -974,7 +974,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div>
       <h2 data-i18n="installh2">Put Tillamook County Live on your home screen</h2>
       <p class="card-note" data-i18n="installp">Installed, it opens full-screen like an app — no address bar, its own icon, the county one tap away. Free, and it still updates itself all day.</p>
-      <button class="share-btn primary" id="install-card-btn" type="button" data-i18n="installcardbtn">📱 Install the app</button>
+      <button class="share-btn primary" id="install-card-btn" type="button" data-i18n="installcardbtn">Install the app</button>
     </div>
   </div>
 </section>
@@ -982,11 +982,11 @@ document.documentElement.setAttribute("data-theme",t);})();
 <section class="card saver-card photo-behind" id="saver-card" aria-label="The community screensaver — county photos and your pinned answers, made for TVs, tablets and waiting rooms">
   <div class="card-bgphoto" aria-hidden="true"><img src="img/bg/bg-dusk-2.jpg" alt="" loading="lazy" decoding="async"></div>
   <div class="card-head">
-    <h2 data-i18n="saverh2">📸 The Community Screensaver</h2>
+    <img class="card-ico" src="img/icons/icon-camera.png" alt="" aria-hidden="true"><h2 data-i18n="saverh2">The Community Screensaver</h2>
   </div>
   <p class="card-note" data-i18n="saverp1">The wall display rotates the county&rsquo;s answers. The screensaver is the quieter room: county photographs, changing slowly, with the clock and just the answers you pin — made to be left running on a kitchen tablet, a shop counter, or the TV in a waiting room. It refreshes itself from the same live sources as this page, never asks for anything, and leaves with one tap.</p>
   <div class="saver-actions">
-    <button class="share-btn primary" id="saver-start-btn" type="button" data-i18n="saverstart">🖥️ Start the screensaver</button>
+    <button class="share-btn primary" id="saver-start-btn" type="button" data-i18n="saverstart">Start the screensaver</button>
     <p class="saver-tip" data-i18n="savertip">Putting it on a TV or an office screen? Open this page with <strong>?display=1</strong> added to the end of the address and the screensaver starts by itself — bookmark that address on the TV&rsquo;s browser and it just comes up.</p>
   </div>
   <h3 class="subhead" data-i18n="saverpinsh">Your answers on the screen</h3>
@@ -1003,7 +1003,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div class="photo-form" id="photo-form">
     <p class="card-note" data-i18n="saverways">One easy way, no account and no sign-in: email your photo to nomadov3rland@gmail.com with your name and where you took it. That is all it takes.</p>
     <div class="saver-actions">
-      <a class="share-btn primary" href="mailto:nomadov3rland@gmail.com?subject=Screensaver%20photo&body=My%20name%3A%0AWhere%20I%20took%20it%3A%0A%0AI%20took%20this%20photo%20and%20I%20give%20Tillamook%20County%20Live%20permission%20to%20show%20it." data-i18n="saveremailbtn">📧 Email your photo</a>
+      <a class="share-btn primary" href="mailto:nomadov3rland@gmail.com?subject=Screensaver%20photo&body=My%20name%3A%0AWhere%20I%20took%20it%3A%0A%0AI%20took%20this%20photo%20and%20I%20give%20Tillamook%20County%20Live%20permission%20to%20show%20it." data-i18n="saveremailbtn">Email your photo</a>
     </div>
   </div>
   <p class="card-note small" data-i18n="saverreview">One honest gate: every photo is looked at by a person before it joins the pool — for the place, the picture, and the permission. Nothing appears automatically, and a photo that isn&rsquo;t yours to share never goes up.</p>
@@ -1011,14 +1011,14 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card about-card" id="about-card" aria-label="About Tillamook County Live — what it is, why it is free, and who runs it">
   <div class="card-head">
-    <h2 data-i18n="abouth2">🌲 About Tillamook County Live</h2>
+    <img class="card-ico" src="img/icons/icon-tree.png" alt="" aria-hidden="true"><h2 data-i18n="abouth2">About Tillamook County Live</h2>
   </div>
   <p class="card-note" data-i18n="aboutp1">Tillamook County Live is one live look at Tillamook County, Oregon — US-101 and OR-6, the Wilson, Trask, Nehalem and Nestucca rivers and their flood stages, tides on the county&rsquo;s three bays, the Tillamook Bay bar report, weather alerts, and what&rsquo;s on around the county — assembled from official public sources and refreshed all day. It is built and run by <strong>Nomad Development Group</strong>, a small Oregon studio, on free public data and free hosting, which is how a page like this can exist for a county of 32,000 at all. It is the younger sibling of Columbia County Live, one county north.</p>
   <p class="card-note" data-i18n="aboutp2"><strong>Why it&rsquo;s free — and what stays free.</strong> The core of this page is public-safety data: weather alerts, river levels and flood stages, road conditions, bar conditions. That core is free, carries no sponsor, and stays that way — it will never sit behind a paywall. That promise is the reason the page exists. The Community Help section keeps that same promise: the county&rsquo;s free help — food pantries, crisis lines, help with rent and utility bills, support for families and veterans — gathered in one place, free to everyone who needs it.</p>
   <h3 class="subhead" data-i18n="aboutsupporth">How this page is paid for</h3>
   <p class="card-note" data-i18n="aboutp3">Right now, honestly: it isn&rsquo;t — it runs on the same free public feeds and free hosting as its sibling, and the operator&rsquo;s time. There is no sponsor program on this page yet. When local support opens, it will be announced here first, and it will never touch the free safety core above.</p>
   <div class="about-actions">
-    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20a%20correction%20or%20a%20hello">✉️ Write to the site</a>
+    <a class="share-btn primary" id="sponsor-interest-link" data-i18n="aboutbtn" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20a%20correction%20or%20a%20hello">Write to the site</a>
   </div>
   <p class="card-note small" data-i18n="aboutnote">Spotted a wrong number, a stale hour, or a listing that should be here? That button opens an email to the person who runs this page. Corrections from the county are how a page like this stays worth trusting — writing costs nothing and commits you to nothing.</p>
 </section>
@@ -1068,7 +1068,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="card" id="news-card">
   <button class="news-back" id="news-view-back" type="button" data-i18n="newsbackview">&#8249; Back</button>
   <div class="card-head">
-    <h2 data-i18n="newsh2">📰 Good news around the county</h2>
+    <img class="card-ico" src="img/icons/icon-news.png" alt="" aria-hidden="true"><h2 data-i18n="newsh2">Good news around the county</h2>
     <span class="updated" id="news-updated"></span>
   </div>
   <p class="card-note" data-i18n="newsnote">Local stories from the county&rsquo;s own newsrooms, gathered by the Oregon Civic Newsstand. Tap a story to read it here.</p>
@@ -1081,7 +1081,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-map-card" aria-label="Emergency map — road closures and incidents">
   <div class="card-head">
-    <h2>🚨 Emergency map — closures &amp; incidents</h2>
+    <img class="card-ico" src="img/icons/icon-siren.png" alt="" aria-hidden="true"><h2>Emergency map — closures &amp; incidents</h2>
     <span class="updated" id="em-map-updated"></span>
   </div>
   <div class="panel-body">
@@ -1092,7 +1092,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-status-card" aria-label="County status board">
   <div class="card-head">
-    <h2>📋 County status board</h2>
+    <img class="card-ico" src="img/icons/icon-clipboard.png" alt="" aria-hidden="true"><h2>County status board</h2>
     <span class="updated" id="em-status-updated"></span>
   </div>
   <div class="panel-body">
@@ -1110,7 +1110,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-contacts-card" aria-label="Emergency contacts and official links">
   <div class="card-head">
-    <h2>☎️ Emergency contacts &amp; official links</h2>
+    <img class="card-ico" src="img/icons/icon-phone.png" alt="" aria-hidden="true"><h2>Emergency contacts &amp; official links</h2>
   </div>
   <div class="panel-body">
     <p class="em-big"><strong>In an emergency, call 911.</strong></p>
@@ -1124,7 +1124,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="em-coords-card" aria-label="Your coordinates">
   <div class="card-head">
-    <h2>📍 Your coordinates</h2>
+    <img class="card-ico" src="img/icons/icon-pin.png" alt="" aria-hidden="true"><h2>Your coordinates</h2>
   </div>
   <div class="panel-body">
     <p class="card-note">If you ever have to tell a dispatcher or a tow truck exactly where you are: tap the button, read the numbers out loud, or copy and paste them into a text. GPS works without cell signal.</p>
@@ -1147,22 +1147,22 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <section class="card" id="help-intro-card" aria-label="About this section">
   <div class="card-head">
-    <h2>🤝 Community Help</h2>
+    <img class="card-ico" src="img/icons/icon-help.png" alt="" aria-hidden="true"><h2>Community Help</h2>
   </div>
   <div class="panel-body">
     <p class="card-note">Free food, crisis lines, help with rent and power bills, health care that slides to what you can pay, support for families, seniors, veterans and recovery — the help this county already offers, gathered in one place. Most of it is free; where a service charges on a sliding scale, its listing says so. Tap any phone number to call. Every listing here was checked against the service&rsquo;s own website or official listing.</p>
     <p class="em-big"><strong>In an emergency, call 911.</strong></p>
     <p class="help-quick">
-      <a class="share-btn" href="tel:+15038429486"><span>📞 Tides of Change helpline — (503) 842-9486 · 24/7</span></a>
-      <a class="share-btn" href="tel:+15038428201"><span>📞 County crisis line — (503) 842-8201 · 24/7</span></a>
-      <a class="share-btn" href="tel:211"><span>📞 Dial 211 — free help finding local help</span></a>
+      <a class="share-btn" href="tel:+15038429486"><span>Tides of Change helpline — (503) 842-9486 · 24/7</span></a>
+      <a class="share-btn" href="tel:+15038428201"><span>County crisis line — (503) 842-8201 · 24/7</span></a>
+      <a class="share-btn" href="tel:211"><span>Dial 211 — free help finding local help</span></a>
     </p>
   </div>
 </section>
 
-<section class="card" id="help-food-card" aria-label="🍞 Food — free pantries & meals">
+<section class="card" id="help-food-card" aria-label="Food — free pantries & meals">
   <div class="card-head">
-    <h2>🍞 Food — free pantries &amp; meals</h2>
+    <img class="card-ico" src="img/icons/icon-food.png" alt="" aria-hidden="true"><h2>Food — free pantries &amp; meals</h2>
   </div>
   <p class="card-note">Ten food sources from Wheeler to Hebo, every one checked against its own listing. Hours shift around holidays — when a trip depends on it, call first.</p>
   <div class="dir-list">
@@ -1180,9 +1180,9 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p class="card-note small">One honest gap: no food pantry listing for Pacific City or Cloverdale could be verified — three different phone numbers circulate for the Pacific City pantry, so none is printed here rather than risk a wrong one. Dial 211 (in the Money &amp; Housing card) for the current south-county answer.</p>
 </section>
 
-<section class="card" id="help-crisis-card" aria-label="🆘 Crisis & safety">
+<section class="card" id="help-crisis-card" aria-label="Crisis & safety">
   <div class="card-head">
-    <h2>🆘 Crisis &amp; safety</h2>
+    <img class="card-ico" src="img/icons/icon-lifebuoy.png" alt="" aria-hidden="true"><h2>Crisis &amp; safety</h2>
   </div>
   <p class="card-note">If someone is in danger right now, call 911 first. These lines are for everything around that moment — before, after, and when you are not sure.</p>
   <div class="dir-list">
@@ -1193,9 +1193,9 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </section>
 
-<section class="card" id="help-money-card" aria-label="💵 Money & housing help">
+<section class="card" id="help-money-card" aria-label="Money & housing help">
   <div class="card-head">
-    <h2>💵 Money &amp; housing help</h2>
+    <img class="card-ico" src="img/icons/icon-house.png" alt="" aria-hidden="true"><h2>Money &amp; housing help</h2>
   </div>
   <p class="card-note">Rent, power bills, shelter and benefits. Start with CARE for housing money and 211 when you do not know where to start.</p>
   <div class="dir-list">
@@ -1207,9 +1207,9 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </section>
 
-<section class="card" id="help-family-card" aria-label="👨‍👩‍👧 Family & health">
+<section class="card" id="help-family-card" aria-label="Family & health">
   <div class="card-head">
-    <h2>👨‍👩‍👧 Family &amp; health</h2>
+    <img class="card-ico" src="img/icons/icon-family.png" alt="" aria-hidden="true"><h2>Family &amp; health</h2>
   </div>
   <p class="card-note">Clinics that slide to what you can pay, WIC, the hospital, and senior &amp; disability services.</p>
   <div class="dir-list">
@@ -1221,9 +1221,9 @@ document.documentElement.setAttribute("data-theme",t);})();
   </div>
 </section>
 
-<section class="card" id="help-vets-card" aria-label="🎖️ Veterans, legal & recovery">
+<section class="card" id="help-vets-card" aria-label="Veterans, legal & recovery">
   <div class="card-head">
-    <h2>🎖️ Veterans, legal &amp; recovery</h2>
+    <img class="card-ico" src="img/icons/icon-medal.png" alt="" aria-hidden="true"><h2>Veterans, legal &amp; recovery</h2>
   </div>
   <p class="card-note">Veterans&rsquo; benefits help, free civil legal aid, and recovery services.</p>
   <div class="dir-list">
@@ -1262,7 +1262,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#aircraft-card" data-i18n="dwaircraft">Aircraft overhead</a>
     </div>
     <div class="drawer-group">
-      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true">🤝</span><span data-i18n="helpview">Community Help</span></button>
+      <button class="drawer-view" type="button" data-drawer-view="help"><span aria-hidden="true"><img src="img/icons/icon-help.png" alt=""></span><span data-i18n="helpview">Community Help</span></button>
       <a class="drawer-link" href="#help-food-card" data-i18n="dwhelpfood">Free food</a>
       <a class="drawer-link" href="#help-crisis-card" data-i18n="dwhelpcrisis">Crisis &amp; safety</a>
       <a class="drawer-link" href="#help-money-card" data-i18n="dwhelpmoney">Money &amp; housing help</a>
@@ -1293,7 +1293,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#about-card" data-i18n="dwabout">About</a>
     </div>
     <div class="drawer-group drawer-em-group">
-      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true">🚨</span><span data-i18n="emview">Emergency</span></button>
+      <button class="drawer-view drawer-emergency" type="button" data-drawer-view="emergency"><span aria-hidden="true"><img src="img/icons/icon-siren.png" alt=""></span><span data-i18n="emview">Emergency</span></button>
       <a class="drawer-link" href="#em-map-card">Emergency map — closures &amp; incidents</a>
       <a class="drawer-link" href="#em-status-card">County status board</a>
       <a class="drawer-link" href="#em-contacts-card">Emergency contacts &amp; links</a>
@@ -1311,18 +1311,18 @@ document.documentElement.setAttribute("data-theme",t);})();
          the screensaver start, so the old "Start the screensaver"
          drawer row is retired; the saver card keeps its own buttons. -->
     <div class="drawer-util-btns" role="group" aria-label="Get the app, display mode, and light or dark mode">
-      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Tillamook County Live on your home screen"><span class="getapp-ico" aria-hidden="true">📱</span><span data-i18n="getappbtn">Get the app</span></button>
+      <button class="drawer-util-btn" id="drawer-getapp-btn" type="button" aria-haspopup="dialog" aria-controls="getapp-sheet" aria-expanded="false" aria-label="Get the app — put Tillamook County Live on your home screen"><span class="getapp-ico" aria-hidden="true"><img src="img/icons/icon-phone.png" alt=""></span><span data-i18n="getappbtn">Get the app</span></button>
       <button class="drawer-util-btn" id="drawer-display-btn" type="button" aria-label="Open display mode — the community screensaver"><svg class="theme-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M12 16.5v3M8.8 21h6.4"/></svg><span data-i18n="displaybtn">Display</span></button>
       <button class="drawer-util-btn" id="drawer-theme-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode"><img class="theme-ico" src="img/icons/icon-theme.png" alt="" aria-hidden="true"><span id="drawer-theme-label">Dark</span></button>
     </div>
     <a class="drawer-action drawer-photo" href="#photo-form">
-      <span class="drawer-action-ico" aria-hidden="true">📸</span>
+      <span class="drawer-action-ico" aria-hidden="true"><img src="img/icons/icon-camera.png" alt=""></span>
       <span class="drawer-photo-text">
         <span class="drawer-photo-title" data-i18n="dwphototitle">Share your county photo</span>
         <span class="drawer-photo-line" data-i18n="dwphotoline">Got a shot of the county you love? Send it in — the good ones join the community screensaver, with your name signed on them like a painting.</span>
       </span>
     </a>
-    <button class="drawer-action lang-pill" id="lang-btn" type="button">🌎 En español</button>
+    <button class="drawer-action lang-pill" id="lang-btn" type="button">En español</button>
   </div>
   </nav>
 </aside>
@@ -1337,11 +1337,11 @@ document.documentElement.setAttribute("data-theme",t);})();
 <div class="sheet-backdrop" id="getapp-backdrop" hidden></div>
 <aside class="getapp-sheet" id="getapp-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="getapp-title">
   <div class="getapp-head">
-    <span class="getapp-title" id="getapp-title" data-i18n="getapptitle">📱 Put Tillamook County Live on your home screen</span>
+    <span class="getapp-title" id="getapp-title" data-i18n="getapptitle">Put Tillamook County Live on your home screen</span>
     <button class="drawer-close" id="getapp-close" type="button" aria-label="Close the install steps">✕</button>
   </div>
   <div class="getapp-body">
-    <button class="share-btn primary getapp-install" id="getapp-install" type="button" hidden data-i18n="getappinstall">📱 Install now — one tap</button>
+    <button class="share-btn primary getapp-install" id="getapp-install" type="button" hidden data-i18n="getappinstall">Install now — one tap</button>
     <div class="getapp-step0" id="getapp-step0-fb" hidden>
       <p data-i18n="gastep0fb"><strong>First — you're inside Facebook's browser, and it can't add home-screen apps.</strong> Tap the three dots at the top corner and choose <strong>Open in external browser</strong> or <strong>Open in Chrome</strong>. Then follow the steps below.</p>
     </div>
@@ -1437,7 +1437,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=32"></script>
+<script src="app.js?v=33"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>
