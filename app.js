@@ -471,6 +471,155 @@ async function loadAlerts() {
   }
 }
 
+/* ---------- coast card (tcl-v15) ---------- */
+/* One big simple card in Today's flow: three plain-language rows.
+   BAR — the Coast Guard's own Tillamook Bay bar report, published
+   by NWS Portland as XML (AllBars.xml, updated about every four
+   hours or when conditions change; CORS-open). States: Closed →
+   red, Restricted → amber (with the recreational size limit pulled
+   from the report), No Restrictions → green. A report older than
+   6.5 hours, a missing row, or a failed fetch renders GRAY
+   "unavailable" — never green on stale data.
+   SURF + FLOOD — one alerts call for the county zone ORC057 plus
+   the coastal forecast zone ORZ102 (the whole county shoreline is
+   ORZ102; surf products are issued for the coastal zone, not the
+   county zone). Only surf/flood/tsunami events are read here; the
+   full alerts card below still carries everything.
+   TSUNAMI — a strip inside this card appears only while a tsunami
+   product is active; a Warning also rings the card red. The
+   verbatim warning card at the top of the page (renderTsunamiCard)
+   remains the primary warning presentation. */
+const COAST_ALERTS_URL = 'https://api.weather.gov/alerts/active?zone=ORC057,ORZ102';
+const BAR_XML_URL = 'https://www.weather.gov/source/pqr/barcams/AllBars.xml';
+const BAR_FRESH_MS = 6.5 * 60 * 60 * 1000;
+
+function coastSet(rowId, cls, val, sub) {
+  const row = $(rowId);
+  if (!row) return;
+  row.className = 'coast-row' + (cls ? ' ' + cls : '');
+  const v = row.querySelector('.coast-val');
+  const s = row.querySelector('.coast-sub');
+  if (v) v.textContent = val;
+  if (s) s.textContent = sub || '';
+}
+
+/* The bar XML stamps local Pacific wall time with no zone marker
+   ("11/20/2026 17:14:30"); resolve it against America/Los_Angeles
+   so the freshness check is right on any visitor's clock. */
+function pacificWallDate(str) {
+  const m = String(str || '').match(/(\d+)\/(\d+)\/(\d+)\s+(\d+):(\d+)(?::(\d+))?/);
+  if (!m) return null;
+  const asUTC = Date.UTC(+m[3], +m[1] - 1, +m[2], +m[4], +m[5], +(m[6] || 0));
+  const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', hourCycle: 'h23',
+    year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' })
+    .formatToParts(new Date(asUTC));
+  const p = {};
+  parts.forEach(x => { p[x.type] = +x.value; });
+  const wallAsUTC = Date.UTC(p.year, p.month - 1, p.day, p.hour % 24, p.minute, p.second);
+  return new Date(asUTC - (wallAsUTC - asUTC));
+}
+
+async function loadCoast() {
+  const card = $('coast-card');
+  if (!card) return;
+  let anyOk = false;
+
+  /* --- surf / flood / tsunami from NWS alerts --- */
+  try {
+    const d = await getJSON(COAST_ALERTS_URL, { 'Accept': 'application/geo+json' });
+    const evts = (d.features || []).map(f => ((f.properties || {}).event || '').trim());
+    anyOk = true;
+
+    if (evts.some(e => /high surf warning/i.test(e))) {
+      coastSet('coast-row-surf', 'bad', '🌊 HIGH SURF WARNING', 'Dangerous surf in effect — stay off the beach, jetties and rocks.');
+    } else if (evts.some(e => /high surf advisory/i.test(e))) {
+      coastSet('coast-row-surf', 'warn', '⚠️ HIGH SURF ADVISORY', 'Big surf in effect — stay off jetties and rocks, and never turn your back on the ocean.');
+    } else if (evts.some(e => /beach hazards statement/i.test(e))) {
+      coastSet('coast-row-surf', 'warn', '⚠️ BEACH HAZARDS', 'Sneaker waves are possible — stay back from the water and off logs and jetties.');
+    } else {
+      coastSet('coast-row-surf', 'ok', '✅ Surf OK', 'No high surf advisory in effect for the coast right now.');
+    }
+
+    if (evts.some(e => /flash flood warning|flood warning|coastal flood warning/i.test(e))) {
+      coastSet('coast-row-flood', 'bad', '🌧️ FLOOD WARNING', 'Flooding is happening or about to — never drive through flooded roads.');
+    } else if (evts.some(e => /flood watch|flash flood watch|coastal flood watch/i.test(e))) {
+      coastSet('coast-row-flood', 'warn', '⚠️ FLOOD WATCH', 'Flooding is possible — keep an eye on the rivers, creeks and low roads.');
+    } else if (evts.some(e => /flood advisory|coastal flood advisory|areal flood/i.test(e))) {
+      coastSet('coast-row-flood', 'warn', '⚠️ FLOOD ADVISORY', 'Minor flooding is possible in low spots and along the rivers.');
+    } else {
+      coastSet('coast-row-flood', 'ok', '✅ No Flooding', 'No flood advisory, watch or warning in effect right now.');
+    }
+
+    const strip = $('coast-tsunami');
+    if (strip) {
+      if (evts.some(e => /^tsunami warning/i.test(e))) {
+        strip.textContent = '🌊 TSUNAMI WARNING IN EFFECT — read the warning at the top of this page. Get off the beach and to high ground now.';
+        strip.className = 'coast-tsunami bad';
+        strip.hidden = false;
+        card.classList.add('coast-danger');
+      } else if (evts.some(e => /^tsunami watch/i.test(e))) {
+        strip.textContent = '🌊 TSUNAMI WATCH in effect — stay near a phone or radio and be ready to move to high ground.';
+        strip.className = 'coast-tsunami';
+        strip.hidden = false;
+        card.classList.remove('coast-danger');
+      } else if (evts.some(e => /^tsunami advisory/i.test(e))) {
+        strip.textContent = '🌊 TSUNAMI ADVISORY in effect — stay out of the water and off beaches, harbors and river mouths.';
+        strip.className = 'coast-tsunami';
+        strip.hidden = false;
+        card.classList.remove('coast-danger');
+      } else {
+        strip.hidden = true;
+        strip.textContent = '';
+        card.classList.remove('coast-danger');
+      }
+    }
+  } catch (e) {
+    coastSet('coast-row-surf', '', '❔ Couldn\'t Check Surf', 'The alerts feed didn\'t load — check the National Weather Service before you head for the beach.');
+    coastSet('coast-row-flood', '', '❔ Couldn\'t Check Flooding', 'The alerts feed didn\'t load — check the National Weather Service and treat low roads with care.');
+  }
+
+  /* --- the bar, from the Coast Guard report via NWS Portland --- */
+  try {
+    const r = await fetch(BAR_XML_URL);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const doc = new DOMParser().parseFromString(await r.text(), 'text/xml');
+    const bars = doc.getElementsByTagName('barstatus');
+    let hit = null;
+    for (let i = 0; i < bars.length; i++) {
+      const nm = (bars[i].getElementsByTagName('name')[0] || {}).textContent || '';
+      if (nm.trim() === 'Tillamook Bay') { hit = bars[i]; break; }
+    }
+    if (!hit) throw new Error('no Tillamook Bay row');
+    const txt = tag => ((hit.getElementsByTagName(tag)[0] || {}).textContent || '').trim();
+    const status = txt('status');
+    const restrictions = txt('restrictions');
+    const when = pacificWallDate(txt('time'));
+    if (!when || (Date.now() - when.getTime()) > BAR_FRESH_MS) {
+      coastSet('coast-row-bar', '', '❔ Bar Report Too Old',
+        'The last Coast Guard report for Tillamook Bay is ' + (when ? fmtDayTime(when) : 'undated')
+        + ' — too old to trust. Check the NWS bar report before you cross.');
+    } else if (/closed/i.test(status)) {
+      coastSet('coast-row-bar', 'bad', '⛔ BAR CLOSED', 'The Coast Guard has closed the Tillamook Bay bar — do not cross. Report from ' + fmtDayTime(when) + '.');
+      anyOk = true;
+    } else if (/restrict/i.test(status)) {
+      const rec = (restrictions.split('/')[0] || '').match(/(\d+)\s*FEET/i);
+      coastSet('coast-row-bar', 'warn', '⚠️ BAR RESTRICTED',
+        (rec ? 'Boats ' + rec[1] + ' feet and under must stay in. ' : 'Restrictions are in effect — read the full report. ')
+        + 'Coast Guard report from ' + fmtDayTime(when) + '.');
+      anyOk = true;
+    } else if (/no restrictions/i.test(status)) {
+      coastSet('coast-row-bar', 'ok', '✅ BAR OPEN', 'No restrictions on the Tillamook Bay bar. Coast Guard report from ' + fmtDayTime(when) + '.');
+      anyOk = true;
+    } else {
+      coastSet('coast-row-bar', '', '❔ Bar Status Unclear', 'The Coast Guard report says "' + status + '" — read the full NWS bar report before you cross.');
+    }
+  } catch (e) {
+    coastSet('coast-row-bar', '', '❔ Bar Report Unavailable', 'Couldn\'t load the Coast Guard bar report — check the NWS bar report before you cross.');
+  }
+
+  if (anyOk) setUpdated('coast-updated');
+}
+
 /* ---------- forecast (NWS points → gridpoint forecast) ---------- */
 const forecastUrlCache = {};
 let currentTown = TOWNS[0];
@@ -1003,30 +1152,6 @@ function renderRoads(roads, camerasSnap) {
   setSnapUpdated('roads-updated', roads.fetched_at);
   // Bridge block
   const b = roads.bridge || {};
-  // Commute verdict — one synthesized sentence from everything the snapshot knows
-  const vEl = $('commute-verdict');
-  if (vEl) {
-    const incCount = (roads.incidents || []).length;
-    const wzCount = (b.work_zones || []).length;
-    const alertCount = (b.alerts || []).length;
-    const odotPending = (((roads.sources || [])[0]) || {}).status !== 'ok';
-    let level, head;
-    if (alertCount > 0) {
-      level = 'bad'; head = '⛔ Trouble on the corridor — read the road alerts before you leave';
-    } else if (incCount > 0 || wzCount > 0) {
-      const n = incCount + wzCount;
-      level = 'warn'; head = '⚠️ Mostly clear — ' + n + (n === 1 ? ' thing' : ' things') + ' to know below';
-    } else {
-      level = 'ok'; head = '✅ Clear run right now';
-    }
-    const parts = [];
-    parts.push('US-101 & OR-6: ' + (incCount ? incCount + ' ODOT incident(s) in the county area' : 'no incidents posted'));
-    if (wzCount) parts.push(wzCount + ' work zone(s) posted');
-    if (odotPending) parts.push('The ODOT snapshot is still on its way — check TripCheck before you leave');
-    if (level !== 'ok') parts.push('OR-6 blocked? The detours are long — US-26 north or OR-18 south');
-    vEl.className = 'commute-verdict cv-' + level;
-    vEl.innerHTML = '<div class="cv-head">' + esc(head) + '</div><div class="cv-sub">' + esc(parts.join(' · ')) + '</div>';
-  }
   const bEl = $('bridge-body');
   const or6 = (roads.incidents || []).filter(i => /\bOR-?6\b|Wilson River Hwy|Wilson River Highway/i.test((i.title || '') + ' ' + (i.route || '')));
   const icon = or6.length ? '⛔' : '✅';
@@ -1126,8 +1251,6 @@ async function loadRoads() {
     ]);
     renderRoads(roads, cams);
   } catch (e) {
-    const vEl2 = $('commute-verdict');
-    if (vEl2) { vEl2.className = 'commute-verdict cv-warn'; vEl2.innerHTML = '<div class="cv-head">❔ Corridor status unavailable</div><div class="cv-sub">The road snapshot didn\'t load — check TripCheck directly before you drive.</div>'; }
     $('bridge-body').innerHTML = '<p class="fallback">⚠️ Road snapshot unavailable right now — check <a href="https://www.tripcheck.com/" target="_blank" rel="noopener">TripCheck</a> directly before you drive.</p>';
     $('incidents-body').innerHTML = '';
     const scElErr = $('incidents-scope');
@@ -3652,7 +3775,6 @@ const FRESH_ROWS = [
   ['Air quality — Open-Meteo model estimate', 'air-updated', 'live'],
   ['ADS-B — aircraft overhead', 'sky-updated', 'mixed'],
   ['ISS orbit data — pass predictions (CelesTrak)', 'iss-passes-updated', 'live'],
-  ['Tonight\u2019s sky — clouds & aurora (Open-Meteo / NOAA SWPC)', 'dark-updated', 'live'],
   ['Fetcher — roads & cameras (ODOT TripCheck)', 'roads-updated', 'snapshot'],
   ['Fetcher — events (county & city calendars)', 'events-updated', 'snapshot']
 ];
@@ -3687,6 +3809,7 @@ initEventFilters();
 initSkyFilters();
 loadGlance();
 loadAlerts();
+loadCoast();
 loadForecast(currentTown);
 loadRivers();
 loadQuakes();
@@ -3698,6 +3821,7 @@ loadRouteAhead();
 loadEvents();
 setInterval(loadGlance, 10 * 60 * 1000);
 setInterval(loadAlerts, 10 * 60 * 1000);
+setInterval(loadCoast, 10 * 60 * 1000);
 setInterval(loadRivers, 10 * 60 * 1000);
 setInterval(loadQuakes, 30 * 60 * 1000);
 setInterval(loadFires, 15 * 60 * 1000);
@@ -3846,17 +3970,6 @@ function buildBriefing() {
         + (short ? ' — ' + short : '') + (extra ? ' (' + extra + ')' : ''));
       rows.push({ icon: '🌦️', label: currentTown.name + (name ? ' · ' + name : ''),
         temp, body: (short ? ' — ' + short : '') + (extra ? ' (' + extra + ')' : '') });
-      ready++;
-    }
-  }
-  // Commute verdict — the headline sentence from the roads card
-  const cv = $('commute-verdict');
-  if (cv) {
-    const head = cv.querySelector('.cv-head');
-    if (head && !briefingPending(head.textContent)) {
-      const t = briefingClean(head.textContent);
-      lines.push('🚗 Commute: ' + t);
-      rows.push({ icon: '🚗', label: 'Commute', body: t });
       ready++;
     }
   }
@@ -4677,18 +4790,6 @@ function buildSpokenBriefing() {
       const extra = paras.length > 1 ? briefingClean(paras[1].textContent) : '';
       lines.push(voiceClean(currentTown.name + ' forecast' + (name ? ', ' + name : '') + ': '
         + temp + (short ? '. ' + short : '') + (extra ? '. ' + extra : '') + '.'));
-      ready++;
-    }
-  }
-  // Commute verdict — the headline, plus its specifics when it isn't clear
-  const cv = $('commute-verdict');
-  if (cv) {
-    const head = cv.querySelector('.cv-head');
-    if (head && !briefingPending(head.textContent)) {
-      let line = 'Commute: ' + voiceClean(head.textContent) + '.';
-      const sub = cv.querySelector('.cv-sub');
-      if (sub && /(cv-warn|cv-bad)/.test(cv.className)) line += ' ' + voiceClean(sub.textContent) + '.';
-      lines.push(line);
       ready++;
     }
   }
@@ -5824,15 +5925,6 @@ function wallNowScene() {
   return { kind: 'now', kicker: '🌲 Tillamook County Live', head: time, sub: sub, src: 'National Weather Service forecast' };
 }
 
-function wallDriveScene() {
-  const cv = $('commute-verdict');
-  const head = cv ? wallTxt(cv.querySelector('.cv-head')) : '';
-  if (!head || briefingPending(head)) return null;
-  const bv = wallTxt($('glance-bridge-val'));
-  return { kind: 'drive', kicker: '🚗 The drive — US-101 & OR-6', head: head,
-    sub: (bv && !briefingPending(bv)) ? 'Roads: ' + bv : '', src: 'ODOT TripCheck snapshots, as labeled on the page' };
-}
-
 function wallRiverScene() {
   const rv = wallTxt($('glance-river-val'));
   if (!rv || briefingPending(rv)) return null;
@@ -5880,7 +5972,7 @@ function wallEventScene() {
 function wallBuildScenes() {
   const a = wallAlertScenes();
   const base = [];
-  [wallNowScene(), wallDriveScene(), wallRiverScene(), wallFerryScene(), wallLightScene(), wallEventScene()]
+  [wallNowScene(), wallRiverScene(), wallFerryScene(), wallLightScene(), wallEventScene()]
     .forEach(s => { if (s) base.push(s); });
   if (!a.scenes.length) return base;
   if (!a.severe) {
@@ -6179,6 +6271,7 @@ const FINDER_SECTIONS = [
   { id: 'roads-card',    title: 'US-30, the Bridge & Roads', sub: 'Bridge status, work zones and corridor alerts', keys: 'bridge road highway us-30 commute drive driving closure closed traffic longview detour cornelius pass' },
   { id: 'cameras-card',  title: 'Road cameras',              sub: 'My Route cameras and the county camera grid', keys: 'camera cameras cam photos stills us-30 cornelius pass i-5 interstate st johns rainier millard' },
   { id: 'drive-card',    title: 'Your Commute — drive times', sub: 'How long the drive takes, from your town to Portland, Lincoln City or Seaside', keys: 'commute drive time minutes how long portland lincoln city seaside traffic trip' },
+  { id: 'coast-card',    title: 'Coast Conditions',          sub: 'The Tillamook Bay bar, high surf and flooding — the simple answers', keys: 'coast conditions bar surf flood flooding tsunami garibaldi crossing restricted beach hazards sneaker waves can i go out' },
   { id: 'bay-card',      title: 'Bay & Bar',                 sub: 'Tillamook Bay bar report, tides and boat ramps', keys: 'bay bar garibaldi crossing rough restricted boat ramp launch marina crab' },
   { id: 'ohv-card',      title: 'OHV — Ride Areas',          sub: 'Browns Camp, Jordan Creek, Diamond Mill and Sand Lake', keys: 'ohv atv quad motorcycle ride riding trails browns camp jordan creek diamond mill sand lake dunes permit' },
   { id: 'parks-card',    title: 'Parks, Beaches & Trails',   sub: 'State parks, capes, beaches and trails around the county', keys: 'park parks beach beaches trail trails hike hiking cape lookout meares kiwanda oswald west nehalem bay munson falls' },
@@ -6188,7 +6281,6 @@ const FINDER_SECTIONS = [
   { id: 'forecast-week-card', title: 'Forecast — the week',  sub: 'The seven-day forecast pills', keys: 'forecast week seven day pills outlook weather' },
   { id: 'aircraft-card', title: 'Aircraft Overhead',         sub: 'Planes over the county right now, from community ADS-B receivers', keys: 'plane planes aircraft flight flights overhead adsb low local ground traffic' },
   { id: 'sky-card',      title: 'In the Sky Right Now',      sub: 'The ISS, and when to see the station pass', keys: 'iss station satellite sky look up passes pass' },
-  { id: 'dark-card',     title: 'After Dark — Tonight\u2019s Sky', sub: 'Clouds, moonlight, aurora odds and meteor showers — is tonight worth looking up?', keys: 'stars stargazing night sky dark aurora northern lights meteor meteors shooting star telescope astronomy milky way bundle up tonight' },
   { id: 'rivers-card',   title: 'River Levels',              sub: 'USGS gauges on the Wilson, Trask, Nehalem and Nestucca', keys: 'river rivers level levels gauge gauges flood height wilson trask nehalem nestucca kilchis miami' },
   { id: 'tides-card',    title: 'Bay Tides',                 sub: 'Next high and low tide at Garibaldi, Netarts and Nehalem', keys: 'tide tides high low slack fishing dock ramp bay garibaldi netarts nehalem' },
   { id: 'crab-card',     title: 'Crabbing Index — Tillamook Bay', sub: 'The best day and hours to crab this week, scored from tides, wind, rain and the rivers', keys: 'crab crabs crabbing dungeness pots rings slack index best day garibaldi bay boat' },
@@ -6580,8 +6672,11 @@ const LANG_ES = {
   fs4p: 'Uno de solo cuatro lugares fundadores, para siempre — tu nombre y logo en la página de Hoy que todo visitante abre primero. $49/mes, bloqueado mientras te quedes, y una prueba gratuita de 30 días antes de pagar algo.',
   fs4cta: 'Reclama el lugar 4 &rarr;',
   fsfoot: 'Cada patrocinador fundador conserva una insignia permanente de «Patrocinador Fundador · 2026» y un lugar en el muro de Socios Comunitarios de abajo — aunque después cambie de nivel. El período fundador cierra el 31 de enero de 2027 — después de eso, nunca más habrá patrocinadores fundadores nuevos.',
-  commuteh2: '🚗 El veredicto del viaje',
-  commutenote: 'La respuesta en una línea para manejar ahora mismo. El panorama completo del corredor — incidentes y cámaras — está en la pestaña Viajes.',
+  coasth2: '🌊 Condiciones de la costa',
+  coastbar: 'Barra de la bahía de Tillamook · Garibaldi',
+  coastsurf: 'Oleaje alto',
+  coastflood: 'Inundaciones',
+  coastnote: "La fila de la barra es el reporte propio de la Guardia Costera para la bahía de Tillamook, publicado por el Servicio Meteorológico Nacional cada cuatro horas aproximadamente — <a href=\"https://www.weather.gov/pqr/AllBars\" target=\"_blank\" rel=\"noopener\">el reporte completo de la barra</a>. Las barras de Netarts y Nehalem no tienen reporte oficial, así que no se muestra condición para ellas. El oleaje y las inundaciones vienen de las alertas en vivo del Servicio Meteorológico Nacional para el condado y su costa.",
   driveh2: '🧭 Tu viaje — ¿cuánto dura el manejo?',
   drivefrom: 'Desde',
   driveto: 'Hasta',
@@ -6823,8 +6918,8 @@ const LANG_ES = {
   signposttravel: '🌊 Bahía y carreteras en Viajes',
   signpostoutdoors: '🎣 Aire libre',
   signpostmore: '📅 Eventos y más',
-  dwcommute: 'El veredicto del viaje',
   dwdrive: 'Tu viaje — tiempos de manejo',
+  dwcoast: 'Condiciones de la costa',
   dwgo: 'Antes de salir',
   dwplan: 'Esta noche y mañana',
   dwschools: 'Escuelas — cierres y retrasos',
@@ -6840,7 +6935,6 @@ const LANG_ES = {
   dwalerts: 'Alertas del clima',
   dwforecast: 'Pronóstico',
   dwsky: 'El cielo y la estación espacial',
-  dwdark: 'Al anochecer',
   dwrivers: 'Niveles del río',
   dwtides: 'Mareas del río',
   dwfish: 'Conteos de peces',
@@ -7428,10 +7522,10 @@ window.CCLPins = {
    card in its home view. The map card is deliberately not pinnable:
    it is the page's anchor, and a Leaflet container does not need the
    adventure. */
-const PIN_CARDS = ['since-card', 'home-card', 'commute-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
+const PIN_CARDS = ['since-card', 'home-card', 'coast-card', 'go-card', 'plan-card', 'schools-card', 'briefing-card',
   'map-card', 'drive-card', 'bay-card', 'roads-card', 'cameras-card', 'incidents-card', 'routeahead-card', 'aircraft-card',
-  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'dark-card', 'rivers-card', 'tides-card',
-  'fishing-card', 'ohv-card', 'parks-card', 'almanac-card',
+  'alerts-card', 'forecast-week-card', 'forecast-card', 'sky-card', 'rivers-card', 'tides-card',
+  'ohv-card', 'parks-card', 'almanac-card',
   'quakes-card', 'fires-card', 'air-card',
   'events-card', 'creamery-card', 'fair-card', 'freshness-card', 'watch-card', 'saver-card', 'about-card',
   'help-food-card', 'help-crisis-card', 'help-money-card', 'help-family-card', 'help-vets-card',
@@ -7630,14 +7724,9 @@ function buildPrintSheet() {
       if (rows) blocks += psBlock('🌦️ Forecast — ' + esc(currentTown.name), rows);
     }
   }
-  // The drive — commute verdict headline + the bridge glance tile
+  // The drive — the bridge glance tile (the print sheet's road row)
   {
     let rows = '';
-    const cv = $('commute-verdict');
-    if (cv) {
-      const head = cv.querySelector('.cv-head');
-      if (head && !briefingPending(head.textContent)) rows += psRow('Verdict', esc(briefingClean(head.textContent)));
-    }
     const bv = briefingClean(($('glance-bridge-val') || {}).textContent);
     if (bv && !briefingPending(bv)) rows += psRow('Roads — US-101 &amp; OR-6', esc(bv));
     if (rows) blocks += psBlock('🚗 The drive — US-101 &amp; OR-6', rows);
@@ -7727,250 +7816,6 @@ function initPrint() {
   if (window.addEventListener) window.addEventListener('beforeprint', renderPrintSheet);
 }
 initPrint();
-
-/* ================= X20 Round 20 — "After Dark": is tonight worth looking up? =====
-   Twenty-eight shipped changes, and the page's sky story still ended at
-   sunset. The Sky card says what's overhead *now*; the Almanac says how
-   much light is left; the passes block says when the station crosses.
-   Nothing weighed them together into the one evening decision a clear
-   night in this county actually turns on: bundle up and go out — or
-   don't bother. This card runs that gauntlet for tonight's dark window
-   (civil dusk to civil dawn, from the Almanac's own math, for the
-   visitor's home town or St. Helens): the Open-Meteo forecast model's
-   cloud cover across those hours (keyless, CORS-open, browser-direct
-   like the air card), NOAA SWPC's Kp forecast for the aurora (at 46°N
-   the lights are earned, not routine: Kp 5+ and a dark northern
-   horizon), the moon's wash from the Almanac, any naked-eye station
-   pass the passes module already computed for tonight, and the annual
-   meteor-shower calendar (published peak dates and nominal rates —
-   astronomy, not a feed). The verdict follows the trip checker's
-   honesty rule: clouds are the deciding check, so if they couldn't be
-   checked the verdict caps below its best band and the row says why;
-   every bonus source declines in its own row rather than dressing up.
-   Refreshes every 30 minutes, re-renders every minute, follows the
-   home town like the passes do. No key, no images. */
-const DARK_KP_URL = 'https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json';
-const DARK_SHOWERS = [
-  { name: 'Quadrantids',    m: 1,  d: 3,  zhr: 60 },
-  { name: 'Lyrids',         m: 4,  d: 22, zhr: 18 },
-  { name: 'Eta Aquariids',  m: 5,  d: 5,  zhr: 50 },
-  { name: 'Delta Aquariids', m: 7, d: 28, zhr: 20 },
-  { name: 'Perseids',       m: 8,  d: 12, zhr: 100 },
-  { name: 'Orionids',       m: 10, d: 21, zhr: 20 },
-  { name: 'Leonids',        m: 11, d: 17, zhr: 15 },
-  { name: 'Geminids',       m: 12, d: 13, zhr: 120 },
-  { name: 'Ursids',         m: 12, d: 22, zhr: 10 }
-];
-let darkClouds = null;   // { town, hours: [{ t, cloud }] } — Open-Meteo forecast model
-let darkKp = null;       // [{ t, kp, scale }] — NOAA SWPC 3-hour blocks, instants in UTC
-let darkTownName = '';
-
-function darkUrl(town) {
-  return 'https://api.open-meteo.com/v1/forecast?latitude=' + town.lat
-    + '&longitude=' + town.lon + '&hourly=cloud_cover'
-    + '&past_days=1&forecast_days=2&timezone=America%2FLos_Angeles';
-}
-function darkKpInstant(tstr) {
-  // SWPC stamps its blocks in UTC but leaves the Z off, and a bare ISO
-  // stamp parses as *local* time — pin it to UTC or every block lands
-  // a timezone away from the night it describes.
-  let s = String(tstr || '').replace(' ', 'T');
-  if (!/(Z|[+-]\d{2}:?\d{2})$/.test(s)) s += 'Z';
-  return new Date(s).getTime();
-}
-function darkWindow(town, nowMs) {
-  // Tonight's dark window: civil dusk to civil dawn around the night
-  // that contains — or follows — now. Before dawn, the night in
-  // progress (it began at yesterday's dusk); after dawn, the coming
-  // one. Dates go through the Almanac's own almPtDate parts objects —
-  // almDay does not take a Date, and handing it one yields NaN days.
-  const day = almDay(almPtDate(0), town);
-  if (!day || !day.dawn || !day.dusk) return null;
-  if (nowMs < day.dawn.getTime()) {
-    const y = almDay(almPtDate(-1), town);
-    return (y && y.dusk) ? { start: y.dusk.getTime(), end: day.dawn.getTime() } : null;
-  }
-  const t = almDay(almPtDate(1), town);
-  return (t && t.dawn) ? { start: day.dusk.getTime(), end: t.dawn.getTime() } : null;
-}
-function darkMeteor(win) {
-  // The shower whose published peak falls nearest tonight, with the
-  // signed distance in whole Pacific days (0 = peaks tonight).
-  const p = {};
-  new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles',
-    year: 'numeric', month: '2-digit', day: '2-digit' })
-    .formatToParts(new Date(win.start)).forEach(x => { p[x.type] = x.value; });
-  const tonight = Date.UTC(+p.year, +p.month - 1, +p.day);
-  let best = null;
-  for (const s of DARK_SHOWERS) {
-    for (const y of [+p.year - 1, +p.year, +p.year + 1]) {
-      const diff = Math.round((Date.UTC(y, s.m - 1, s.d) - tonight) / 864e5);
-      if (!best || Math.abs(diff) < Math.abs(best.diff)) {
-        best = { name: s.name, zhr: s.zhr, diff, peakMs: Date.UTC(y, s.m - 1, s.d) };
-      }
-    }
-  }
-  return best;
-}
-async function loadDark() {
-  const town = passObserver();
-  try {
-    const d = await getJSON(darkUrl(town));
-    const times = (d && d.hourly && d.hourly.time) || [];
-    const cov = (d && d.hourly && d.hourly.cloud_cover) || [];
-    const hours = [];
-    for (let i = 0; i < times.length; i++) {
-      const t = airInstant(times[i]);
-      if (!isNaN(t) && cov[i] != null) hours.push({ t, cloud: Math.round(cov[i]) });
-    }
-    if (!hours.length) throw new Error('no cloud hours in response');
-    darkClouds = { town: town.name, hours };
-    darkTownName = town.name;
-    setUpdated('dark-updated');
-  } catch (e) { /* keep the last good model run; if there is none, the cloud row declines */ }
-  try {
-    const d = await getJSON(DARK_KP_URL);
-    if (!Array.isArray(d) || !d.length) throw new Error('no Kp blocks in response');
-    const blocks = d.map(b => ({ t: darkKpInstant(b.time_tag), kp: +b.kp, scale: b.noaa_scale || null }))
-      .filter(b => !isNaN(b.t) && !isNaN(b.kp));
-    if (!blocks.length) throw new Error('no usable Kp blocks');
-    darkKp = blocks;
-  } catch (e) { /* the aurora row declines honestly; the verdict just loses a bonus */ }
-  renderDark();
-}
-function renderDark() {
-  const body = $('dark-body');
-  if (!body) return;
-  const town = passObserver();
-  const now = Date.now();
-  const win = darkWindow(town, now);
-  const moon = almMoon(new Date(now));
-  const moonPct = Math.round(moon.illum * 100);
-
-  let cloudAvg = null, cloudPeak = null;
-  if (darkClouds && win) {
-    const inWin = darkClouds.hours.filter(h => h.t >= win.start - 1800e3 && h.t < win.end);
-    if (inWin.length) {
-      cloudAvg = Math.round(inWin.reduce((a, h) => a + h.cloud, 0) / inWin.length);
-      cloudPeak = inWin.reduce((m, h) => Math.max(m, h.cloud), 0);
-    }
-  }
-  let kpMax = null, kpScale = null;
-  if (darkKp && win) {
-    for (const b of darkKp) {
-      if (b.t < win.end && b.t + 3 * 3600e3 > win.start && (kpMax == null || b.kp > kpMax)) {
-        kpMax = b.kp; kpScale = b.scale;
-      }
-    }
-  }
-  let issVis = null, issKnown = false;
-  try {
-    if (typeof passPasses !== 'undefined' && passPasses) {
-      issKnown = true;
-      if (win) issVis = passPasses.find(p => p.kind === 'visible' && p.end > win.start && p.start < win.end) || null;
-    }
-  } catch (e) { issVis = null; issKnown = false; }
-  const meteor = win ? darkMeteor(win) : null;
-  const meteorHot = !!(meteor && Math.abs(meteor.diff) <= 2);
-  const special = !!issVis || (kpMax != null && kpMax >= 5) || meteorHot;
-
-  let lvl, head, sub;
-  if (cloudAvg == null) {
-    lvl = 'warn'; head = 'Can\u2019t call it yet';
-    sub = 'The cloud forecast couldn\u2019t be checked just now, and clouds decide everything up there — '
-      + 'so no verdict rather than a guess. What could be checked is itemized below.';
-  } else if (cloudAvg <= 25 && (special || moon.illum <= 0.55)) {
-    const draws = [];
-    if (issVis) draws.push('a space-station pass you can actually see');
-    if (kpMax != null && kpMax >= 5) draws.push('a real shot at the northern lights');
-    if (meteorHot) draws.push('the ' + meteor.name + ' meteors at their peak');
-    if (!draws.length) draws.push('a properly dark sky — the moon is only ' + moonPct + '% lit');
-    lvl = 'ok'; head = 'Worth bundling up';
-    sub = 'Clear dark hours over ' + esc(town.name) + ' tonight, with ' + draws.join(' and ') + '.';
-  } else if (cloudAvg <= 55) {
-    lvl = 'warn'; head = 'A maybe night';
-    sub = cloudAvg <= 25
-      ? 'Clear skies over ' + esc(town.name) + ', but the ' + esc(moon.name.toLowerCase()) + ' moon (' + moonPct
-        + '% lit) washes out the faint stuff — bright planets, the big constellations, and a station pass if one crosses still show.'
-      : 'About ' + cloudAvg + '% covered over ' + esc(town.name) + ' through the dark hours — the sky comes '
-        + 'and goes. Worth a look out the window before you commit to a dark spot.';
-  } else {
-    lvl = 'bad'; head = 'Not tonight';
-    sub = 'The model has ' + esc(town.name) + ' under about ' + cloudAvg + '% cloud through the dark hours.';
-    if (issVis) sub += ' It\u2019s even hiding a visible station pass.';
-    else if (kpMax != null && kpMax >= 5) sub += ' It\u2019s even hiding a Kp ' + kpMax.toFixed(1) + ' aurora chance.';
-    else if (meteorHot) sub += ' It\u2019s even hiding the ' + meteor.name + ' meteors at their peak.';
-  }
-
-  const rows = [];
-  if (win) {
-    rows.push('<li><span class="dark-row-k">🌑 Dark hours</span><span class="dark-row-v">Fully dark from '
-      + '<strong>' + almClock(new Date(win.start)) + '</strong> to <strong>' + almClock(new Date(win.end))
-      + '</strong> — ' + almDur(win.end - win.start) + ' of it.</span></li>');
-  }
-  if (cloudAvg == null) {
-    rows.push('<li><span class="dark-row-k">☁️ Clouds</span><span class="dark-row-v">Couldn\u2019t check — '
-      + 'the cloud model didn\u2019t answer. There\u2019s no honest verdict without it.</span></li>');
-  } else {
-    rows.push('<li><span class="dark-row-k">☁️ Clouds</span><span class="dark-row-v">Cloud cover tonight: about '
-      + '<strong>' + cloudAvg + '%</strong> on average across the dark hours'
-      + (cloudPeak >= 90 && cloudAvg <= 55 ? ', with a fully covered stretch in there' : '') + '.</span></li>');
-  }
-  rows.push('<li><span class="dark-row-k">🌙 The moon</span><span class="dark-row-v">' + esc(moon.name) + ', '
-    + '<strong>' + moonPct + '% lit</strong> — '
-    + (moon.illum >= 0.75 ? 'bright enough to wash out faint stars and meteors.'
-      : moon.illum <= 0.35 ? 'leaves the sky nice and dark for the faint stuff.'
-      : 'some moonlight to contend with, but the sky still performs.') + '</span></li>');
-  if (issVis) {
-    rows.push('<li><span class="dark-row-k">🛰️ The station</span><span class="dark-row-v">A <strong>visible pass</strong> tonight: '
-      + esc(fmtTime(new Date(issVis.start))) + ' – ' + esc(fmtTime(new Date(issVis.end))) + ', peaking '
-      + Math.round(issVis.peakEl) + '° up in the ' + passCompass(issVis.peakAz) + ' — look up.</span></li>');
-  } else if (issKnown) {
-    rows.push('<li><span class="dark-row-k">🛰️ The station</span><span class="dark-row-v">No visible station pass '
-      + 'tonight — the Sky card above keeps the next one you can catch.</span></li>');
-  } else {
-    rows.push('<li><span class="dark-row-k">🛰️ The station</span><span class="dark-row-v">Pass times couldn\u2019t be '
-      + 'worked out just now — the live position is on the Sky card above.</span></li>');
-  }
-  if (kpMax == null) {
-    rows.push('<li><span class="dark-row-k">🌌 Northern lights</span><span class="dark-row-v">Couldn\u2019t check — '
-      + 'NOAA\u2019s Kp forecast didn\u2019t answer just now.</span></li>');
-  } else {
-    const band = kpMax >= 7 ? 'a real chance of seeing them, maybe well up in the northern sky'
-      : kpMax >= 5 ? 'possible low on the northern horizon — find a dark spot with a clear view north'
-      : 'not expected this far south tonight (our latitude usually needs about Kp 5)';
-    rows.push('<li><span class="dark-row-k">🌌 Northern lights</span><span class="dark-row-v">Kp up to '
-      + '<strong>' + kpMax.toFixed(1) + '</strong> tonight' + (kpScale ? ' (' + esc(kpScale) + ' storm level)' : '')
-      + ' — ' + band + '.</span></li>');
-  }
-  if (meteor && (meteorHot || (meteor.diff > 2 && meteor.diff <= 10))) {
-    const when = meteor.diff === 0 ? 'tonight' : meteor.diff === 1 ? 'tomorrow night'
-      : meteor.diff === -1 ? 'last night — still strong tonight'
-      : 'on ' + esc(fmtDay(new Date(meteor.peakMs + 12 * 3600e3)));
-    rows.push('<li><span class="dark-row-k">☄️ Meteors</span><span class="dark-row-v">The <strong>' + esc(meteor.name)
-      + '</strong> peak ' + when + ' — up to about ' + meteor.zhr + ' an hour at the peak under dark skies'
-      + (moon.illum >= 0.8 ? '; a bright moon will thin them out' : '') + '.</span></li>');
-  }
-
-  body.innerHTML =
-    '<div class="dark-verdict dark-' + lvl + '"><div class="dark-verdict-head">' + head + '</div>'
-    + '<div class="dark-verdict-sub">' + sub + '</div></div>'
-    + '<ul class="dark-rows">' + rows.join('') + '</ul>';
-}
-function tickDark() {
-  // Follow the home town like the station passes do: if the visitor
-  // picked a different town, re-read the sky for the new one; otherwise
-  // just re-render so the window and countdowns stay honest.
-  if (passObserver().name !== darkTownName && darkTownName !== '') { loadDark(); return; }
-  if (darkClouds || darkKp) renderDark();
-}
-function initDark() {
-  if (!$('dark-body')) return;
-  loadDark();
-  setInterval(loadDark, 30 * 60 * 1000);
-  setInterval(tickDark, 60 * 1000);
-}
-initDark();
 
 /* ---------- view navigation (Redesign 2026-11-04) ----------
    Twenty rounds of features made the page a mile long; this module gives

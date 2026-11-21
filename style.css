@@ -218,6 +218,32 @@ h2{font-weight:700;letter-spacing:-.01em}
 .tsunami-meta{margin:0 0 6px;font-size:.92rem;opacity:.94}
 .tsunami-areas{margin:0 0 6px;line-height:1.45}
 
+/* Coast card (tcl-v15) — one big simple card in Today's flow:
+   three plain-language rows, one per hazard, each a big colored
+   dot + a big answer + one short line. Colors ride the site's
+   state variables (ok green / warn amber / bad red / unknown
+   gray). The tsunami strip inside the card appears only while a
+   tsunami product is active; a warning also rings the whole card
+   red. Frosted language like every other card — no hero banner. */
+.coast-rows{display:flex;flex-direction:column;gap:12px;margin:2px 0 12px}
+.coast-row{display:flex;gap:14px;align-items:flex-start;background:var(--panel-2);border:1px solid var(--border);border-radius:calc(var(--radius) - 4px);padding:14px 16px}
+.coast-dot{flex:0 0 auto;width:22px;height:22px;border-radius:50%;margin-top:5px;background:#9aa3a8;box-shadow:0 0 0 4px rgba(154,163,168,.16)}
+.coast-row.ok .coast-dot{background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.16)}
+.coast-row.warn .coast-dot{background:#e8a100;box-shadow:0 0 0 4px rgba(232,161,0,.18)}
+.coast-row.bad .coast-dot{background:#d92c1f;box-shadow:0 0 0 4px rgba(217,44,31,.16)}
+.coast-main{display:flex;flex-direction:column;gap:1px;min-width:0}
+.coast-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.coast-val{font-size:1.45rem;font-weight:800;line-height:1.15;letter-spacing:-.01em}
+.coast-row.ok .coast-val{color:var(--accent-2)}
+.coast-row.warn .coast-val{color:var(--warn)}
+.coast-row.bad .coast-val{color:var(--danger)}
+.coast-sub{font-size:.92rem;color:var(--muted);line-height:1.4}
+.coast-tsunami{border-radius:calc(var(--radius) - 4px);padding:12px 16px;margin:0 0 12px;font-weight:700;line-height:1.4;color:#fff;background:linear-gradient(160deg, rgba(232,161,0,.95), rgba(176,118,0,.97))}
+.coast-tsunami.bad{background:linear-gradient(160deg, rgba(196,18,26,.94), rgba(122,10,17,.96))}
+.coast-tsunami[hidden]{display:none}
+.coast-card.coast-danger{border:2px solid rgba(255,138,128,.9);box-shadow:0 12px 36px rgba(196,18,26,.35)}
+@media (max-width:560px){.coast-val{font-size:1.22rem}.coast-dot{width:18px;height:18px;margin-top:4px}}
+
 /* ---------- Views ---------- */
 .views{max-width:1200px;margin:0 auto;padding:16px 20px 8px}
 .view{display:flex;flex-direction:column;gap:16px;min-width:0}
@@ -546,15 +572,6 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .plane-pin span{filter:drop-shadow(0 1px 3px rgba(0,0,0,.7))}
 
 /* Commute verdict */
-.commute-verdict{border-radius:12px;padding:13px 15px;border:1px solid var(--border);background:var(--panel-2)}
-.commute-verdict .cv-head{font-size:1.18rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
-.commute-verdict .cv-sub{color:var(--muted);font-size:.85rem;margin-top:3px}
-.commute-verdict.cv-ok{border-left:5px solid var(--accent-2)}
-.commute-verdict.cv-ok .cv-head{color:var(--accent-2)}
-.commute-verdict.cv-warn{border-left:5px solid var(--warn)}
-.commute-verdict.cv-warn .cv-head{color:var(--warn)}
-.commute-verdict.cv-bad{border-left:5px solid var(--danger);background:#fdf1f1}
-.commute-verdict.cv-bad .cv-head{color:var(--danger)}
 
 /* Bridge */
 .bridge-box{border-radius:12px;padding:12px 14px;margin-bottom:6px;border:1px solid var(--border);background:var(--panel-2)}
@@ -1066,23 +1083,6 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
   #print-sheet .ps-foot{border-top:1.5px solid #111;margin-top:8pt;padding-top:5pt;font-size:8.8pt;color:#333;line-height:1.45}
 }
 
-/* X20 Round 20 — After Dark: tonight's-sky verdict band + check rows */
-.dark-verdict{border-radius:12px;padding:13px 15px;margin-bottom:12px;border:1px solid var(--border);background:var(--panel-2)}
-.dark-verdict-head{font-size:1.28rem;font-weight:800;letter-spacing:-.01em;line-height:1.2}
-.dark-verdict-sub{color:var(--muted);font-size:.88rem;margin-top:3px;line-height:1.45}
-.dark-verdict.dark-ok{border-left:5px solid var(--accent-2)}
-.dark-verdict.dark-ok .dark-verdict-head{color:var(--accent-2)}
-.dark-verdict.dark-warn{border-left:5px solid var(--warn)}
-.dark-verdict.dark-warn .dark-verdict-head{color:var(--warn)}
-.dark-verdict.dark-bad{border-left:5px solid var(--danger);background:#fdf1f1}
-.dark-verdict.dark-bad .dark-verdict-head{color:var(--danger)}
-.dark-rows{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.dark-rows li{display:grid;gap:2px;padding:8px 0;border-bottom:1px solid var(--border)}
-.dark-rows li:last-child{border-bottom:none}
-.dark-row-k{font-weight:600;font-size:.92rem}
-.dark-row-v{font-size:.92rem;line-height:1.45;color:var(--muted)}
-.dark-row-v strong{color:var(--text);font-variant-numeric:tabular-nums}
-
 /* ---------- Fish counts + Salmon Tracker (2026-11-04) ---------- */
 .fish-rows{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 2px}
 .fish-sp{
@@ -1491,6 +1491,16 @@ body.sponsor-on{overflow:hidden}
 .dir-call{font-weight:700;color:var(--accent-dark);text-decoration:none;white-space:nowrap}
 .dir-call:hover{text-decoration:underline}
 .dir-addr{font-size:.78rem;color:var(--muted)}
+/* tcl-v15: whole-row tap targets — boat ramps and OHV areas open in
+   Google Maps. The overlay link covers the row; the row's own text
+   lets clicks fall through to it, while real links inside the row
+   (the port's website / phone) stay clickable on top. */
+.dir-item.linked{position:relative;cursor:pointer}
+.dir-item.linked:hover{background:var(--panel-2)}
+.dir-item .item-overlay{position:absolute;inset:0;z-index:0}
+.dir-item.linked .dir-item-main,.dir-item.linked .dir-contact{position:relative;z-index:1;pointer-events:none}
+.dir-item.linked .dir-item-main a,.dir-item.linked .dir-contact a{pointer-events:auto}
+.dir-go{display:inline-block;margin:7px 0 0;padding:3px 10px;border-radius:999px;background:var(--accent);color:#fff;font-size:.78rem;font-weight:700;pointer-events:none}
 /* Community Help entries as their own little cards (2026-11-14): scoped
    to the Help view so the business directory keeps its divider list.
    The name links to the organization's own website where one is
@@ -1654,9 +1664,7 @@ html[data-theme="dark"] .alert-banner{background:rgba(179,53,43,.18);border-colo
 html[data-theme="dark"] .alert-banner strong{color:#ffd9d3}
 html[data-theme="dark"] .offline-note{background:rgba(233,164,74,.13);border-color:#8a6d2f;color:#f5d9a0}
 html[data-theme="dark"] .quake-mag.hot{border-color:#8c453c;color:#ff9d8a;background:rgba(179,53,43,.18)}
-html[data-theme="dark"] .commute-verdict.cv-bad,
 html[data-theme="dark"] .go-verdict.go-bad,
-html[data-theme="dark"] .dark-verdict.dark-bad{background:rgba(179,53,43,.14)}
 html[data-theme="dark"] .sh-good{background:rgba(46,125,63,.4);color:#8fe3a8}
 html[data-theme="dark"] .sh-fair{background:rgba(217,119,6,.3);color:#ffd9a0}
 html[data-theme="dark"] .sh-poor{background:#1e2e23;color:#a9bba2}

@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=1">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=1">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=14">
+<link rel="stylesheet" href="style.css?v=15">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=1">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=1">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -302,15 +302,50 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div id="home-body" class="panel-body"><p class="loading">Loading your town picker…</p></div>
 </section>
 
-<section class="card commute-card" id="commute-card" aria-label="The commute verdict — is the drive okay right now">
+<!-- tcl-v15 (2026-11-20, Travis's call): THE COAST CARD — one big,
+     simple card in Today's flow, among the other cards. Three
+     plain-language answers and nothing else: the Tillamook Bay bar
+     (the Coast Guard's own report, via NWS Portland), high surf,
+     and flooding — plus a tsunami strip inside the card that only
+     appears while a tsunami product is active (the verbatim
+     Tsunami Warning card at the very top of the page stays the
+     primary warning, per the standing rule). Rows are filled by
+     loadCoast() in app.js from live official feeds; a row that
+     cannot be checked says so in gray — it never guesses green. -->
+<section class="card coast-card" id="coast-card" aria-label="Coast conditions — the bar, high surf and flooding, in plain language">
   <div class="card-head">
-    <h2 data-i18n="commuteh2">🚗 The Commute Verdict</h2>
+    <h2 data-i18n="coasth2">🌊 Coast Conditions</h2>
+    <span class="updated" id="coast-updated"></span>
   </div>
-  <div id="commute-verdict" class="commute-verdict"><p class="loading">Checking the corridor…</p></div>
-  <p class="card-note small" data-i18n="commutenote">The one-line answer for the drive right now. The full picture — incidents, cameras and the bays — lives on the Travel tab.</p>
+  <div class="coast-tsunami" id="coast-tsunami" hidden></div>
+  <div class="coast-rows">
+    <div class="coast-row" id="coast-row-bar">
+      <span class="coast-dot" aria-hidden="true"></span>
+      <div class="coast-main">
+        <span class="coast-label" data-i18n="coastbar">Tillamook Bay Bar · Garibaldi</span>
+        <span class="coast-val">Checking the bar report…</span>
+        <span class="coast-sub"></span>
+      </div>
+    </div>
+    <div class="coast-row" id="coast-row-surf">
+      <span class="coast-dot" aria-hidden="true"></span>
+      <div class="coast-main">
+        <span class="coast-label" data-i18n="coastsurf">High Surf</span>
+        <span class="coast-val">Checking surf alerts…</span>
+        <span class="coast-sub"></span>
+      </div>
+    </div>
+    <div class="coast-row" id="coast-row-flood">
+      <span class="coast-dot" aria-hidden="true"></span>
+      <div class="coast-main">
+        <span class="coast-label" data-i18n="coastflood">Flooding</span>
+        <span class="coast-val">Checking flood alerts…</span>
+        <span class="coast-sub"></span>
+      </div>
+    </div>
+  </div>
+  <p class="card-note small" data-i18n="coastnote">The bar row is the Coast Guard&rsquo;s own report for Tillamook Bay, posted by the National Weather Service about every four hours — <a href="https://www.weather.gov/pqr/AllBars" target="_blank" rel="noopener">the full bar report</a>. The Netarts and Nehalem bars have no official report, so no condition is shown for them. Surf and flood come from live National Weather Service alerts for the county and its coast.</p>
 </section>
-
-
 
 <section class="card go-card" id="go-card" aria-label="Before you go — a go or no-go check for the drive or the water">
   <div class="card-head">
@@ -523,16 +558,16 @@ document.documentElement.setAttribute("data-theme",t);})();
         <p class="card-note small">The county's other two bays are different water: <strong>Netarts Bay</strong> has no published bar report at all, and the <strong>Nehalem bar is officially unmonitored</strong> — the Coast Guard's word there is VHF channel 16 and local knowledge. No condition is shown for either bay here, because nobody official publishes one.</p>
         <h3 class="subhead">Boat ramps &amp; launches</h3>
         <div class="dir-list">
-          <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://www.portofgaribaldi.org/" target="_blank" rel="noopener">Port of Garibaldi — launch &amp; moorage</a></h3><p class="dir-meta">Garibaldi · Tillamook Bay</p><p class="dir-desc">The bay's working port: public launch, annual and guest moorage, launch passes, RV park. Port office, 402 South 7th Street.</p></div><div class="dir-contact"><a class="dir-call" href="tel:+15033223292">&#128222; (503) 322-3292</a></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Memaloose Point Boat Launch</h3><p class="dir-meta">Tillamook · Tillamook Bay / Tillamook River · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Bayocean Road.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Netarts Landing Boat Launch</h3><p class="dir-meta">Netarts · Netarts Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock at Netarts Bay Drive &amp; Netarts Basin Boat Road. The dock slants toward the water at low tide (OSMB, Sept. 2026).</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Nehalem Bay Boat Launch (county)</h3><p class="dir-meta">Nehalem · Nehalem Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Tideland Road at Highway 101 — the county ramp, distinct from the state park ramp below.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=142" target="_blank" rel="noopener">Nehalem Bay State Park boat ramp</a></h3><p class="dir-meta">Manzanita · Nehalem Bay · Oregon State Parks</p><p class="dir-desc">Bayside day-use ramp; the boat docks are seasonal, typically mid-May to mid-October.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Hungry Harbor Boat Launch — the dory launch</h3><p class="dir-meta">Pacific City · Cape Kiwanda · County Parks</p><p class="dir-desc">Dory boats and small authorized ocean craft only: a concrete and plank ramp onto the beach — launch and land straight through the surf.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Pacific City Boat Launch</h3><p class="dir-meta">Pacific City · Nestucca River · County Parks</p><p class="dir-desc">Motorized concrete ramp off Sunset Drive. OSMB (Sept. 2026) warns of a drop-off at the ramp end and a sand bar partly blocking it, worst at low tide.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Sollie Smith Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Motorized concrete ramp at Wilson River Loop &amp; Latimer Road — the lower-Wilson take-out, beside the Sollie Smith gauge on the River Levels card.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Mills Bridge Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Drift boats, unimproved, six miles east of Tillamook on Highway 6.</p></div></article>
-          <article class="dir-item"><div class="dir-item-main"><h3>Parks Landing Boat Launch</h3><p class="dir-meta">Tillamook · Kilchis River · County Parks</p><p class="dir-desc">Motorized concrete ramp on Idaville Loop Road, half a mile east of Highway 101.</p></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5577,-123.9111" target="_blank" rel="noopener" aria-label="Open Port of Garibaldi in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.portofgaribaldi.org/" target="_blank" rel="noopener">Port of Garibaldi — launch &amp; moorage</a></h3><p class="dir-meta">Garibaldi · Tillamook Bay</p><p class="dir-desc">The bay's working port: public launch, annual and guest moorage, launch passes, RV park. Port office, 402 South 7th Street.</p><span class="dir-go">📍 Directions in Google Maps</span></div><div class="dir-contact"><a class="dir-call" href="tel:+15033223292">&#128222; (503) 322-3292</a></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470958,-123.890908" target="_blank" rel="noopener" aria-label="Open Memaloose Point Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Memaloose Point Boat Launch</h3><p class="dir-meta">Tillamook · Tillamook Bay / Tillamook River · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Bayocean Road.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.431364,-123.945949" target="_blank" rel="noopener" aria-label="Open Netarts Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Netarts Landing Boat Launch</h3><p class="dir-meta">Netarts · Netarts Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock at Netarts Bay Drive &amp; Netarts Basin Boat Road. The dock slants toward the water at low tide (OSMB, Sept. 2026).</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.706728,-123.886013" target="_blank" rel="noopener" aria-label="Open Nehalem Bay Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Nehalem Bay Boat Launch (county)</h3><p class="dir-meta">Nehalem · Nehalem Bay · County Parks</p><p class="dir-desc">Motorized, improved launch and dock off Tideland Road at Highway 101 — the county ramp, distinct from the state park ramp below.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6894,-123.9332" target="_blank" rel="noopener" aria-label="Open Nehalem Bay State Park boat ramp in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://stateparks.oregon.gov/index.cfm?do=park.profile&amp;parkId=142" target="_blank" rel="noopener">Nehalem Bay State Park boat ramp</a></h3><p class="dir-meta">Manzanita · Nehalem Bay · Oregon State Parks</p><p class="dir-desc">Bayside day-use ramp; the boat docks are seasonal, typically mid-May to mid-October.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.21572,-123.971089" target="_blank" rel="noopener" aria-label="Open Hungry Harbor Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Hungry Harbor Boat Launch — the dory launch</h3><p class="dir-meta">Pacific City · Cape Kiwanda · County Parks</p><p class="dir-desc">Dory boats and small authorized ocean craft only: a concrete and plank ramp onto the beach — launch and land straight through the surf.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.196365,-123.966625" target="_blank" rel="noopener" aria-label="Open Pacific City Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Pacific City Boat Launch</h3><p class="dir-meta">Pacific City · Nestucca River · County Parks</p><p class="dir-desc">Motorized concrete ramp off Sunset Drive. OSMB (Sept. 2026) warns of a drop-off at the ramp end and a sand bar partly blocking it, worst at low tide.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.476719,-123.80803" target="_blank" rel="noopener" aria-label="Open Sollie Smith Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Sollie Smith Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Motorized concrete ramp at Wilson River Loop &amp; Latimer Road — the lower-Wilson take-out, beside the Sollie Smith gauge on the River Levels card.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.470721,-123.73921" target="_blank" rel="noopener" aria-label="Open Mills Bridge Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Mills Bridge Boat Launch</h3><p class="dir-meta">Tillamook · Wilson River · County Parks</p><p class="dir-desc">Drift boats, unimproved, six miles east of Tillamook on Highway 6.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
+          <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.494951,-123.846007" target="_blank" rel="noopener" aria-label="Open Parks Landing Boat Launch in Google Maps"></a><div class="dir-item-main"><h3>Parks Landing Boat Launch</h3><p class="dir-meta">Tillamook · Kilchis River · County Parks</p><p class="dir-desc">Motorized concrete ramp on Idaville Loop Road, half a mile east of Highway 101.</p><span class="dir-go">📍 Directions in Google Maps</span></div></article>
         </div>
         <p class="card-note small">Launch list: Tillamook County Parks' own boat-launch page, with current-status notes from the Oregon State Marine Board's Sept. 2026 access report. The Pacific City dory fleet — more than 300 flat-bottom boats — launches off the beach at Cape Kiwanda because there is no harbor there; mornings are launch time, so watch from clear of the launch lanes.</p>
       </div>
@@ -646,16 +681,6 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="skynote">Aircraft: community ADS-B receivers via adsb.fi. ISS position: wheretheiss.at. Pass times are computed on this page from the station's published orbit. All refresh automatically.</p>
     </div>
 
-    <div class="card" id="dark-card">
-      <div class="card-head">
-        <h2>🌌 After Dark — Tonight&rsquo;s Sky</h2>
-        <span class="updated" id="dark-updated"></span>
-      </div>
-      <p class="card-note">Everything above is the sky <em>right now</em>. This card answers the evening question — <em>is tonight worth going out to look up?</em> Clouds, moonlight, the space station, the northern lights and the meteor showers, weighed together for your home town (or Tillamook if you haven&rsquo;t picked one).</p>
-      <div id="dark-body" class="panel-body"><p class="loading">Reading tonight&rsquo;s sky…</p></div>
-      <p class="card-note small">Cloud cover: Open-Meteo&rsquo;s forecast model. Northern lights: NOAA&rsquo;s Space Weather Prediction Center Kp forecast — at our latitude they usually need Kp 5 or better, a dark spot, and a clear northern horizon. Moon and darkness are figured on this page, like the Almanac. And a forecast is a forecast — the sky gets the last word.</p>
-    </div>
-
     <div class="card photo-card" id="rivers-card">
       <div class="card-photo photo-dock"><img src="img/card-dock.jpg" alt="The Wilson River in the Tillamook State Forest, Oregon" loading="lazy" decoding="async"><img class="photo-night" src="img/dusk/rivers-night.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
       <div class="card-head">
@@ -694,29 +719,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="crabnote2">The index is an estimate, built live from NOAA tide predictions, the National Weather Service forecast and USGS river gauges — the bay always has the last word. The rules above are a summary; the final word is <a href="https://myodfw.com/articles/oregon-shellfish-regulations" target="_blank" rel="noopener">ODFW&rsquo;s shellfish regulations</a>, and shellfish safety closures sit with the <a href="https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx" target="_blank" rel="noopener">Oregon Department of Agriculture</a> (hotline <a href="tel:+18004482474">1-800-448-2474</a>) — check both the day you go.</p>
     </div>
 
-    <div class="card" id="fishing-card">
-      <div class="card-head">
-        <h2>🎣 Fishing, Crabbing &amp; Clamming</h2>
-      </div>
-      <p class="card-note">Three bays, five rivers and a beach-launch dory fleet. What is open, what is biting and what is closed changes week to week — the official word lives with ODFW and the Department of Agriculture, on their own pages:</p>
-      <div class="panel-body">
-        <p><a class="text-link" href="https://myodfw.com/recreation-report/fishing-report/northwest-zone" target="_blank" rel="noopener">ODFW recreation report — fishing, Northwest Zone →</a></p>
-        <p><a class="text-link" href="https://myodfw.com/recreation-report/crabbing-clamming-report/marine-zone" target="_blank" rel="noopener">ODFW recreation report — crabbing &amp; clamming, Marine Zone →</a></p>
-        <p><a class="text-link" href="https://www.oregon.gov/oda/food-safety/shellfish/pages/shellfish-closures.aspx" target="_blank" rel="noopener">ODA shellfish safety closures →</a> · hotline <a href="tel:+18004482474">1-800-448-2474</a></p>
-        <p class="card-note small">Shellfish closures are the one that bites: razor clams, bay clams and crab close for biotoxins (domoic acid) with little warning, sometimes for months at a stretch. Always check the ODA page the day you go — this card links to it instead of copying a status that could go stale overnight. Bay tide times are on the Bay Tides card; river levels are on the River Levels card.</p>
-      </div>
-    </div>
-
     <div class="card" id="ohv-card">
       <div class="card-head">
         <h2>🏍️ OHV — Ride Areas</h2>
       </div>
       <p class="card-note">This county is Oregon's OHV backyard: three riding areas in the Tillamook State Forest off OR-6, plus the Sand Lake dunes. The forest's three areas together hold more than 250 miles of trails (ODF's figure, all three combined). Every staging area below — plus Rogers Camp at the OR-6 summit — is pinned and labeled on the Travel map; tap a pin for trail classes, permits and seasons.</p>
       <div class="dir-list">
-        <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Browns Camp OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · OR-6 · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails from easy to challenging, with a campground and staging area; day use is free unless you take a campsite. The campground moves to reservation-only for 2026, and the forest's seasonal OHV campgrounds close November 2 for winter (ODF).</p></div></article>
-        <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Jordan Creek OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails with campground and staging; part of the same 250+ mile forest system. Its developed campground is in the seasonal group that closes November 2.</p></div></article>
-        <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Diamond Mill OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">The different one: mostly single-track trails for motorcycles only — technical riding, not a quad or 4WD area. Campground and staging on site.</p></div></article>
-        <article class="dir-item"><div class="dir-item-main"><h3><a class="dir-web" href="https://www.fs.usda.gov/recarea/siuslaw/recreation/recarea/?recid=42689" target="_blank" rel="noopener">Sand Lake Recreation Area</a></h3><p class="dir-meta">Near Pacific City · Siuslaw National Forest</p><p class="dir-desc">1,076 acres of open sand dunes between Cape Lookout and Cape Kiwanda, with three campgrounds, dispersed camping and a day-use staging area, open year-round. A fee applies at the campgrounds, the day-use lot and on the open sand itself.</p></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6108,-123.3490" target="_blank" rel="noopener" aria-label="Open Browns Camp OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Browns Camp OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · OR-6 · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails from easy to challenging, with a campground and staging area; day use is free unless you take a campsite. The campground moves to reservation-only for 2026, and the forest's seasonal OHV campgrounds close November 2 for winter (ODF).</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.5372,-123.5686" target="_blank" rel="noopener" aria-label="Open Jordan Creek OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Jordan Creek OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">Motorcycle, quad and 4WD trails with campground and staging; part of the same 250+ mile forest system. Its developed campground is in the seasonal group that closes November 2.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.6041,-123.5480" target="_blank" rel="noopener" aria-label="Open Diamond Mill OHV Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.oregon.gov/ODF/Recreation/pages/MotorizedTrails.aspx" target="_blank" rel="noopener">Diamond Mill OHV Area</a></h3><p class="dir-meta">Tillamook State Forest · ODF</p><p class="dir-desc">The different one: mostly single-track trails for motorcycles only — technical riding, not a quad or 4WD area. Campground and staging on site.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
+        <article class="dir-item linked"><a class="item-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=45.2880,-123.9580" target="_blank" rel="noopener" aria-label="Open Sand Lake Recreation Area in Google Maps"></a><div class="dir-item-main"><h3><a class="dir-web" href="https://www.fs.usda.gov/recarea/siuslaw/recreation/recarea/?recid=42689" target="_blank" rel="noopener">Sand Lake Recreation Area</a></h3><p class="dir-meta">Near Pacific City · Siuslaw National Forest</p><p class="dir-desc">1,076 acres of open sand dunes between Cape Lookout and Cape Kiwanda, with three campgrounds, dispersed camping and a day-use staging area, open year-round. A fee applies at the campgrounds, the day-use lot and on the open sand itself.</p><span class="dir-go">📍 See it in Google Maps</span></div></article>
       </div>
       <p class="card-note"><strong>Check before you go:</strong> <a href="http://tillamookstateforest.blogspot.com/" target="_blank" rel="noopener">Tillamook State Forest blog — ODF's running status log</a> · <a href="https://www.oregon.gov/odf/fire/pages/restrictions.aspx" target="_blank" rel="noopener">ODF fire restrictions &amp; closures map</a> · <a href="https://www.oregon.gov/ODF/Recreation/Pages/Camp.aspx" target="_blank" rel="noopener">ODF campground status table</a></p>
       <p class="card-note small">Fire season rewrites the rules: at <strong>High</strong> fire danger, OHV use runs only before 1 PM and after 8 PM; at <strong>Extreme</strong>, off-road use is restricted. Every rider needs an Oregon ATV operating permit — $10, good for two years — from the <a href="https://store.oregonstateparks.org/" target="_blank" rel="noopener">Oregon State Parks store</a> or an agent. Side-by-sides (Class IV) are allowed only on signed 4WD trails and gravel roads inside the forest's OHV areas.</p>
@@ -1173,7 +1185,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <nav class="drawer-nav" aria-label="Views and sections">
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="today"><img src="img/icons/icon-today.png" alt="" aria-hidden="true"><span data-i18n="tabtoday">Today</span></button>
-      <a class="drawer-link" href="#commute-card" data-i18n="dwcommute">The commute verdict</a>
+      <a class="drawer-link" href="#coast-card" data-i18n="dwcoast">Coast conditions</a>
       <a class="drawer-link" href="#go-card" data-i18n="dwgo">Before you go</a>
       <a class="drawer-link" href="#plan-card" data-i18n="dwplan">Tonight &amp; tomorrow</a>
       <a class="drawer-link" href="#schools-card" data-i18n="dwschools">Schools — closures &amp; delays</a>
@@ -1201,10 +1213,8 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#alerts-card" data-i18n="dwalerts">Weather alerts</a>
       <a class="drawer-link" href="#forecast-card" data-i18n="dwforecast">Forecast</a>
       <a class="drawer-link" href="#sky-card" data-i18n="dwsky">Sky &amp; the ISS</a>
-      <a class="drawer-link" href="#dark-card" data-i18n="dwdark">After dark</a>
       <a class="drawer-link" href="#rivers-card" data-i18n="dwrivers">River levels</a>
       <a class="drawer-link" href="#tides-card" data-i18n="dwtides">Bay tides</a>
-      <a class="drawer-link" href="#fishing-card">Fishing, crabbing &amp; clamming</a>
       <a class="drawer-link" href="#ohv-card">OHV — ride areas</a>
       <a class="drawer-link" href="#parks-card">Parks, beaches &amp; trails</a>
       <a class="drawer-link" href="#almanac-card" data-i18n="dwalmanac">The Almanac</a>
@@ -1365,7 +1375,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=14"></script>
+<script src="app.js?v=15"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>

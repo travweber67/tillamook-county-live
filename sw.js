@@ -117,7 +117,7 @@
  */
 'use strict';
 
-var VERSION = 'tcl-v14'; // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign - mini-month card on desktop, swipeable 14-day pill strip on phones, tap a day to filter; one frosted card per event with the + Add button inside the card's own action row; See more events expander; the All/Today/Weekend/Next 7 days filter chips are gone; community-events merge, Your town badge and finder flash ported with it; Tillamook's own event data and sources unchanged; cache-bust ?v=14 // v13 = launch-day merge (2026-11-20): v11 always-open-on-Today startup rule + v12 founding-cells grid with phone weave; cache-bust ?v=13
+var VERSION = 'tcl-v15'; // v15 = COAST CARD + THREE REMOVALS + MAP LINKS (2026-11-20): new Coast Conditions card in Today's flow (Tillamook Bay bar from the Coast Guard report via NWS Portland AllBars.xml, high surf + flooding from NWS alerts ORC057+ORZ102, tsunami strip inside the card; the verbatim top tsunami card is unchanged); the Commute Verdict, After Dark, and Fishing/Crabbing/Clamming cards are removed with all their wiring; every boat ramp on the Bay & Bar card and every OHV area is now a whole-row Google Maps link; cache-bust ?v=15 // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign; cache-bust ?v=14
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -125,8 +125,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=13',
-  'app.js?v=13',
+  'style.css?v=15',
+  'app.js?v=15',
   'offline-map/offline-map.css',
   'offline-map/offline-map.js',
   'offline-map/vendor/maplibre-gl.css',
