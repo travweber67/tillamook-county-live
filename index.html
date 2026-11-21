@@ -24,9 +24,10 @@
 <script>
 /* Redesign prototype: set the theme before first paint (no flash).
    Priority: ?theme=dark|light preview override (not stored) > saved
-   choice (localStorage "tcl-theme") > OS prefers-color-scheme > light. */
+   choice (localStorage "tcl-theme") > light (fixed default; the OS
+   prefers-color-scheme is no longer consulted — Travis, 2026-11-21). */
 (function(){var t=null;try{var q=new URLSearchParams(location.search).get("theme");if(q==="dark"||q==="light")t=q;if(!t)t=localStorage.getItem("tcl-theme");if(t!=="dark"&&t!=="light")t=null;}catch(e){}
-if(!t)t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";
+if(!t)t="light";
 document.documentElement.setAttribute("data-theme",t);})();
 </script>
 <link rel="manifest" href="manifest.webmanifest?v=3">
