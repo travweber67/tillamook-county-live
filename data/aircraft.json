@@ -1,47 +1,97 @@
 {
- "fetched_at": "2026-11-21T22:21:41Z",
+ "fetched_at": "2026-11-21T22:51:42Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a5d007",
-   "callsign": "ASA688",
-   "type": "B739",
-   "alt_ft": 35000,
-   "gs_kn": 405.1,
-   "track": 178.87,
-   "lat": 45.676032,
-   "lon": -123.363625
+   "hex": "a0a1f1",
+   "callsign": "N14SK",
+   "type": "C152",
+   "alt_ft": 1025,
+   "gs_kn": 90.6,
+   "track": 349.19,
+   "lat": 45.598846,
+   "lon": -123.104352
   },
   {
-   "hex": "a2a491",
-   "callsign": "",
-   "type": "G2CA",
-   "alt_ft": 725,
-   "gs_kn": 72.0,
-   "track": 0.8,
-   "lat": 45.327713,
-   "lon": -123.036935
+   "hex": "ac3b0f",
+   "callsign": "SWA1156",
+   "type": "B38M",
+   "alt_ft": 39000,
+   "gs_kn": 410.1,
+   "track": 175.8,
+   "lat": 45.349654,
+   "lon": -123.031802
   },
   {
-   "hex": "a90aca",
-   "callsign": "N682BM",
-   "type": "HDJT",
-   "alt_ft": null,
-   "gs_kn": 16.5,
-   "track": null,
-   "lat": 45.546675,
-   "lon": -122.955259
+   "hex": "a3030d",
+   "callsign": "N2930X",
+   "type": "C177",
+   "alt_ft": 1925,
+   "gs_kn": 61.4,
+   "track": 232.94,
+   "lat": 45.257767,
+   "lon": -123.001818
   },
   {
    "hex": "ac5ec1",
    "callsign": "N89653",
    "type": "C152",
-   "alt_ft": 600,
-   "gs_kn": 65.6,
-   "track": 142.43,
-   "lat": 45.537725,
-   "lon": -122.946993
+   "alt_ft": 500,
+   "gs_kn": 62.7,
+   "track": 155.48,
+   "lat": 45.56263,
+   "lon": -122.969009
+  },
+  {
+   "hex": "a88491",
+   "callsign": "N648SP",
+   "type": "C172",
+   "alt_ft": 1700,
+   "gs_kn": 64.1,
+   "track": 190.78,
+   "lat": 45.514481,
+   "lon": -122.947736
+  },
+  {
+   "hex": "a66bc3",
+   "callsign": "N5124B",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 4.2,
+   "track": 47.81,
+   "lat": 45.5354,
+   "lon": -122.946036
+  },
+  {
+   "hex": "a5fcb8",
+   "callsign": "N485RW",
+   "type": "RV7",
+   "alt_ft": 3000,
+   "gs_kn": 102.1,
+   "track": 122.6,
+   "lat": 45.342499,
+   "lon": -122.914058
+  },
+  {
+   "hex": "a1a470",
+   "callsign": "N20488",
+   "type": "C172",
+   "alt_ft": 2900,
+   "gs_kn": 89.6,
+   "track": 144.54,
+   "lat": 45.19075,
+   "lon": -122.901895
+  },
+  {
+   "hex": "a034d4",
+   "callsign": "GFY1124",
+   "type": "DA42",
+   "alt_ft": 575,
+   "gs_kn": 80.5,
+   "track": 165.62,
+   "lat": 45.801211,
+   "lon": -122.870613
   }
  ]
 }

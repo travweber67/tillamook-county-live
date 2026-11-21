@@ -1,65 +1,96 @@
 {
- "fetched_at": "2026-11-21T22:21:41Z",
+ "fetched_at": "2026-11-21T22:51:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 369493007,
+   "name": "CG47207",
+   "lat": 46.28132,
+   "lon": -124.04696,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-21 22:52:15.402814059 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.20858,
+   "lon": -123.77451,
+   "sog_kn": 1.4,
+   "cog": 235.6,
+   "heading": 42,
+   "updated": "2026-11-21 22:52:12.365441591 +0000 UTC"
+  },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
    "lat": 46.16838,
-   "lon": -123.9184,
+   "lon": -123.91837,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-21 22:22:22.059749767 +0000 UTC"
+   "updated": "2026-11-21 22:52:23.224541151 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16869,
-   "lon": -123.91405,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-21 22:22:12.61715809 +0000 UTC"
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16845,
+   "lon": -123.91406,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-21 22:52:04.679931876 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 46.21109,
+   "lon": -123.77732,
+   "sog_kn": 0,
+   "cog": 145.9,
+   "heading": 61,
+   "updated": "2026-11-21 22:52:21.92850586 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.2024,
+   "lon": -123.79882,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-21 22:52:09.874917836 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16813,
+   "lon": -123.91426,
+   "sog_kn": 0,
+   "cog": 10.5,
+   "heading": 511,
+   "updated": "2026-11-21 22:51:58.407748907 +0000 UTC"
   },
   {
    "mmsi": 538090732,
    "name": "NORDIC MERCHANTS",
-   "lat": 46.08731,
-   "lon": -124.58477,
-   "sog_kn": 11.9,
-   "cog": 71.4,
-   "heading": 76,
-   "updated": "2026-11-21 22:21:44.406444218 +0000 UTC"
+   "lat": 46.12778,
+   "lon": -124.44763,
+   "sog_kn": 12.6,
+   "cog": 66.5,
+   "heading": 75,
+   "updated": "2026-11-21 22:52:00.15636894 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.17016,
-   "lon": -123.91445,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19989,
+   "lon": -123.76056,
    "sog_kn": 0,
-   "cog": 224.4,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-21 22:21:41.520035837 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19653,
-   "lon": -123.79693,
-   "sog_kn": 0,
-   "cog": 345,
-   "heading": 511,
-   "updated": "2026-11-21 22:21:41.669929059 +0000 UTC"
-  },
-  {
-   "mmsi": 368343780,
-   "name": "WESTERN SURF",
-   "lat": 46.16811,
-   "lon": -123.91916,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 83,
-   "updated": "2026-11-21 22:21:41.367986218 +0000 UTC"
+   "updated": "2026-11-21 22:52:13.573488199 +0000 UTC"
   }
  ]
 }
