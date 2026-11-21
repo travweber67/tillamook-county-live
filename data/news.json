@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-21T18:42:34Z",
+ "fetched_at": "2026-11-21T18:44:31Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "4 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "11 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -32,6 +32,17 @@
    "tier": "high"
   },
   {
+   "title": "The Lasagnathon: all-you-can-eat lasagna, four kinds, live music, at the Bay City Arts Center",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/annual-lasagnathon-fundraiser-at-bay-city-arts-center-dec-5/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/Lasagnathon-poster-final-2.png",
+   "date": "2026-11-19",
+   "summary": "Bay City Arts Center's annual Lasagnathon fundraiser returns Saturday, Dec 5: one $40 ticket buys unlimited helpings of four kinds of lasagna — meat, veggie, gluten-free and vegan. The evening includes live music from Matt Didlake and a silent auction of local art.",
+   "img_origin": "source",
+   "img_credit": "Artwork: Bay City Arts Center event poster, via Tillamook County Pioneer.",
+   "tier": "high"
+  },
+  {
    "title": "SPECIAL OLYMPICS TILLAMOOK: FALL STATE GAMES UNIFIED SOCCER TEAM AT PROVIDENCE PARK",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/special-olympics-tillamook-fall-state-games-unified-soccer-team-at-providence-park/",
@@ -40,6 +51,17 @@
    "summary": "Fall State Games Unified Soccer – Oregon Special Olympics – Tillamook took a Bronze medal and the Sportsmanship Award in their division…Go Cheeseburgers! This team improved into a well-oiled machine over two...",
    "img_origin": "generated",
    "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21).",
+   "tier": "high"
+  },
+  {
+   "title": "Neah-Kah-Nie students named their robotics team ‘Tsunami Zone’ — and competed at Hillsboro",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/neah-kah-nie-robotics-meet-1-middle-school-high-school-tsunami-zone-team-competes-at-hillsboro-nov-14/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/NKNRoboticsmeet1-225x300.jpg",
+   "date": "2026-11-18",
+   "summary": "The Neah-Kah-Nie middle school and high school robotics team — competing under the name ‘Tsunami Zone’ — took part in Meet 1 at Hillsboro on Nov 14. The students wrote up the competition themselves for the Pioneer, photos and all.",
+   "img_origin": "source",
+   "img_credit": "Photo: Arabella C. and Addison C. / Tillamook County Pioneer (student photos from the story).",
    "tier": "high"
   },
   {
@@ -65,6 +87,28 @@
    "tier": "high"
   },
   {
+   "title": "The Big Tree of Rockaway Beach: a 1,000-year-old cedar that survived the 1700 Cascadia quake and tsunami, hiding in plain sight",
+   "source": "Oregon Coast TODAY",
+   "url": "https://www.oregoncoasttoday.com/home/tree-cheers",
+   "img": "http://static1.squarespace.com/static/5ebb54c951725449a18fe94e/5ebb56ebe738976451bcb3e8/6afcc9af8f1f866457ab25c0/1794951751439/Big%2Btreeheic.jpg?format=1500w",
+   "date": "2026-11-17",
+   "summary": "At the end of a one-mile ADA-accessible boardwalk through the Cedar Wetlands Nature Preserve in Rockaway Beach stands one of the largest Western Red Cedars in North America — an estimated 800 to 1,200 years old, 154 feet tall, with a 49-foot trunk circumference. The tree survived coastal storms, fires, earthquakes and the 1700 Cascadia tsunami, in a nearly 50-acre old-growth cedar wetland tucked inside a residential neighborhood.",
+   "img_origin": "source",
+   "img_credit": "Photo: Jordan Wolfe / Oregon Coast TODAY (the story's own photo).",
+   "tier": "high"
+  },
+  {
+   "title": "Consejo Hispano's Magia Navideña: holiday gifts for local families, from local givers",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/consejo-hispanos-holiday-gift-giving-program-magia-navidena-is-here/",
+   "img": "img/news/magia-navidena.jpg",
+   "date": "2026-11-16",
+   "summary": "Consejo Hispano's annual Holiday Gift Giving Program, Magia Navideña, is underway: community members sponsor a local child and shop for their holiday wishes, bringing a little extra alegría and warmth to families across Tillamook County. Givers are thanked with a Cerveza y Chocolate donor celebration.",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 1, 2026-11-21).",
+   "tier": "high"
+  },
+  {
    "title": "All Hail Queen Sheba, United Paws Cat of the Week",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/all-hail-queen-sheba-united-paws-cat-of-the-week/",
@@ -73,6 +117,39 @@
    "summary": "Meet Sheba, United Paws Cat of the Week. The first thing you will notice about Sheba are her eyes; they are huge saucers, bright yellow, and curious. The next thing you...",
    "img_origin": "generated",
    "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21).",
+   "tier": "high"
+  },
+  {
+   "title": "A Utah nonprofit bought the Tillamook Air Museum's WWII blimp hangar for $1 — and saved it",
+   "source": "OPB",
+   "url": "https://oregon-express.com/local-news/utah-nonprofit-buys-tillamook-air-museum-building-for-1-reopens-after-storm-damage",
+   "img": "img/news/air-museum-hangar.jpg",
+   "date": "2026-11-14",
+   "summary": "Ten months after a December 2025 windstorm tore a roughly 200-by-30-foot hole in the roof of the historic WWII blimp hangar, the Vintage Aviation Museum of Spanish Fork, Utah, bought Hangar B — plus the Port of Tillamook Bay's aircraft, artifacts and equipment — for $1, and the museum reopened Oct 29. The Port kept the land on a long-term lease, FEMA covered 75% of the $542,000 debris cleanup, and a full reroof is still to come.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of the museum's Mini Guppy in front of Hangar B by 7bd1118425 via Wikimedia Commons, CC BY-SA 4.0 (licensed photo, News Scout batch 1, 2026-11-21).",
+   "tier": "high"
+  },
+  {
+   "title": "Mother-daughter duo help fill tables and feed Tillamook County at Thanksgiving",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/dynamic-mother-daughter-duo-help-fill-tables-feed-tillamook-county-community-at-thanksgiving/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ThanksgivingatNBMethodistChurch11.26-898x1200.jpg",
+   "date": "2026-11-14",
+   "summary": "A mother and daughter are behind a Thanksgiving effort that puts hundreds of dinners on tables across Tillamook County. Two generations are cooking for neighbors who might otherwise go without on the holiday.",
+   "img_origin": "source",
+   "img_credit": "Image: Tillamook County Pioneer (the story's own art — the Nehalem Bay Methodist Church community dinner flyer).",
+   "tier": "high"
+  },
+  {
+   "title": "Tillamook grad wins a national FFA title with a flower business she started in high school",
+   "source": "Tillamook Headlight Herald",
+   "url": "https://news.ssbcrack.com/tillamook-student-wins-national-ffa-title-with-floral-business/",
+   "img": "https://media2.ssbcrack.com/2026/11/Tillamook-Student-Wins-National-FFA-Title-With-Floral-Business.jpeg",
+   "date": "2026-11-13",
+   "summary": "Tillamook High School graduate Tatum Lancaster was named the 2026 National FFA Agricultural Sales–Entrepreneurship Proficiency Award winner before 40,000 people at Lucas Oil Stadium in Indianapolis — Oregon's only first-place finish at the national convention. Her winning project, Western Grace Floral Co., is the floral design business she started as a junior in a floriculture class and still runs while attending Oregon State University.",
+   "img_origin": "source",
+   "img_credit": "Photo: Tillamook Headlight Herald (the story's own photo).",
    "tier": "high"
   },
   {
