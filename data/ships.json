@@ -1,76 +1,76 @@
 {
- "fetched_at": "2026-11-21T20:51:40Z",
+ "fetched_at": "2026-11-21T21:21:40Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367531260,
-   "lat": 46.16872,
-   "lon": -123.91391,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 20:52:10.750208438 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.23338,
-   "lon": -124.12066,
-   "sog_kn": 8.8,
-   "cog": 50.9,
-   "heading": 59,
-   "updated": "2026-11-21 20:52:03.698952962 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16839,
-   "lon": -123.91837,
-   "sog_kn": 0,
-   "cog": 21.1,
-   "heading": 350,
-   "updated": "2026-11-21 20:52:02.557676245 +0000 UTC"
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28137,
+   "lon": -124.04672,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-21 21:22:03.490454544 +0000 UTC"
   },
   {
    "mmsi": 367529030,
    "name": "CONNOR FOSS",
-   "lat": 46.21289,
-   "lon": -123.77699,
-   "sog_kn": 3.4,
-   "cog": 262.5,
-   "heading": 13,
-   "updated": "2026-11-21 20:52:13.020106841 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16844,
-   "lon": -123.91404,
+   "lat": 46.19048,
+   "lon": -123.82971,
    "sog_kn": 0,
-   "cog": 162.1,
-   "heading": 511,
-   "updated": "2026-11-21 20:51:54.818578812 +0000 UTC"
+   "cog": 60.6,
+   "heading": 169,
+   "updated": "2026-11-21 21:22:08.324986806 +0000 UTC"
   },
   {
    "mmsi": 368084380,
    "name": "FATE HUNTER",
-   "lat": 46.18801,
-   "lon": -123.85819,
+   "lat": 46.18803,
+   "lon": -123.85823,
    "sog_kn": 0,
-   "cog": 154.3,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-21 20:52:04.310964439 +0000 UTC"
+   "updated": "2026-11-21 21:22:24.158591873 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18994,
-   "lon": -123.85419,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-21 20:52:18.158911374 +0000 UTC"
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16784,
+   "lon": -123.91438,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-21 21:22:12.306600314 +0000 UTC"
+  },
+  {
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.2708,
+   "lon": -123.94662,
+   "sog_kn": 0.2,
+   "cog": 266.1,
+   "heading": 511,
+   "updated": "2026-11-21 21:22:06.230412263 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16869,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 334.1,
+   "heading": 97,
+   "updated": "2026-11-21 21:22:02.529815022 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16809,
+   "lon": -123.9143,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-21 21:22:18.542774315 +0000 UTC"
   }
  ]
 }
