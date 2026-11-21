@@ -454,7 +454,20 @@ async function loadAlerts() {
       setPill('sticky-weather', 'Weather clear', 'ok');
     } else {
       const anyWarning = feats.some(f => /warning/i.test((f.properties || {}).event || ''));
-      setPill('sticky-weather', anyWarning ? 'Weather warning' : 'Weather bad', anyWarning ? 'bad' : 'warn');
+      /* Item A (Travis, 2026-11-21): the pill names the actual
+         advisory type(s) — "Weather / Coastal Flood", or both when
+         two are active ("Weather / Flood and High Surf"). Base type
+         = the NWS event name minus its Advisory/Warning/Watch
+         suffix, deduped (an Advisory and a Watch of the same type
+         name it once). Falls back to the old generic label if an
+         event name is ever missing. Severity class unchanged:
+         bad when any Warning is active, else warn. */
+      const evTypes = [];
+      feats.forEach(f => {
+        const base = (((f.properties || {}).event) || '').replace(/\s+(advisory|warning|watch|statement)\s*$/i, '').trim();
+        if (base && !evTypes.includes(base)) evTypes.push(base);
+      });
+      setPill('sticky-weather', evTypes.length ? 'Weather / ' + evTypes.join(' and ') : (anyWarning ? 'Weather warning' : 'Weather bad'), anyWarning ? 'bad' : 'warn');
       body.innerHTML = feats.map(f => {
         const p = f.properties || {};
         const sev = /warning/i.test(p.event || '') ? ' severe' : '';
@@ -630,7 +643,12 @@ async function loadCoast() {
       coastSet('coast-row-bar', 'warn', '⚠️ BAR RESTRICTED',
         (rec ? 'Boats ' + rec[1] + ' feet and under must stay in. ' : 'Restrictions are in effect — read the full report. ')
         + 'Coast Guard report from ' + fmtDayTime(when) + '.');
-      barSpot('Bar restrictions', 'Restricciones en la barra', 'bad');
+      /* Item B (Travis, 2026-11-21): the pill takes 'warn' here,
+         matching this row's own warn state — 'bad' filled the pill
+         with a solid pale-red box (#fdecec) that read as a stray
+         red box next to the amber row. 'bad' stays reserved for
+         BAR CLOSED, where the row is bad too. */
+      barSpot('Bar restrictions', 'Restricciones en la barra', 'warn');
       anyOk = true;
     } else {
       coastSet('coast-row-bar', '', '❔ Bar Status Unclear', 'The Coast Guard report says "' + status + '" — read the full NWS bar report before you cross.');
@@ -9991,6 +10009,12 @@ function buildEventScroller() {
   const upcoming = [];
   ((eventsCache && eventsCache.events) || []).forEach(ev => {
     if (!ev.date || ev.date < today) return;
+    /* Item C (Travis, 2026-11-21): routine municipal entries (the
+       official CivicPlus city & county calendars, kind 'muni') stay
+       OFF the Today scroller — this section leads with community
+       events. They still render on the calendar / Events view on
+       their correct dates; nothing is removed from the data. */
+    if (evKindOf(ev) === 'muni') return;
     const k = evcalKeyOf(ev);
     if (seen.has(k)) return;
     seen.add(k);
