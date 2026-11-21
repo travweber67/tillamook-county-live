@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tillamook County Live — Roads, Rivers, Weather &amp; the Bays for Tillamook County, Oregon</title>
 <meta name="description" content="One live map for Tillamook County, Oregon: US-101 and OR-6 road status and cameras, Wilson, Trask, Nehalem and Nestucca river levels and flood stages, NOAA bay tides for Garibaldi, Netarts and Nehalem, the Tillamook Bay bar report, weather alerts, earthquakes, wildfires, events, and town forecasts. Free, from official public sources.">
 <meta property="og:type" content="website">
@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=2">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=15">
+<link rel="stylesheet" href="style.css?v=16">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=2">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -41,7 +41,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="preload" as="image" href="img/bg/bg-day-6.jpg">
 <link rel="preload" as="image" href="img/bg/bg-dusk-2.jpg">
 </head>
-<body>
+<body class="tcl-rd">
 
 <!-- v4: full-page county photo background — CALM. One strong static
      photo per view (portfolio pattern: imagery changes only when the
@@ -111,31 +111,36 @@ document.documentElement.setAttribute("data-theme",t);})();
          promise paragraph and the tagline are retired — the drawer menu
          (logo button, top-left) carries every jump now, and the language
          toggle lives in the drawer too. -->
-    <h1 class="hero-title" data-i18n="herotitle">Everything happening in the county, <em>one live look.</em></h1>
+    <h1 class="hero-title" id="hero-title-today" data-i18n="herotitle">Everything happening in the county, <em>one live look.</em></h1>
+    <div class="hero-view-head" id="hero-view-head" hidden>
+      <p class="hero-view-name" id="hero-view-name">Travel</p>
+      <p class="hero-view-tag" id="hero-view-tag"></p>
+    </div>
+<section class="finder hero-finder" id="finder-card" aria-label="Find anything on this page">
+  <div class="finder-box">
+    <span class="finder-icon" aria-hidden="true">🔎</span>
+    <input id="finder-input" type="search" enterkeyhint="go" autocomplete="off" spellcheck="false"
+      placeholder="Find anything — try &ldquo;bar report&rdquo;, &ldquo;high tide&rdquo;, &ldquo;OHV&rdquo;, &ldquo;storytime&rdquo;, a town&hellip;"
+      aria-label="Search this page: sections, towns, and events">
+  </div>
+  <div id="finder-results" class="finder-results" hidden></div>
+  <p class="finder-hint" data-i18n="finderhint">One search across every card on this page, all nine towns, and the events calendars — tap a result and the page takes you straight there.</p>
+</section>
+    <div class="hero-status" aria-label="Live status — tap a word to jump to the details">
+      <a class="sticky-pill" id="sticky-weather" href="#alerts-card">Weather —</a>
+      <a class="sticky-pill" id="sticky-bridge" href="#roads-card">Roads —</a>
+      <a class="sticky-pill spot-static" href="#bay-card">Bay &amp; bar</a>
+    </div>
   </div>
 </header>
 
 <nav class="tabbar" id="tabbar" aria-label="Page sections">
   <button class="tab-btn active" type="button" data-view-btn="today" aria-pressed="true"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-today.png" alt=""></span><span data-i18n="tabtoday">Today</span></button>
+  <button class="tab-btn" type="button" data-view-btn="more" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-events.png" alt=""></span><span data-i18n="tabmore">Events &amp; More</span></button>
   <button class="tab-btn" type="button" data-view-btn="travel" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-travel.png" alt=""></span><span data-i18n="tabtravel">Travel</span></button>
   <button class="tab-btn" type="button" data-view-btn="outdoors" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-outdoors.png" alt=""></span><span data-i18n="taboutdoors">Outdoors</span></button>
-  <button class="tab-btn" type="button" data-view-btn="more" aria-pressed="false"><span class="tab-ico" aria-hidden="true"><img src="img/icons/icon-events.png" alt=""></span><span data-i18n="tabmore">Events &amp; More</span></button>
 </nav>
 
-<div class="sticky-bar" id="sticky-bar">
-  <!-- v4: the green bar no longer repeats the masthead's name — it
-       says what this bar is: the live view, condensed. -->
-  <span class="sticky-brand"><img class="sticky-ico" src="img/icons/icon-logo-lighthouse.png" alt="" aria-hidden="true"> Live view</span>
-  <a class="sticky-pill" id="sticky-weather" href="#alerts-card">⚠️ Weather —</a>
-  <a class="sticky-pill" id="sticky-bridge" href="#roads-card">🛣️ Roads —</a>
-  <nav class="sticky-links" aria-label="Jump to a section">
-    <a href="#rivers-card" data-i18n="stickyriver">River</a>
-    <a href="#bay-card" data-i18n="stickyferry">Bay &amp; bar</a>
-    <a href="#events-card" data-i18n="stickyevents">Events</a>
-    <a href="#ohv-card" data-i18n="stickybiz">OHV</a>
-    <a href="#sky-card" data-i18n="stickysky">Sky</a>
-  </nav>
-</div>
 
 <div id="alert-banner" class="alert-banner" hidden></div>
 
@@ -275,16 +280,7 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div class="frontpage-list" id="frontpage-list"></div>
 </section>
 
-<section class="finder" id="finder-card" aria-label="Find anything on this page">
-  <div class="finder-box">
-    <span class="finder-icon" aria-hidden="true">🔎</span>
-    <input id="finder-input" type="search" enterkeyhint="go" autocomplete="off" spellcheck="false"
-      placeholder="Find anything — try &ldquo;bar report&rdquo;, &ldquo;high tide&rdquo;, &ldquo;OHV&rdquo;, &ldquo;storytime&rdquo;, a town&hellip;"
-      aria-label="Search this page: sections, towns, and events">
-  </div>
-  <div id="finder-results" class="finder-results" hidden></div>
-  <p class="finder-hint" data-i18n="finderhint">One search across every card on this page, all nine towns, and the events calendars — tap a result and the page takes you straight there.</p>
-</section>
+
 
 
 <section class="card since-card" id="since-card" hidden aria-label="What changed since your last visit">
@@ -1375,7 +1371,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=15"></script>
+<script src="app.js?v=16"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>

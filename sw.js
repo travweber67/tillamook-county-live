@@ -117,7 +117,7 @@
  */
 'use strict';
 
-var VERSION = 'tcl-v15'; // v15 = COAST CARD + THREE REMOVALS + MAP LINKS (2026-11-20): new Coast Conditions card in Today's flow (Tillamook Bay bar from the Coast Guard report via NWS Portland AllBars.xml, high surf + flooding from NWS alerts ORC057+ORZ102, tsunami strip inside the card; the verbatim top tsunami card is unchanged); the Commute Verdict, After Dark, and Fishing/Crabbing/Clamming cards are removed with all their wiring; every boat ramp on the Bay & Bar card and every OHV area is now a whole-row Google Maps link; lighthouse logo + install icons replace the courthouse mark site-wide (new icon URLs, manifest ?v=2); cache-bust ?v=15 // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign; cache-bust ?v=14
+var VERSION = 'tcl-v16'; // v16 = REDESIGN PORT (2026-11-21): the Columbia County Live v124 design blueprint ported to Tillamook (light-grey settled ground, hero card over the photo, status spots in the hero, floating tab pills, marbled paint cards at the strengthened wash, frosted glass, one dark shadow family, view slide with locked hero height, founding panel as paint backdrop + frosted cells, dark theme resolves to the light design values; cache-bust ?v=16) // v15 = COAST CARD + THREE REMOVALS + MAP LINKS (2026-11-20): new Coast Conditions card in Today's flow (Tillamook Bay bar from the Coast Guard report via NWS Portland AllBars.xml, high surf + flooding from NWS alerts ORC057+ORZ102, tsunami strip inside the card; the verbatim top tsunami card is unchanged); the Commute Verdict, After Dark, and Fishing/Crabbing/Clamming cards are removed with all their wiring; every boat ramp on the Bay & Bar card and every OHV area is now a whole-row Google Maps link; lighthouse logo + install icons replace the courthouse mark site-wide (new icon URLs, manifest ?v=2); cache-bust ?v=15 // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign; cache-bust ?v=14
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -125,8 +125,8 @@ var LIB_CACHE = VERSION + '-lib';
 var SHELL = [
   './',
   'index.html',
-  'style.css?v=15',
-  'app.js?v=15',
+  'style.css?v=16',
+  'app.js?v=16',
   'offline-map/offline-map.css',
   'offline-map/offline-map.js',
   'offline-map/vendor/maplibre-gl.css',

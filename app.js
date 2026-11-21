@@ -448,10 +448,10 @@ async function loadAlerts() {
     if (!feats.length) {
       body.innerHTML = '<p class="no-alerts">✅ No active watches, warnings, or advisories for Tillamook County right now.</p>';
       banner.hidden = true;
-      setPill('sticky-weather', '✅ Weather clear', 'ok');
+      setPill('sticky-weather', 'Weather clear', 'ok');
     } else {
       const anyWarning = feats.some(f => /warning/i.test((f.properties || {}).event || ''));
-      setPill('sticky-weather', '⚠️ ' + feats.length + (feats.length === 1 ? ' alert' : ' alerts'), anyWarning ? 'bad' : 'warn');
+      setPill('sticky-weather', anyWarning ? 'Weather warning' : 'Weather bad', anyWarning ? 'bad' : 'warn');
       body.innerHTML = feats.map(f => {
         const p = f.properties || {};
         const sev = /warning/i.test(p.event || '') ? ' severe' : '';
@@ -467,7 +467,7 @@ async function loadAlerts() {
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Couldn\'t load alerts just now. Check the '
       + '<a href="https://www.weather.gov/pqr/" target="_blank" rel="noopener">National Weather Service</a> directly — and treat any severe weather as in effect until you confirm otherwise.</p>';
-    setPill('sticky-weather', '⚠️ Weather — check NWS', 'warn');
+    setPill('sticky-weather', 'Weather bad', 'warn');
   }
 }
 
@@ -1170,7 +1170,7 @@ function renderRoads(roads, camerasSnap) {
   bh += '</div>';
   bEl.innerHTML = bh;
   setPill('sticky-bridge',
-    '🛣️ Roads ' + (or6.length || (roads.incidents || []).length ? 'alerts posted' : 'clear'),
+    'Roads ' + (or6.length || (roads.incidents || []).length ? 'not clear' : 'clear'),
     (or6.length || (roads.incidents || []).length) ? 'warn' : 'ok');
   // ODOT incidents — scoped by the fetcher to the ones ODOT locates in
   // the county area (build batch 2026-11-04, research ADD 2 / R1: the
@@ -7014,6 +7014,7 @@ function langApply(lang) {
 }
 function langSet(lang) {
   langApply(lang);
+  try { heroSetContent(heroViewCur); } catch (e) { /* hero not ready */ }
   try { window.localStorage.setItem(LANG_KEY, lang); } catch (e) { /* private mode: choice is session-only */ }
 }
 function initLang() {
@@ -7842,34 +7843,177 @@ function cclViewOf(el) {
   }
   return null;
 }
+/* ---------- REDESIGN PORT (from Columbia County Live v124, items
+   2c/2t/4i/4v): per-view header card + view slide transition. The
+   header card changes with the view: logo button + wordmark always
+   stay; Travel / Outdoors / Events & More get their section name, a
+   local tagline, and their own photo (Tillamook's own bg pool).
+   Today keeps its headline, finder, and status spots; Travel keeps
+   the finder too. On a tab switch the outgoing view slides off to
+   the left and the incoming view slides in from the right, one
+   coordinated motion, while the header card exits left and its new
+   self enters from the top-right. Emergency / Help have no card
+   treatment of their own — the card keeps whatever the last tab
+   view set. ---------- */
+const HERO_VIEWS = {
+  travel: { img: 'img/bg/bg-day-4.jpg', name: 'Travel',
+    tag: 'The coast highway, the bay and every road home — US-101 and Highway 6, checked live.',
+    esName: 'Viajes', esTag: 'La carretera de la costa, la bahía y cada camino a casa: la US-101 y la autopista 6, verificados en vivo.' },
+  outdoors: { img: 'img/bg/bg-day-3.jpg', name: 'Outdoors',
+    tag: 'Rivers, tides, trails and sky over the coast — what\u2019s running, what\u2019s flowing, and when to go.',
+    esName: 'Al aire libre', esTag: 'Ríos, mareas, senderos y el cielo de la costa: qué corre, qué fluye y cuándo salir.' },
+  more: { img: 'img/bg/bg-day-5.jpg', name: 'Events & More',
+    tag: 'Markets, bazaars, festivals and get-togethers — everything going on around the county.',
+    esName: 'Eventos y más', esTag: 'Mercados, bazares, festivales y reuniones: todo lo que pasa en el condado.' }
+};
+let heroViewCur = 'today';
+let viewAnimBusy = false;
+let viewAnimToken = 0;
+function heroReducedMotion() {
+  try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
+  catch (e) { return false; }
+}
+function heroSetContent(view) {
+  const hero = document.querySelector('header.hero');
+  if (!hero) return;
+  const img = hero.querySelector('.hero-img');
+  const titleToday = $('hero-title-today'), vhead = $('hero-view-head');
+  const finder = $('finder-card'), spots = hero.querySelector('.hero-status');
+  const cfg = HERO_VIEWS[view] || null;
+  const es = (typeof langCur !== 'undefined' && langCur === 'es');
+  hero.setAttribute('data-view', cfg ? view : 'today');
+  if (!cfg) {
+    if (img && img.getAttribute('src') !== 'img/hero-bridge.jpg') img.src = 'img/hero-bridge.jpg';
+    if (titleToday) titleToday.hidden = false;
+    if (vhead) vhead.hidden = true;
+    if (finder) finder.hidden = false;
+    if (spots) spots.hidden = false;
+  } else {
+    if (img && img.getAttribute('src') !== cfg.img) img.src = cfg.img;
+    if (titleToday) titleToday.hidden = true;
+    if (vhead) vhead.hidden = false;
+    const nm = $('hero-view-name'), tg = $('hero-view-tag');
+    if (nm) nm.textContent = es ? cfg.esName : cfg.name;
+    if (tg) tg.textContent = es ? cfg.esTag : cfg.tag;
+    if (finder) finder.hidden = view !== 'travel';
+    if (spots) spots.hidden = true;
+  }
+  heroViewCur = cfg ? view : 'today';
+}
+/* Tab order is Today, Events & More, Travel, Outdoors — and the
+   slide animation follows that order: moving to a later tab slides
+   forward (out left, in from the right, header from the top-right);
+   moving to an earlier tab reverses it. */
+const TAB_ORDER = ['today', 'more', 'travel', 'outdoors'];
+function tabDirOf(prev, name) {
+  const a = TAB_ORDER.indexOf(prev), b = TAB_ORDER.indexOf(name);
+  if (a === -1 || b === -1 || a === b) return 1;
+  return b > a ? 1 : -1;
+}
+function heroApplyView(name, animated, dir) {
+  if (name !== 'today' && !HERO_VIEWS[name]) return; /* emergency/help: card untouched */
+  const target = HERO_VIEWS[name] ? name : 'today';
+  const hero = document.querySelector('header.hero');
+  if (!hero || !animated || heroViewCur === target) { heroSetContent(target); return; }
+  const rev = dir === -1;
+  const h0 = hero.offsetHeight;
+  /* Item 4i: the height is LOCKED at h0 for the whole swap and
+     released in one step at the end — CSS-transitioning height
+     re-laid-out the entire page on every frame (the jank). .hero
+     has overflow:hidden, so taller content clips briefly instead
+     of spilling. Timings match style.css. */
+  hero.style.height = h0 + 'px';
+  hero.classList.add('hero-exit');
+  if (rev) hero.classList.add('rev');
+  setTimeout(() => {
+    heroSetContent(target);
+    hero.classList.remove('hero-exit');
+    hero.classList.add('hero-enter');
+    void hero.offsetWidth;
+    hero.classList.add('hero-enter-go');
+    setTimeout(() => {
+      hero.classList.remove('hero-enter', 'hero-enter-go', 'rev');
+      hero.style.height = '';
+    }, 520);
+  }, 320);
+}
+function animateViewSwap(prev, name, token, dir) {
+  const out = $('view-' + prev), inn = $('view-' + name);
+  if (!out || !inn) { viewAnimBusy = false; return; }
+  const rev = dir === -1;
+  /* Item 4i: body.view-anim suspends backdrop-filter + reveal
+     animations while the views move (style.css); timings .32s out
+     / .52s in. */
+  document.body.classList.add('view-anim');
+  out.classList.add('view-leaving');
+  if (rev) out.classList.add('rev');
+  setTimeout(() => {
+    if (token !== viewAnimToken) { out.classList.remove('view-leaving', 'rev'); document.body.classList.remove('view-anim'); return; }
+    out.classList.remove('view-leaving', 'rev');
+    out.hidden = true;
+    out.classList.remove('view-active');
+    inn.hidden = false;
+    /* Item 4v: content-visibility skip while the view slides. */
+    inn.classList.add('view-active', 'view-entering', 'cv-skip');
+    if (rev) inn.classList.add('rev');
+    void inn.offsetWidth;
+    inn.classList.add('view-enter-go');
+    setTimeout(() => {
+      inn.classList.remove('view-entering', 'view-enter-go', 'rev', 'cv-skip');
+      document.body.classList.remove('view-anim');
+      if (token === viewAnimToken) viewAnimBusy = false;
+    }, 520);
+  }, 320);
+}
 function cclShowView(name) {
   if (VIEW_IDS.indexOf(name) === -1) name = 'today';
+  const prevView = cclViewCur;
   cclViewCur = name;
-  VIEW_IDS.forEach(v => {
-    const sec = $('view-' + v);
-    if (!sec) return;
-    const on = v === name;
-    sec.hidden = !on;
-    sec.classList.toggle('view-active', on);
-  });
+  const wantAnim = !!(prevView && prevView !== name && !viewAnimBusy && !heroReducedMotion()
+    && $('view-' + prevView) && $('view-' + name));
+  const slideDir = tabDirOf(prevView, name);
+  if (wantAnim) {
+    viewAnimBusy = true;
+    animateViewSwap(prevView, name, ++viewAnimToken, slideDir);
+  } else {
+    viewAnimToken++;
+    VIEW_IDS.forEach(v => {
+      const sec = $('view-' + v);
+      if (!sec) return;
+      const on = v === name;
+      sec.hidden = !on;
+      sec.classList.toggle('view-active', on);
+      sec.classList.remove('view-leaving', 'view-entering', 'view-enter-go', 'rev');
+    });
+    viewAnimBusy = false;
+  }
+  try { heroApplyView(name, wantAnim, slideDir); } catch (e) { /* hero swap is cosmetic */ }
   document.querySelectorAll('.tab-btn').forEach(b => {
     const on = !!(b.dataset && b.dataset.viewBtn === name);
     b.classList.toggle('active', on);
     if (b.setAttribute) b.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
+  /* Item 4v: when a switch animates, the per-view refresh hooks wait
+     until it lands — running them at 60ms forced layout mid-slide. */
+  const hookDelay = wantAnim ? 880 : 60;
   if (name === 'travel' && typeof map !== 'undefined' && map && map.invalidateSize) {
-    setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, 60);
+    setTimeout(() => { try { map.invalidateSize(); } catch (e) { /* map still booting */ } }, hookDelay);
   }
   if (name === 'emergency') {
-    setTimeout(() => { try { initEmergency(); } catch (e) { /* emergency module still booting */ } }, 60);
+    setTimeout(() => { try { initEmergency(); } catch (e) { /* emergency module still booting */ } }, hookDelay);
   }
   if (name === 'outdoors') {
     /* The heat strip renders inside this (usually hidden) view, where
        its labels can't be measured — re-run the fit check now that
        the view has layout. */
-    setTimeout(() => { try { fitHeatLabels(); } catch (e) { /* strip not rendered yet */ } }, 60);
+    setTimeout(() => { try { fitHeatLabels(); } catch (e) { /* strip not rendered yet */ } }, hookDelay);
   }
 }
+/* TAB BAR (blueprint item 4u): NOTHING in JS touches the bar. It is
+   a direct child of <body>, position:fixed, bottom:0, safe-area
+   padding, no transform, no transition, no will-change (guarded in
+   style.css). Every mechanism that could move it is absent by
+   design. */
 function cclReveal(el) {
   if (!el) return;
   const v = cclViewOf(el);

@@ -3571,3 +3571,506 @@ html[data-theme="dark"] .cev-src{background:rgba(255,255,255,.06)}
   .cev-daynum{font-size:1.3rem}
   .cev-title{font-size:.98rem}
 }
+
+
+/* =====================================================================
+   TCL REDESIGN PORT (2026-11-21) — the Columbia County Live v124
+   blueprint (BUILD-LIST items 1–4x) applied to Tillamook County Live.
+   Everything is scoped to body.tcl-rd so the layer sits cleanly on
+   top of the shared base stylesheet. Design log:
+   ~/workspace/tillamook-redesign/BUILD-LIST.md
+   ===================================================================== */
+
+/* ---- P1/P2. Ground + variables: the settled light design, both
+   themes. A saved dark preference resolves to these same light
+   values (blueprint 4b) — dark mode must not resurrect the old
+   near-black green look. ---- */
+body.tcl-rd{
+  --accent:#b95e06; --accent-dark:#7a3c00; --accent-2:#e85d04;
+  --warm:#e8862a; --text:#2b211b; --muted:#6b5d54;
+  --border:#d8cfc0;
+  --shadow:0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+  color-scheme:light;
+  background:linear-gradient(168deg,#f2f3f5 0%,#e9ebee 48%,#dde1e6 100%) fixed;
+  background-color:#dde1e6;
+  color:var(--text);
+}
+html[data-theme="dark"] body.tcl-rd{
+  --accent:#b95e06; --accent-dark:#7a3c00; --accent-2:#e85d04;
+  --warm:#e8862a; --text:#2b211b; --muted:#6b5d54;
+  --border:#d8cfc0;
+  color-scheme:light;
+  background:linear-gradient(168deg,#f2f3f5 0%,#e9ebee 48%,#dde1e6 100%) fixed;
+  background-color:#dde1e6;
+}
+html:has(> body.tcl-rd){background:#dde1e6}
+body.tcl-rd .page-bg{display:none!important}
+body.tcl-rd ::selection{background:rgba(232,93,4,.25)}
+body.tcl-rd .pulse-dot{background:#e85d04;box-shadow:0 0 0 0 rgba(232,93,4,.45)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(232,93,4,.45)}70%{box-shadow:0 0 0 8px rgba(232,93,4,0)}100%{box-shadow:0 0 0 0 rgba(232,93,4,0)}}
+
+/* night-photo twins retire in BOTH themes (the redesign is a light
+   design; the day photo carries every card) */
+body.tcl-rd .hero-img-night,
+body.tcl-rd .photo-night{opacity:0!important}
+body.tcl-rd .hero-img{filter:saturate(.86) contrast(1.04) brightness(.95)}
+
+/* ---- P3. The hero becomes ONE inset rounded card over its photo,
+   aligned with the content column, scrolling away with the page.
+   Shadow = the featured dark stack (blueprint 4e). ---- */
+body.tcl-rd .hero{
+  max-width:1160px;width:calc(100% - 40px);
+  margin:16px auto 0;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:22px;
+  box-shadow:0 6px 14px rgba(35,30,22,.20),0 20px 44px rgba(35,30,22,.34),0 34px 68px rgba(35,30,22,.16);
+}
+@media (max-width:899px){
+  body.tcl-rd .hero{width:calc(100% - 24px);margin-top:12px;border-radius:18px}
+}
+/* per-view hero head (name + tagline swap, app.js heroSetContent) */
+body.tcl-rd .hero-view-name{
+  font-size:clamp(1.5rem,3.4vw,2.05rem);font-weight:800;line-height:1.15;
+  color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.5);margin:14px 0 0;
+}
+body.tcl-rd .hero-view-tag{
+  margin:8px 0 6px;max-width:36em;color:#f2f7ee;
+  font-size:clamp(.98rem,2.2vw,1.12rem);line-height:1.45;
+  text-shadow:0 1px 14px rgba(0,0,0,.6);
+}
+/* P6: the finder lives on the hero photo (Today + Travel) */
+body.tcl-rd .hero-finder{margin-top:16px;position:relative;z-index:3}
+body.tcl-rd .hero-finder .finder-box{
+  background:rgba(255,255,255,.95);
+  border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 8px 22px rgba(10,20,14,.30);
+}
+body.tcl-rd .hero-finder .finder-results{
+  background:rgba(255,255,255,.97);
+  box-shadow:0 16px 34px rgba(10,20,14,.38);
+}
+body.tcl-rd .hero-finder .finder-hint{display:none}
+/* P5: three plain-text status spots at the hero card's bottom —
+   the old sticky pills, moved in (IDs + setPill wiring preserved).
+   Clear = light text; not clear = RED. The sticky bar is gone. */
+body.tcl-rd .sticky-bar{display:none!important}
+body.tcl-rd .hero-status{display:flex;flex-wrap:nowrap;gap:6px;margin-top:13px}
+body.tcl-rd .hero-status a{
+  flex:1 1 0;text-align:center;white-space:nowrap;
+  color:#fff;font-weight:650;font-size:.99rem;text-decoration:none;
+  text-shadow:0 1px 7px rgba(0,0,0,.6);letter-spacing:.01em;
+  background:none;border:none;border-radius:0;padding:4px 2px;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+body.tcl-rd .hero-status a.warn,
+body.tcl-rd .hero-status a.bad{color:#ff7a6b;font-weight:750}
+body.tcl-rd .hero-status a:hover{text-decoration:underline}
+@media (min-width:900px){ body.tcl-rd .hero-status a{font-size:1.05rem} }
+@media (max-width:480px){ body.tcl-rd .hero-status a{font-size:.93rem} }
+
+/* ---- P7. TAB BAR — floating pills, NO container bar. Phone: plain
+   position:fixed;bottom:0, a direct body child, 68px + safe-area,
+   transform/transition/will-change explicitly NONE (blueprint 4u —
+   no mechanism that can move it exists). Desktop: transparent top
+   row of pills. Active pill = marbled paint (3f). ---- */
+body.tcl-rd .tabbar, body.tcl-rd .tabbar:hover{
+  background:transparent!important;border:none!important;box-shadow:none!important;
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+}
+body.tcl-rd .tab-btn{
+  background:rgba(255,255,255,.92);color:var(--muted);
+  border:1px solid var(--border);border-radius:999px;
+  box-shadow:0 3px 10px rgba(30,40,20,.10);
+}
+body.tcl-rd .tab-btn.active{
+  background:linear-gradient(rgba(255,253,248,.42),rgba(255,253,248,.42)),url("img/founding-paint.jpg") center/cover no-repeat!important;
+  color:#3a2408!important;border-color:#e85d04!important;
+  box-shadow:0 8px 20px rgba(35,30,22,.35),0 3px 8px rgba(35,30,22,.20)!important;
+  text-shadow:0 1px 0 rgba(255,255,255,.65);
+}
+body.tcl-rd .tab-btn.active .tab-ico{
+  background:rgba(255,255,255,.82);border-radius:50%;padding:2px;
+  box-shadow:0 1px 4px rgba(90,50,0,.35);
+}
+@media (max-width:899px){
+  body.tcl-rd .tabbar{
+    position:fixed!important;left:0;right:0;bottom:0!important;top:auto!important;
+    height:calc(68px + env(safe-area-inset-bottom));
+    padding:7px 10px calc(7px + env(safe-area-inset-bottom));
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    z-index:1200;
+    transform:none!important;transition:none!important;will-change:auto!important;
+  }
+  body.tcl-rd .tab-btn{
+    flex:1 1 0;height:54px;border-radius:999px;
+    flex-direction:column;gap:1px;padding:4px 2px;
+    font-size:.68rem;font-weight:700;
+    background:rgba(255,255,255,.97);
+    box-shadow:0 6px 16px rgba(30,40,20,.18);
+  }
+  body.tcl-rd .tab-btn .tab-ico img{width:20px;height:20px;display:block}
+  body.tcl-rd{padding-bottom:calc(80px + env(safe-area-inset-bottom))}
+}
+html[data-theme="dark"] body.tcl-rd .tab-btn{background:rgba(255,255,255,.97);color:var(--muted)}
+@media (min-width:900px){
+  html[data-theme="dark"] body.tcl-rd .tab-btn{background:rgba(255,255,255,.92);color:var(--muted)}
+}
+@media print{ body.tcl-rd .tabbar{display:none} }
+
+/* ---- P9/P10. CARDS — ONE dark shadow family (pooled stack: light
+   rim + inset top highlight + hairline bottom shade + contact +
+   main + a wide soft ambient layer that reaches into the gaps so
+   neighbouring shadows pool), and the marbling as the default
+   surface (paint under a .45 white wash — blueprint 4l/4r/4x).
+   Photo cards keep their photos (separate elements on top). ---- */
+body.tcl-rd .card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+html[data-theme="dark"] body.tcl-rd .card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+body.tcl-rd .card-photo{background:#e9ebee}
+html[data-theme="dark"] body.tcl-rd .card-photo,
+html[data-theme="dark"] body.tcl-rd .card-band{background:#e9ebee}
+/* featured-family deeper stack (sponsor surfaces) */
+body.tcl-rd .sponsor-top,
+body.tcl-rd .featured-local{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:0 5px 12px rgba(35,30,22,.18),0 18px 40px rgba(35,30,22,.30),0 30px 60px rgba(35,30,22,.14);
+}
+body.tcl-rd .featured-card,
+body.tcl-rd .featured-event{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+}
+/* Your town card takes the blackish-grey flavor (blueprint 4e) */
+body.tcl-rd #home-card{box-shadow:0 6px 14px rgba(22,24,28,.28),0 18px 40px rgba(22,24,28,.48)}
+/* graph exception (4l): chart surfaces stay solid + readable */
+body.tcl-rd .river-spark,
+body.tcl-rd .air-scale{
+  background:#fffdf8;border:1px solid rgba(120,100,70,.25);border-radius:10px;
+}
+body.tcl-rd .river-spark{padding:6px 8px}
+
+/* ---- P12. TICKER — separate bigger ombre pills floating on the
+   page ground; the dark band is stripped (blueprint 2/2p), and the
+   viewport carries the room its shadows need to finish their fade
+   inside the clip (4n/4u: 16 top / 26 bottom). ---- */
+body.tcl-rd .glance-strip{
+  background:transparent;border:none;box-shadow:none;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+body.tcl-rd .strip-viewport{padding:16px 0 26px}
+body.tcl-rd .strip-item.glance-tile{
+  margin:9px 10px 9px 0;padding:10px 20px 10px 13px;
+  border:none;border-radius:999px;
+  background:linear-gradient(135deg,#ffb347 0%,#ff7a1a 55%,#e85d04 100%);
+  box-shadow:0 6px 14px rgba(22,24,28,.34),0 14px 32px rgba(22,24,28,.50);
+  color:#fff;
+}
+body.tcl-rd .glance-strip .glance-label{color:rgba(255,255,255,.88)}
+body.tcl-rd .glance-strip .strip-sep{color:rgba(255,255,255,.65)}
+body.tcl-rd .glance-strip .glance-sub{color:rgba(255,255,255,.78)}
+body.tcl-rd .glance-strip .glance-val{color:#fff;font-size:1.14rem}
+body.tcl-rd .glance-strip .glance-val.ok{color:#fff}
+
+/* ---- P14. FOUNDING PANEL — the paint mix is the backdrop (full
+   strength), the four cells are greyish FROSTED GLASS over it with
+   real gaps, and every word gets the full contrast pass (4w).
+   Offers, wording, placement untouched: 4 spots, $49/mo, free
+   30-day pilot. ---- */
+body.tcl-rd .founding-eyebrow{color:#7a3c00;font-weight:800;text-shadow:0 1px 0 rgba(255,255,255,.65)}
+body.tcl-rd .founding-foot{color:#574433}
+body.tcl-rd .founding-cells{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+  border:1px solid rgba(255,255,255,.70);border-radius:20px;
+  padding:18px;
+  box-shadow:0 6px 14px rgba(35,30,22,.20),0 20px 44px rgba(35,30,22,.34),0 34px 68px rgba(35,30,22,.16);
+}
+body.tcl-rd .founding-cell,
+body.tcl-rd .founding-cell.in-flow,
+body.tcl-rd .founding-cell.invite.in-flow{
+  background:rgba(250,248,243,.58);
+  -webkit-backdrop-filter:blur(14px) saturate(1.1);backdrop-filter:blur(14px) saturate(1.1);
+  border:1px solid rgba(255,255,255,.70);border-radius:14px;
+  color:#2b211b;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 4px 10px rgba(35,30,22,.12),0 14px 30px rgba(35,30,22,.20);
+}
+body.tcl-rd .founding-cell h3{color:#241a12}
+body.tcl-rd .founding-cell p{color:#453823;font-weight:600}
+body.tcl-rd .cell-eyebrow{color:#7a3c00}
+body.tcl-rd .ghost-logo{
+  color:#5d4326;border:1.5px dashed rgba(93,67,38,.55);
+  background:rgba(255,255,255,.45);
+}
+html[data-theme="dark"] body.tcl-rd .founding-cell,
+html[data-theme="dark"] body.tcl-rd .founding-cell.in-flow{
+  background:rgba(250,248,243,.58);color:#2b211b;
+  border:1px solid rgba(255,255,255,.70);
+}
+html[data-theme="dark"] body.tcl-rd .founding-cell p{color:#453823}
+html[data-theme="dark"] body.tcl-rd .founding-cell h3{color:#241a12}
+
+/* ---- P15. RAIL / HOUSE CELLS — the County Watch recipe (3x/4h):
+   warm-white frost, ink text, deep-brown eyebrow, solid ink-brown
+   CTA pill. ---- */
+body.tcl-rd .rail-card{
+  background:rgba(255,253,248,.94);color:#2b211b;
+  border:1px solid rgba(255,255,255,.70);border-radius:16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+body.tcl-rd .rail-card .cell-eyebrow{color:#7a3c00}
+body.tcl-rd .rail-card p{color:#453823}
+body.tcl-rd .rail-cta{
+  display:inline-block;background:#3a2a18;color:#fff;
+  border-radius:999px;padding:8px 14px;text-decoration:none;font-weight:700;
+}
+
+/* ---- P18. SCHOOLS — paint body at full strength, the district
+   list as FROSTED GLASS over it (4f, briefing pattern). Status
+   pill colors stay functional, untouched. ---- */
+body.tcl-rd .schools-card{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+}
+body.tcl-rd .schools-list{
+  background:rgba(255,255,255,.55);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.70);border-radius:14px;
+  padding:6px 14px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85);
+}
+
+/* ---- P19. BRIEFING — paint body, rows directly on the paint
+   (3i flattening); TCL keeps its Copy/Share/Hear buttons, marble-
+   styled (flagged deviation). ---- */
+body.tcl-rd #briefing-card{
+  background:#fff8f0 url("img/founding-paint.jpg") center/cover no-repeat;
+}
+body.tcl-rd .briefing-view{background:transparent;border:none;box-shadow:none}
+body.tcl-rd .briefing-more{
+  background:rgba(255,255,255,.60);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-radius:999px;padding:3px 10px;color:#7a3c00;font-weight:700;
+  display:inline-block;
+}
+
+/* ---- P13. FORECAST — pills float bare (already un-merged in TCL);
+   the floating head text was styled white for the old photo
+   background and now takes ink (the CCL contrast-fix pattern).
+   Pills wear the paint at the reference .40 wash with the text
+   recipe: near-black 800, lo deep warm brown, rain deep blue. ---- */
+body.tcl-rd .forecast-head h2{color:var(--text);text-shadow:none}
+body.tcl-rd .forecast-head .updated{color:var(--muted);text-shadow:none}
+body.tcl-rd .wx-place{color:var(--muted);text-shadow:none}
+body.tcl-rd .forecast-week{padding:16px 2px 26px}
+body.tcl-rd .wx-day{
+  background:linear-gradient(rgba(255,252,246,.40),rgba(255,252,246,.40)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 4px 10px rgba(35,30,22,.12),0 14px 30px rgba(35,30,22,.22);
+  color:#241708;
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+body.tcl-rd .wx-hi{color:#241708;font-weight:800}
+body.tcl-rd .wx-lo{color:#574433;font-weight:700}
+body.tcl-rd .wx-pop{color:#0a4f86;font-weight:800}
+body.tcl-rd .wx-dow{color:#241708}
+body.tcl-rd .wx-ico{background:rgba(255,255,255,.78);border-radius:12px;padding:2px}
+body.tcl-rd .wx-day.wx-today{
+  border-color:rgba(232,93,4,.85);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 4px 10px rgba(35,30,22,.12),0 14px 30px rgba(35,30,22,.22),0 0 0 1px rgba(232,93,4,.25);
+}
+body.tcl-rd .wx-day.wx-today .wx-dow{color:#7a3c00}
+html[data-theme="dark"] body.tcl-rd .wx-day{
+  background:linear-gradient(rgba(255,252,246,.40),rgba(255,252,246,.40)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);color:#241708;
+}
+html[data-theme="dark"] body.tcl-rd .wx-pop{color:#0a4f86}
+html[data-theme="dark"] body.tcl-rd .wx-day.wx-today .wx-dow{color:#7a3c00}
+
+/* ---- P11/P17. EVENTS — the #events-body overflow-x:clip was
+   guillotining the event cards' side shadows (4p); the calendar
+   cards + day pills + Featured Event wear the marbling (4k). ---- */
+body.tcl-rd #events-body{overflow:visible}
+body.tcl-rd .cev-list-h{color:var(--text);text-shadow:none}
+body.tcl-rd .cev-card,
+body.tcl-rd .cev-mini{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+body.tcl-rd .cev-pills{padding:10px 4px 44px}
+body.tcl-rd .cev-pill{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+}
+/* Travel incident cards wear the marbling too (4t) */
+body.tcl-rd .alert-card{
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 4px 10px rgba(35,30,22,.12),0 16px 38px rgba(35,30,22,.22),0 30px 60px rgba(35,30,22,.13);
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+}
+body.tcl-rd .incidents-head h3{color:var(--text);text-shadow:none}
+
+/* ---- P16. TAN → FROSTED GLASS, app-wide (4s recipe): every
+   off-white tan surface becomes translucent white glass over
+   whatever treatment sits beneath. Selected chips keep their
+   solid state (guards); verdict surfaces keep their meaning
+   colors (excluded on purpose); form controls + map chrome are
+   not in this list. ---- */
+body.tcl-rd .ferry-box, body.tcl-rd .ferry-next-box, body.tcl-rd .bridge-box,
+body.tcl-rd .alert-item, body.tcl-rd .period, body.tcl-rd .quake-mag,
+body.tcl-rd .install-help, body.tcl-rd .lang-note, body.tcl-rd .camera-fig,
+body.tcl-rd .ra-chip, body.tcl-rd .briefing-row-alert, body.tcl-rd .sh-detail,
+body.tcl-rd .alm-verdict, body.tcl-rd .alm-fact, body.tcl-rd .air-verdict,
+body.tcl-rd .dark-verdict, body.tcl-rd .fish-sp, body.tcl-rd .go-row,
+body.tcl-rd .print-note, body.tcl-rd .schools-report, body.tcl-rd .otl-card,
+body.tcl-rd .share-bar, body.tcl-rd .link-tile, body.tcl-rd .route-pill,
+body.tcl-rd .coast-row, body.tcl-rd .dir-empty, body.tcl-rd .dir-item,
+body.tcl-rd .finder-box, body.tcl-rd .finder-results,
+body.tcl-rd .why-box summary, body.tcl-rd .wave-details summary{
+  background:rgba(255,255,255,.52);
+  -webkit-backdrop-filter:blur(12px) saturate(1.15);
+  backdrop-filter:blur(12px) saturate(1.15);
+}
+body.tcl-rd .drive-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .fp-town-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .dir-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .home-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .saver-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .plan-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .signpost-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .map-town-chip:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .town-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .sky-filter-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .event-filter-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .fp-dir-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .go-trip-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .pin-btn:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .pin-clear:not(.active):not([aria-pressed="true"]),
+body.tcl-rd .cev-reset,
+body.tcl-rd .share-btn:not(.primary){
+  background:rgba(255,255,255,.52);
+  -webkit-backdrop-filter:blur(12px) saturate(1.15);
+  backdrop-filter:blur(12px) saturate(1.15);
+}
+html[data-theme="dark"] body.tcl-rd .finder-box,
+html[data-theme="dark"] body.tcl-rd .finder-results,
+html[data-theme="dark"] body.tcl-rd .dir-empty{
+  background:rgba(255,255,255,.52);
+}
+/* P17: primary buttons wear the marble (3k) — paint + 45% veil,
+   dark text, orange border */
+body.tcl-rd .share-btn.primary,
+body.tcl-rd .go-trip-btn.active,
+body.tcl-rd .go-trip-btn[aria-pressed="true"]{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  color:#3a2408;border-color:#e85d04;
+}
+body.tcl-rd .share-btn.primary:hover{
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  color:#3a2408;
+}
+
+/* ---- P20. SLIDE-IN PANELS FLOAT (2r, mirrored for TCL's
+   left-side drawer): inset 12px from top and bottom, contact with
+   their screen edge, rounded free corners, deep shadow. ---- */
+body.tcl-rd .drawer{
+  top:12px;bottom:12px;height:auto;
+  border-radius:0 18px 18px 0;
+  box-shadow:30px 26px 68px rgba(25,20,12,.48);
+}
+body.tcl-rd .getapp-sheet{
+  top:12px;bottom:12px;height:auto;
+  border-radius:18px 0 0 18px;
+  box-shadow:-30px 26px 68px rgba(25,20,12,.48);
+}
+html[data-theme="dark"] body.tcl-rd .drawer{
+  background:rgba(251,248,238,.92);color:var(--text);
+  border-right-color:var(--border);border-left-color:var(--border);
+}
+html[data-theme="dark"] body.tcl-rd .getapp-sheet{
+  background:rgba(251,248,238,.94);color:var(--text);
+  border-left-color:var(--border);
+}
+html[data-theme="dark"] body.tcl-rd .site-footer{background:rgba(247,242,226,.84)}
+
+/* ---- P21. SELECTS — modernized (item 2): rounded, custom
+   chevron, comfortable padding, orange focus ring. ---- */
+body.tcl-rd select{
+  appearance:none;-webkit-appearance:none;
+  border-radius:12px;padding:9px 36px 9px 12px;
+  border:1px solid var(--border);
+  background-color:rgba(255,255,255,.85);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%237a3c00' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:12px;
+  color:var(--text);
+}
+body.tcl-rd select:focus{outline:2px solid var(--accent);outline-offset:1px}
+
+/* ---- P8. VIEW SLIDE + HERO SWAP (2c/4i/4v final values): the
+   outgoing view slides off, the incoming slides in, the header
+   card exits and re-enters from the top corner. Height is LOCKED
+   by app.js through the swap (no height transition anywhere).
+   During a swap, backdrop-filter + reveal animations inside the
+   moving views are suspended and the entering view raster-skips
+   (app.js adds .cv-skip) — the moving layer stays cheap. ---- */
+body.tcl-rd .view-active{animation:none}
+.hero.hero-exit{transform:translateX(-64px);opacity:0;transition:transform .32s cubic-bezier(.45,0,.55,1),opacity .32s cubic-bezier(.45,0,.55,1)}
+.hero.hero-exit.rev{transform:translateX(64px)}
+.hero.hero-enter{transform:translate(54px,-32px);opacity:0}
+.hero.hero-enter.rev{transform:translate(-54px,-32px)}
+.hero.hero-enter.hero-enter-go{transform:none;opacity:1;transition:transform .52s cubic-bezier(.22,.9,.26,1),opacity .52s ease-out}
+.view-leaving{transform:translateX(-56px);opacity:0;transition:transform .32s cubic-bezier(.45,0,.55,1),opacity .32s cubic-bezier(.45,0,.55,1);box-shadow:-18px 0 44px rgba(35,30,22,.22);border-radius:18px}
+.view-leaving.rev{transform:translateX(56px)}
+.view-entering{transform:translateX(56px);opacity:0;box-shadow:-18px 0 44px rgba(35,30,22,.22);border-radius:18px}
+.view-entering.rev{transform:translateX(-56px)}
+.view-entering.view-enter-go{transform:none;opacity:1;transition:transform .52s cubic-bezier(.22,.9,.26,1),opacity .52s ease-out}
+.view-leaving,.view-entering,.hero.hero-exit,.hero.hero-enter{will-change:transform}
+body.view-anim .view-entering *,body.view-anim .view-leaving *{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+body.view-anim .reveal{transition:none!important;animation:none!important}
+.view-entering.cv-skip{content-visibility:auto;contain-intrinsic-size:auto 1200px}
+@media (prefers-reduced-motion: reduce){
+  .hero.hero-exit,.hero.hero-enter.hero-enter-go,
+  .view-leaving,.view-entering.view-enter-go{transition:none}
+}
+
+/* ---- P22. DESKTOP HOVER POP (3n): cards lift on hover where a
+   pointer can hover; reduced motion keeps the shadow only. ---- */
+@media (hover:hover) and (min-width:900px){
+  body.tcl-rd .card{transition:transform .18s ease,box-shadow .18s ease}
+  body.tcl-rd .card:hover{
+    transform:translateY(-3px) scale(1.012);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),0 8px 18px rgba(35,30,22,.18),0 26px 54px rgba(35,30,22,.30),0 44px 80px rgba(35,30,22,.16);
+  }
+  body.tcl-rd .founding-cell, body.tcl-rd .featured-card{transition:transform .18s ease,box-shadow .18s ease}
+  body.tcl-rd .founding-cell:hover, body.tcl-rd .featured-card:hover{transform:translateY(-3px) scale(1.012)}
+}
+@media (prefers-reduced-motion: reduce){
+  body.tcl-rd .card:hover, body.tcl-rd .founding-cell:hover, body.tcl-rd .featured-card:hover{transform:none}
+}
+
+/* ---- Contrast repair (QC round 1, 2026-11-21): three header
+   groups were styled white for the old per-view photo backgrounds
+   (base rules at ID specificity) and landed invisible on the new
+   grey ground / marble. They take ink now. The tsunami card keeps
+   its white-on-red (verified untouched above). ---- */
+body.tcl-rd #forecast-week-card .forecast-head h2{color:var(--text);text-shadow:none}
+body.tcl-rd #forecast-week-card .forecast-head .updated{color:var(--muted);text-shadow:none}
+body.tcl-rd #forecast-week-card .wx-place{color:var(--muted);text-shadow:none}
+body.tcl-rd #events-card .card-head h2{color:var(--text);text-shadow:none}
+body.tcl-rd #events-card .card-head .updated{color:var(--muted);text-shadow:none}
+body.tcl-rd #events-card .card-note{color:var(--text);text-shadow:none}
+body.tcl-rd #events-card .card-note a{color:var(--accent-dark)}
+body.tcl-rd #help-food-card .card-head h2,
+body.tcl-rd #help-crisis-card .card-head h2,
+body.tcl-rd #help-money-card .card-head h2,
+body.tcl-rd #help-family-card .card-head h2,
+body.tcl-rd #help-vets-card .card-head h2{color:var(--text);text-shadow:none}
+body.tcl-rd .footer-byline strong{color:var(--text)}
