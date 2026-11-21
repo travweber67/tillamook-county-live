@@ -4335,6 +4335,18 @@ body.tcl-rd .nws-seeall{
 }
 body.tcl-rd .nws-seeall:active{transform:translateY(1px)}
 
+/* ---- V23. EVENTS CARDS JOIN THE NEWS CARDS' BIG FOOTPRINT ----
+   Travis (2026-11-21): the events scroller cards take the same big
+   height family as the news cards (measured 492px phone / 484px desk
+   at v22; these minimums sit a hair under so events never tower over
+   news). The shared .evs-img flex-grow (V22) stretches the photo to
+   fill the taller card; the text block stays complete at the bottom —
+   no void there either. */
+body.tcl-rd .evs-card{min-height:480px}
+@media (min-width:1280px){
+  body.tcl-rd .evs-card{min-height:472px}
+}
+
 /* ---- V19-3b. THE NEWS VIEW (story list + reader) ---- */
 body.tcl-rd .news-list{display:flex;flex-direction:column;gap:10px;margin-top:10px}
 body.tcl-rd .news-row{
