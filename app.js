@@ -6962,7 +6962,7 @@ const LANG_ES = {
   webPromoLink: 'Vea otros sitios creados por Nomad Development Group &rarr;',
   dwphototitle: 'Comparte tu foto del condado',
   dwphotoline: '¿Tienes una foto del condado que te encanta? Envíala — las buenas se unen al protector de pantalla de la comunidad, con tu nombre firmado como en una pintura.',
-  langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap the courthouse logo up top to open the menu, then tap <strong>English</strong> to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."
+  langnote: "🌎 This page is showing its headings, buttons and notes in Spanish — tap the lighthouse logo up top to open the menu, then tap <strong>English</strong> to switch back. Live readings, alerts and event listings keep arriving in English from their official sources."
 };
 let langCur = 'en';
 let langEls = null;
@@ -7924,7 +7924,7 @@ initViews();
 /* ---------- the drawer (v5): the logo opens a slide-out menu ----------
    Travis's clean-hero trade: the hero's six quick-nav chips retired,
    and every jump they carried — plus every other section on the page —
-   now lives here. The courthouse logo in the masthead is the button
+   now lives here. The lighthouse logo in the masthead is the button
    (hamburger badge on the mark). The drawer slides in from the RIGHT
    over a dimmed backdrop, frosted glass in both themes, and closes on
    the backdrop, on Esc, on its ✕, or on any selection. Section links

@@ -117,7 +117,7 @@
  */
 'use strict';
 
-var VERSION = 'tcl-v15'; // v15 = COAST CARD + THREE REMOVALS + MAP LINKS (2026-11-20): new Coast Conditions card in Today's flow (Tillamook Bay bar from the Coast Guard report via NWS Portland AllBars.xml, high surf + flooding from NWS alerts ORC057+ORZ102, tsunami strip inside the card; the verbatim top tsunami card is unchanged); the Commute Verdict, After Dark, and Fishing/Crabbing/Clamming cards are removed with all their wiring; every boat ramp on the Bay & Bar card and every OHV area is now a whole-row Google Maps link; cache-bust ?v=15 // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign; cache-bust ?v=14
+var VERSION = 'tcl-v15'; // v15 = COAST CARD + THREE REMOVALS + MAP LINKS (2026-11-20): new Coast Conditions card in Today's flow (Tillamook Bay bar from the Coast Guard report via NWS Portland AllBars.xml, high surf + flooding from NWS alerts ORC057+ORZ102, tsunami strip inside the card; the verbatim top tsunami card is unchanged); the Commute Verdict, After Dark, and Fishing/Crabbing/Clamming cards are removed with all their wiring; every boat ramp on the Bay & Bar card and every OHV area is now a whole-row Google Maps link; lighthouse logo + install icons replace the courthouse mark site-wide (new icon URLs, manifest ?v=2); cache-bust ?v=15 // v14 = EVENTS AS CARDS (2026-11-20): the Events calendar now matches Columbia County Live's v121 redesign; cache-bust ?v=14
 var STATIC_CACHE = VERSION + '-static';
 var DATA_CACHE = VERSION + '-data';
 var LIB_CACHE = VERSION + '-lib';
@@ -157,10 +157,10 @@ var SHELL = [
   'manifest.webmanifest',
   'county.geojson',
   'ohv-trails.geojson',
-  'img/icon-192.png',
-  'img/icon-512.png',
-  'img/icon-maskable-512.png',
-  'img/icons/icon-logo-courthouse.png',
+  'img/icon-lighthouse-192.png',
+  'img/icon-lighthouse-512.png',
+  'img/icon-lighthouse-maskable-512.png',
+  'img/icons/icon-logo-lighthouse.png',
   'img/apple-touch-icon.png'
 ];
 
