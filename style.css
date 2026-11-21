@@ -41,7 +41,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent-dark);outlin
 h1,h2,h3{margin:0;line-height:1.2;font-family:var(--sans)}
 h2{font-weight:700;letter-spacing:-.01em}
 .small{font-size:.82rem;color:var(--muted)}
-::selection{background:rgba(46,93,58,.25)}
+::selection{background:rgba(232,93,4,.25)}
 
 /* ---------- Hero (slim banner) ---------- */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
@@ -65,7 +65,7 @@ h2{font-weight:700;letter-spacing:-.01em}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-mark{
   font-size:1.45rem;line-height:1;padding:7px 8px;
-  background:rgba(10,24,14,.55);border:1px solid rgba(255,255,255,.25);
+  background:rgba(22,19,15,.55);border:1px solid rgba(255,255,255,.25);
   border-radius:12px;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
 }
 .brand-name{
@@ -2320,7 +2320,7 @@ html[data-theme="dark"] .drawer-view{color:#bfe3c8}
 .drawer-view img{width:24px;height:24px;border-radius:50%}
 .drawer-view:hover{text-decoration:underline}
 .drawer-link{display:block;padding:7px 10px 7px 41px;border-radius:9px;color:var(--muted);text-decoration:none;font-size:.94rem}
-.drawer-link:hover{background:rgba(46,93,58,.1);color:var(--text)}
+.drawer-link:hover{background:rgba(185,94,6,.10);color:var(--text)}
 html[data-theme="dark"] .drawer-link{color:#c9d2bd}
 html[data-theme="dark"] .drawer-link:hover{background:rgba(244,241,228,.08);color:#fff}
 .drawer-actions{border-top:1px solid var(--border);padding:10px;display:flex;flex-direction:column;gap:8px}
@@ -2339,12 +2339,12 @@ html[data-theme="dark"] .drawer-action{background:rgba(244,241,228,.06);color:#e
 .drawer-util-btn{
   display:inline-flex;align-items:center;gap:7px;cursor:pointer;
   font:inherit;font-size:.9rem;font-weight:800;color:#f5efdb;
-  background:rgba(9,22,13,.88);border:1.5px solid var(--warm-fill);
+  background:rgba(16,14,11,.88);border:1.5px solid var(--warm-fill);
   border-radius:999px;padding:9px 14px;min-height:44px;
   box-shadow:0 3px 10px rgba(0,0,0,.25);
   transition:background .15s ease,transform .12s ease;
 }
-.drawer-util-btn:hover{background:rgba(9,22,13,1)}
+.drawer-util-btn:hover{background:rgba(16,14,11,1)}
 .drawer-util-btn:active{transform:scale(.97)}
 .drawer-util-btn .theme-ico{width:20px;height:20px}
 .drawer-util-btn svg.theme-ico{color:#f2c078}
@@ -4074,3 +4074,147 @@ body.tcl-rd #help-money-card .card-head h2,
 body.tcl-rd #help-family-card .card-head h2,
 body.tcl-rd #help-vets-card .card-head h2{color:var(--text);text-shadow:none}
 body.tcl-rd .footer-byline strong{color:var(--text)}
+
+/* =====================================================================
+   DARK THEME, DESIGNED (2026-11-21) — port of Columbia County Live
+   item 5 (ccl-v125/v126), at Travis's call for parity.
+   Root cause (the same one CCL had): the redesign port (P2) made a
+   saved dark preference render the light design, but the legacy dark
+   rules for the drawer family were never re-stated at tcl-rd scope —
+   .drawer-link #c9d2bd, .drawer-action #eef0e2, .drawer-foot-link
+   #c9d2bd, .drawer-photo-line #d8dfc8, .drawer-view #bfe3c8 (raw pale
+   values from the old dark-green theme) still flipped light while
+   the drawer panel itself had been re-stated light (P20), so the
+   menu text sat pale-on-cream.
+   The designed dark theme: (1) the ground goes DARK GREY (the light
+   gradient's charcoal mirror, kept at TCL's own 168deg); (2)
+   everywhere the orange marble appears, dark uses the GREEN marble
+   (img/founding-paint-green.jpg — the orange paint hue-shifted
+   +105°, the same asset CCL generated; TCL's paint file is
+   byte-identical to CCL's, so the twin carries over exactly); (3)
+   text follows its surface: light on the dark ground, dark ink on
+   the (light) marble and frosted cards, exactly as in light mode;
+   (4) the drawer and the get-app sheet become dark charcoal
+   surfaces with light text and their own local light variables, and
+   the tab pills go dark charcoal with light labels — the active
+   pill wears the green marble with dark ink. No half-flipped
+   leftovers. Light mode is untouched by this block.
+   Green purge (in place, above): the menu button's chip .brand-mark
+   was still wearing the old dark-GREEN tint rgba(10,24,14,.55) —
+   now neutral warm-dark rgba(22,19,15,.55); ::selection, the
+   drawer-link hover and the drawer util buttons de-greened the
+   same way CCL's were.
+   ===================================================================== */
+
+/* ---- D1. GROUND: dark grey, the light gradient's mirror ---- */
+html[data-theme="dark"] body.tcl-rd{
+  background:#2e3036 linear-gradient(168deg,#3b3e44 0%,#2e3036 48%,#222429 100%) fixed;
+  background-color:#2e3036;
+}
+html[data-theme="dark"]:has(> body.tcl-rd){background:#2e3036}
+
+/* ---- D2. GREEN MARBLE: every founding-paint surface swaps to the
+   green hue twin in dark. background-image ONLY — each surface
+   keeps its own wash, position, size and fallback color from its
+   own rule, so the green paint reads at the same strength as the
+   orange does in light mode. ---- */
+html[data-theme="dark"] body.tcl-rd .card,
+html[data-theme="dark"] body.tcl-rd .alert-card,
+html[data-theme="dark"] body.tcl-rd .sponsor-top,
+html[data-theme="dark"] body.tcl-rd .featured-local,
+html[data-theme="dark"] body.tcl-rd .featured-card,
+html[data-theme="dark"] body.tcl-rd .featured-event,
+html[data-theme="dark"] body.tcl-rd .cev-card,
+html[data-theme="dark"] body.tcl-rd .cev-mini,
+html[data-theme="dark"] body.tcl-rd .cev-pill{
+  background-image:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint-green.jpg");
+}
+html[data-theme="dark"] body.tcl-rd .wx-day{
+  background-image:linear-gradient(rgba(255,252,246,.40),rgba(255,252,246,.40)),url("img/founding-paint-green.jpg");
+}
+html[data-theme="dark"] body.tcl-rd .share-btn.primary,
+html[data-theme="dark"] body.tcl-rd .go-trip-btn.active,
+html[data-theme="dark"] body.tcl-rd .go-trip-btn[aria-pressed="true"]{
+  background-image:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint-green.jpg");
+}
+html[data-theme="dark"] body.tcl-rd .tab-btn.active{
+  background-image:linear-gradient(rgba(255,253,248,.42),rgba(255,253,248,.42)),url("img/founding-paint-green.jpg") !important;
+  border-color:#2c7a2e !important;
+}
+html[data-theme="dark"] body.tcl-rd .founding-cells,
+html[data-theme="dark"] body.tcl-rd .schools-card,
+html[data-theme="dark"] body.tcl-rd #briefing-card{
+  background-image:url("img/founding-paint-green.jpg");
+}
+/* ticker pills: the orange ombre becomes a green ombre in dark
+   (white pill text unchanged — it reads on both; TCL's blackish
+   pooled shadow stack from P12 stays) */
+html[data-theme="dark"] body.tcl-rd .strip-item.glance-tile{
+  background:linear-gradient(135deg,#8fce62 0%,#4da53f 55%,#2c7a2e 100%);
+}
+
+/* ---- D3. TEXT ON THE GROUND flips light: the bare forecast head
+   (TCL's forecast block is un-carded, like CCL's 5g addendum), the
+   founding head above the panel, and the footer byline all sit
+   directly on the ground. Everything on a card, marble or frosted,
+   keeps its dark ink. The footer's item-4 cream panel goes away —
+   in light mode the footer is transparent on the ground, so dark
+   matches: transparent on the dark ground, light text. ---- */
+html[data-theme="dark"] body.tcl-rd #forecast-week-card .forecast-head h2{color:#f2f0e9}
+html[data-theme="dark"] body.tcl-rd #forecast-week-card .forecast-head .updated{color:#b9bcc2}
+html[data-theme="dark"] body.tcl-rd #forecast-week-card .wx-place{color:#cfccc2}
+html[data-theme="dark"] body.tcl-rd .founding-eyebrow{color:#ffb066}
+html[data-theme="dark"] body.tcl-rd .founding-foot{color:#cfccc2}
+html[data-theme="dark"] body.tcl-rd .site-footer{background:transparent;color:#f2f0e9}
+html[data-theme="dark"] body.tcl-rd .footer-byline strong{color:#f2f0e9}
+
+/* ---- D4. THE DRAWER (the menu): a dark charcoal surface with
+   light text and its own local light variables, so every var-driven
+   child (brand, close button, links, actions, footer) renders
+   coherently on it. This is the reported bug, fixed at the root:
+   no drawer text is left pale-on-light or dark-on-dark. The frosted
+   notes inside the drawer (lang note / install help) are light
+   glass in both themes and keep their dark ink. ---- */
+html[data-theme="dark"] body.tcl-rd .drawer{
+  background:rgba(33,35,39,.96);color:#f2f0e9;
+  border-left-color:rgba(255,255,255,.14);border-right-color:rgba(255,255,255,.14);
+  --text:#f2f0e9;--muted:#b9bcc2;--border:rgba(255,255,255,.16);
+  --accent:#ffa04d;--accent-dark:#ffb066;
+}
+html[data-theme="dark"] body.tcl-rd .drawer-head{border-bottom-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] body.tcl-rd .drawer-group + .drawer-group{border-top-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] body.tcl-rd .drawer-view{color:#ffb066}
+html[data-theme="dark"] body.tcl-rd .drawer-link{color:#c6c9cf}
+html[data-theme="dark"] body.tcl-rd .drawer-link:hover{background:rgba(255,255,255,.08);color:#fff}
+html[data-theme="dark"] body.tcl-rd .drawer-actions{border-top-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] body.tcl-rd .drawer-action{background:rgba(255,255,255,.07);color:#f2f0e9;border-color:rgba(255,255,255,.18)}
+html[data-theme="dark"] body.tcl-rd .drawer-photo-line{color:#b9bcc2}
+html[data-theme="dark"] body.tcl-rd .drawer-foot{border-top-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] body.tcl-rd .drawer-foot-link{color:#c6c9cf}
+html[data-theme="dark"] body.tcl-rd .drawer .lang-note,
+html[data-theme="dark"] body.tcl-rd .drawer .install-help{color:#2b211b}
+
+/* ---- D5. THE GET-APP SHEET: the same charcoal treatment as the
+   drawer, so a sheet opened in dark mode is a designed dark
+   surface, not the old dark green. Frosted chips that live inside
+   the sheet keep dark ink — they are light glass in both themes. ---- */
+html[data-theme="dark"] body.tcl-rd .getapp-sheet{
+  background:rgba(33,35,39,.97);color:#f2f0e9;border-left-color:rgba(255,255,255,.14);
+  --text:#f2f0e9;--muted:#b9bcc2;--border:rgba(255,255,255,.16);
+  --accent:#ffa04d;--accent-dark:#ffb066;
+  --panel:#2b2d33;--panel-2:#34363d;--panel-3:#3f424a;
+}
+html[data-theme="dark"] body.tcl-rd .getapp-head{border-bottom-color:rgba(255,255,255,.12)}
+html[data-theme="dark"] body.tcl-rd .getapp-other summary{color:#ffb066}
+html[data-theme="dark"] body.tcl-rd .getapp-sheet .share-btn:not(.primary),
+html[data-theme="dark"] body.tcl-rd .getapp-sheet .pin-btn,
+html[data-theme="dark"] body.tcl-rd .getapp-step0,
+html[data-theme="dark"] body.tcl-rd .getapp-nosee{color:#2b211b}
+
+/* ---- D6. TAB BAR: dark charcoal pills with light labels on the
+   dark ground (the active pill wears the green marble from D2 and
+   keeps its dark ink). ---- */
+html[data-theme="dark"] body.tcl-rd .tabbar .tab-btn{
+  background:#2b2d33;color:#d9d6cc;border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 6px 16px rgba(0,0,0,.35);
+}
