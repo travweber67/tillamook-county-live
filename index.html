@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=2">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style.css?v=19">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=2">
 <!-- v4 load pass: the two Today backgrounds (one per theme) are the
@@ -129,7 +129,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="hero-status" aria-label="Live status — tap a word to jump to the details">
       <a class="sticky-pill" id="sticky-weather" href="#alerts-card">Weather —</a>
       <a class="sticky-pill" id="sticky-bridge" href="#roads-card">Roads —</a>
-      <a class="sticky-pill spot-static" href="#bay-card">Bay &amp; bar</a>
+      <a class="sticky-pill" id="sticky-bay" href="#bay-card">Bay &amp; bar</a>
     </div>
   </div>
 </header>
@@ -265,6 +265,29 @@ document.documentElement.setAttribute("data-theme",t);})();
   <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%204" data-i18n="fs4cta">Claim spot 4 &rarr;</a>
 </article>
 </div>
+
+<!-- tcl-v19 (Travis, 2026-11-21): HAPPENING IN THE COUNTY — Today's
+     events scroller, ported from Columbia County Live: enlarged
+     picture cards, manual swipe (no auto-scroll), each event its
+     own picture (real photo first, then the per-event picture
+     system in app.js — no picture repeats across the visible set).
+     Hidden until buildEventScroller() finds upcoming events; with
+     only a few events it shows just those few — no filler cards.
+     Desktop scroll arrows sit at the scroller's left/right EDGES,
+     vertically centered (Travis's rule, 2026-11-21: no arrows on
+     top); mobile stays pure swipe. -->
+<section class="ev-scroll" id="ev-scroll" aria-label="Happening in the county — events, sliding" hidden>
+  <div class="ev-scroll-head">
+    <h2>🗓️ Happening in the county</h2>
+  </div>
+  <div class="sc-wrap">
+    <div class="ev-scroll-viewport" id="ev-scroll-viewport">
+      <div class="ev-scroll-track" id="ev-scroll-track"><p class="loading">Loading events…</p></div>
+    </div>
+    <button class="sc-edge sc-edge-l" type="button" data-for="ev-scroll-viewport" data-dir="-1" aria-label="Scroll events back" hidden>&#8249;</button>
+    <button class="sc-edge sc-edge-r" type="button" data-for="ev-scroll-viewport" data-dir="1" aria-label="Scroll events forward" hidden>&#8250;</button>
+  </div>
+</section>
 
 <!-- v74: YOUR PINS — below the first founding spot on Today
      (moved in v74 at Travis's call: the founding sponsor's paid top
@@ -451,6 +474,27 @@ document.documentElement.setAttribute("data-theme",t);})();
   <p>This space rotates free notices for Tillamook County nonprofits — food banks, libraries, volunteer fire &amp; EMS recruitment. A community service, not an ad.</p>
   <a class="founding-cta alt" href="#help-food-card">See the Community Help board &rarr;</a>
 </article>
+
+<!-- tcl-v19 (Travis, 2026-11-21): GOOD NEWS AROUND THE COUNTY —
+     Today's news scroller, ported from Columbia County Live: real
+     Tillamook County stories from data/news.json (Oregon Civic
+     Newsstand, county week page; picture required, no politics, no
+     heavy news — fetcher/fetch_news.py). Cards open the story
+     inside the Local News view. Hidden until stories exist.
+     Desktop arrows at the scroller's edges, never on top. -->
+<section class="news-scroll" id="news-scroll" aria-label="Good news around the county — local stories, sliding" hidden>
+  <div class="news-scroll-head">
+    <h2 data-i18n="newsscrollh2">📰 Good news around the county</h2>
+  </div>
+  <div class="sc-wrap">
+    <div class="news-scroll-viewport" id="news-scroll-viewport">
+      <div class="news-scroll-track" id="news-scroll-track"><p class="loading">Loading the good news…</p></div>
+    </div>
+    <button class="sc-edge sc-edge-l" type="button" data-for="news-scroll-viewport" data-dir="-1" aria-label="Scroll news back" hidden>&#8249;</button>
+    <button class="sc-edge sc-edge-r" type="button" data-for="news-scroll-viewport" data-dir="1" aria-label="Scroll news forward" hidden>&#8250;</button>
+  </div>
+  <button class="nws-seeall" id="news-see-all" type="button"><span data-i18n="newsseeall">See all the news</span> <span aria-hidden="true">&rarr;</span></button>
+</section>
 
 <section class="card band-card briefing-card" id="briefing-card" aria-label="The county briefing — today's summary, ready to copy and share">
       <div class="card-band" aria-hidden="true"><img src="img/dusk/ticker-panorama.jpg" alt="" loading="lazy" decoding="async"></div>
@@ -1012,6 +1056,29 @@ document.documentElement.setAttribute("data-theme",t);})();
      in the masthead opens it. Every view and the sections inside each
      view are jump links: a tap switches the view, scrolls to the
      section, and closes the drawer. Frosted glass in both themes. -->
+<!-- tcl-v19 (Travis, 2026-11-21): LOCAL NEWS — its own full view
+     (story list + in-app story reader), ported from Columbia County
+     Live. NO bottom pill: entered from Today's news scroller ("See
+     all the news") and the drawer's Local news link; while it is
+     open the Events & More pill stays lit as the umbrella tab, and
+     its Back button returns to whichever view the reader came from.
+     Stories are the aggregator's headline + photo + published
+     summary with source credit and a link out — full text is never
+     scraped (the Newsstand's terms reserve stories to the
+     newsrooms). -->
+<section class="view" id="view-news" data-view="news" aria-label="Local news" hidden>
+<div class="card" id="news-card">
+  <button class="news-back" id="news-view-back" type="button" data-i18n="newsbackview">&#8249; Back</button>
+  <div class="card-head">
+    <h2 data-i18n="newsh2">📰 Good news around the county</h2>
+    <span class="updated" id="news-updated"></span>
+  </div>
+  <p class="card-note" data-i18n="newsnote">Local stories from the county&rsquo;s own newsrooms, gathered by the Oregon Civic Newsstand. Tap a story to read it here.</p>
+  <div id="news-list" class="news-list"><p class="loading">Loading the news…</p></div>
+  <div id="news-story" class="news-story" hidden></div>
+</div>
+</section>
+
 <section class="view" id="view-emergency" data-view="emergency" aria-label="Emergency — the county emergency board" hidden>
 
 <section class="card" id="em-map-card" aria-label="Emergency map — road closures and incidents">
@@ -1221,6 +1288,7 @@ document.documentElement.setAttribute("data-theme",t);})();
     <div class="drawer-group">
       <button class="drawer-view" type="button" data-drawer-view="more"><img src="img/icons/icon-events.png" alt="" aria-hidden="true"><span data-i18n="tabmore">Events &amp; More</span></button>
       <a class="drawer-link" href="#events-card" data-i18n="dwevents">Events</a>
+      <a class="drawer-link" href="#news-card" data-i18n="dwnews">Local news</a>
       <a class="drawer-link" href="#watch-card" data-i18n="dwwatch">The County Watch</a>
       <a class="drawer-link" href="#saver-card" data-i18n="dwsaver">Community screensaver</a>
       <a class="drawer-link" href="#freshness-card" data-i18n="dwfresh">How fresh is this page?</a>
@@ -1371,7 +1439,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=18"></script>
+<script src="app.js?v=19"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
 <script>window.OFFLINE_MAP_CONFIG = {countyEn: "Tillamook County", countyEs: "Condado de Tillamook", packFile: "tillamook-county-z15.pmtiles", packSize: 12229103, lowroadsFile: "tillamook-lowroads.pmtiles", lowroadsSize: 1877305, bounds: [-124.06, 45.05, -123.28, 45.82], storageKey: "tcl.offlinemap.localFiles"};</script>
 <script src="offline-map/offline-map.js"></script>

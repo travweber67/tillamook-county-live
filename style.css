@@ -4218,3 +4218,182 @@ html[data-theme="dark"] body.tcl-rd .tabbar .tab-btn{
   background:#2b2d33;color:#d9d6cc;border:1px solid rgba(255,255,255,.14);
   box-shadow:0 6px 16px rgba(0,0,0,.35);
 }
+
+/* =====================================================================
+   tcl-v19 (Travis, 2026-11-21) — FIVE-ITEM FIX BATCH.
+   V19-1: the founding house-cell CTA (.founding-cta.alt — "Start the
+   County Watch" on Never miss a change, "See the Community Help
+   board" on Community notice) was cream text on a transparent
+   background over the light frosted cells: invisible in light mode.
+   It now wears the solid ink-brown pill the rail cards' .rail-cta
+   already uses — clearly visible and tappable in BOTH themes (the
+   founding cells are light surfaces in dark mode too).
+   V19-2: the desktop RAIL cards (Never miss a change / Community
+   notice) wore the leftover cream gradient — off-palette next to
+   the redesign — and the rail zone started at top:84px while the
+   glance ticker strip stands ~109px tall, so the cards rode up
+   over the ticker's bubbles. The cards now wear the sibling cards'
+   marbled paint (green marble in dark, same swap as every paint
+   surface), and the zone starts below the strip.
+   V19-3: Today's EVENTS SCROLLER + NEWS SCROLLER and the LOCAL
+   NEWS view, ported from Columbia County Live (manual swipe, edge
+   fade, enlarged picture cards; the News view is a .card, so it
+   inherits the marbled treatment and the dark green swap).
+   V19-4: the desktop EDGE ARROWS for those scrollers — Travis's
+   rule: no arrows on top; small subtle arrows at the very left and
+   right edges, vertically centered. Mobile never renders them.
+   ===================================================================== */
+
+/* ---- V19-1. THE HOUSE-CELL CTA PILL ---- */
+body.tcl-rd .founding-cell .founding-cta.alt{
+  display:inline-block;background:#3a2a18;color:#fff;
+  border:1px solid #3a2a18;border-radius:999px;
+  padding:8px 14px;font-weight:700;
+}
+body.tcl-rd .founding-cell .founding-cta.alt:hover{background:#54391d}
+
+/* ---- V19-2. RAIL CARDS: MARBLED, AND CLEAR OF THE TICKER ---- */
+body.tcl-rd .rail-card{
+  background:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);color:#2c2418;
+  box-shadow:0 18px 42px rgba(23,26,30,.30),0 6px 16px rgba(23,26,30,.20),
+    inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07);
+}
+html[data-theme="dark"] body.tcl-rd .rail-card{
+  background-image:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint-green.jpg");
+}
+@media (min-width:1440px){
+  body.tcl-rd .rail-zone{top:128px}
+}
+
+/* ---- V19-3. THE SCROLLERS (events + news) ---- */
+body.tcl-rd .ev-scroll,body.tcl-rd .news-scroll{margin:18px 0 4px}
+body.tcl-rd .ev-scroll-head,body.tcl-rd .news-scroll-head{
+  display:flex;align-items:center;gap:9px;margin:0 2px 10px;
+}
+body.tcl-rd .ev-scroll-head h2,body.tcl-rd .news-scroll-head h2{font-size:1.15rem;margin:0}
+body.tcl-rd .sc-wrap{position:relative}
+body.tcl-rd .ev-scroll-viewport,body.tcl-rd .news-scroll-viewport{
+  overflow-x:auto;overflow-y:hidden;scrollbar-width:none;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 26px,#000 calc(100% - 26px),transparent);
+}
+body.tcl-rd .ev-scroll-viewport::-webkit-scrollbar,
+body.tcl-rd .news-scroll-viewport::-webkit-scrollbar{display:none}
+body.tcl-rd .ev-scroll-track,body.tcl-rd .news-scroll-track{display:flex;width:auto}
+body.tcl-rd .evs-card,body.tcl-rd .nws-card{
+  flex:none;width:236px;margin-right:12px;scroll-snap-align:start;
+  background:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);border-radius:16px;overflow:hidden;
+  text-decoration:none;color:#2c2418;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 3px rgba(35,30,22,.07),
+    0 12px 28px rgba(23,26,30,.30),0 4px 10px rgba(23,26,30,.18);
+  display:flex;flex-direction:column;
+}
+html[data-theme="dark"] body.tcl-rd .evs-card,
+html[data-theme="dark"] body.tcl-rd .nws-card{
+  background-image:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint-green.jpg");
+}
+body.tcl-rd .evs-img,body.tcl-rd .nws-img{width:100%;height:132px;object-fit:cover;display:block}
+body.tcl-rd .evs-body,body.tcl-rd .nws-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:3px}
+body.tcl-rd .evs-when,body.tcl-rd .nws-when{
+  font-size:.68rem;font-weight:700;letter-spacing:.04em;
+  text-transform:uppercase;color:#7a3c00;
+}
+body.tcl-rd .evs-tag{
+  background:linear-gradient(135deg,#ffb347,#e85d04);color:#fff;
+  border-radius:999px;padding:1px 7px;font-size:.6rem;margin-left:5px;
+  vertical-align:1px;white-space:nowrap;text-transform:none;letter-spacing:0;
+}
+body.tcl-rd .evs-title,body.tcl-rd .nws-title{font-weight:700;font-size:1.02rem;line-height:1.25}
+body.tcl-rd .nws-sum{
+  font-size:.82rem;line-height:1.35;color:#5d5342;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+body.tcl-rd .evs-loc,body.tcl-rd .nws-loc{
+  font-size:.76rem;color:#5d5342;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+@media (min-width:1280px){
+  body.tcl-rd .evs-card,body.tcl-rd .nws-card{width:276px}
+  body.tcl-rd .evs-img,body.tcl-rd .nws-img{height:156px}
+  body.tcl-rd .evs-title,body.tcl-rd .nws-title{font-size:1.06rem}
+}
+body.tcl-rd .nws-seeall{
+  display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  margin-top:10px;padding:11px 14px;border-radius:12px;cursor:pointer;
+  background:rgba(255,253,248,.92);border:1px solid rgba(122,60,0,.20);
+  color:#7a3c00;font-weight:800;font-size:.92rem;font-family:var(--sans);
+  box-shadow:0 4px 12px rgba(23,26,30,.14);
+}
+body.tcl-rd .nws-seeall:active{transform:translateY(1px)}
+
+/* ---- V19-3b. THE NEWS VIEW (story list + reader) ---- */
+body.tcl-rd .news-list{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+body.tcl-rd .news-row{
+  display:flex;gap:12px;align-items:center;text-align:left;width:100%;
+  background:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);border-radius:14px;
+  padding:10px 12px;cursor:pointer;font:inherit;color:#2c2418;
+  box-shadow:0 8px 20px rgba(35,30,22,.14);
+}
+html[data-theme="dark"] body.tcl-rd .news-row{
+  background-image:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint-green.jpg");
+}
+body.tcl-rd .news-row-img{width:84px;height:64px;object-fit:cover;border-radius:10px;flex:none}
+body.tcl-rd .news-row-main{display:flex;flex-direction:column;gap:2px;min-width:0}
+body.tcl-rd .news-row-title{font-weight:700;font-size:.98rem;line-height:1.3}
+body.tcl-rd .news-row-arrow{margin-left:auto;font-size:1.5rem;color:#7a3c00;flex:none}
+body.tcl-rd .news-story-img{width:100%;max-height:340px;object-fit:cover;border-radius:14px;display:block;margin:10px 0}
+body.tcl-rd .news-story-title{font-size:1.35rem;line-height:1.25;margin:6px 0 4px}
+body.tcl-rd .news-story-meta{color:var(--muted);font-size:.85rem;margin:0 0 10px}
+body.tcl-rd .news-story-summary{font-size:1rem;line-height:1.55}
+body.tcl-rd .news-story-credit{color:var(--muted);font-size:.82rem}
+body.tcl-rd .news-readfull{
+  display:inline-block;margin-top:8px;font-weight:800;color:#7a3c00;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  border:1px solid #e85d04;border-radius:999px;padding:9px 16px;text-decoration:none;
+}
+html[data-theme="dark"] body.tcl-rd .news-readfull{
+  background-image:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint-green.jpg");
+}
+body.tcl-rd .news-back{
+  background:none;border:none;font:inherit;font-weight:800;color:#7a3c00;
+  cursor:pointer;padding:6px 0;font-size:.95rem;
+}
+/* The scroller's landing flash on the calendar card it opens. */
+body.tcl-rd .cev-card.cev-flash{
+  outline:3px solid #e85d04;outline-offset:2px;
+}
+
+/* ---- V19-4. DESKTOP EDGE ARROWS ---- */
+body.tcl-rd .sc-edge{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:5;
+  width:38px;height:38px;border-radius:50%;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,253,248,.94);border:1px solid rgba(122,60,0,.35);
+  color:#7a3c00;font-size:1.35rem;font-weight:800;line-height:1;
+  box-shadow:0 6px 16px rgba(23,26,30,.28);
+}
+body.tcl-rd .sc-edge[hidden]{display:none !important}
+body.tcl-rd .sc-edge-l{left:6px}
+body.tcl-rd .sc-edge-r{right:6px}
+body.tcl-rd .sc-edge:hover{background:#fff}
+@media (max-width:899px){
+  body.tcl-rd .sc-edge{display:none !important}
+}
+html[data-theme="dark"] body.tcl-rd .sc-edge{
+  background:rgba(38,40,45,.95);color:#ffb066;border-color:rgba(255,255,255,.22);
+}

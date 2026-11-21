@@ -581,6 +581,15 @@ async function loadCoast() {
   }
 
   /* --- the bar, from the Coast Guard report via NWS Portland --- */
+  /* tcl-v19 (item 1, Travis 2026-11-21): the hero's third status
+     spot mirrors this card's bar state, driven by the same report —
+     RESTRICTED reads "Bar restrictions" in red, CLOSED reads "Bar
+     closed" in red, no restrictions keeps the calm "Bay & bar"
+     clear state, and stale/unavailable follows this card's own
+     convention (neutral wording, never green-by-default). Same
+     setPill pattern as the weather and roads spots. */
+  const barSpot = (en, es, cls) => setPill('sticky-bay',
+    (typeof langCur !== 'undefined' && langCur === 'es') ? es : en, cls);
   try {
     const r = await fetch(BAR_XML_URL);
     if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -600,23 +609,29 @@ async function loadCoast() {
       coastSet('coast-row-bar', '', '❔ Bar Report Too Old',
         'The last Coast Guard report for Tillamook Bay is ' + (when ? fmtDayTime(when) : 'undated')
         + ' — too old to trust. Check the NWS bar report before you cross.');
+      barSpot('Bay & bar', 'Bahía y bar', '');
     } else if (/closed/i.test(status)) {
       coastSet('coast-row-bar', 'bad', '⛔ BAR CLOSED', 'The Coast Guard has closed the Tillamook Bay bar — do not cross. Report from ' + fmtDayTime(when) + '.');
+      barSpot('Bar closed', 'Barra cerrada', 'bad');
       anyOk = true;
     } else if (/restrict/i.test(status)) {
       const rec = (restrictions.split('/')[0] || '').match(/(\d+)\s*FEET/i);
       coastSet('coast-row-bar', 'warn', '⚠️ BAR RESTRICTED',
         (rec ? 'Boats ' + rec[1] + ' feet and under must stay in. ' : 'Restrictions are in effect — read the full report. ')
         + 'Coast Guard report from ' + fmtDayTime(when) + '.');
+      barSpot('Bar restrictions', 'Restricciones en la barra', 'bad');
       anyOk = true;
     } else if (/no restrictions/i.test(status)) {
       coastSet('coast-row-bar', 'ok', '✅ BAR OPEN', 'No restrictions on the Tillamook Bay bar. Coast Guard report from ' + fmtDayTime(when) + '.');
+      barSpot('Bay & bar', 'Bahía y bar', 'ok');
       anyOk = true;
     } else {
       coastSet('coast-row-bar', '', '❔ Bar Status Unclear', 'The Coast Guard report says "' + status + '" — read the full NWS bar report before you cross.');
+      barSpot('Bay & bar', 'Bahía y bar', '');
     }
   } catch (e) {
     coastSet('coast-row-bar', '', '❔ Bar Report Unavailable', 'Couldn\'t load the Coast Guard bar report — check the NWS bar report before you cross.');
+    barSpot('Bay & bar', 'Bahía y bar', '');
   }
 
   if (anyOk) setUpdated('coast-updated');
@@ -3410,6 +3425,7 @@ async function loadEvents() {
     const cSnap = await getCommunityEventsSnap();
     eventsCache.events = mergeCommunityInto(eventsCache.events, cSnap);
     renderEvents();
+    if (typeof buildEventScroller === 'function') buildEventScroller();
   } catch (e) {
     body.innerHTML = '<p class="fallback">⚠️ Events snapshot unavailable right now.</p>';
   }
@@ -6947,6 +6963,12 @@ const LANG_ES = {
   dwfires: 'Incendios forestales',
   dwair: 'Aire y humo',
   dwevents: 'Eventos',
+  dwnews: 'Noticias locales',
+  newsscrollh2: '📰 Buenas noticias del condado',
+  newsh2: '📰 Buenas noticias del condado',
+  newsbackview: '‹ Volver',
+  newsnote: 'Historias locales de las propias redacciones del condado, reunidas por Oregon Civic Newsstand. Toca una historia para leerla aquí.',
+  newsseeall: 'Ver todas las noticias',
   dwfeatured: 'Negocios destacados',
   dwservices: 'Negocios locales',
   dwwatch: 'La Vigilancia del Condado',
@@ -7833,7 +7855,7 @@ initPrint();
    gotcha is handled here too: the map is built while its view may be
    hidden, so every switch to Travel calls invalidateSize(). Every open
    starts on Today at the top (see initViews). */
-const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency', 'help'];
+const VIEW_IDS = ['today', 'travel', 'outdoors', 'more', 'emergency', 'help', 'news'];
 let cclViewCur = 'today';
 
 function cclParentOf(el) { return el ? (el.parentNode || el.parent || null) : null; }
@@ -7866,7 +7888,13 @@ const HERO_VIEWS = {
     esName: 'Al aire libre', esTag: 'Ríos, mareas, senderos y el cielo de la costa: qué corre, qué fluye y cuándo salir.' },
   more: { img: 'img/bg/bg-day-5.jpg', name: 'Events & More',
     tag: 'Markets, bazaars, festivals and get-togethers — everything going on around the county.',
-    esName: 'Eventos y más', esTag: 'Mercados, bazares, festivales y reuniones: todo lo que pasa en el condado.' }
+    esName: 'Eventos y más', esTag: 'Mercados, bazares, festivales y reuniones: todo lo que pasa en el condado.' },
+  /* tcl-v19: the News view gets its own hero head (its own photo,
+     bg-day-6, unused by the other views). It has NO tab of its own —
+     cclShowView lights the Events & More pill as its umbrella. */
+  news: { img: 'img/bg/bg-day-6.jpg', name: 'Local News',
+    tag: 'Good news around the county — stories from the county\u2019s own newsrooms.',
+    esName: 'Noticias locales', esTag: 'Buenas noticias del condado: historias de las propias redacciones del condado.' }
 };
 let heroViewCur = 'today';
 let viewAnimBusy = false;
@@ -7991,7 +8019,10 @@ function cclShowView(name) {
   }
   try { heroApplyView(name, wantAnim, slideDir); } catch (e) { /* hero swap is cosmetic */ }
   document.querySelectorAll('.tab-btn').forEach(b => {
-    const on = !!(b.dataset && b.dataset.viewBtn === name);
+    /* tcl-v19: News has no pill of its own — the Events & More pill
+       stays lit as its umbrella while the News view is open. */
+    const tabName = name === 'news' ? 'more' : name;
+    const on = !!(b.dataset && b.dataset.viewBtn === tabName);
     b.classList.toggle('active', on);
     if (b.setAttribute) b.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
@@ -9801,3 +9832,293 @@ function emWireCoords() {
    button there) and the detailed forecast card carries its own
    .card-head again, so initPins grows its button inside the card.
    Two separate pins, two separate cards. */
+
+/* =====================================================================
+   tcl-v19 (Travis, 2026-11-21) — TODAY'S EVENTS SCROLLER, THE LOCAL
+   NEWS SYSTEM, AND THE DESKTOP EDGE ARROWS. Ported from Columbia
+   County Live (its items 2j/2k/3l/3g/6), adapted to Tillamook's own
+   data, photos and wording. Nothing below touches the Events & More
+   calendar itself — the scroller is a picture front door into it.
+   ===================================================================== */
+
+/* ---------- events scroller pictures (CCL item 6 pattern) ----------
+   Every event gets ONE picture, handed out so no picture repeats
+   across the visible set: (1) the event's own photo when its data
+   carries one; (2) a per-event title match; (3) a category set;
+   (4) a seasonal set; (5) the county's real photos. The generated
+   subject pictures live in img/events/ (generic subjects only —
+   never a fabricated photo of a real place or venue). */
+const EVS_BY_TITLE = [
+  [/gingerbread/i, ['img/events/ev-gingerbread.jpg']],
+  [/christmas tree lighting|tree lighting|lighting of the tree/i, ['img/events/ev-gingerbread.jpg', 'img/bg/bg-day-5.jpg']],
+  [/santa|reindeer/i, ['img/events/ev-gingerbread.jpg']],
+  [/thanksgiving|holiday closure|closed for the holiday/i, ['img/events/ev-thanksgiving.jpg']],
+  [/story ?time|storytime/i, ['img/events/ev-storytime.jpg']],
+  [/beach cleanup|clean-?up day|solve/i, ['img/events/ev-beachcleanup.jpg']],
+  [/crab|crabbing/i, ['img/events/ev-crab.jpg']],
+  [/farmers market|saturday market|night market|holiday market|christmas market|winter market|craft fair|bazaar|boutique|makers market|vendor fair/i, ['img/events/ev-market.jpg']],
+  [/concert|live music|music in the park|band night|open mic|symphony|choral|choir/i, ['img/events/ev-music.jpg']],
+  [/community update|town hall|public meeting|council meeting|commission|board meeting|open house|listening session/i, ['img/events/ev-meeting.jpg']]
+];
+const EVS_CATS = [
+  [/market|bazaar|boutique|craft|vendor|fair\b|book sale|yard sale|swap meet|fundraiser|auction|raffle/i, ['img/events/ev-market.jpg', 'img/card-courthouse.jpg']],
+  [/story|book|library|reading|author|poetry/i, ['img/events/ev-storytime.jpg']],
+  [/music|concert|band|dance|theatre|theater|play|movie|film|comedy/i, ['img/events/ev-music.jpg', 'img/bg/bg-day-9.jpg']],
+  [/cleanup|clean up|volunteer|work party|trail work|planting/i, ['img/events/ev-beachcleanup.jpg', 'img/bg/bg-day-3.jpg']],
+  [/crab|fish|clamming|tide ?pool|boat|ramp|harbor|bay\b/i, ['img/events/ev-crab.jpg', 'img/card-dock.jpg', 'img/card-bay.jpg']],
+  [/meeting|update|council|commission|board|forum|class|workshop|seminar|training|lecture|talk/i, ['img/events/ev-meeting.jpg']],
+  [/holiday|christmas|christmas eve|new year|thanksgiving|closed/i, ['img/events/ev-thanksgiving.jpg', 'img/events/ev-gingerbread.jpg']],
+  [/school|kids|youth|family|children|teen/i, ['img/events/ev-storytime.jpg', 'img/bg/bg-day-1.jpg']],
+  [/parade|festival|celebration|days\b|fair days|county fair/i, ['img/events/ev-music.jpg', 'img/events/ev-market.jpg']],
+  [/senior|lunch|breakfast|dinner|supper|meal|food|bake|pie|chowder|pancake/i, ['img/events/ev-thanksgiving.jpg', 'img/events/ev-market.jpg']],
+  [/run|walk|race|ride|yoga|fitness|sports|game|tournament/i, ['img/events/ev-beachcleanup.jpg', 'img/bg/bg-day-4.jpg']],
+  [/art|paint|craft|knit|quilt|garden|flower/i, ['img/events/ev-market.jpg', 'img/bg/bg-day-6.jpg']]
+];
+const EVS_SEASONAL = ['img/events/ev-thanksgiving.jpg', 'img/events/ev-gingerbread.jpg', 'img/events/ev-market.jpg'];
+const EVS_GENERIC = [
+  'img/hero-bridge.jpg', 'img/card-bay.jpg', 'img/card-dock.jpg',
+  'img/card-bridge-pano.jpg', 'img/card-courthouse.jpg',
+  'img/bg/bg-day-1.jpg', 'img/bg/bg-day-3.jpg', 'img/bg/bg-day-4.jpg',
+  'img/bg/bg-day-5.jpg', 'img/bg/bg-day-6.jpg', 'img/bg/bg-day-9.jpg'
+];
+function evsImgFor(ev, used) {
+  const hay = ((ev.title || '') + ' ' + (ev.note || '')).toLowerCase();
+  const chains = [];
+  if (ev.img) chains.push([ev.img]);
+  for (const [re, imgs] of EVS_BY_TITLE) if (re.test(hay)) { chains.push(imgs); break; }
+  for (const [re, imgs] of EVS_CATS) if (re.test(hay)) chains.push(imgs);
+  const mo = ev.date ? parseInt(ev.date.slice(5, 7), 10) : 0;
+  if (mo === 11 || mo === 12) chains.push(EVS_SEASONAL);
+  chains.push(EVS_GENERIC);
+  for (const chain of chains) for (const src of chain) {
+    if (!used.has(src)) { used.add(src); return src; }
+  }
+  /* Everything in every chain is already showing: reuse the
+     least-specific pool (a repeat beats a broken card). */
+  return EVS_GENERIC[0];
+}
+function evsWhen(ev) {
+  try {
+    const d = new Date(ev.date + 'T12:00:00');
+    let s = new Intl.DateTimeFormat('en-US', { weekday: 'short', month: 'short', day: 'numeric' }).format(d);
+    if (ev.time && !/all day/i.test(ev.time)) s += ' · ' + ev.time;
+    return s;
+  } catch (e) { return ev.date || ''; }
+}
+function evsIsSpecial(ev) {
+  return /free|giveaway|bazaar|boutique|market|tree lighting|gingerbread|parade|beach cleanup|photos with santa|breakfast with santa/i
+    .test((ev.title || '') + ' ' + (ev.note || ''));
+}
+function evsCardHtml(ev, used) {
+  const img = evsImgFor(ev, used);
+  const key = esc(evcalKeyOf(ev));
+  return '<a class="evs-card" href="#events-card" data-evkey="' + key + '">'
+    + '<img class="evs-img" src="' + esc(img) + '" alt="" loading="lazy" decoding="async">'
+    + '<span class="evs-body"><span class="evs-when">' + esc(evsWhen(ev))
+    + (evsIsSpecial(ev) ? '<span class="evs-tag">Special</span>' : '') + '</span>'
+    + '<span class="evs-title">' + esc(ev.title || '') + '</span>'
+    + (ev.note ? '<span class="evs-loc">' + esc(ev.note) + '</span>' : '')
+    + '<span class="evs-loc">' + esc(ev.location || ev.source || '') + '</span></span></a>';
+}
+function evsOpenEvent(key) {
+  if (typeof cevResetView === 'function') cevResetView();
+  cclRouteAnchor({ getAttribute: () => '#events-card', attrs: { href: '#events-card' } });
+  setTimeout(() => {
+    const card = document.querySelector('.cev-card[data-evkey="' + (window.CSS && CSS.escape ? CSS.escape(key) : key) + '"]');
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.classList.add('cev-flash');
+      setTimeout(() => card.classList.remove('cev-flash'), 1700);
+    }
+  }, 450);
+}
+function buildEventScroller() {
+  const sec = document.getElementById('ev-scroll');
+  const track = document.getElementById('ev-scroll-track');
+  if (!sec || !track) return;
+  const today = todayStrPT();
+  const seen = new Set();
+  const upcoming = [];
+  ((eventsCache && eventsCache.events) || []).forEach(ev => {
+    if (!ev.date || ev.date < today) return;
+    const k = evcalKeyOf(ev);
+    if (seen.has(k)) return;
+    seen.add(k);
+    upcoming.push(ev);
+  });
+  /* Specials first, then soonest — the CCL pick order. With only a
+     few events (Tillamook's data is thin) it shows exactly those:
+     no filler, no duplicates, and the section stays hidden when
+     there is nothing coming up. */
+  upcoming.sort((a, b) =>
+    ((evsIsSpecial(b) ? 1 : 0) - (evsIsSpecial(a) ? 1 : 0))
+    || (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  const picks = upcoming.slice(0, 10);
+  if (!picks.length) { sec.hidden = true; return; }
+  const used = new Set();
+  track.innerHTML = picks.map(ev => evsCardHtml(ev, used)).join('');
+  track.querySelectorAll('.evs-card').forEach(card => {
+    card.addEventListener('click', e => {
+      e.preventDefault();
+      evsOpenEvent(card.getAttribute('data-evkey'));
+    });
+  });
+  sec.hidden = false;
+  scEdgeUpdate(document.getElementById('ev-scroll-viewport'));
+}
+
+/* ---------- local news: Today scroller + the News view ----------
+   Fed by data/news.json (fetcher/fetch_news.py — Oregon Civic
+   Newsstand, Tillamook County week page; picture required, no
+   politics, no heavy news, county-local only). The story view shows
+   the aggregator's own published summary with source credit and a
+   link out; full text is never scraped. */
+let newsStoriesCache = [];
+let newsReturnView = 'today';
+function newsEnter(from) {
+  newsReturnView = from || 'today';
+  if (typeof cclShowView === 'function') cclShowView('news');
+}
+function newsWhen(s) {
+  try { return fmtDay(new Date(s.date + 'T12:00:00')); } catch (e) { return ''; }
+}
+function newsCardHtml(s, i) {
+  return '<a class="nws-card" href="#news-card" data-news-idx="' + i + '">'
+    + '<img class="nws-img" src="' + esc(s.img || '') + '" alt="" loading="lazy" decoding="async">'
+    + '<span class="nws-body"><span class="nws-when">' + esc(newsWhen(s)) + '</span>'
+    + '<span class="nws-title">' + esc(s.title || '') + '</span>'
+    + (s.summary ? '<span class="nws-sum">' + esc(s.summary) + '</span>' : '')
+    + (s.source ? '<span class="nws-loc">' + esc(s.source) + '</span>' : '')
+    + '</span></a>';
+}
+function renderNewsList() {
+  const list = document.getElementById('news-list');
+  if (!list) return;
+  const es = (typeof langCur !== 'undefined' && langCur === 'es');
+  if (!newsStoriesCache.length) {
+    list.innerHTML = '<p class="loading">' + (es ? 'No hay historias ahora mismo.' : 'No stories right now.') + '</p>';
+    return;
+  }
+  list.innerHTML = newsStoriesCache.map((st, i) =>
+    '<button class="news-row" type="button" data-news-idx="' + i + '">'
+    + '<img class="news-row-img" src="' + esc(st.img || '') + '" alt="" loading="lazy" decoding="async">'
+    + '<span class="news-row-main"><span class="nws-when">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</span>'
+    + '<span class="news-row-title">' + esc(st.title || '') + '</span></span>'
+    + '<span class="news-row-arrow" aria-hidden="true">›</span></button>'
+  ).join('');
+  list.querySelectorAll('.news-row').forEach(row => {
+    row.addEventListener('click', () => openNewsStory(parseInt(row.getAttribute('data-news-idx'), 10)));
+  });
+}
+function openNewsStory(i) {
+  const st = newsStoriesCache[i];
+  const box = document.getElementById('news-story');
+  const list = document.getElementById('news-list');
+  if (!st || !box) return;
+  const es = (typeof langCur !== 'undefined' && langCur === 'es');
+  box.innerHTML = '<button class="news-back" type="button" id="news-back-btn">' + (es ? '‹ Todas las historias' : '‹ All stories') + '</button>'
+    + (st.img ? '<img class="news-story-img" src="' + esc(st.img) + '" alt="">' : '')
+    + '<h3 class="news-story-title">' + esc(st.title || '') + '</h3>'
+    + '<p class="news-story-meta">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</p>'
+    + (st.summary ? '<p class="news-story-summary">' + esc(st.summary) + '</p>' : '')
+    + '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
+    + '<a class="news-readfull" href="' + esc(st.url || '') + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa →' : 'Read the full story →') + '</a>';
+  if (list) list.hidden = true;
+  box.hidden = false;
+  const back = document.getElementById('news-back-btn');
+  if (back) back.addEventListener('click', closeNewsStory);
+  const card = document.getElementById('news-card');
+  if (card) card.scrollIntoView({ block: 'start' });
+}
+function closeNewsStory() {
+  const box = document.getElementById('news-story');
+  const list = document.getElementById('news-list');
+  if (box) { box.hidden = true; box.innerHTML = ''; }
+  if (list) list.hidden = false;
+  const card = document.getElementById('news-card');
+  if (card) card.scrollIntoView({ block: 'start' });
+}
+function buildNewsScroller() {
+  const sec = document.getElementById('news-scroll');
+  const track = document.getElementById('news-scroll-track');
+  if (!sec || !track) return;
+  getSnapshot('news.json').then(data => {
+    const stories = (data && data.stories) || [];
+    newsStoriesCache = stories;
+    renderNewsList();
+    const upd = document.getElementById('news-updated');
+    if (upd && data && data.fetched_at) setSnapUpdated('news-updated', data.fetched_at);
+    if (!stories.length) { sec.hidden = true; return; }
+    /* No auto-scroll, no clones (the CCL rule): cards open the
+       story inside the News view. */
+    track.innerHTML = stories.map((st, i) => newsCardHtml(st, i)).join('');
+    track.querySelectorAll('.nws-card').forEach(card => {
+      card.addEventListener('click', e => {
+        e.preventDefault();
+        const idx = parseInt(card.getAttribute('data-news-idx'), 10);
+        newsEnter('today');
+        openNewsStory(idx);
+      });
+    });
+    sec.hidden = false;
+    scEdgeUpdate(document.getElementById('news-scroll-viewport'));
+  }).catch(() => { sec.hidden = true; });
+}
+const newsSeeAllBtn = document.getElementById('news-see-all');
+if (newsSeeAllBtn) newsSeeAllBtn.addEventListener('click', () => { closeNewsStory(); newsEnter('today'); });
+const newsViewBack = document.getElementById('news-view-back');
+if (newsViewBack) newsViewBack.addEventListener('click', () => { if (typeof cclShowView === 'function') cclShowView(newsReturnView || 'today'); });
+/* The drawer's Local news link routes through initViews' anchor
+   router (it targets #news-card, whose view is now 'news'), but the
+   return view should be wherever the reader was — record it here. */
+document.querySelectorAll('.drawer-link[href="#news-card"]').forEach(a => {
+  a.addEventListener('click', () => { newsReturnView = cclViewCur || 'today'; closeNewsStory(); });
+});
+
+/* ---------- desktop EDGE arrows for the swipe scrollers ----------
+   Travis's rule (2026-11-21): NO arrows on top of a scroller. On
+   desktop, small subtle arrows sit at the very LEFT and RIGHT edges
+   of the scroller, vertically centered, and nudge the scroll; each
+   one shows only while there is more to scroll in its direction.
+   Mobile stays pure swipe (the buttons never render under 900px). */
+function scEdgeUpdate(vp) {
+  if (!vp || !vp.closest) return;
+  const wrap = vp.closest('.sc-wrap');
+  if (!wrap) return;
+  const desktop = window.matchMedia && window.matchMedia('(min-width:900px)').matches;
+  const can = vp.scrollWidth > vp.clientWidth + 4;
+  wrap.querySelectorAll('.sc-edge').forEach(b => {
+    const dir = parseInt(b.getAttribute('data-dir'), 10) || 1;
+    let show = desktop && can;
+    if (show && dir < 0) show = vp.scrollLeft > 4;
+    if (show && dir > 0) show = vp.scrollLeft + vp.clientWidth < vp.scrollWidth - 4;
+    b.hidden = !show;
+  });
+}
+function scEdgeUpdateAll() {
+  document.querySelectorAll('.ev-scroll-viewport,.news-scroll-viewport').forEach(scEdgeUpdate);
+}
+document.querySelectorAll('.sc-edge').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const vp = document.getElementById(btn.getAttribute('data-for'));
+    if (!vp) return;
+    const dir = parseInt(btn.getAttribute('data-dir'), 10) || 1;
+    vp.scrollBy({ left: dir * Math.round(vp.clientWidth * 0.85), behavior: 'smooth' });
+  });
+});
+document.querySelectorAll('.ev-scroll-viewport,.news-scroll-viewport').forEach(vp => {
+  let raf = 0;
+  vp.addEventListener('scroll', () => {
+    if (raf) return;
+    raf = requestAnimationFrame(() => { raf = 0; scEdgeUpdate(vp); });
+  }, { passive: true });
+});
+window.addEventListener('resize', scEdgeUpdateAll);
+
+/* Boot: build both scrollers once everything has settled (the same
+   safety net CCL runs — loadEvents may land after this block). */
+setTimeout(() => {
+  if (typeof eventsCache !== 'undefined' && eventsCache) buildEventScroller();
+  buildNewsScroller();
+  scEdgeUpdateAll();
+}, 1200);
