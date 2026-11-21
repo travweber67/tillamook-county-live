@@ -1,46 +1,65 @@
 {
- "fetched_at": "2026-11-21T21:51:41Z",
+ "fetched_at": "2026-11-21T22:21:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367788590,
-   "lat": 46.18863,
-   "lon": -123.85525,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16838,
+   "lon": -123.9184,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-21 22:22:22.059749767 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16869,
+   "lon": -123.91405,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-21 22:22:12.61715809 +0000 UTC"
+  },
+  {
+   "mmsi": 538090732,
+   "name": "NORDIC MERCHANTS",
+   "lat": 46.08731,
+   "lon": -124.58477,
+   "sog_kn": 11.9,
+   "cog": 71.4,
+   "heading": 76,
+   "updated": "2026-11-21 22:21:44.406444218 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.17016,
+   "lon": -123.91445,
+   "sog_kn": 0,
+   "cog": 224.4,
+   "heading": 511,
+   "updated": "2026-11-21 22:21:41.520035837 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19653,
+   "lon": -123.79693,
+   "sog_kn": 0,
+   "cog": 345,
+   "heading": 511,
+   "updated": "2026-11-21 22:21:41.669929059 +0000 UTC"
+  },
+  {
+   "mmsi": 368343780,
+   "name": "WESTERN SURF",
+   "lat": 46.16811,
+   "lon": -123.91916,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 21:52:12.303049034 +0000 UTC"
-  },
-  {
-   "mmsi": 367384780,
-   "name": "CAROLYN DOROTHY",
-   "lat": 46.21088,
-   "lon": -123.77813,
-   "sog_kn": 0.3,
-   "cog": 162.4,
-   "heading": 61,
-   "updated": "2026-11-21 21:52:01.788845954 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.21154,
-   "lon": -123.77696,
-   "sog_kn": 0.1,
-   "cog": 74.8,
-   "heading": 72,
-   "updated": "2026-11-21 21:51:57.943822924 +0000 UTC"
-  },
-  {
-   "mmsi": 368084380,
-   "name": "FATE HUNTER",
-   "lat": 46.18801,
-   "lon": -123.85818,
-   "sog_kn": 0,
-   "cog": 161,
-   "heading": 511,
-   "updated": "2026-11-21 21:52:24.460335412 +0000 UTC"
+   "heading": 83,
+   "updated": "2026-11-21 22:21:41.367986218 +0000 UTC"
   }
  ]
 }
