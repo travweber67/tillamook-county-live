@@ -7376,62 +7376,6 @@ async function renderGo(force) {
   goLastText = goComposeText(rows, v, dep);
 }
 
-/* ----- take it with you: copy + calendar ----- */
-function goIcs() {
-  if (!goLastDep || !goLastText) return null;
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Tillamook County Live//Trip Check//EN",
-    "BEGIN:VEVENT",
-    "UID:tcl-trip-" + goLastDep + "-" + goTrip + "@tillamookcountylive",
-    "DTSTAMP:" + evcalStamp(new Date()),
-    "DTSTART:" + evcalStamp(new Date(goLastDep)),
-    "DURATION:PT1H",
-    "SUMMARY:" + evcalEscText("🛟 Before you go: " + goTripPlain() + " " + goRoutePhrase()),
-    "DESCRIPTION:" + evcalEscText(goLastText),
-    "URL:https://tillamookcountylive.com/",
-    "END:VEVENT", "END:VCALENDAR"];
-  return lines.flatMap(evcalFold).join("\r\n") + "\r\n";
-}
-function goSay(msg) {
-  const note = $("go-note");
-  if (note) { note.textContent = msg; note.hidden = false; }
-}
-function goDownloadIcs() {
-  const ics = goIcs();
-  if (!ics) { goSay("The check hasn't finished yet — give it a second and try again."); return; }
-  try {
-    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "tcl-trip-check.ics";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => { try { URL.revokeObjectURL(url); } catch (e) {} }, 4000);
-    goSay("📅 Trip saved — open the file and it lands in your calendar with the verdict and every check attached. Re-check the live page before you actually leave.");
-  } catch (e) {
-    goSay("Calendar export didn't work in this browser — the Copy button still takes the check with you.");
-  }
-}
-async function goCopy() {
-  if (!goLastText) { goSay("The check hasn't finished yet — give it a second and try again."); return; }
-  let ok = false;
-  try { await navigator.clipboard.writeText(goLastText); ok = true; } catch (e) { /* clipboard API unavailable — fallback below */ }
-  if (!ok) {
-    try {
-      const ta = document.createElement("textarea");
-      ta.value = goLastText;
-      ta.style.position = "fixed"; ta.style.opacity = "0";
-      document.body.appendChild(ta);
-      ta.select();
-      ok = !!document.execCommand("copy");
-      ta.remove();
-    } catch (e) { ok = false; }
-  }
-  goSay(ok
-    ? "✅ Copied — paste it into a text or a post. It is stamped with the time it was checked; the live page stays newer."
-    : "Copy didn't work in this browser — the verdict and the checks above are the same words, ready to screenshot.");
-}
 function initGo() {
   if (!$("go-card")) return;
   goLoadPref();
@@ -7471,10 +7415,6 @@ function initGo() {
       renderGo(false);
     }));
   }
-  const copyBtn = $("go-copy-btn");
-  if (copyBtn) copyBtn.addEventListener("click", goCopy);
-  const calBtn = $("go-cal-btn");
-  if (calBtn) calBtn.addEventListener("click", goDownloadIcs);
   setTimeout(() => renderGo(false), 1200);
   setInterval(() => renderGo(false), 60 * 1000);
 }

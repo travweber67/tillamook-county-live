@@ -1033,7 +1033,6 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
 .go-row-bad{border-color:var(--danger)}
 .go-row-warn{border-left:4px solid var(--warn)}
 .go-row-na{border-style:dashed}
-.go-actions{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 8px}
 
 /* ---------- Your front page (X20 R18) ---------- */
 .frontpage{min-width:0}
