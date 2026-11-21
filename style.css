@@ -673,6 +673,7 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .event-title a:hover{color:var(--accent);text-decoration:underline}
 .event-src{color:var(--muted);font-size:.74rem;white-space:nowrap}
 .event-fb-tag{flex:0 0 auto;background:#1877f2;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center}
+.event-featured-tag{flex:0 0 auto;background:linear-gradient(135deg,#e85d04,#9a3b00);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.03em;padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center}
 #events-body .status-note{margin-top:12px}
 @media (max-width:560px){
   .event-src{display:none}
@@ -4314,6 +4315,9 @@ body.tcl-rd .evs-tag{
   border-radius:999px;padding:1px 7px;font-size:.6rem;margin-left:5px;
   vertical-align:1px;white-space:nowrap;text-transform:none;letter-spacing:0;
 }
+body.tcl-rd .evs-tag-featured{
+  background:linear-gradient(135deg,#e85d04,#9a3b00);font-weight:800;letter-spacing:.03em;
+}
 body.tcl-rd .evs-title,body.tcl-rd .nws-title{font-weight:700;font-size:1.02rem;line-height:1.25}
 body.tcl-rd .nws-sum{
   font-size:.82rem;line-height:1.35;color:#5d5342;
@@ -4366,6 +4370,31 @@ body.tcl-rd .evs-note{
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
 }
 body.tcl-rd .evs-loc,body.tcl-rd .nws-loc{margin-top:auto}
+
+/* ---- V26. FEATURED EVENTS + CARD VOID FIX (Travis, 2026-11-21) ----
+   Featured events ship (mechanism in app.js: featured > free > paid
+   tiers across the whole scroller, Featured tags, Events view stays
+   chronological). The card fix is Travis's, from his live
+   screenshots: BOTH scrollers' cards carried a band of empty space
+   between the text and the footer line, because V23/V24 forced a
+   tall min-height, pinned the footer with margin-top:auto, and the
+   flex track stretched every card to the tallest. All three go:
+   no forced min-height, no bottom pinning on either footer (source
+   on news cards, venue on event cards), and the tracks align items
+   to the start so each card is exactly photo + date/title/text +
+   footer + padding. The photo keeps the size he likes as a fixed
+   height instead of 50% of a stretched card. The event description
+   (the data's note field, .evs-note) also gets room to read: up to
+   5 lines instead of 3, flowing under the title. */
+body.tcl-rd .evs-card,body.tcl-rd .nws-card{min-height:0}
+body.tcl-rd .evs-img,body.tcl-rd .nws-img{flex:0 0 auto;height:235px}
+body.tcl-rd .ev-scroll-track,body.tcl-rd .news-scroll-track{align-items:flex-start}
+body.tcl-rd .evs-loc,body.tcl-rd .nws-loc{margin-top:0}
+body.tcl-rd .evs-note{-webkit-line-clamp:5}
+/* Community Help list cap (Travis, 2026-11-21): entries past the
+   first 6 in each Help card hide while the list is collapsed; the
+   See more toggle (app.js, .cev-more styling) expands in place. */
+#view-help .dir-list.cap-collapsed .dir-item.dir-cap-extra{display:none}
 
 /* ---- V19-3b. THE NEWS VIEW (story list + reader) ---- */
 body.tcl-rd .news-list{display:flex;flex-direction:column;gap:10px;margin-top:10px}

@@ -9230,6 +9230,64 @@ const PHOTO_FORM_URL = ''; // TCL v1: photo submissions ride the email route onl
   };
 })();
 
+/* ---------- Community Help lists: cap + See more (tcl-v26, Travis 2026-11-21) ----------
+   The Help view rendered every entry in full, five long lists deep.
+   Each card's list now shows its first 6 entries (the editorial
+   order stands — the most-needed entries lead each card) and tucks
+   the rest behind a See more / See less toggle that expands in
+   place, styled like the Events view's own .cev-more control. The
+   cap is VISUAL only: every entry stays in the DOM, and the
+   per-entry description pull-downs above are untouched. Labels
+   EN/ES via alertToggleLabel; the langSet wrap re-bakes them. */
+(function () {
+  var CAP = 6;
+  var btns = [];
+  function capLabel(btn) {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    if (open) return alertToggleLabel(true);
+    return alertToggleLabel(false) + ' <span class="cev-more-n">(' + btn.getAttribute('data-cap-n')
+      + (langCur === 'es' ? ' más' : ' more') + ')</span>';
+  }
+  document.querySelectorAll('#view-help .dir-list').forEach(function (list) {
+    var items = list.querySelectorAll('.dir-item');
+    if (items.length <= CAP) return;
+    for (var i = CAP; i < items.length; i++) items[i].classList.add('dir-cap-extra');
+    list.classList.add('cap-collapsed');
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cev-more dir-cap-btn';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('data-cap-n', String(items.length - CAP));
+    btn.innerHTML = capLabel(btn);
+    var wrap = document.createElement('div');
+    wrap.className = 'cev-more-wrap';
+    wrap.appendChild(btn);
+    list.parentNode.insertBefore(wrap, list.nextSibling);
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      list.classList.toggle('cap-collapsed', open);
+      btn.innerHTML = capLabel(btn);
+      if (open) {
+        /* See-less scroll rule (Travis, 2026-11-21): collapsing after
+           reading to the bottom must carry the reader back to the top
+           of this list's card, heading at the top of the viewport —
+           otherwise they are stranded at the bottom of a now-short
+           page. Expanding never moves the scroll position. */
+        var card = list.closest('section') || list;
+        if (card.scrollIntoView) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+    btns.push(btn);
+  });
+  if (!btns.length) return;
+  var langSetCapPrev = langSet;
+  langSet = function (lang) {
+    langSetCapPrev(lang);
+    btns.forEach(function (b) { b.innerHTML = capLabel(b); });
+  };
+})();
+
 /* ---------- v55: founding house cells live in the flow ----------
    The v6 phone mover is retired: the founding panel is now the three
    sponsor spots themselves, and its two old house cells — County
@@ -9856,15 +9914,17 @@ function buildEventScroller() {
   });
   /* Tier order (Travis's events model, Nov 21, 2026): featured
      first, then free events, then paid events that did not buy
-     featured; soonest first inside each tier. With only a few
-     events (Tillamook's data is thin) it shows exactly those:
-     no filler, no duplicates, and the section stays hidden when
-     there is nothing coming up. */
+     featured; soonest first inside each tier. NO CAP on the picks
+     (Travis, Nov 21, 2026): the scroller carries every upcoming
+     event in the merged data, so a visitor can sit on the home
+     screen and scroll through all of them. No filler, no
+     duplicates, and the section stays hidden when there is
+     nothing coming up. */
   upcoming.sort((a, b) =>
     (evsTier(a) - evsTier(b))
     || (a.date < b.date ? -1 : a.date > b.date ? 1 : 0)
     || (parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)));
-  const picks = upcoming.slice(0, 10);
+  const picks = upcoming;
   if (!picks.length) { sec.hidden = true; return; }
   const used = new Set();
   track.innerHTML = picks.map(ev => evsCardHtml(ev, used)).join('');
