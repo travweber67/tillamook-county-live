@@ -10056,12 +10056,114 @@ function closeNewsStory() {
   const card = document.getElementById('news-card');
   if (card) card.scrollIntoView({ block: 'start' });
 }
+/* NEWS RANKING (Travis, 2026-11-21 — BOTH county sites): the feed
+   leads with the most INTERESTING stories, not just the newest.
+   Interesting does not mean good news: wild, crazy, odd or
+   remarkable things that happened in town are prized (unusual
+   wildlife, record catches, strange happenings, big community
+   moments, curious local history/science). Crime, blotter and
+   general bad news sink to the bottom, capped at one story in the
+   first six shown. Politics never reaches this code — the fetcher
+   already filtered it out upstream; do not weaken that.
+   The sort lives HERE, in the rendering, because the fetcher
+   regenerates data/news.json every cycle — any order baked into
+   the data file washes away on the next refresh. Every story the
+   Today scroller and the News view show comes through
+   buildNewsScroller(), so ranking the array once here ranks both.
+   Tiers (0 first):
+     0 high    — high-interest local: the lead material
+     1 useful  — useful everyday local: notices, bazaars, season
+                 and weather columns, community gatherings
+     2 routine — ordinary local items: council/admin, columns
+     3 crime   — crime/blotter and general bad news
+   A story carrying an explicit "tier" name in the data (set by an
+   agent, e.g. to promote a genuinely major local safety story out
+   of the crime tier) always wins over the keyword guess. Inside a
+   tier: newest first. These lists mirror Columbia County Live's
+   app.js and fetch_news.py classify_tier() — keep them in step.
+   Maintainer write-up: ccl-redesign/NEWS-WIRING.md. */
+const NEWS_TIER_ORDER = { high: 0, useful: 1, routine: 2, crime: 3 };
+const NEWS_CRIME_WORDS = [
+  'arrested', 'arrest', 'charged', 'pleads', 'pleaded', 'convicted',
+  'sentenced', 'jail', 'prison', 'inmate', 'burglary', 'robbery',
+  'theft', 'stolen', 'assault', 'shooting', 'stabbing', 'homicide',
+  'murder', 'dui', 'overdose', 'fatal', 'killed', 'body found',
+  'missing person', 'missing', 'death', 'indicted', 'blotter',
+  'police', 'sheriff', 'measles', 'outbreak', 'dies', 'died'
+];
+const NEWS_HIGH_WORDS = [
+  'record', 'biggest', 'largest', 'rare', 'unusual', 'strange',
+  'odd', 'giant', 'massive', 'whale', 'eagle', 'aurora',
+  'northern lights', 'meteor', 'eclipse', 'king tide',
+  'cat of the week', 'dog of the week', 'pet of the week',
+  'special olympics', 'championship', 'state title', 'semifinal',
+  'semifinals', 'debut', 'museum', 'holiday tree', 'capitol',
+  'launched', 'celebrates', 'celebrating', 'celebration', 'rescue',
+  'rescued', 'catch', 'haunted', 'ghost', 'discovers', 'discovered',
+  'discovery', 'miracle', 'returns', 'oldest', 'mystery'
+];
+const NEWS_USEFUL_WORDS = [
+  'bazaar', 'market', 'fair', 'party', 'season', 'delayed',
+  'delay', 'opens', 'opening', 'closes', 'closing', 'closed',
+  'schedule', 'inspection', 'inspections', 'scored', 'harvest',
+  'fishing', 'crab', 'library', 'registration', 'tickets',
+  'weather', 'surf', 'tides', 'clinic', 'holiday', 'school',
+  'parade', 'festival'
+];
+function newsWordHit(text, words) {
+  for (const w of words) {
+    const esc = w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (new RegExp('\\b' + esc + '\\b').test(text)) return w;
+  }
+  return null;
+}
+function newsTierOf(s) {
+  if (s && Object.prototype.hasOwnProperty.call(NEWS_TIER_ORDER, s.tier)) return s.tier;
+  const t = ((s && s.title) || '').toLowerCase();
+  const text = t + ' ' + ((s && s.summary) || '').toLowerCase();
+  /* Crime/bad-news is checked first, so a grim story never rides a
+     positive keyword to the top. */
+  if (newsWordHit(text, NEWS_CRIME_WORDS)) return 'crime';
+  if (t.indexOf('weather') !== -1) return 'useful';
+  if (t.indexOf('photos:') === 0 || newsWordHit(text, NEWS_HIGH_WORDS)) return 'high';
+  if (newsWordHit(text, NEWS_USEFUL_WORDS)) return 'useful';
+  return 'routine';
+}
+function rankNewsStories(stories) {
+  const arr = (stories || []).slice();
+  arr.forEach(s => { s._ntier = NEWS_TIER_ORDER[newsTierOf(s)]; });
+  arr.sort((a, b) => {
+    if (a._ntier !== b._ntier) return a._ntier - b._ntier;
+    const da = a.date || '', db = b.date || '';
+    return da < db ? 1 : (da > db ? -1 : 0);
+  });
+  /* Crime cap: at most one crime-tier story in the first six shown;
+     extras drop below position six, order preserved. (If the whole
+     feed is nearly all crime there may be nothing to backfill with —
+     stories are never dropped, only reordered.) */
+  let head = arr.slice(0, 6), tail = arr.slice(6);
+  const headCrime = head.filter(s => s._ntier === 3);
+  if (headCrime.length > 1) {
+    const demoted = headCrime.slice(1);
+    head = head.filter(s => demoted.indexOf(s) === -1);
+    const fill = [];
+    tail = tail.filter(s => {
+      if (s._ntier !== 3 && fill.length < demoted.length) { fill.push(s); return false; }
+      return true;
+    });
+    const out = head.concat(fill, tail, demoted);
+    out.forEach(s => delete s._ntier);
+    return out;
+  }
+  arr.forEach(s => delete s._ntier);
+  return arr;
+}
 function buildNewsScroller() {
   const sec = document.getElementById('news-scroll');
   const track = document.getElementById('news-scroll-track');
   if (!sec || !track) return;
   getSnapshot('news.json').then(data => {
-    const stories = (data && data.stories) || [];
+    const stories = rankNewsStories((data && data.stories) || []);
     newsStoriesCache = stories;
     renderNewsList();
     const upd = document.getElementById('news-updated');
