@@ -614,16 +614,22 @@ async function loadCoast() {
       coastSet('coast-row-bar', 'bad', '⛔ BAR CLOSED', 'The Coast Guard has closed the Tillamook Bay bar — do not cross. Report from ' + fmtDayTime(when) + '.');
       barSpot('Bar closed', 'Barra cerrada', 'bad');
       anyOk = true;
+    } else if (/no restrictions/i.test(status)) {
+      /* ORDER MATTERS (v20 fix, 2026-11-21): "No Restrictions" must
+         be tested BEFORE /restrict/i — the plain restrict test
+         matches the substring inside "No Restrictions" and rendered
+         an open bar as BAR RESTRICTED (caught by the v19 item-1 QC
+         forced-state proof while the live report said No
+         Restrictions). */
+      coastSet('coast-row-bar', 'ok', '✅ BAR OPEN', 'No restrictions on the Tillamook Bay bar. Coast Guard report from ' + fmtDayTime(when) + '.');
+      barSpot('Bay & bar', 'Bahía y bar', 'ok');
+      anyOk = true;
     } else if (/restrict/i.test(status)) {
       const rec = (restrictions.split('/')[0] || '').match(/(\d+)\s*FEET/i);
       coastSet('coast-row-bar', 'warn', '⚠️ BAR RESTRICTED',
         (rec ? 'Boats ' + rec[1] + ' feet and under must stay in. ' : 'Restrictions are in effect — read the full report. ')
         + 'Coast Guard report from ' + fmtDayTime(when) + '.');
       barSpot('Bar restrictions', 'Restricciones en la barra', 'bad');
-      anyOk = true;
-    } else if (/no restrictions/i.test(status)) {
-      coastSet('coast-row-bar', 'ok', '✅ BAR OPEN', 'No restrictions on the Tillamook Bay bar. Coast Guard report from ' + fmtDayTime(when) + '.');
-      barSpot('Bay & bar', 'Bahía y bar', 'ok');
       anyOk = true;
     } else {
       coastSet('coast-row-bar', '', '❔ Bar Status Unclear', 'The Coast Guard report says "' + status + '" — read the full NWS bar report before you cross.');
