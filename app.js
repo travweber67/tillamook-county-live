@@ -3120,7 +3120,7 @@ function mergeFbInto(events, fbSnap) {
     if (seen.has(key)) return; // the calendar version wins
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: 'Facebook',
-               url: ev.url || '', location: ev.location || '' });
+               url: ev.url || '', location: ev.location || '', kind: 'comm' });
   });
   return out;
 }
@@ -3156,11 +3156,19 @@ function mergeCommunityInto(events, cSnap) {
     seen.add(key);
     out.push({ date: ev.date, time: ev.time || '', title: ev.title, source: ev.source || 'Facebook',
                url: ev.url || '', location: ev.location || '', note: ev.note || '',
-               img: ev.img || '', community: true,
+               img: ev.img || '', community: true, kind: 'comm',
                featured: !!ev.featured, paid: !!ev.paid });
   });
   return out;
 }
+/* Event kind (Travis, 2026-11-21): municipal entries come from the
+   official city & county calendars (data/events.json, CivicPlus) and
+   are tagged kind:'muni' in loadEvents; everything merged in from
+   Facebook or the hand-added community file carries kind:'comm'.
+   Anything untagged reads as community. The Events list color-codes
+   the two kinds (steel blue vs warm marble orange) and can filter
+   by them; "All" stays strictly chronological. */
+function evKindOf(ev) { return ev && ev.kind === 'muni' ? 'muni' : 'comm'; }
 function eventDayDiff(dateStr) {
   const [y, m, d] = dateStr.split('-').map(Number);
   const [ty, tm, td] = todayStrPT().split('-').map(Number);
@@ -3188,6 +3196,7 @@ function eventMatchesFilter(ev, filter) {
    presentation changed. */
 let cevDay = null;      // 'YYYY-MM-DD' picked in the mini-month / pill strip
 let cevOpen = false;    // "See more events" expanded
+let cevKind = 'all';    // 'all' | 'comm' | 'muni' — the kind filter chips
 const CEV_FIRST = 8;
 const CEV_MON3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const CEV_DOW3 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -3199,7 +3208,8 @@ function cevLongDate(dateStr) {
 function cevCard(ev, today) {
   const p = cevParts(ev.date);
   const dow = new Date(ev.date + 'T12:00:00').getDay();
-  let h = '<article class="cev-card" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
+  const kind = evKindOf(ev);
+  let h = '<article class="cev-card kind-' + kind + '" data-evkey="' + esc(evcalKeyOf(ev)) + '">';
   h += '<div class="cev-badge" aria-hidden="true"><span class="cev-mon">' + CEV_MON3[p.m - 1] + '</span>'
     + '<span class="cev-daynum">' + p.d + '</span><span class="cev-dow">' + CEV_DOW3[dow] + '</span></div>';
   h += '<div class="cev-main">';
@@ -3216,6 +3226,7 @@ function cevCard(ev, today) {
     h += '<button type="button" class="evcal-btn" data-evcal="' + esc(evcalKeyOf(ev))
       + '" title="Add this event to your calendar">＋ Add</button>';
   }
+  h += '<span class="event-kind-tag kind-' + kind + '">' + (kind === 'muni' ? 'City &amp; County' : 'Community') + '</span>';
   if (ev.featured) h += '<span class="event-featured-tag">Featured</span>';
   if (ev.source === 'Facebook') h += '<span class="event-fb-tag">Facebook</span>';
   else if (ev.source) h += '<span class="cev-src">' + esc(ev.source) + '</span>';
@@ -3271,6 +3282,21 @@ function cevPills(baseList) {
   }
   return h;
 }
+/* Kind filter chips + legend (Travis, 2026-11-21): one calendar, two
+   clearly color-coded kinds — Community in the warm marble orange,
+   City & County in steel blue. The chips sit at the top of the Events
+   list; the legend spells the colors out directly underneath. */
+function cevKindBar() {
+  const chip = (k, label) => '<button type="button" class="cev-kind-chip kind-' + k
+    + (cevKind === k ? ' sel' : '') + '" data-cev-kind="' + k + '" aria-pressed="'
+    + (cevKind === k) + '">' + label + '</button>';
+  return '<div class="cev-kindbar" role="group" aria-label="Filter events by kind">'
+    + chip('all', 'All') + chip('comm', 'Community') + chip('muni', 'City &amp; County')
+    + '</div>'
+    + '<p class="cev-kind-legend"><span class="cev-kind-dot kind-comm" aria-hidden="true"></span> Community'
+    + ' <span class="cev-kind-sep" aria-hidden="true">·</span>'
+    + ' <span class="cev-kind-dot kind-muni" aria-hidden="true"></span> City &amp; County</p>';
+}
 function renderEvents() {
   const body = $('events-body');
   if (!eventsCache) return;
@@ -3279,11 +3305,17 @@ function renderEvents() {
     a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
   const inFilter = evs.filter(ev => eventMatchesFilter(ev, currentEventFilter));
+  const kindFiltered = cevKind === 'all' ? inFilter
+    : inFilter.filter(ev => evKindOf(ev) === cevKind);
   /* The 16-row cap keeps the card compact, but hand-picked community
      events always render: they were added on purpose, and some (a
-     December fundraiser, a season-long campaign) sort past the cap. */
-  const shown = inFilter.slice(0, 16);
-  inFilter.slice(16).forEach(ev => { if (ev.community) shown.push(ev); });
+     December fundraiser, a season-long campaign) sort past the cap.
+     Municipal entries share the exemption (2026-11-21): with the
+     community flood, the official calendars' own entries sorted past
+     the cap and vanished from "All" — every entry of both kinds now
+     shows on its correct date, chronological. */
+  const shown = kindFiltered.slice(0, 16);
+  kindFiltered.slice(16).forEach(ev => { if (ev.community || evKindOf(ev) === 'muni') shown.push(ev); });
   shown.sort((a, b) => a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                       : (a.date < b.date ? -1 : 1));
   const today = todayStrPT();
@@ -3292,7 +3324,7 @@ function renderEvents() {
      handler in initEvCal resolves them through evcalByKey. */
   evcalByKey = {};
   (snap.events || []).forEach(ev => { evcalByKey[evcalKeyOf(ev)] = ev; });
-  let html = '';
+  let html = cevKindBar();
   if (shown.length) {
     let list = shown;
     if (cevDay) list = shown.filter(ev => ev.date === cevDay);
@@ -3317,11 +3349,15 @@ function renderEvents() {
     }
     html += '</div></div>';
   } else {
-    html = '<p class="no-alerts">' + ({
-      today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
-      weekend: 'Nothing on the calendars this weekend in the current snapshot — try "Next 7 days".',
-      week: 'Nothing on the calendars in the next 7 days in the current snapshot.'
-    }[currentEventFilter] || 'No upcoming events found on the city calendars for the next two weeks.') + '</p>';
+    html += '<p class="no-alerts">' + (cevKind === 'muni'
+      ? 'Nothing from the city & county calendars in the current window — the Community chip has the rest.'
+      : cevKind === 'comm'
+        ? 'No community events in the current window — the City & County chip has the official calendars.'
+        : ({
+          today: 'Nothing left on the calendars for today — the full two weeks are under "All".',
+          weekend: 'Nothing on the calendars this weekend in the current snapshot — try "Next 7 days".',
+          week: 'Nothing on the calendars in the next 7 days in the current snapshot.'
+        }[currentEventFilter] || 'No upcoming events found on the city calendars for the next two weeks.')) + '</p>';
   }
   const county = (snap.sources || []).find(s => /Tillamook County/.test(s.name));
   if (county && county.status === 'blocked_needs_browser') {
@@ -3347,6 +3383,13 @@ function initCevNav() {
   body.addEventListener('click', e => {
     const t = e && e.target;
     if (!t || typeof t.closest !== 'function') return;
+    const kindBtn = t.closest('[data-cev-kind]');
+    if (kindBtn) {
+      cevKind = kindBtn.getAttribute('data-cev-kind') || 'all';
+      cevOpen = false;
+      renderEvents();
+      return;
+    }
     const dayBtn = t.closest('[data-cev-day]');
     if (dayBtn) {
       const ds = dayBtn.getAttribute('data-cev-day');
@@ -3380,6 +3423,10 @@ async function loadEvents() {
     const snap = await getSnapshot('events.json');
     setSnapUpdated('events-updated', snap.fetched_at);
     eventsCache = snap;
+    /* The base snapshot IS the official city & county calendars
+       (CivicPlus) — tag every entry municipal before the merges add
+       community entries on top. */
+    (snap.events || []).forEach(ev => { if (ev) ev.kind = 'muni'; });
     const fbSnap = await getFbEventsSnap();
     eventsCache.events = mergeFbInto(snap.events || [], fbSnap);
     const cSnap = await getCommunityEventsSnap();

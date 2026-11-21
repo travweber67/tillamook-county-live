@@ -4457,3 +4457,58 @@ body.tcl-rd .sc-edge:hover{background:#fff}
 html[data-theme="dark"] body.tcl-rd .sc-edge{
   background:rgba(38,40,45,.95);color:#ffb066;border-color:rgba(255,255,255,.22);
 }
+
+/* ---- V29. EVENT KIND COLOR CODE (Travis, 2026-11-21): one calendar,
+   two kinds, told apart at a glance. Municipal entries (City & County,
+   the official CivicPlus calendars) wear STEEL BLUE; community entries
+   (hand-added + Facebook) wear the site's WARM MARBLE ORANGE. Each
+   kind gets a tag pill on its card, a matching thin left accent
+   stripe, a filter chip, and a legend dot. Colors are self-contained
+   (own bg + ink) so both read clearly in light and dark modes. ---- */
+.cev-kindbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.cev-kind-chip{
+  font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;color:var(--text);
+  background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);border-radius:999px;padding:7px 16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 1px 2px rgba(35,30,22,.10),0 6px 16px rgba(35,30,22,.14);
+}
+.cev-kind-chip:hover{color:var(--accent-dark)}
+.cev-kind-chip.sel{color:#fff;border-color:transparent}
+.cev-kind-chip.sel:hover{color:#fff}
+.cev-kind-chip.kind-all.sel{background:#33383e}
+.cev-kind-chip.kind-comm.sel{background:#b95e06}
+.cev-kind-chip.kind-muni.sel{background:#3d648c}
+html[data-theme="dark"] .cev-kind-chip{
+  background:linear-gradient(rgba(20,26,22,.42),rgba(20,26,22,.42)),url("img/founding-paint-green.jpg") center/cover no-repeat,#22302a;
+  border-color:rgba(196,226,196,.22);color:#f2f0e9;
+}
+html[data-theme="dark"] .cev-kind-chip.kind-all.sel{background:#e8e6df;color:#23262b}
+html[data-theme="dark"] .cev-kind-chip.kind-comm.sel{background:#ffa04d;color:#2b211b}
+html[data-theme="dark"] .cev-kind-chip.kind-muni.sel{background:#4a719c;color:#fff}
+.cev-kind-legend{
+  font-size:.82rem;font-weight:600;color:var(--text);margin:0 0 12px;
+  display:flex;align-items:center;gap:5px;flex-wrap:wrap;
+}
+.cev-kind-dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.cev-kind-dot.kind-comm{background:#e07b2a;box-shadow:0 0 0 1px rgba(122,60,0,.35)}
+.cev-kind-dot.kind-muni{background:#3d648c;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
+html[data-theme="dark"] .cev-kind-dot.kind-comm{background:#f2a94b}
+html[data-theme="dark"] .cev-kind-dot.kind-muni{background:#6f97bd}
+.cev-kind-sep{opacity:.55}
+/* Dark: the legend (and the list heading under it) stand on the
+   charcoal ground, where body.tcl-rd's --text stays the light
+   design's dark ink — the same ground-text trap the v17 dark pass
+   fixed element by element. State the light ink directly. */
+html[data-theme="dark"] body.tcl-rd .cev-kind-legend{color:#f2f0e9}
+html[data-theme="dark"] body.tcl-rd .cev-list-h{color:#f2f0e9}
+.event-kind-tag{
+  flex:0 0 auto;font-size:.68rem;font-weight:800;letter-spacing:.02em;
+  padding:2px 7px;border-radius:999px;white-space:nowrap;align-self:center;
+}
+.event-kind-tag.kind-comm{background:#f0a63c;color:#452600;border:1px solid rgba(122,60,0,.35)}
+.event-kind-tag.kind-muni{background:#3d648c;color:#fff;border:1px solid rgba(255,255,255,.25)}
+html[data-theme="dark"] .event-kind-tag.kind-muni{background:#4a719c}
+body.tcl-rd .cev-card.kind-comm{border-left:4px solid #e07b2a}
+body.tcl-rd .cev-card.kind-muni{border-left:4px solid #3d648c}
+html[data-theme="dark"] body.tcl-rd .cev-card.kind-comm{border-left-color:#f2a94b}
+html[data-theme="dark"] body.tcl-rd .cev-card.kind-muni{border-left-color:#6f97bd}
