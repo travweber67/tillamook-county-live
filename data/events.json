@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-20T16:22:50Z",
+ "fetched_at": "2026-11-21T18:41:44Z",
  "sources": [
   {
    "name": "Tillamook County calendar (CivicPlus)",
    "status": "ok",
-   "note": "3 events in the next 14 days. 6 day page(s) failed to load and were skipped."
+   "note": "8 events in the next 14 days."
   },
   {
    "name": "City of Tillamook calendar (CivicPlus)",
@@ -21,6 +21,20 @@
    "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1081"
   },
   {
+   "date": "2026-11-25",
+   "time": "9:00 AM",
+   "title": "Board of Commissioners' Meeting",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1446"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "2:00 PM",
+   "title": "Board Briefing",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=716"
+  },
+  {
    "date": "2026-11-26",
    "time": "All Day Event",
    "title": "Thanksgiving Day/Day After Thanksgiving",
@@ -33,6 +47,27 @@
    "title": "Thanksgiving Day/Day After Thanksgiving",
    "source": "Tillamook County",
    "url": "https://tillamookcounty.gov/Calendar.aspx?EID=642"
+  },
+  {
+   "date": "2026-12-01",
+   "time": "8:00 AM",
+   "title": "Community Update",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1082"
+  },
+  {
+   "date": "2026-12-02",
+   "time": "9:00 AM",
+   "title": "Board of Commissioners' Meeting",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1447"
+  },
+  {
+   "date": "2026-12-02",
+   "time": "2:00 PM",
+   "title": "Board Briefing",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=717"
   }
  ]
 }

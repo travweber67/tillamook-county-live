@@ -1,114 +1,75 @@
 {
- "fetched_at": "2026-11-21T18:04:31Z",
+ "fetched_at": "2026-11-21T18:41:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338458681,
-   "lat": 46.30467,
-   "lon": -124.03694,
+   "mmsi": 367050280,
+   "lat": 46.16717,
+   "lon": -123.91731,
+   "sog_kn": 0,
+   "cog": 335,
+   "heading": 511,
+   "updated": "2026-11-21 18:42:13.286336811 +0000 UTC"
+  },
+  {
+   "mmsi": 368468580,
+   "lat": 46.18911,
+   "lon": -123.85608,
    "sog_kn": 0,
    "cog": 360,
-   "heading": 70,
-   "updated": "2026-11-21 18:05:04.299898884 +0000 UTC"
+   "heading": 268,
+   "updated": "2026-11-21 18:42:29.361737108 +0000 UTC"
   },
   {
-   "mmsi": 366999892,
-   "lat": 46.28113,
-   "lon": -124.04637,
-   "sog_kn": 0,
-   "cog": 310.3,
-   "heading": 511,
-   "updated": "2026-11-21 18:04:49.459582451 +0000 UTC"
-  },
-  {
-   "mmsi": 367197230,
-   "lat": 46.16929,
-   "lon": -123.91362,
-   "sog_kn": 0.1,
-   "cog": 24.9,
-   "heading": 511,
-   "updated": "2026-11-21 18:04:48.383815616 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.2812,
-   "lon": -124.04686,
-   "sog_kn": 0,
-   "cog": 86.4,
-   "heading": 511,
-   "updated": "2026-11-21 18:04:50.102676071 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16846,
-   "lon": -123.91407,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-21 18:04:44.836567935 +0000 UTC"
-  },
-  {
-   "mmsi": 368084380,
-   "name": "FATE HUNTER",
-   "lat": 46.24656,
-   "lon": -124.08367,
-   "sog_kn": 6,
-   "cog": 79.2,
-   "heading": 511,
-   "updated": "2026-11-21 18:05:03.110650498 +0000 UTC"
-  },
-  {
-   "mmsi": 366855000,
-   "name": "FLORIDA",
-   "lat": 46.20338,
-   "lon": -124.21543,
-   "type_code": 80,
-   "type": "Tanker",
+   "mmsi": 369493007,
+   "name": "CG47207",
+   "lat": 46.28133,
+   "lon": -124.04694,
+   "type_code": 51,
+   "type": "Search & rescue",
    "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-21 18:05:07.194185398 +0000 UTC"
+   "updated": "2026-11-21 18:42:10.180177426 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20666,
-   "lon": -123.80486,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-21 18:05:06.892369079 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19107,
+   "lon": -123.92375,
+   "sog_kn": 1.1,
+   "cog": 197.1,
+   "heading": 114,
+   "updated": "2026-11-21 18:42:03.844409375 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20283,
+   "lon": -123.79282,
+   "sog_kn": 0.1,
+   "cog": 92.2,
+   "heading": 241,
+   "updated": "2026-11-21 18:42:01.994720818 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25729,
-   "lon": -123.9837,
-   "sog_kn": 0.7,
-   "cog": 41.1,
-   "heading": 82,
-   "updated": "2026-11-21 18:05:06.158481956 +0000 UTC"
+   "lat": 46.25727,
+   "lon": -123.98373,
+   "sog_kn": 0.3,
+   "cog": 194.5,
+   "heading": 117,
+   "updated": "2026-11-21 18:42:08.450253502 +0000 UTC"
   },
   {
    "mmsi": 366608000,
    "name": "SEAWARD EXPLORER",
    "lat": 46.18806,
-   "lon": -123.85906,
+   "lon": -123.85908,
    "type_code": 0,
    "type": "Vessel",
    "destination": "ASTORIA,0R",
-   "updated": "2026-11-21 18:05:03.877680227 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18812,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 16.7,
-   "heading": 307,
-   "updated": "2026-11-21 18:04:49.460714832 +0000 UTC"
+   "updated": "2026-11-21 18:42:25.268981377 +0000 UTC"
   }
  ]
 }
