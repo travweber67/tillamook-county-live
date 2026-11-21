@@ -1,74 +1,67 @@
 {
- "fetched_at": "2026-11-21T18:46:15Z",
+ "fetched_at": "2026-11-21T18:51:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
-  {
-   "mmsi": 367176750,
-   "lat": 46.16721,
-   "lon": -123.91683,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 18:47:11.416919408 +0000 UTC"
-  },
-  {
-   "mmsi": 367182290,
-   "lat": 46.30516,
-   "lon": -124.04029,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 18:47:12.221044807 +0000 UTC"
-  },
   {
    "mmsi": 367384780,
    "name": "CAROLYN DOROTHY",
-   "lat": 46.25391,
-   "lon": -124.01075,
-   "sog_kn": 2.4,
-   "cog": 309,
-   "heading": 305,
-   "updated": "2026-11-21 18:47:02.102803239 +0000 UTC"
+   "lat": 46.25158,
+   "lon": -124.01667,
+   "sog_kn": 1.7,
+   "cog": 280.9,
+   "heading": 125,
+   "updated": "2026-11-21 18:52:13.061716294 +0000 UTC"
+  },
+  {
+   "mmsi": 369493007,
+   "name": "CG47207",
+   "lat": 46.28132,
+   "lon": -124.04695,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-21 18:52:00.01245281 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28131,
+   "lon": -124.04675,
+   "sog_kn": 0,
+   "cog": 191.1,
+   "heading": 511,
+   "updated": "2026-11-21 18:52:06.387904775 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.22964,
+   "lon": -123.95736,
+   "sog_kn": 4.2,
+   "cog": 79.5,
+   "heading": 92,
+   "updated": "2026-11-21 18:52:18.91296972 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.19107,
    "lon": -123.92375,
-   "sog_kn": 0.6,
-   "cog": 224.7,
-   "heading": 115,
-   "updated": "2026-11-21 18:47:14.617372473 +0000 UTC"
+   "sog_kn": 0.3,
+   "cog": 205.1,
+   "heading": 114,
+   "updated": "2026-11-21 18:52:14.574881979 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30452,
-   "lon": -124.04025,
-   "sog_kn": 0,
-   "cog": 6,
-   "heading": 511,
-   "updated": "2026-11-21 18:47:08.67993659 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.8591,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-21 18:47:03.594458817 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.1656,
-   "lon": -123.92199,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19996,
+   "lon": -123.76049,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-21 18:47:13.057227114 +0000 UTC"
+   "destination": "ASTORIA JAUN",
+   "updated": "2026-11-21 18:52:25.167672108 +0000 UTC"
   }
  ]
 }

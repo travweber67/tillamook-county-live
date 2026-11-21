@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-21T18:46:15Z",
+ "fetched_at": "2026-11-21T18:51:40Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
@@ -7,51 +7,71 @@
    "hex": "a8f1c3",
    "callsign": "N6758H",
    "type": "C172",
-   "alt_ft": 6950,
-   "gs_kn": 99.3,
-   "track": 115.02,
-   "lat": 46.094536,
-   "lon": -123.65593
-  },
-  {
-   "hex": "a1a8f4",
-   "callsign": "N206GS",
-   "type": "B06",
-   "alt_ft": 1500,
-   "gs_kn": 29.7,
-   "track": 227.73,
-   "lat": 45.486611,
-   "lon": -123.313427
+   "alt_ft": 5850,
+   "gs_kn": 92.9,
+   "track": 98.04,
+   "lat": 46.036299,
+   "lon": -123.477402
   },
   {
    "hex": "a491e3",
    "callsign": "N394CM",
    "type": "C510",
-   "alt_ft": 7975,
-   "gs_kn": 255.2,
-   "track": 303.01,
-   "lat": 45.536515,
-   "lon": -123.151044
+   "alt_ft": 7550,
+   "gs_kn": 276.7,
+   "track": 348.32,
+   "lat": 45.9087,
+   "lon": -123.361633
+  },
+  {
+   "hex": "a1a8f4",
+   "callsign": "N206GS",
+   "type": "B06",
+   "alt_ft": 2300,
+   "gs_kn": 60.1,
+   "track": 42.98,
+   "lat": 45.496353,
+   "lon": -123.339321
   },
   {
    "hex": "ab6784",
    "callsign": "N834DC",
    "type": "C550",
-   "alt_ft": 6625,
-   "gs_kn": 195.5,
-   "track": 286.95,
-   "lat": 45.802421,
-   "lon": -122.873978
+   "alt_ft": 3450,
+   "gs_kn": 116.1,
+   "track": 182.47,
+   "lat": 45.766389,
+   "lon": -123.161339
+  },
+  {
+   "hex": "a61af2",
+   "callsign": "N49276",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.533878,
+   "lon": -122.945088
   },
   {
    "hex": "a05882",
    "callsign": "N121MF",
    "type": "BE9L",
-   "alt_ft": 9175,
-   "gs_kn": 129.0,
-   "track": 194.36,
-   "lat": 45.38117,
-   "lon": -122.839877
+   "alt_ft": 15000,
+   "gs_kn": 174.9,
+   "track": 194.91,
+   "lat": 45.159488,
+   "lon": -122.924954
+  },
+  {
+   "hex": "a9e944",
+   "callsign": "",
+   "type": "C172",
+   "alt_ft": null,
+   "gs_kn": 19.5,
+   "track": 348.75,
+   "lat": 45.775979,
+   "lon": -122.862305
   }
  ]
 }
