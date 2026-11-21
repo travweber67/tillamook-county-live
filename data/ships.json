@@ -1,124 +1,77 @@
 {
- "fetched_at": "2026-11-21T19:21:39Z",
+ "fetched_at": "2026-11-21T19:51:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368017810,
-   "lat": 46.16721,
-   "lon": -123.91834,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.82971,
    "sog_kn": 0,
-   "cog": 250,
-   "heading": 511,
-   "updated": "2026-11-21 19:22:17.487514845 +0000 UTC"
+   "cog": 259.6,
+   "heading": 167,
+   "updated": "2026-11-21 19:52:16.362945723 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-21 19:22:08.220853363 +0000 UTC"
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 46.21304,
+   "lon": -123.77853,
+   "type_code": 80,
+   "type": "Tanker",
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-21 19:52:15.916115816 +0000 UTC"
   },
   {
-   "mmsi": 367603130,
-   "name": "CAPE WINDY",
-   "lat": 46.16724,
-   "lon": -123.91632,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 19:22:27.268668684 +0000 UTC"
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 46.1922,
+   "lon": -123.87077,
+   "sog_kn": 6.8,
+   "cog": 85.3,
+   "heading": 84,
+   "updated": "2026-11-21 19:51:37.002384514 +0000 UTC"
   },
   {
-   "mmsi": 369493007,
-   "name": "CG47207",
-   "lat": 46.28133,
-   "lon": -124.04695,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 19:22:13.391064497 +0000 UTC"
-  },
-  {
-   "mmsi": 366999922,
-   "name": "CG47284",
-   "lat": 46.28132,
-   "lon": -124.04675,
-   "sog_kn": 0,
-   "cog": 191.1,
-   "heading": 511,
-   "updated": "2026-11-21 19:22:02.860128454 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16911,
-   "lon": -123.91489,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-21 19:22:22.405935827 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91792,
-   "sog_kn": 0,
-   "cog": 32.7,
-   "heading": 177,
-   "updated": "2026-11-21 19:22:08.088389265 +0000 UTC"
-  },
-  {
-   "mmsi": 338334743,
-   "name": "IRONWORKER29",
-   "lat": 46.296,
-   "lon": -123.96359,
-   "sog_kn": 46.6,
-   "cog": 159.6,
-   "heading": 511,
-   "updated": "2026-11-21 19:22:24.146052123 +0000 UTC"
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20374,
+   "lon": -123.79532,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-21 19:52:09.872975646 +0000 UTC"
   },
   {
    "mmsi": 367638480,
    "name": "OCEAN HUNTER",
-   "lat": 46.19998,
+   "lat": 46.19993,
    "lon": -123.7605,
    "sog_kn": 0,
-   "cog": 6.2,
+   "cog": 337.4,
    "heading": 511,
-   "updated": "2026-11-21 19:22:23.206750601 +0000 UTC"
+   "updated": "2026-11-21 19:51:35.853141059 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18994,
-   "lon": -123.85417,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-21 19:22:17.828551231 +0000 UTC"
-  },
-  {
-   "mmsi": 367353590,
-   "name": "SEA TOI",
-   "lat": 46.16988,
-   "lon": -123.91414,
-   "sog_kn": 0.5,
-   "cog": 43.5,
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19642,
+   "lon": -123.7971,
+   "sog_kn": 0,
+   "cog": 171,
    "heading": 511,
-   "updated": "2026-11-21 19:22:23.969730056 +0000 UTC"
+   "updated": "2026-11-21 19:51:42.307373371 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27144,
-   "lon": -123.95107,
-   "sog_kn": 2.7,
-   "cog": 161.8,
-   "heading": 151,
-   "updated": "2026-11-21 19:22:02.557082423 +0000 UTC"
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 286.9,
+   "heading": 307,
+   "updated": "2026-11-21 19:52:08.647916969 +0000 UTC"
   }
  ]
 }

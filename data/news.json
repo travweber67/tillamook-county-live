@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-21T19:22:32Z",
+ "fetched_at": "2026-11-21T19:52:21Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -171,6 +171,15 @@
    "tier": "useful"
   },
   {
+   "title": "Sheriff's Tip of the Week: Holiday shopping safety",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/sheriffs-tip-of-the-week-holiday-shopping-safety/article_1ffef3f4-1f07-5209-96c6-1dbd7df9ba59.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/b4/eb4db40c-8810-5d2d-90bb-2496431f7bab/6aff62331e974.image.png?resize=300%2C250",
+   "date": "2026-11-20",
+   "summary": "With the holiday season beginning there are many things to keep in mind, including travel safety, winter weather preparation, and shopping security. Below are some tips to keep in mind as you shop this holiday season.",
+   "tier": "useful"
+  },
+  {
    "title": "Tillamook Forest Center to close for the season Nov. 29",
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/tillamook-forest-center-to-close-for-the-season-nov-29/",
@@ -186,15 +195,6 @@
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2024/01/Gordonsnowbackground-150x150.png",
    "date": "2026-11-20",
    "summary": "By Gordon McCraw, Meteorologist for the Tillamook County Pioneer Well Tillamook, another late week update must mean more active weather is on the way. First, if you thought it was chilly...",
-   "tier": "useful"
-  },
-  {
-   "title": "Recipe for Holiday Fun: Twin Rocks Friends Camp hosts 3rd Annual Gingerbread Party Dec. 5",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/recipe-for-holiday-fun-twin-rocks-friends-camp-hosts-3rd-annual-gingerbread-party-dec-5/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TwinRocksGingerbreadHouseParty12.5.jpg",
-   "date": "2026-11-19",
-   "summary": "Sugar, spice, and everything nice! Twin Rocks Friends Camp is inviting the community to celebrate the season with a day of festive fun at its third annual Gingerbread House Party. Set...",
    "tier": "useful"
   },
   {
