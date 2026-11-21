@@ -15,9 +15,11 @@
 const TOWNS = [
   { name: 'Tillamook',      lat: 45.4553, lon: -123.8429 },
   { name: 'Garibaldi',      lat: 45.5597, lon: -123.9116 },
+  { name: 'Bay City',       lat: 45.5228, lon: -123.8897 },
   { name: 'Rockaway Beach', lat: 45.6136, lon: -123.9434 },
   { name: 'Manzanita',      lat: 45.7189, lon: -123.9353 },
   { name: 'Nehalem',        lat: 45.7158, lon: -123.8956 },
+  { name: 'Wheeler',        lat: 45.6881, lon: -123.8831 },
   { name: 'Pacific City',   lat: 45.2175, lon: -123.9619 },
   { name: 'Netarts',        lat: 45.4347, lon: -123.9436 },
   { name: 'Beaver',         lat: 45.2778, lon: -123.8278 },
