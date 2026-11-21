@@ -8394,7 +8394,7 @@ langSet = function (lang) {
     if (label) label.textContent = dark ? 'Light' : 'Dark';
     btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
     btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    if (meta) meta.setAttribute('content', dark ? '#0b120d' : '#1e4228');
+    if (meta) meta.setAttribute('content', dark ? '#2e3036' : '#f2f3f5');
   }
   btn.addEventListener('click', function () {
     var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
