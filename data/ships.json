@@ -1,63 +1,65 @@
 {
- "fetched_at": "2026-11-22T20:21:58Z",
+ "fetched_at": "2026-11-22T20:51:59Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367498220,
-   "lat": 46.16722,
-   "lon": -123.91626,
-   "sog_kn": 0,
-   "cog": 1.1,
-   "heading": 511,
-   "updated": "2026-11-22 20:22:43.078708416 +0000 UTC"
-  },
-  {
-   "mmsi": 367725050,
-   "lat": 46.16803,
-   "lon": -123.91424,
-   "sog_kn": 0,
-   "cog": 197.9,
-   "heading": 511,
-   "updated": "2026-11-22 20:22:33.911924639 +0000 UTC"
-  },
-  {
-   "mmsi": 368155260,
-   "lat": 46.25852,
-   "lon": -123.99207,
-   "sog_kn": 1.2,
-   "cog": 35.9,
-   "heading": 511,
-   "updated": "2026-11-22 20:22:25.930514938 +0000 UTC"
-  },
-  {
-   "mmsi": 368449610,
-   "lat": 46.30385,
-   "lon": -124.04114,
-   "sog_kn": 0,
-   "cog": 347.7,
-   "heading": 511,
-   "updated": "2026-11-22 20:22:38.729957472 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16783,
-   "lon": -123.91439,
+   "mmsi": 367355270,
+   "lat": 46.16793,
+   "lon": -123.91433,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 20:22:40.644032198 +0000 UTC"
+   "updated": "2026-11-22 20:52:53.828795629 +0000 UTC"
+  },
+  {
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19737,
+   "lon": -123.76311,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USAST",
+   "updated": "2026-11-22 20:52:51.342277125 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 165.5,
+   "heading": 177,
+   "updated": "2026-11-22 20:52:48.799164759 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25731,
-   "lon": -123.98382,
-   "sog_kn": 0.4,
-   "cog": 261.4,
-   "heading": 99,
-   "updated": "2026-11-22 20:22:30.690367854 +0000 UTC"
+   "lat": 46.25725,
+   "lon": -123.98384,
+   "sog_kn": 0.2,
+   "cog": 32.6,
+   "heading": 92,
+   "updated": "2026-11-22 20:52:36.578774827 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19642,
+   "lon": -123.7971,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-22 20:52:57.186691231 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.27116,
+   "lon": -123.95068,
+   "type_code": 33,
+   "type": "Dredging",
+   "updated": "2026-11-22 20:53:01.054954655 +0000 UTC"
   }
  ]
 }
