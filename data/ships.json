@@ -1,35 +1,85 @@
 {
- "fetched_at": "2026-11-22T16:21:56Z",
+ "fetched_at": "2026-11-22T16:51:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367603130,
-   "lat": 46.16722,
-   "lon": -123.9163,
+   "mmsi": 369493011,
+   "lat": 46.28156,
+   "lon": -124.04696,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 27.2,
+   "heading": 305,
+   "updated": "2026-11-22 16:52:55.678360629 +0000 UTC"
+  },
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04671,
+   "sog_kn": 0,
+   "cog": 176.7,
    "heading": 511,
-   "updated": "2026-11-22 16:22:28.340800662 +0000 UTC"
+   "updated": "2026-11-22 16:52:55.397861211 +0000 UTC"
   },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
    "lat": 46.16837,
-   "lon": -123.91839,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-22 16:22:26.742338179 +0000 UTC"
+   "lon": -123.91838,
+   "sog_kn": 0,
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-22 16:52:36.408838146 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30447,
-   "lon": -124.04024,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16843,
+   "lon": -123.91403,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 175.5,
    "heading": 511,
-   "updated": "2026-11-22 16:22:48.75438237 +0000 UTC"
+   "updated": "2026-11-22 16:52:54.026427993 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.1915,
+   "lon": -123.92475,
+   "sog_kn": 0,
+   "cog": 154.1,
+   "heading": 292,
+   "updated": "2026-11-22 16:52:52.9549639 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16783,
+   "lon": -123.91437,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 16:52:50.710624989 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25677,
+   "lon": -123.9859,
+   "sog_kn": 1.4,
+   "cog": 117.6,
+   "heading": 316,
+   "updated": "2026-11-22 16:52:32.505426755 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 332.3,
+   "heading": 306,
+   "updated": "2026-11-22 16:52:38.70633195 +0000 UTC"
   }
  ]
 }
