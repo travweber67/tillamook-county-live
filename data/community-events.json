@@ -303,22 +303,22 @@
   {
    "date": "2026-11-26",
    "img": "img/events/ev-thanksgiving.jpg",
-   "location": "Nehalem Bay Methodist Church, 36050 10th St, Nehalem",
-   "note": "Free community Thanksgiving dinner, 2 to 4 PM at Nehalem Bay Methodist Church in Nehalem, hosted with Big Shaun's Smash Burgers. Everyone is welcome. Pick a seating time (2:00, 2:30, 3:00 or 3:30 PM, 45 seats each) at the sign-up link so they can seat everyone.",
-   "source": "Facebook",
-   "time": "2:00 PM",
-   "title": "Community Thanksgiving Dinner",
-   "url": "https://www.signupgenius.com/go/20F0C4DAAA92AA1FFC52-67443231-community"
-  },
-  {
-   "date": "2026-11-26",
-   "img": "img/events/ev-thanksgiving.jpg",
    "location": "Upstairs Bar & Grill, Tillamook",
    "note": "A Thanksgiving meal at Upstairs Bar & Grill in Tillamook, 11 AM to 4 PM — smoked turkey, mashed potatoes and gravy, green bean casserole, stuffing, cranberry sauce and a slice of pie. All meals are donation only, and proceeds go to Shop with a Cop. Need help with a meal? Call 503-815-1687.",
    "source": "Facebook",
    "time": "11:00 AM",
    "title": "Thanksgiving Meal at Upstairs Bar & Grill",
    "url": "https://facebook.com/groups/1341387313519073/permalink/1864228994568233/"
+  },
+  {
+   "date": "2026-11-26",
+   "img": "img/events/ev-thanksgiving.jpg",
+   "location": "Nehalem Bay Methodist Church, 36050 10th St, Nehalem",
+   "note": "Free community Thanksgiving dinner, 2 to 4 PM at Nehalem Bay Methodist Church in Nehalem, hosted with Big Shaun's Smash Burgers. Everyone is welcome. Pick a seating time (2:00, 2:30, 3:00 or 3:30 PM, 45 seats each) at the sign-up link so they can seat everyone.",
+   "source": "Facebook",
+   "time": "2:00 PM",
+   "title": "Community Thanksgiving Dinner",
+   "url": "https://www.signupgenius.com/go/20F0C4DAAA92AA1FFC52-67443231-community"
   },
   {
    "date": "2026-11-27",
@@ -365,16 +365,6 @@
   },
   {
    "date": "2026-11-28",
-   "img": "img/events/ev-market.jpg",
-   "location": "2203 Main Ave N Suite E, Tillamook",
-   "note": "Small Business Saturday at Recycle Video Games in Tillamook, 2203 Main Ave N. Free, as stated in the event listing.",
-   "source": "Facebook",
-   "time": "8:00 PM",
-   "title": "Small Business Saturday @ Recycle Video Games - Tillamook",
-   "url": "https://www.facebook.com/events/1135089809495595/"
-  },
-  {
-   "date": "2026-11-28",
    "img": "img/events/ev-santa.jpg",
    "location": "Cloverdale Cafe & Riverside Lounge, Cloverdale",
    "note": "Santa Claus comes to Cloverdale at the Cloverdale Cafe & Riverside Lounge — festivities start at 5:30 PM and Santa arrives at 6 PM. Free.",
@@ -382,6 +372,16 @@
    "time": "5:30 PM",
    "title": "Santa Claus is Coming to Cloverdale",
    "url": "https://facebook.com/groups/1495579955469684/permalink/1749562926738051/"
+  },
+  {
+   "date": "2026-11-28",
+   "img": "img/events/ev-market.jpg",
+   "location": "2203 Main Ave N Suite E, Tillamook",
+   "note": "Small Business Saturday at Recycle Video Games in Tillamook, 2203 Main Ave N. Free, as stated in the event listing.",
+   "source": "Facebook",
+   "time": "8:00 PM",
+   "title": "Small Business Saturday @ Recycle Video Games - Tillamook",
+   "url": "https://www.facebook.com/events/1135089809495595/"
   },
   {
    "date": "2026-11-29",
@@ -564,6 +564,17 @@
   {
    "date": "2026-12-05",
    "img": "img/events/ev-gingerbread.jpg",
+   "location": "Old Mill Event Hall, 210 3rd St, Garibaldi",
+   "note": "A Christmas-themed Ducks Unlimited banquet at the Old Mill Event Hall in Garibaldi — smoked prime rib dinner with beverages, live and silent auctions, raffles and games. Doors at 5 PM, dinner served at 6:30. Tickets are $390 for a reserved table of 8; space is limited.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "5:00 PM",
+   "title": "Ducks Unlimited 'Duck the Halls' Prime Rib Banquet",
+   "url": "https://ducksunlimited.myeventscenter.com/event/Copy-Of-Dinner-Or-Banquet-Template-130683"
+  },
+  {
+   "date": "2026-12-05",
+   "img": "img/events/ev-gingerbread.jpg",
    "location": "Downtown Tillamook",
    "note": "The Tillamook Holiday Light Parade through downtown, with the city tree lighting the same evening — the county's biggest December night. The source listing doesn't state a cost.",
    "paid": true,
@@ -592,17 +603,6 @@
    "time": "6:00 PM",
    "title": "Wildcraft Wreath Making Workshop",
    "url": "https://www.facebook.com/events/1402851284816608/"
-  },
-  {
-   "date": "2026-12-05",
-   "img": "img/events/ev-gingerbread.jpg",
-   "location": "Old Mill Event Hall, 210 3rd St, Garibaldi",
-   "note": "A Christmas-themed Ducks Unlimited banquet at the Old Mill Event Hall in Garibaldi — smoked prime rib dinner with beverages, live and silent auctions, raffles and games. Doors at 5 PM, dinner served at 6:30. Tickets are $390 for a reserved table of 8; space is limited.",
-   "paid": true,
-   "source": "Facebook",
-   "time": "5:00 PM",
-   "title": "Ducks Unlimited 'Duck the Halls' Prime Rib Banquet",
-   "url": "https://ducksunlimited.myeventscenter.com/event/Copy-Of-Dinner-Or-Banquet-Template-130683"
   },
   {
    "date": "2026-12-06",
@@ -669,6 +669,16 @@
   },
   {
    "date": "2026-12-11",
+   "img": "img/events/ev-gamenight.jpg",
+   "location": "Pastega Activity Center, 3705 3rd St, Tillamook",
+   "note": "Free bowling and a pasta dinner at the Pastega Activity Center in Tillamook, 4 to 7 PM, from Tillamook Family Counseling Center and Tillamook County Public Health. Dinner for the first 100 attendees, plus free safer-home supplies to pick up — overdose reversal kits, medication locks and lock boxes, and first aid kits. Free.",
+   "source": "Facebook",
+   "time": "4:00 PM",
+   "title": "Free Bowling and Pasta Dinner",
+   "url": "https://facebook.com/groups/143847239569000/permalink/2134572833829754/"
+  },
+  {
+   "date": "2026-12-11",
    "img": "img/events/ev-market.jpg",
    "location": "Pioneer Museum, 2106 2nd St, Tillamook",
    "note": "The Pioneer Museum's December Sip+Shop in Tillamook, part of its Festival of Trees season, running 5 to 7 PM. Free admission and free sips, per the museum.",
@@ -687,16 +697,6 @@
    "time": "7:00 PM",
    "title": "The Nutcracker",
    "url": "https://www.facebook.com/events/2413871055816709/"
-  },
-  {
-   "date": "2026-12-11",
-   "img": "img/events/ev-gamenight.jpg",
-   "location": "Pastega Activity Center, 3705 3rd St, Tillamook",
-   "note": "Free bowling and a pasta dinner at the Pastega Activity Center in Tillamook, 4 to 7 PM, from Tillamook Family Counseling Center and Tillamook County Public Health. Dinner for the first 100 attendees, plus free safer-home supplies to pick up — overdose reversal kits, medication locks and lock boxes, and first aid kits. Free.",
-   "source": "Facebook",
-   "time": "4:00 PM",
-   "title": "Free Bowling and Pasta Dinner",
-   "url": "https://facebook.com/groups/143847239569000/permalink/2134572833829754/"
   },
   {
    "date": "2026-12-12",
@@ -752,6 +752,26 @@
    "url": "https://www.facebook.com/events/4469003416687945/"
   },
   {
+   "date": "2026-12-15",
+   "img": "img/events/ev-meeting.jpg",
+   "location": "Pacific Restaurant",
+   "note": "A holiday get-together at Pacific Restaurant in Tillamook for REALTORS and their friends — favorite inspectors, lenders, photographers and other partners are welcome too. A casual night of community and snacks, with one quick raffle supporting the Tillamook Animal Shelter; donations of funds, food, treats, toys, or blankets and towels for the shelter are welcome. The source listing doesn't state a cost.",
+   "source": "Facebook",
+   "time": "5:00 PM",
+   "title": "Tillamook REALTOR and Friends Holiday Party",
+   "url": "https://www.facebook.com/events/4493215427582041/"
+  },
+  {
+   "date": "2026-12-16",
+   "img": "img/events/ev-meeting.jpg",
+   "location": "North County Recreation District, 36155 9th St, Nehalem",
+   "note": "A Red Cross blood drive at the North County Recreation District in Nehalem, running 10 AM to 3 PM. Sign up to give blood.",
+   "source": "Facebook",
+   "time": "10:00 AM",
+   "title": "Red Cross Blood Drive",
+   "url": "https://www.facebook.com/events/2138236953565839/"
+  },
+  {
    "date": "2026-12-17",
    "img": "img/events/ev-gamenight.jpg",
    "location": "Manzanita Library, 571 Laneda Ave, Manzanita",
@@ -782,6 +802,27 @@
    "url": "https://tillamookchamber.org/events/list/page/9/?tribe-bar-date=2026-11-25&tribe_geofence=5"
   },
   {
+   "date": "2026-12-18",
+   "img": "img/events/ev-gingerbread.jpg",
+   "location": "Tillamook County Library, 1716 3rd St, Tillamook",
+   "note": "Teens ages 12 to 19 make holiday ornaments at the Tillamook County Library. Free library program.",
+   "source": "Facebook",
+   "time": "3:00 PM",
+   "title": "Teen Holiday Craft at Tillamook Library",
+   "url": "https://www.facebook.com/events/2172315650325353/"
+  },
+  {
+   "date": "2026-12-18",
+   "img": "img/events/ev-music.jpg",
+   "location": "Bay City Arts Center, 5680 A St, Bay City",
+   "note": "The Bay City Arts Center's fall musical — a meta-comedy about a man who lands in a world where everyone bursts into song. Adults $20 ($15 for members), youth 12 to 17 $10; runs about 2 hours 15 minutes with a 10-minute intermission. The show has adult content some may not find suitable for children. All proceeds support the Bay City Arts Center.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "6:00 PM",
+   "title": "Bay City Arts Center Presents \"The Guy Who Didn't Like Musicals\"",
+   "url": "https://www.facebook.com/events/1127492790200570/"
+  },
+  {
    "date": "2026-12-19",
    "img": "img/events/ev-gamenight.jpg",
    "location": "Tillamook County Library, 1716 3rd St, Tillamook",
@@ -800,6 +841,37 @@
    "time": "10:00 AM",
    "title": "Saturday Morning Family Fun at Pacific City Library",
    "url": "https://tillamookchamber.org/events/list/page/9/?tribe-bar-date=2026-11-25&tribe_geofence=5"
+  },
+  {
+   "date": "2026-12-19",
+   "img": "img/events/ev-santa.jpg",
+   "location": "The Little Lounge, 1902 First St, Tillamook",
+   "note": "Festive play in Christmas Town plus Christmas crafts at The Little Lounge in Tillamook, with a special appearance from Santa — he arrives at 11:30 AM and the fun runs to 1 PM. Bring your camera for Santa photos. For ages 10 and under; one adult is included with each child's admission, socks are required for everyone entering the play space (included with the ticket), and spaces are limited — reserve ahead.",
+   "source": "Facebook",
+   "time": "11:00 AM",
+   "title": "Meet Santa",
+   "url": "https://www.facebook.com/events/1135529358887978/"
+  },
+  {
+   "date": "2026-12-19",
+   "img": "img/events/ev-music.jpg",
+   "location": "Pacific City Library, 6200 Camp St, Pacific City",
+   "note": "The 3rd Saturday movie matinee at the Pacific City Library. Free library program.",
+   "source": "Facebook",
+   "time": "2:00 PM",
+   "title": "Movie Matinee at Pacific City Library",
+   "url": "https://www.facebook.com/events/2250106495730986/"
+  },
+  {
+   "date": "2026-12-20",
+   "img": "img/events/ev-beachcleanup.jpg",
+   "location": "Elk Flats Trailhead",
+   "note": "Onward Adventures' monthly hike shuttle: park at the Elk Flats trailhead, ride to Manzanita, then hike the Oregon Coast Trail back to your car at your own pace. $10 per person; advance reservations required — call or text 503-741-9790. It is a shuttle service, not a guided hike.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "9:00 AM",
+   "title": "SUNDAY HIKE SHUTTLE: NEAHKAHNIE–OREGON COAST TRAIL",
+   "url": "https://www.facebook.com/events/1803905680737536/"
   },
   {
    "date": "2026-12-31",
