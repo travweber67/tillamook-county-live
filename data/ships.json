@@ -1,47 +1,79 @@
 {
- "fetched_at": "2026-11-22T19:21:57Z",
+ "fetched_at": "2026-11-22T19:51:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303679000,
-   "name": "DEFIANT",
-   "lat": 46.16935,
-   "lon": -123.91362,
+   "mmsi": 367439830,
+   "lat": 46.16882,
+   "lon": -123.91387,
    "sog_kn": 0,
-   "cog": 165.9,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 19:22:15.925407731 +0000 UTC"
+   "updated": "2026-11-22 19:52:39.57790283 +0000 UTC"
+  },
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.24989,
+   "lon": -124.03192,
+   "sog_kn": 1.7,
+   "cog": 239.1,
+   "heading": 511,
+   "updated": "2026-11-22 19:52:38.557479169 +0000 UTC"
+  },
+  {
+   "mmsi": 367355270,
+   "name": "CALAMARI",
+   "lat": 46.1679,
+   "lon": -123.91432,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 19:52:54.063259495 +0000 UTC"
   },
   {
    "mmsi": 303284000,
    "name": "DISCOVERY",
-   "lat": 46.19738,
+   "lat": 46.19739,
    "lon": -123.76312,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 19:22:39.644161251 +0000 UTC"
+   "updated": "2026-11-22 19:52:52.656694778 +0000 UTC",
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USAST"
   },
   {
-   "mmsi": 367725050,
-   "name": "SWELL RIDER",
-   "lat": 46.16801,
-   "lon": -123.91425,
-   "sog_kn": 0,
-   "cog": 203.4,
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20395,
+   "lon": -123.79403,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-22 19:52:56.318934301 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.24174,
+   "lon": -124.0362,
+   "sog_kn": 2.9,
+   "cog": 175.3,
    "heading": 511,
-   "updated": "2026-11-22 19:22:31.508475723 +0000 UTC"
+   "updated": "2026-11-22 19:52:49.697454926 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27187,
-   "lon": -123.95166,
+   "mmsi": 367187080,
+   "name": "OCEAN BEAUT",
+   "lat": 46.16904,
+   "lon": -123.91375,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 135,
-   "updated": "2026-11-22 19:22:34.763312492 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 19:52:36.195175333 +0000 UTC"
   }
  ]
 }
