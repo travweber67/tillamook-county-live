@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T08:52:37Z",
+ "fetched_at": "2026-11-22T09:22:43Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -153,21 +153,21 @@
    "tier": "high"
   },
   {
-   "title": "OREGON DEPT. OF FISH & WILDLIFE: Oregon’s Commercial Dungeness Crab Season Delayed until Dec. 16",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-oregons-commercial-dungeness-crab-season-delayed-until-dec-16/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/11/crabpots.jpg",
-   "date": "2026-11-21",
-   "summary": "(NEWPORT, OR) – Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today. Pre-season testing in the area from...",
-   "tier": "useful"
-  },
-  {
    "title": "Oregon King Tides Arrive in November – First Series Nov. 23-27",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-king-tides-arrive-in-november-first-series-nov-23-27/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/2026-2027-King-Tides-Flyer-1-page-001-927x1200.jpg",
    "date": "2026-11-21",
    "summary": "The first series of king tides, the highest high tides of the year, is coming up November 23 to 27, 2026. If you are on Oregon’s coast, you are invited to...",
+   "tier": "useful"
+  },
+  {
+   "title": "OREGON DEPT. OF FISH & WILDLIFE: Oregon’s Commercial Dungeness Crab Season Delayed until Dec. 16",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-oregons-commercial-dungeness-crab-season-delayed-until-dec-16/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/11/crabpots.jpg",
+   "date": "2026-11-21",
+   "summary": "(NEWPORT, OR) – Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today. Pre-season testing in the area from...",
    "tier": "useful"
   },
   {

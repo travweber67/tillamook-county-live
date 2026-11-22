@@ -1,77 +1,96 @@
 {
- "fetched_at": "2026-11-22T08:51:51Z",
+ "fetched_at": "2026-11-22T09:21:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367070360,
-   "lat": 46.1672,
-   "lon": -123.91739,
+   "mmsi": 367187080,
+   "lat": 46.16907,
+   "lon": -123.91373,
    "sog_kn": 0,
-   "cog": 79.6,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 08:52:07.848350307 +0000 UTC"
+   "updated": "2026-11-22 09:22:36.758687497 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16846,
-   "lon": -123.91404,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16836,
+   "lon": -123.9184,
    "sog_kn": 0,
-   "cog": 345.2,
-   "heading": 511,
-   "updated": "2026-11-22 08:52:12.945111076 +0000 UTC",
-   "type_code": 30,
-   "type": "Fishing"
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-22 09:22:23.276114564 +0000 UTC"
   },
   {
-   "mmsi": 368017810,
-   "name": "FV CHARLEY",
-   "lat": 46.16722,
-   "lon": -123.91836,
-   "sog_kn": 0,
-   "cog": 250,
-   "heading": 511,
-   "updated": "2026-11-22 08:52:17.663398719 +0000 UTC"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20387,
-   "lon": -123.79762,
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 46.19924,
+   "lon": -123.83044,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-22 08:52:09.875928712 +0000 UTC"
+   "destination": "US PDX",
+   "updated": "2026-11-22 09:22:15.343242153 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30449,
-   "lon": -124.04023,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 08:52:28.939901525 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85418,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-22 08:52:18.893819207 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27136,
-   "lon": -123.95094,
-   "sog_kn": 0.4,
-   "cog": 164,
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.27079,
+   "lon": -123.94659,
+   "sog_kn": 0.1,
+   "cog": 332.7,
    "heading": 511,
-   "updated": "2026-11-22 08:52:02.598121112 +0000 UTC"
+   "updated": "2026-11-22 09:22:36.459712866 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 182.4,
+   "heading": 178,
+   "updated": "2026-11-22 09:22:37.663037592 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16813,
+   "lon": -123.91422,
+   "sog_kn": 0,
+   "cog": 8.3,
+   "heading": 511,
+   "updated": "2026-11-22 09:22:38.26011305 +0000 UTC"
+  },
+  {
+   "mmsi": 636022754,
+   "name": "LIBRA LEADER",
+   "lat": 45.67623,
+   "lon": -124.75107,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "JP THS",
+   "updated": "2026-11-22 09:22:10.598031374 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19997,
+   "lon": -123.76044,
+   "sog_kn": 0,
+   "cog": 352.1,
+   "heading": 511,
+   "updated": "2026-11-22 09:22:24.156156029 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16778,
+   "lon": -123.91442,
+   "sog_kn": 0,
+   "cog": 194.3,
+   "heading": 511,
+   "updated": "2026-11-22 09:22:22.674097446 +0000 UTC"
   }
  ]
 }
