@@ -1,15 +1,16 @@
 {
- "fetched_at": "2026-11-22T00:51:43Z",
+ "fetched_at": "2026-11-22T01:21:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999892,
-   "lat": 46.28123,
-   "lon": -124.04627,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-22 00:52:04.841943473 +0000 UTC"
+   "mmsi": 368017810,
+   "lat": 46.1672,
+   "lon": -123.91835,
+   "sog_kn": 0,
+   "cog": 250,
+   "heading": 511,
+   "updated": "2026-11-22 01:22:18.418405912 +0000 UTC"
   },
   {
    "mmsi": 369493291,
@@ -19,109 +20,27 @@
    "sog_kn": 0,
    "cog": 231.8,
    "heading": 511,
-   "updated": "2026-11-22 00:52:29.117132484 +0000 UTC"
+   "updated": "2026-11-22 01:22:19.27662433 +0000 UTC"
   },
   {
-   "mmsi": 366999922,
-   "name": "CG47284",
-   "lat": 46.28132,
-   "lon": -124.04675,
-   "sog_kn": 0,
-   "cog": 191.1,
-   "heading": 511,
-   "updated": "2026-11-22 00:52:03.593792046 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "sog_kn": 0,
-   "cog": 281.1,
-   "heading": 168,
-   "updated": "2026-11-22 00:52:10.913625979 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16849,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 9,
-   "heading": 511,
-   "updated": "2026-11-22 00:52:25.053698486 +0000 UTC"
-  },
-  {
-   "mmsi": 538011145,
-   "name": "FORTUNE BREEZE",
-   "lat": 46.21116,
-   "lon": -123.77739,
-   "sog_kn": 0,
-   "cog": 329.3,
-   "heading": 64,
-   "updated": "2026-11-22 00:52:24.902555743 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.2179,
-   "lon": -123.95083,
-   "sog_kn": 6.6,
-   "cog": 132.5,
-   "heading": 130,
-   "updated": "2026-11-22 00:52:02.871034047 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16785,
-   "lon": -123.91436,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 00:52:12.034540119 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16709,
-   "lon": -123.91807,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 00:52:25.356105102 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 8.7,
-   "heading": 511
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 46.20321,
+   "lon": -123.80546,
+   "sog_kn": 8.4,
+   "cog": 61.5,
+   "heading": 62,
+   "updated": "2026-11-22 01:21:53.798301637 +0000 UTC"
   },
   {
    "mmsi": 368202070,
    "name": "TERILYN",
-   "lat": 46.27158,
-   "lon": -123.95091,
-   "sog_kn": 0.7,
-   "cog": 128.7,
-   "heading": 132,
-   "updated": "2026-11-22 00:52:13.938163125 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76903,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-22 00:52:02.443997342 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86174,
+   "lat": 46.27124,
+   "lon": -123.95046,
    "sog_kn": 0,
-   "cog": 206.3,
-   "heading": 308,
-   "updated": "2026-11-22 00:51:58.646506291 +0000 UTC"
+   "cog": 0,
+   "heading": 132,
+   "updated": "2026-11-22 01:22:14.934109618 +0000 UTC"
   }
  ]
 }
