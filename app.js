@@ -6823,6 +6823,7 @@ const LANG_ES = {
   evcalnote: '¿Vas a ir? Toca <strong>＋ Agregar</strong> en cualquier evento y llega a tu propio calendario — con la hora convertida y la página oficial adjunta — para que tu teléfono te lo recuerde el mismo día.',
   eventsnote: "Recogido por nuestro recolector de los calendarios oficiales del condado y las ciudades. Fuentes oficiales: <a href=\"https://www.tillamookcounty.gov/\" target=\"_blank\" rel=\"noopener\">Condado de Tillamook</a> · <a href=\"https://www.tillamookor.gov/\" target=\"_blank\" rel=\"noopener\">Ciudad de Tillamook</a>",
   eventadd: '¿Tiene un negocio o grupo local? Agregue su evento →',
+  evaddstrip: 'Agrega un evento — gratis, o destaca el tuyo hasta arriba',
   alertsh2: 'Alertas del clima',
   alertslink: 'Servicio Meteorológico Nacional — oficina de Portland →',
   forecasth2: 'Pronóstico',
@@ -8266,13 +8267,14 @@ initSponsorLink();
    Submissions land in the form inbox and pass a human review before
    anything is added to the events list — the review gate is the
    feature's load-bearing wall, same as photo submissions. */
-const EVENT_FORM_URL = ''; // TCL v1: no event form yet — no submit link is shown
+const EVENT_FORM_URL = ''; // TCL: no Tillamook event form yet - the add-an-event strip (#event-submit-link, index.html) stays hidden until this is set
 function initEventLink() {
   const a = $('event-submit-link');
   if (!a || !EVENT_FORM_URL) return;
   a.href = EVENT_FORM_URL;
   a.target = '_blank';
   a.rel = 'noopener';
+  a.hidden = false;
 }
 initEventLink();
 
