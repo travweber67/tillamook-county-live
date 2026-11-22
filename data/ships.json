@@ -1,54 +1,84 @@
 {
- "fetched_at": "2026-11-22T09:51:52Z",
+ "fetched_at": "2026-11-22T10:21:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 367439830,
+   "lat": 46.16882,
+   "lon": -123.91389,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 10:22:42.742442433 +0000 UTC"
+  },
+  {
+   "mmsi": 367603130,
+   "lat": 46.16723,
+   "lon": -123.91636,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 10:22:27.497376063 +0000 UTC"
+  },
+  {
    "mmsi": 367725050,
-   "lat": 46.16802,
-   "lon": -123.91426,
+   "lat": 46.16805,
+   "lon": -123.91422,
    "sog_kn": 0,
-   "cog": 158.4,
+   "cog": 237.5,
    "heading": 511,
-   "updated": "2026-11-22 09:52:35.831774949 +0000 UTC"
+   "updated": "2026-11-22 10:22:31.346873819 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.914,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 09:52:46.734772842 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16709,
-   "lon": -123.91809,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 09:52:40.764668846 +0000 UTC"
-  },
-  {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28158,
-   "lon": -124.04679,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16846,
+   "lon": -123.91404,
    "sog_kn": 0,
-   "cog": 49.9,
+   "cog": 10.5,
    "heading": 511,
-   "updated": "2026-11-22 09:52:50.598804889 +0000 UTC"
+   "updated": "2026-11-22 10:22:34.181839796 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.2589,
-   "lon": -123.96734,
-   "sog_kn": 4.8,
-   "cog": 210.1,
-   "heading": 197,
-   "updated": "2026-11-22 09:52:34.354502872 +0000 UTC"
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16785,
+   "lon": -123.91437,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 10:22:21.307215489 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16773,
+   "lon": -123.91444,
+   "sog_kn": 0,
+   "cog": 208.5,
+   "heading": 511,
+   "updated": "2026-11-22 10:22:32.768031373 +0000 UTC"
+  },
+  {
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.19115,
+   "lon": -123.89302,
+   "sog_kn": 10.1,
+   "cog": 90,
+   "heading": 90,
+   "updated": "2026-11-22 10:22:29.867877747 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16563,
+   "lon": -123.92201,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 10:22:36.632734332 +0000 UTC"
   }
  ]
 }
