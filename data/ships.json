@@ -1,65 +1,55 @@
 {
- "fetched_at": "2026-11-22T07:51:51Z",
+ "fetched_at": "2026-11-22T08:21:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367603130,
-   "name": "CAPE WINDY",
-   "lat": 46.16722,
-   "lon": -123.91632,
+   "mmsi": 366970430,
+   "lat": 46.19255,
+   "lon": -123.85255,
+   "sog_kn": 5.7,
+   "cog": 59,
+   "heading": 511,
+   "updated": "2026-11-22 08:22:24.586575991 +0000 UTC"
+  },
+  {
+   "mmsi": 367070360,
+   "lat": 46.16721,
+   "lon": -123.91742,
+   "sog_kn": 0,
+   "cog": 79.6,
+   "heading": 511,
+   "updated": "2026-11-22 08:22:09.138951437 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16848,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 08:22:34.332311638 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16782,
+   "lon": -123.91435,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 07:52:27.060381289 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.91837,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-22 07:52:23.181554498 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.19607,
-   "lon": -124.46151,
-   "sog_kn": 10.4,
-   "cog": 88.3,
-   "heading": 101,
-   "updated": "2026-11-22 07:52:29.136186528 +0000 UTC"
+   "updated": "2026-11-22 08:22:31.978713929 +0000 UTC"
   },
   {
    "mmsi": 440245000,
    "name": "GLOVIS SUMMIT",
-   "lat": 46.36597,
-   "lon": -124.91739,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USTIW",
-   "updated": "2026-11-22 07:52:11.961939233 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30448,
-   "lon": -124.04023,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 07:52:25.752876156 +0000 UTC"
-  },
-  {
-   "mmsi": 538010248,
-   "name": "SAFEEN AL AMAL",
-   "lat": 46.14035,
-   "lon": -124.38536,
-   "sog_kn": 4.8,
-   "cog": 43.5,
-   "heading": 79,
-   "updated": "2026-11-22 07:52:11.056074924 +0000 UTC"
+   "lat": 46.38249,
+   "lon": -124.91503,
+   "sog_kn": 1.8,
+   "cog": 13.4,
+   "heading": 282,
+   "updated": "2026-11-22 08:22:29.324190795 +0000 UTC"
   }
  ]
 }
