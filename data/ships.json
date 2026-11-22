@@ -1,121 +1,47 @@
 {
- "fetched_at": "2026-11-22T18:51:57Z",
+ "fetched_at": "2026-11-22T19:21:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367197230,
-   "lat": 46.1693,
+   "mmsi": 303679000,
+   "name": "DEFIANT",
+   "lat": 46.16935,
    "lon": -123.91362,
    "sog_kn": 0,
-   "cog": 229.9,
+   "cog": 165.9,
    "heading": 511,
-   "updated": "2026-11-22 18:52:48.44783664 +0000 UTC"
+   "updated": "2026-11-22 19:22:15.925407731 +0000 UTC"
   },
   {
-   "mmsi": 367355270,
-   "lat": 46.16792,
-   "lon": -123.91433,
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19738,
+   "lon": -123.76312,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 18:52:52.270274777 +0000 UTC"
+   "updated": "2026-11-22 19:22:39.644161251 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.91403,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 18:52:47.11184668 +0000 UTC"
-  },
-  {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16727,
-   "lon": -123.91595,
+   "mmsi": 367725050,
+   "name": "SWELL RIDER",
+   "lat": 46.16801,
+   "lon": -123.91425,
    "sog_kn": 0,
-   "cog": 17.3,
+   "cog": 203.4,
    "heading": 511,
-   "updated": "2026-11-22 18:52:28.091994823 +0000 UTC"
+   "updated": "2026-11-22 19:22:31.508475723 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28121,
-   "lon": -124.04686,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-22 18:52:53.304542253 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.1685,
-   "lon": -123.91403,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27187,
+   "lon": -123.95166,
    "sog_kn": 0,
-   "cog": 17.2,
-   "heading": 511,
-   "updated": "2026-11-22 18:52:45.051639456 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.25017,
-   "lon": -123.95073,
-   "sog_kn": 0.1,
-   "cog": 23.5,
-   "heading": 322,
-   "updated": "2026-11-22 18:52:43.350613169 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.91792,
-   "sog_kn": 0,
-   "cog": 346.6,
-   "heading": 177,
-   "updated": "2026-11-22 18:52:37.759157014 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30449,
-   "lon": -124.04023,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 18:52:27.638045048 +0000 UTC"
-  },
-  {
-   "mmsi": 367085290,
-   "name": "MARATHON",
-   "lat": 46.06886,
-   "lon": -124.18655,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 18:52:31.726713315 +0000 UTC"
-  },
-  {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 46.1976,
-   "lon": -123.81831,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "KALAMA USA",
-   "updated": "2026-11-22 18:52:39.668990923 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76904,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-22 18:52:53.797168025 +0000 UTC"
+   "cog": 0,
+   "heading": 135,
+   "updated": "2026-11-22 19:22:34.763312492 +0000 UTC"
   }
  ]
 }
