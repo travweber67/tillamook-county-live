@@ -1,66 +1,57 @@
 {
- "fetched_at": "2026-11-22T04:21:49Z",
+ "fetched_at": "2026-11-22T04:51:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16853,
+   "lon": -123.914,
+   "sog_kn": 0,
+   "cog": 177.8,
+   "heading": 511,
+   "updated": "2026-11-22 04:52:07.506980479 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28132,
+   "lon": -124.04677,
+   "sog_kn": 0,
+   "cog": 191.1,
+   "heading": 511,
+   "updated": "2026-11-22 04:52:04.074743408 +0000 UTC"
+  },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16836,
-   "lon": -123.91837,
+   "lat": 46.1684,
+   "lon": -123.91835,
    "sog_kn": 0,
    "cog": 29.2,
    "heading": 350,
-   "updated": "2026-11-22 04:22:13.923798106 +0000 UTC"
+   "updated": "2026-11-22 04:52:02.963569383 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19239,
-   "lon": -123.82567,
-   "sog_kn": 9,
-   "cog": 248.9,
-   "heading": 247,
-   "updated": "2026-11-22 04:22:08.434929822 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 46.19196,
-   "lon": -124.46156,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US PDX",
-   "updated": "2026-11-22 04:22:10.597493675 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16707,
-   "lon": -123.91809,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 04:22:25.21025445 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19991,
-   "lon": -123.76046,
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16783,
+   "lon": -123.9144,
    "sog_kn": 0,
-   "cog": 200.1,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 04:22:24.016940166 +0000 UTC"
+   "updated": "2026-11-22 04:52:02.495803228 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85418,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-22 04:22:18.598876967 +0000 UTC"
+   "mmsi": 367309370,
+   "name": "PACIFIC EAGLE",
+   "lat": 46.19178,
+   "lon": -123.92515,
+   "type_code": 52,
+   "type": "Tug",
+   "destination": "WARRENTON",
+   "updated": "2026-11-22 04:52:02.426887452 +0000 UTC"
   }
  ]
 }
