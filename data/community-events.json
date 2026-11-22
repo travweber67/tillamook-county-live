@@ -160,6 +160,28 @@
    "url": "https://www.facebook.com/events/1887427545676150/"
   },
   {
+   "date": "2026-11-22",
+   "img": "img/events/ev-music.jpg",
+   "location": "1204 Ivy Ave, Tillamook",
+   "note": "TAPA, the Tillamook Association for the Performing Arts, stages Stephen Sondheim's musical at the Barn theater, weaving Cinderella, Jack, Little Red Riding Hood and Rapunzel around a baker and his wife trying to break a curse. Paid event - tickets through the theater's website.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "2:00 PM",
+   "title": "Into the Woods",
+   "url": "https://tillamooktheater.ludus.com/index.php"
+  },
+  {
+   "date": "2026-11-22",
+   "img": "img/events/ev-crab.jpg",
+   "location": "Bay City Kitchen, Bay City",
+   "note": "A three-course night at Bay City Kitchen: Josi Farms kale Caesar with house smoked black cod, then your choice of a Dungeness crab bouillabaisse or a grilled porcini mushroom risotto, and a chocolate coconut budino for dessert. $35 per person, served 3 to 8 PM - call 971-287-2828 ahead to guarantee a seat.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "3:00 PM",
+   "title": "Bouillabaisse or Risotto!",
+   "url": "https://www.facebook.com/events/1854249382376785/"
+  },
+  {
    "date": "2026-11-23",
    "img": "img/bg/bg-day-4.jpg",
    "location": "34600 Cape Kiwanda Dr, Pacific City",
@@ -706,6 +728,28 @@
    "time": "5:00 PM",
    "title": "Festival of Trees Gala & Silent Auction",
    "url": "https://www.facebook.com/events/2694572320976432/"
+  },
+  {
+   "date": "2026-12-13",
+   "img": "img/events/ev-beachcleanup.jpg",
+   "location": "Tillamook Head trailhead, Seaside",
+   "note": "Onward Adventures shuttles you from the Tillamook Head trailhead in Seaside to Indian Beach at Ecola State Park, and you hike the coastal forest trail back to your car at your own pace. $10 per person; advance reservations required - call or text 503-741-9790. A shuttle service, not a guided hike.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "9:00 AM",
+   "title": "Sunday Hike Shuttle: Tillamook Head Trail",
+   "url": "https://www.facebook.com/events/1030957449928931/"
+  },
+  {
+   "date": "2026-12-13",
+   "img": "img/events/ev-gamenight.jpg",
+   "location": "The Winery at Manzanita, Manzanita",
+   "note": "A boutique paint class at The Winery at Manzanita, with step-by-step instruction from a local artist - all skill levels welcome and all materials provided, plus a $10 credit toward your winery purchase. Paid event - see the event page for tickets.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "1:00 PM",
+   "title": "Paint and Sip December 13th",
+   "url": "https://www.facebook.com/events/4469003416687945/"
   },
   {
    "date": "2026-12-17",
