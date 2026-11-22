@@ -3541,12 +3541,20 @@ async function loadGlance() {
       updateGlanceRiver();
     }
   } catch (e) { /* keep placeholder */ }
-  // Next event tile — from the events snapshot, FB events merged in
+  // Next event tile — the SAME merged list the Today scroller uses
+  // (Travis, 2026-11-21): the official calendars tagged municipal,
+  // Facebook events and the hand-added community file merged in,
+  // municipal entries filtered OUT. The tile used to build its own
+  // list from the calendars + Facebook only and named a routine
+  // 'Community Update' meeting while community events ran that day.
+  // No featured tiering here — the soonest community event wins.
   try {
     const snap = await getSnapshot('events.json');
     const fbSnap = await getFbEventsSnap();
+    const cSnap = await getCommunityEventsSnap();
     const today = todayStrPT();
-    const evs = mergeFbInto(snap.events || [], fbSnap).filter(ev => ev.date >= today).slice().sort((a, b) =>
+    const base = (snap.events || []).map(ev => ev ? Object.assign({}, ev, { kind: 'muni' }) : ev);
+    const evs = mergeCommunityInto(mergeFbInto(base, fbSnap), cSnap).filter(ev => ev.date >= today && evKindOf(ev) !== 'muni').slice().sort((a, b) =>
       a.date === b.date ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
                         : (a.date < b.date ? -1 : 1));
     const el = $('glance-events-val');
@@ -4320,7 +4328,7 @@ function homeGlancePass() {
   if (!homeTown || !eventsCache || !eventsCache.events) return;
   const today = todayStrPT();
   const mine = eventsCache.events
-    .filter(ev => ev.date >= today && (ev.source || '').indexOf(homeTown.name) !== -1)
+    .filter(ev => ev.date >= today && evKindOf(ev) !== 'muni' && (ev.source || '').indexOf(homeTown.name) !== -1)
     .sort((a, b) => a.date === b.date
       ? parseTimeToMinutes(a.time) - parseTimeToMinutes(b.time)
       : (a.date < b.date ? -1 : 1));
