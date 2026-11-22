@@ -1,55 +1,77 @@
 {
- "fetched_at": "2026-11-22T08:21:51Z",
+ "fetched_at": "2026-11-22T08:51:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366970430,
-   "lat": 46.19255,
-   "lon": -123.85255,
-   "sog_kn": 5.7,
-   "cog": 59,
-   "heading": 511,
-   "updated": "2026-11-22 08:22:24.586575991 +0000 UTC"
-  },
-  {
    "mmsi": 367070360,
-   "lat": 46.16721,
-   "lon": -123.91742,
+   "lat": 46.1672,
+   "lon": -123.91739,
    "sog_kn": 0,
    "cog": 79.6,
    "heading": 511,
-   "updated": "2026-11-22 08:22:09.138951437 +0000 UTC"
+   "updated": "2026-11-22 08:52:07.848350307 +0000 UTC"
   },
   {
    "mmsi": 367327250,
    "name": "ENDEAVOR",
-   "lat": 46.16848,
-   "lon": -123.91403,
+   "lat": 46.16846,
+   "lon": -123.91404,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 345.2,
    "heading": 511,
-   "updated": "2026-11-22 08:22:34.332311638 +0000 UTC"
+   "updated": "2026-11-22 08:52:12.945111076 +0000 UTC",
+   "type_code": 30,
+   "type": "Fishing"
   },
   {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16782,
-   "lon": -123.91435,
+   "mmsi": 368017810,
+   "name": "FV CHARLEY",
+   "lat": 46.16722,
+   "lon": -123.91836,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 250,
    "heading": 511,
-   "updated": "2026-11-22 08:22:31.978713929 +0000 UTC"
+   "updated": "2026-11-22 08:52:17.663398719 +0000 UTC"
   },
   {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 46.38249,
-   "lon": -124.91503,
-   "sog_kn": 1.8,
-   "cog": 13.4,
-   "heading": 282,
-   "updated": "2026-11-22 08:22:29.324190795 +0000 UTC"
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20387,
+   "lon": -123.79762,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-22 08:52:09.875928712 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30449,
+   "lon": -124.04023,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 08:52:28.939901525 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18993,
+   "lon": -123.85418,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-22 08:52:18.893819207 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.27136,
+   "lon": -123.95094,
+   "sog_kn": 0.4,
+   "cog": 164,
+   "heading": 511,
+   "updated": "2026-11-22 08:52:02.598121112 +0000 UTC"
   }
  ]
 }

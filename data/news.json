@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T08:22:40Z",
+ "fetched_at": "2026-11-22T08:52:37Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -18,7 +18,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-forestry-state-capitol-gets-its-holiday-tree-from-tillamook-state-forest/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CapitolTreeloadup2-225x300.jpg",
-   "date": "2026-11-22",
+   "date": "2026-11-21",
    "summary": "Oregon Department of Forestry and Oregon Department of Corrections staff make the delivery (SALEM, OR)—A 30-foot noble fir tree from Tillamook State Forest is now up, decorated, and ready for...",
    "tier": "high"
   },
@@ -27,7 +27,7 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/tillamook-state-forest-noble-fir-is-the-capitols-holiday-tree/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/CapitolTree.jpg",
-   "date": "2026-11-22",
+   "date": "2026-11-21",
    "summary": "A Banks logging company donated its time and equipment to help harvest the 30-foot noble fir, and inmates at the South Fork Forest Camp readied it for the rotunda.",
    "tier": "high"
   },
@@ -157,8 +157,26 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-oregons-commercial-dungeness-crab-season-delayed-until-dec-16/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/11/crabpots.jpg",
-   "date": "2026-11-22",
+   "date": "2026-11-21",
    "summary": "(NEWPORT, OR) – Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today. Pre-season testing in the area from...",
+   "tier": "useful"
+  },
+  {
+   "title": "Oregon King Tides Arrive in November – First Series Nov. 23-27",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/oregon-king-tides-arrive-in-november-first-series-nov-23-27/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/2026-2027-King-Tides-Flyer-1-page-001-927x1200.jpg",
+   "date": "2026-11-21",
+   "summary": "The first series of king tides, the highest high tides of the year, is coming up November 23 to 27, 2026. If you are on Oregon’s coast, you are invited to...",
+   "tier": "useful"
+  },
+  {
+   "title": "Oregon’s commercial Dungeness crab season delayed",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/oregon-s-commercial-dungeness-crab-season-delayed/article_4f502e6f-6d6d-58d8-86af-aeaf0f836c13.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/0/39/039298bb-8f2d-563d-8ae5-0bdc25ffca1f/6b01e35820c7d.image.jpg?resize=300%2C215",
+   "date": "2026-11-21",
+   "summary": "Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today.",
    "tier": "useful"
   },
   {
@@ -166,17 +184,8 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/forester-recommends-smaller-2027-harvest-in-forest-groves-watershed/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/PXL_20220809_162605327.jpg",
-   "date": "2026-11-21",
+   "date": "2026-11-20",
    "summary": "Forest Grove netted about $900,000 from its watershed timber this year, and its forester thinks the city's trees can replace the rotting logs in a Roaring Creek footbridge.",
-   "tier": "useful"
-  },
-  {
-   "title": "Sheriff's Tip of the Week: Holiday shopping safety",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/sheriffs-tip-of-the-week-holiday-shopping-safety/article_1ffef3f4-1f07-5209-96c6-1dbd7df9ba59.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/b4/eb4db40c-8810-5d2d-90bb-2496431f7bab/6aff62331e974.image.png?resize=300%2C250",
-   "date": "2026-11-21",
-   "summary": "With the holiday season beginning there are many things to keep in mind, including travel safety, winter weather preparation, and shopping security. Below are some tips to keep in mind as you shop this holiday season.",
    "tier": "useful"
   },
   {
@@ -184,25 +193,25 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/tillamook-forest-center-to-close-for-the-season-nov-29/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/tfc-sign.webp",
-   "date": "2026-11-21",
+   "date": "2026-11-20",
    "summary": "The Tillamook Forest Center will close Nov. 29, with a few final activities scheduled before the winter closure.",
    "tier": "useful"
   },
   {
-   "title": "Recipe for Holiday Fun: Twin Rocks Friends Camp hosts 3rd Annual Gingerbread Party Dec. 5",
+   "title": "OSU Extension in Tillamook County to hold 2027 Master Gardener Training – Sign up Now!",
    "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/recipe-for-holiday-fun-twin-rocks-friends-camp-hosts-3rd-annual-gingerbread-party-dec-5/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TwinRocksGingerbreadHouseParty12.5.jpg",
-   "date": "2026-11-19",
-   "summary": "Sugar, spice, and everything nice! Twin Rocks Friends Camp is inviting the community to celebrate the season with a day of festive fun at its third annual Gingerbread House Party. Set...",
-   "tier": "useful"
+   "url": "https://www.tillamookcountypioneer.net/osu-extension-in-tillamook-county-to-hold-2027-master-gardener-training-sign-up-now/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/MGTraining27.jpg",
+   "date": "2026-11-21",
+   "summary": "The Oregon State University Extension Service in Tillamook County welcomes the public to participate in the 2027 Master Gardener Volunteer Training from January 7th to April 1st, 2027. The Master Gardener...",
+   "tier": "routine"
   },
   {
    "title": "Tualatin SWCD receives federal fish-passage money held up over paperwork",
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/tualatin-swcd-gets-federal-fish-passage-money-held-up-over-paperwork/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/1-NRCS---new-bridge-with-NRCS-engineers--Aug-7-2025--public-domain-.jpg",
-   "date": "2026-11-21",
+   "date": "2026-11-20",
    "summary": "The Tualatin Soil and Water Conservation District received $610,953.03 on Nov. 4 for fish-passage work on Coffee and Finger creeks, tributaries of Gales Creek, more than a year after construction ended.",
    "tier": "routine"
   },
@@ -211,17 +220,8 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/nehalem-council-discusses-watershed-management-plan/article_c15cfd10-9a32-4c2f-8bea-4dd632fb4c1a.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/d/58/d588c972-6870-11ea-9206-c3872b132051/5e71026475865.image.jpg?crop=1443%2C813%2C121%2C203&resize=300%2C169&order=crop%2Cresize",
-   "date": "2026-11-21",
+   "date": "2026-11-20",
    "summary": "Nehalem City Council discussed the first draft of a watershed management plan that is currently being developed for city owned forestland containing the city’s drinking water sources on November 10.",
-   "tier": "routine"
-  },
-  {
-   "title": "County leaders discuss annex fits",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/county-leaders-discuss-annex-fits/article_5aec39f9-529b-4fa8-bbc0-11ddf29f7b13.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/3/20/320affe2-ee88-41c2-88a8-ac45adb09e67/6a90792e5fc29.image.jpg?resize=300%2C225",
-   "date": "2026-11-19",
-   "summary": "As part of ongoing discussions regarding how to use the county-owned, ex-Bureau of Land Management building on Third Street, county leaders reviewed two preliminary potential layouts for the building on November 10.",
    "tier": "routine"
   }
  ]
