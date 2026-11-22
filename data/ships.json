@@ -1,46 +1,83 @@
 {
- "fetched_at": "2026-11-22T01:21:43Z",
+ "fetched_at": "2026-11-22T01:51:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368017810,
-   "lat": 46.1672,
-   "lon": -123.91835,
+   "mmsi": 303679000,
+   "lat": 46.16936,
+   "lon": -123.91362,
    "sog_kn": 0,
-   "cog": 250,
+   "cog": 12,
    "heading": 511,
-   "updated": "2026-11-22 01:22:18.418405912 +0000 UTC"
+   "updated": "2026-11-22 01:52:15.218736888 +0000 UTC"
+  },
+  {
+   "mmsi": 367070360,
+   "lat": 46.16721,
+   "lon": -123.91739,
+   "sog_kn": 0,
+   "cog": 79.6,
+   "heading": 511,
+   "updated": "2026-11-22 01:52:07.457918725 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25877,
+   "lon": -124.00929,
+   "sog_kn": 2.4,
+   "cog": 277.8,
+   "heading": 283,
+   "updated": "2026-11-22 01:52:15.369691547 +0000 UTC"
   },
   {
    "mmsi": 369493291,
    "name": "CG47217",
-   "lat": 46.19033,
-   "lon": -123.85641,
-   "sog_kn": 0,
-   "cog": 231.8,
-   "heading": 511,
-   "updated": "2026-11-22 01:22:19.27662433 +0000 UTC"
+   "lat": 46.19156,
+   "lon": -123.88328,
+   "sog_kn": 28.7,
+   "cog": 267.8,
+   "heading": 265,
+   "updated": "2026-11-22 01:51:59.46444678 +0000 UTC"
   },
   {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 46.20321,
-   "lon": -123.80546,
-   "sog_kn": 8.4,
-   "cog": 61.5,
-   "heading": 62,
-   "updated": "2026-11-22 01:21:53.798301637 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16838,
+   "lon": -123.91836,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-22 01:52:24.629756084 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27124,
-   "lon": -123.95046,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 132,
-   "updated": "2026-11-22 01:22:14.934109618 +0000 UTC"
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20246,
+   "lon": -123.79895,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-22 01:52:10.375652979 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18995,
+   "lon": -123.85418,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-22 01:52:18.306184256 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16559,
+   "lon": -123.92198,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 01:51:55.674608674 +0000 UTC"
   }
  ]
 }
