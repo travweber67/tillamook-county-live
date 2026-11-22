@@ -1,97 +1,115 @@
 {
- "fetched_at": "2026-11-22T05:21:49Z",
+ "fetched_at": "2026-11-22T05:51:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91402,
+   "mmsi": 303679000,
+   "lat": 46.16935,
+   "lon": -123.91363,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 324.5,
    "heading": 511,
-   "updated": "2026-11-22 05:22:26.701784696 +0000 UTC"
+   "updated": "2026-11-22 05:52:15.084260333 +0000 UTC"
+  },
+  {
+   "mmsi": 367603130,
+   "lat": 46.16724,
+   "lon": -123.91636,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 05:52:27.218685417 +0000 UTC"
   },
   {
    "mmsi": 370738000,
    "name": "ARGENT SUNRISE",
-   "lat": 46.12099,
-   "lon": -125.03372,
-   "sog_kn": 10.8,
-   "cog": 353.3,
-   "heading": 354,
-   "updated": "2026-11-22 05:22:02.431603029 +0000 UTC"
+   "lat": 46.21304,
+   "lon": -125.04353,
+   "sog_kn": 11.2,
+   "cog": 358.7,
+   "heading": 358,
+   "updated": "2026-11-22 05:52:02.506707132 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.21385,
-   "lon": -123.95195,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-22 05:22:01.166839164 +0000 UTC"
-  },
-  {
-   "mmsi": 256001000,
-   "name": "DOVER",
-   "lat": 46.19255,
-   "lon": -124.35857,
-   "sog_kn": 4.5,
-   "cog": 98.4,
-   "heading": 126,
-   "updated": "2026-11-22 05:22:26.852889927 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.1915,
-   "lon": -123.92475,
+   "mmsi": 369493007,
+   "name": "CG47207",
+   "lat": 46.28134,
+   "lon": -124.04695,
    "sog_kn": 0.1,
-   "cog": 215.1,
-   "heading": 291,
-   "updated": "2026-11-22 05:22:13.383403764 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 338.4,
-   "heading": 178,
-   "updated": "2026-11-22 05:22:28.801096275 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16808,
-   "lon": -123.91427,
-   "sog_kn": 0,
-   "cog": 0,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 05:22:18.479228628 +0000 UTC"
+   "updated": "2026-11-22 05:52:14.681349455 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28132,
+   "lon": -124.04677,
+   "sog_kn": 0,
+   "cog": 191.1,
+   "heading": 511,
+   "updated": "2026-11-22 05:52:02.657208383 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.19676,
+   "lon": -124.98258,
+   "sog_kn": 11.4,
+   "cog": 89,
+   "heading": 95,
+   "updated": "2026-11-22 05:52:10.176058896 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16786,
+   "lon": -123.91436,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 05:52:12.25715615 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.3045,
+   "lon": -124.04027,
+   "sog_kn": 0,
+   "cog": 352.9,
+   "heading": 511,
+   "updated": "2026-11-22 05:52:27.980985943 +0000 UTC"
   },
   {
    "mmsi": 367638480,
    "name": "OCEAN HUNTER",
-   "lat": 46.19994,
-   "lon": -123.76046,
+   "lat": 46.19995,
+   "lon": -123.76044,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 350.7,
    "heading": 511,
-   "updated": "2026-11-22 05:22:23.45548725 +0000 UTC"
+   "updated": "2026-11-22 05:52:03.605032314 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25694,
-   "lon": -123.98296,
-   "sog_kn": 0.3,
-   "cog": 26.3,
-   "heading": 289,
-   "updated": "2026-11-22 05:22:16.727470337 +0000 UTC"
+   "lat": 46.25806,
+   "lon": -123.98788,
+   "sog_kn": 0.2,
+   "cog": 185.7,
+   "heading": 208,
+   "updated": "2026-11-22 05:52:03.018378023 +0000 UTC"
+  },
+  {
+   "mmsi": 367309370,
+   "name": "PACIFIC EAGLE",
+   "lat": 46.19178,
+   "lon": -123.92517,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 116,
+   "updated": "2026-11-22 05:52:25.383187884 +0000 UTC"
   }
  ]
 }
