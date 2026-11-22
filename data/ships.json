@@ -1,93 +1,65 @@
 {
- "fetched_at": "2026-11-22T07:21:51Z",
+ "fetched_at": "2026-11-22T07:51:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367187080,
-   "lat": 46.16906,
-   "lon": -123.91378,
+   "mmsi": 367603130,
+   "name": "CAPE WINDY",
+   "lat": 46.16722,
+   "lon": -123.91632,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 07:22:36.201198866 +0000 UTC"
+   "updated": "2026-11-22 07:52:27.060381289 +0000 UTC"
   },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16842,
-   "lon": -123.91838,
+   "lat": 46.1684,
+   "lon": -123.91837,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-22 07:22:24.321467011 +0000 UTC"
+   "updated": "2026-11-22 07:52:23.181554498 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16846,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 1.6,
-   "heading": 511,
-   "updated": "2026-11-22 07:22:35.00637001 +0000 UTC"
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.19607,
+   "lon": -124.46151,
+   "sog_kn": 10.4,
+   "cog": 88.3,
+   "heading": 101,
+   "updated": "2026-11-22 07:52:29.136186528 +0000 UTC"
   },
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16812,
-   "lon": -123.91424,
-   "sog_kn": 0,
-   "cog": 5.4,
-   "heading": 511,
-   "updated": "2026-11-22 07:22:17.599773059 +0000 UTC"
+   "mmsi": 440245000,
+   "name": "GLOVIS SUMMIT",
+   "lat": 46.36597,
+   "lon": -124.91739,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USTIW",
+   "updated": "2026-11-22 07:52:11.961939233 +0000 UTC"
   },
   {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16711,
-   "lon": -123.91809,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30448,
+   "lon": -124.04023,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-22 07:22:33.326180541 +0000 UTC"
+   "updated": "2026-11-22 07:52:25.752876156 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16777,
-   "lon": -123.91439,
-   "sog_kn": 0,
-   "cog": 209.7,
-   "heading": 511,
-   "updated": "2026-11-22 07:22:31.206298101 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85908,
-   "sog_kn": 0,
-   "cog": 139.3,
-   "heading": 131,
-   "updated": "2026-11-22 07:22:29.344637186 +0000 UTC"
-  },
-  {
-   "mmsi": 367725050,
-   "name": "SWELL RIDER",
-   "lat": 46.16804,
-   "lon": -123.91429,
-   "sog_kn": 0,
-   "cog": 256.3,
-   "heading": 511,
-   "updated": "2026-11-22 07:22:32.316819906 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.1656,
-   "lon": -123.92198,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 07:22:26.29121441 +0000 UTC"
+   "mmsi": 538010248,
+   "name": "SAFEEN AL AMAL",
+   "lat": 46.14035,
+   "lon": -124.38536,
+   "sog_kn": 4.8,
+   "cog": 43.5,
+   "heading": 79,
+   "updated": "2026-11-22 07:52:11.056074924 +0000 UTC"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T07:22:46Z",
+ "fetched_at": "2026-11-22T07:52:40Z",
  "candidates": [
   {
    "title": "Tillamook Forest News: Forest Grove's 2027 timber harvest, the Capitol's holiday tree and a Salmonberry Trail meeting | November 20, 2026",
@@ -15,6 +15,14 @@
    "url": "https://www.tillamookheadlightherald.com/news/oregon-s-commercial-dungeness-crab-season-delayed/article_4f502e6f-6d6d-58d8-86af-aeaf0f836c13.html",
    "date": "2026-11-22",
    "summary": "Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today.",
+   "reason": "no picture"
+  },
+  {
+   "title": "GORDON’S EXTRA WEATHER UPDATE 11/19/26: Tillamook Looking at elevated hazards over next 7 days thanks to King Tides, High Surf, Sneaker Waves, and yes, rainy and breezy at times also!",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/gordons-extra-weather-update-11-19-26-tillamook-looking-at-elevated-hazards-over-next-7-days-thanks-to-king-tides-high-surf-sneaker-waves-and-yes-rainy-and-breezy-at-times-also/",
+   "date": "2026-11-21",
+   "summary": "By Gordon McCraw, Meteorologist for the Tillamook County Pioneer Well Tillamook, another late week update must mean more active weather is on the way. First, if you thought it was chilly...",
    "reason": "no picture"
   },
   {
@@ -90,14 +98,6 @@
    "reason": "no picture"
   },
   {
-   "title": "All Hail Queen Sheba, United Paws Cat of the Week",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/all-hail-queen-sheba-united-paws-cat-of-the-week/",
-   "date": "2026-11-16",
-   "summary": "Meet Sheba, United Paws Cat of the Week. The first thing you will notice about Sheba are her eyes; they are huge saucers, bright yellow, and curious. The next thing you...",
-   "reason": "no picture"
-  },
-  {
    "title": "GORDON’S WEEKLY WEATHER UPDATE 11/16/26: More rain coming with dry day stuck in there now and then to break it up; Wet for the weekend again",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/gordons-weekly-weather-update-11-16-26-more-rain-coming-with-dry-day-stuck-in-there-now-and-then-to-break-it-up-wet-for-the-weekend-again/",
@@ -106,19 +106,19 @@
    "reason": "no picture"
   },
   {
+   "title": "All Hail Queen Sheba, United Paws Cat of the Week",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/all-hail-queen-sheba-united-paws-cat-of-the-week/",
+   "date": "2026-11-16",
+   "summary": "Meet Sheba, United Paws Cat of the Week. The first thing you will notice about Sheba are her eyes; they are huge saucers, bright yellow, and curious. The next thing you...",
+   "reason": "no picture"
+  },
+  {
    "title": "MANY THINGS CONSIDERED: Walking and Chewing Gum",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/many-things-considered-walking-and-chewing-gum/",
    "date": "2026-11-15",
    "summary": "“Corporate culture in our case is about intellectual honesty.”- Jensen Huang, ex-CEO of Nvidia By Marc C. Johnson Hello, friends: I don’t know about you but I’ve had more than...",
-   "reason": "no picture"
-  },
-  {
-   "title": "Happy Trails to You …",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/happy-trails-to-you/",
-   "date": "2026-11-15",
-   "summary": "By Lianne Thompson, Clatsop County Commissioner Did you ever watch Roy Rogers and Dale Evans sing, “Happy Trails to You”? That song ran through my mind as I looked for the...",
    "reason": "no picture"
   }
  ]
