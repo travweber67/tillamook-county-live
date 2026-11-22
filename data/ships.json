@@ -1,45 +1,45 @@
 {
- "fetched_at": "2026-11-22T05:51:49Z",
+ "fetched_at": "2026-11-22T06:21:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 14 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303679000,
-   "lat": 46.16935,
-   "lon": -123.91363,
+   "mmsi": 367070360,
+   "lat": 46.16721,
+   "lon": -123.91742,
    "sog_kn": 0,
-   "cog": 324.5,
+   "cog": 79.6,
    "heading": 511,
-   "updated": "2026-11-22 05:52:15.084260333 +0000 UTC"
+   "updated": "2026-11-22 06:22:10.015645616 +0000 UTC"
   },
   {
-   "mmsi": 367603130,
-   "lat": 46.16724,
-   "lon": -123.91636,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 368327020,
+   "lat": 46.27082,
+   "lon": -123.94663,
+   "sog_kn": 0.1,
+   "cog": 39.2,
    "heading": 511,
-   "updated": "2026-11-22 05:52:27.218685417 +0000 UTC"
+   "updated": "2026-11-22 06:22:23.226699476 +0000 UTC"
   },
   {
-   "mmsi": 370738000,
-   "name": "ARGENT SUNRISE",
-   "lat": 46.21304,
-   "lon": -125.04353,
-   "sog_kn": 11.2,
-   "cog": 358.7,
-   "heading": 358,
-   "updated": "2026-11-22 05:52:02.506707132 +0000 UTC"
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25625,
+   "lon": -123.99118,
+   "type_code": 33,
+   "type": "Dredging",
+   "destination": "USAST ASTORIA",
+   "updated": "2026-11-22 06:22:12.375591883 +0000 UTC"
   },
   {
    "mmsi": 369493007,
    "name": "CG47207",
-   "lat": 46.28134,
-   "lon": -124.04695,
+   "lat": 46.28133,
+   "lon": -124.04696,
    "sog_kn": 0.1,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 05:52:14.681349455 +0000 UTC"
+   "updated": "2026-11-22 06:22:12.625927102 +0000 UTC"
   },
   {
    "mmsi": 366999922,
@@ -49,67 +49,96 @@
    "sog_kn": 0,
    "cog": 191.1,
    "heading": 511,
-   "updated": "2026-11-22 05:52:02.657208383 +0000 UTC"
+   "updated": "2026-11-22 06:22:05.436637998 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82972,
+   "sog_kn": 0.1,
+   "cog": 269.8,
+   "heading": 167,
+   "updated": "2026-11-22 06:22:22.041743461 +0000 UTC"
   },
   {
    "mmsi": 311000304,
    "name": "EVER GRACE",
-   "lat": 46.19676,
-   "lon": -124.98258,
-   "sog_kn": 11.4,
-   "cog": 89,
-   "heading": 95,
-   "updated": "2026-11-22 05:52:10.176058896 +0000 UTC"
+   "lat": 46.19431,
+   "lon": -124.84984,
+   "sog_kn": 10.9,
+   "cog": 93.2,
+   "heading": 96,
+   "updated": "2026-11-22 06:22:02.468451252 +0000 UTC"
   },
   {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16786,
-   "lon": -123.91436,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.1915,
+   "lon": -123.92475,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 05:52:12.25715615 +0000 UTC"
+   "cog": 157.9,
+   "heading": 293,
+   "updated": "2026-11-22 06:22:12.969411234 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.3045,
-   "lon": -124.04027,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91403,
    "sog_kn": 0,
-   "cog": 352.9,
-   "heading": 511,
-   "updated": "2026-11-22 05:52:27.980985943 +0000 UTC"
+   "cog": 297.9,
+   "heading": 98,
+   "updated": "2026-11-22 06:22:02.191158532 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19995,
-   "lon": -123.76044,
-   "sog_kn": 0,
-   "cog": 350.7,
-   "heading": 511,
-   "updated": "2026-11-22 05:52:03.605032314 +0000 UTC"
+   "mmsi": 636022754,
+   "name": "LIBRA LEADER",
+   "lat": 46.27895,
+   "lon": -124.57864,
+   "sog_kn": 13.6,
+   "cog": 187.2,
+   "heading": 182,
+   "updated": "2026-11-22 06:22:22.343604703 +0000 UTC"
+  },
+  {
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.1671,
+   "lon": -123.91806,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 06:22:25.007107403 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25806,
-   "lon": -123.98788,
-   "sog_kn": 0.2,
-   "cog": 185.7,
-   "heading": 208,
-   "updated": "2026-11-22 05:52:03.018378023 +0000 UTC"
+   "lat": 46.25825,
+   "lon": -123.98848,
+   "sog_kn": 1,
+   "cog": 145.1,
+   "heading": 343,
+   "updated": "2026-11-22 06:22:21.811316071 +0000 UTC"
   },
   {
-   "mmsi": 367309370,
-   "name": "PACIFIC EAGLE",
-   "lat": 46.19178,
-   "lon": -123.92517,
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16778,
+   "lon": -123.91441,
    "sog_kn": 0,
+   "cog": 229.8,
+   "heading": 511,
+   "updated": "2026-11-22 06:22:21.056720692 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.27105,
+   "lon": -123.95,
+   "sog_kn": 0.1,
    "cog": 360,
-   "heading": 116,
-   "updated": "2026-11-22 05:52:25.383187884 +0000 UTC"
+   "heading": 511,
+   "updated": "2026-11-22 06:22:02.469159736 +0000 UTC"
   }
  ]
 }
