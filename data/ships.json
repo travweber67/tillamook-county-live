@@ -1,54 +1,86 @@
 {
- "fetched_at": "2026-11-22T10:51:52Z",
+ "fetched_at": "2026-11-22T11:21:52Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368327020,
-   "lat": 46.27077,
-   "lon": -123.94661,
-   "sog_kn": 0.4,
-   "cog": 45,
+   "mmsi": 367161930,
+   "lat": 46.16887,
+   "lon": -123.9138,
+   "sog_kn": 0.3,
+   "cog": 157.1,
    "heading": 511,
-   "updated": "2026-11-22 10:52:15.053079923 +0000 UTC"
+   "updated": "2026-11-22 11:22:46.432324664 +0000 UTC"
+  },
+  {
+   "mmsi": 367197230,
+   "lat": 46.1693,
+   "lon": -123.91362,
+   "sog_kn": 0,
+   "cog": 349.8,
+   "heading": 511,
+   "updated": "2026-11-22 11:22:48.21239678 +0000 UTC"
   },
   {
    "mmsi": 366999922,
    "name": "CG47284",
-   "lat": 46.28133,
-   "lon": -124.04677,
+   "lat": 46.28132,
+   "lon": -124.04678,
    "type_code": 51,
    "type": "Search & rescue",
-   "updated": "2026-11-22 10:52:12.948156027 +0000 UTC"
+   "updated": "2026-11-22 11:22:44.394423368 +0000 UTC"
   },
   {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27116,
-   "lon": -123.95068,
-   "type_code": 33,
-   "type": "Dredging",
-   "updated": "2026-11-22 10:52:12.927151437 +0000 UTC"
+   "mmsi": 338926456,
+   "name": "CGC DAVID DUREN",
+   "lat": 46.20268,
+   "lon": -123.7635,
+   "sog_kn": 0,
+   "cog": 255.6,
+   "heading": 251,
+   "updated": "2026-11-22 11:22:39.460629462 +0000 UTC"
   },
   {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 46.1935,
-   "lon": -125.07405,
-   "sog_kn": 9.6,
-   "cog": 86.1,
-   "heading": 93,
-   "updated": "2026-11-22 10:52:27.406740709 +0000 UTC"
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19737,
+   "lon": -123.76311,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 11:22:39.757022664 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.85911,
+   "sog_kn": 0,
+   "cog": 139.3,
+   "heading": 131,
+   "updated": "2026-11-22 11:22:35.298602909 +0000 UTC"
   },
   {
    "mmsi": 368202070,
    "name": "TERILYN",
-   "lat": 46.27141,
-   "lon": -123.95063,
+   "lat": 46.27132,
+   "lon": -123.95049,
+   "sog_kn": 0.1,
+   "cog": 119.8,
+   "heading": 130,
+   "updated": "2026-11-22 11:22:33.766257226 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16559,
+   "lon": -123.92199,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 11:22:47.762204888 +0000 UTC",
    "sog_kn": 0,
-   "cog": 325.7,
-   "heading": 127,
-   "updated": "2026-11-22 10:52:23.97108312 +0000 UTC"
+   "cog": 360,
+   "heading": 511
   }
  ]
 }
