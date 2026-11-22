@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-22T23:22:01Z",
+ "fetched_at": "2026-11-22T23:52:03Z",
  "status": "ok",
- "note": "16 cameras verified live from the TripCheck inventory.",
+ "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): US26 at Timber Jct.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -107,13 +107,6 @@
    "lon": -123.30139,
    "route": "US26",
    "image_url": "https://www.tripcheck.com/roadcams/cams/US26%20at%20Timber%20Jct_pid2736.JPG"
-  },
-  {
-   "name": "US26 at Timber Jct",
-   "lat": 45.7596,
-   "lon": -123.30139,
-   "route": "US26",
-   "image_url": "https://www.tripcheck.com/roadcams/cams/US26%20at%20Timber%20Jct%20W_pid5092.jpg"
   }
  ]
 }

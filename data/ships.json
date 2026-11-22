@@ -1,74 +1,47 @@
 {
- "fetched_at": "2026-11-22T23:22:01Z",
+ "fetched_at": "2026-11-22T23:52:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
-  {
-   "mmsi": 367197230,
-   "lat": 46.16928,
-   "lon": -123.91362,
-   "sog_kn": 0,
-   "cog": 239,
-   "heading": 511,
-   "updated": "2026-11-22 23:22:49.260423611 +0000 UTC"
-  },
-  {
-   "mmsi": 367439830,
-   "lat": 46.16881,
-   "lon": -123.91389,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 23:22:39.795427104 +0000 UTC"
-  },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16842,
+   "lat": 46.16839,
    "lon": -123.91836,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-22 23:22:25.385751662 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25729,
-   "lon": -123.98384,
-   "sog_kn": 0.1,
-   "cog": 20.8,
-   "heading": 124,
-   "updated": "2026-11-22 23:22:44.178315848 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27085,
-   "lon": -123.94978,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-22 23:53:02.705680672 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18994,
+   "lon": -123.85419,
+   "sog_kn": 0,
+   "cog": 279.4,
    "heading": 511,
-   "updated": "2026-11-22 23:22:22.33926327 +0000 UTC"
+   "updated": "2026-11-22 23:53:14.402759686 +0000 UTC"
   },
   {
    "mmsi": 366608000,
    "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85908,
-   "sog_kn": 0,
-   "cog": 139.3,
-   "heading": 130,
-   "updated": "2026-11-22 23:22:33.893780663 +0000 UTC"
+   "lat": 46.18809,
+   "lon": -123.85907,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-22 23:53:04.250482124 +0000 UTC"
   },
   {
-   "mmsi": 367498220,
-   "name": "SOUTH BAY",
-   "lat": 46.16727,
-   "lon": -123.91628,
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16559,
+   "lon": -123.92196,
    "sog_kn": 0,
-   "cog": 1.1,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 23:22:42.816679256 +0000 UTC"
+   "updated": "2026-11-22 23:53:06.816254038 +0000 UTC"
   }
  ]
 }
