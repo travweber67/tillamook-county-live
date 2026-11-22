@@ -1,56 +1,85 @@
 {
- "fetched_at": "2026-11-22T12:21:53Z",
+ "fetched_at": "2026-11-22T12:51:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.91404,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 12:22:36.243448209 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16783,
-   "lon": -123.91437,
+   "mmsi": 367197230,
+   "lat": 46.1693,
+   "lon": -123.9136,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 4,
    "heading": 511,
-   "updated": "2026-11-22 12:22:31.373264294 +0000 UTC"
+   "updated": "2026-11-22 12:52:48.005109332 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25735,
-   "lon": -123.9838,
+   "mmsi": 367498220,
+   "lat": 46.1672,
+   "lon": -123.91628,
+   "sog_kn": 0,
+   "cog": 1.1,
+   "heading": 511,
+   "updated": "2026-11-22 12:52:43.298694899 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.2113,
+   "lon": -123.77806,
+   "sog_kn": 4.3,
+   "cog": 65.1,
+   "heading": 57,
+   "updated": "2026-11-22 12:52:43.14778191 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.1915,
+   "lon": -123.92475,
    "sog_kn": 0.1,
-   "cog": 265.6,
-   "heading": 132,
-   "updated": "2026-11-22 12:22:42.179419976 +0000 UTC"
+   "cog": 166.2,
+   "heading": 292,
+   "updated": "2026-11-22 12:52:34.442941822 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16811,
+   "lon": -123.91425,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 12:52:38.557312805 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19992,
+   "lon": -123.76047,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 12:52:24.051536099 +0000 UTC"
+  },
+  {
+   "mmsi": 636015972,
+   "name": "STOLT BASUTO",
+   "lat": 46.14423,
+   "lon": -124.3591,
+   "sog_kn": 1.2,
+   "cog": 65,
+   "heading": 176,
+   "updated": "2026-11-22 12:52:36.789061625 +0000 UTC"
   },
   {
    "mmsi": 367725050,
    "name": "SWELL RIDER",
-   "lat": 46.16802,
-   "lon": -123.91425,
+   "lat": 46.168,
+   "lon": -123.91429,
    "sog_kn": 0,
-   "cog": 101.8,
+   "cog": 146.9,
    "heading": 511,
-   "updated": "2026-11-22 12:22:33.218507541 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18811,
-   "lon": -123.86175,
-   "sog_kn": 0,
-   "cog": 67.4,
-   "heading": 306,
-   "updated": "2026-11-22 12:22:48.877500636 +0000 UTC"
+   "updated": "2026-11-22 12:52:31.983267402 +0000 UTC"
   }
  ]
 }
