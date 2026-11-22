@@ -1,27 +1,17 @@
 {
- "fetched_at": "2026-11-22T02:51:46Z",
+ "fetched_at": "2026-11-22T03:21:48Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a55b7f",
-   "callsign": "N444WT",
-   "type": "GL7T",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.54213,
-   "lon": -122.955993
-  },
-  {
    "hex": "a194ce",
    "callsign": "N2003K",
    "type": "TF19",
-   "alt_ft": 1200,
-   "gs_kn": 49.7,
-   "track": 145.67,
-   "lat": 45.546158,
-   "lon": -122.931061
+   "alt_ft": 1000,
+   "gs_kn": 50.6,
+   "track": 142.22,
+   "lat": 45.544006,
+   "lon": -122.928707
   }
  ]
 }

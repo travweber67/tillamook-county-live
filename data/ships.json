@@ -1,76 +1,96 @@
 {
- "fetched_at": "2026-11-22T02:51:46Z",
+ "fetched_at": "2026-11-22T03:21:48Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 368449610,
+   "lat": 46.30386,
+   "lon": -124.04109,
+   "sog_kn": 0,
+   "cog": 173.2,
+   "heading": 511,
+   "updated": "2026-11-22 03:22:19.729673823 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.19663,
+   "lon": -123.82598,
+   "sog_kn": 0.5,
+   "cog": 69.9,
+   "heading": 71,
+   "updated": "2026-11-22 03:22:04.516850531 +0000 UTC"
+  },
+  {
+   "mmsi": 369493007,
+   "name": "CG47207",
+   "lat": 46.28133,
+   "lon": -124.04695,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 03:22:12.47483749 +0000 UTC"
+  },
   {
    "mmsi": 366999922,
    "name": "CG47284",
    "lat": 46.28132,
-   "lon": -124.04677,
+   "lon": -124.04678,
    "sog_kn": 0,
    "cog": 191.1,
    "heading": 511,
-   "updated": "2026-11-22 02:52:02.822868026 +0000 UTC"
+   "updated": "2026-11-22 03:22:03.394874884 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16839,
-   "lon": -123.91836,
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16782,
+   "lon": -123.91438,
    "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 350,
-   "updated": "2026-11-22 02:52:23.349509621 +0000 UTC"
-  },
-  {
-   "mmsi": 303679000,
-   "name": "DEFIANT",
-   "lat": 46.16937,
-   "lon": -123.91363,
-   "sog_kn": 0,
-   "cog": 253.7,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 02:52:17.980655652 +0000 UTC"
+   "updated": "2026-11-22 03:22:22.335692176 +0000 UTC"
   },
   {
-   "mmsi": 368017810,
-   "name": "FV CHARLEY",
-   "lat": 46.16721,
-   "lon": -123.91837,
-   "sog_kn": 0,
-   "cog": 250,
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.27082,
+   "lon": -123.94664,
+   "sog_kn": 0.2,
+   "cog": 287.7,
    "heading": 511,
-   "updated": "2026-11-22 02:52:18.418850376 +0000 UTC"
+   "updated": "2026-11-22 03:22:10.342236818 +0000 UTC"
   },
   {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20198,
-   "lon": -123.7982,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-22 02:52:09.875453209 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91788,
+   "sog_kn": 0,
+   "cog": 265.5,
+   "heading": 177,
+   "updated": "2026-11-22 03:22:07.684749261 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19991,
-   "lon": -123.76046,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "ASTORIA JAUN",
-   "updated": "2026-11-22 02:52:04.930935073 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.2575,
+   "lon": -123.98346,
+   "sog_kn": 0.1,
+   "cog": 319,
+   "heading": 197,
+   "updated": "2026-11-22 03:22:03.105028163 +0000 UTC"
   },
   {
    "mmsi": 367425910,
    "name": "SEA HORSE",
-   "lat": 46.27091,
-   "lon": -123.9499,
-   "type_code": 33,
-   "type": "Dredging",
-   "updated": "2026-11-22 02:52:25.035389814 +0000 UTC"
+   "lat": 46.27082,
+   "lon": -123.94974,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 03:22:00.94582525 +0000 UTC"
   }
  ]
 }
