@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T19:53:05Z",
+ "fetched_at": "2026-11-22T20:22:49Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -189,15 +189,6 @@
    "tier": "useful"
   },
   {
-   "title": "Tillamook Forest Center to close for the season Nov. 29",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/tillamook-forest-center-to-close-for-the-season-nov-29/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/tfc-sign.webp",
-   "date": "2026-11-20",
-   "summary": "The Tillamook Forest Center will close Nov. 29, with a few final activities scheduled before the winter closure.",
-   "tier": "useful"
-  },
-  {
    "title": "OSU Extension in Tillamook County to hold 2027 Master Gardener Training – Sign up Now!",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/osu-extension-in-tillamook-county-to-hold-2027-master-gardener-training-sign-up-now/",
@@ -223,6 +214,15 @@
    "date": "2026-11-20",
    "summary": "Nehalem City Council discussed the first draft of a watershed management plan that is currently being developed for city owned forestland containing the city’s drinking water sources on November 10.",
    "tier": "routine"
+  },
+  {
+   "title": "ODOT, law enforcement take action against unauthorized movers",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/odot-law-enforcement-take-action-against-unauthorized-movers/article_120a82f2-85b6-5b0b-8a1e-0cbaa90de227.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/1/6c/16c2533a-635d-5526-a6d1-b8c71030b877/6affac03ad7c2.image.png?resize=300%2C194",
+   "date": "2026-11-21",
+   "summary": "Hiring an unauthorized moving company could lead to damaged or stolen property, poor service and unexpected charges.",
+   "tier": "crime"
   }
  ]
 }

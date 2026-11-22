@@ -1,79 +1,63 @@
 {
- "fetched_at": "2026-11-22T19:51:58Z",
+ "fetched_at": "2026-11-22T20:21:58Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367439830,
-   "lat": 46.16882,
-   "lon": -123.91387,
+   "mmsi": 367498220,
+   "lat": 46.16722,
+   "lon": -123.91626,
+   "sog_kn": 0,
+   "cog": 1.1,
+   "heading": 511,
+   "updated": "2026-11-22 20:22:43.078708416 +0000 UTC"
+  },
+  {
+   "mmsi": 367725050,
+   "lat": 46.16803,
+   "lon": -123.91424,
+   "sog_kn": 0,
+   "cog": 197.9,
+   "heading": 511,
+   "updated": "2026-11-22 20:22:33.911924639 +0000 UTC"
+  },
+  {
+   "mmsi": 368155260,
+   "lat": 46.25852,
+   "lon": -123.99207,
+   "sog_kn": 1.2,
+   "cog": 35.9,
+   "heading": 511,
+   "updated": "2026-11-22 20:22:25.930514938 +0000 UTC"
+  },
+  {
+   "mmsi": 368449610,
+   "lat": 46.30385,
+   "lon": -124.04114,
+   "sog_kn": 0,
+   "cog": 347.7,
+   "heading": 511,
+   "updated": "2026-11-22 20:22:38.729957472 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16783,
+   "lon": -123.91439,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 19:52:39.57790283 +0000 UTC"
+   "updated": "2026-11-22 20:22:40.644032198 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.24989,
-   "lon": -124.03192,
-   "sog_kn": 1.7,
-   "cog": 239.1,
-   "heading": 511,
-   "updated": "2026-11-22 19:52:38.557479169 +0000 UTC"
-  },
-  {
-   "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.1679,
-   "lon": -123.91432,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 19:52:54.063259495 +0000 UTC"
-  },
-  {
-   "mmsi": 303284000,
-   "name": "DISCOVERY",
-   "lat": 46.19739,
-   "lon": -123.76312,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 19:52:52.656694778 +0000 UTC",
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USAST"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20395,
-   "lon": -123.79403,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-22 19:52:56.318934301 +0000 UTC"
-  },
-  {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.24174,
-   "lon": -124.0362,
-   "sog_kn": 2.9,
-   "cog": 175.3,
-   "heading": 511,
-   "updated": "2026-11-22 19:52:49.697454926 +0000 UTC"
-  },
-  {
-   "mmsi": 367187080,
-   "name": "OCEAN BEAUT",
-   "lat": 46.16904,
-   "lon": -123.91375,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 19:52:36.195175333 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25731,
+   "lon": -123.98382,
+   "sog_kn": 0.4,
+   "cog": 261.4,
+   "heading": 99,
+   "updated": "2026-11-22 20:22:30.690367854 +0000 UTC"
   }
  ]
 }
