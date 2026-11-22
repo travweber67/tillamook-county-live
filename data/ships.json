@@ -1,125 +1,35 @@
 {
- "fetched_at": "2026-11-22T15:51:55Z",
+ "fetched_at": "2026-11-22T16:21:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 12 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367498220,
+   "mmsi": 367603130,
    "lat": 46.16722,
-   "lon": -123.91628,
-   "sog_kn": 0,
-   "cog": 1.1,
-   "heading": 511,
-   "updated": "2026-11-22 15:52:42.281755524 +0000 UTC"
-  },
-  {
-   "mmsi": 338926456,
-   "name": "CGC DAVID DUREN",
-   "lat": 46.20267,
-   "lon": -123.76349,
-   "sog_kn": 0,
-   "cog": 255.6,
-   "heading": 252,
-   "updated": "2026-11-22 15:52:43.05459843 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.1915,
-   "lon": -123.92475,
-   "sog_kn": 0.1,
-   "cog": 132.7,
-   "heading": 292,
-   "updated": "2026-11-22 15:52:43.887263833 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16784,
-   "lon": -123.91437,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 15:52:52.198125855 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 165.8,
-   "heading": 177,
-   "updated": "2026-11-22 15:52:38.554865474 +0000 UTC"
-  },
-  {
-   "mmsi": 367085290,
-   "name": "MARATHON",
-   "lat": 45.61506,
-   "lon": -124.37572,
-   "sog_kn": 9.7,
-   "cog": 19.4,
-   "heading": 10,
-   "updated": "2026-11-22 15:52:55.049245964 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25867,
-   "lon": -123.98713,
-   "sog_kn": 0.7,
-   "cog": 328.3,
-   "heading": 137,
-   "updated": "2026-11-22 15:52:31.671754627 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27078,
-   "lon": -123.94997,
+   "lon": -123.9163,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 15:52:32.424614429 +0000 UTC"
+   "updated": "2026-11-22 16:22:28.340800662 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18807,
-   "lon": -123.85907,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16837,
+   "lon": -123.91839,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-22 16:22:26.742338179 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30447,
+   "lon": -124.04024,
    "sog_kn": 0,
-   "cog": 139.3,
-   "heading": 131,
-   "updated": "2026-11-22 15:52:31.822283999 +0000 UTC"
-  },
-  {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 46.22334,
-   "lon": -124.37471,
-   "sog_kn": 3.6,
-   "cog": 91.2,
-   "heading": 105,
-   "updated": "2026-11-22 15:52:27.605944 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76905,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-22 15:52:40.965917347 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86173,
-   "sog_kn": 0,
-   "cog": 147.1,
-   "heading": 307,
-   "updated": "2026-11-22 15:52:38.86910462 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 16:22:48.75438237 +0000 UTC"
   }
  ]
 }
