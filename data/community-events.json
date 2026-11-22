@@ -139,6 +139,16 @@
    "url": "https://www.facebook.com/events/4129955210641456/"
   },
   {
+   "date": "2026-11-21",
+   "img": "img/events/ev-music.jpg",
+   "location": "San Dune, 127 Laneda Ave, Manzanita",
+   "note": "An intimate solo acoustic performance by Winn Alexander at the San Dune in Manzanita, 7 to 10 PM — original music, folk, blues and rock 'n' roll. Ages 21 and over. No cover; tips appreciated.",
+   "source": "Facebook",
+   "time": "7:00 PM",
+   "title": "Winn Alexander Unplugged",
+   "url": "https://facebook.com/groups/685665618118328/permalink/29835466216044881/"
+  },
+  {
    "date": "2026-11-22",
    "img": "img/events/ev-meeting.jpg",
    "location": "Swiss Hall",
@@ -279,6 +289,16 @@
    "url": "https://www.signupgenius.com/go/20F0C4DAAA92AA1FFC52-67443231-community"
   },
   {
+   "date": "2026-11-26",
+   "img": "img/events/ev-thanksgiving.jpg",
+   "location": "Upstairs Bar & Grill, Tillamook",
+   "note": "A Thanksgiving meal at Upstairs Bar & Grill in Tillamook, 11 AM to 4 PM — smoked turkey, mashed potatoes and gravy, green bean casserole, stuffing, cranberry sauce and a slice of pie. All meals are donation only, and proceeds go to Shop with a Cop. Need help with a meal? Call 503-815-1687.",
+   "source": "Facebook",
+   "time": "11:00 AM",
+   "title": "Thanksgiving Meal at Upstairs Bar & Grill",
+   "url": "https://facebook.com/groups/1341387313519073/permalink/1864228994568233/"
+  },
+  {
    "date": "2026-11-27",
    "img": "img/bg/bg-day-4.jpg",
    "location": "34600 Cape Kiwanda Dr, Pacific City",
@@ -330,6 +350,16 @@
    "time": "8:00 PM",
    "title": "Small Business Saturday @ Recycle Video Games - Tillamook",
    "url": "https://www.facebook.com/events/1135089809495595/"
+  },
+  {
+   "date": "2026-11-28",
+   "img": "img/events/ev-santa.jpg",
+   "location": "Cloverdale Cafe & Riverside Lounge, Cloverdale",
+   "note": "Santa Claus comes to Cloverdale at the Cloverdale Cafe & Riverside Lounge — festivities start at 5:30 PM and Santa arrives at 6 PM. Free.",
+   "source": "Facebook",
+   "time": "5:30 PM",
+   "title": "Santa Claus is Coming to Cloverdale",
+   "url": "https://facebook.com/groups/1495579955469684/permalink/1749562926738051/"
   },
   {
    "date": "2026-11-29",
@@ -542,6 +572,17 @@
    "url": "https://www.facebook.com/events/1402851284816608/"
   },
   {
+   "date": "2026-12-05",
+   "img": "img/events/ev-gingerbread.jpg",
+   "location": "Old Mill Event Hall, 210 3rd St, Garibaldi",
+   "note": "A Christmas-themed Ducks Unlimited banquet at the Old Mill Event Hall in Garibaldi — smoked prime rib dinner with beverages, live and silent auctions, raffles and games. Doors at 5 PM, dinner served at 6:30. Tickets are $390 for a reserved table of 8; space is limited.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "5:00 PM",
+   "title": "Ducks Unlimited 'Duck the Halls' Prime Rib Banquet",
+   "url": "https://ducksunlimited.myeventscenter.com/event/Copy-Of-Dinner-Or-Banquet-Template-130683"
+  },
+  {
    "date": "2026-12-06",
    "img": "img/events/ev-music.jpg",
    "location": "Tillamook Association for the Performing Arts (TAPA)",
@@ -626,6 +667,16 @@
    "url": "https://www.facebook.com/events/2413871055816709/"
   },
   {
+   "date": "2026-12-11",
+   "img": "img/events/ev-gamenight.jpg",
+   "location": "Pastega Activity Center, 3705 3rd St, Tillamook",
+   "note": "Free bowling and a pasta dinner at the Pastega Activity Center in Tillamook, 4 to 7 PM, from Tillamook Family Counseling Center and Tillamook County Public Health. Dinner for the first 100 attendees, plus free safer-home supplies to pick up — overdose reversal kits, medication locks and lock boxes, and first aid kits. Free.",
+   "source": "Facebook",
+   "time": "4:00 PM",
+   "title": "Free Bowling and Pasta Dinner",
+   "url": "https://facebook.com/groups/143847239569000/permalink/2134572833829754/"
+  },
+  {
    "date": "2026-12-12",
    "img": "img/events/ev-santa.jpg",
    "location": "Tillamook Air Museum, 6030 Hangar Rd, Tillamook",
@@ -705,6 +756,16 @@
    "time": "10:00 AM",
    "title": "Saturday Morning Family Fun at Pacific City Library",
    "url": "https://tillamookchamber.org/events/list/page/9/?tribe-bar-date=2026-11-25&tribe_geofence=5"
+  },
+  {
+   "date": "2026-12-31",
+   "img": "img/events/ev-meeting.jpg",
+   "location": "Life Change Christian Fellowship, 3500 Alder Lane, Tillamook",
+   "note": "A New Year's Eve worship night at Life Change Christian Fellowship in Tillamook, hosted by the Tillamook CountyWide Prayer Team. The group celebrates the New Year on East Coast time — bring a friend and a treat to share. Free.",
+   "source": "Facebook",
+   "time": "7:00 PM",
+   "title": "New Year's Eve Upper Room Worship Night",
+   "url": "https://facebook.com/groups/143847239569000/permalink/2134446783842359/"
   }
  ]
 }
