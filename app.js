@@ -8267,7 +8267,7 @@ initSponsorLink();
    Submissions land in the form inbox and pass a human review before
    anything is added to the events list — the review gate is the
    feature's load-bearing wall, same as photo submissions. */
-const EVENT_FORM_URL = ''; // TCL: no Tillamook event form yet - the add-an-event strip (#event-submit-link, index.html) stays hidden until this is set
+const EVENT_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc1ypCnvBXgKZBdMfSmLaG51qVBxJKdmJeflTc8YQm_UoEC8g/viewform'; // TCL 'Submit an Event' Google Form (created 2026-11-21; mirrors the CCL form plus a Featured question; anyone-with-the-link, no sign-in - stranger-walked signed-out before wiring). The add-an-event strip (#event-submit-link, index.html) points here and unhides
 function initEventLink() {
   const a = $('event-submit-link');
   if (!a || !EVENT_FORM_URL) return;
