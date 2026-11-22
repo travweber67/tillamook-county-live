@@ -1,95 +1,114 @@
 {
- "fetched_at": "2026-11-22T17:51:57Z",
+ "fetched_at": "2026-11-22T18:21:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 368188830,
    "name": "ANITA D",
    "lat": 46.16855,
-   "lon": -123.91404,
+   "lon": -123.91401,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 18:22:36.346712319 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20029,
+   "lon": -123.80323,
+   "sog_kn": 0.1,
+   "cog": 75.7,
+   "heading": 244,
+   "updated": "2026-11-22 18:22:51.756746348 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.2812,
+   "lon": -124.04686,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-22 18:22:47.857852435 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16845,
+   "lon": -123.91408,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 18:23:02.406768625 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16785,
+   "lon": -123.91438,
    "sog_kn": 0,
-   "cog": 21.7,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 17:52:47.054289108 +0000 UTC"
+   "updated": "2026-11-22 18:22:43.202833004 +0000 UTC"
   },
   {
-   "mmsi": 338926456,
-   "name": "CGC DAVID DUREN",
-   "lat": 46.20268,
-   "lon": -123.7635,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 255.6,
-   "heading": 251,
-   "updated": "2026-11-22 17:52:40.607696314 +0000 UTC"
-  },
-  {
-   "mmsi": 303284000,
-   "name": "DISCOVERY",
-   "lat": 46.19738,
-   "lon": -123.76312,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USAST",
-   "updated": "2026-11-22 17:52:52.688354798 +0000 UTC"
+   "cog": 158.5,
+   "heading": 177,
+   "updated": "2026-11-22 18:22:58.291851439 +0000 UTC"
   },
   {
    "mmsi": 367037240,
    "name": "IRON LADY",
-   "lat": 46.1681,
-   "lon": -123.91427,
+   "lat": 46.16813,
+   "lon": -123.91425,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-22 17:52:37.57375575 +0000 UTC"
+   "updated": "2026-11-22 18:22:38.583090537 +0000 UTC"
+  },
+  {
+   "mmsi": 368449610,
+   "name": "LISA GAYLE",
+   "lat": 46.30386,
+   "lon": -124.04115,
+   "sog_kn": 0,
+   "cog": 318.9,
+   "heading": 511,
+   "updated": "2026-11-22 18:23:02.557276625 +0000 UTC"
   },
   {
    "mmsi": 367085290,
    "name": "MARATHON",
-   "lat": 45.92427,
-   "lon": -124.24714,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 17:52:45.624768847 +0000 UTC"
+   "lat": 45.99889,
+   "lon": -124.21592,
+   "sog_kn": 8.7,
+   "cog": 25.2,
+   "heading": 18,
+   "updated": "2026-11-22 18:23:04.139045506 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.7605,
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16775,
+   "lon": -123.91441,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 301.8,
    "heading": 511,
-   "updated": "2026-11-22 17:52:55.081158243 +0000 UTC"
+   "updated": "2026-11-22 18:22:41.245362754 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19637,
-   "lon": -123.79708,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-22 17:52:55.382106185 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27193,
-   "lon": -123.95167,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 133,
-   "updated": "2026-11-22 17:52:53.6715141 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16558,
-   "lon": -123.92198,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-22 17:52:53.357350101 +0000 UTC"
+   "mmsi": 366951000,
+   "name": "USCGC ELM",
+   "lat": 46.2075,
+   "lon": -123.76905,
+   "sog_kn": 0.1,
+   "cog": 42,
+   "heading": 132,
+   "updated": "2026-11-22 18:22:51.039365896 +0000 UTC"
   }
  ]
 }
