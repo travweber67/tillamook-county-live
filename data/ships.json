@@ -1,65 +1,67 @@
 {
- "fetched_at": "2026-11-22T20:51:59Z",
+ "fetched_at": "2026-11-22T21:21:59Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19866,
+   "lon": -123.80889,
+   "sog_kn": 0.1,
+   "cog": 313.1,
+   "heading": 71,
+   "updated": "2026-11-22 21:22:53.315875733 +0000 UTC"
+  },
+  {
    "mmsi": 367355270,
+   "name": "CALAMARI",
    "lat": 46.16793,
-   "lon": -123.91433,
+   "lon": -123.91429,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 20:52:53.828795629 +0000 UTC"
+   "updated": "2026-11-22 21:22:52.261541249 +0000 UTC"
   },
   {
-   "mmsi": 303284000,
-   "name": "DISCOVERY",
-   "lat": 46.19737,
-   "lon": -123.76311,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USAST",
-   "updated": "2026-11-22 20:52:51.342277125 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19183,
+   "lon": -123.92598,
    "sog_kn": 0,
-   "cog": 165.5,
-   "heading": 177,
-   "updated": "2026-11-22 20:52:48.799164759 +0000 UTC"
+   "cog": 319,
+   "heading": 111,
+   "updated": "2026-11-22 21:23:02.957313872 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25725,
-   "lon": -123.98384,
-   "sog_kn": 0.2,
-   "cog": 32.6,
-   "heading": 92,
-   "updated": "2026-11-22 20:52:36.578774827 +0000 UTC"
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.24567,
+   "lon": -124.03953,
+   "sog_kn": 3.5,
+   "cog": 269.3,
+   "heading": 511,
+   "updated": "2026-11-22 21:23:03.108137776 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19642,
-   "lon": -123.7971,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-22 20:52:57.186691231 +0000 UTC"
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19991,
+   "lon": -123.7605,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 21:23:02.34582499 +0000 UTC"
   },
   {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27116,
-   "lon": -123.95068,
-   "type_code": 33,
-   "type": "Dredging",
-   "updated": "2026-11-22 20:53:01.054954655 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.8591,
+   "sog_kn": 0,
+   "cog": 139.3,
+   "heading": 131,
+   "updated": "2026-11-22 21:22:39.306613274 +0000 UTC"
   }
  ]
 }

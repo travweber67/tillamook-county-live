@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-22T20:51:59Z",
+ "fetched_at": "2026-11-22T21:21:59Z",
  "sources": [
   {
    "name": "Tillamook County calendar (CivicPlus)",
    "status": "ok",
-   "note": "8 events in the next 14 days. 1 day page(s) failed to load and were skipped."
+   "note": "8 events in the next 14 days."
   },
   {
    "name": "City of Tillamook calendar (CivicPlus)",
