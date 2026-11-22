@@ -1,82 +1,95 @@
 {
- "fetched_at": "2026-11-22T17:21:56Z",
+ "fetched_at": "2026-11-22T17:51:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999892,
-   "lat": 46.28116,
-   "lon": -124.04624,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16855,
+   "lon": -123.91404,
    "sog_kn": 0,
-   "cog": 194,
-   "heading": 308,
-   "updated": "2026-11-22 17:22:48.310715033 +0000 UTC"
+   "cog": 21.7,
+   "heading": 511,
+   "updated": "2026-11-22 17:52:47.054289108 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16839,
-   "lon": -123.91837,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-22 17:22:26.168616941 +0000 UTC"
+   "mmsi": 338926456,
+   "name": "CGC DAVID DUREN",
+   "lat": 46.20268,
+   "lon": -123.7635,
+   "sog_kn": 0,
+   "cog": 255.6,
+   "heading": 251,
+   "updated": "2026-11-22 17:52:40.607696314 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.8297,
-   "type_code": 57,
-   "type": "Vessel",
-   "updated": "2026-11-22 17:22:48.159173501 +0000 UTC"
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19738,
+   "lon": -123.76312,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USAST",
+   "updated": "2026-11-22 17:52:52.688354798 +0000 UTC"
   },
   {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16786,
-   "lon": -123.9144,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.1681,
+   "lon": -123.91427,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 17:52:37.57375575 +0000 UTC"
+  },
+  {
+   "mmsi": 367085290,
+   "name": "MARATHON",
+   "lat": 45.92427,
+   "lon": -124.24714,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-22 17:22:51.31959628 +0000 UTC"
+   "updated": "2026-11-22 17:52:45.624768847 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16868,
-   "lon": -123.91407,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19992,
+   "lon": -123.7605,
    "sog_kn": 0,
-   "cog": 283.9,
-   "heading": 97,
-   "updated": "2026-11-22 17:22:51.77171824 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 17:52:55.081158243 +0000 UTC"
   },
   {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16707,
-   "lon": -123.91811,
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19637,
+   "lon": -123.79708,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-22 17:52:55.382106185 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27193,
+   "lon": -123.95167,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 133,
+   "updated": "2026-11-22 17:52:53.6715141 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16558,
+   "lon": -123.92198,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-22 17:22:50.157993624 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16774,
-   "lon": -123.91442,
-   "sog_kn": 0,
-   "cog": 286.9,
-   "heading": 511,
-   "updated": "2026-11-22 17:22:43.076673877 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27067,
-   "lon": -123.94977,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 17:22:30.745345405 +0000 UTC"
+   "updated": "2026-11-22 17:52:53.357350101 +0000 UTC"
   }
  ]
 }
