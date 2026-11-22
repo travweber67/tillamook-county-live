@@ -3674,6 +3674,16 @@ body.tcl-rd .hero-status a{
 }
 body.tcl-rd .hero-status a.warn,
 body.tcl-rd .hero-status a.bad{color:#ff7a6b;font-weight:750}
+/* tcl-v45 (2026-11-22, Travis): the spots now GRADE like the Coast
+   Conditions card grades its rows (ok green / warn amber / bad red)
+   instead of warn and bad sharing one alarm red. The classes were
+   always assigned per real status in app.js (Watch/Advisory = warn,
+   Warning = bad, clear = ok); only this paint was flattened. The
+   tints are the site's own on-photo status palette (the base pill
+   colors), light versions of the card's green #1f9d55, amber
+   #e8a100 and red #d92c1f so they read on the hero photo. */
+body.tcl-rd .hero-status a.ok{color:#8fe3a8}
+body.tcl-rd .hero-status a.warn{color:#ffc98a}
 body.tcl-rd .hero-status a:hover{text-decoration:underline}
 @media (min-width:900px){ body.tcl-rd .hero-status a{font-size:1.05rem} }
 @media (max-width:480px){ body.tcl-rd .hero-status a{font-size:.93rem} }
