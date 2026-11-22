@@ -1,57 +1,97 @@
 {
- "fetched_at": "2026-11-22T04:51:49Z",
+ "fetched_at": "2026-11-22T05:21:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 368188830,
    "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.914,
+   "lat": 46.16855,
+   "lon": -123.91402,
    "sog_kn": 0,
-   "cog": 177.8,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-22 04:52:07.506980479 +0000 UTC"
+   "updated": "2026-11-22 05:22:26.701784696 +0000 UTC"
   },
   {
-   "mmsi": 366999922,
-   "name": "CG47284",
-   "lat": 46.28132,
-   "lon": -124.04677,
+   "mmsi": 370738000,
+   "name": "ARGENT SUNRISE",
+   "lat": 46.12099,
+   "lon": -125.03372,
+   "sog_kn": 10.8,
+   "cog": 353.3,
+   "heading": 354,
+   "updated": "2026-11-22 05:22:02.431603029 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.21385,
+   "lon": -123.95195,
+   "type_code": 33,
+   "type": "Dredging",
+   "destination": "USAST ASTORIA",
+   "updated": "2026-11-22 05:22:01.166839164 +0000 UTC"
+  },
+  {
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 46.19255,
+   "lon": -124.35857,
+   "sog_kn": 4.5,
+   "cog": 98.4,
+   "heading": 126,
+   "updated": "2026-11-22 05:22:26.852889927 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.1915,
+   "lon": -123.92475,
+   "sog_kn": 0.1,
+   "cog": 215.1,
+   "heading": 291,
+   "updated": "2026-11-22 05:22:13.383403764 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 191.1,
+   "cog": 338.4,
+   "heading": 178,
+   "updated": "2026-11-22 05:22:28.801096275 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16808,
+   "lon": -123.91427,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-22 04:52:04.074743408 +0000 UTC"
+   "updated": "2026-11-22 05:22:18.479228628 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.91835,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.76046,
    "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 350,
-   "updated": "2026-11-22 04:52:02.963569383 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16783,
-   "lon": -123.9144,
-   "sog_kn": 0,
-   "cog": 360,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-22 04:52:02.495803228 +0000 UTC"
+   "updated": "2026-11-22 05:22:23.45548725 +0000 UTC"
   },
   {
-   "mmsi": 367309370,
-   "name": "PACIFIC EAGLE",
-   "lat": 46.19178,
-   "lon": -123.92515,
-   "type_code": 52,
-   "type": "Tug",
-   "destination": "WARRENTON",
-   "updated": "2026-11-22 04:52:02.426887452 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25694,
+   "lon": -123.98296,
+   "sog_kn": 0.3,
+   "cog": 26.3,
+   "heading": 289,
+   "updated": "2026-11-22 05:22:16.727470337 +0000 UTC"
   }
  ]
 }
