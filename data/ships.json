@@ -1,24 +1,56 @@
 {
- "fetched_at": "2026-11-22T21:52:00Z",
+ "fetched_at": "2026-11-22T22:22:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493011,
-   "lat": 46.28158,
-   "lon": -124.04679,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-22 21:52:38.733387608 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16854,
+   "lon": -123.914,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 22:22:37.409660519 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28137,
-   "lon": -124.04671,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-22 21:52:29.390674896 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16837,
+   "lon": -123.91839,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-22 22:22:25.365597112 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16869,
+   "lon": -123.91402,
+   "sog_kn": 0,
+   "cog": 253.8,
+   "heading": 98,
+   "updated": "2026-11-22 22:22:01.561378221 +0000 UTC"
+  },
+  {
+   "mmsi": 367187080,
+   "name": "OCEAN BEAUT",
+   "lat": 46.16907,
+   "lon": -123.91375,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-22 22:22:36.308852636 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25725,
+   "lon": -123.98385,
+   "sog_kn": 0.5,
+   "cog": 190.1,
+   "heading": 123,
+   "updated": "2026-11-22 22:22:07.703624732 +0000 UTC"
   },
   {
    "mmsi": 366608000,
@@ -28,7 +60,17 @@
    "sog_kn": 0,
    "cog": 139.3,
    "heading": 131,
-   "updated": "2026-11-22 21:52:30.309674783 +0000 UTC"
+   "updated": "2026-11-22 22:22:32.719649758 +0000 UTC"
+  },
+  {
+   "mmsi": 367725050,
+   "name": "SWELL RIDER",
+   "lat": 46.16804,
+   "lon": -123.91428,
+   "sog_kn": 0,
+   "cog": 137.2,
+   "heading": 511,
+   "updated": "2026-11-22 22:22:31.61817868 +0000 UTC"
   }
  ]
 }
