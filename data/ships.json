@@ -1,67 +1,34 @@
 {
- "fetched_at": "2026-11-22T21:21:59Z",
+ "fetched_at": "2026-11-22T21:52:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19866,
-   "lon": -123.80889,
-   "sog_kn": 0.1,
-   "cog": 313.1,
-   "heading": 71,
-   "updated": "2026-11-22 21:22:53.315875733 +0000 UTC"
+   "mmsi": 369493011,
+   "lat": 46.28158,
+   "lon": -124.04679,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-22 21:52:38.733387608 +0000 UTC"
   },
   {
-   "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.16793,
-   "lon": -123.91429,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-22 21:22:52.261541249 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19183,
-   "lon": -123.92598,
-   "sog_kn": 0,
-   "cog": 319,
-   "heading": 111,
-   "updated": "2026-11-22 21:23:02.957313872 +0000 UTC"
-  },
-  {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.24567,
-   "lon": -124.03953,
-   "sog_kn": 3.5,
-   "cog": 269.3,
-   "heading": 511,
-   "updated": "2026-11-22 21:23:03.108137776 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19991,
-   "lon": -123.7605,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-22 21:23:02.34582499 +0000 UTC"
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28137,
+   "lon": -124.04671,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-22 21:52:29.390674896 +0000 UTC"
   },
   {
    "mmsi": 366608000,
    "name": "SEAWARD EXPLORER",
    "lat": 46.18808,
-   "lon": -123.8591,
+   "lon": -123.85909,
    "sog_kn": 0,
    "cog": 139.3,
    "heading": 131,
-   "updated": "2026-11-22 21:22:39.306613274 +0000 UTC"
+   "updated": "2026-11-22 21:52:30.309674783 +0000 UTC"
   }
  ]
 }
