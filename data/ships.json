@@ -1,46 +1,75 @@
 {
- "fetched_at": "2026-11-22T13:21:53Z",
+ "fetched_at": "2026-11-22T13:51:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367197230,
-   "lat": 46.1693,
-   "lon": -123.91361,
-   "sog_kn": 0,
-   "cog": 31.3,
-   "heading": 511,
-   "updated": "2026-11-22 13:22:47.955996346 +0000 UTC"
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16844,
+   "lon": -123.91405,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 13:52:13.059628834 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28137,
-   "lon": -124.04672,
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.16708,
+   "lon": -123.91809,
    "sog_kn": 0,
-   "cog": 176.7,
+   "cog": 179.3,
    "heading": 511,
-   "updated": "2026-11-22 13:22:54.001420108 +0000 UTC"
+   "updated": "2026-11-22 13:52:24.697131458 +0000 UTC"
   },
   {
-   "mmsi": 477113700,
-   "name": "SHANDONG XIN XING",
-   "lat": 46.20764,
-   "lon": -124.58778,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "KALAMA USA",
-   "updated": "2026-11-22 13:22:39.998243228 +0000 UTC"
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.28158,
+   "lon": -124.04678,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-22 13:52:16.692061153 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.1999,
+   "lon": -123.76048,
+   "sog_kn": 0,
+   "cog": 175.6,
+   "heading": 511,
+   "updated": "2026-11-22 13:52:22.50724745 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25746,
+   "lon": -123.98369,
+   "sog_kn": 2.4,
+   "cog": 236.7,
+   "heading": 233,
+   "updated": "2026-11-22 13:52:29.918052048 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85907,
+   "sog_kn": 0,
+   "cog": 139.3,
+   "heading": 130,
+   "updated": "2026-11-22 13:52:33.780476534 +0000 UTC"
   },
   {
    "mmsi": 636015972,
    "name": "STOLT BASUTO",
-   "lat": 46.14289,
-   "lon": -124.34747,
-   "sog_kn": 1.3,
-   "cog": 150.4,
-   "heading": 132,
-   "updated": "2026-11-22 13:22:46.339825623 +0000 UTC"
+   "lat": 46.15793,
+   "lon": -124.26785,
+   "sog_kn": 10.8,
+   "cog": 64.1,
+   "heading": 61,
+   "updated": "2026-11-22 13:52:12.011880919 +0000 UTC"
   }
  ]
 }
