@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-22T14:51:54Z",
+ "fetched_at": "2026-11-22T15:21:55Z",
  "status": "ok",
- "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): US26 at Quartz Creek.",
+ "note": "16 cameras verified live from the TripCheck inventory.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -86,6 +86,13 @@
    "lon": -124.01688,
    "route": "US101",
    "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20Lincoln%20City%20at%20D%20River_pid2989.JPG"
+  },
+  {
+   "name": "US26 at Quartz Creek",
+   "lat": 45.84196,
+   "lon": -123.51895,
+   "route": "US26",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/26Quartzcrk_pid1786.JPG"
   },
   {
    "name": "US26 at Sunset Rest Area",

@@ -1,86 +1,63 @@
 {
- "fetched_at": "2026-11-22T14:51:54Z",
+ "fetched_at": "2026-11-22T15:21:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367397450,
-   "lat": 46.16718,
-   "lon": -123.91717,
+   "mmsi": 367603130,
+   "lat": 46.16724,
+   "lon": -123.91633,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 14:53:07.446827826 +0000 UTC"
+   "updated": "2026-11-22 15:22:26.912028867 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.26174,
-   "lon": -124.01868,
-   "sog_kn": 2.7,
-   "cog": 268,
-   "heading": 295,
-   "updated": "2026-11-22 14:53:03.165706532 +0000 UTC"
-  },
-  {
-   "mmsi": 369493021,
-   "name": "CG47235",
-   "lat": 45.56958,
-   "lon": -123.96254,
-   "sog_kn": 1.1,
-   "cog": 37.2,
+   "mmsi": 368288370,
+   "lat": 46.30603,
+   "lon": -124.0448,
+   "sog_kn": 1.2,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-22 14:52:49.914288442 +0000 UTC"
+   "updated": "2026-11-22 15:22:44.264493918 +0000 UTC"
   },
   {
-   "mmsi": 355173000,
-   "name": "EVER BEST",
-   "lat": 46.20926,
-   "lon": -124.17267,
-   "sog_kn": 8.1,
-   "cog": 233,
-   "heading": 236,
-   "updated": "2026-11-22 14:52:44.510941927 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16851,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-22 15:22:26.610780413 +0000 UTC"
   },
   {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20427,
-   "lon": -123.79679,
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.16873,
+   "lon": -124.26508,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-22 14:52:58.68448586 +0000 UTC"
+   "destination": "USVAN",
+   "updated": "2026-11-22 15:22:28.663481138 +0000 UTC"
   },
   {
-   "mmsi": 338458681,
-   "name": "OMEGA 3",
-   "lat": 46.30467,
-   "lon": -124.03691,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 72,
-   "updated": "2026-11-22 14:53:01.949093502 +0000 UTC"
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16786,
+   "lon": -123.91438,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 15:22:51.693920569 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18807,
-   "lon": -123.85909,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-22 14:53:04.3677723 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27251,
-   "lon": -123.95361,
-   "sog_kn": 1.4,
-   "cog": 251.5,
-   "heading": 212,
-   "updated": "2026-11-22 14:52:57.112057166 +0000 UTC"
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.16708,
+   "lon": -123.91807,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-22 15:22:32.378613345 +0000 UTC"
   }
  ]
 }
