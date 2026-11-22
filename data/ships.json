@@ -1,65 +1,46 @@
 {
- "fetched_at": "2026-11-21T23:51:42Z",
+ "fetched_at": "2026-11-22T00:21:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303679000,
-   "lat": 46.16937,
-   "lon": -123.91362,
-   "sog_kn": 0,
-   "cog": 311.8,
+   "mmsi": 367161930,
+   "lat": 46.1689,
+   "lon": -123.91377,
+   "sog_kn": 0.2,
+   "cog": 349.1,
    "heading": 511,
-   "updated": "2026-11-21 23:52:17.088467667 +0000 UTC"
+   "updated": "2026-11-22 00:21:54.300113272 +0000 UTC"
   },
   {
-   "mmsi": 367531260,
-   "lat": 46.16871,
-   "lon": -123.91395,
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.28132,
+   "lon": -124.04678,
+   "sog_kn": 0,
+   "cog": 191.1,
+   "heading": 511,
+   "updated": "2026-11-22 00:22:03.268882592 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.1678,
+   "lon": -123.91434,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-21 23:52:08.868184873 +0000 UTC"
+   "updated": "2026-11-22 00:22:02.55904456 +0000 UTC"
   },
   {
    "mmsi": 538090732,
    "name": "NORDIC MERCHANTS",
-   "lat": 46.14445,
-   "lon": -124.22061,
-   "sog_kn": 7.2,
-   "cog": 343.1,
-   "heading": 14,
-   "updated": "2026-11-21 23:51:56.596709681 +0000 UTC"
-  },
-  {
-   "mmsi": 367161930,
-   "name": "PACIFIC CONQUEST",
-   "lat": 46.16889,
-   "lon": -123.91378,
-   "sog_kn": 0.1,
-   "cog": 99.9,
-   "heading": 511,
-   "updated": "2026-11-21 23:51:54.931659483 +0000 UTC"
-  },
-  {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85525,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-21 23:52:14.708036148 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.25883,
-   "lon": -123.96918,
-   "sog_kn": 4.7,
-   "cog": 221,
-   "heading": 218,
-   "updated": "2026-11-21 23:52:14.253309333 +0000 UTC"
+   "lat": 46.22464,
+   "lon": -124.12882,
+   "sog_kn": 12.5,
+   "cog": 46.8,
+   "heading": 51,
+   "updated": "2026-11-22 00:22:16.980161304 +0000 UTC"
   }
  ]
 }

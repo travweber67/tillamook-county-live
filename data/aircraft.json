@@ -1,157 +1,87 @@
 {
- "fetched_at": "2026-11-21T23:51:42Z",
+ "fetched_at": "2026-11-22T00:21:43Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a14d78",
-   "callsign": "SKW3412",
-   "type": "E75L",
-   "alt_ft": 32000,
-   "gs_kn": 496.7,
-   "track": 41.33,
-   "lat": 44.985306,
-   "lon": -123.55617
+   "hex": "a96da5",
+   "callsign": "N7063M",
+   "type": "R66",
+   "alt_ft": 1350,
+   "gs_kn": 100.7,
+   "track": 15.55,
+   "lat": 44.901489,
+   "lon": -123.405239
   },
   {
-   "hex": "a8c489",
-   "callsign": "QXE2175",
-   "type": "E75L",
-   "alt_ft": 35350,
-   "gs_kn": 385.1,
-   "track": 178.96,
-   "lat": 45.936768,
-   "lon": -123.371575
-  },
-  {
-   "hex": "a1589d",
-   "callsign": "SKW3172",
-   "type": "E75L",
-   "alt_ft": 27000,
-   "gs_kn": 370.5,
-   "track": 183.09,
-   "lat": 45.695068,
-   "lon": -123.238064
-  },
-  {
-   "hex": "a43006",
-   "callsign": "N369ZM",
-   "type": "H500",
-   "alt_ft": 1100,
-   "gs_kn": 5.1,
-   "track": 191.31,
-   "lat": 44.996155,
-   "lon": -123.151964
-  },
-  {
-   "hex": "a6be24",
-   "callsign": "N5331Y",
-   "type": "PA44",
-   "alt_ft": 3900,
-   "gs_kn": 47.2,
-   "track": 184.86,
-   "lat": 45.388275,
-   "lon": -123.06924
-  },
-  {
-   "hex": "a66bc3",
-   "callsign": "N5124B",
-   "type": "C152",
-   "alt_ft": 1325,
-   "gs_kn": 88.5,
-   "track": 79.58,
-   "lat": 45.534943,
-   "lon": -123.02209
+   "hex": "c066dd",
+   "callsign": "ACA566",
+   "type": "BCS3",
+   "alt_ft": 37000,
+   "gs_kn": 413.1,
+   "track": 178.75,
+   "lat": 45.236526,
+   "lon": -123.350438
   },
   {
    "hex": "a194e0",
    "callsign": "N20033",
    "type": "C172",
-   "alt_ft": 2600,
-   "gs_kn": 80.8,
-   "track": 216.44,
-   "lat": 45.292877,
-   "lon": -123.016139
+   "alt_ft": 825,
+   "gs_kn": 74.3,
+   "track": 224.45,
+   "lat": 45.194046,
+   "lon": -123.171714
   },
   {
-   "hex": "a8ca5e",
-   "callsign": "N66589",
-   "type": "C150",
-   "alt_ft": 1175,
-   "gs_kn": 69.4,
-   "track": 131.5,
-   "lat": 45.571661,
-   "lon": -122.955894
+   "hex": "a43006",
+   "callsign": "N369ZM",
+   "type": "H500",
+   "alt_ft": 1050,
+   "gs_kn": 2.3,
+   "track": 206.57,
+   "lat": 44.997393,
+   "lon": -123.151446
   },
   {
-   "hex": "a52898",
-   "callsign": "UAL1292",
-   "type": "A320",
-   "alt_ft": 22300,
-   "gs_kn": 334.7,
-   "track": 222.7,
-   "lat": 45.229111,
-   "lon": -122.949568
+   "hex": "a98d0c",
+   "callsign": "N714XX",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": null,
+   "track": null,
+   "lat": 45.534508,
+   "lon": -122.94893
+  },
+  {
+   "hex": "a66bc3",
+   "callsign": "N5124B",
+   "type": "C152",
+   "alt_ft": 325,
+   "gs_kn": 63.8,
+   "track": 324.57,
+   "lat": 45.540161,
+   "lon": -122.946167
   },
   {
    "hex": "aa34e8",
    "callsign": "N757JX",
    "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.535386,
-   "lon": -122.946022
+   "alt_ft": 1250,
+   "gs_kn": 77.7,
+   "track": 145.49,
+   "lat": 45.548944,
+   "lon": -122.936943
   },
   {
-   "hex": "ab7b67",
-   "callsign": "N839SP",
-   "type": "C172",
-   "alt_ft": 1300,
-   "gs_kn": 59.9,
-   "track": 146.58,
-   "lat": 45.545359,
-   "lon": -122.92837
-  },
-  {
-   "hex": "a88491",
-   "callsign": "N648SP",
-   "type": "C172",
-   "alt_ft": 800,
-   "gs_kn": 89.5,
-   "track": 320.44,
-   "lat": 45.512075,
-   "lon": -122.920398
-  },
-  {
-   "hex": "a0a1f1",
-   "callsign": "N14SK",
-   "type": "C152",
-   "alt_ft": 925,
-   "gs_kn": 74.3,
-   "track": 146.52,
-   "lat": 45.523294,
-   "lon": -122.910082
-  },
-  {
-   "hex": "a07155",
-   "callsign": "N1279Q",
-   "type": "C150",
-   "alt_ft": null,
-   "gs_kn": 57.5,
-   "track": 208.12,
-   "lat": 45.79089,
-   "lon": -122.866438
-  },
-  {
-   "hex": "a327ee",
-   "callsign": "DAL2551",
-   "type": "A319",
-   "alt_ft": 3375,
-   "gs_kn": 232.5,
-   "track": 302.53,
-   "lat": 45.592424,
-   "lon": -122.858185
+   "hex": "a6be24",
+   "callsign": "N5331Y",
+   "type": "PA44",
+   "alt_ft": 1600,
+   "gs_kn": 121.8,
+   "track": 60.49,
+   "lat": 45.469619,
+   "lon": -122.92348
   }
  ]
 }
