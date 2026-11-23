@@ -1,56 +1,17 @@
 {
- "fetched_at": "2026-11-23T15:52:15Z",
+ "fetched_at": "2026-11-23T16:22:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
-  {
-   "mmsi": 367176750,
-   "lat": 46.16725,
-   "lon": -123.91679,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 15:53:17.085017094 +0000 UTC"
-  },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.19185,
    "lon": -123.92597,
-   "sog_kn": 0,
-   "cog": 316,
+   "sog_kn": 0.1,
+   "cog": 149.6,
    "heading": 111,
-   "updated": "2026-11-23 15:53:04.038148174 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20699,
-   "lon": -123.80837,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-23 15:53:06.892495384 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25701,
-   "lon": -123.98369,
-   "sog_kn": 0.3,
-   "cog": 248.7,
-   "heading": 119,
-   "updated": "2026-11-23 15:52:55.191378264 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19638,
-   "lon": -123.7971,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-23 15:52:58.023653908 +0000 UTC"
+   "updated": "2026-11-23 16:22:53.520372683 +0000 UTC"
   }
  ]
 }
