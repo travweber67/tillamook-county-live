@@ -1,56 +1,56 @@
 {
- "fetched_at": "2026-11-23T15:22:15Z",
+ "fetched_at": "2026-11-23T15:52:15Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 367176750,
-   "lat": 46.16722,
-   "lon": -123.91686,
+   "lat": 46.16725,
+   "lon": -123.91679,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 15:23:12.012145639 +0000 UTC"
+   "updated": "2026-11-23 15:53:17.085017094 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28175,
-   "lon": -124.04699,
-   "sog_kn": 4.8,
-   "cog": 223,
-   "heading": 205,
-   "updated": "2026-11-23 15:22:59.252254452 +0000 UTC"
-  },
-  {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16787,
-   "lon": -123.9144,
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19185,
+   "lon": -123.92597,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 15:23:21.733803132 +0000 UTC"
+   "cog": 316,
+   "heading": 111,
+   "updated": "2026-11-23 15:53:04.038148174 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.76045,
-   "sog_kn": 0,
-   "cog": 162.6,
-   "heading": 511,
-   "updated": "2026-11-23 15:23:15.467259761 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20699,
+   "lon": -123.80837,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-23 15:53:06.892495384 +0000 UTC"
   },
   {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16558,
-   "lon": -123.922,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 15:23:06.794076931 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25701,
+   "lon": -123.98369,
+   "sog_kn": 0.3,
+   "cog": 248.7,
+   "heading": 119,
+   "updated": "2026-11-23 15:52:55.191378264 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19638,
+   "lon": -123.7971,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-23 15:52:58.023653908 +0000 UTC"
   }
  ]
 }
