@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-23T16:22:16Z",
+ "fetched_at": "2026-11-23T16:52:16Z",
  "status": "ok",
- "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): US101 at Seaside MP 22.50 SB.",
+ "note": "16 cameras verified live from the TripCheck inventory.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -44,6 +44,13 @@
    "lon": -123.79162,
    "route": "OR6",
    "image_url": "https://www.tripcheck.com/roadcams/cams/ORE6%20at%20Olsen%20Rd%20EB_pid4397.jpg"
+  },
+  {
+   "name": "US101 at Seaside MP 22.50 SB",
+   "lat": 45.97442,
+   "lon": -123.92736,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20MP22.50%20SB_pid4401.jpg"
   },
   {
    "name": "US101 at Seaside",
