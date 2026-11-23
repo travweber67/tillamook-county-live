@@ -1,6 +1,85 @@
 {
- "fetched_at": "2026-11-23T19:22:18Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-23T19:52:18Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367589830,
+   "lat": 46.18637,
+   "lon": -123.86288,
+   "sog_kn": 0,
+   "cog": 303,
+   "heading": 511,
+   "updated": "2026-11-23 19:53:12.767421795 +0000 UTC"
+  },
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16854,
+   "lon": -123.91401,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-23 19:53:06.347981984 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25771,
+   "lon": -123.98902,
+   "sog_kn": 0,
+   "cog": 255,
+   "heading": 39,
+   "updated": "2026-11-23 19:53:05.431955308 +0000 UTC"
+  },
+  {
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28128,
+   "lon": -124.04681,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-23 19:53:22.645917563 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.17002,
+   "lon": -123.91453,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-23 19:53:04.909021458 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18994,
+   "lon": -123.85419,
+   "sog_kn": 0,
+   "cog": 298.6,
+   "heading": 511,
+   "updated": "2026-11-23 19:53:16.995844263 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19633,
+   "lon": -123.79708,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-23 19:52:55.530051613 +0000 UTC"
+  },
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 46.23847,
+   "lon": -124.12194,
+   "sog_kn": 11.2,
+   "cog": 58.1,
+   "heading": 60,
+   "updated": "2026-11-23 19:52:55.379639922 +0000 UTC"
+  }
+ ]
 }
