@@ -1,47 +1,46 @@
 {
- "fetched_at": "2026-11-23T21:52:20Z",
+ "fetched_at": "2026-11-23T22:22:21Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.19202,
+   "lon": -123.87974,
+   "sog_kn": 0.5,
+   "cog": 85.8,
+   "heading": 82,
+   "updated": "2026-11-23 22:23:05.095508138 +0000 UTC"
+  },
+  {
+   "mmsi": 367355270,
+   "name": "CALAMARI",
+   "lat": 46.16792,
+   "lon": -123.91432,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 22:22:53.832099645 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.28104,
+   "lon": -124.04639,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-23 22:22:51.460589694 +0000 UTC"
+  },
+  {
    "mmsi": 367331730,
    "name": "COLUMBIA",
    "lat": 46.16838,
-   "lon": -123.9184,
+   "lon": -123.91839,
    "sog_kn": 0,
    "cog": 29.2,
-   "heading": 349,
-   "updated": "2026-11-23 21:53:02.73914141 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91792,
-   "sog_kn": 0,
-   "cog": 64.5,
-   "heading": 177,
-   "updated": "2026-11-23 21:53:18.367180361 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16999,
-   "lon": -123.91452,
-   "sog_kn": 0,
-   "cog": 230.7,
-   "heading": 188,
-   "updated": "2026-11-23 21:53:02.309687134 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16809,
-   "lon": -123.91427,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-23 21:53:18.204277854 +0000 UTC"
+   "heading": 350,
+   "updated": "2026-11-23 22:23:13.388355499 +0000 UTC"
   }
  ]
 }
