@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T09:53:12Z",
+ "fetched_at": "2026-11-23T10:23:19Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -23,21 +23,21 @@
    "tier": "high"
   },
   {
-   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
-   "date": "2026-11-23",
-   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
-   "tier": "high"
-  },
-  {
    "title": "RIVERBEND PLAYERS HOLIDAY SHOW OF THE SEASON: MIRACLE ON 34TH STREET AT NCRD PERFORMING ARTS CENTER DEC. 4-20",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/riverbend-players-holiday-show-of-the-season-miracle-on-34th-street-at-ncrd-performing-arts-center-dec-4-20/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
    "date": "2026-11-23",
    "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
+   "tier": "high"
+  },
+  {
+   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
+   "date": "2026-11-23",
+   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
    "tier": "high"
   },
   {
@@ -207,21 +207,21 @@
    "tier": "useful"
   },
   {
-   "title": "Coastal Flood Warning and Advisory",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/coastal-flood-warning-and-advisory/article_83bb711a-98da-4942-a53c-c26f094e4950.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
-   "date": "2026-11-22",
-   "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
-   "tier": "routine"
-  },
-  {
    "title": "WHEELER MURAL PROJECT: CALL FOR DESIGN ENTRIES BY 1/8/27",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CityofWheelerlogo.png",
    "date": "2026-11-22",
    "summary": "WHAT: MURAL-PAINTING OPPORTUNITY ON TWO (2) CONEX CONTAINERS IN UPPER PARK WHO: WHEELER RESIDENTS ARE ENCOURAGED TO APPLY, BUT THIS PROJECT IS OPEN TO ALL INTERESTED PARTIES WHEN: ALL ENTRIES ARE...",
+   "tier": "routine"
+  },
+  {
+   "title": "Coastal Flood Warning and Advisory",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/coastal-flood-warning-and-advisory/article_83bb711a-98da-4942-a53c-c26f094e4950.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
+   "date": "2026-11-22",
+   "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
    "tier": "routine"
   }
  ]
