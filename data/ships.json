@@ -1,44 +1,35 @@
 {
- "fetched_at": "2026-11-23T03:22:04Z",
+ "fetched_at": "2026-11-23T03:52:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493011,
-   "lat": 46.28158,
-   "lon": -124.04679,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-23 03:22:36.062605622 +0000 UTC"
+   "mmsi": 367439830,
+   "lat": 46.16881,
+   "lon": -123.91387,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 03:52:40.892939453 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16851,
-   "lon": -123.91398,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 03:22:38.727752197 +0000 UTC"
+   "mmsi": 367725050,
+   "lat": 46.16803,
+   "lon": -123.91426,
+   "sog_kn": 0,
+   "cog": 157.1,
+   "heading": 511,
+   "updated": "2026-11-23 03:52:31.460899081 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.25641,
-   "lon": -123.98659,
-   "sog_kn": 1.5,
-   "cog": 162.3,
-   "heading": 348,
-   "updated": "2026-11-23 03:22:36.06325341 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85414,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-23 03:22:20.802737425 +0000 UTC"
+   "mmsi": 367498220,
+   "name": "SOUTH BAY",
+   "lat": 46.1673,
+   "lon": -123.91631,
+   "sog_kn": 0,
+   "cog": 1.1,
+   "heading": 511,
+   "updated": "2026-11-23 03:52:43.832566698 +0000 UTC"
   }
  ]
 }
