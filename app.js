@@ -492,8 +492,9 @@ async function loadAlerts() {
    BAR — the Coast Guard's own Tillamook Bay bar report, published
    by NWS Portland as XML (AllBars.xml, updated about every four
    hours or when conditions change; CORS-open). States: Closed →
-   red, Restricted → amber (with the recreational size limit pulled
-   from the report), No Restrictions → green. A report older than
+   red, Restricted → red (Travis, 2026-11-22: a restricted bar is a
+   full restriction, graded bad like Closed; the recreational size
+   limit is pulled from the report), No Restrictions → green. A report older than
    6.5 hours, a missing row, or a failed fetch renders GRAY
    "unavailable" — never green on stale data.
    SURF + FLOOD — one alerts call for the county zone ORC057 plus
@@ -640,15 +641,15 @@ async function loadCoast() {
       anyOk = true;
     } else if (/restrict/i.test(status)) {
       const rec = (restrictions.split('/')[0] || '').match(/(\d+)\s*FEET/i);
-      coastSet('coast-row-bar', 'warn', '⚠️ BAR RESTRICTED',
+      coastSet('coast-row-bar', 'bad', '⚠️ BAR RESTRICTED',
         (rec ? 'Boats ' + rec[1] + ' feet and under must stay in. ' : 'Restrictions are in effect — read the full report. ')
         + 'Coast Guard report from ' + fmtDayTime(when) + '.');
-      /* Item B (Travis, 2026-11-21): the pill takes 'warn' here,
-         matching this row's own warn state — 'bad' filled the pill
-         with a solid pale-red box (#fdecec) that read as a stray
-         red box next to the amber row. 'bad' stays reserved for
-         BAR CLOSED, where the row is bad too. */
-      barSpot('Bar restrictions', 'Restricciones en la barra', 'warn');
+      /* tcl-v48 (Travis, 2026-11-22) REVERSES the v34 Item B warn
+         treatment: a RESTRICTED bar is a full restriction, so the
+         pill takes 'bad' (bright red) exactly like this row and like
+         BAR CLOSED — amber read as 'only halfway restricted' next
+         to the red weather/flood warnings. */
+      barSpot('Bar restrictions', 'Restricciones en la barra', 'bad');
       anyOk = true;
     } else {
       coastSet('coast-row-bar', '', '❔ Bar Status Unclear', 'The Coast Guard report says "' + status + '" — read the full NWS bar report before you cross.');

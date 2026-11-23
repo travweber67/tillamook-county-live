@@ -1296,7 +1296,7 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
 .sticky-pill{background:rgba(255,255,255,.1);color:#eef2e2;border-color:rgba(255,255,255,.28)}
 .sticky-pill.ok{border-color:#8fe3a8;color:#8fe3a8}
 .sticky-pill.warn{border-color:#ffc98a;color:#ffc98a}
-.sticky-pill.bad{border-color:#e5a3a3;color:#ffb3ab;background:rgba(179,53,43,.28)}
+.sticky-pill.bad{border-color:#ff3333;color:#ff3333;background:rgba(179,53,43,.28)}
 .sticky-links a{color:#cfd8c2}
 .sticky-links a:hover{color:#fff;background:rgba(255,255,255,.12)}
 
@@ -1325,7 +1325,7 @@ html[data-theme="dark"] .r-poor .crab-pill{color:#f1998f}
 .ticker .glance-val{color:#fff;font-size:1.9rem;line-height:1.12;letter-spacing:0;-webkit-line-clamp:2}
 .ticker .glance-val.ok{color:#a5ecb6}
 .ticker .glance-val.warn{color:#ffc98a}
-.ticker .glance-val.bad{color:#ffab9e}
+.ticker .glance-val.bad{color:#ff3333}
 .ticker .glance-sub{color:#bfccab;font-size:.8rem}
 .ticker-nav{
   position:relative;display:flex;gap:6px;flex-wrap:wrap;
@@ -1988,7 +1988,7 @@ html[data-theme="dark"] .page-bg::after{
 }
 .glance-strip .glance-val.ok{color:#a5ecb6}
 .glance-strip .glance-val.warn{color:#ffc98a}
-.glance-strip .glance-val.bad{color:#ffab9e}
+.glance-strip .glance-val.bad{color:#ff3333}
 @media (max-width:560px){
   .strip-item.glance-tile{gap:10px;padding:9px 20px 9px 16px}
   .glance-strip .gl-ico{width:30px;height:30px}
@@ -3673,7 +3673,7 @@ body.tcl-rd .hero-status a{
   -webkit-backdrop-filter:none;backdrop-filter:none;
 }
 body.tcl-rd .hero-status a.warn,
-body.tcl-rd .hero-status a.bad{color:#ff7a6b;font-weight:750}
+body.tcl-rd .hero-status a.bad{color:#ff3333;font-weight:750}
 /* tcl-v45 (2026-11-22, Travis): the spots now GRADE like the Coast
    Conditions card grades its rows (ok green / warn amber / bad red)
    instead of warn and bad sharing one alarm red. The classes were
