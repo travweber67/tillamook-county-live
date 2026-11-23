@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-23T20:22:18Z",
+ "fetched_at": "2026-11-23T20:52:18Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "2 incidents in the county scope; 38 active statewide."
+   "note": "1 incidents in the county scope; 35 active statewide."
   }
  ],
  "incidents": [
@@ -20,20 +20,7 @@
    "start": "2026-11-23T12:06:20.833-08:00",
    "updated": "2026-11-23T12:09:09-08:00",
    "source": "ODOT TripCheck"
-  },
-  {
-   "title": "Obstruction \u2014 Hazardous Tree Or Vegetation",
-   "desc": "Hazardous tree or vegetation. Prepare to slow. Estimated delay under 20 minutes.",
-   "impact": "Estimated delay under 20 minutes",
-   "place": "US101, 4 miles North of Cloverdale",
-   "route": "US101",
-   "milepost": 82.96,
-   "lat": 45.2513,
-   "lon": -123.84815,
-   "start": "2026-11-23T11:45:36.673-08:00",
-   "updated": "2026-11-23T12:13:35-08:00",
-   "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 38
+ "odot_active_statewide": 35
 }
