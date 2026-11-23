@@ -1,64 +1,85 @@
 {
- "fetched_at": "2026-11-23T01:52:04Z",
+ "fetched_at": "2026-11-23T02:22:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367089450,
-   "lat": 46.19011,
-   "lon": -123.85667,
-   "sog_kn": 0,
-   "cog": 243.1,
+   "mmsi": 368288370,
+   "lat": 46.30569,
+   "lon": -124.04418,
+   "sog_kn": 0.9,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 01:52:52.778637564 +0000 UTC"
+   "updated": "2026-11-23 02:22:59.855655378 +0000 UTC"
   },
   {
-   "mmsi": 367498220,
-   "lat": 46.16724,
-   "lon": -123.91625,
-   "sog_kn": 0,
-   "cog": 1.1,
-   "heading": 511,
-   "updated": "2026-11-23 01:52:42.800314801 +0000 UTC"
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25746,
+   "lon": -123.98566,
+   "sog_kn": 0.2,
+   "cog": 282.2,
+   "heading": 302,
+   "updated": "2026-11-23 02:23:05.568737789 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19887,
+   "lon": -123.80895,
+   "sog_kn": 0.1,
+   "cog": 134.7,
+   "heading": 83,
+   "updated": "2026-11-23 02:22:51.486602807 +0000 UTC"
   },
   {
    "mmsi": 367529030,
    "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
+   "lat": 46.1905,
+   "lon": -123.82968,
    "sog_kn": 0,
    "cog": 99.8,
    "heading": 168,
-   "updated": "2026-11-23 01:53:02.554943024 +0000 UTC"
+   "updated": "2026-11-23 02:22:51.754671342 +0000 UTC"
+  },
+  {
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19736,
+   "lon": -123.76312,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 02:22:38.571455599 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19185,
+   "lon": -123.92597,
+   "sog_kn": 0,
+   "cog": 249.3,
+   "heading": 112,
+   "updated": "2026-11-23 02:23:03.756069584 +0000 UTC"
   },
   {
    "mmsi": 366435740,
    "name": "GEORGE ALLEN",
-   "lat": 46.16784,
-   "lon": -123.91434,
+   "lat": 46.16789,
+   "lon": -123.91437,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-23 01:52:52.475781283 +0000 UTC"
+   "updated": "2026-11-23 02:22:51.604629308 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25751,
-   "lon": -123.98361,
-   "sog_kn": 0.1,
-   "cog": 265.3,
-   "heading": 122,
-   "updated": "2026-11-23 01:52:59.408467451 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85418,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.272,
+   "lon": -123.95147,
    "sog_kn": 0,
-   "cog": 253.1,
-   "heading": 511,
-   "updated": "2026-11-23 01:53:09.799877338 +0000 UTC"
+   "cog": 149.5,
+   "heading": 131,
+   "updated": "2026-11-23 02:23:04.17646404 +0000 UTC"
   }
  ]
 }
