@@ -1,105 +1,64 @@
 {
- "fetched_at": "2026-11-23T01:22:03Z",
+ "fetched_at": "2026-11-23T01:52:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 10 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367187080,
-   "lat": 46.16905,
-   "lon": -123.91374,
+   "mmsi": 367089450,
+   "lat": 46.19011,
+   "lon": -123.85667,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 243.1,
    "heading": 511,
-   "updated": "2026-11-23 01:22:35.989233423 +0000 UTC"
+   "updated": "2026-11-23 01:52:52.778637564 +0000 UTC"
   },
   {
-   "mmsi": 367197230,
-   "lat": 46.16928,
-   "lon": -123.91364,
+   "mmsi": 367498220,
+   "lat": 46.16724,
+   "lon": -123.91625,
    "sog_kn": 0,
-   "cog": 239,
+   "cog": 1.1,
    "heading": 511,
-   "updated": "2026-11-23 01:22:53.91556479 +0000 UTC"
+   "updated": "2026-11-23 01:52:42.800314801 +0000 UTC"
   },
   {
-   "mmsi": 367439830,
-   "lat": 46.16882,
-   "lon": -123.91388,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 01:22:41.894187561 +0000 UTC"
-  },
-  {
-   "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.16794,
-   "lon": -123.91429,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 01:22:52.935466619 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28106,
-   "lon": -124.04638,
-   "sog_kn": 0,
-   "cog": 131.5,
-   "heading": 511,
-   "updated": "2026-11-23 01:23:02.136465537 +0000 UTC"
-  },
-  {
-   "mmsi": 366855000,
-   "name": "FLORIDA",
-   "lat": 46.2433,
-   "lon": -123.99643,
-   "sog_kn": 16.7,
-   "cog": 313.1,
-   "heading": 312,
-   "updated": "2026-11-23 01:22:59.27262625 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19185,
-   "lon": -123.92597,
-   "sog_kn": 0,
-   "cog": 133.6,
-   "heading": 111,
-   "updated": "2026-11-23 01:23:04.009625173 +0000 UTC"
+   "cog": 99.8,
+   "heading": 168,
+   "updated": "2026-11-23 01:53:02.554943024 +0000 UTC"
   },
   {
    "mmsi": 366435740,
    "name": "GEORGE ALLEN",
-   "lat": 46.16785,
-   "lon": -123.91439,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 01:22:53.786461528 +0000 UTC",
+   "lat": 46.16784,
+   "lon": -123.91434,
    "type_code": 30,
-   "type": "Fishing"
+   "type": "Fishing",
+   "updated": "2026-11-23 01:52:52.475781283 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25669,
-   "lon": -123.98769,
-   "sog_kn": 1.2,
-   "cog": 88.9,
-   "heading": 118,
-   "updated": "2026-11-23 01:23:03.402129838 +0000 UTC"
+   "lat": 46.25751,
+   "lon": -123.98361,
+   "sog_kn": 0.1,
+   "cog": 265.3,
+   "heading": 122,
+   "updated": "2026-11-23 01:52:59.408467451 +0000 UTC"
   },
   {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.2718,
-   "lon": -123.95124,
-   "type_code": 33,
-   "type": "Dredging",
-   "updated": "2026-11-23 01:23:02.287273598 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18993,
+   "lon": -123.85418,
+   "sog_kn": 0,
+   "cog": 253.1,
+   "heading": 511,
+   "updated": "2026-11-23 01:53:09.799877338 +0000 UTC"
   }
  ]
 }
