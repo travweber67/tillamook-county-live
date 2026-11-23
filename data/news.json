@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T09:23:10Z",
+ "fetched_at": "2026-11-23T09:53:12Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -13,6 +13,33 @@
   }
  ],
  "stories": [
+  {
+   "title": "Tillamook Library celebrates 20 years in main branch",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/tillamook-library-celebrates-20-years-in-main-branch/article_28e7a360-1892-4146-8c8a-a55ac60f25dd.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/8a/58adebec-7df7-4afe-8598-4bf299ebe14b/6aff52569d5be.image.jpg?resize=300%2C225",
+   "date": "2026-11-23",
+   "summary": "Patrons of the Tillamook County Library gathered at the system’s main branch in Tillamook on November 14, to celebrate the building’s 20th anniversary with a day of music, dancing, craft activities and gratitude.",
+   "tier": "high"
+  },
+  {
+   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
+   "date": "2026-11-23",
+   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
+   "tier": "high"
+  },
+  {
+   "title": "RIVERBEND PLAYERS HOLIDAY SHOW OF THE SEASON: MIRACLE ON 34TH STREET AT NCRD PERFORMING ARTS CENTER DEC. 4-20",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/riverbend-players-holiday-show-of-the-season-miracle-on-34th-street-at-ncrd-performing-arts-center-dec-4-20/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
+   "date": "2026-11-23",
+   "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
+   "tier": "high"
+  },
   {
    "title": "OREGON DEPT. OF FORESTRY: STATE CAPITOL GETS ITS HOLIDAY TREE FROM TILLAMOOK STATE FOREST",
    "source": "Tillamook County Pioneer",
@@ -153,6 +180,15 @@
    "tier": "high"
   },
   {
+   "title": "OREGON DEPT. OF FISH & WILDLIFE: Unwind after Thanksgiving dinner with Free Fishing Days Nov. 27 and 28",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-unwind-after-thanksgiving-dinner-with-free-fishing-days-nov-27-and-28/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ODFWFreeFishingDays.jpg",
+   "date": "2026-11-23",
+   "summary": "(SALEM, OR)– Continue the family togetherness — or break off on your own — for free fishing, clamming and crabbing on Friday, Nov. 27 and Saturday, Nov. 28. No fishing/shellfish licenses...",
+   "tier": "useful"
+  },
+  {
    "title": "Oregon King Tides Arrive in November – First Series Nov. 23-27",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-king-tides-arrive-in-november-first-series-nov-23-27/",
@@ -171,58 +207,22 @@
    "tier": "useful"
   },
   {
-   "title": "Oregon’s commercial Dungeness crab season delayed",
+   "title": "Coastal Flood Warning and Advisory",
    "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/oregon-s-commercial-dungeness-crab-season-delayed/article_4f502e6f-6d6d-58d8-86af-aeaf0f836c13.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/0/39/039298bb-8f2d-563d-8ae5-0bdc25ffca1f/6b01e35820c7d.image.jpg?resize=300%2C215",
-   "date": "2026-11-21",
-   "summary": "Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today.",
-   "tier": "useful"
-  },
-  {
-   "title": "Forester recommends smaller 2027 harvest in Forest Grove's watershed",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/forester-recommends-smaller-2027-harvest-in-forest-groves-watershed/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/PXL_20220809_162605327.jpg",
-   "date": "2026-11-20",
-   "summary": "Forest Grove netted about $900,000 from its watershed timber this year, and its forester thinks the city's trees can replace the rotting logs in a Roaring Creek footbridge.",
-   "tier": "useful"
-  },
-  {
-   "title": "Tillamook Forest Center to close for the season Nov. 29",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/tillamook-forest-center-to-close-for-the-season-nov-29/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/tfc-sign.webp",
-   "date": "2026-11-20",
-   "summary": "The Tillamook Forest Center will close Nov. 29, with a few final activities scheduled before the winter closure.",
-   "tier": "useful"
-  },
-  {
-   "title": "Tualatin SWCD receives federal fish-passage money held up over paperwork",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/tualatin-swcd-gets-federal-fish-passage-money-held-up-over-paperwork/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/1-NRCS---new-bridge-with-NRCS-engineers--Aug-7-2025--public-domain-.jpg",
-   "date": "2026-11-20",
-   "summary": "The Tualatin Soil and Water Conservation District received $610,953.03 on Nov. 4 for fish-passage work on Coffee and Finger creeks, tributaries of Gales Creek, more than a year after construction ended.",
+   "url": "https://www.tillamookheadlightherald.com/news/coastal-flood-warning-and-advisory/article_83bb711a-98da-4942-a53c-c26f094e4950.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
+   "date": "2026-11-22",
+   "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
    "tier": "routine"
   },
   {
-   "title": "Nehalem Council discusses watershed management plan",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/nehalem-council-discusses-watershed-management-plan/article_c15cfd10-9a32-4c2f-8bea-4dd632fb4c1a.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/d/58/d588c972-6870-11ea-9206-c3872b132051/5e71026475865.image.jpg?crop=1443%2C813%2C121%2C203&resize=300%2C169&order=crop%2Cresize",
-   "date": "2026-11-20",
-   "summary": "Nehalem City Council discussed the first draft of a watershed management plan that is currently being developed for city owned forestland containing the city’s drinking water sources on November 10.",
+   "title": "WHEELER MURAL PROJECT: CALL FOR DESIGN ENTRIES BY 1/8/27",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CityofWheelerlogo.png",
+   "date": "2026-11-22",
+   "summary": "WHAT: MURAL-PAINTING OPPORTUNITY ON TWO (2) CONEX CONTAINERS IN UPPER PARK WHO: WHEELER RESIDENTS ARE ENCOURAGED TO APPLY, BUT THIS PROJECT IS OPEN TO ALL INTERESTED PARTIES WHEN: ALL ENTRIES ARE...",
    "tier": "routine"
-  },
-  {
-   "title": "ODOT, law enforcement take action against unauthorized movers",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/odot-law-enforcement-take-action-against-unauthorized-movers/article_120a82f2-85b6-5b0b-8a1e-0cbaa90de227.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/1/6c/16c2533a-635d-5526-a6d1-b8c71030b877/6affac03ad7c2.image.png?resize=300%2C194",
-   "date": "2026-11-21",
-   "summary": "Hiring an unauthorized moving company could lead to damaged or stolen property, poor service and unexpected charges.",
-   "tier": "crime"
   }
  ]
 }
