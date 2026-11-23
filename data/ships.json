@@ -1,26 +1,97 @@
 {
- "fetched_at": "2026-11-23T17:52:17Z",
+ "fetched_at": "2026-11-23T18:22:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366970430,
-   "lat": 46.19652,
-   "lon": -123.80668,
-   "sog_kn": 3.5,
-   "cog": 261,
-   "heading": 511,
-   "updated": "2026-11-23 17:53:02.992857542 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20088,
+   "lon": -123.80373,
+   "sog_kn": 0,
+   "cog": 129.7,
+   "heading": 242,
+   "updated": "2026-11-23 18:22:53.07955103 +0000 UTC"
   },
   {
    "mmsi": 367529030,
    "name": "CONNOR FOSS",
-   "lat": 46.19048,
+   "lat": 46.19049,
    "lon": -123.82971,
    "sog_kn": 0.1,
-   "cog": 254,
+   "cog": 93.5,
    "heading": 167,
-   "updated": "2026-11-23 17:53:10.595177367 +0000 UTC"
+   "updated": "2026-11-23 18:23:09.834941882 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.22755,
+   "lon": -123.95743,
+   "sog_kn": 7.3,
+   "cog": 1.9,
+   "heading": 354,
+   "updated": "2026-11-23 18:23:13.231913658 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 167.1,
+   "heading": 177,
+   "updated": "2026-11-23 18:22:58.940397377 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.17001,
+   "lon": -123.91452,
+   "sog_kn": 0,
+   "cog": 222,
+   "heading": 188,
+   "updated": "2026-11-23 18:23:11.141214156 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.28159,
+   "lon": -124.04693,
+   "sog_kn": 0,
+   "cog": 171.5,
+   "heading": 511,
+   "updated": "2026-11-23 18:23:07.453934238 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19637,
+   "lon": -123.79708,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-23 18:22:55.017950227 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18806,
+   "lon": -123.85908,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-23 18:23:05.178394173 +0000 UTC"
+  },
+  {
+   "mmsi": 314085000,
+   "name": "SOLENT",
+   "lat": 46.04304,
+   "lon": -124.38623,
+   "sog_kn": 12,
+   "cog": 40.8,
+   "heading": 53,
+   "updated": "2026-11-23 18:23:06.119115721 +0000 UTC"
   }
  ]
 }
