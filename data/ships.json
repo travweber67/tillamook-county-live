@@ -1,66 +1,56 @@
 {
- "fetched_at": "2026-11-23T00:22:02Z",
+ "fetched_at": "2026-11-23T00:52:03Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493011,
-   "lat": 46.28158,
-   "lon": -124.04681,
+   "mmsi": 367498220,
+   "lat": 46.16732,
+   "lon": -123.91623,
    "sog_kn": 0,
-   "cog": 90,
+   "cog": 1.1,
    "heading": 511,
-   "updated": "2026-11-23 00:23:06.454553955 +0000 UTC"
+   "updated": "2026-11-23 00:52:42.207254067 +0000 UTC"
   },
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19846,
-   "lon": -123.80871,
-   "sog_kn": 0.1,
-   "cog": 339.9,
-   "heading": 58,
-   "updated": "2026-11-23 00:22:52.808772657 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28106,
-   "lon": -124.04638,
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19738,
+   "lon": -123.76311,
    "sog_kn": 0,
-   "cog": 131.5,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 00:23:02.448260635 +0000 UTC"
+   "updated": "2026-11-23 00:52:42.056416107 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16846,
+   "lon": -123.91405,
    "sog_kn": 0,
-   "cog": 251.5,
-   "heading": 168,
-   "updated": "2026-11-23 00:22:55.267209075 +0000 UTC"
-  },
-  {
-   "mmsi": 367085290,
-   "name": "MARATHON",
-   "lat": 46.18858,
-   "lon": -123.86259,
-   "sog_kn": 0,
-   "cog": 307,
-   "heading": 306,
-   "updated": "2026-11-23 00:22:53.402149924 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.1899,
-   "lon": -123.85418,
-   "sog_kn": 0,
-   "cog": 287,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-23 00:23:06.818242082 +0000 UTC"
+   "updated": "2026-11-23 00:52:43.92641094 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 46.19423,
+   "lon": -123.84253,
+   "sog_kn": 10.9,
+   "cog": 265.7,
+   "heading": 264,
+   "updated": "2026-11-23 00:52:42.362507077 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27138,
+   "lon": -123.9504,
+   "sog_kn": 0,
+   "cog": 169.2,
+   "heading": 131,
+   "updated": "2026-11-23 00:52:54.709113939 +0000 UTC"
   }
  ]
 }
