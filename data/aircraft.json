@@ -1,17 +1,6 @@
 {
- "fetched_at": "2026-11-23T07:52:08Z",
+ "fetched_at": "2026-11-23T08:22:09Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
- "aircraft": [
-  {
-   "hex": "a527d5",
-   "callsign": "N431LF",
-   "type": "B429",
-   "alt_ft": 1150,
-   "gs_kn": 120.6,
-   "track": 142.75,
-   "lat": 45.636658,
-   "lon": -122.818775
-  }
- ]
+ "aircraft": []
 }

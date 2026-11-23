@@ -1,26 +1,12 @@
 {
- "fetched_at": "2026-11-23T07:52:08Z",
+ "fetched_at": "2026-11-23T08:22:09Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 36 active statewide."
+   "note": "0 incidents in the county scope; 33 active statewide."
   }
  ],
- "incidents": [
-  {
-   "title": "Vehicle Incident \u2014 Crash",
-   "desc": "A crash has occurred. Prepare to slow or move over for worker safety. Estimated delay under 20 minutes.",
-   "impact": "Estimated delay under 20 minutes",
-   "place": "US101, Garibaldi",
-   "route": "US101",
-   "milepost": 57.52,
-   "lat": 45.55461,
-   "lon": -123.89913,
-   "start": "2026-11-22T23:38:19.817-08:00",
-   "updated": "2026-11-22T23:40:10-08:00",
-   "source": "ODOT TripCheck"
-  }
- ],
- "odot_active_statewide": 36
+ "incidents": [],
+ "odot_active_statewide": 33
 }
