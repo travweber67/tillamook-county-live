@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T17:23:26Z",
+ "fetched_at": "2026-11-23T17:53:24Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "11 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "15 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -41,6 +41,17 @@
    "tier": "high"
   },
   {
+   "title": "Renovation begins at the old Kimmel True Value — a restaurant and studios are coming to First and Ivy",
+   "source": "Tillamook Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/renovation-begins-at-ex-kimmel-true-value/article_1b18dde2-66f5-4c7d-bc73-cc5c848e0446.html",
+   "img": "img/news/kimmel-renovation.jpg",
+   "date": "2026-11-22",
+   "summary": "Work has begun to convert the building that formerly housed Kimmel True Value, at the corner of First Street and Ivy Avenue in downtown Tillamook, into a mixed-use space featuring a restaurant and studios — a long-empty hardware store starting its second life in the middle of town.",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 2, 2026-11-23).",
+   "tier": "high"
+  },
+  {
    "title": "OREGON DEPT. OF FORESTRY: STATE CAPITOL GETS ITS HOLIDAY TREE FROM TILLAMOOK STATE FOREST",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-forestry-state-capitol-gets-its-holiday-tree-from-tillamook-state-forest/",
@@ -56,6 +67,39 @@
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/CapitolTree.jpg",
    "date": "2026-11-21",
    "summary": "A Banks logging company donated its time and equipment to help harvest the 30-foot noble fir, and inmates at the South Fork Forest Camp readied it for the rotunda.",
+   "tier": "high"
+  },
+  {
+   "title": "King tides meet a Super El Niño: 30-to-40-foot waves, a coastal flood warning, and a sneaker wave at Oceanside that went viral",
+   "source": "Register-Guard",
+   "url": "https://www.registerguard.com/story/weather/2026/11/21/oregon-coast-king-tides-kelvin-waves-super-el-nino-converge/92862190007/",
+   "img": "img/news/king-tide-waves.jpg",
+   "date": "2026-11-21",
+   "summary": "The season's first king tides run Nov. 23–27, supercharged by a record-strong Super El Niño and slow-moving Kelvin waves that are already pushing 30-to-40-plus-foot surf onto the Oregon coast. A coastal flood warning runs Tuesday through Friday morning, with up to two feet of water possible above ground in low spots — and a TikTok video of a sneaker wave knocking a woman off her feet on the Oceanside Beach staircase has gone viral as the warning made waves. Locally, Netarts Bay's highest tide of the window hits at 1:02 p.m. on Thanksgiving Day (8.30 feet), and the season's top tide comes at noon on Christmas Eve.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of king tides and big waves at Shore Acres on the Oregon coast by Bonnie Moreland via Wikimedia Commons, public domain (licensed photo, News Scout batch 2, 2026-11-23).",
+   "tier": "high"
+  },
+  {
+   "title": "Tillamook YMCA to offer after-hours access for shift workers",
+   "source": "Tillamook Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/tillamook-ymca-to-offer-after-hours-access/article_44e338f9-8a4a-4700-8232-16974387131a.html",
+   "img": "img/news/ymca-after-hours.jpg",
+   "date": "2026-11-21",
+   "summary": "For Tillamook workers on non-traditional hours, recreation options after closing time have long been scarce. The Tillamook YMCA is readying round-the-clock keycard access for its members — CEO Steve Claus said other facilities' after-hours keycard access inspired the move, and he is working to roll the offering out by the end of the year.",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 2, 2026-11-23).",
+   "tier": "high"
+  },
+  {
+   "title": "Juliet Yänko's debut album gets an evening of story and song in Manzanita",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/juliet-yanko-new-album-release-event-an-evening-of-story-song-at-hoffman-center-in-manzanita-dec-3/",
+   "img": "img/news/yanko-album-night.jpg",
+   "date": "2026-11-19",
+   "summary": "Juliet Yänko celebrates her debut solo album at the Hoffman Center in Manzanita on Dec. 3 with an immersive evening of story and song — less a traditional concert than a walk through the world behind the music, in the north coast's most intimate kind of room.",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 2, 2026-11-23).",
    "tier": "high"
   },
   {

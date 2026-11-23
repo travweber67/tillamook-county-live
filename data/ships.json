@@ -1,45 +1,26 @@
 {
- "fetched_at": "2026-11-23T17:22:17Z",
+ "fetched_at": "2026-11-23T17:52:17Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367161930,
-   "lat": 46.16891,
-   "lon": -123.91386,
-   "sog_kn": 0.5,
-   "cog": 313.5,
+   "mmsi": 366970430,
+   "lat": 46.19652,
+   "lon": -123.80668,
+   "sog_kn": 3.5,
+   "cog": 261,
    "heading": 511,
-   "updated": "2026-11-23 17:22:53.421500332 +0000 UTC"
+   "updated": "2026-11-23 17:53:02.992857542 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.914,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 17:23:10.596914154 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30447,
-   "lon": -124.04024,
-   "sog_kn": 0,
-   "cog": 171.7,
-   "heading": 511,
-   "updated": "2026-11-23 17:23:07.494880541 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85417,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-23 17:23:12.011978629 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
+   "sog_kn": 0.1,
+   "cog": 254,
+   "heading": 167,
+   "updated": "2026-11-23 17:53:10.595177367 +0000 UTC"
   }
  ]
 }
