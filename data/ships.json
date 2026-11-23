@@ -1,55 +1,6 @@
 {
- "fetched_at": "2026-11-23T18:52:18Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 367197230,
-   "lat": 46.16929,
-   "lon": -123.91363,
-   "sog_kn": 0.1,
-   "cog": 157,
-   "heading": 511,
-   "updated": "2026-11-23 18:52:48.494094043 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16857,
-   "lon": -123.91401,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 18:52:43.206395252 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21808,
-   "lon": -123.77609,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-23 18:53:00.041953618 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.25352,
-   "lon": -123.94935,
-   "sog_kn": 7.9,
-   "cog": 235.2,
-   "heading": 230,
-   "updated": "2026-11-23 18:52:34.255937242 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 270.7,
-   "heading": 309,
-   "updated": "2026-11-23 18:52:48.794867823 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-23T19:22:18Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }

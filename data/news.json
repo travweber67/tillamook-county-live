@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T18:53:05Z",
+ "fetched_at": "2026-11-23T19:23:39Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "15 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "18 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -38,6 +38,39 @@
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
    "date": "2026-11-23",
    "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
+   "tier": "high"
+  },
+  {
+   "title": "Before the Flood Warning Even Starts, Rockaway Beach Has a Sandbag Crew",
+   "source": "Tillamook County Live",
+   "url": "https://facebook.com/groups/685665618118328/permalink/29853574700900699/",
+   "img": "img/news/sandbag-home.jpg",
+   "date": "2026-11-23",
+   "summary": "The worst of this week's water hasn't arrived yet. A Coastal Flood Advisory is in effect along the Tillamook County coast now, and a Coastal Flood Warning takes over Tuesday morning and runs through 4 a.m. Friday, with major flooding expected at high tides. Rockaway Beach didn't wait for it. Early Monday morning, Jason Hedler posted in the Rockaway Beach Community group with a simple offer: he will come fill and place sandbags for homes taking on water — free help, no charge. Less than an hour later, Terry Bryant of B Projects and Services LLC posted that he is bringing sandbags in from inland and will help get them set up; his number is 503-451-9872, and the post doesn't state a price, so ask when you call. Tillamook County Live has Hedler's offer featured at the top of the site through the flood window. No sign-up sheet, no waiting list, no agency involved — just two neighbors, a pile of sandbags, and a head start on the water.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of a home ringed with sandbags against flood water by Jocelyn Augustino / FEMA via Wikimedia Commons, public domain (U.S. federal work; licensed photo, Tillamook County Live original, 2026-11-23).",
+   "tier": "high"
+  },
+  {
+   "title": "Thanksgiving Dinner Can Wait. The Tide Peaks at 1:02.",
+   "source": "Tillamook County Live",
+   "url": "https://livingoregoncoast.com/blog/where-to-watch-this-winters-king-tides-in-netarts-and-oceanside",
+   "img": "img/news/king-tide-cooks-chasm.jpg",
+   "date": "2026-11-23",
+   "summary": "Most years, the biggest tides of the season arrive at inconvenient hours. This year the calendar is cooperating: the king tide window running Monday through Friday puts the highest water in the middle of the day, and on Thanksgiving Day the midday high tide at Netarts Bay is predicted for 1:02 p.m., at 8.30 feet. For scale, an ordinary afternoon high at Netarts two weeks ago was predicted at 6.09 feet, and Thursday's other high tide, at 2:18 in the morning, is only 6.00 feet. Wednesday's midday high is the week's biggest at 8.38 feet, and the top tide of the whole season lands at noon on Christmas Eve, 8.64 feet. If you go watch, the known spots are the pullouts along Netarts Bay Road, the fish hatchery, and the boat basin; at Oceanside, the parking area by the tunnel at Maxwell Point gives you the view without the beach. Cape Lookout's day-use area is closed for construction this winter, so use the trailhead instead. Watch from high ground and keep off the logs — this week's surf is running 30 to 40 feet on top of the tides. And if you take a good photo, the Oregon King Tides Project accepts submissions through its online form, so it can enter the state's long-term record.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of a wave splashing in Good Fortune Cove at Cooks Chasm, just south of Cape Perpetua on the Oregon coast, by Joe Mabel via Wikimedia Commons, CC BY-SA 4.0 (licensed photo, Tillamook County Live original, 2026-11-23).",
+   "tier": "high"
+  },
+  {
+   "title": "Somebody in Pacific City Has a Holiday Dinner to Give Away",
+   "source": "Tillamook County Live",
+   "url": "https://facebook.com/groups/483819849022590/permalink/2438871136850775/",
+   "img": "img/news/holiday-dinner.jpg",
+   "date": "2026-11-23",
+   "summary": "A full holiday dinner is looking for a family in Pacific City, and it started with one post in a Facebook group. On Friday afternoon, Sarah Christine posted in the What's Up Pacific City group that she is passing along a Samaritan Health Services holiday food coupon to someone in need. The coupon covers a frozen turkey up to 20 pounds, or a ham, plus a vegetable or fruit tray, lasagna, pies, or mixed nuts — in other words, the makings of a holiday table. She didn't have to post it. A coupon like that gets used quietly, or not at all; instead it went up in front of the whole group, offered to whoever needs it. Thanksgiving is Thursday, and somewhere in Pacific City there is a household doing the math on a holiday meal. If your household could use it, the post is in What's Up Pacific City under Sarah Christine's name — and if you have something similar sitting in a kitchen drawer this week, you know what to do with it.",
+   "img_origin": "generated",
+   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (Tillamook County Live original, 2026-11-23).",
    "tier": "high"
   },
   {
