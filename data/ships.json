@@ -1,77 +1,36 @@
 {
- "fetched_at": "2026-11-23T12:22:13Z",
+ "fetched_at": "2026-11-23T12:52:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21677,
-   "lon": -123.78391,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-23 12:22:52.643677563 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20484,
-   "lon": -123.81121,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-23 12:23:06.894964667 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.2589,
-   "lon": -123.9896,
-   "sog_kn": 102.3,
-   "cog": 360,
-   "heading": 101,
-   "updated": "2026-11-23 12:23:02.562882297 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16777,
-   "lon": -123.91431,
-   "sog_kn": 0,
-   "cog": 129.3,
-   "heading": 511,
-   "updated": "2026-11-23 12:22:52.04272484 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85416,
-   "sog_kn": 0,
-   "cog": 280.4,
-   "heading": 511,
-   "updated": "2026-11-23 12:23:15.927000512 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76904,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-23 12:22:55.120165552 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16558,
-   "lon": -123.922,
+   "mmsi": 367355270,
+   "lat": 46.16793,
+   "lon": -123.9143,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 12:22:56.917660134 +0000 UTC"
+   "updated": "2026-11-23 12:52:53.447259389 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.8297,
+   "sog_kn": 0.1,
+   "cog": 229.6,
+   "heading": 168,
+   "updated": "2026-11-23 12:53:09.759561545 +0000 UTC"
+  },
+  {
+   "mmsi": 367182290,
+   "name": "LONG SHOT",
+   "lat": 46.30516,
+   "lon": -124.04029,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 12:53:12.0298195 +0000 UTC"
   }
  ]
 }
