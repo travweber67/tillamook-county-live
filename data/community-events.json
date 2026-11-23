@@ -429,6 +429,17 @@
    "url": "https://www.facebook.com/events/1668297675092337/"
   },
   {
+   "date": "2026-12-01",
+   "img": "img/events/ev-gingerbread.jpg",
+   "location": "Tillamook County Library",
+   "note": "The first CREATE & Gather meetup, in the Copeland Room at the Tillamook County Library — an afternoon of making Christmas cards together, 4:00 to 5:30 PM. All skill levels welcome; bring any favorite crafting supplies you'd like to use. Billed on Facebook as a free event.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "4:00 PM",
+   "title": "CREATE & Gather: Christmas Card Making - FREE EVENT",
+   "url": "https://www.facebook.com/events/968502882736468/"
+  },
+  {
    "date": "2026-12-03",
    "img": "img/events/ev-storytime.jpg",
    "location": "6200 Camp St, Pacific City",
@@ -906,6 +917,17 @@
    "time": "9:00 AM",
    "title": "SUNDAY HIKE SHUTTLE: NEAHKAHNIE–OREGON COAST TRAIL",
    "url": "https://www.facebook.com/events/1803905680737536/"
+  },
+  {
+   "date": "2026-12-20",
+   "img": "img/events/ev-meeting.jpg",
+   "location": "Swiss Hall, Tillamook",
+   "note": "A continuation meeting at Swiss Hall in Tillamook. Per the Facebook listing, all ATU 757 members in good standing are welcome to attend the charter or any of the continuation meetings. The source listing doesn't state a cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "1:00 PM",
+   "title": "Continuation Meeting - Tillamook",
+   "url": "https://www.facebook.com/events/2635606490196476/"
   },
   {
    "date": "2026-12-31",
