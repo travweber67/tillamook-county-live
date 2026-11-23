@@ -1,6 +1,95 @@
 {
- "fetched_at": "2026-11-23T13:52:14Z",
+ "fetched_at": "2026-11-23T14:22:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 0 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": []
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367197230,
+   "lat": 46.16931,
+   "lon": -123.91364,
+   "sog_kn": 0,
+   "cog": 207.8,
+   "heading": 511,
+   "updated": "2026-11-23 14:22:48.155207882 +0000 UTC"
+  },
+  {
+   "mmsi": 367589830,
+   "lat": 46.19077,
+   "lon": -123.8565,
+   "sog_kn": 0.1,
+   "cog": 358.3,
+   "heading": 511,
+   "updated": "2026-11-23 14:23:14.024968717 +0000 UTC"
+  },
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16855,
+   "lon": -123.91405,
+   "sog_kn": 0,
+   "cog": 174.6,
+   "heading": 511,
+   "updated": "2026-11-23 14:23:07.645808331 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25712,
+   "lon": -123.98698,
+   "sog_kn": 0.1,
+   "cog": 315.8,
+   "heading": 313,
+   "updated": "2026-11-23 14:22:55.380221978 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.8297,
+   "sog_kn": 0.1,
+   "cog": 229.6,
+   "heading": 167,
+   "updated": "2026-11-23 14:23:10.540412441 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19185,
+   "lon": -123.92597,
+   "sog_kn": 0,
+   "cog": 66.4,
+   "heading": 110,
+   "updated": "2026-11-23 14:22:52.931495988 +0000 UTC"
+  },
+  {
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16789,
+   "lon": -123.91438,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 14:23:01.433155155 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30444,
+   "lon": -124.04025,
+   "sog_kn": 0,
+   "cog": 168.3,
+   "heading": 511,
+   "updated": "2026-11-23 14:23:08.551418242 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27208,
+   "lon": -123.95219,
+   "sog_kn": 0,
+   "cog": 170.5,
+   "heading": 132,
+   "updated": "2026-11-23 14:23:15.34606032 +0000 UTC"
+  }
+ ]
 }
