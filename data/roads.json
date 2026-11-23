@@ -1,26 +1,12 @@
 {
- "fetched_at": "2026-11-22T23:52:03Z",
+ "fetched_at": "2026-11-23T00:22:02Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 41 active statewide."
+   "note": "0 incidents in the county scope; 39 active statewide."
   }
  ],
- "incidents": [
-  {
-   "title": "Vehicle Incident \u2014 Crash",
-   "desc": "A crash has occurred with minimal delay to traffic. Prepare to slow or move over for worker safety. No to Minimum Delay.",
-   "impact": "No to Minimum Delay",
-   "place": "US101, Bay City",
-   "route": "US101",
-   "milepost": 60.8,
-   "lat": 45.51379,
-   "lon": -123.88079,
-   "start": "2026-11-22T15:20:20.193-08:00",
-   "updated": "2026-11-22T15:22:11-08:00",
-   "source": "ODOT TripCheck"
-  }
- ],
- "odot_active_statewide": 41
+ "incidents": [],
+ "odot_active_statewide": 39
 }
