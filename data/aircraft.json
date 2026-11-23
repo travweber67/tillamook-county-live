@@ -1,77 +1,57 @@
 {
- "fetched_at": "2026-11-23T02:22:04Z",
+ "fetched_at": "2026-11-23T02:52:06Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a88491",
-   "callsign": "N648SP",
-   "type": "C172",
-   "alt_ft": 1800,
-   "gs_kn": 94.9,
-   "track": 325.3,
-   "lat": 45.194687,
-   "lon": -123.174656
-  },
-  {
-   "hex": "a034d4",
-   "callsign": "GFY1124",
-   "type": "DA42",
-   "alt_ft": 3975,
-   "gs_kn": 123.2,
-   "track": 183.26,
-   "lat": 45.157672,
-   "lon": -123.10864
-  },
-  {
    "hex": "ab6828",
    "callsign": "N834KX",
    "type": "C172",
-   "alt_ft": 3425,
-   "gs_kn": 89.9,
-   "track": 298.56,
-   "lat": 45.588746,
-   "lon": -123.06617
-  },
-  {
-   "hex": "a102b6",
-   "callsign": "N164YF",
-   "type": "PA23",
-   "alt_ft": 600,
-   "gs_kn": 66.1,
-   "track": 129.47,
-   "lat": 45.424929,
-   "lon": -122.969301
-  },
-  {
-   "hex": "a6be24",
-   "callsign": "N5331Y",
-   "type": "PA44",
-   "alt_ft": 100,
-   "gs_kn": 74.4,
-   "track": 323.75,
-   "lat": 45.545471,
-   "lon": -122.951791
+   "alt_ft": 4300,
+   "gs_kn": 76.0,
+   "track": 181.51,
+   "lat": 45.615421,
+   "lon": -123.103523
   },
   {
    "hex": "a89751",
    "callsign": "N65259",
    "type": "C172",
-   "alt_ft": 2625,
-   "gs_kn": 78.4,
-   "track": 203.29,
-   "lat": 45.290817,
-   "lon": -122.922167
+   "alt_ft": 3025,
+   "gs_kn": 116.7,
+   "track": 63.0,
+   "lat": 45.273634,
+   "lon": -123.101606
   },
   {
-   "hex": "a07bfa",
-   "callsign": "N130JA",
+   "hex": "a88491",
+   "callsign": "N648SP",
    "type": "C172",
-   "alt_ft": 3375,
-   "gs_kn": 110.4,
-   "track": 317.2,
-   "lat": 45.43787,
-   "lon": -122.838135
+   "alt_ft": 2700,
+   "gs_kn": 104.7,
+   "track": 45.77,
+   "lat": 45.313019,
+   "lon": -123.015812
+  },
+  {
+   "hex": "ab5951",
+   "callsign": "N830KX",
+   "type": "C172",
+   "alt_ft": 3450,
+   "gs_kn": 121.6,
+   "track": 45.0,
+   "lat": 45.255665,
+   "lon": -122.990872
+  },
+  {
+   "hex": "a8881e",
+   "callsign": "QXE2459",
+   "type": "E75L",
+   "alt_ft": 2450,
+   "gs_kn": 199.2,
+   "track": 71.57,
+   "lat": 45.652197,
+   "lon": -122.816986
   }
  ]
 }
