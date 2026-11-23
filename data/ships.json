@@ -1,37 +1,64 @@
 {
- "fetched_at": "2026-11-23T08:52:09Z",
+ "fetched_at": "2026-11-23T09:22:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999922,
-   "name": "CG47284",
-   "lat": 46.28132,
-   "lon": -124.04677,
+   "mmsi": 369493011,
+   "lat": 46.28157,
+   "lon": -124.04679,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-23 09:22:36.924187666 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19948,
+   "lon": -123.80861,
+   "sog_kn": 0.1,
+   "cog": 190.3,
+   "heading": 94,
+   "updated": "2026-11-23 09:22:53.833361562 +0000 UTC"
+  },
+  {
+   "mmsi": 303284000,
+   "name": "DISCOVERY",
+   "lat": 46.19739,
+   "lon": -123.76312,
    "sog_kn": 0,
-   "cog": 293.7,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 08:52:28.388300172 +0000 UTC"
+   "updated": "2026-11-23 09:22:39.607480469 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.1905,
-   "lon": -123.8297,
+   "mmsi": 367085290,
+   "name": "MARATHON",
+   "lat": 45.51385,
+   "lon": -124.03971,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-23 09:23:02.145253709 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19995,
+   "lon": -123.76048,
    "sog_kn": 0,
-   "cog": 59.6,
-   "heading": 168,
-   "updated": "2026-11-23 08:53:02.533223916 +0000 UTC"
+   "cog": 346,
+   "heading": 511,
+   "updated": "2026-11-23 09:23:02.447567875 +0000 UTC"
   },
   {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 45.69101,
-   "lon": -124.34051,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN > USRCH",
-   "updated": "2026-11-23 08:52:49.8679709 +0000 UTC"
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16559,
+   "lon": -123.92196,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 09:23:06.299623755 +0000 UTC"
   }
  ]
 }
