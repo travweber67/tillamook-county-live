@@ -1,46 +1,55 @@
 {
- "fetched_at": "2026-11-23T22:22:21Z",
+ "fetched_at": "2026-11-23T22:52:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19202,
-   "lon": -123.87974,
-   "sog_kn": 0.5,
-   "cog": 85.8,
-   "heading": 82,
-   "updated": "2026-11-23 22:23:05.095508138 +0000 UTC"
+   "mmsi": 366999010,
+   "lat": 46.26944,
+   "lon": -123.95587,
+   "sog_kn": 1.1,
+   "cog": 289.4,
+   "heading": 511,
+   "updated": "2026-11-23 22:53:15.870319681 +0000 UTC"
   },
   {
    "mmsi": 367355270,
    "name": "CALAMARI",
-   "lat": 46.16792,
-   "lon": -123.91432,
+   "lat": 46.16791,
+   "lon": -123.91431,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 22:22:53.832099645 +0000 UTC"
+   "updated": "2026-11-23 22:52:53.078430715 +0000 UTC"
   },
   {
    "mmsi": 369493291,
    "name": "CG47217",
-   "lat": 46.28104,
-   "lon": -124.04639,
+   "lat": 46.28105,
+   "lon": -124.04637,
    "type_code": 51,
    "type": "Search & rescue",
-   "updated": "2026-11-23 22:22:51.460589694 +0000 UTC"
+   "updated": "2026-11-23 22:53:02.431273693 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16838,
-   "lon": -123.91839,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
    "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 350,
-   "updated": "2026-11-23 22:23:13.388355499 +0000 UTC"
+   "cog": 38.1,
+   "heading": 177,
+   "updated": "2026-11-23 22:53:19.455442173 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19635,
+   "lon": -123.7971,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-23 22:52:57.756585039 +0000 UTC"
   }
  ]
 }
