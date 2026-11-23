@@ -1,164 +1,55 @@
 {
- "fetched_at": "2026-11-23T04:22:05Z",
+ "fetched_at": "2026-11-23T04:52:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 16 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
-  {
-   "mmsi": 367197230,
-   "lat": 46.16929,
-   "lon": -123.9136,
-   "sog_kn": 0,
-   "cog": 71.8,
-   "heading": 511,
-   "updated": "2026-11-23 04:22:49.702927973 +0000 UTC"
-  },
-  {
-   "mmsi": 367498220,
-   "lat": 46.16723,
-   "lon": -123.91624,
-   "sog_kn": 0,
-   "cog": 1.1,
-   "heading": 511,
-   "updated": "2026-11-23 04:22:42.60748453 +0000 UTC"
-  },
   {
    "mmsi": 368188830,
    "name": "ANITA D",
-   "lat": 46.16851,
-   "lon": -123.91404,
+   "lat": 46.1685,
+   "lon": -123.91402,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-23 04:22:43.419613536 +0000 UTC"
-  },
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19507,
-   "lon": -123.83733,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-23 04:22:40.647203907 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.20055,
-   "lon": -123.80787,
-   "sog_kn": 0.3,
-   "cog": 57.3,
-   "heading": 153,
-   "updated": "2026-11-23 04:22:52.05346534 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28105,
-   "lon": -124.04638,
-   "sog_kn": 0,
-   "cog": 131.5,
-   "heading": 511,
-   "updated": "2026-11-23 04:23:02.258029465 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
-   "sog_kn": 0,
-   "cog": 176.3,
-   "heading": 168,
-   "updated": "2026-11-23 04:23:02.258784636 +0000 UTC"
+   "updated": "2026-11-23 04:52:44.896755017 +0000 UTC"
   },
   {
    "mmsi": 366855000,
    "name": "FLORIDA",
-   "lat": 46.20022,
-   "lon": -124.7061,
-   "type_code": 80,
-   "type": "Tanker",
-   "destination": "PORT ANGELES",
-   "updated": "2026-11-23 04:23:02.557486576 +0000 UTC"
+   "lat": 46.19392,
+   "lon": -124.8504,
+   "sog_kn": 12.3,
+   "cog": 265.8,
+   "heading": 263,
+   "updated": "2026-11-23 04:52:34.596436264 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 28.9,
-   "heading": 177,
-   "updated": "2026-11-23 04:22:57.630638491 +0000 UTC"
+   "mmsi": 366435740,
+   "name": "GEORGE ALLEN",
+   "lat": 46.16785,
+   "lon": -123.91439,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-23 04:52:52.067913355 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16869,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 252.2,
-   "heading": 97,
-   "updated": "2026-11-23 04:23:02.408081447 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25757,
+   "lon": -123.98323,
+   "sog_kn": 0.6,
+   "cog": 127.4,
+   "heading": 212,
+   "updated": "2026-11-23 04:52:53.119645287 +0000 UTC"
   },
   {
-   "mmsi": 367085290,
-   "name": "MARATHON",
-   "lat": 46.06349,
-   "lon": -124.02361,
-   "sog_kn": 7.9,
-   "cog": 168.6,
-   "heading": 179,
-   "updated": "2026-11-23 04:23:02.407101701 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16769,
-   "lon": -123.91449,
-   "sog_kn": 0,
-   "cog": 245.1,
-   "heading": 511,
-   "updated": "2026-11-23 04:22:52.054455953 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27201,
-   "lon": -123.95176,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-23 04:23:02.2569165 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27173,
-   "lon": -123.95112,
-   "sog_kn": 0,
-   "cog": 187.4,
-   "heading": 292,
-   "updated": "2026-11-23 04:23:03.322297561 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76903,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-23 04:23:02.408756246 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 239.5,
-   "heading": 307,
-   "updated": "2026-11-23 04:22:58.478035589 +0000 UTC"
+   "mmsi": 538090648,
+   "name": "PAGANELLA",
+   "lat": 46.21736,
+   "lon": -123.76735,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN > USRCH",
+   "updated": "2026-11-23 04:52:31.361939118 +0000 UTC"
   }
  ]
 }
