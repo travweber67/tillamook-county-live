@@ -1,55 +1,27 @@
 {
- "fetched_at": "2026-11-23T04:52:05Z",
+ "fetched_at": "2026-11-23T05:22:05Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.1685,
-   "lon": -123.91402,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 04:52:44.896755017 +0000 UTC"
-  },
-  {
-   "mmsi": 366855000,
-   "name": "FLORIDA",
-   "lat": 46.19392,
-   "lon": -124.8504,
-   "sog_kn": 12.3,
-   "cog": 265.8,
-   "heading": 263,
-   "updated": "2026-11-23 04:52:34.596436264 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.20633,
+   "lon": -123.78474,
+   "sog_kn": 14.6,
+   "cog": 239.2,
+   "heading": 239,
+   "updated": "2026-11-23 05:22:59.747486664 +0000 UTC"
   },
   {
    "mmsi": 366435740,
    "name": "GEORGE ALLEN",
-   "lat": 46.16785,
-   "lon": -123.91439,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 04:52:52.067913355 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25757,
-   "lon": -123.98323,
-   "sog_kn": 0.6,
-   "cog": 127.4,
-   "heading": 212,
-   "updated": "2026-11-23 04:52:53.119645287 +0000 UTC"
-  },
-  {
-   "mmsi": 538090648,
-   "name": "PAGANELLA",
-   "lat": 46.21736,
-   "lon": -123.76735,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN > USRCH",
-   "updated": "2026-11-23 04:52:31.361939118 +0000 UTC"
+   "lat": 46.16784,
+   "lon": -123.91435,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-23 05:23:02.374998057 +0000 UTC"
   }
  ]
 }
