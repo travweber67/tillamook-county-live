@@ -203,6 +203,29 @@
    "url": "https://www.facebook.com/events/1119503447397415/"
   },
   {
+   "date": "2026-11-23",
+   "featured": true,
+   "img": "img/events/ev-beachcleanup.jpg",
+   "location": "Rockaway Beach",
+   "note": "Jason Hedler in Rockaway Beach is offering free sandbag help during the coastal flooding - a Coastal Flood Advisory is in effect now, and a Coastal Flood Warning runs from Tuesday through Friday morning (until 4 AM Fri Nov 27), with major flooding expected at high tides. He posted the offer in the Rockaway Beach Community group this morning; reach him through that post. Free help, no charge.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "6:06 AM",
+   "title": "Free Sandbag Help in Rockaway Beach",
+   "url": "https://facebook.com/groups/685665618118328/permalink/29853574700900699/"
+  },
+  {
+   "date": "2026-11-23",
+   "img": "img/events/ev-beachcleanup.jpg",
+   "location": "Rockaway Beach",
+   "note": "Terry Bryant of B Projects and Services LLC is offering sandbag help in Rockaway Beach during the coastal flooding - a Coastal Flood Advisory is in effect now, and a Coastal Flood Warning runs from Tuesday through Friday morning (until 4 AM Fri Nov 27). Call 503-451-9872. The post doesn't state a price.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "6:53 AM",
+   "title": "Sandbag Help - B Projects and Services LLC",
+   "url": "https://facebook.com/groups/685665618118328/permalink/29854009270857242/"
+  },
+  {
    "date": "2026-11-24",
    "img": "img/events/ev-storytime.jpg",
    "location": "34600 Cape Kiwanda Dr, Pacific City",
@@ -613,6 +636,17 @@
    "time": "2:00 PM",
    "title": "OAT Presents: Once Upon A Yule @ TAPA",
    "url": "https://www.facebook.com/events/1155312826902341/"
+  },
+  {
+   "date": "2026-12-06",
+   "img": "img/events/ev-market.jpg",
+   "location": "25 Fraser Rd, Tillamook",
+   "note": "A holiday open house at the River Barn in Tillamook, hosted by Robyn Norwood - a gallery showing plus an auction fundraiser for concert hall performances. The source post doesn't state an admission cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "1:00 PM",
+   "title": "River Barn Holiday Open House",
+   "url": "https://facebook.com/groups/tillamooknorthcountyhappenings/permalink/2703157443528858/"
   },
   {
    "date": "2026-12-08",
