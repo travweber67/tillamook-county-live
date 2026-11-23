@@ -1,27 +1,87 @@
 {
- "fetched_at": "2026-11-23T05:22:05Z",
+ "fetched_at": "2026-11-23T05:52:06Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.20633,
-   "lon": -123.78474,
-   "sog_kn": 14.6,
-   "cog": 239.2,
-   "heading": 239,
-   "updated": "2026-11-23 05:22:59.747486664 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16839,
+   "lon": -123.91838,
+   "sog_kn": 0,
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-23 05:52:23.398471234 +0000 UTC"
   },
   {
-   "mmsi": 366435740,
-   "name": "GEORGE ALLEN",
-   "lat": 46.16784,
-   "lon": -123.91435,
+   "mmsi": 256001000,
+   "name": "DOVER",
+   "lat": 46.20034,
+   "lon": -123.82522,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 6.3,
+   "heading": 264,
+   "updated": "2026-11-23 05:52:22.059164954 +0000 UTC"
+  },
+  {
+   "mmsi": 366855000,
+   "name": "FLORIDA",
+   "lat": 46.33006,
+   "lon": -125.08038,
+   "sog_kn": 13.9,
+   "cog": 321,
+   "heading": 315,
+   "updated": "2026-11-23 05:52:22.497361291 +0000 UTC"
+  },
+  {
+   "mmsi": 538011145,
+   "name": "FORTUNE BREEZE",
+   "lat": 46.24237,
+   "lon": -123.70284,
+   "sog_kn": 12.3,
+   "cog": 56.8,
+   "heading": 51,
+   "updated": "2026-11-23 05:52:23.097951497 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19185,
+   "lon": -123.92597,
+   "sog_kn": 0,
+   "cog": 93.8,
+   "heading": 112,
+   "updated": "2026-11-23 05:52:53.078197067 +0000 UTC"
+  },
+  {
+   "mmsi": 367085290,
+   "name": "MARATHON",
+   "lat": 45.89868,
+   "lon": -124.0313,
+   "sog_kn": 6.1,
+   "cog": 182.2,
+   "heading": 179,
+   "updated": "2026-11-23 05:52:23.399494834 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19996,
+   "lon": -123.76046,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-23 05:23:02.374998057 +0000 UTC"
+   "updated": "2026-11-23 05:52:55.014893272 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27276,
+   "lon": -123.95378,
+   "sog_kn": 0.2,
+   "cog": 165,
+   "heading": 184,
+   "updated": "2026-11-23 05:52:54.154218891 +0000 UTC"
   }
  ]
 }
