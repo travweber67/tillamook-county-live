@@ -1,85 +1,56 @@
 {
- "fetched_at": "2026-11-23T19:52:18Z",
+ "fetched_at": "2026-11-23T20:22:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367589830,
-   "lat": 46.18637,
-   "lon": -123.86288,
-   "sog_kn": 0,
-   "cog": 303,
+   "mmsi": 367089450,
+   "lat": 46.19608,
+   "lon": -123.8417,
+   "sog_kn": 11.7,
+   "cog": 255.9,
    "heading": 511,
-   "updated": "2026-11-23 19:53:12.767421795 +0000 UTC"
+   "updated": "2026-11-23 20:23:22.476889474 +0000 UTC"
   },
   {
    "mmsi": 368188830,
    "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.91401,
+   "lat": 46.16853,
+   "lon": -123.91405,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 339.6,
    "heading": 511,
-   "updated": "2026-11-23 19:53:06.347981984 +0000 UTC"
+   "updated": "2026-11-23 20:23:19.203924067 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.25771,
-   "lon": -123.98902,
-   "sog_kn": 0,
-   "cog": 255,
-   "heading": 39,
-   "updated": "2026-11-23 19:53:05.431955308 +0000 UTC"
-  },
-  {
-   "mmsi": 366999466,
-   "name": "CG47240",
-   "lat": 46.28128,
-   "lon": -124.04681,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "YB",
-   "updated": "2026-11-23 19:53:22.645917563 +0000 UTC"
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19135,
+   "lon": -123.92458,
+   "sog_kn": 0.2,
+   "cog": 150.8,
+   "heading": 111,
+   "updated": "2026-11-23 20:23:04.662679735 +0000 UTC"
   },
   {
    "mmsi": 367450580,
    "name": "GRUMPY J",
-   "lat": 46.17002,
-   "lon": -123.91453,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-23 19:53:04.909021458 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18994,
-   "lon": -123.85419,
+   "lat": 46.17001,
+   "lon": -123.91449,
    "sog_kn": 0,
-   "cog": 298.6,
+   "cog": 291.8,
+   "heading": 189,
+   "updated": "2026-11-23 20:23:11.416148994 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.16765,
+   "lon": -123.91487,
+   "sog_kn": 0,
+   "cog": 334.2,
    "heading": 511,
-   "updated": "2026-11-23 19:53:16.995844263 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19633,
-   "lon": -123.79708,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-23 19:52:55.530051613 +0000 UTC"
-  },
-  {
-   "mmsi": 314085000,
-   "name": "SOLENT",
-   "lat": 46.23847,
-   "lon": -124.12194,
-   "sog_kn": 11.2,
-   "cog": 58.1,
-   "heading": 60,
-   "updated": "2026-11-23 19:52:55.379639922 +0000 UTC"
+   "updated": "2026-11-23 20:22:58.194653945 +0000 UTC"
   }
  ]
 }
