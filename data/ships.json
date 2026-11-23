@@ -1,97 +1,44 @@
 {
- "fetched_at": "2026-11-23T02:52:06Z",
+ "fetched_at": "2026-11-23T03:22:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367059190,
-   "name": "BLUE DOLPHIN",
-   "lat": 46.1901,
-   "lon": -123.85583,
-   "sog_kn": 0,
-   "cog": 30.6,
-   "heading": 511,
-   "updated": "2026-11-23 02:53:22.922133743 +0000 UTC"
-  },
-  {
-   "mmsi": 366999466,
-   "name": "CG47240",
-   "lat": 46.28128,
+   "mmsi": 369493011,
+   "lat": 46.28158,
    "lon": -124.04679,
-   "sog_kn": 0,
-   "cog": 270,
-   "heading": 511,
-   "updated": "2026-11-23 02:53:22.015607337 +0000 UTC"
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-23 03:22:36.062605622 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19264,
-   "lon": -123.81953,
-   "sog_kn": 12.1,
-   "cog": 62.8,
-   "heading": 62,
-   "updated": "2026-11-23 02:53:23.137475155 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16851,
+   "lon": -123.91398,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-23 03:22:38.727752197 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16843,
-   "lon": -123.91401,
-   "sog_kn": 0,
-   "cog": 175.2,
-   "heading": 511,
-   "updated": "2026-11-23 02:53:24.344914229 +0000 UTC"
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.25641,
+   "lon": -123.98659,
+   "sog_kn": 1.5,
+   "cog": 162.3,
+   "heading": 348,
+   "updated": "2026-11-23 03:22:36.06325341 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19185,
-   "lon": -123.92597,
-   "sog_kn": 0.1,
-   "cog": 208.9,
-   "heading": 111,
-   "updated": "2026-11-23 02:53:24.194893628 +0000 UTC"
-  },
-  {
-   "mmsi": 440245000,
-   "name": "GLOVIS SUMMIT",
-   "lat": 46.29775,
-   "lon": -124.64762,
-   "sog_kn": 5.3,
-   "cog": 187.7,
-   "heading": 181,
-   "updated": "2026-11-23 02:53:21.493838983 +0000 UTC"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.20262,
-   "lon": -123.79896,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-23 02:53:23.743852608 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20488,
-   "lon": -123.81115,
-   "sog_kn": 0,
-   "cog": 140.2,
-   "heading": 78,
-   "updated": "2026-11-23 02:53:33.330229956 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16773,
-   "lon": -123.91437,
-   "sog_kn": 0,
-   "cog": 308.5,
-   "heading": 511,
-   "updated": "2026-11-23 02:53:22.166815931 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18992,
+   "lon": -123.85414,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-23 03:22:20.802737425 +0000 UTC"
   }
  ]
 }
