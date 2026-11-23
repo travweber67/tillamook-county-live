@@ -1,85 +1,55 @@
 {
- "fetched_at": "2026-11-23T23:22:21Z",
+ "fetched_at": "2026-11-23T23:52:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367182290,
-   "lat": 46.30516,
-   "lon": -124.04029,
+   "mmsi": 367355270,
+   "lat": 46.16793,
+   "lon": -123.91431,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-23 23:23:15.153758128 +0000 UTC"
+   "updated": "2026-11-23 23:52:53.082308002 +0000 UTC"
   },
   {
-   "mmsi": 368155260,
-   "lat": 46.27199,
-   "lon": -123.95131,
-   "sog_kn": 8.2,
-   "cog": 138.6,
-   "heading": 511,
-   "updated": "2026-11-23 23:22:55.264769129 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19855,
-   "lon": -123.80883,
-   "sog_kn": 0.1,
-   "cog": 158,
-   "heading": 71,
-   "updated": "2026-11-23 23:22:54.992041159 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21632,
-   "lon": -123.78385,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-23 23:22:52.655848842 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25735,
-   "lon": -123.98752,
-   "sog_kn": 0.3,
-   "cog": 336.7,
-   "heading": 282,
-   "updated": "2026-11-23 23:23:02.684458683 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19637,
-   "lon": -123.7971,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-23 23:22:55.931146769 +0000 UTC"
-  },
-  {
-   "mmsi": 352002600,
-   "name": "SHARDANA",
-   "lat": 46.20855,
-   "lon": -123.80154,
+   "mmsi": 367498220,
+   "lat": 46.16724,
+   "lon": -123.9163,
    "sog_kn": 0,
-   "cog": 339,
-   "heading": 68,
-   "updated": "2026-11-23 23:23:11.445747228 +0000 UTC"
+   "cog": 1.1,
+   "heading": 511,
+   "updated": "2026-11-23 23:52:44.25231632 +0000 UTC"
   },
   {
-   "mmsi": 636015972,
-   "name": "STOLT BASUTO",
-   "lat": 46.25808,
-   "lon": -124.04016,
-   "sog_kn": 17.4,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
+   "sog_kn": 0,
+   "cog": 316.8,
+   "heading": 178,
+   "updated": "2026-11-23 23:53:00.016872736 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76046,
+   "sog_kn": 0,
    "cog": 272.9,
-   "heading": 270,
-   "updated": "2026-11-23 23:23:06.324769248 +0000 UTC"
+   "heading": 511,
+   "updated": "2026-11-23 23:52:56.301190566 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86176,
+   "sog_kn": 0,
+   "cog": 264.8,
+   "heading": 307,
+   "updated": "2026-11-23 23:53:09.041769739 +0000 UTC"
   }
  ]
 }

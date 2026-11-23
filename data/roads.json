@@ -1,26 +1,12 @@
 {
- "fetched_at": "2026-11-23T23:22:21Z",
+ "fetched_at": "2026-11-23T23:52:21Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 30 active statewide."
+   "note": "0 incidents in the county scope; 32 active statewide."
   }
  ],
- "incidents": [
-  {
-   "title": "Vehicle Incident \u2014 Disabled Vehicle - Hazard",
-   "desc": "A disabled vehicle is creating a hazard. Prepare to slow or move over for worker safety. Estimated delay under 20 minutes.",
-   "impact": "Estimated delay under 20 minutes",
-   "place": "US101, Bay City",
-   "route": "US101",
-   "milepost": 59.0,
-   "lat": 45.53573,
-   "lon": -123.89926,
-   "start": "2026-11-23T12:06:20.833-08:00",
-   "updated": "2026-11-23T12:09:09-08:00",
-   "source": "ODOT TripCheck"
-  }
- ],
- "odot_active_statewide": 30
+ "incidents": [],
+ "odot_active_statewide": 32
 }
