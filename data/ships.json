@@ -1,66 +1,39 @@
 {
- "fetched_at": "2026-11-24T21:52:33Z",
+ "fetched_at": "2026-11-24T22:22:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367176750,
-   "lat": 46.16724,
-   "lon": -123.91682,
-   "sog_kn": 0,
-   "cog": 283.7,
+   "mmsi": 366970430,
+   "lat": 46.1897,
+   "lon": -123.85402,
+   "sog_kn": 0.1,
+   "cog": 211.1,
    "heading": 511,
-   "updated": "2026-11-24 21:52:38.710858095 +0000 UTC"
+   "updated": "2026-11-24 22:23:18.802494355 +0000 UTC"
   },
   {
    "mmsi": 338570000,
    "name": "BAYPORT",
-   "lat": 46.19202,
-   "lon": -123.87467,
-   "sog_kn": 1.2,
-   "cog": 279.8,
-   "heading": 278,
-   "updated": "2026-11-24 21:53:14.351742814 +0000 UTC"
+   "lat": 46.19168,
+   "lon": -123.88877,
+   "type_code": 33,
+   "type": "Dredging",
+   "destination": "USAST ASTORIA",
+   "updated": "2026-11-24 22:23:14.404865451 +0000 UTC"
   },
   {
-   "mmsi": 303284000,
-   "name": "DISCOVERY",
-   "lat": 46.19737,
-   "lon": -123.76311,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 21:52:38.411729745 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91425,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-24 21:53:18.021647573 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85421,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-24 21:53:11.749116955 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86174,
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20501,
+   "lon": -123.81016,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-24 22:23:33.273169451 +0000 UTC",
    "sog_kn": 0.1,
-   "cog": 221.6,
-   "heading": 308,
-   "updated": "2026-11-24 21:53:08.40789456 +0000 UTC"
+   "cog": 153.2,
+   "heading": 93
   }
  ]
 }
