@@ -1,27 +1,67 @@
 {
- "fetched_at": "2026-11-24T04:52:25Z",
+ "fetched_at": "2026-11-24T05:22:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 636023742,
    "name": "C-INSPIRATION",
-   "lat": 46.20008,
-   "lon": -123.8088,
-   "sog_kn": 0.1,
-   "cog": 35.1,
-   "heading": 131,
-   "updated": "2026-11-24 04:52:51.683184624 +0000 UTC"
+   "lat": 46.20063,
+   "lon": -123.80804,
+   "sog_kn": 0.2,
+   "cog": 58,
+   "heading": 161,
+   "updated": "2026-11-24 05:22:53.847842554 +0000 UTC"
   },
   {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21789,
-   "lon": -123.78367,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-24 04:52:52.506584512 +0000 UTC"
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.76045,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-24 05:22:53.890452681 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.2112,
+   "lon": -123.79675,
+   "sog_kn": 0.4,
+   "cog": 102.1,
+   "heading": 208,
+   "updated": "2026-11-24 05:23:13.297209272 +0000 UTC"
+  },
+  {
+   "mmsi": 636015972,
+   "name": "STOLT BASUTO",
+   "lat": 45.48123,
+   "lon": -124.29792,
+   "type_code": 80,
+   "type": "Tanker",
+   "destination": "BALBOA,PANAMA",
+   "updated": "2026-11-24 05:23:04.782285746 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27199,
+   "lon": -123.95178,
+   "sog_kn": 0,
+   "cog": 311.2,
+   "heading": 313,
+   "updated": "2026-11-24 05:23:14.776452906 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18812,
+   "lon": -123.86173,
+   "sog_kn": 0,
+   "cog": 314.2,
+   "heading": 308,
+   "updated": "2026-11-24 05:22:48.458326497 +0000 UTC"
   }
  ]
 }
