@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T22:23:44Z",
+ "fetched_at": "2026-11-24T22:53:37Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,10 +9,19 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "17 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "19 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
+  {
+   "title": "Fraser Road – King Tide Traffic Advisory & Intermittent Closures",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/fraser-road-king-tide-traffic-advisory-intermittent-closures/article_9ad512e6-8e74-47da-8823-6427e3ab0625.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/bd/6bd39ce6-8dc1-11ec-a8d8-8bc2e0e92e2d/620acaff4d035.image.jpg?resize=300%2C158",
+   "date": "2026-11-24",
+   "summary": "Due to the upcoming king tides and anticipated high water levels along Tillamook Bay, Fraser Road will be closed during high tides (greater than 8.8 ft) due to potential flooding and unsafe road conditions.",
+   "tier": "high"
+  },
   {
    "title": "Tillamook Library celebrates 20 years in main branch",
    "source": "Headlight Herald",
@@ -29,15 +38,6 @@
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
    "date": "2026-11-23",
    "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
-   "tier": "high"
-  },
-  {
-   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
-   "date": "2026-11-23",
-   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
    "tier": "high"
   },
   {
@@ -71,6 +71,28 @@
    "summary": "A full holiday dinner is looking for a family in Pacific City, and it started with one post in a Facebook group. On Friday afternoon, Sarah Christine posted in the What's Up Pacific City group that she is passing along a Samaritan Health Services holiday food coupon to someone in need. The coupon covers a frozen turkey up to 20 pounds, or a ham, plus a vegetable or fruit tray, lasagna, pies, or mixed nuts — in other words, the makings of a holiday table. She didn't have to post it. A coupon like that gets used quietly, or not at all; instead it went up in front of the whole group, offered to whoever needs it. Thanksgiving is Thursday, and somewhere in Pacific City there is a household doing the math on a holiday meal. If your household could use it, the post is in What's Up Pacific City under Sarah Christine's name — and if you have something similar sitting in a kitchen drawer this week, you know what to do with it.",
    "img_origin": "generated",
    "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (Tillamook County Live original, 2026-11-23).",
+   "tier": "high"
+  },
+  {
+   "title": "Meet Jumpin' Jack Flash, United Paws' Cat of the Week",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
+   "img": "img/news/jack-flash.jpg",
+   "date": "2026-11-23",
+   "summary": "United Paws' Cat of the Week is Jumpin' Jack Flash — a white-and-gray tabby with soft green eyes who was abandoned about two years ago and rescued anemic, malnourished and bone tired. With his fosters' help he is now healthy and happy: a talkative 'lover' and 'old soul,' in his foster's words, who grooms the other cats in the house and would like nothing more than a warm bed, a full tummy and a lap of his own. Meet-and-greets through unitedpaws.org.",
+   "img_origin": "source",
+   "img_credit": "United Paws' Cat of the Week art for Jack Flash (the story's own art, via Tillamook County Pioneer).",
+   "tier": "high"
+  },
+  {
+   "title": "Wheeler wants your mural — on two shipping containers in Upper Park",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
+   "img": "img/news/mural-wall.jpg",
+   "date": "2026-11-22",
+   "summary": "The City of Wheeler is calling for design entries to paint murals on two conex shipping containers in Upper Park. Wheeler residents are encouraged to apply, but the call is open to anyone interested — entries are due by January 8, 2027.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of a colorful small-town history mural on a general store wall in Trinidad, Texas, by Carol M. Highsmith via Wikimedia Commons, public domain (licensed photo, News Scout batch 2, 2026-11-23).",
    "tier": "high"
   },
   {
@@ -228,6 +250,15 @@
    "tier": "high"
   },
   {
+   "title": "OREGON HEALTH AUTHORITY: OHA to delay enforcement of new federal Medicaid work rules to keep people in Oregon insured",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-oha-to-delay-enforcement-of-new-federal-medicaid-work-rules-to-keep-people-in-oregon-insured/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/OHAWorkRequirepaperwork-300x300.jpg",
+   "date": "2026-11-24",
+   "summary": "A new federal option will allow Oregon to delay enforcement of work rules for six months, ensuring Oregon Health Plan members do not lose coverage for failing to meet new requirements while...",
+   "tier": "useful"
+  },
+  {
    "title": "OREGON DEPT. OF FISH & WILDLIFE: Unwind after Thanksgiving dinner with Free Fishing Days Nov. 27 and 28",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-unwind-after-thanksgiving-dinner-with-free-fishing-days-nov-27-and-28/",
@@ -237,58 +268,49 @@
    "tier": "useful"
   },
   {
-   "title": "Enforcement of new federal Medicaid work rules delayed to keep people in Oregon insured",
+   "title": "OREGON DEPT. OF TRANSPORTATION (ODOT): HWY. 6 Project Update – Guardrail Upgrades",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-transportation-odot-hwy-6-project-update-guardrail-upgrades/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/updatesignconstructionworker_crop.gif",
+   "date": "2026-11-24",
+   "summary": "This year, we’ve been working on a project to upgrade the guardrail along OR 6 where needed. Here’s what you need to know if you’re traveling near Tillamook on OR 6...",
+   "tier": "routine"
+  },
+  {
+   "title": "Stimson Lumber top bidder on $5.1 million Salmonberry River timber sale",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/stimson-lumber-top-bidder-on-5-1-million-salmonberry-river-timber-sale/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/overdrive-unit-map-odf.png",
+   "date": "2026-11-24",
+   "summary": "Stimson Lumber bid $527.53 per thousand board feet of Douglas-fir for Overdrive, two clearcuts totaling 230 acres off Belding Road in the Tillamook State Forest.",
+   "tier": "routine"
+  },
+  {
+   "title": "How to legally gather wreath greens in the Tillamook State Forest",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/how-to-legally-gather-wreath-greens-in-the-tillamook-state-forest/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/gales-creek-bazaar-wreaths-2023-11-18.jpg",
+   "date": "2026-11-24",
+   "summary": "Christmas tree cutting isn't allowed in the Tillamook State Forest, but people can gather boughs, ferns and salal there for their own use, in limited amounts, without a permit.",
+   "tier": "routine"
+  },
+  {
+   "title": "Port board temporarily extends OCSR lease",
    "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/enforcement-of-new-federal-medicaid-work-rules-delayed-to-keep-people-in-oregon-insured/article_07457c5d-497e-57a2-be21-21278ad3b3f5.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/84/c84e6719-d6a3-52be-86a3-79d2a102ee34/6b04aa9c7980f.image.png?resize=300%2C197",
-   "date": "2026-11-23",
-   "summary": "Oregon will opt into a hold harmless period for Medicaid work or activity rules, a new option from the Centers for Medicare & Medicaid Services (CMS) that allows states to delay enforcement of the new requirements set to take effect…",
-   "tier": "useful"
-  },
-  {
-   "title": "Oregon King Tides Arrive in November – First Series Nov. 23-27",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-king-tides-arrive-in-november-first-series-nov-23-27/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/2026-2027-King-Tides-Flyer-1-page-001-927x1200.jpg",
-   "date": "2026-11-21",
-   "summary": "The first series of king tides, the highest high tides of the year, is coming up November 23 to 27, 2026. If you are on Oregon’s coast, you are invited to...",
-   "tier": "useful"
-  },
-  {
-   "title": "OREGON DEPT. OF FISH & WILDLIFE: Oregon’s Commercial Dungeness Crab Season Delayed until Dec. 16",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-oregons-commercial-dungeness-crab-season-delayed-until-dec-16/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/11/crabpots.jpg",
-   "date": "2026-11-21",
-   "summary": "(NEWPORT, OR) – Oregon’s commercial Dungeness crab season is delayed coastwide until at least Dec. 16, the Oregon Department of Fish and Wildlife announced today. Pre-season testing in the area from...",
-   "tier": "useful"
-  },
-  {
-   "title": "WHEELER MURAL PROJECT: CALL FOR DESIGN ENTRIES BY 1/8/27",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CityofWheelerlogo.png",
-   "date": "2026-11-22",
-   "summary": "WHAT: MURAL-PAINTING OPPORTUNITY ON TWO (2) CONEX CONTAINERS IN UPPER PARK WHO: WHEELER RESIDENTS ARE ENCOURAGED TO APPLY, BUT THIS PROJECT IS OPEN TO ALL INTERESTED PARTIES WHEN: ALL ENTRIES ARE...",
+   "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
+   "date": "2026-11-24",
+   "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
    "tier": "routine"
   },
   {
-   "title": "Coastal Flood Warning and Advisory",
+   "title": "Update: Body found in ocean ID'ed, statement released by City of Newport",
    "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/coastal-flood-warning-and-advisory/article_83bb711a-98da-4942-a53c-c26f094e4950.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
-   "date": "2026-11-22",
-   "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
-   "tier": "routine"
-  },
-  {
-   "title": "OSU Extension in Tillamook County to hold 2027 Master Gardener Training – Sign up Now!",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/osu-extension-in-tillamook-county-to-hold-2027-master-gardener-training-sign-up-now/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/MGTraining27.jpg",
-   "date": "2026-11-21",
-   "summary": "The Oregon State University Extension Service in Tillamook County welcomes the public to participate in the 2027 Master Gardener Volunteer Training from January 7th to April 1st, 2027. The Master Gardener...",
-   "tier": "routine"
+   "url": "https://www.tillamookheadlightherald.com/news/update-body-found-in-ocean-ided-statement-released-by-city-of-newport/article_704a196b-8b5b-5fd9-a0f9-fa44ce322ad9.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/9/7a/97a7f02f-256b-554d-ab9e-9c95c8a08a44/6b052a4346c15.image.png?resize=300%2C193",
+   "date": "2026-11-24",
+   "summary": "Update posted at 7:30 a.m. Nov. 24",
+   "tier": "crime"
   }
  ]
 }

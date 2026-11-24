@@ -1,39 +1,56 @@
 {
- "fetched_at": "2026-11-24T22:22:34Z",
+ "fetched_at": "2026-11-24T22:52:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366970430,
-   "lat": 46.1897,
-   "lon": -123.85402,
-   "sog_kn": 0.1,
-   "cog": 211.1,
+   "mmsi": 338424194,
+   "name": "BLUEFIN",
+   "lat": 46.30558,
+   "lon": -124.03862,
+   "sog_kn": 0,
+   "cog": 222.4,
    "heading": 511,
-   "updated": "2026-11-24 22:23:18.802494355 +0000 UTC"
+   "updated": "2026-11-24 22:53:30.96999272 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19168,
-   "lon": -123.88877,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-24 22:23:14.404865451 +0000 UTC"
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19997,
+   "lon": -123.76046,
+   "sog_kn": 0,
+   "cog": 358.9,
+   "heading": 511,
+   "updated": "2026-11-24 22:53:30.819673307 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20501,
-   "lon": -123.81016,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-24 22:23:33.273169451 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 153.2,
-   "heading": 93
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16775,
+   "lon": -123.91442,
+   "sog_kn": 0,
+   "cog": 305.7,
+   "heading": 511,
+   "updated": "2026-11-24 22:53:12.226263622 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19034,
+   "lon": -123.82952,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-24 22:53:25.228830036 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 10.7,
+   "heading": 307,
+   "updated": "2026-11-24 22:53:09.661967263 +0000 UTC"
   }
  ]
 }
