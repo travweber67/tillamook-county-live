@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T00:23:22Z",
+ "fetched_at": "2026-11-24T00:53:20Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -32,21 +32,21 @@
    "tier": "high"
   },
   {
-   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
-   "date": "2026-11-24",
-   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
-   "tier": "high"
-  },
-  {
    "title": "TILLAMOOK COUNTY EMERGENCY MANAGEMENT: Tillamook County King Tide Alert Nov. 23–27",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-tillamook-county-king-tide-alert-nov-23-27/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/NetartsHighWater.jpg",
    "date": "2026-11-24",
    "summary": "King tides are here this week alongside Tuesday’s Beaver Supermoon, bringing a Coastal Flood Warning from 4:00 AM Tuesday, Nov. 24 through 4:00 AM Friday, Nov. 27. Be prepared for possible tidal...",
+   "tier": "high"
+  },
+  {
+   "title": "Meet Jumpin’ Jack Flash, United Paws Cat of the Week",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
+   "date": "2026-11-24",
+   "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
    "tier": "high"
   },
   {

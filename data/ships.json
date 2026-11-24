@@ -1,17 +1,76 @@
 {
- "fetched_at": "2026-11-24T00:22:22Z",
+ "fetched_at": "2026-11-24T00:52:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19885,
-   "lon": -123.80902,
-   "sog_kn": 0.5,
-   "cog": 152.2,
-   "heading": 85,
-   "updated": "2026-11-24 00:22:52.244097649 +0000 UTC"
+   "mmsi": 367182290,
+   "name": "LONG SHOT",
+   "lat": 46.30517,
+   "lon": -124.04029,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 00:53:12.630028673 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25748,
+   "lon": -123.98635,
+   "sog_kn": 1.6,
+   "cog": 99,
+   "heading": 110,
+   "updated": "2026-11-24 00:53:03.462826969 +0000 UTC"
+  },
+  {
+   "mmsi": 367425910,
+   "name": "SEA HORSE",
+   "lat": 46.27204,
+   "lon": -123.95206,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 00:52:54.327973459 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27225,
+   "lon": -123.9523,
+   "sog_kn": 0,
+   "cog": 180.9,
+   "heading": 133,
+   "updated": "2026-11-24 00:52:53.87783908 +0000 UTC"
+  },
+  {
+   "mmsi": 366951000,
+   "name": "USCGC ELM",
+   "lat": 46.20749,
+   "lon": -123.76903,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "COLUMBIA RIVER",
+   "updated": "2026-11-24 00:52:54.027497144 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18811,
+   "lon": -123.86176,
+   "sog_kn": 0,
+   "cog": 231,
+   "heading": 308,
+   "updated": "2026-11-24 00:52:49.227174822 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16844,
+   "lon": -123.91407,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 00:53:02.429650987 +0000 UTC"
   }
  ]
 }
