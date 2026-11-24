@@ -1,47 +1,46 @@
 {
- "fetched_at": "2026-11-24T08:22:26Z",
+ "fetched_at": "2026-11-24T08:52:26Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.16793,
-   "lon": -123.91433,
+   "lat": 46.16792,
+   "lon": -123.91432,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 08:22:53.104116322 +0000 UTC"
+   "updated": "2026-11-24 08:52:53.104301448 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.176,
-   "lon": -123.91092,
-   "sog_kn": 6.5,
-   "cog": 17.9,
-   "heading": 20,
-   "updated": "2026-11-24 08:23:00.091160231 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16837,
-   "lon": -123.91838,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.92196,
    "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 350,
-   "updated": "2026-11-24 08:23:03.442567871 +0000 UTC"
+   "cog": 353.8,
+   "heading": 511,
+   "updated": "2026-11-24 08:53:09.519650976 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19994,
-   "lon": -123.76045,
-   "sog_kn": 0.1,
-   "cog": 358.1,
-   "heading": 511,
-   "updated": "2026-11-24 08:22:56.280571813 +0000 UTC"
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16873,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 342.4,
+   "heading": 96,
+   "updated": "2026-11-24 08:53:11.046742968 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20019,
+   "lon": -123.76128,
+   "sog_kn": 0.6,
+   "cog": 114.6,
+   "heading": 340,
+   "updated": "2026-11-24 08:52:53.898420906 +0000 UTC"
   }
  ]
 }
