@@ -1,57 +1,85 @@
 {
- "fetched_at": "2026-11-24T09:22:27Z",
+ "fetched_at": "2026-11-24T09:52:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04672,
-   "sog_kn": 0.1,
-   "cog": 307.1,
-   "heading": 511,
-   "updated": "2026-11-24 09:23:20.1789937 +0000 UTC"
-  },
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19147,
-   "lon": -123.89156,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-24 09:23:01.063625088 +0000 UTC"
-  },
-  {
-   "mmsi": 373607000,
-   "name": "GLOBAL AMBITION",
-   "lat": 46.00659,
-   "lon": -124.70405,
-   "sog_kn": 13.3,
-   "cog": 3.5,
-   "heading": 352,
-   "updated": "2026-11-24 09:23:20.585114646 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18995,
-   "lon": -123.85419,
+   "mmsi": 367182290,
+   "lat": 46.30516,
+   "lon": -124.0403,
    "sog_kn": 0,
-   "cog": 177.4,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 09:23:21.629212393 +0000 UTC"
+   "updated": "2026-11-24 09:53:15.546704562 +0000 UTC"
+  },
+  {
+   "mmsi": 367197230,
+   "lat": 46.16753,
+   "lon": -123.91507,
+   "sog_kn": 0,
+   "cog": 302.1,
+   "heading": 511,
+   "updated": "2026-11-24 09:52:54.815923826 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.92191,
+   "sog_kn": 0,
+   "cog": 359.7,
+   "heading": 511,
+   "updated": "2026-11-24 09:52:49.435869782 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16812,
+   "lon": -123.91423,
+   "sog_kn": 0,
+   "cog": 1.9,
+   "heading": 511,
+   "updated": "2026-11-24 09:53:18.3104747 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30465,
+   "lon": -124.04025,
+   "sog_kn": 0,
+   "cog": 2.1,
+   "heading": 511,
+   "updated": "2026-11-24 09:52:57.427908028 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16776,
+   "lon": -123.91443,
+   "sog_kn": 0,
+   "cog": 216.1,
+   "heading": 511,
+   "updated": "2026-11-24 09:53:11.072161777 +0000 UTC"
   },
   {
    "mmsi": 366608000,
    "name": "SEAWARD EXPLORER",
-   "lat": 46.18808,
-   "lon": -123.8591,
+   "lat": 46.18806,
+   "lon": -123.85909,
    "type_code": 0,
    "type": "Vessel",
    "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 09:23:05.082688388 +0000 UTC"
+   "updated": "2026-11-24 09:53:04.932045084 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.20972,
+   "lon": -123.80195,
+   "sog_kn": 0.1,
+   "cog": 348.5,
+   "heading": 90,
+   "updated": "2026-11-24 09:53:14.058401272 +0000 UTC"
   }
  ]
 }
