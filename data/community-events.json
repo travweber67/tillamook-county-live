@@ -270,6 +270,28 @@
    "url": "https://www.facebook.com/events/1625877602530768/"
   },
   {
+   "date": "2026-11-24",
+   "img": "img/events/ev-gamenight.jpg",
+   "location": "Wild Grocery & Cafe, 298 Laneda Ave, Manzanita",
+   "note": "A scavenger hunt in Manzanita, starting at Wild Grocery & Cafe on Laneda Ave. The source listing doesn't state a cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "11:00 AM",
+   "title": "Magical Manzanita Scavenger Hunt",
+   "url": "https://www.facebook.com/events/1446157280348658/"
+  },
+  {
+   "date": "2026-11-24",
+   "img": "img/events/ev-gamenight.jpg",
+   "location": "Starbucks, 210 Ivy Ave, Tillamook",
+   "note": "A scavenger hunt in Tillamook, starting at the Starbucks on Ivy Ave. The source listing doesn't state a cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "11:00 AM",
+   "title": "Tillamook Tirade Scavenger Hunt",
+   "url": "https://www.facebook.com/events/1656639939249906/"
+  },
+  {
    "date": "2026-11-25",
    "img": "img/bg/bg-day-4.jpg",
    "location": "34600 Cape Kiwanda Dr, Pacific City",
@@ -429,6 +451,17 @@
    "url": "https://www.facebook.com/events/1668297675092337/"
   },
   {
+   "date": "2026-11-30",
+   "img": "img/events/ev-meeting.jpg",
+   "location": "Kiawanda Community Center, 34600 Cape Kiwanda Dr, Pacific City",
+   "note": "A yoga session with Dawn at the Kiawanda Community Center in Pacific City. The source listing doesn't state a cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "9:00 AM",
+   "title": "Yoga With Dawn at The Kiawanda Community Center",
+   "url": "https://www.facebook.com/events/887419837649907/"
+  },
+  {
    "date": "2026-12-01",
    "img": "img/events/ev-gingerbread.jpg",
    "location": "Tillamook County Library",
@@ -458,6 +491,17 @@
    "time": "6:15 PM",
    "title": "Demystifying the NetworkSpinal Wave",
    "url": "https://www.facebook.com/events/1837335967298747/"
+  },
+  {
+   "date": "2026-12-03",
+   "img": "img/events/ev-music.jpg",
+   "location": "2102 6th St, Tillamook",
+   "note": "An evening of community carols at 2102 6th St in Tillamook. The source listing doesn't state a cost.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "5:30 PM",
+   "title": "Carols for the Community",
+   "url": "https://www.facebook.com/events/1704264074415575/"
   },
   {
    "date": "2026-12-04",
@@ -637,6 +681,17 @@
    "time": "6:00 PM",
    "title": "Wildcraft Wreath Making Workshop",
    "url": "https://www.facebook.com/events/1402851284816608/"
+  },
+  {
+   "date": "2026-12-05",
+   "img": "img/events/ev-crab.jpg",
+   "location": "5150 Hayes Oyster Dr, Bay City",
+   "note": "A chowder event in Bay City, at 5150 Hayes Oyster Dr. Billed on Facebook as a free event.",
+   "paid": false,
+   "source": "Facebook",
+   "time": "8:00 AM",
+   "title": "Chowder & Cheer",
+   "url": "https://www.facebook.com/events/1859147135284118/"
   },
   {
    "date": "2026-12-06",
