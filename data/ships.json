@@ -1,57 +1,27 @@
 {
- "fetched_at": "2026-11-24T10:22:27Z",
+ "fetched_at": "2026-11-24T10:52:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.17847,
-   "lon": -123.90983,
-   "sog_kn": 8.8,
-   "cog": 15.5,
-   "heading": 16,
-   "updated": "2026-11-24 10:23:13.777453508 +0000 UTC"
+   "mmsi": 373607000,
+   "name": "GLOBAL AMBITION",
+   "lat": 46.29976,
+   "lon": -124.75365,
+   "sog_kn": 11.9,
+   "cog": 0,
+   "heading": 355,
+   "updated": "2026-11-24 10:52:55.617340961 +0000 UTC"
   },
   {
-   "mmsi": 538012072,
-   "name": "DEVBULK ASLAN",
-   "lat": 45.6232,
-   "lon": -124.31089,
-   "sog_kn": 13.3,
-   "cog": 7,
-   "heading": 8,
-   "updated": "2026-11-24 10:23:26.232840668 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 325.8,
-   "heading": 96,
-   "updated": "2026-11-24 10:23:02.411705187 +0000 UTC"
-  },
-  {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 45.58831,
-   "lon": -124.39821,
-   "sog_kn": 12.2,
-   "cog": 14.6,
-   "heading": 13,
-   "updated": "2026-11-24 10:23:03.746657271 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85908,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 10:23:05.108913437 +0000 UTC"
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.23819,
+   "lon": -123.98254,
+   "sog_kn": 3.2,
+   "cog": 150.3,
+   "heading": 133,
+   "updated": "2026-11-24 10:52:54.103117954 +0000 UTC"
   }
  ]
 }
