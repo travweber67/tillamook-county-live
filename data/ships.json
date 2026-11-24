@@ -1,116 +1,96 @@
 {
- "fetched_at": "2026-11-24T11:22:28Z",
+ "fetched_at": "2026-11-24T11:52:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
+   "mmsi": 367375750,
+   "lat": 46.189,
+   "lon": -123.86035,
    "sog_kn": 0,
-   "cog": 307.1,
+   "cog": 230.6,
    "heading": 511,
-   "updated": "2026-11-24 11:23:17.888784647 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16558,
-   "lon": -123.92199,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-24 11:23:12.949001502 +0000 UTC"
+   "updated": "2026-11-24 11:53:22.979383101 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.19148,
    "lon": -123.9247,
-   "sog_kn": 0,
-   "cog": 187.7,
-   "heading": 293,
-   "updated": "2026-11-24 11:23:15.280203309 +0000 UTC"
+   "sog_kn": 0.1,
+   "cog": 172.4,
+   "heading": 292,
+   "updated": "2026-11-24 11:53:24.15075834 +0000 UTC"
   },
   {
    "mmsi": 367156340,
    "name": "GRANADA",
-   "lat": 46.16725,
+   "lat": 46.16723,
    "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 39.8,
+   "cog": 333.3,
    "heading": 178,
-   "updated": "2026-11-24 11:23:09.287903718 +0000 UTC"
+   "updated": "2026-11-24 11:53:18.661602435 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04027,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91402,
    "sog_kn": 0,
-   "cog": 332.2,
-   "heading": 511,
-   "updated": "2026-11-24 11:23:06.467594579 +0000 UTC"
+   "cog": 83,
+   "heading": 98,
+   "updated": "2026-11-24 11:53:02.448152699 +0000 UTC"
   },
   {
-   "mmsi": 368259990,
-   "name": "NORDIC FOX",
-   "lat": 46.18845,
-   "lon": -123.85988,
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20537,
+   "lon": -123.81158,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-24 11:53:07.286507529 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.76048,
+   "sog_kn": 0,
+   "cog": 160.6,
+   "heading": 511,
+   "updated": "2026-11-24 11:53:04.027127776 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20019,
+   "lon": -123.76129,
+   "sog_kn": 0.2,
+   "cog": 164.1,
+   "heading": 340,
+   "updated": "2026-11-24 11:53:03.425075837 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19633,
+   "lon": -123.79703,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-24 11:52:57.298914763 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.2091,
+   "lon": -123.80187,
    "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 304,
-   "updated": "2026-11-24 11:23:20.170866758 +0000 UTC"
-  },
-  {
-   "mmsi": 367309370,
-   "name": "PACIFIC EAGLE",
-   "lat": 46.21574,
-   "lon": -123.94776,
-   "type_code": 52,
-   "type": "Tug",
-   "destination": "WARRENTON",
-   "updated": "2026-11-24 11:23:14.154259789 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16777,
-   "lon": -123.91446,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 511,
-   "updated": "2026-11-24 11:23:11.839939098 +0000 UTC"
-  },
-  {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 45.79464,
-   "lon": -124.32998,
-   "sog_kn": 13.8,
-   "cog": 10.3,
-   "heading": 12,
-   "updated": "2026-11-24 11:22:53.121616996 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18808,
-   "lon": -123.8591,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 11:23:05.267869272 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16848,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 11:23:07.840401975 +0000 UTC"
+   "cog": 348.5,
+   "heading": 78,
+   "updated": "2026-11-24 11:53:14.74930425 +0000 UTC"
   }
  ]
 }
