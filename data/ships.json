@@ -1,16 +1,17 @@
 {
- "fetched_at": "2026-11-24T11:52:28Z",
+ "fetched_at": "2026-11-24T12:22:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367375750,
-   "lat": 46.189,
-   "lon": -123.86035,
-   "sog_kn": 0,
-   "cog": 230.6,
-   "heading": 511,
-   "updated": "2026-11-24 11:53:22.979383101 +0000 UTC"
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28128,
+   "lon": -124.04681,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-24 12:23:22.829264473 +0000 UTC"
   },
   {
    "mmsi": 368410780,
@@ -18,79 +19,59 @@
    "lat": 46.19148,
    "lon": -123.9247,
    "sog_kn": 0.1,
-   "cog": 172.4,
-   "heading": 292,
-   "updated": "2026-11-24 11:53:24.15075834 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 333.3,
-   "heading": 178,
-   "updated": "2026-11-24 11:53:18.661602435 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 83,
-   "heading": 98,
-   "updated": "2026-11-24 11:53:02.448152699 +0000 UTC"
+   "cog": 157.3,
+   "heading": 291,
+   "updated": "2026-11-24 12:23:13.643400167 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20537,
-   "lon": -123.81158,
+   "lat": 46.20514,
+   "lon": -123.81148,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-24 11:53:07.286507529 +0000 UTC"
+   "updated": "2026-11-24 12:23:06.989038884 +0000 UTC"
   },
   {
    "mmsi": 367638480,
    "name": "OCEAN HUNTER",
-   "lat": 46.19994,
-   "lon": -123.76048,
+   "lat": 46.1999,
+   "lon": -123.7605,
    "sog_kn": 0,
-   "cog": 160.6,
+   "cog": 197.2,
    "heading": 511,
-   "updated": "2026-11-24 11:53:04.027127776 +0000 UTC"
+   "updated": "2026-11-24 12:23:03.760508507 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.20019,
+   "lat": 46.2002,
    "lon": -123.76129,
-   "sog_kn": 0.2,
-   "cog": 164.1,
-   "heading": 340,
-   "updated": "2026-11-24 11:53:03.425075837 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19633,
-   "lon": -123.79703,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-24 11:52:57.298914763 +0000 UTC"
-  },
-  {
-   "mmsi": 352002600,
-   "name": "SHARDANA",
-   "lat": 46.2091,
-   "lon": -123.80187,
    "sog_kn": 0.1,
-   "cog": 348.5,
-   "heading": 78,
-   "updated": "2026-11-24 11:53:14.74930425 +0000 UTC"
+   "cog": 115.5,
+   "heading": 340,
+   "updated": "2026-11-24 12:23:23.896749739 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16773,
+   "lon": -123.91439,
+   "sog_kn": 0,
+   "cog": 131.2,
+   "heading": 511,
+   "updated": "2026-11-24 12:23:11.048936525 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.19444,
+   "lon": -123.83648,
+   "sog_kn": 6.6,
+   "cog": 81.3,
+   "heading": 82,
+   "updated": "2026-11-24 12:23:04.932411721 +0000 UTC"
   }
  ]
 }
