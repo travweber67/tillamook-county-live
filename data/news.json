@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T23:53:17Z",
+ "fetched_at": "2026-11-24T00:23:22Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "18 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "17 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -18,7 +18,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/tillamook-library-celebrates-20-years-in-main-branch/article_28e7a360-1892-4146-8c8a-a55ac60f25dd.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/8a/58adebec-7df7-4afe-8598-4bf299ebe14b/6aff52569d5be.image.jpg?resize=300%2C225",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "Patrons of the Tillamook County Library gathered at the system’s main branch in Tillamook on November 14, to celebrate the building’s 20th anniversary with a day of music, dancing, craft activities and gratitude.",
    "tier": "high"
   },
@@ -27,7 +27,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/riverbend-players-holiday-show-of-the-season-miracle-on-34th-street-at-ncrd-performing-arts-center-dec-4-20/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
    "tier": "high"
   },
@@ -36,8 +36,17 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/meet-jumpin-jack-flash-united-paws-cat-of-the-week/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/IMG_6412.png",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "“I was born in a crossfire hurricane; And I howled at the morning drivin’ rain; But it’s all right now, in fact it’s a gas; But it’s all right now, I’m...",
+   "tier": "high"
+  },
+  {
+   "title": "TILLAMOOK COUNTY EMERGENCY MANAGEMENT: Tillamook County King Tide Alert Nov. 23–27",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-tillamook-county-king-tide-alert-nov-23-27/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/NetartsHighWater.jpg",
+   "date": "2026-11-24",
+   "summary": "King tides are here this week alongside Tuesday’s Beaver Supermoon, bringing a Coastal Flood Warning from 4:00 AM Tuesday, Nov. 24 through 4:00 AM Friday, Nov. 27. Be prepared for possible tidal...",
    "tier": "high"
   },
   {
@@ -82,24 +91,6 @@
    "summary": "Work has begun to convert the building that formerly housed Kimmel True Value, at the corner of First Street and Ivy Avenue in downtown Tillamook, into a mixed-use space featuring a restaurant and studios — a long-empty hardware store starting its second life in the middle of town.",
    "img_origin": "generated",
    "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 2, 2026-11-23).",
-   "tier": "high"
-  },
-  {
-   "title": "OREGON DEPT. OF FORESTRY: STATE CAPITOL GETS ITS HOLIDAY TREE FROM TILLAMOOK STATE FOREST",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-forestry-state-capitol-gets-its-holiday-tree-from-tillamook-state-forest/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CapitolTreeloadup2-225x300.jpg",
-   "date": "2026-11-21",
-   "summary": "Oregon Department of Forestry and Oregon Department of Corrections staff make the delivery (SALEM, OR)—A 30-foot noble fir tree from Tillamook State Forest is now up, decorated, and ready for...",
-   "tier": "high"
-  },
-  {
-   "title": "Tillamook State Forest noble fir is the Capitol's holiday tree",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/tillamook-state-forest-noble-fir-is-the-capitols-holiday-tree/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/CapitolTree.jpg",
-   "date": "2026-11-21",
-   "summary": "A Banks logging company donated its time and equipment to help harvest the 30-foot noble fir, and inmates at the South Fork Forest Camp readied it for the rotunda.",
    "tier": "high"
   },
   {
@@ -246,23 +237,21 @@
    "tier": "high"
   },
   {
-   "title": "Tillamook grad wins a national FFA title with a flower business she started in high school",
-   "source": "Tillamook Headlight Herald",
-   "url": "https://news.ssbcrack.com/tillamook-student-wins-national-ffa-title-with-floral-business/",
-   "img": "https://media2.ssbcrack.com/2026/11/Tillamook-Student-Wins-National-FFA-Title-With-Floral-Business.jpeg",
-   "date": "2026-11-13",
-   "summary": "Tillamook High School graduate Tatum Lancaster was named the 2026 National FFA Agricultural Sales–Entrepreneurship Proficiency Award winner before 40,000 people at Lucas Oil Stadium in Indianapolis — Oregon's only first-place finish at the national convention. Her winning project, Western Grace Floral Co., is the floral design business she started as a junior in a floriculture class and still runs while attending Oregon State University.",
-   "img_origin": "source",
-   "img_credit": "Photo: Tillamook Headlight Herald (the story's own photo).",
-   "tier": "high"
-  },
-  {
    "title": "OREGON DEPT. OF FISH & WILDLIFE: Unwind after Thanksgiving dinner with Free Fishing Days Nov. 27 and 28",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-unwind-after-thanksgiving-dinner-with-free-fishing-days-nov-27-and-28/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ODFWFreeFishingDays.jpg",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "(SALEM, OR)– Continue the family togetherness — or break off on your own — for free fishing, clamming and crabbing on Friday, Nov. 27 and Saturday, Nov. 28. No fishing/shellfish licenses...",
+   "tier": "useful"
+  },
+  {
+   "title": "Enforcement of new federal Medicaid work rules delayed to keep people in Oregon insured",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/enforcement-of-new-federal-medicaid-work-rules-delayed-to-keep-people-in-oregon-insured/article_07457c5d-497e-57a2-be21-21278ad3b3f5.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/84/c84e6719-d6a3-52be-86a3-79d2a102ee34/6b04aa9c7980f.image.png?resize=300%2C197",
+   "date": "2026-11-24",
+   "summary": "Oregon will opt into a hold harmless period for Medicaid work or activity rules, a new option from the Centers for Medicare & Medicaid Services (CMS) that allows states to delay enforcement of the new requirements set to take effect…",
    "tier": "useful"
   },
   {
@@ -288,7 +277,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CityofWheelerlogo.png",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "summary": "WHAT: MURAL-PAINTING OPPORTUNITY ON TWO (2) CONEX CONTAINERS IN UPPER PARK WHO: WHEELER RESIDENTS ARE ENCOURAGED TO APPLY, BUT THIS PROJECT IS OPEN TO ALL INTERESTED PARTIES WHEN: ALL ENTRIES ARE...",
    "tier": "routine"
   },
@@ -297,7 +286,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/coastal-flood-warning-and-advisory/article_83bb711a-98da-4942-a53c-c26f094e4950.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
    "tier": "routine"
   }
