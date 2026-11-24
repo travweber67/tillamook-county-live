@@ -1,6 +1,98 @@
 {
- "fetched_at": "2026-11-24T19:22:31Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T19:52:32Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 368259990,
+   "lat": 46.18848,
+   "lon": -123.85987,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 19:53:16.998673019 +0000 UTC"
+  },
+  {
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 46.28996,
+   "lon": -124.9042,
+   "sog_kn": 5.3,
+   "cog": 146.3,
+   "heading": 156,
+   "updated": "2026-11-24 19:53:10.064453745 +0000 UTC"
+  },
+  {
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28128,
+   "lon": -124.04681,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-24 19:53:22.725454092 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 266.1,
+   "heading": 97,
+   "updated": "2026-11-24 19:53:11.348612333 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18991,
+   "lon": -123.85418,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-24 19:53:21.972833191 +0000 UTC",
+   "sog_kn": 0.1,
+   "cog": 293.7,
+   "heading": 511
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85909,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 19:53:05.294013423 +0000 UTC"
+  },
+  {
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.36084,
+   "lon": -124.41241,
+   "sog_kn": 4.5,
+   "cog": 28.6,
+   "heading": 87,
+   "updated": "2026-11-24 19:53:03.050287044 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0.1,
+   "cog": 329.8,
+   "heading": 305,
+   "updated": "2026-11-24 19:53:00.268272315 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16845,
+   "lon": -123.91408,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 19:53:21.430920177 +0000 UTC"
+  }
+ ]
 }
