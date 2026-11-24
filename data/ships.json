@@ -1,55 +1,86 @@
 {
- "fetched_at": "2026-11-24T01:52:23Z",
+ "fetched_at": "2026-11-24T02:22:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16793,
-   "lon": -123.91433,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19856,
+   "lon": -123.80867,
+   "sog_kn": 0.5,
+   "cog": 343.8,
+   "heading": 56,
+   "updated": "2026-11-24 02:22:52.457201057 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.28104,
+   "lon": -124.04637,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-24 02:23:02.148699165 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.1684,
+   "lon": -123.91836,
+   "sog_kn": 0,
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-24 02:23:02.749911248 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.19542,
+   "lon": -123.92696,
+   "sog_kn": 7.8,
+   "cog": 133.4,
+   "heading": 131,
+   "updated": "2026-11-24 02:22:53.503349671 +0000 UTC"
+  },
+  {
+   "mmsi": 367176750,
+   "name": "PACIFIC HOOKER",
+   "lat": 46.16716,
+   "lon": -123.91677,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 01:52:53.078486817 +0000 UTC"
+   "updated": "2026-11-24 02:23:12.004360902 +0000 UTC"
   },
   {
-   "mmsi": 368259990,
-   "lat": 46.18847,
-   "lon": -123.85987,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18992,
+   "lon": -123.85417,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 305,
-   "updated": "2026-11-24 01:53:17.422960992 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91399,
-   "sog_kn": 0.1,
-   "cog": 12.4,
+   "cog": 271.6,
    "heading": 511,
-   "updated": "2026-11-24 01:53:17.272479026 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82972,
-   "sog_kn": 0,
-   "cog": 67.6,
-   "heading": 169,
-   "updated": "2026-11-24 01:52:57.664980111 +0000 UTC"
+   "updated": "2026-11-24 02:23:18.443262658 +0000 UTC"
   },
   {
    "mmsi": 366766530,
    "name": "SALVAGE CHIEF",
-   "lat": 46.19637,
-   "lon": -123.79702,
+   "lat": 46.19638,
+   "lon": -123.79713,
    "type_code": 90,
    "type": "Other vessel",
    "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-24 01:52:55.984992374 +0000 UTC"
+   "updated": "2026-11-24 02:22:55.985781129 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.27223,
+   "lon": -123.95231,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 133,
+   "updated": "2026-11-24 02:23:04.526080254 +0000 UTC"
   }
  ]
 }
