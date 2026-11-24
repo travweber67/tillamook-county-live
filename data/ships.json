@@ -1,27 +1,116 @@
 {
- "fetched_at": "2026-11-24T10:52:28Z",
+ "fetched_at": "2026-11-24T11:22:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 373607000,
-   "name": "GLOBAL AMBITION",
-   "lat": 46.29976,
-   "lon": -124.75365,
-   "sog_kn": 11.9,
-   "cog": 0,
-   "heading": 355,
-   "updated": "2026-11-24 10:52:55.617340961 +0000 UTC"
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04671,
+   "sog_kn": 0,
+   "cog": 307.1,
+   "heading": 511,
+   "updated": "2026-11-24 11:23:17.888784647 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.23819,
-   "lon": -123.98254,
-   "sog_kn": 3.2,
-   "cog": 150.3,
-   "heading": 133,
-   "updated": "2026-11-24 10:52:54.103117954 +0000 UTC"
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16558,
+   "lon": -123.92199,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 11:23:12.949001502 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19148,
+   "lon": -123.9247,
+   "sog_kn": 0,
+   "cog": 187.7,
+   "heading": 293,
+   "updated": "2026-11-24 11:23:15.280203309 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 39.8,
+   "heading": 178,
+   "updated": "2026-11-24 11:23:09.287903718 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04027,
+   "sog_kn": 0,
+   "cog": 332.2,
+   "heading": 511,
+   "updated": "2026-11-24 11:23:06.467594579 +0000 UTC"
+  },
+  {
+   "mmsi": 368259990,
+   "name": "NORDIC FOX",
+   "lat": 46.18845,
+   "lon": -123.85988,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 304,
+   "updated": "2026-11-24 11:23:20.170866758 +0000 UTC"
+  },
+  {
+   "mmsi": 367309370,
+   "name": "PACIFIC EAGLE",
+   "lat": 46.21574,
+   "lon": -123.94776,
+   "type_code": 52,
+   "type": "Tug",
+   "destination": "WARRENTON",
+   "updated": "2026-11-24 11:23:14.154259789 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16777,
+   "lon": -123.91446,
+   "sog_kn": 0,
+   "cog": 221,
+   "heading": 511,
+   "updated": "2026-11-24 11:23:11.839939098 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 45.79464,
+   "lon": -124.32998,
+   "sog_kn": 13.8,
+   "cog": 10.3,
+   "heading": 12,
+   "updated": "2026-11-24 11:22:53.121616996 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.8591,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 11:23:05.267869272 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16848,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 11:23:07.840401975 +0000 UTC"
   }
  ]
 }
