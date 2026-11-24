@@ -1,74 +1,46 @@
 {
- "fetched_at": "2026-11-24T20:52:32Z",
+ "fetched_at": "2026-11-24T21:22:33Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303324000,
-   "lat": 46.16829,
-   "lon": -123.91415,
-   "sog_kn": 0,
-   "cog": 82.4,
-   "heading": 511,
-   "updated": "2026-11-24 20:53:28.696640166 +0000 UTC"
+   "mmsi": 366979360,
+   "name": "ARTHUR FOSS",
+   "lat": 46.20058,
+   "lon": -123.75841,
+   "type_code": 31,
+   "type": "Towing",
+   "destination": "SEATTLE",
+   "updated": "2026-11-24 21:23:02.558989036 +0000 UTC"
   },
   {
-   "mmsi": 368259990,
-   "lat": 46.18846,
-   "lon": -123.85986,
-   "sog_kn": 0.2,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 20:53:16.364745022 +0000 UTC"
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 46.36605,
+   "lon": -124.89545,
+   "type_code": 82,
+   "type": "Tanker",
+   "destination": "USVAN",
+   "updated": "2026-11-24 21:23:00.098956534 +0000 UTC"
   },
   {
-   "mmsi": 369493011,
-   "lat": 46.28157,
-   "lon": -124.04681,
-   "sog_kn": 0,
-   "cog": 170.2,
-   "heading": 297,
-   "updated": "2026-11-24 20:53:26.684740503 +0000 UTC"
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.218,
+   "lon": -123.78115,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-24 21:23:08.150954029 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
-   "sog_kn": 0.3,
-   "cog": 83.7,
-   "heading": 165,
-   "updated": "2026-11-24 20:53:26.359089577 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16558,
-   "lon": -123.92201,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-24 20:53:28.997724953 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.2002,
-   "lon": -123.76129,
-   "sog_kn": 0.1,
-   "cog": 261.6,
-   "heading": 331,
-   "updated": "2026-11-24 20:53:22.654964151 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16779,
-   "lon": -123.91447,
-   "sog_kn": 0,
-   "cog": 279.1,
-   "heading": 511,
-   "updated": "2026-11-24 20:53:21.914372883 +0000 UTC"
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.16708,
+   "lon": -123.91812,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 21:23:01.706314705 +0000 UTC"
   }
  ]
 }
