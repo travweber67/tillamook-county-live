@@ -1,6 +1,75 @@
 {
- "fetched_at": "2026-11-24T14:52:29Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-24T15:22:29Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367089450,
+   "lat": 46.19014,
+   "lon": -123.85662,
+   "sog_kn": 0.1,
+   "cog": 46.1,
+   "heading": 511,
+   "updated": "2026-11-24 15:23:23.333199082 +0000 UTC"
+  },
+  {
+   "mmsi": 538012072,
+   "name": "DEVBULK ASLAN",
+   "lat": 46.22109,
+   "lon": -123.75493,
+   "sog_kn": 11.7,
+   "cog": 67.1,
+   "heading": 68,
+   "updated": "2026-11-24 15:23:20.727794203 +0000 UTC"
+  },
+  {
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19056,
+   "lon": -123.85696,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-24 15:23:33.443747912 +0000 UTC"
+  },
+  {
+   "mmsi": 368410780,
+   "name": "GAMBLER",
+   "lat": 46.19148,
+   "lon": -123.9247,
+   "sog_kn": 0,
+   "cog": 350.1,
+   "heading": 292,
+   "updated": "2026-11-24 15:23:03.756162417 +0000 UTC"
+  },
+  {
+   "mmsi": 367182290,
+   "name": "LONG SHOT",
+   "lat": 46.30517,
+   "lon": -124.0403,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 15:23:12.208728863 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16774,
+   "lon": -123.91443,
+   "sog_kn": 0,
+   "cog": 19.6,
+   "heading": 511,
+   "updated": "2026-11-24 15:23:12.485088479 +0000 UTC"
+  },
+  {
+   "mmsi": 636025785,
+   "name": "PAN SKY",
+   "lat": 46.20656,
+   "lon": -123.79598,
+   "sog_kn": 7.4,
+   "cog": 60.7,
+   "heading": 60,
+   "updated": "2026-11-24 15:23:32.730608949 +0000 UTC"
+  }
+ ]
 }
