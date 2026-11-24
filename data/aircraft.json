@@ -1,77 +1,57 @@
 {
- "fetched_at": "2026-11-24T04:22:24Z",
+ "fetched_at": "2026-11-24T04:52:25Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a85e74",
-   "callsign": "N63843",
-   "type": "C172",
-   "alt_ft": 2250,
-   "gs_kn": 94.4,
-   "track": 24.39,
-   "lat": 45.197708,
-   "lon": -123.197806
-  },
-  {
-   "hex": "ab6828",
-   "callsign": "N834KX",
-   "type": "C172",
-   "alt_ft": 3225,
-   "gs_kn": 62.4,
-   "track": 125.22,
-   "lat": 45.602526,
-   "lon": -123.092125
-  },
-  {
-   "hex": "a12753",
-   "callsign": "UAL2615",
-   "type": "B38M",
-   "alt_ft": 18175,
-   "gs_kn": 372.2,
-   "track": 208.22,
-   "lat": 45.216248,
-   "lon": -122.963235
-  },
-  {
    "hex": "ab6471",
    "callsign": "N833KX",
    "type": "C172",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.534676,
-   "lon": -122.946424
+   "alt_ft": 1150,
+   "gs_kn": 95.9,
+   "track": 239.96,
+   "lat": 45.226913,
+   "lon": -123.070679
   },
   {
-   "hex": "a178ae",
-   "callsign": "SKW3076",
-   "type": "E75L",
-   "alt_ft": 3850,
-   "gs_kn": 245.8,
-   "track": 349.92,
-   "lat": 45.623241,
-   "lon": -122.872879
+   "hex": "a9ed9d",
+   "callsign": "N739MR",
+   "type": "C172",
+   "alt_ft": 2450,
+   "gs_kn": 75.5,
+   "track": 168.54,
+   "lat": 45.608764,
+   "lon": -122.963379
   },
   {
-   "hex": "ad928b",
-   "callsign": "ASA662",
-   "type": "B39M",
-   "alt_ft": 2975,
-   "gs_kn": 180.0,
-   "track": 89.36,
-   "lat": 45.671702,
-   "lon": -122.83374
+   "hex": "a79531",
+   "callsign": "N588SA",
+   "type": "BE9L",
+   "alt_ft": 1050,
+   "gs_kn": 158.8,
+   "track": 323.71,
+   "lat": 45.511826,
+   "lon": -122.920271
   },
   {
-   "hex": "a8469e",
-   "callsign": "QXE2318",
-   "type": "E75L",
-   "alt_ft": 4950,
-   "gs_kn": 234.4,
-   "track": 322.1,
-   "lat": 45.531876,
-   "lon": -122.805764
+   "hex": "a3efa2",
+   "callsign": "UAL1811",
+   "type": "B738",
+   "alt_ft": 2925,
+   "gs_kn": 215.3,
+   "track": 32.29,
+   "lat": 45.644165,
+   "lon": -122.860241
+  },
+  {
+   "hex": "a85e74",
+   "callsign": "N63843",
+   "type": "C172",
+   "alt_ft": 3275,
+   "gs_kn": 106.1,
+   "track": 314.24,
+   "lat": 45.413663,
+   "lon": -122.815559
   }
  ]
 }

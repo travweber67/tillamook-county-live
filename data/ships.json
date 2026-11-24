@@ -1,65 +1,27 @@
 {
- "fetched_at": "2026-11-24T04:22:24Z",
+ "fetched_at": "2026-11-24T04:52:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368449610,
-   "lat": 46.30384,
-   "lon": -124.04111,
-   "sog_kn": 0,
-   "cog": 58.6,
-   "heading": 511,
-   "updated": "2026-11-24 04:23:03.269168518 +0000 UTC"
-  },
-  {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04672,
-   "sog_kn": 0,
-   "cog": 307.1,
-   "heading": 511,
-   "updated": "2026-11-24 04:23:18.326442484 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28105,
-   "lon": -124.04638,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-24 04:23:03.386847149 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91792,
-   "sog_kn": 0,
-   "cog": 146.5,
-   "heading": 177,
-   "updated": "2026-11-24 04:23:01.053306333 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18807,
-   "lon": -123.85907,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 04:23:05.169731822 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76903,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20008,
+   "lon": -123.8088,
    "sog_kn": 0.1,
-   "cog": 131,
+   "cog": 35.1,
    "heading": 131,
-   "updated": "2026-11-24 04:23:00.351409686 +0000 UTC"
+   "updated": "2026-11-24 04:52:51.683184624 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.21789,
+   "lon": -123.78367,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-24 04:52:52.506584512 +0000 UTC"
   }
  ]
 }
