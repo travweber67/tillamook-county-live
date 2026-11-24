@@ -1,56 +1,47 @@
 {
- "fetched_at": "2026-11-24T22:52:34Z",
+ "fetched_at": "2026-11-24T23:22:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338424194,
-   "name": "BLUEFIN",
-   "lat": 46.30558,
-   "lon": -124.03862,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16561,
+   "lon": -123.92197,
    "sog_kn": 0,
-   "cog": 222.4,
+   "cog": 352.8,
    "heading": 511,
-   "updated": "2026-11-24 22:53:30.96999272 +0000 UTC"
+   "updated": "2026-11-24 23:23:20.106547406 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19997,
-   "lon": -123.76046,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04024,
    "sog_kn": 0,
-   "cog": 358.9,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-24 22:53:30.819673307 +0000 UTC"
+   "updated": "2026-11-24 23:23:14.871186594 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16775,
-   "lon": -123.91442,
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85909,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 23:23:05.234902524 +0000 UTC"
+  },
+  {
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.20033,
+   "lon": -123.76151,
    "sog_kn": 0,
-   "cog": 305.7,
-   "heading": 511,
-   "updated": "2026-11-24 22:53:12.226263622 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19034,
-   "lon": -123.82952,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-24 22:53:25.228830036 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 10.7,
-   "heading": 307,
-   "updated": "2026-11-24 22:53:09.661967263 +0000 UTC"
+   "cog": 346.4,
+   "heading": 161,
+   "updated": "2026-11-24 23:23:05.998727135 +0000 UTC"
   }
  ]
 }

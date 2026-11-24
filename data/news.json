@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T22:53:37Z",
+ "fetched_at": "2026-11-24T23:23:28Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -268,6 +268,15 @@
    "tier": "useful"
   },
   {
+   "title": "Port board temporarily extends OCSR lease",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
+   "date": "2026-11-24",
+   "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
+   "tier": "routine"
+  },
+  {
    "title": "OREGON DEPT. OF TRANSPORTATION (ODOT): HWY. 6 Project Update – Guardrail Upgrades",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-transportation-odot-hwy-6-project-update-guardrail-upgrades/",
@@ -292,15 +301,6 @@
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/gales-creek-bazaar-wreaths-2023-11-18.jpg",
    "date": "2026-11-24",
    "summary": "Christmas tree cutting isn't allowed in the Tillamook State Forest, but people can gather boughs, ferns and salal there for their own use, in limited amounts, without a permit.",
-   "tier": "routine"
-  },
-  {
-   "title": "Port board temporarily extends OCSR lease",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
-   "date": "2026-11-24",
-   "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
    "tier": "routine"
   },
   {
