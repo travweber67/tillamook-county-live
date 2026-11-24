@@ -1,37 +1,47 @@
 {
- "fetched_at": "2026-11-24T07:52:26Z",
+ "fetched_at": "2026-11-24T08:22:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.22358,
-   "lon": -123.96246,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-24 07:53:01.434692183 +0000 UTC"
+   "mmsi": 367355270,
+   "name": "CALAMARI",
+   "lat": 46.16793,
+   "lon": -123.91433,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 08:22:53.104116322 +0000 UTC"
   },
   {
    "mmsi": 369493291,
    "name": "CG47217",
-   "lat": 46.16749,
-   "lon": -123.91519,
-   "sog_kn": 0.1,
-   "cog": 98.8,
-   "heading": 61,
-   "updated": "2026-11-24 07:52:57.056212989 +0000 UTC"
+   "lat": 46.176,
+   "lon": -123.91092,
+   "sog_kn": 6.5,
+   "cog": 17.9,
+   "heading": 20,
+   "updated": "2026-11-24 08:23:00.091160231 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "sog_kn": 0.3,
-   "cog": 65.7,
-   "heading": 168,
-   "updated": "2026-11-24 07:52:52.991237988 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16837,
+   "lon": -123.91838,
+   "sog_kn": 0,
+   "cog": 29.2,
+   "heading": 350,
+   "updated": "2026-11-24 08:23:03.442567871 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.76045,
+   "sog_kn": 0.1,
+   "cog": 358.1,
+   "heading": 511,
+   "updated": "2026-11-24 08:22:56.280571813 +0000 UTC"
   }
  ]
 }
