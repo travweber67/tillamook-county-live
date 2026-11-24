@@ -1,98 +1,93 @@
 {
- "fetched_at": "2026-11-24T19:52:32Z",
+ "fetched_at": "2026-11-24T20:22:32Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368259990,
-   "lat": 46.18848,
-   "lon": -123.85987,
-   "sog_kn": 0.1,
-   "cog": 360,
+   "mmsi": 338376911,
+   "lat": 46.16614,
+   "lon": -123.91809,
+   "sog_kn": 0,
+   "cog": 319.8,
    "heading": 511,
-   "updated": "2026-11-24 19:53:16.998673019 +0000 UTC"
+   "updated": "2026-11-24 20:23:38.029755147 +0000 UTC"
   },
   {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.28996,
-   "lon": -124.9042,
-   "sog_kn": 5.3,
-   "cog": 146.3,
-   "heading": 156,
-   "updated": "2026-11-24 19:53:10.064453745 +0000 UTC"
+   "mmsi": 369493011,
+   "lat": 46.24921,
+   "lon": -124.03904,
+   "sog_kn": 4.9,
+   "cog": 108.8,
+   "heading": 266,
+   "updated": "2026-11-24 20:23:34.31072224 +0000 UTC"
   },
   {
-   "mmsi": 366999466,
-   "name": "CG47240",
-   "lat": 46.28128,
-   "lon": -124.04681,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.24459,
+   "lon": -124.03995,
    "type_code": 51,
    "type": "Search & rescue",
-   "destination": "YB",
-   "updated": "2026-11-24 19:53:22.725454092 +0000 UTC"
+   "updated": "2026-11-24 20:23:43.204142619 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91403,
+   "mmsi": 367355270,
+   "name": "CALAMARI",
+   "lat": 46.16792,
+   "lon": -123.91431,
    "sog_kn": 0,
-   "cog": 266.1,
-   "heading": 97,
-   "updated": "2026-11-24 19:53:11.348612333 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 20:23:41.428876997 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16561,
+   "lon": -123.92202,
+   "sog_kn": 0,
+   "cog": 339.7,
+   "heading": 511,
+   "updated": "2026-11-24 20:23:48.656810398 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.2052,
+   "lon": -123.80356,
+   "sog_kn": 0.1,
+   "cog": 305.4,
+   "heading": 265,
+   "updated": "2026-11-24 20:23:33.275842711 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.24753,
+   "lon": -124.03287,
+   "sog_kn": 12.5,
+   "cog": 194.1,
+   "heading": 511,
+   "updated": "2026-11-24 20:23:45.270378065 +0000 UTC"
   },
   {
    "mmsi": 367740820,
    "name": "RELIEF",
-   "lat": 46.18991,
-   "lon": -123.85418,
+   "lat": 46.18993,
+   "lon": -123.85421,
+   "sog_kn": 0,
+   "cog": 294.4,
+   "heading": 511,
+   "updated": "2026-11-24 20:23:23.083346132 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19032,
+   "lon": -123.82951,
    "type_code": 50,
    "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-24 19:53:21.972833191 +0000 UTC",
-   "sog_kn": 0.1,
-   "cog": 293.7,
-   "heading": 511
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18809,
-   "lon": -123.85909,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 19:53:05.294013423 +0000 UTC"
-  },
-  {
-   "mmsi": 636020172,
-   "name": "VITA OLYMPIC",
-   "lat": 46.36084,
-   "lon": -124.41241,
-   "sog_kn": 4.5,
-   "cog": 28.6,
-   "heading": 87,
-   "updated": "2026-11-24 19:53:03.050287044 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86174,
-   "sog_kn": 0.1,
-   "cog": 329.8,
-   "heading": 305,
-   "updated": "2026-11-24 19:53:00.268272315 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16845,
-   "lon": -123.91408,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-24 19:53:21.430920177 +0000 UTC"
+   "updated": "2026-11-24 20:23:25.515903373 +0000 UTC"
   }
  ]
 }
