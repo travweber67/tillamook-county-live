@@ -1,77 +1,57 @@
 {
- "fetched_at": "2026-11-24T12:22:28Z",
+ "fetched_at": "2026-11-24T12:52:28Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999466,
-   "name": "CG47240",
-   "lat": 46.28128,
-   "lon": -124.04681,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "YB",
-   "updated": "2026-11-24 12:23:22.829264473 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.15453,
+   "lon": -124.1722,
+   "sog_kn": 8.7,
+   "cog": 253,
+   "heading": 249,
+   "updated": "2026-11-24 12:52:55.450478277 +0000 UTC"
   },
   {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19148,
-   "lon": -123.9247,
-   "sog_kn": 0.1,
-   "cog": 157.3,
-   "heading": 291,
-   "updated": "2026-11-24 12:23:13.643400167 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20514,
-   "lon": -123.81148,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-24 12:23:06.989038884 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.1999,
-   "lon": -123.7605,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.8297,
    "sog_kn": 0,
-   "cog": 197.2,
-   "heading": 511,
-   "updated": "2026-11-24 12:23:03.760508507 +0000 UTC"
+   "cog": 202.1,
+   "heading": 168,
+   "updated": "2026-11-24 12:53:09.495207289 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.2002,
-   "lon": -123.76129,
-   "sog_kn": 0.1,
-   "cog": 115.5,
-   "heading": 340,
-   "updated": "2026-11-24 12:23:23.896749739 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16773,
-   "lon": -123.91439,
+   "mmsi": 367182290,
+   "name": "LONG SHOT",
+   "lat": 46.30515,
+   "lon": -124.04029,
    "sog_kn": 0,
-   "cog": 131.2,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 12:23:11.048936525 +0000 UTC"
+   "updated": "2026-11-24 12:53:14.575226521 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.19444,
-   "lon": -123.83648,
-   "sog_kn": 6.6,
-   "cog": 81.3,
-   "heading": 82,
-   "updated": "2026-11-24 12:23:04.932411721 +0000 UTC"
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.2088,
+   "lon": -123.80176,
+   "sog_kn": 0.1,
+   "cog": 155.3,
+   "heading": 69,
+   "updated": "2026-11-24 12:53:14.724197609 +0000 UTC"
+  },
+  {
+   "mmsi": 366951000,
+   "name": "USCGC ELM",
+   "lat": 46.20749,
+   "lon": -123.76903,
+   "sog_kn": 0,
+   "cog": 222,
+   "heading": 132,
+   "updated": "2026-11-24 12:52:52.505680287 +0000 UTC"
   }
  ]
 }
