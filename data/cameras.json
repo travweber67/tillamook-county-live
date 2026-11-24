@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-24T20:22:32Z",
+ "fetched_at": "2026-11-24T20:52:32Z",
  "status": "ok",
- "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): OR6 at Fairview WB.",
+ "note": "16 cameras verified live from the TripCheck inventory.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -30,6 +30,13 @@
    "lon": -123.53511,
    "route": "OR6",
    "image_url": "https://www.tripcheck.com/roadcams/cams/Lees%20Camp_pid1655.JPG"
+  },
+  {
+   "name": "OR6 at Fairview WB",
+   "lat": 45.46689,
+   "lon": -123.75859,
+   "route": "OR6",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/ORE6%20at%20Fairview%20WB_pid4399.jpg"
   },
   {
    "name": "OR6 at Olsen Rd",

@@ -1,93 +1,74 @@
 {
- "fetched_at": "2026-11-24T20:22:32Z",
+ "fetched_at": "2026-11-24T20:52:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338376911,
-   "lat": 46.16614,
-   "lon": -123.91809,
+   "mmsi": 303324000,
+   "lat": 46.16829,
+   "lon": -123.91415,
    "sog_kn": 0,
-   "cog": 319.8,
+   "cog": 82.4,
    "heading": 511,
-   "updated": "2026-11-24 20:23:38.029755147 +0000 UTC"
+   "updated": "2026-11-24 20:53:28.696640166 +0000 UTC"
+  },
+  {
+   "mmsi": 368259990,
+   "lat": 46.18846,
+   "lon": -123.85986,
+   "sog_kn": 0.2,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-24 20:53:16.364745022 +0000 UTC"
   },
   {
    "mmsi": 369493011,
-   "lat": 46.24921,
-   "lon": -124.03904,
-   "sog_kn": 4.9,
-   "cog": 108.8,
-   "heading": 266,
-   "updated": "2026-11-24 20:23:34.31072224 +0000 UTC"
-  },
-  {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.24459,
-   "lon": -124.03995,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-24 20:23:43.204142619 +0000 UTC"
-  },
-  {
-   "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.16792,
-   "lon": -123.91431,
+   "lat": 46.28157,
+   "lon": -124.04681,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 20:23:41.428876997 +0000 UTC"
+   "cog": 170.2,
+   "heading": 297,
+   "updated": "2026-11-24 20:53:26.684740503 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
+   "sog_kn": 0.3,
+   "cog": 83.7,
+   "heading": 165,
+   "updated": "2026-11-24 20:53:26.359089577 +0000 UTC"
   },
   {
    "mmsi": 367327250,
    "name": "ENDEAVOR",
-   "lat": 46.16561,
-   "lon": -123.92202,
+   "lat": 46.16558,
+   "lon": -123.92201,
    "sog_kn": 0,
-   "cog": 339.7,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-24 20:23:48.656810398 +0000 UTC"
+   "updated": "2026-11-24 20:53:28.997724953 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.2052,
-   "lon": -123.80356,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.2002,
+   "lon": -123.76129,
    "sog_kn": 0.1,
-   "cog": 305.4,
-   "heading": 265,
-   "updated": "2026-11-24 20:23:33.275842711 +0000 UTC"
+   "cog": 261.6,
+   "heading": 331,
+   "updated": "2026-11-24 20:53:22.654964151 +0000 UTC"
   },
   {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.24753,
-   "lon": -124.03287,
-   "sog_kn": 12.5,
-   "cog": 194.1,
-   "heading": 511,
-   "updated": "2026-11-24 20:23:45.270378065 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85421,
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16779,
+   "lon": -123.91447,
    "sog_kn": 0,
-   "cog": 294.4,
+   "cog": 279.1,
    "heading": 511,
-   "updated": "2026-11-24 20:23:23.083346132 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19032,
-   "lon": -123.82951,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-24 20:23:25.515903373 +0000 UTC"
+   "updated": "2026-11-24 20:53:21.914372883 +0000 UTC"
   }
  ]
 }
