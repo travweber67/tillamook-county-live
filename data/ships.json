@@ -1,86 +1,46 @@
 {
- "fetched_at": "2026-11-24T02:22:23Z",
+ "fetched_at": "2026-11-24T02:52:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19856,
-   "lon": -123.80867,
-   "sog_kn": 0.5,
-   "cog": 343.8,
-   "heading": 56,
-   "updated": "2026-11-24 02:22:52.457201057 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28104,
-   "lon": -124.04637,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-24 02:23:02.148699165 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.91836,
-   "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 350,
-   "updated": "2026-11-24 02:23:02.749911248 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.19542,
-   "lon": -123.92696,
-   "sog_kn": 7.8,
-   "cog": 133.4,
-   "heading": 131,
-   "updated": "2026-11-24 02:22:53.503349671 +0000 UTC"
-  },
-  {
-   "mmsi": 367176750,
-   "name": "PACIFIC HOOKER",
-   "lat": 46.16716,
-   "lon": -123.91677,
+   "mmsi": 367355270,
+   "lat": 46.1679,
+   "lon": -123.9143,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 02:23:12.004360902 +0000 UTC"
+   "updated": "2026-11-24 02:52:52.328946657 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85417,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.91792,
    "sog_kn": 0,
-   "cog": 271.6,
-   "heading": 511,
-   "updated": "2026-11-24 02:23:18.443262658 +0000 UTC"
+   "cog": 184.5,
+   "heading": 178,
+   "updated": "2026-11-24 02:52:49.571606696 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19638,
-   "lon": -123.79713,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-24 02:22:55.985781129 +0000 UTC"
+   "mmsi": 367309370,
+   "name": "PACIFIC EAGLE",
+   "lat": 46.1911,
+   "lon": -123.92375,
+   "type_code": 52,
+   "type": "Tug",
+   "destination": "WARRENTON",
+   "updated": "2026-11-24 02:53:04.630423919 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.27223,
-   "lon": -123.95231,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 133,
-   "updated": "2026-11-24 02:23:04.526080254 +0000 UTC"
+   "mmsi": 636015972,
+   "name": "STOLT BASUTO",
+   "lat": 45.79946,
+   "lon": -124.22978,
+   "sog_kn": 8.2,
+   "cog": 188.5,
+   "heading": 186,
+   "updated": "2026-11-24 02:53:09.606155545 +0000 UTC"
   }
  ]
 }
