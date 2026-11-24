@@ -1,75 +1,67 @@
 {
- "fetched_at": "2026-11-24T15:22:29Z",
+ "fetched_at": "2026-11-24T15:52:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367089450,
-   "lat": 46.19014,
-   "lon": -123.85662,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19079,
+   "lon": -123.82769,
+   "sog_kn": 8.2,
+   "cog": 94.1,
+   "heading": 95,
+   "updated": "2026-11-24 15:53:03.822170781 +0000 UTC"
+  },
+  {
+   "mmsi": 538009633,
+   "name": "EVER ZENITH",
+   "lat": 46.23287,
+   "lon": -123.72256,
+   "sog_kn": 10.3,
+   "cog": 233.2,
+   "heading": 231,
+   "updated": "2026-11-24 15:53:04.285810016 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 358.4,
+   "heading": 177,
+   "updated": "2026-11-24 15:53:20.094063271 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.1881,
+   "lon": -123.85907,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 15:53:05.473764731 +0000 UTC"
+  },
+  {
+   "mmsi": 352002600,
+   "name": "SHARDANA",
+   "lat": 46.20944,
+   "lon": -123.80188,
    "sog_kn": 0.1,
-   "cog": 46.1,
-   "heading": 511,
-   "updated": "2026-11-24 15:23:23.333199082 +0000 UTC"
+   "cog": 155.3,
+   "heading": 84,
+   "updated": "2026-11-24 15:53:22.834254682 +0000 UTC"
   },
   {
-   "mmsi": 538012072,
-   "name": "DEVBULK ASLAN",
-   "lat": 46.22109,
-   "lon": -123.75493,
-   "sog_kn": 11.7,
-   "cog": 67.1,
-   "heading": 68,
-   "updated": "2026-11-24 15:23:20.727794203 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19056,
-   "lon": -123.85696,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-24 15:23:33.443747912 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19148,
-   "lon": -123.9247,
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86174,
    "sog_kn": 0,
-   "cog": 350.1,
-   "heading": 292,
-   "updated": "2026-11-24 15:23:03.756162417 +0000 UTC"
-  },
-  {
-   "mmsi": 367182290,
-   "name": "LONG SHOT",
-   "lat": 46.30517,
-   "lon": -124.0403,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 15:23:12.208728863 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16774,
-   "lon": -123.91443,
-   "sog_kn": 0,
-   "cog": 19.6,
-   "heading": 511,
-   "updated": "2026-11-24 15:23:12.485088479 +0000 UTC"
-  },
-  {
-   "mmsi": 636025785,
-   "name": "PAN SKY",
-   "lat": 46.20656,
-   "lon": -123.79598,
-   "sog_kn": 7.4,
-   "cog": 60.7,
-   "heading": 60,
-   "updated": "2026-11-24 15:23:32.730608949 +0000 UTC"
+   "cog": 293.2,
+   "heading": 307,
+   "updated": "2026-11-24 15:53:10.849485582 +0000 UTC"
   }
  ]
 }
