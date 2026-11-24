@@ -1,17 +1,6 @@
 {
- "fetched_at": "2026-11-24T13:22:28Z",
+ "fetched_at": "2026-11-24T13:52:29Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
- "aircraft": [
-  {
-   "hex": "a491e3",
-   "callsign": "N394CM",
-   "type": "C510",
-   "alt_ft": null,
-   "gs_kn": 15.5,
-   "track": null,
-   "lat": 45.543732,
-   "lon": -122.955273
-  }
- ]
+ "aircraft": []
 }

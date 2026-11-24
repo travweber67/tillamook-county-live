@@ -1,57 +1,55 @@
 {
- "fetched_at": "2026-11-24T13:22:28Z",
+ "fetched_at": "2026-11-24T13:52:29Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
+   "mmsi": 367439830,
+   "lat": 46.16881,
+   "lon": -123.91388,
    "sog_kn": 0,
-   "cog": 307.1,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 13:23:19.782768401 +0000 UTC"
+   "updated": "2026-11-24 13:52:41.055317069 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19881,
+   "lon": -123.80903,
+   "sog_kn": 0.1,
+   "cog": 151.6,
+   "heading": 77,
+   "updated": "2026-11-24 13:52:53.033752921 +0000 UTC"
   },
   {
    "mmsi": 368410780,
    "name": "GAMBLER",
    "lat": 46.1915,
    "lon": -123.9247,
-   "sog_kn": 0.1,
-   "cog": 238.3,
+   "sog_kn": 0,
+   "cog": 16.8,
    "heading": 292,
-   "updated": "2026-11-24 13:23:04.365141839 +0000 UTC"
+   "updated": "2026-11-24 13:52:44.86398609 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16874,
+   "lon": -123.91405,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 13:52:51.645609361 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20493,
-   "lon": -123.81142,
+   "lat": 46.2049,
+   "lon": -123.81134,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-24 13:23:06.890654963 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.7605,
-   "sog_kn": 0.1,
-   "cog": 254.8,
-   "heading": 511,
-   "updated": "2026-11-24 13:23:03.740125024 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18808,
-   "lon": -123.85909,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-24 13:23:05.270965472 +0000 UTC"
+   "updated": "2026-11-24 13:53:06.949328066 +0000 UTC"
   }
  ]
 }
