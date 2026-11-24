@@ -1,37 +1,85 @@
 {
- "fetched_at": "2026-11-24T18:22:32Z",
+ "fetched_at": "2026-11-24T18:52:32Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16813,
-   "lon": -123.91426,
+   "mmsi": 367161930,
+   "lat": 46.16891,
+   "lon": -123.9138,
    "sog_kn": 0,
-   "cog": 186,
+   "cog": 195.2,
    "heading": 511,
-   "updated": "2026-11-24 18:23:18.211220744 +0000 UTC"
+   "updated": "2026-11-24 18:53:23.598857632 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
+   "mmsi": 367375750,
+   "lat": 46.18901,
+   "lon": -123.8603,
+   "sog_kn": 0.2,
+   "cog": 57.8,
+   "heading": 511,
+   "updated": "2026-11-24 18:53:24.200666226 +0000 UTC"
+  },
+  {
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28127,
+   "lon": -124.04681,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-24 18:53:22.655890152 +0000 UTC"
+  },
+  {
+   "mmsi": 366999922,
+   "name": "CG47284",
+   "lat": 46.24327,
+   "lon": -124.03583,
+   "sog_kn": 0.7,
+   "cog": 270,
+   "heading": 511,
+   "updated": "2026-11-24 18:53:12.803381678 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.21794,
+   "lon": -123.77533,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-24 18:53:04.785134288 +0000 UTC"
+  },
+  {
+   "mmsi": 367182290,
+   "name": "LONG SHOT",
+   "lat": 46.30517,
    "lon": -124.04028,
    "sog_kn": 0,
-   "cog": 170.9,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 18:23:25.32185235 +0000 UTC"
+   "updated": "2026-11-24 18:53:15.289505742 +0000 UTC"
   },
   {
-   "mmsi": 352002600,
-   "name": "SHARDANA",
-   "lat": 46.21023,
-   "lon": -123.79358,
-   "sog_kn": 0,
-   "cog": 350.8,
-   "heading": 242,
-   "updated": "2026-11-24 18:23:16.366856889 +0000 UTC"
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.24773,
+   "lon": -124.03304,
+   "sog_kn": 8.4,
+   "cog": 113.1,
+   "heading": 511,
+   "updated": "2026-11-24 18:53:15.138898324 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0.1,
+   "cog": 143.5,
+   "heading": 307,
+   "updated": "2026-11-24 18:53:08.454354915 +0000 UTC"
   }
  ]
 }
