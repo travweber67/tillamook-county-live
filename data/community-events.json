@@ -790,13 +790,24 @@
   {
    "date": "2026-12-11",
    "img": "img/events/ev-music.jpg",
-   "location": "",
-   "note": "A performance of The Nutcracker. The hunt record gives no venue and doesn't state a cost — check the source listing for where and for ticket details.",
+   "location": "Tillamook High School – Don Whitney Auditorium, Tillamook",
+   "note": "Oregon Coast Dance Center presents its 18th annual Nutcracker at the Don Whitney Auditorium, Tillamook High School. Two performances: Friday, December 11 at 7:00 PM and Saturday, December 12 at 2:00 PM. Proceeds benefit the Oregon Food Bank. Tickets are available at the link.",
    "paid": true,
    "source": "Facebook",
    "time": "7:00 PM",
-   "title": "The Nutcracker",
-   "url": "https://www.facebook.com/events/2413871055816709/"
+   "title": "The Nutcracker — Oregon Coast Dance Center",
+   "url": "https://30185.danceticketing.com/r/events/"
+  },
+  {
+   "date": "2026-12-12",
+   "img": "img/events/ev-music.jpg",
+   "location": "Tillamook High School – Don Whitney Auditorium, Tillamook",
+   "note": "Oregon Coast Dance Center presents its 18th annual Nutcracker at the Don Whitney Auditorium, Tillamook High School. Two performances: Friday, December 11 at 7:00 PM and Saturday, December 12 at 2:00 PM. Proceeds benefit the Oregon Food Bank. Tickets are available at the link.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "2:00 PM",
+   "title": "The Nutcracker — Oregon Coast Dance Center",
+   "url": "https://30185.danceticketing.com/r/events/"
   },
   {
    "date": "2026-12-12",
