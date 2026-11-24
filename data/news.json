@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T14:23:31Z",
+ "fetched_at": "2026-11-24T14:53:15Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -264,15 +264,6 @@
    "tier": "useful"
   },
   {
-   "title": "NORTH COAST COMMUNITIES FOR WATERSHED PROTECTION MONTHLY MEETING TOMORROW NIGHT, TUESDAY NOV. 24",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/north-coast-communities-for-watershed-protection-monthly-meeting-tomorrow-night-tuesday-nov-24/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/10/NCCWP-1-300x248.jpg",
-   "date": "2026-11-23",
-   "summary": "Monthly meetings are held the last Tuesday of the month. The next meeting is tomorrow Tuesday, November 24 at 6 p.m. at St. Mary by the Sea Parish Hall, 275 S. Pacific...",
-   "tier": "routine"
-  },
-  {
    "title": "WHEELER MURAL PROJECT: CALL FOR DESIGN ENTRIES BY 1/8/27",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/wheeler-mural-project-call-for-design-entries-by-1-8-27/",
@@ -288,6 +279,15 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/2a/52a23f5b-0307-41f9-a487-4c9480490bd4/6818f49fcbd63.image.png?resize=300%2C211",
    "date": "2026-11-22",
    "summary": "* WHAT...For the Coastal Flood Advisory, tidal overflow flooding. For the Coastal Flood Warning, coastal flooding expected.",
+   "tier": "routine"
+  },
+  {
+   "title": "OSU Extension in Tillamook County to hold 2027 Master Gardener Training – Sign up Now!",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/osu-extension-in-tillamook-county-to-hold-2027-master-gardener-training-sign-up-now/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/MGTraining27.jpg",
+   "date": "2026-11-21",
+   "summary": "The Oregon State University Extension Service in Tillamook County welcomes the public to participate in the 2027 Master Gardener Volunteer Training from January 7th to April 1st, 2027. The Master Gardener...",
    "tier": "routine"
   }
  ]
