@@ -1,86 +1,65 @@
 {
- "fetched_at": "2026-11-24T03:52:24Z",
+ "fetched_at": "2026-11-24T04:22:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367439830,
-   "lat": 46.16882,
-   "lon": -123.91389,
+   "mmsi": 368449610,
+   "lat": 46.30384,
+   "lon": -124.04111,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 58.6,
    "heading": 511,
-   "updated": "2026-11-24 03:52:38.58156953 +0000 UTC"
+   "updated": "2026-11-24 04:23:03.269168518 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.1685,
-   "lon": -123.91403,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04672,
+   "sog_kn": 0,
+   "cog": 307.1,
+   "heading": 511,
+   "updated": "2026-11-24 04:23:18.326442484 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.28105,
+   "lon": -124.04638,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-24 04:23:03.386847149 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
+   "sog_kn": 0,
+   "cog": 146.5,
+   "heading": 177,
+   "updated": "2026-11-24 04:23:01.053306333 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18807,
+   "lon": -123.85907,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 04:23:05.169731822 +0000 UTC"
+  },
+  {
+   "mmsi": 366951000,
+   "name": "USCGC ELM",
+   "lat": 46.20749,
+   "lon": -123.76903,
    "sog_kn": 0.1,
-   "cog": 192.3,
-   "heading": 511,
-   "updated": "2026-11-24 03:52:38.430743529 +0000 UTC"
-  },
-  {
-   "mmsi": 368396890,
-   "name": "ARROW NO. 2",
-   "lat": 46.16795,
-   "lon": -123.92024,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 264,
-   "updated": "2026-11-24 03:52:39.911438836 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19889,
-   "lon": -123.80905,
-   "sog_kn": 0,
-   "cog": 14.8,
-   "heading": 76,
-   "updated": "2026-11-24 03:52:54.087217945 +0000 UTC"
-  },
-  {
-   "mmsi": 338926456,
-   "name": "CGC DAVID DUREN",
-   "lat": 46.20268,
-   "lon": -123.7635,
-   "sog_kn": 0,
-   "cog": 255.6,
-   "heading": 252,
-   "updated": "2026-11-24 03:52:40.630299402 +0000 UTC"
-  },
-  {
-   "mmsi": 338230023,
-   "name": "ROSS ISLAND SANTIAM",
-   "lat": 46.18897,
-   "lon": -123.86042,
-   "sog_kn": 0.1,
-   "cog": 87.9,
-   "heading": 511,
-   "updated": "2026-11-24 03:52:40.629700596 +0000 UTC"
-  },
-  {
-   "mmsi": 367425910,
-   "name": "SEA HORSE",
-   "lat": 46.27202,
-   "lon": -123.95208,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-24 03:53:05.124188467 +0000 UTC"
-  },
-  {
-   "mmsi": 636015972,
-   "name": "STOLT BASUTO",
-   "lat": 45.67209,
-   "lon": -124.2562,
-   "sog_kn": 8.1,
-   "cog": 189.8,
-   "heading": 186,
-   "updated": "2026-11-24 03:52:38.27973773 +0000 UTC"
+   "cog": 131,
+   "heading": 131,
+   "updated": "2026-11-24 04:23:00.351409686 +0000 UTC"
   }
  ]
 }
