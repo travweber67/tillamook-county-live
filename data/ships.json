@@ -1,46 +1,66 @@
 {
- "fetched_at": "2026-11-24T02:52:23Z",
+ "fetched_at": "2026-11-24T03:22:24Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 367355270,
-   "lat": 46.1679,
-   "lon": -123.9143,
+   "lat": 46.16791,
+   "lon": -123.91435,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 02:52:52.328946657 +0000 UTC"
+   "updated": "2026-11-24 03:22:52.330836861 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.91792,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19873,
+   "lon": -123.80897,
+   "sog_kn": 0.1,
+   "cog": 138.6,
+   "heading": 72,
+   "updated": "2026-11-24 03:22:51.760718761 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.82971,
    "sog_kn": 0,
-   "cog": 184.5,
-   "heading": 178,
-   "updated": "2026-11-24 02:52:49.571606696 +0000 UTC"
+   "cog": 352.1,
+   "heading": 167,
+   "updated": "2026-11-24 03:22:38.430041675 +0000 UTC"
   },
   {
-   "mmsi": 367309370,
-   "name": "PACIFIC EAGLE",
-   "lat": 46.1911,
-   "lon": -123.92375,
-   "type_code": 52,
-   "type": "Tug",
-   "destination": "WARRENTON",
-   "updated": "2026-11-24 02:53:04.630423919 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.85907,
+   "sog_kn": 0,
+   "cog": 139.3,
+   "heading": 131,
+   "updated": "2026-11-24 03:22:41.431578735 +0000 UTC"
   },
   {
-   "mmsi": 636015972,
-   "name": "STOLT BASUTO",
-   "lat": 45.79946,
-   "lon": -124.22978,
-   "sog_kn": 8.2,
-   "cog": 188.5,
-   "heading": 186,
-   "updated": "2026-11-24 02:53:09.606155545 +0000 UTC"
+   "mmsi": 367498220,
+   "name": "SOUTH BAY",
+   "lat": 46.16724,
+   "lon": -123.91625,
+   "sog_kn": 0,
+   "cog": 1.1,
+   "heading": 511,
+   "updated": "2026-11-24 03:22:43.698475664 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18817,
+   "lon": -123.86171,
+   "sog_kn": 0,
+   "cog": 269.2,
+   "heading": 308,
+   "updated": "2026-11-24 03:22:58.059928693 +0000 UTC"
   }
  ]
 }
