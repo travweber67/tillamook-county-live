@@ -1,66 +1,56 @@
 {
- "fetched_at": "2026-11-24T06:22:25Z",
+ "fetched_at": "2026-11-24T06:52:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16793,
-   "lon": -123.91433,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20016,
+   "lon": -123.80536,
+   "sog_kn": 0.3,
+   "cog": 99.3,
+   "heading": 193,
+   "updated": "2026-11-24 06:52:52.929690679 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16841,
+   "lon": -123.91836,
+   "sog_kn": 0,
+   "cog": 29.2,
+   "heading": 349,
+   "updated": "2026-11-24 06:53:02.683217433 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30464,
+   "lon": -124.04024,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-24 06:52:32.408915137 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.1964,
+   "lon": -123.79712,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-24 06:52:58.09006304 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16848,
+   "lon": -123.91406,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 06:22:51.369943619 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.21915,
-   "lon": -123.96322,
-   "sog_kn": 5.5,
-   "cog": 137.8,
-   "heading": 120,
-   "updated": "2026-11-24 06:22:51.217684932 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
-   "sog_kn": 0.2,
-   "cog": 235.8,
-   "heading": 165,
-   "updated": "2026-11-24 06:22:49.055780108 +0000 UTC"
-  },
-  {
-   "mmsi": 368410780,
-   "name": "GAMBLER",
-   "lat": 46.19148,
-   "lon": -123.9247,
-   "sog_kn": 0.2,
-   "cog": 59.2,
-   "heading": 292,
-   "updated": "2026-11-24 06:23:14.447233034 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 227.6,
-   "heading": 96,
-   "updated": "2026-11-24 06:23:21.69783749 +0000 UTC"
-  },
-  {
-   "mmsi": 366951000,
-   "name": "USCGC ELM",
-   "lat": 46.20749,
-   "lon": -123.76903,
-   "sog_kn": 0,
-   "cog": 221,
-   "heading": 131,
-   "updated": "2026-11-24 06:23:03.305450278 +0000 UTC"
+   "updated": "2026-11-24 06:52:26.950458676 +0000 UTC"
   }
  ]
 }
