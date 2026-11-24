@@ -1,56 +1,67 @@
 {
- "fetched_at": "2026-11-24T06:52:25Z",
+ "fetched_at": "2026-11-24T07:22:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.20016,
-   "lon": -123.80536,
-   "sog_kn": 0.3,
-   "cog": 99.3,
-   "heading": 193,
-   "updated": "2026-11-24 06:52:52.929690679 +0000 UTC"
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28128,
+   "lon": -124.04681,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-24 07:23:22.506280252 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16841,
-   "lon": -123.91836,
-   "sog_kn": 0,
-   "cog": 29.2,
-   "heading": 349,
-   "updated": "2026-11-24 06:53:02.683217433 +0000 UTC"
+   "mmsi": 368259990,
+   "name": "NORDIC FOX",
+   "lat": 46.1885,
+   "lon": -123.85988,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 304,
+   "updated": "2026-11-24 07:23:19.86089206 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30464,
-   "lon": -124.04024,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-24 06:52:32.408915137 +0000 UTC"
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19995,
+   "lon": -123.76047,
+   "sog_kn": 0.2,
+   "cog": 15.5,
+   "heading": 511,
+   "updated": "2026-11-24 07:23:05.026306769 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.1964,
-   "lon": -123.79712,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-24 06:52:58.09006304 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16848,
-   "lon": -123.91406,
+   "mmsi": 367176750,
+   "name": "PACIFIC HOOKER",
+   "lat": 46.16721,
+   "lon": -123.91681,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-24 06:52:26.950458676 +0000 UTC"
+   "updated": "2026-11-24 07:23:12.606665731 +0000 UTC"
+  },
+  {
+   "mmsi": 367375750,
+   "name": "ROSS ISLAND DREDGE 7",
+   "lat": 46.18901,
+   "lon": -123.86033,
+   "sog_kn": 0.1,
+   "cog": 218.1,
+   "heading": 511,
+   "updated": "2026-11-24 07:23:22.506811262 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.85909,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 07:23:05.126182658 +0000 UTC"
   }
  ]
 }
