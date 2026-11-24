@@ -1,46 +1,57 @@
 {
- "fetched_at": "2026-11-24T08:52:26Z",
+ "fetched_at": "2026-11-24T09:22:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16792,
-   "lon": -123.91432,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04672,
+   "sog_kn": 0.1,
+   "cog": 307.1,
    "heading": 511,
-   "updated": "2026-11-24 08:52:53.104301448 +0000 UTC"
+   "updated": "2026-11-24 09:23:20.1789937 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.1656,
-   "lon": -123.92196,
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.19147,
+   "lon": -123.89156,
+   "type_code": 33,
+   "type": "Dredging",
+   "destination": "USAST ASTORIA",
+   "updated": "2026-11-24 09:23:01.063625088 +0000 UTC"
+  },
+  {
+   "mmsi": 373607000,
+   "name": "GLOBAL AMBITION",
+   "lat": 46.00659,
+   "lon": -124.70405,
+   "sog_kn": 13.3,
+   "cog": 3.5,
+   "heading": 352,
+   "updated": "2026-11-24 09:23:20.585114646 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18995,
+   "lon": -123.85419,
    "sog_kn": 0,
-   "cog": 353.8,
+   "cog": 177.4,
    "heading": 511,
-   "updated": "2026-11-24 08:53:09.519650976 +0000 UTC"
+   "updated": "2026-11-24 09:23:21.629212393 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16873,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 342.4,
-   "heading": 96,
-   "updated": "2026-11-24 08:53:11.046742968 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.20019,
-   "lon": -123.76128,
-   "sog_kn": 0.6,
-   "cog": 114.6,
-   "heading": 340,
-   "updated": "2026-11-24 08:52:53.898420906 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.8591,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-24 09:23:05.082688388 +0000 UTC"
   }
  ]
 }
