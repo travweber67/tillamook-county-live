@@ -1,137 +1,117 @@
 {
- "fetched_at": "2026-11-24T15:52:30Z",
+ "fetched_at": "2026-11-24T16:22:30Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a51968",
-   "callsign": "ASA1483",
-   "type": "B739",
-   "alt_ft": 25675,
-   "gs_kn": 398.9,
-   "track": 228.56,
-   "lat": 44.823303,
-   "lon": -123.668322
-  },
-  {
-   "hex": "a12ac9",
-   "callsign": "UAL2328",
-   "type": "B39M",
-   "alt_ft": 39000,
-   "gs_kn": 355.1,
-   "track": 178.71,
-   "lat": 45.225685,
-   "lon": -123.350205
-  },
-  {
-   "hex": "aae965",
-   "callsign": "AMF1984",
-   "type": "BE99",
-   "alt_ft": 9100,
-   "gs_kn": 121.2,
-   "track": 208.04,
-   "lat": 44.982376,
-   "lon": -123.21507
-  },
-  {
-   "hex": "a46d95",
-   "callsign": "UAL499",
-   "type": "B739",
-   "alt_ft": 37800,
-   "gs_kn": 376.1,
-   "track": 178.78,
-   "lat": 45.254408,
-   "lon": -123.159284
-  },
-  {
    "hex": "a96da5",
    "callsign": "N7063M",
    "type": "R66",
-   "alt_ft": 925,
-   "gs_kn": 33.2,
-   "track": 6.91,
-   "lat": 44.993855,
-   "lon": -123.140661
+   "alt_ft": 900,
+   "gs_kn": 30.1,
+   "track": 21.45,
+   "lat": 44.993902,
+   "lon": -123.142402
+  },
+  {
+   "hex": "aa351b",
+   "callsign": "N757LY",
+   "type": "C152",
+   "alt_ft": 3550,
+   "gs_kn": 44.1,
+   "track": 230.53,
+   "lat": 45.260651,
+   "lon": -123.136597
   },
   {
    "hex": "a70af5",
    "callsign": "N553EA",
    "type": "B06",
    "alt_ft": 1000,
-   "gs_kn": 12.2,
-   "track": 279.46,
-   "lat": 45.068013,
-   "lon": -123.131684
+   "gs_kn": 2.3,
+   "track": 296.57,
+   "lat": 45.067932,
+   "lon": -123.130123
+  },
+  {
+   "hex": "a89bfb",
+   "callsign": "N654EA",
+   "type": "B06",
+   "alt_ft": 750,
+   "gs_kn": 6.1,
+   "track": 350.54,
+   "lat": 45.055161,
+   "lon": -123.115997
+  },
+  {
+   "hex": "aa34e8",
+   "callsign": "N757JX",
+   "type": "C152",
+   "alt_ft": 2700,
+   "gs_kn": 78.0,
+   "track": 210.84,
+   "lat": 45.622604,
+   "lon": -123.082983
+  },
+  {
+   "hex": "a0aaa0",
+   "callsign": "FDX3824",
+   "type": "B763",
+   "alt_ft": 35025,
+   "gs_kn": 406.1,
+   "track": 175.76,
+   "lat": 45.584789,
+   "lon": -123.059303
+  },
+  {
+   "hex": "a23ab6",
+   "callsign": "N24266",
+   "type": "C152",
+   "alt_ft": 1475,
+   "gs_kn": 65.1,
+   "track": 190.62,
+   "lat": 45.555229,
+   "lon": -122.985764
   },
   {
    "hex": "a5622d",
    "callsign": "N446PA",
    "type": "PA44",
-   "alt_ft": 6300,
-   "gs_kn": 163.5,
-   "track": 342.56,
-   "lat": 45.716492,
-   "lon": -123.103816
+   "alt_ft": 275,
+   "gs_kn": 58.6,
+   "track": 323.33,
+   "lat": 45.541589,
+   "lon": -122.95108
   },
   {
-   "hex": "a013ae",
-   "callsign": "AMF1968",
-   "type": "BE99",
-   "alt_ft": 9025,
-   "gs_kn": 141.0,
-   "track": 203.84,
-   "lat": 45.318557,
-   "lon": -123.00092
-  },
-  {
-   "hex": "a9f760",
-   "callsign": "N741MM",
-   "type": "C25C",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.540646,
-   "lon": -122.954161
-  },
-  {
-   "hex": "aa351b",
-   "callsign": "N757LY",
+   "hex": "a87de9",
+   "callsign": "N6460M",
    "type": "C152",
    "alt_ft": null,
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.534508,
-   "lon": -122.946494
+   "lat": 45.534496,
+   "lon": -122.94651
+  },
+  {
+   "hex": "a20e3e",
+   "callsign": "N231WU",
+   "type": "PA44",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.534702,
+   "lon": -122.946429
   },
   {
    "hex": "a88491",
    "callsign": "N648SP",
    "type": "C172",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.534668,
-   "lon": -122.946429
-  },
-  {
-   "hex": "aaf927",
-   "callsign": "N806LF",
-   "type": "EC35",
-   "alt_ft": 1100,
-   "gs_kn": 88.9,
-   "track": 70.95,
-   "lat": 45.499191,
-   "lon": -122.884892
-  },
-  {
-   "hex": "a8579e",
-   "callsign": "N6369E",
-   "type": "C172",
-   "alt_ft": 1300,
-   "gs_kn": 106.5,
-   "track": 255.31,
-   "lat": 45.634964,
-   "lon": -122.805243
+   "alt_ft": 4200,
+   "gs_kn": 74.9,
+   "track": 108.68,
+   "lat": 45.333593,
+   "lon": -122.897153
   }
  ]
 }
