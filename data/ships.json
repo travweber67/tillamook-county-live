@@ -1,65 +1,56 @@
 {
- "fetched_at": "2026-11-25T03:52:39Z",
+ "fetched_at": "2026-11-25T04:22:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368259990,
-   "lat": 46.18848,
-   "lon": -123.85988,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 306,
-   "updated": "2026-11-25 03:53:17.271205214 +0000 UTC"
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.21638,
+   "lon": -123.78372,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-25 04:23:00.549348923 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.91792,
-   "sog_kn": 0,
-   "cog": 6.7,
-   "heading": 178,
-   "updated": "2026-11-25 03:53:19.702828476 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91403,
-   "sog_kn": 0,
-   "cog": 240.6,
-   "heading": 96,
-   "updated": "2026-11-25 03:53:23.707327002 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19034,
-   "lon": -123.82949,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-25 03:53:25.058137997 +0000 UTC"
-  },
-  {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.20029,
-   "lon": -123.76151,
-   "sog_kn": 0,
-   "cog": 197.6,
-   "heading": 162,
-   "updated": "2026-11-25 03:53:04.935115491 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.20078,
-   "lon": -123.75362,
-   "sog_kn": 0,
-   "cog": 347.4,
+   "mmsi": 367161930,
+   "name": "PACIFIC CONQUEST",
+   "lat": 46.16895,
+   "lon": -123.91382,
+   "sog_kn": 0.2,
+   "cog": 279.6,
    "heading": 511,
-   "updated": "2026-11-25 03:53:11.878373707 +0000 UTC"
+   "updated": "2026-11-25 04:23:34.170233521 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16778,
+   "lon": -123.91444,
+   "sog_kn": 0,
+   "cog": 252.4,
+   "heading": 511,
+   "updated": "2026-11-25 04:23:01.350193956 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18994,
+   "lon": -123.85417,
+   "sog_kn": 0,
+   "cog": 254.3,
+   "heading": 511,
+   "updated": "2026-11-25 04:23:25.674307315 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16847,
+   "lon": -123.91408,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-25 04:23:02.149506528 +0000 UTC"
   }
  ]
 }
