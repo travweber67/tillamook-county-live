@@ -1,45 +1,55 @@
 {
- "fetched_at": "2026-11-25T10:52:44Z",
+ "fetched_at": "2026-11-25T11:22:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366970430,
-   "lat": 46.18971,
-   "lon": -123.85403,
+   "mmsi": 367375750,
+   "lat": 46.18877,
+   "lon": -123.85897,
    "sog_kn": 0.1,
-   "cog": 40.5,
+   "cog": 11.1,
    "heading": 511,
-   "updated": "2026-11-25 10:53:18.618418866 +0000 UTC"
+   "updated": "2026-11-25 11:23:22.052418904 +0000 UTC"
   },
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19172,
-   "lon": -123.88287,
-   "sog_kn": 4.4,
-   "cog": 265.4,
-   "heading": 260,
-   "updated": "2026-11-25 10:53:19.411343413 +0000 UTC"
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04026,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-25 11:23:36.184156661 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16837,
-   "lon": -123.91835,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20018,
+   "lon": -123.76128,
+   "sog_kn": 0,
+   "cog": 190.4,
+   "heading": 342,
+   "updated": "2026-11-25 11:23:16.805224983 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19032,
+   "lon": -123.82951,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 10:53:03.760605033 +0000 UTC"
+   "updated": "2026-11-25 11:23:25.608860724 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18809,
-   "lon": -123.85904,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-25 10:53:05.855966444 +0000 UTC"
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.28364,
+   "lon": -124.64179,
+   "sog_kn": 2.3,
+   "cog": 101.2,
+   "heading": 150,
+   "updated": "2026-11-25 11:23:10.332379112 +0000 UTC"
   }
  ]
 }

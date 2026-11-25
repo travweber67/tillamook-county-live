@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T10:53:29Z",
+ "fetched_at": "2026-11-25T11:23:43Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -232,21 +232,21 @@
    "tier": "high"
   },
   {
-   "title": "Tillamook test scores improve steadily",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/tillamook-test-scores-improve-steadily/article_44d26229-70f6-402e-8ce3-ec27ae97d5a4.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/13/213b5a06-4e65-11ed-a172-7354ed8f9a94/634ed482b6b40.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
-   "summary": "Tillamook School District students exceeded statewide averages in grade level proficiency in English and language arts, and science last year, while slightly lagging the statewide average in math testing.",
-   "tier": "useful"
-  },
-  {
    "title": "Dramatic photos show the danger of the Pacific Ocean",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/dramatic-photos-show-the-danger-of-the-pacific-ocean/article_27dbf1df-4f8a-5b6e-9f93-620978b8defe.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/8e/68ed47ba-8f8d-5d3a-8667-ce08aabfe939/6b0690dd58865.image.png?resize=300%2C281",
    "date": "2026-11-25",
    "summary": "The Cannon Beach Police Department has released photos showing the extreme dangers associated with King Tides and surging surf.",
+   "tier": "useful"
+  },
+  {
+   "title": "Tillamook test scores improve steadily",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/tillamook-test-scores-improve-steadily/article_44d26229-70f6-402e-8ce3-ec27ae97d5a4.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/13/213b5a06-4e65-11ed-a172-7354ed8f9a94/634ed482b6b40.image.jpg?resize=300%2C158",
+   "date": "2026-11-25",
+   "summary": "Tillamook School District students exceeded statewide averages in grade level proficiency in English and language arts, and science last year, while slightly lagging the statewide average in math testing.",
    "tier": "useful"
   },
   {
@@ -259,12 +259,39 @@
    "tier": "useful"
   },
   {
+   "title": "CITY OF ROCKAWAY BEACH – Flooding Update – Crescent Lake Outfall Cleared (Video)",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/city-of-rockaway-beach-flooding-update-crescent-lake-outfall-cleared-video/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RBCrescentCreekblock11.24.png",
+   "date": "2026-11-24",
+   "summary": "The city is aware of the flooding affecting residents around Lake Lytle and Crescent Lake, and we take these concerns seriously, particularly with king tides continuing this week. We are actively...",
+   "tier": "useful"
+  },
+  {
+   "title": "CANNON BEACH POLICE DEPT.: KING TIDES – A POWERFUL REMINDER OF THE DANGERS OF THE OCEAN, MAN & DOG SWEPT INTO SURF, ESCAPE WITHOUT INJURY NOV. 24, 2026",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/cannon-beach-police-dept-king-tides-a-powerful-reminder-of-the-dangers-of-the-ocean-man-dog-swept-into-surf-escape-without-injury-nov-24-2026/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CBTolovanaKingTides11.24.mp4",
+   "date": "2026-11-24",
+   "summary": "The Cannon Beach Police Department would like to remind residents and visitors of the extreme dangers associated with King Tides. An incident captured in this video serves as a powerful reminder of...",
+   "tier": "useful"
+  },
+  {
    "title": "Port board temporarily extends OCSR lease",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
    "date": "2026-11-24",
    "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
+   "tier": "routine"
+  },
+  {
+   "title": "PEOPLE, PLACE & POSSIBILITIES: Dreaming Wall in Nehalem Ready for Community Hopes & Wishes",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/people-place-possibilities-dreaming-wall-in-nehalem-ready-for-community-hopes-wishes/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/SalmonberryPizzaAward.jpg",
+   "date": "2026-11-24",
+   "summary": "By Barbara McLaughlin The Dreaming Wall is part of a new program of local nonprofit Fulcrum Community Resources called People, Place & Possibility. It’s a community project designed to bring neighbors together to...",
    "tier": "routine"
   },
   {
@@ -284,33 +311,6 @@
    "date": "2026-11-24",
    "summary": "Stimson Lumber bid $527.53 per thousand board feet of Douglas-fir for Overdrive, two clearcuts totaling 230 acres off Belding Road in the Tillamook State Forest.",
    "tier": "routine"
-  },
-  {
-   "title": "Banks-Vernonia Trail to close from Banks to Manning for tree clearing",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/banks-vernonia-trail-to-close-from-banks-to-manning-for-tree-clearing/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/BVTrail-Hikers-Horses-Fall.jpg",
-   "date": "2026-11-24",
-   "summary": "A contractor will remove about 100 dead and unhealthy trees along the path between Nov. 30 and Dec. 14, the Oregon Parks and Recreation Department said.",
-   "tier": "routine"
-  },
-  {
-   "title": "PEOPLE, PLACE & POSSIBILITIES: Dreaming Wall in Nehalem Ready for Community Hopes & Wishes",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/people-place-possibilities-dreaming-wall-in-nehalem-ready-for-community-hopes-wishes/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/SalmonberryPizzaAward.jpg",
-   "date": "2026-11-24",
-   "summary": "By Barbara McLaughlin The Dreaming Wall is part of a new program of local nonprofit Fulcrum Community Resources called People, Place & Possibility. It’s a community project designed to bring neighbors together to...",
-   "tier": "routine"
-  },
-  {
-   "title": "Update: Body found in ocean ID'ed, statement released by City of Newport",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/update-body-found-in-ocean-ided-statement-released-by-city-of-newport/article_704a196b-8b5b-5fd9-a0f9-fa44ce322ad9.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/9/7a/97a7f02f-256b-554d-ab9e-9c95c8a08a44/6b052a4346c15.image.png?resize=300%2C193",
-   "date": "2026-11-24",
-   "summary": "Update posted at 7:30 a.m. Nov. 24",
-   "tier": "crime"
   }
  ]
 }
