@@ -9929,13 +9929,15 @@ const EVS_BY_TITLE = [
   [/beach cleanup|clean-?up day|solve/i, ['img/events/ev-beachcleanup.jpg']],
   [/crab|crabbing/i, ['img/events/ev-crab.jpg']],
   [/farmers market|saturday market|night market|holiday market|christmas market|winter market|craft fair|bazaar|boutique|makers market|vendor fair/i, ['img/events/ev-market.jpg']],
+  [/movie|film|cinema/i, ['img/events/ev-movie.jpg']],
   [/concert|live music|music in the park|band night|open mic|symphony|choral|choir/i, ['img/events/ev-music.jpg']],
   [/community update|town hall|public meeting|council meeting|commission|board meeting|open house|listening session/i, ['img/events/ev-meeting.jpg']]
 ];
 const EVS_CATS = [
   [/market|bazaar|boutique|craft|vendor|fair\b|book sale|yard sale|swap meet|fundraiser|auction|raffle/i, ['img/events/ev-market.jpg', 'img/card-courthouse.jpg']],
   [/story|book|library|reading|author|poetry/i, ['img/events/ev-storytime.jpg']],
-  [/music|concert|band|dance|theatre|theater|play|movie|film|comedy/i, ['img/events/ev-music.jpg', 'img/bg/bg-day-9.jpg']],
+  [/movie|film|cinema/i, ['img/events/ev-movie.jpg', 'img/bg/bg-day-9.jpg']],
+  [/music|concert|band|dance|theatre|theater|play|comedy/i, ['img/events/ev-music.jpg', 'img/bg/bg-day-9.jpg']],
   [/cleanup|clean up|volunteer|work party|trail work|planting/i, ['img/events/ev-beachcleanup.jpg', 'img/bg/bg-day-3.jpg']],
   [/crab|fish|clamming|tide ?pool|boat|ramp|harbor|bay\b/i, ['img/events/ev-crab.jpg', 'img/card-dock.jpg', 'img/card-bay.jpg']],
   [/meeting|update|council|commission|board|forum|class|workshop|seminar|training|lecture|talk/i, ['img/events/ev-meeting.jpg']],

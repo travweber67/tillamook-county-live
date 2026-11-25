@@ -98,7 +98,8 @@
   },
   {
    "date": "2026-11-21",
-   "img": "img/events/ev-music.jpg",
+   "img": "img/events/ev-movie.jpg",
+   "img_credit": "Photo of a crowd watching a giant cinema screen at dusk, Kino unter Sternen open-air cinema, Augarten, Vienna, by After Image Productions via Wikimedia Commons, CC BY (licensed photo; generic movie-night art).",
    "location": "Tillamook Coliseum Theater",
    "note": "A community awareness film screening at the Tillamook Coliseum Theater — the film is 'No Place to Grow Old,' CARE's awareness-night feature.",
    "paid": true,
@@ -260,7 +261,8 @@
   },
   {
    "date": "2026-11-24",
-   "img": "img/events/ev-music.jpg",
+   "img": "img/events/ev-movie.jpg",
+   "img_credit": "Photo of a crowd watching a giant cinema screen at dusk, Kino unter Sternen open-air cinema, Augarten, Vienna, by After Image Productions via Wikimedia Commons, CC BY (licensed photo; generic movie-night art).",
    "location": "36155 9th St, Nehalem",
    "note": "A family movie night in Nehalem — Zootopia 2 on the big screen at 36155 9th St. Tickets from $2.",
    "paid": true,
@@ -965,7 +967,8 @@
   },
   {
    "date": "2026-12-19",
-   "img": "img/events/ev-music.jpg",
+   "img": "img/events/ev-movie.jpg",
+   "img_credit": "Photo of a crowd watching a giant cinema screen at dusk, Kino unter Sternen open-air cinema, Augarten, Vienna, by After Image Productions via Wikimedia Commons, CC BY (licensed photo; generic movie-night art).",
    "location": "Pacific City Library, 6200 Camp St, Pacific City",
    "note": "The 3rd Saturday movie matinee at the Pacific City Library. Free library program.",
    "source": "Facebook",
