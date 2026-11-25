@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-25T07:52:42Z",
+ "fetched_at": "2026-11-25T08:22:42Z",
  "sources": [
   {
    "name": "Tillamook County calendar (CivicPlus)",
    "status": "ok",
-   "note": "9 events in the next 14 days."
+   "note": "10 events in the next 14 days."
   },
   {
    "name": "City of Tillamook calendar (CivicPlus)",
@@ -13,13 +13,6 @@
   }
  ],
  "events": [
-  {
-   "date": "2026-11-24",
-   "time": "8:00 AM",
-   "title": "Community Update",
-   "source": "Tillamook County",
-   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1081"
-  },
   {
    "date": "2026-11-25",
    "time": "9:00 AM",
@@ -75,6 +68,20 @@
    "title": "Community Update",
    "source": "Tillamook County",
    "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1083"
+  },
+  {
+   "date": "2026-12-09",
+   "time": "9:00 AM",
+   "title": "Board of Commissioners' Meeting",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1448"
+  },
+  {
+   "date": "2026-12-09",
+   "time": "2:00 PM",
+   "title": "Board Briefing",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=718"
   }
  ]
 }
