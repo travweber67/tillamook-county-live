@@ -1,26 +1,67 @@
 {
- "fetched_at": "2026-11-25T08:22:42Z",
+ "fetched_at": "2026-11-25T08:52:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338376911,
-   "lat": 46.16615,
-   "lon": -123.91808,
-   "sog_kn": 0.1,
-   "cog": 303.9,
-   "heading": 511,
-   "updated": "2026-11-25 08:23:36.795611705 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
+   "sog_kn": 0,
+   "cog": 312.6,
+   "heading": 176,
+   "updated": "2026-11-25 08:53:09.202276287 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18994,
-   "lon": -123.85415,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-25 08:23:15.639113462 +0000 UTC"
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16873,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 45,
+   "heading": 97,
+   "updated": "2026-11-25 08:53:01.633248675 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20574,
+   "lon": -123.80384,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 08:53:07.029138683 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04025,
+   "sog_kn": 0,
+   "cog": 351.9,
+   "heading": 511,
+   "updated": "2026-11-25 08:52:55.572421005 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16777,
+   "lon": -123.91444,
+   "sog_kn": 0,
+   "cog": 260.8,
+   "heading": 511,
+   "updated": "2026-11-25 08:52:52.481751692 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.1881,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-25 08:53:05.663281824 +0000 UTC"
   }
  ]
 }
