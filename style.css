@@ -4466,6 +4466,47 @@ body.tcl-rd .news-back{
   background:none;border:none;font:inherit;font-weight:800;color:#7a3c00;
   cursor:pointer;padding:6px 0;font-size:.95rem;
 }
+/* v59 (Travis, 2026-11-24): the News list expands stories IN PLACE.
+   The old reader never appeared: .news-list{display:flex} above
+   overrides the hidden attribute, so tapping a story hid nothing and
+   the opened story sat buried under every row in the list. The
+   [hidden] guard below repairs the scroller's reader path too. */
+body.tcl-rd .news-list[hidden]{display:none}
+body.tcl-rd .news-item{
+  background:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint.jpg") center/cover no-repeat,#fff8f0;
+  border:1px solid rgba(255,255,255,.70);border-radius:14px;
+  box-shadow:0 8px 20px rgba(35,30,22,.14);color:#2c2418;overflow:hidden;
+}
+html[data-theme="dark"] body.tcl-rd .news-item{
+  background-image:
+    linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+    url("img/founding-paint-green.jpg");
+}
+body.tcl-rd .news-item .news-row{background:none;border:none;box-shadow:none;border-radius:0}
+body.tcl-rd .news-row-arrow{transition:transform .18s ease}
+body.tcl-rd .news-item.open .news-row-arrow{transform:rotate(90deg)}
+body.tcl-rd .news-expand{padding:2px 14px 6px}
+body.tcl-rd .news-expand[hidden]{display:none}
+body.tcl-rd .news-expand-text p{margin:0 0 10px;font-size:.98rem;line-height:1.55}
+body.tcl-rd .news-expand .news-readfull{margin:0 0 10px}
+body.tcl-rd .news-original{margin:0 0 10px}
+body.tcl-rd .news-original-tag{
+  display:inline-block;font-weight:800;font-size:.82rem;color:#7a3c00;
+  background:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint.jpg") center/cover no-repeat;
+  border:1px solid #e85d04;border-radius:999px;padding:5px 12px;
+}
+html[data-theme="dark"] body.tcl-rd .news-original-tag{
+  background-image:linear-gradient(rgba(255,252,246,.45),rgba(255,252,246,.45)),url("img/founding-paint-green.jpg");
+}
+body.tcl-rd .news-more{
+  display:block;width:100%;background:none;border:none;cursor:pointer;
+  border-top:1px solid rgba(44,36,24,.16);
+  font:inherit;font-weight:800;font-size:.92rem;color:#7a3c00;
+  padding:10px 0 12px;text-align:center;
+}
+
 /* The scroller's landing flash on the calendar card it opens. */
 body.tcl-rd .cev-card.cev-flash{
   outline:3px solid #e85d04;outline-offset:2px;

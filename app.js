@@ -10081,6 +10081,7 @@ function newsCardHtml(s, i) {
     + (s.source ? '<span class="nws-loc">' + esc(s.source) + '</span>' : '')
     + '</span></a>';
 }
+function newsIsOriginal(s) { return !!s && s.source === 'Tillamook County Live'; }
 function renderNewsList() {
   const list = document.getElementById('news-list');
   if (!list) return;
@@ -10089,16 +10090,50 @@ function renderNewsList() {
     list.innerHTML = '<p class="loading">' + (es ? 'No hay historias ahora mismo.' : 'No stories right now.') + '</p>';
     return;
   }
-  list.innerHTML = newsStoriesCache.map((st, i) =>
-    '<button class="news-row" type="button" data-news-idx="' + i + '">'
-    + '<img class="news-row-img" src="' + esc(st.img || '') + '" alt="" loading="lazy" decoding="async">'
-    + '<span class="news-row-main"><span class="nws-when">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</span>'
-    + '<span class="news-row-title">' + esc(st.title || '') + '</span></span>'
-    + '<span class="news-row-arrow" aria-hidden="true">›</span></button>'
-  ).join('');
+  list.innerHTML = newsStoriesCache.map((st, i) => {
+    const paras = String(st.summary || '').split(/\n\s*\n/).map(p => p.trim()).filter(Boolean)
+      .map(p => '<p>' + esc(p) + '</p>').join('');
+    const foot = newsIsOriginal(st)
+      ? '<p class="news-original"><span class="news-original-tag">' + (es ? 'Original de Tillamook County Live' : 'Tillamook County Live original') + '</span></p>'
+      : '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
+        + (st.url ? '<a class="news-readfull" href="' + esc(st.url) + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa en ' : 'Read the full story at ') + esc(st.source || '') + ' \u2192</a>' : '');
+    return '<div class="news-item" data-news-item="' + i + '">'
+      + '<button class="news-row" type="button" data-news-idx="' + i + '" aria-expanded="false">'
+      + '<img class="news-row-img" src="' + esc(st.img || '') + '" alt="" loading="lazy" decoding="async">'
+      + '<span class="news-row-main"><span class="nws-when">' + esc(newsWhen(st)) + (st.source ? ' \u00b7 ' + esc(st.source) : '') + '</span>'
+      + '<span class="news-row-title">' + esc(st.title || '') + '</span></span>'
+      + '<span class="news-row-arrow" aria-hidden="true">\u203a</span></button>'
+      + '<div class="news-expand" hidden><div class="news-expand-text">' + paras + '</div>' + foot + '</div>'
+      + '<button class="news-more" type="button" data-news-more="' + i + '" aria-expanded="false">' + (es ? 'Ver m\u00e1s' : 'See more') + ' <span aria-hidden="true">\u25be</span></button>'
+      + '</div>';
+  }).join('');
   list.querySelectorAll('.news-row').forEach(row => {
-    row.addEventListener('click', () => openNewsStory(parseInt(row.getAttribute('data-news-idx'), 10)));
+    row.addEventListener('click', () => toggleNewsItem(parseInt(row.getAttribute('data-news-idx'), 10)));
   });
+  list.querySelectorAll('[data-news-more]').forEach(btn => {
+    btn.addEventListener('click', () => toggleNewsItem(parseInt(btn.getAttribute('data-news-more'), 10)));
+  });
+}
+function toggleNewsItem(i) {
+  const list = document.getElementById('news-list');
+  if (!list) return;
+  const item = list.querySelector('[data-news-item="' + i + '"]');
+  if (!item) return;
+  const es = (typeof langCur !== 'undefined' && langCur === 'es');
+  const panel = item.querySelector('.news-expand');
+  const more = item.querySelector('.news-more');
+  const row = item.querySelector('.news-row');
+  if (!panel) return;
+  const open = !panel.hidden;
+  panel.hidden = open;
+  item.classList.toggle('open', !open);
+  if (row) row.setAttribute('aria-expanded', String(!open));
+  if (more) {
+    more.setAttribute('aria-expanded', String(!open));
+    more.innerHTML = open
+      ? (es ? 'Ver m\u00e1s' : 'See more') + ' <span aria-hidden="true">\u25be</span>'
+      : (es ? 'Ver menos' : 'See less') + ' <span aria-hidden="true">\u25b4</span>';
+  }
 }
 function openNewsStory(i) {
   const st = newsStoriesCache[i];
@@ -10106,13 +10141,15 @@ function openNewsStory(i) {
   const list = document.getElementById('news-list');
   if (!st || !box) return;
   const es = (typeof langCur !== 'undefined' && langCur === 'es');
-  box.innerHTML = '<button class="news-back" type="button" id="news-back-btn">' + (es ? '‹ Todas las historias' : '‹ All stories') + '</button>'
+  box.innerHTML = '<button class="news-back" type="button" id="news-back-btn">' + (es ? '\u2039 Todas las historias' : '\u2039 All stories') + '</button>'
     + (st.img ? '<img class="news-story-img" src="' + esc(st.img) + '" alt="">' : '')
     + '<h3 class="news-story-title">' + esc(st.title || '') + '</h3>'
-    + '<p class="news-story-meta">' + esc(newsWhen(st)) + (st.source ? ' · ' + esc(st.source) : '') + '</p>'
+    + '<p class="news-story-meta">' + esc(newsWhen(st)) + (st.source ? ' \u00b7 ' + esc(st.source) : '') + '</p>'
     + (st.summary ? '<p class="news-story-summary">' + esc(st.summary) + '</p>' : '')
-    + '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
-    + '<a class="news-readfull" href="' + esc(st.url || '') + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa →' : 'Read the full story →') + '</a>';
+    + (newsIsOriginal(st)
+      ? '<p class="news-original"><span class="news-original-tag">' + (es ? 'Original de Tillamook County Live' : 'Tillamook County Live original') + '</span></p>'
+      : '<p class="news-story-credit">' + (es ? 'Historia de ' : 'Story from ') + esc(st.source || '') + (es ? ', reunida por Oregon Civic Newsstand.' : ', gathered by the Oregon Civic Newsstand.') + '</p>'
+        + '<a class="news-readfull" href="' + esc(st.url || '') + '" target="_blank" rel="noopener">' + (es ? 'Leer la historia completa en ' : 'Read the full story at ') + esc(st.source || '') + ' \u2192</a>');
   if (list) list.hidden = true;
   box.hidden = false;
   const back = document.getElementById('news-back-btn');
