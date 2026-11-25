@@ -1,6 +1,56 @@
 {
- "fetched_at": "2026-11-25T15:22:47Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T15:52:48Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367516350,
+   "lat": 46.19027,
+   "lon": -123.85674,
+   "sog_kn": 0,
+   "cog": 168.2,
+   "heading": 511,
+   "updated": "2026-11-25 15:53:35.123786648 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19889,
+   "lon": -123.80897,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-25 15:53:37.98809615 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20479,
+   "lon": -123.81038,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 15:53:53.159641429 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.1999,
+   "lon": -123.76046,
+   "sog_kn": 0,
+   "cog": 173.8,
+   "heading": 511,
+   "updated": "2026-11-25 15:53:30.053614897 +0000 UTC"
+  },
+  {
+   "mmsi": 303324000,
+   "name": "TAASINGE",
+   "lat": 46.16829,
+   "lon": -123.91414,
+   "sog_kn": 0,
+   "cog": 82.4,
+   "heading": 511,
+   "updated": "2026-11-25 15:53:29.451501441 +0000 UTC"
+  }
+ ]
 }

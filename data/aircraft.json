@@ -1,47 +1,97 @@
 {
- "fetched_at": "2026-11-25T15:22:47Z",
+ "fetched_at": "2026-11-25T15:52:48Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
+   "hex": "a9249c",
+   "callsign": "UAL2328",
+   "type": "B739",
+   "alt_ft": 35000,
+   "gs_kn": 454.1,
+   "track": 178.86,
+   "lat": 45.461798,
+   "lon": -123.357239
+  },
+  {
+   "hex": "ad5c30",
+   "callsign": "ASA739",
+   "type": "B39M",
+   "alt_ft": 23725,
+   "gs_kn": 352.4,
+   "track": 233.42,
+   "lat": 45.055023,
+   "lon": -123.156281
+  },
+  {
    "hex": "a96da5",
    "callsign": "N7063M",
    "type": "R66",
-   "alt_ft": 1250,
-   "gs_kn": 58.9,
-   "track": 9.78,
-   "lat": 44.980122,
-   "lon": -123.131148
+   "alt_ft": 950,
+   "gs_kn": 30.0,
+   "track": 181.91,
+   "lat": 44.987012,
+   "lon": -123.137445
   },
   {
-   "hex": "a9a734",
-   "callsign": "AMF1984",
-   "type": "BE99",
-   "alt_ft": 9000,
-   "gs_kn": 144.5,
-   "track": 204.97,
-   "lat": 45.309898,
-   "lon": -123.002595
+   "hex": "a1fad1",
+   "callsign": "N2268X",
+   "type": "B06",
+   "alt_ft": 600,
+   "gs_kn": 92.6,
+   "track": 294.9,
+   "lat": 45.613838,
+   "lon": -123.037674
   },
   {
    "hex": "a6be24",
    "callsign": "N5331Y",
    "type": "PA44",
+   "alt_ft": 3600,
+   "gs_kn": 50.9,
+   "track": 135.0,
+   "lat": 45.421143,
+   "lon": -122.979649
+  },
+  {
+   "hex": "a20e3e",
+   "callsign": "N231WU",
+   "type": "PA44",
    "alt_ft": null,
    "gs_kn": 0.0,
    "track": null,
-   "lat": 45.533465,
+   "lat": 45.533582,
    "lon": -122.946575
   },
   {
-   "hex": "aab6e0",
-   "callsign": "N79NH",
-   "type": "C82R",
-   "alt_ft": 2800,
-   "gs_kn": 84.2,
-   "track": 246.18,
-   "lat": 45.3173,
-   "lon": -122.858165
+   "hex": "a1334b",
+   "callsign": "N177BD",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.534303,
+   "lon": -122.946424
+  },
+  {
+   "hex": "a07bfa",
+   "callsign": "N130JA",
+   "type": "C172",
+   "alt_ft": 100,
+   "gs_kn": 0.7,
+   "track": 0.0,
+   "lat": 45.534373,
+   "lon": -122.946189
+  },
+  {
+   "hex": "ac62f3",
+   "callsign": "SWA3901",
+   "type": "B38M",
+   "alt_ft": 2850,
+   "gs_kn": 213.4,
+   "track": 24.64,
+   "lat": 45.661414,
+   "lon": -122.879402
   }
  ]
 }
