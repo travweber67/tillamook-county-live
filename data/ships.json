@@ -1,26 +1,57 @@
 {
- "fetched_at": "2026-11-25T16:52:49Z",
+ "fetched_at": "2026-11-25T17:22:49Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367375750,
-   "lat": 46.18878,
-   "lon": -123.85898,
-   "sog_kn": 0.1,
-   "cog": 8.6,
-   "heading": 511,
-   "updated": "2026-11-25 16:53:23.845006541 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.2008,
+   "lon": -123.80754,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-25 17:23:38.893652131 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16814,
+   "lon": -123.9183,
+   "sog_kn": 3.3,
+   "cog": 180.4,
+   "heading": 1,
+   "updated": "2026-11-25 17:23:29.458906937 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.3046,
+   "lon": -124.04027,
    "sog_kn": 0,
-   "cog": 196.9,
-   "heading": 177,
-   "updated": "2026-11-25 16:53:30.00540912 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-25 17:23:46.834362568 +0000 UTC"
+  },
+  {
+   "mmsi": 368288370,
+   "name": "LEGENDZ",
+   "lat": 46.30611,
+   "lon": -124.04448,
+   "sog_kn": 0.5,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-25 17:23:39.647363973 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19635,
+   "lon": -123.7971,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-25 17:23:37.224544956 +0000 UTC"
   }
  ]
 }
