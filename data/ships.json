@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-25T19:22:51Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 0 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "fetched_at": "2026-11-25T19:52:52Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
  "ships": []
 }
