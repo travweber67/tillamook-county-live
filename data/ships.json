@@ -1,36 +1,64 @@
 {
- "fetched_at": "2026-11-25T02:52:38Z",
+ "fetched_at": "2026-11-25T03:22:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 367375750,
+   "lat": 46.18893,
+   "lon": -123.86009,
+   "sog_kn": 0.2,
+   "cog": 38.3,
+   "heading": 511,
+   "updated": "2026-11-25 03:23:21.992497529 +0000 UTC"
+  },
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28139,
+   "lon": -124.0467,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-25 03:23:25.232435522 +0000 UTC"
+  },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16841,
-   "lon": -123.91836,
+   "lat": 46.16843,
+   "lon": -123.91833,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 02:53:07.785993214 +0000 UTC"
+   "updated": "2026-11-25 03:23:21.465024035 +0000 UTC"
   },
   {
-   "mmsi": 367375750,
-   "name": "ROSS ISLAND DREDGE 7",
-   "lat": 46.18887,
-   "lon": -123.86022,
-   "sog_kn": 0.2,
-   "cog": 74.8,
-   "heading": 511,
-   "updated": "2026-11-25 02:53:22.393205484 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.8297,
+   "sog_kn": 0,
+   "cog": 100.7,
+   "heading": 167,
+   "updated": "2026-11-25 03:23:08.242444942 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.20029,
-   "lon": -123.76151,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.3046,
+   "lon": -124.04027,
    "sog_kn": 0,
    "cog": 0,
-   "heading": 162,
-   "updated": "2026-11-25 02:53:14.025346831 +0000 UTC"
+   "heading": 511,
+   "updated": "2026-11-25 03:23:15.145982446 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20018,
+   "lon": -123.76128,
+   "sog_kn": 0,
+   "cog": 310,
+   "heading": 342,
+   "updated": "2026-11-25 03:23:03.444754667 +0000 UTC"
   }
  ]
 }
