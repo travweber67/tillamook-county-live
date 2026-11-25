@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T20:52:53Z",
+ "fetched_at": "2026-11-25T21:22:53Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
@@ -7,371 +7,311 @@
    "hex": "a5fcb8",
    "callsign": "N485RW",
    "type": "RV7",
-   "alt_ft": 5850,
-   "gs_kn": 131.7,
-   "track": 293.26,
-   "lat": 46.138807,
-   "lon": -124.0112
+   "alt_ft": 4925,
+   "gs_kn": 104.1,
+   "track": 168.37,
+   "lat": 46.007309,
+   "lon": -124.061034
   },
   {
-   "hex": "a1e889",
-   "callsign": "N222BA",
-   "type": "S22T",
-   "alt_ft": 5350,
-   "gs_kn": 101.3,
-   "track": 184.53,
-   "lat": 45.671795,
-   "lon": -123.937111
-  },
-  {
-   "hex": "ab7b67",
-   "callsign": "N839SP",
-   "type": "C172",
-   "alt_ft": 5900,
-   "gs_kn": 139.3,
-   "track": 349.66,
-   "lat": 46.078033,
-   "lon": -123.402524
-  },
-  {
-   "hex": "a0a1f1",
-   "callsign": "N14SK",
-   "type": "C152",
-   "alt_ft": 825,
-   "gs_kn": 50.6,
-   "track": 232.22,
-   "lat": 45.336526,
-   "lon": -123.212474
-  },
-  {
-   "hex": "a034d4",
-   "callsign": "GFY1124",
-   "type": "DA42",
-   "alt_ft": 3150,
-   "gs_kn": 126.6,
-   "track": 143.67,
-   "lat": 45.753204,
-   "lon": -123.17429
-  },
-  {
-   "hex": "a261c9",
-   "callsign": "N25233",
-   "type": "C152",
-   "alt_ft": 2600,
-   "gs_kn": 58.6,
-   "track": 187.85,
-   "lat": 45.497271,
-   "lon": -123.142536
-  },
-  {
-   "hex": "a70af5",
-   "callsign": "",
-   "type": "B06",
-   "alt_ft": 900,
-   "gs_kn": null,
-   "track": null,
-   "lat": 45.075973,
-   "lon": -123.139924
-  },
-  {
-   "hex": "a5eb61",
-   "callsign": "N4803G",
-   "type": "C172",
-   "alt_ft": 1200,
-   "gs_kn": 88.0,
-   "track": 89.35,
-   "lat": 45.174408,
-   "lon": -123.119071
-  },
-  {
-   "hex": "a28313",
-   "callsign": "GFY2614",
-   "type": "RV12",
-   "alt_ft": 2375,
-   "gs_kn": 104.5,
-   "track": 309.17,
-   "lat": 45.5625,
-   "lon": -123.114267
-  },
-  {
-   "hex": "ad5b28",
-   "callsign": "PXT96",
-   "type": "C25B",
-   "alt_ft": 3850,
-   "gs_kn": 185.3,
-   "track": 204.21,
-   "lat": 45.144964,
-   "lon": -123.110247
-  },
-  {
-   "hex": "a96f36",
-   "callsign": "N707GS",
-   "type": "C152",
-   "alt_ft": 3300,
-   "gs_kn": 78.4,
-   "track": 60.16,
-   "lat": 45.492709,
-   "lon": -123.090686
-  },
-  {
-   "hex": "a37eca",
-   "callsign": "N324SP",
-   "type": "C172",
-   "alt_ft": 3450,
-   "gs_kn": 141.1,
-   "track": 357.97,
-   "lat": 45.336731,
-   "lon": -123.07918
-  },
-  {
-   "hex": "a20385",
-   "callsign": "N229MB",
-   "type": "R22",
-   "alt_ft": 1300,
-   "gs_kn": 31.4,
-   "track": 202.48,
-   "lat": 45.240675,
-   "lon": -123.039238
-  },
-  {
-   "hex": "ad59c7",
-   "callsign": "N95995",
-   "type": "C152",
-   "alt_ft": 4400,
-   "gs_kn": 50.8,
-   "track": 190.2,
-   "lat": 45.367576,
-   "lon": -122.997637
-  },
-  {
-   "hex": "~2ba737",
-   "callsign": "",
-   "type": "",
-   "alt_ft": 2400,
-   "gs_kn": 59.4,
-   "track": 233.9,
-   "lat": 45.134995,
-   "lon": -122.98475
-  },
-  {
-   "hex": "a66bc3",
-   "callsign": "N5124B",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.548904,
-   "lon": -122.960626
-  },
-  {
-   "hex": "a72832",
-   "callsign": "N560PC",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.548687,
-   "lon": -122.960492
-  },
-  {
-   "hex": "a6fc4d",
-   "callsign": "N5494P",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.548538,
-   "lon": -122.960324
-  },
-  {
-   "hex": "a20e3e",
-   "callsign": "N231WU",
-   "type": "PA44",
-   "alt_ft": null,
-   "gs_kn": 5.2,
-   "track": null,
-   "lat": 45.549153,
-   "lon": -122.960255
-  },
-  {
-   "hex": "aa351b",
-   "callsign": "N757LY",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 0.1,
-   "track": null,
-   "lat": 45.548211,
-   "lon": -122.95998
-  },
-  {
-   "hex": "a61af2",
-   "callsign": "N49276",
-   "type": "C152",
-   "alt_ft": 1550,
-   "gs_kn": 69.1,
-   "track": 124.38,
-   "lat": 45.441781,
-   "lon": -122.958314
-  },
-  {
-   "hex": "ab5951",
-   "callsign": "N830KX",
-   "type": "C172",
-   "alt_ft": 3100,
-   "gs_kn": 20.3,
-   "track": 159.78,
-   "lat": 45.411848,
-   "lon": -122.957913
-  },
-  {
-   "hex": "a6308b",
-   "callsign": "N49824",
-   "type": "C152",
-   "alt_ft": 2325,
-   "gs_kn": 31.6,
-   "track": 198.43,
-   "lat": 45.504318,
-   "lon": -122.95663
-  },
-  {
-   "hex": "a91fcf",
-   "callsign": "N68713",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 14.8,
-   "track": 323.44,
-   "lat": 45.544394,
-   "lon": -122.955987
-  },
-  {
-   "hex": "a660fd",
-   "callsign": "N51VM",
-   "type": "RV12",
-   "alt_ft": null,
-   "gs_kn": 0.1,
-   "track": null,
-   "lat": 45.550271,
-   "lon": -122.95598
-  },
-  {
-   "hex": "a87de9",
-   "callsign": "N6460M",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 11.2,
-   "track": 146.25,
-   "lat": 45.541157,
-   "lon": -122.952576
-  },
-  {
-   "hex": "a5fa72",
-   "callsign": "N48440",
-   "type": "C152",
-   "alt_ft": 850,
-   "gs_kn": 91.3,
-   "track": 302.47,
-   "lat": 45.572205,
-   "lon": -122.95041
-  },
-  {
-   "hex": "a3573a",
-   "callsign": "REH89",
-   "type": "EC35",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.547714,
-   "lon": -122.949572
-  },
-  {
-   "hex": "a6a24a",
-   "callsign": "N5265L",
-   "type": "C152",
-   "alt_ft": null,
-   "gs_kn": 4.2,
-   "track": 309.38,
-   "lat": 45.534315,
-   "lon": -122.946658
-  },
-  {
-   "hex": "a6177f",
-   "callsign": "N49194",
-   "type": "C152",
-   "alt_ft": 525,
-   "gs_kn": 50.5,
-   "track": 140.63,
-   "lat": 45.537446,
-   "lon": -122.945988
-  },
-  {
-   "hex": "a5f396",
-   "callsign": "N48286",
-   "type": "C152",
-   "alt_ft": 975,
-   "gs_kn": 80.1,
-   "track": 48.54,
-   "lat": 45.544464,
-   "lon": -122.928183
-  },
-  {
-   "hex": "a88491",
-   "callsign": "N648SP",
-   "type": "C172",
-   "alt_ft": 3500,
-   "gs_kn": 57.7,
-   "track": 205.68,
-   "lat": 45.474976,
-   "lon": -122.927856
-  },
-  {
-   "hex": "a13e56",
-   "callsign": "N18AC",
-   "type": "C172",
-   "alt_ft": 1400,
-   "gs_kn": 99.8,
-   "track": 42.97,
-   "lat": 45.530137,
-   "lon": -122.926025
-  },
-  {
-   "hex": "a1bd09",
-   "callsign": "N2108Y",
-   "type": "C172",
-   "alt_ft": 900,
-   "gs_kn": 103.7,
-   "track": 17.39,
-   "lat": 45.429886,
-   "lon": -122.921709
-  },
-  {
-   "hex": "a102b6",
-   "callsign": "N164YF",
-   "type": "PA23",
-   "alt_ft": 5100,
-   "gs_kn": 64.6,
-   "track": 172.0,
-   "lat": 45.254874,
-   "lon": -122.918054
-  },
-  {
-   "hex": "a8c0d2",
-   "callsign": "QXE2020",
+   "hex": "a5287c",
+   "callsign": "SKW3411",
    "type": "E75L",
-   "alt_ft": 3375,
-   "gs_kn": 207.3,
-   "track": 86.68,
-   "lat": 45.694016,
-   "lon": -122.90566
+   "alt_ft": 35000,
+   "gs_kn": 401.1,
+   "track": 178.86,
+   "lat": 46.000763,
+   "lon": -123.37345
   },
   {
    "hex": "acdf5c",
    "callsign": "N9288K",
    "type": "P28A",
-   "alt_ft": 3350,
-   "gs_kn": 67.9,
-   "track": 189.32,
-   "lat": 45.322311,
-   "lon": -122.890058
+   "alt_ft": 2875,
+   "gs_kn": 83.9,
+   "track": 210.85,
+   "lat": 45.105057,
+   "lon": -123.285501
+  },
+  {
+   "hex": "a85e74",
+   "callsign": "N63843",
+   "type": "C172",
+   "alt_ft": 2875,
+   "gs_kn": 123.2,
+   "track": 352.07,
+   "lat": 45.545151,
+   "lon": -123.182962
+  },
+  {
+   "hex": "a6a24a",
+   "callsign": "N5265L",
+   "type": "C152",
+   "alt_ft": 2375,
+   "gs_kn": 54.0,
+   "track": 141.01,
+   "lat": 45.606537,
+   "lon": -123.151781
+  },
+  {
+   "hex": "~2ba713",
+   "callsign": "",
+   "type": "",
+   "alt_ft": 0,
+   "gs_kn": 0.7,
+   "track": 0.0,
+   "lat": 45.199768,
+   "lon": -123.138035
+  },
+  {
+   "hex": "a28313",
+   "callsign": "GFY2614",
+   "type": "RV12",
+   "alt_ft": 1075,
+   "gs_kn": 108.5,
+   "track": 341.73,
+   "lat": 45.495438,
+   "lon": -123.120706
+  },
+  {
+   "hex": "a6177f",
+   "callsign": "N49194",
+   "type": "C152",
+   "alt_ft": 900,
+   "gs_kn": 83.0,
+   "track": 164.62,
+   "lat": 45.582927,
+   "lon": -123.11657
+  },
+  {
+   "hex": "a5eb61",
+   "callsign": "N4803G",
+   "type": "C172",
+   "alt_ft": 1000,
+   "gs_kn": 119.0,
+   "track": 359.04,
+   "lat": 45.189285,
+   "lon": -123.108085
+  },
+  {
+   "hex": "a88491",
+   "callsign": "N648SP",
+   "type": "C172",
+   "alt_ft": 500,
+   "gs_kn": 76.8,
+   "track": 235.07,
+   "lat": 45.210526,
+   "lon": -123.106842
+  },
+  {
+   "hex": "a91fcf",
+   "callsign": "N68713",
+   "type": "C152",
+   "alt_ft": 2800,
+   "gs_kn": 31.0,
+   "track": 178.15,
+   "lat": 45.500977,
+   "lon": -123.082384
+  },
+  {
+   "hex": "ab6471",
+   "callsign": "N833KX",
+   "type": "C172",
+   "alt_ft": 2150,
+   "gs_kn": 80.2,
+   "track": 144.13,
+   "lat": 45.633591,
+   "lon": -123.048081
+  },
+  {
+   "hex": "a261c9",
+   "callsign": "N25233",
+   "type": "C152",
+   "alt_ft": 1150,
+   "gs_kn": 90.4,
+   "track": 32.81,
+   "lat": 45.592804,
+   "lon": -123.032673
+  },
+  {
+   "hex": "a20e3e",
+   "callsign": "N231WU",
+   "type": "PA44",
+   "alt_ft": 4125,
+   "gs_kn": 70.0,
+   "track": 223.26,
+   "lat": 45.465569,
+   "lon": -123.014251
+  },
+  {
+   "hex": "a5fa72",
+   "callsign": "N48440",
+   "type": "C152",
+   "alt_ft": 700,
+   "gs_kn": 63.0,
+   "track": 181.82,
+   "lat": 45.573849,
+   "lon": -122.983154
+  },
+  {
+   "hex": "a9eab2",
+   "callsign": "N738VV",
+   "type": "C172",
+   "alt_ft": 3275,
+   "gs_kn": 24.1,
+   "track": 253.07,
+   "lat": 45.138074,
+   "lon": -122.977072
+  },
+  {
+   "hex": "a5622d",
+   "callsign": "N446PA",
+   "type": "PA44",
+   "alt_ft": 1025,
+   "gs_kn": 117.8,
+   "track": 322.94,
+   "lat": 45.52483,
+   "lon": -122.967157
+  },
+  {
+   "hex": "a5bae5",
+   "callsign": "N46889",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": 329.06,
+   "lat": 45.548944,
+   "lon": -122.960598
+  },
+  {
+   "hex": "a61af2",
+   "callsign": "N49276",
+   "type": "C152",
+   "alt_ft": 75,
+   "gs_kn": 54.4,
+   "track": 143.97,
+   "lat": 45.548584,
+   "lon": -122.958448
+  },
+  {
+   "hex": "ad4d68",
+   "callsign": "N95606",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 13.8,
+   "track": 323.44,
+   "lat": 45.545697,
+   "lon": -122.957343
+  },
+  {
+   "hex": "a022d0",
+   "callsign": "SVL77",
+   "type": "C25B",
+   "alt_ft": null,
+   "gs_kn": null,
+   "track": 177.19,
+   "lat": 45.54309,
+   "lon": -122.956288
+  },
+  {
+   "hex": "a96f36",
+   "callsign": "N707GS",
+   "type": "C152",
+   "alt_ft": 950,
+   "gs_kn": 43.0,
+   "track": 234.46,
+   "lat": 45.57811,
+   "lon": -122.956104
+  },
+  {
+   "hex": "a89751",
+   "callsign": "N65259",
+   "type": "C172",
+   "alt_ft": null,
+   "gs_kn": 19.5,
+   "track": null,
+   "lat": 45.542072,
+   "lon": -122.953524
+  },
+  {
+   "hex": "aa34e8",
+   "callsign": "N757JX",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 11.2,
+   "track": 323.44,
+   "lat": 45.53793,
+   "lon": -122.949192
+  },
+  {
+   "hex": "ad4a1d",
+   "callsign": "N95539",
+   "type": "C152",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.534405,
+   "lon": -122.946085
+  },
+  {
+   "hex": "a72832",
+   "callsign": "N560PC",
+   "type": "C152",
+   "alt_ft": 700,
+   "gs_kn": 49.7,
+   "track": 149.83,
+   "lat": 45.535537,
+   "lon": -122.940964
+  },
+  {
+   "hex": "a27816",
+   "callsign": "N25836",
+   "type": "C152",
+   "alt_ft": 2225,
+   "gs_kn": 57.9,
+   "track": 279.95,
+   "lat": 45.511749,
+   "lon": -122.938419
+  },
+  {
+   "hex": "a8372b",
+   "callsign": "N6286M",
+   "type": "C152",
+   "alt_ft": 1500,
+   "gs_kn": 43.0,
+   "track": 144.46,
+   "lat": 45.515488,
+   "lon": -122.924521
+  },
+  {
+   "hex": "abe92b",
+   "callsign": "N867DH",
+   "type": "RV12",
+   "alt_ft": 2750,
+   "gs_kn": 95.3,
+   "track": 282.72,
+   "lat": 45.290588,
+   "lon": -122.881295
+  },
+  {
+   "hex": "a390d3",
+   "callsign": "N329MA",
+   "type": "C82S",
+   "alt_ft": 1000,
+   "gs_kn": 131.5,
+   "track": 45.62,
+   "lat": 45.359802,
+   "lon": -122.815508
+  },
+  {
+   "hex": "a29cbf",
+   "callsign": "ASA576",
+   "type": "B739",
+   "alt_ft": 4750,
+   "gs_kn": 257.8,
+   "track": 338.61,
+   "lat": 45.534897,
+   "lon": -122.799813
   }
  ]
 }

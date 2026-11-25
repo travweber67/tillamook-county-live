@@ -1,57 +1,75 @@
 {
- "fetched_at": "2026-11-25T20:52:53Z",
+ "fetched_at": "2026-11-25T21:22:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338376911,
-   "name": "AMERICAN GIRL",
-   "lat": 46.16615,
-   "lon": -123.9181,
-   "sog_kn": 0,
-   "cog": 66.8,
-   "heading": 511,
-   "updated": "2026-11-25 20:53:38.968152863 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "sog_kn": 0,
-   "cog": 91.7,
-   "heading": 168,
-   "updated": "2026-11-25 20:53:36.201847115 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20637,
-   "lon": -123.80427,
+   "mmsi": 367358520,
+   "lat": 46.16721,
+   "lon": -123.91752,
    "sog_kn": 0.1,
-   "cog": 336.9,
-   "heading": 260,
-   "updated": "2026-11-25 20:53:33.273735213 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85415,
-   "sog_kn": 0,
-   "cog": 312.5,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-25 20:53:30.066878516 +0000 UTC"
+   "updated": "2026-11-25 21:23:55.684358516 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18815,
-   "lon": -123.86176,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.27863,
+   "lon": -124.03642,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-25 21:23:36.312352005 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20133,
+   "lon": -123.8048,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-25 21:23:41.383216186 +0000 UTC"
+  },
+  {
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.2708,
+   "lon": -123.94667,
+   "sog_kn": 0.3,
+   "cog": 306.3,
+   "heading": 511,
+   "updated": "2026-11-25 21:23:50.365808843 +0000 UTC"
+  },
+  {
+   "mmsi": 636020172,
+   "name": "VITA OLYMPIC",
+   "lat": 46.35554,
+   "lon": -124.3987,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 21:23:34.546003074 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.1971,
+   "lon": -123.76052,
    "sog_kn": 0,
-   "cog": 352.8,
-   "heading": 304,
-   "updated": "2026-11-25 20:53:28.393441041 +0000 UTC"
+   "cog": 212.4,
+   "heading": 511,
+   "updated": "2026-11-25 21:23:42.100346868 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16852,
+   "lon": -123.91401,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-25 21:23:37.303812281 +0000 UTC"
   }
  ]
 }
