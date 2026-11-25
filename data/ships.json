@@ -1,86 +1,57 @@
 {
- "fetched_at": "2026-11-25T20:22:52Z",
+ "fetched_at": "2026-11-25T20:52:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367089450,
-   "lat": 46.22323,
-   "lon": -123.95935,
-   "sog_kn": 2.3,
-   "cog": 73.5,
+   "mmsi": 338376911,
+   "name": "AMERICAN GIRL",
+   "lat": 46.16615,
+   "lon": -123.9181,
+   "sog_kn": 0,
+   "cog": 66.8,
    "heading": 511,
-   "updated": "2026-11-25 20:24:14.707028174 +0000 UTC"
-  },
-  {
-   "mmsi": 368396890,
-   "name": "ARROW NO. 2",
-   "lat": 46.20475,
-   "lon": -123.79319,
-   "sog_kn": 1.4,
-   "cog": 60.6,
-   "heading": 270,
-   "updated": "2026-11-25 20:24:02.704445166 +0000 UTC"
+   "updated": "2026-11-25 20:53:38.968152863 +0000 UTC"
   },
   {
    "mmsi": 367529030,
    "name": "CONNOR FOSS",
-   "lat": 46.19048,
+   "lat": 46.19049,
    "lon": -123.82971,
-   "sog_kn": 0.2,
-   "cog": 97.1,
-   "heading": 167,
-   "updated": "2026-11-25 20:24:09.458296023 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16561,
-   "lon": -123.922,
    "sog_kn": 0,
-   "cog": 342,
-   "heading": 511,
-   "updated": "2026-11-25 20:24:18.74355317 +0000 UTC"
+   "cog": 91.7,
+   "heading": 168,
+   "updated": "2026-11-25 20:53:36.201847115 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-25 20:24:05.637853465 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20637,
+   "lon": -123.80427,
+   "sog_kn": 0.1,
+   "cog": 336.9,
+   "heading": 260,
+   "updated": "2026-11-25 20:53:33.273735213 +0000 UTC"
   },
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91429,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18992,
+   "lon": -123.85415,
    "sog_kn": 0,
-   "cog": 339.9,
+   "cog": 312.5,
    "heading": 511,
-   "updated": "2026-11-25 20:23:58.820203033 +0000 UTC"
+   "updated": "2026-11-25 20:53:30.066878516 +0000 UTC"
   },
   {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.24478,
-   "lon": -124.04744,
-   "sog_kn": 7.4,
-   "cog": 13,
-   "heading": 511,
-   "updated": "2026-11-25 20:24:00.089633599 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19993,
-   "lon": -123.76049,
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18815,
+   "lon": -123.86176,
    "sog_kn": 0,
-   "cog": 328.8,
-   "heading": 511,
-   "updated": "2026-11-25 20:24:22.645579313 +0000 UTC"
+   "cog": 352.8,
+   "heading": 304,
+   "updated": "2026-11-25 20:53:28.393441041 +0000 UTC"
   }
  ]
 }
