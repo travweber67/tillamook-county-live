@@ -1,86 +1,36 @@
 {
- "fetched_at": "2026-11-25T11:52:45Z",
+ "fetched_at": "2026-11-25T12:22:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.91834,
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.16708,
+   "lon": -123.91811,
    "sog_kn": 0,
-   "cog": 356.8,
-   "heading": 350,
-   "updated": "2026-11-25 11:53:39.132709793 +0000 UTC"
-  },
-  {
-   "mmsi": 311001710,
-   "name": "HON HENRY NR JACKMAN",
-   "lat": 45.90265,
-   "lon": -125.19681,
-   "sog_kn": 9.2,
-   "cog": 64.5,
-   "heading": 67,
-   "updated": "2026-11-25 11:53:29.12046953 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91423,
-   "sog_kn": 0,
-   "cog": 25.1,
+   "cog": 20.1,
    "heading": 511,
-   "updated": "2026-11-25 11:53:18.504103096 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30465,
-   "lon": -124.04026,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-25 11:53:15.900697611 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16778,
-   "lon": -123.91442,
-   "sog_kn": 0,
-   "cog": 167.3,
-   "heading": 511,
-   "updated": "2026-11-25 11:53:31.228684549 +0000 UTC"
+   "updated": "2026-11-25 12:23:25.765894866 +0000 UTC"
   },
   {
    "mmsi": 367740820,
    "name": "RELIEF",
-   "lat": 46.18995,
+   "lat": 46.18991,
    "lon": -123.85419,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-25 11:53:16.546476881 +0000 UTC"
+   "sog_kn": 0,
+   "cog": 261.7,
+   "heading": 511,
+   "updated": "2026-11-25 12:23:27.912880667 +0000 UTC"
   },
   {
    "mmsi": 367023320,
    "name": "SWIFT",
-   "lat": 46.19031,
-   "lon": -123.82951,
+   "lat": 46.19032,
+   "lon": -123.8295,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 11:53:25.234459609 +0000 UTC"
-  },
-  {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.2793,
-   "lon": -124.62112,
-   "sog_kn": 1.2,
-   "cog": 128.3,
-   "heading": 158,
-   "updated": "2026-11-25 11:53:23.220336483 +0000 UTC"
+   "updated": "2026-11-25 12:23:25.853937524 +0000 UTC"
   }
  ]
 }
