@@ -1,46 +1,37 @@
 {
- "fetched_at": "2026-11-24T23:52:35Z",
+ "fetched_at": "2026-11-25T00:22:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303324000,
-   "lat": 46.16829,
-   "lon": -123.91416,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16808,
+   "lon": -123.91425,
    "sog_kn": 0,
-   "cog": 82.4,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-24 23:53:29.649116309 +0000 UTC"
+   "updated": "2026-11-25 00:22:57.840792847 +0000 UTC"
   },
   {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.33282,
-   "lon": -124.82575,
-   "sog_kn": 1.2,
-   "cog": 153.8,
-   "heading": 156,
-   "updated": "2026-11-24 23:53:19.65592179 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.2003,
+   "lon": -123.76151,
    "sog_kn": 0,
-   "cog": 197.2,
-   "heading": 177,
-   "updated": "2026-11-24 23:53:18.458241871 +0000 UTC"
+   "cog": 0,
+   "heading": 161,
+   "updated": "2026-11-25 00:23:06.438179242 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16779,
-   "lon": -123.91437,
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86175,
    "sog_kn": 0,
-   "cog": 298.4,
-   "heading": 511,
-   "updated": "2026-11-24 23:53:23.858179493 +0000 UTC"
+   "cog": 241.3,
+   "heading": 306,
+   "updated": "2026-11-25 00:22:59.19769757 +0000 UTC"
   }
  ]
 }

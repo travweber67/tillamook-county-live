@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T23:53:36Z",
+ "fetched_at": "2026-11-25T00:23:30Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "19 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "17 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -18,7 +18,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/fraser-road-king-tide-traffic-advisory-intermittent-closures/article_9ad512e6-8e74-47da-8823-6427e3ab0625.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/bd/6bd39ce6-8dc1-11ec-a8d8-8bc2e0e92e2d/620acaff4d035.image.jpg?resize=300%2C158",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "Due to the upcoming king tides and anticipated high water levels along Tillamook Bay, Fraser Road will be closed during high tides (greater than 8.8 ft) due to potential flooding and unsafe road conditions.",
    "tier": "high"
   },
@@ -27,7 +27,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/tillamook-library-celebrates-20-years-in-main-branch/article_28e7a360-1892-4146-8c8a-a55ac60f25dd.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/5/8a/58adebec-7df7-4afe-8598-4bf299ebe14b/6aff52569d5be.image.jpg?resize=300%2C225",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "Patrons of the Tillamook County Library gathered at the system’s main branch in Tillamook on November 14, to celebrate the building’s 20th anniversary with a day of music, dancing, craft activities and gratitude.",
    "tier": "high"
   },
@@ -36,7 +36,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/riverbend-players-holiday-show-of-the-season-miracle-on-34th-street-at-ncrd-performing-arts-center-dec-4-20/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
    "tier": "high"
   },
@@ -228,33 +228,11 @@
    "tier": "high"
   },
   {
-   "title": "A Utah nonprofit bought the Tillamook Air Museum's WWII blimp hangar for $1 — and saved it",
-   "source": "OPB",
-   "url": "https://oregon-express.com/local-news/utah-nonprofit-buys-tillamook-air-museum-building-for-1-reopens-after-storm-damage",
-   "img": "img/news/air-museum-hangar.jpg",
-   "date": "2026-11-14",
-   "summary": "Ten months after a December 2025 windstorm tore a roughly 200-by-30-foot hole in the roof of the historic WWII blimp hangar, the Vintage Aviation Museum of Spanish Fork, Utah, bought Hangar B — plus the Port of Tillamook Bay's aircraft, artifacts and equipment — for $1, and the museum reopened Oct 29. The Port kept the land on a long-term lease, FEMA covered 75% of the $542,000 debris cleanup, and a full reroof is still to come.",
-   "img_origin": "licensed",
-   "img_credit": "Photo of the museum's Mini Guppy in front of Hangar B by 7bd1118425 via Wikimedia Commons, CC BY-SA 4.0 (licensed photo, News Scout batch 1, 2026-11-21).",
-   "tier": "high"
-  },
-  {
-   "title": "Mother-daughter duo help fill tables and feed Tillamook County at Thanksgiving",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/dynamic-mother-daughter-duo-help-fill-tables-feed-tillamook-county-community-at-thanksgiving/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ThanksgivingatNBMethodistChurch11.26-898x1200.jpg",
-   "date": "2026-11-14",
-   "summary": "A mother and daughter are behind a Thanksgiving effort that puts hundreds of dinners on tables across Tillamook County. Two generations are cooking for neighbors who might otherwise go without on the holiday.",
-   "img_origin": "source",
-   "img_credit": "Image: Tillamook County Pioneer (the story's own art — the Nehalem Bay Methodist Church community dinner flyer).",
-   "tier": "high"
-  },
-  {
    "title": "OREGON HEALTH AUTHORITY: OHA to delay enforcement of new federal Medicaid work rules to keep people in Oregon insured",
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-oha-to-delay-enforcement-of-new-federal-medicaid-work-rules-to-keep-people-in-oregon-insured/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/OHAWorkRequirepaperwork-300x300.jpg",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "A new federal option will allow Oregon to delay enforcement of work rules for six months, ensuring Oregon Health Plan members do not lose coverage for failing to meet new requirements while...",
    "tier": "useful"
   },
@@ -263,7 +241,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-fish-wildlife-unwind-after-thanksgiving-dinner-with-free-fishing-days-nov-27-and-28/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ODFWFreeFishingDays.jpg",
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "summary": "(SALEM, OR)– Continue the family togetherness — or break off on your own — for free fishing, clamming and crabbing on Friday, Nov. 27 and Saturday, Nov. 28. No fishing/shellfish licenses...",
    "tier": "useful"
   },
@@ -272,7 +250,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
    "tier": "routine"
   },
@@ -281,7 +259,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-transportation-odot-hwy-6-project-update-guardrail-upgrades/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/updatesignconstructionworker_crop.gif",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "This year, we’ve been working on a project to upgrade the guardrail along OR 6 where needed. Here’s what you need to know if you’re traveling near Tillamook on OR 6...",
    "tier": "routine"
   },
@@ -290,7 +268,7 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/stimson-lumber-top-bidder-on-5-1-million-salmonberry-river-timber-sale/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/overdrive-unit-map-odf.png",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "Stimson Lumber bid $527.53 per thousand board feet of Douglas-fir for Overdrive, two clearcuts totaling 230 acres off Belding Road in the Tillamook State Forest.",
    "tier": "routine"
   },
@@ -299,7 +277,7 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/how-to-legally-gather-wreath-greens-in-the-tillamook-state-forest/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/gales-creek-bazaar-wreaths-2023-11-18.jpg",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "Christmas tree cutting isn't allowed in the Tillamook State Forest, but people can gather boughs, ferns and salal there for their own use, in limited amounts, without a permit.",
    "tier": "routine"
   },
@@ -308,7 +286,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/update-body-found-in-ocean-ided-statement-released-by-city-of-newport/article_704a196b-8b5b-5fd9-a0f9-fa44ce322ad9.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/9/7a/97a7f02f-256b-554d-ab9e-9c95c8a08a44/6b052a4346c15.image.png?resize=300%2C193",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "Update posted at 7:30 a.m. Nov. 24",
    "tier": "crime"
   }
