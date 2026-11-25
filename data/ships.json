@@ -1,37 +1,85 @@
 {
- "fetched_at": "2026-11-25T06:22:40Z",
+ "fetched_at": "2026-11-25T06:52:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 338570000,
    "name": "BAYPORT",
-   "lat": 46.18973,
-   "lon": -123.91068,
-   "sog_kn": 8.2,
-   "cog": 96.5,
-   "heading": 84,
-   "updated": "2026-11-25 06:23:05.394035227 +0000 UTC"
+   "lat": 46.1914,
+   "lon": -123.88498,
+   "sog_kn": 0.9,
+   "cog": 92.3,
+   "heading": 80,
+   "updated": "2026-11-25 06:53:14.714286559 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.1684,
+   "lon": -123.91838,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-25 06:53:28.176687835 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.82971,
+   "sog_kn": 0,
+   "cog": 100.7,
+   "heading": 165,
+   "updated": "2026-11-25 06:53:04.889962782 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.2176,
+   "lon": -123.77652,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-25 06:53:09.401875065 +0000 UTC"
   },
   {
    "mmsi": 367156340,
    "name": "GRANADA",
    "lat": 46.16725,
-   "lon": -123.91792,
+   "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 157.1,
+   "cog": 137.4,
    "heading": 177,
-   "updated": "2026-11-25 06:23:20.137933066 +0000 UTC"
+   "updated": "2026-11-25 06:53:18.712773573 +0000 UTC"
   },
   {
    "mmsi": 367450580,
    "name": "GRUMPY J",
    "lat": 46.16871,
-   "lon": -123.91403,
+   "lon": -123.91402,
    "sog_kn": 0,
-   "cog": 220.6,
-   "heading": 95,
-   "updated": "2026-11-25 06:23:02.563629753 +0000 UTC"
+   "cog": 247,
+   "heading": 96,
+   "updated": "2026-11-25 06:53:12.151430748 +0000 UTC"
+  },
+  {
+   "mmsi": 366970430,
+   "name": "TRIUMPH II",
+   "lat": 46.18972,
+   "lon": -123.85401,
+   "sog_kn": 0,
+   "cog": 159.1,
+   "heading": 511,
+   "updated": "2026-11-25 06:53:19.075713421 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16846,
+   "lon": -123.91405,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-25 06:53:04.888825914 +0000 UTC"
   }
  ]
 }
