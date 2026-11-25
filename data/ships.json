@@ -1,56 +1,16 @@
 {
- "fetched_at": "2026-11-25T00:52:36Z",
+ "fetched_at": "2026-11-25T01:22:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 367375750,
-   "lat": 46.18898,
-   "lon": -123.86015,
-   "sog_kn": 0.1,
-   "cog": 209.7,
-   "heading": 511,
-   "updated": "2026-11-25 00:53:22.349075354 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
+   "lat": 46.18902,
+   "lon": -123.86012,
    "sog_kn": 0,
-   "cog": 100.7,
-   "heading": 168,
-   "updated": "2026-11-25 00:53:15.647625731 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.1671,
-   "lon": -123.91809,
-   "sog_kn": 0,
-   "cog": 0,
+   "cog": 41.2,
    "heading": 511,
-   "updated": "2026-11-25 00:53:25.424119232 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18996,
-   "lon": -123.85418,
-   "sog_kn": 0,
-   "cog": 217.9,
-   "heading": 511,
-   "updated": "2026-11-25 00:53:25.740681313 +0000 UTC"
-  },
-  {
-   "mmsi": 303324000,
-   "name": "TAASINGE",
-   "lat": 46.16833,
-   "lon": -123.91415,
-   "sog_kn": 0,
-   "cog": 82.4,
-   "heading": 511,
-   "updated": "2026-11-25 00:53:28.656394869 +0000 UTC"
+   "updated": "2026-11-25 01:23:24.608209751 +0000 UTC"
   }
  ]
 }

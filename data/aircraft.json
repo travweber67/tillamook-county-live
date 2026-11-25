@@ -1,47 +1,37 @@
 {
- "fetched_at": "2026-11-25T00:52:36Z",
+ "fetched_at": "2026-11-25T01:22:36Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "aca1da",
-   "callsign": "ASA590",
-   "type": "B39M",
-   "alt_ft": 27000,
-   "gs_kn": 361.1,
-   "track": 178.89,
-   "lat": 46.076019,
-   "lon": -123.375795
-  },
-  {
-   "hex": "a0ca4b",
-   "callsign": "N150BC",
-   "type": "FA7X",
-   "alt_ft": 3950,
-   "gs_kn": 220.1,
-   "track": 88.44,
-   "lat": 44.963643,
-   "lon": -123.1696
-  },
-  {
-   "hex": "ad4f2a",
-   "callsign": "CFS7690",
-   "type": "C208",
-   "alt_ft": 6025,
-   "gs_kn": 196.1,
-   "track": 11.77,
-   "lat": 45.101074,
-   "lon": -123.069763
+   "hex": "a0f0c4",
+   "callsign": "EJA16",
+   "type": "C56X",
+   "alt_ft": 36000,
+   "gs_kn": 334.2,
+   "track": 126.97,
+   "lat": 45.200546,
+   "lon": -123.124499
   },
   {
    "hex": "adf0f4",
    "callsign": "N998GC",
    "type": "E55P",
+   "alt_ft": 8875,
+   "gs_kn": 204.2,
+   "track": 193.02,
+   "lat": 45.412965,
+   "lon": -122.979148
+  },
+  {
+   "hex": "a0c538",
+   "callsign": "N149MF",
+   "type": "BE9L",
    "alt_ft": null,
-   "gs_kn": 0.0,
+   "gs_kn": 9.8,
    "track": null,
-   "lat": 45.542671,
-   "lon": -122.956238
+   "lat": 45.549065,
+   "lon": -122.958951
   }
  ]
 }
