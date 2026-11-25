@@ -1,47 +1,6 @@
 {
- "fetched_at": "2026-11-25T14:52:47Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20493,
-   "lon": -123.8106,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-25 14:53:06.890822706 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16707,
-   "lon": -123.91805,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-25 14:53:26.506230039 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.20019,
-   "lon": -123.76128,
-   "sog_kn": 0,
-   "cog": 269.2,
-   "heading": 343,
-   "updated": "2026-11-25 14:53:04.600375268 +0000 UTC"
-  },
-  {
-   "mmsi": 636020172,
-   "name": "VITA OLYMPIC",
-   "lat": 46.39352,
-   "lon": -124.50004,
-   "sog_kn": 6.5,
-   "cog": 142.3,
-   "heading": 169,
-   "updated": "2026-11-25 14:53:04.750614684 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-25T15:22:47Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }
