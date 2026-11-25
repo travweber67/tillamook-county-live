@@ -1,57 +1,83 @@
 {
- "fetched_at": "2026-11-25T18:27:52Z",
+ "fetched_at": "2026-11-25T18:52:51Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366979360,
-   "name": "ARTHUR FOSS",
-   "lat": 46.20059,
-   "lon": -123.7584,
-   "type_code": 31,
-   "type": "Towing",
-   "destination": "SEATTLE",
-   "updated": "2026-11-25 18:28:35.550708482 +0000 UTC"
+   "mmsi": 338424194,
+   "lat": 46.30558,
+   "lon": -124.03858,
+   "sog_kn": 0,
+   "cog": 300.5,
+   "heading": 511,
+   "updated": "2026-11-25 18:53:30.659642118 +0000 UTC"
+  },
+  {
+   "mmsi": 367161930,
+   "lat": 46.16863,
+   "lon": -123.91456,
+   "sog_kn": 1.9,
+   "cog": 215.4,
+   "heading": 511,
+   "updated": "2026-11-25 18:53:41.530073012 +0000 UTC"
+  },
+  {
+   "mmsi": 367516350,
+   "lat": 46.19029,
+   "lon": -123.85676,
+   "sog_kn": 0.2,
+   "cog": 142.6,
+   "heading": 511,
+   "updated": "2026-11-25 18:53:33.852315581 +0000 UTC"
+  },
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.24371,
+   "lon": -124.04696,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-25 18:53:32.652805164 +0000 UTC"
+  },
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16856,
+   "lon": -123.91401,
+   "sog_kn": 0,
+   "cog": 347.1,
+   "heading": 511,
+   "updated": "2026-11-25 18:53:36.297780436 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.82971,
+   "sog_kn": 0.1,
+   "cog": 99.3,
+   "heading": 164,
+   "updated": "2026-11-25 18:53:26.003187459 +0000 UTC"
   },
   {
    "mmsi": 311000304,
    "name": "EVER GRACE",
-   "lat": 46.21851,
-   "lon": -123.77675,
+   "lat": 46.21838,
+   "lon": -123.77669,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USVAN",
-   "updated": "2026-11-25 18:28:49.691619367 +0000 UTC"
+   "updated": "2026-11-25 18:53:21.381235962 +0000 UTC"
   },
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91424,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76047,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 18:28:58.257476116 +0000 UTC"
-  },
-  {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.17697,
-   "lon": -124.4791,
-   "sog_kn": 0.8,
-   "cog": 273.3,
-   "heading": 213,
-   "updated": "2026-11-25 18:28:59.643187933 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.19712,
-   "lon": -123.7605,
-   "sog_kn": 0,
-   "cog": 279.2,
-   "heading": 511,
-   "updated": "2026-11-25 18:28:30.34895222 +0000 UTC"
+   "updated": "2026-11-25 18:53:50.430317977 +0000 UTC"
   }
  ]
 }
