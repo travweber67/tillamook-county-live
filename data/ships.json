@@ -1,83 +1,78 @@
 {
- "fetched_at": "2026-11-25T18:52:51Z",
+ "fetched_at": "2026-11-25T18:57:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338424194,
-   "lat": 46.30558,
-   "lon": -124.03858,
+   "mmsi": 369493011,
+   "lat": 46.2442,
+   "lon": -124.04595,
+   "sog_kn": 2.7,
+   "cog": 83.8,
+   "heading": 279,
+   "updated": "2026-11-25 18:58:21.082777001 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.18698,
+   "lon": -123.86249,
    "sog_kn": 0,
-   "cog": 300.5,
-   "heading": 511,
-   "updated": "2026-11-25 18:53:30.659642118 +0000 UTC"
+   "cog": 55.2,
+   "heading": 219,
+   "updated": "2026-11-25 18:58:33.179763884 +0000 UTC"
   },
   {
-   "mmsi": 367161930,
-   "lat": 46.16863,
-   "lon": -123.91456,
-   "sog_kn": 1.9,
-   "cog": 215.4,
-   "heading": 511,
-   "updated": "2026-11-25 18:53:41.530073012 +0000 UTC"
-  },
-  {
-   "mmsi": 367516350,
-   "lat": 46.19029,
-   "lon": -123.85676,
-   "sog_kn": 0.2,
-   "cog": 142.6,
-   "heading": 511,
-   "updated": "2026-11-25 18:53:33.852315581 +0000 UTC"
-  },
-  {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.24371,
-   "lon": -124.04696,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-25 18:53:32.652805164 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16856,
-   "lon": -123.91401,
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19055,
+   "lon": -123.85699,
    "sog_kn": 0,
-   "cog": 347.1,
+   "cog": 286.6,
    "heading": 511,
-   "updated": "2026-11-25 18:53:36.297780436 +0000 UTC"
+   "updated": "2026-11-25 18:58:28.788832889 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "sog_kn": 0.1,
-   "cog": 99.3,
-   "heading": 164,
-   "updated": "2026-11-25 18:53:26.003187459 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21838,
-   "lon": -123.77669,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-25 18:53:21.381235962 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19993,
-   "lon": -123.76047,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.922,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 18:53:50.430317977 +0000 UTC"
+   "updated": "2026-11-25 18:58:09.148563995 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.25276,
+   "lon": -124.03433,
+   "sog_kn": 20.4,
+   "cog": 87.9,
+   "heading": 511,
+   "updated": "2026-11-25 18:58:32.708340315 +0000 UTC",
+   "type_code": 51,
+   "type": "Search & rescue"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18994,
+   "lon": -123.85416,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-25 18:58:26.998102852 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18813,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 12.6,
+   "heading": 310,
+   "updated": "2026-11-25 18:58:27.502024024 +0000 UTC"
   }
  ]
 }
