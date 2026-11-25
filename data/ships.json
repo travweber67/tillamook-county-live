@@ -1,66 +1,37 @@
 {
- "fetched_at": "2026-11-25T05:22:40Z",
+ "fetched_at": "2026-11-25T05:52:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367617080,
-   "lat": 46.16742,
-   "lon": -123.91534,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16855,
+   "lon": -123.914,
    "sog_kn": 0,
-   "cog": 305.2,
+   "cog": 212.1,
    "heading": 511,
-   "updated": "2026-11-25 05:23:33.728247733 +0000 UTC"
+   "updated": "2026-11-25 05:53:26.512828772 +0000 UTC"
   },
   {
-   "mmsi": 366979360,
-   "name": "ARTHUR FOSS",
-   "lat": 46.2006,
-   "lon": -123.75839,
-   "type_code": 31,
-   "type": "Towing",
-   "destination": "SEATTLE",
-   "updated": "2026-11-25 05:23:33.266617864 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16839,
-   "lon": -123.91837,
-   "sog_kn": 0,
-   "cog": 356.8,
-   "heading": 350,
-   "updated": "2026-11-25 05:23:10.019139781 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19994,
-   "lon": -123.76046,
-   "sog_kn": 0,
-   "cog": 262.7,
-   "heading": 511,
-   "updated": "2026-11-25 05:23:31.222784699 +0000 UTC"
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.22333,
+   "lon": -123.96284,
+   "sog_kn": 4.5,
+   "cog": 319.9,
+   "heading": 319,
+   "updated": "2026-11-25 05:53:19.172142404 +0000 UTC"
   },
   {
    "mmsi": 367740820,
    "name": "RELIEF",
-   "lat": 46.18996,
+   "lat": 46.18997,
    "lon": -123.85418,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-25 05:23:33.050856616 +0000 UTC"
-  },
-  {
-   "mmsi": 367375750,
-   "name": "ROSS ISLAND DREDGE 7",
-   "lat": 46.18875,
-   "lon": -123.85903,
    "sog_kn": 0,
-   "cog": 7.7,
+   "cog": 111.5,
    "heading": 511,
-   "updated": "2026-11-25 05:23:24.632076481 +0000 UTC"
+   "updated": "2026-11-25 05:53:29.271504675 +0000 UTC"
   }
  ]
 }
