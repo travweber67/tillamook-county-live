@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T00:23:30Z",
+ "fetched_at": "2026-11-25T00:53:37Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "17 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "18 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -38,6 +38,17 @@
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/RiverbendMiracle34thSt.12.26.jpg",
    "date": "2026-11-24",
    "summary": "MIRACLE ON 34TH STREET, adapted by Lance Arthur Smith, directed by Frank Squillo Step back in time to the golden age of radio as Riverbend Players, directed by Frank Squillo, brings...",
+   "tier": "high"
+  },
+  {
+   "title": "A King Tide Wave Nearly Took a Man and His Dog at Cannon Beach",
+   "source": "Tillamook County Live",
+   "url": "https://www.statesmanjournal.com/story/news/local/oregon/2026/11/24/video-shows-man-dog-nearly-swept-away-king-tides-oregon-coast/92948161007/",
+   "img": "img/news/cannon-beach-king-tide.jpg",
+   "date": "2026-11-24",
+   "summary": "Just up the coast from Tillamook County, Tuesday morning's king tide gave the whole coast a lesson. Around 10:30 a.m. in Cannon Beach, a man standing on the beach-access stairs with his dog on a leash was hit by a surge that knocked both of them off their feet and dragged them along the seawall in the surf. Bystander video released by the Cannon Beach Police Department shows him clinging to the stair railing as wave after wave rolled over him. Both the man and the dog reached another set of stairs and got out of the water without injury. Police said the man had already been cited earlier in the day for driving on the beach, and people nearby said he had been warned about the surf more than once. Cannon Beach police released the video as a warning, and their list is worth taping to the fridge: beach-access stairs are not a safe place to watch king tides, never turn your back on the ocean, keep pets back from the surf, and stay off the driftwood, because big logs move in this water. The same conditions are running on Tillamook County beaches: king tides continue through Friday, a Coastal Flood Advisory is in effect, and a High Wind Watch runs into Wednesday morning as the next storm comes in. Watch the surf from high ground, stay off the rocks and jetties, and give the ocean room.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of king tide surf breaking over the rocks at Rocky Creek State Scenic Viewpoint on the Oregon coast by Bonnie Moreland via Wikimedia Commons, public domain (licensed photo, Tillamook County Live original, 2026-11-24).",
    "tier": "high"
   },
   {

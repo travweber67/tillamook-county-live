@@ -1,37 +1,56 @@
 {
- "fetched_at": "2026-11-25T00:22:35Z",
+ "fetched_at": "2026-11-25T00:52:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16808,
-   "lon": -123.91425,
+   "mmsi": 367375750,
+   "lat": 46.18898,
+   "lon": -123.86015,
+   "sog_kn": 0.1,
+   "cog": 209.7,
+   "heading": 511,
+   "updated": "2026-11-25 00:53:22.349075354 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
+   "sog_kn": 0,
+   "cog": 100.7,
+   "heading": 168,
+   "updated": "2026-11-25 00:53:15.647625731 +0000 UTC"
+  },
+  {
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.1671,
+   "lon": -123.91809,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 00:22:57.840792847 +0000 UTC"
+   "updated": "2026-11-25 00:53:25.424119232 +0000 UTC"
   },
   {
-   "mmsi": 368202070,
-   "name": "TERILYN",
-   "lat": 46.2003,
-   "lon": -123.76151,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18996,
+   "lon": -123.85418,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 161,
-   "updated": "2026-11-25 00:23:06.438179242 +0000 UTC"
+   "cog": 217.9,
+   "heading": 511,
+   "updated": "2026-11-25 00:53:25.740681313 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86175,
+   "mmsi": 303324000,
+   "name": "TAASINGE",
+   "lat": 46.16833,
+   "lon": -123.91415,
    "sog_kn": 0,
-   "cog": 241.3,
-   "heading": 306,
-   "updated": "2026-11-25 00:22:59.19769757 +0000 UTC"
+   "cog": 82.4,
+   "heading": 511,
+   "updated": "2026-11-25 00:53:28.656394869 +0000 UTC"
   }
  ]
 }
