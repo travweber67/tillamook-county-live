@@ -1,36 +1,36 @@
 {
- "fetched_at": "2026-11-25T23:22:54Z",
+ "fetched_at": "2026-11-25T23:52:55Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368288370,
-   "lat": 46.30536,
-   "lon": -124.04441,
-   "sog_kn": 0.5,
+   "mmsi": 367355270,
+   "lat": 46.16792,
+   "lon": -123.91432,
+   "sog_kn": 0.1,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-25 23:24:02.447622943 +0000 UTC"
+   "updated": "2026-11-25 23:53:41.553986106 +0000 UTC"
   },
   {
    "mmsi": 367544180,
    "name": "JEANNE ARAIN",
-   "lat": 46.30464,
-   "lon": -124.04027,
+   "lat": 46.30463,
+   "lon": -124.04026,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 323.1,
    "heading": 511,
-   "updated": "2026-11-25 23:23:57.352310862 +0000 UTC"
+   "updated": "2026-11-25 23:53:36.26125056 +0000 UTC"
   },
   {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.18102,
-   "lon": -124.60966,
-   "sog_kn": 0.4,
-   "cog": 194.4,
-   "heading": 201,
-   "updated": "2026-11-25 23:24:00.462050742 +0000 UTC"
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16778,
+   "lon": -123.91441,
+   "sog_kn": 0.1,
+   "cog": 289.8,
+   "heading": 511,
+   "updated": "2026-11-25 23:53:31.147878987 +0000 UTC"
   }
  ]
 }
