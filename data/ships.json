@@ -1,84 +1,50 @@
 {
- "fetched_at": "2026-11-25T21:52:53Z",
+ "fetched_at": "2026-11-25T22:22:53Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 368188830,
    "name": "ANITA D",
    "lat": 46.16853,
-   "lon": -123.91401,
+   "lon": -123.91398,
    "sog_kn": 0,
-   "cog": 359.1,
+   "cog": 8.5,
    "heading": 511,
-   "updated": "2026-11-25 21:53:49.08534369 +0000 UTC"
-  },
-  {
-   "mmsi": 366979360,
-   "name": "ARTHUR FOSS",
-   "lat": 46.20058,
-   "lon": -123.75842,
-   "type_code": 31,
-   "type": "Towing",
-   "destination": "SEATTLE",
-   "updated": "2026-11-25 21:53:23.743328946 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.20105,
-   "lon": -123.80773,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-25 21:53:39.99281366 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.24711,
-   "lon": -123.94824,
-   "sog_kn": 5,
-   "cog": 199.8,
-   "heading": 180,
-   "updated": "2026-11-25 21:53:37.015709727 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16838,
-   "lon": -123.91837,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-25 21:53:41.734847209 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82972,
-   "type_code": 57,
-   "type": "Vessel",
-   "updated": "2026-11-25 21:53:43.987545099 +0000 UTC"
+   "updated": "2026-11-25 22:23:47.675166022 +0000 UTC"
   },
   {
    "mmsi": 367037240,
    "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91426,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-25 21:53:28.630672326 +0000 UTC"
+   "lat": 46.16813,
+   "lon": -123.91423,
+   "sog_kn": 0,
+   "cog": 10,
+   "heading": 511,
+   "updated": "2026-11-25 22:23:37.874030054 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18992,
+   "lon": -123.85417,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-25 22:23:32.117341527 +0000 UTC"
   },
   {
    "mmsi": 636020172,
    "name": "VITA OLYMPIC",
-   "lat": 46.32925,
-   "lon": -124.43516,
-   "sog_kn": 4.4,
-   "cog": 225.7,
-   "heading": 204,
-   "updated": "2026-11-25 21:53:35.650290934 +0000 UTC"
+   "lat": 46.35691,
+   "lon": -124.46029,
+   "sog_kn": 5.1,
+   "cog": 348.5,
+   "heading": 293,
+   "updated": "2026-11-25 22:23:40.702155173 +0000 UTC",
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN"
   }
  ]
 }
