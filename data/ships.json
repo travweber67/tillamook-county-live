@@ -1,37 +1,37 @@
 {
- "fetched_at": "2026-11-25T05:52:40Z",
+ "fetched_at": "2026-11-25T06:22:40Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.914,
-   "sog_kn": 0,
-   "cog": 212.1,
-   "heading": 511,
-   "updated": "2026-11-25 05:53:26.512828772 +0000 UTC"
-  },
-  {
    "mmsi": 338570000,
    "name": "BAYPORT",
-   "lat": 46.22333,
-   "lon": -123.96284,
-   "sog_kn": 4.5,
-   "cog": 319.9,
-   "heading": 319,
-   "updated": "2026-11-25 05:53:19.172142404 +0000 UTC"
+   "lat": 46.18973,
+   "lon": -123.91068,
+   "sog_kn": 8.2,
+   "cog": 96.5,
+   "heading": 84,
+   "updated": "2026-11-25 06:23:05.394035227 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18997,
-   "lon": -123.85418,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
    "sog_kn": 0,
-   "cog": 111.5,
-   "heading": 511,
-   "updated": "2026-11-25 05:53:29.271504675 +0000 UTC"
+   "cog": 157.1,
+   "heading": 177,
+   "updated": "2026-11-25 06:23:20.137933066 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16871,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 220.6,
+   "heading": 95,
+   "updated": "2026-11-25 06:23:02.563629753 +0000 UTC"
   }
  ]
 }
