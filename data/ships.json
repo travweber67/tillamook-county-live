@@ -1,84 +1,36 @@
 {
- "fetched_at": "2026-11-25T02:22:37Z",
+ "fetched_at": "2026-11-25T02:52:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303324000,
-   "lat": 46.1683,
-   "lon": -123.91413,
-   "sog_kn": 0,
-   "cog": 82.4,
-   "heading": 511,
-   "updated": "2026-11-25 02:23:31.081675246 +0000 UTC"
-  },
-  {
-   "mmsi": 367008550,
-   "lat": 46.20442,
-   "lon": -123.76291,
-   "sog_kn": 0.6,
-   "cog": 176.9,
-   "heading": 511,
-   "updated": "2026-11-25 02:23:28.966703883 +0000 UTC"
-  },
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19163,
-   "lon": -123.88871,
-   "type_code": 33,
-   "type": "Dredging",
-   "destination": "USAST ASTORIA",
-   "updated": "2026-11-25 02:23:34.543940586 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20443,
-   "lon": -123.81065,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-25 02:23:13.247977223 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.1963,
-   "lon": -123.79707,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-25 02:23:09.354158361 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19032,
-   "lon": -123.82953,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16841,
+   "lon": -123.91836,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 02:23:25.358578022 +0000 UTC"
+   "updated": "2026-11-25 02:53:07.785993214 +0000 UTC"
+  },
+  {
+   "mmsi": 367375750,
+   "name": "ROSS ISLAND DREDGE 7",
+   "lat": 46.18887,
+   "lon": -123.86022,
+   "sog_kn": 0.2,
+   "cog": 74.8,
+   "heading": 511,
+   "updated": "2026-11-25 02:53:22.393205484 +0000 UTC"
   },
   {
    "mmsi": 368202070,
    "name": "TERILYN",
    "lat": 46.20029,
-   "lon": -123.7615,
+   "lon": -123.76151,
    "sog_kn": 0,
-   "cog": 177.9,
+   "cog": 0,
    "heading": 162,
-   "updated": "2026-11-25 02:23:25.208842565 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18815,
-   "lon": -123.86175,
-   "sog_kn": 0,
-   "cog": 311.1,
-   "heading": 307,
-   "updated": "2026-11-25 02:23:08.580044937 +0000 UTC"
+   "updated": "2026-11-25 02:53:14.025346831 +0000 UTC"
   }
  ]
 }
