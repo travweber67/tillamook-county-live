@@ -1,76 +1,36 @@
 {
- "fetched_at": "2026-11-25T22:52:54Z",
+ "fetched_at": "2026-11-25T23:22:54Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367498220,
-   "lat": 46.16724,
-   "lon": -123.91628,
-   "sog_kn": 0.1,
-   "cog": 98.9,
+   "mmsi": 368288370,
+   "lat": 46.30536,
+   "lon": -124.04441,
+   "sog_kn": 0.5,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-25 22:53:37.809344992 +0000 UTC"
+   "updated": "2026-11-25 23:24:02.447622943 +0000 UTC"
   },
   {
-   "mmsi": 338376911,
-   "name": "AMERICAN GIRL",
-   "lat": 46.16614,
-   "lon": -123.91808,
-   "sog_kn": 0.1,
-   "cog": 275.4,
-   "heading": 511,
-   "updated": "2026-11-25 22:53:36.633401997 +0000 UTC"
-  },
-  {
-   "mmsi": 366979360,
-   "name": "ARTHUR FOSS",
-   "lat": 46.20059,
-   "lon": -123.75841,
-   "type_code": 31,
-   "type": "Towing",
-   "destination": "SEATTLE",
-   "updated": "2026-11-25 22:53:28.666378786 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.91838,
-   "sog_kn": 0,
-   "cog": 21.4,
-   "heading": 350,
-   "updated": "2026-11-25 22:53:28.816701182 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16812,
-   "lon": -123.91424,
-   "sog_kn": 0,
-   "cog": 2,
-   "heading": 511,
-   "updated": "2026-11-25 22:53:17.533101589 +0000 UTC"
-  },
-  {
-   "mmsi": 367516350,
-   "name": "MISS MOLLY",
-   "lat": 46.19027,
-   "lon": -123.85674,
-   "sog_kn": 0,
-   "cog": 114.2,
-   "heading": 511,
-   "updated": "2026-11-25 22:53:31.730791201 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.76042,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30464,
+   "lon": -124.04027,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 22:53:10.922469105 +0000 UTC"
+   "updated": "2026-11-25 23:23:57.352310862 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.18102,
+   "lon": -124.60966,
+   "sog_kn": 0.4,
+   "cog": 194.4,
+   "heading": 201,
+   "updated": "2026-11-25 23:24:00.462050742 +0000 UTC"
   }
  ]
 }
