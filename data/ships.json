@@ -1,6 +1,86 @@
 {
- "fetched_at": "2026-11-25T19:52:52Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T20:22:52Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367089450,
+   "lat": 46.22323,
+   "lon": -123.95935,
+   "sog_kn": 2.3,
+   "cog": 73.5,
+   "heading": 511,
+   "updated": "2026-11-25 20:24:14.707028174 +0000 UTC"
+  },
+  {
+   "mmsi": 368396890,
+   "name": "ARROW NO. 2",
+   "lat": 46.20475,
+   "lon": -123.79319,
+   "sog_kn": 1.4,
+   "cog": 60.6,
+   "heading": 270,
+   "updated": "2026-11-25 20:24:02.704445166 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
+   "sog_kn": 0.2,
+   "cog": 97.1,
+   "heading": 167,
+   "updated": "2026-11-25 20:24:09.458296023 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16561,
+   "lon": -123.922,
+   "sog_kn": 0,
+   "cog": 342,
+   "heading": 511,
+   "updated": "2026-11-25 20:24:18.74355317 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-25 20:24:05.637853465 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16811,
+   "lon": -123.91429,
+   "sog_kn": 0,
+   "cog": 339.9,
+   "heading": 511,
+   "updated": "2026-11-25 20:23:58.820203033 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.24478,
+   "lon": -124.04744,
+   "sog_kn": 7.4,
+   "cog": 13,
+   "heading": 511,
+   "updated": "2026-11-25 20:24:00.089633599 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76049,
+   "sog_kn": 0,
+   "cog": 328.8,
+   "heading": 511,
+   "updated": "2026-11-25 20:24:22.645579313 +0000 UTC"
+  }
+ ]
 }
