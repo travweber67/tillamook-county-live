@@ -1,56 +1,56 @@
 {
- "fetched_at": "2026-11-25T04:22:39Z",
+ "fetched_at": "2026-11-25T04:52:39Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 311000304,
    "name": "EVER GRACE",
-   "lat": 46.21638,
-   "lon": -123.78372,
+   "lat": 46.21738,
+   "lon": -123.78378,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USVAN",
-   "updated": "2026-11-25 04:23:00.549348923 +0000 UTC"
+   "updated": "2026-11-25 04:53:08.435440513 +0000 UTC"
   },
   {
-   "mmsi": 367161930,
-   "name": "PACIFIC CONQUEST",
-   "lat": 46.16895,
-   "lon": -123.91382,
-   "sog_kn": 0.2,
-   "cog": 279.6,
-   "heading": 511,
-   "updated": "2026-11-25 04:23:34.170233521 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16778,
-   "lon": -123.91444,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 252.4,
-   "heading": 511,
-   "updated": "2026-11-25 04:23:01.350193956 +0000 UTC"
+   "cog": 20.1,
+   "heading": 178,
+   "updated": "2026-11-25 04:53:09.996131687 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20481,
+   "lon": -123.81109,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 04:53:06.892329102 +0000 UTC"
   },
   {
    "mmsi": 367740820,
    "name": "RELIEF",
-   "lat": 46.18994,
+   "lat": 46.18992,
    "lon": -123.85417,
-   "sog_kn": 0,
-   "cog": 254.3,
-   "heading": 511,
-   "updated": "2026-11-25 04:23:25.674307315 +0000 UTC"
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-25 04:53:18.785063671 +0000 UTC"
   },
   {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16847,
-   "lon": -123.91408,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-25 04:23:02.149506528 +0000 UTC"
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19034,
+   "lon": -123.82951,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-25 04:53:25.408501289 +0000 UTC"
   }
  ]
 }
