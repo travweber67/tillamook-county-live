@@ -8348,12 +8348,11 @@ function renderSchools() {
     const st = SCHOOL_STATUS[d.status] || SCHOOL_STATUS.no_report;
     return '<li class="school-row"><span class="school-main">'
       + '<span class="school-name">' + esc(d.name) + '</span>'
-      + (d.sub ? '<span class="school-sub">' + esc(d.sub) + '</span>' : '')
+      + ((d.sub || d.note) ? '<span class="school-sub">' + esc(d.sub || d.note) + '</span>' : '')
       + '</span>'
       + '<span class="school-pill ' + st.cls + '">' + esc(langCur === 'es' ? st.es : st.en) + '</span>'
       + (d.url ? '<a class="school-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">'
           + esc(d.link_label ? (langCur === 'es' ? L.site : d.link_label + ' →') : L.site) + '</a>' : '')
-      + (d.note ? '<span class="school-note">' + esc(d.note) + '</span>' : '')
       + '</li>';
   }).join('') + '</ul>';
   body.innerHTML = html;
