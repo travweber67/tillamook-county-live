@@ -1,6 +1,67 @@
 {
- "fetched_at": "2026-11-25T13:22:46Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-25T13:52:46Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 366999466,
+   "name": "CG47240",
+   "lat": 46.28127,
+   "lon": -124.04679,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "destination": "YB",
+   "updated": "2026-11-25 13:53:28.815726279 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16837,
+   "lon": -123.9184,
+   "sog_kn": 0,
+   "cog": 356.8,
+   "heading": 351,
+   "updated": "2026-11-25 13:53:38.746470531 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19047,
+   "lon": -123.82971,
+   "sog_kn": 0,
+   "cog": 43.9,
+   "heading": 166,
+   "updated": "2026-11-25 13:53:47.195430599 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20502,
+   "lon": -123.81059,
+   "sog_kn": 0.1,
+   "cog": 181.2,
+   "heading": 72,
+   "updated": "2026-11-25 13:53:33.278386831 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30462,
+   "lon": -124.04029,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-25 13:53:35.556696126 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.19563,
+   "lon": -124.63465,
+   "sog_kn": 3.2,
+   "cog": 212,
+   "heading": 198,
+   "updated": "2026-11-25 13:53:30.224275489 +0000 UTC"
+  }
+ ]
 }
