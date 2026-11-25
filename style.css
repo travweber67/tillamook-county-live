@@ -788,6 +788,7 @@ html[data-theme="dark"] .wx-day.wx-today .wx-dow{color:#f0a35e}
 .tchart-pt-king{fill:var(--warn);font-size:11px;font-weight:800}
 .tchart-pt-now{fill:#f59e0b;font-size:11px;font-weight:800}
 .tchart-turns{margin-top:8px}
+html[data-theme="dark"] .tchart-next-box{background:#f5efe0;border-color:rgba(120,90,40,.28)}
 
 
 /* Crabbing index — seven scored days, each with its best slack-tide
