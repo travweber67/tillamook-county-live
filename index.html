@@ -33,7 +33,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=3">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=49">
+<link rel="stylesheet" href="style.css?v=50">
 <link rel="stylesheet" href="merch.css?v=1">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=2">
@@ -242,28 +242,28 @@ document.documentElement.setAttribute("data-theme",t);})();
   <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
   <p class="cell-eyebrow" data-i18n="fs1eyebrow">Founding Sponsor · Spot 1 of 4 — Open</p>
   <h3 data-i18n="fs1h3">Your business here</h3>
-  <p data-i18n="fs1p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay.</p>
+  <p data-i18n="fs1p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
   <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%201" data-i18n="fs1cta">Claim spot 1 &rarr;</a>
 </article>
 <article class="founding-cell invite in-flow">
   <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
   <p class="cell-eyebrow" data-i18n="fs2eyebrow">Founding Sponsor · Spot 2 of 4 — Open</p>
   <h3 data-i18n="fs2h3">Your business here</h3>
-  <p data-i18n="fs2p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay.</p>
+  <p data-i18n="fs2p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
   <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%202" data-i18n="fs2cta">Claim spot 2 &rarr;</a>
 </article>
 <article class="founding-cell invite in-flow">
   <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
   <p class="cell-eyebrow" data-i18n="fs3eyebrow">Founding Sponsor · Spot 3 of 4 — Open</p>
   <h3 data-i18n="fs3h3">Your business here</h3>
-  <p data-i18n="fs3p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay.</p>
+  <p data-i18n="fs3p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
   <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%203" data-i18n="fs3cta">Claim spot 3 &rarr;</a>
 </article>
 <article class="founding-cell invite in-flow">
   <div class="ghost-logo" aria-hidden="true"><img src="img/icons/icon-sponsor.png" alt=""><span data-i18n="fslogohere">Your logo here</span></div>
   <p class="cell-eyebrow" data-i18n="fs4eyebrow">Founding Sponsor · Spot 4 of 4 — Open</p>
   <h3 data-i18n="fs4h3">Your business here</h3>
-  <p data-i18n="fs4p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay.</p>
+  <p data-i18n="fs4p">One of only four founding spots, ever — your name and logo on the Today page every visitor opens first. $49/mo, locked while you stay, and a free 30-day pilot before you pay anything.</p>
   <a class="founding-cta" href="mailto:nomadov3rland@gmail.com?subject=Tillamook%20County%20Live%20—%20Founding%20Sponsor%20Spot%204" data-i18n="fs4cta">Claim spot 4 &rarr;</a>
 </article>
 </div>
@@ -776,6 +776,16 @@ document.documentElement.setAttribute("data-theme",t);})();
       </div>
       <div id="rivers-body" class="panel-body"><p class="loading">Loading USGS gauge readings…</p></div>
       <p class="card-note small" data-i18n="riversnote">Flood warnings, when issued, appear in Weather Alerts above. Readings are provisional USGS data.</p>
+    </div>
+
+    <div class="card" id="tidechart-card">
+      <div class="card-head">
+        <img class="card-ico" src="img/icons/icon-waves.png" alt="" aria-hidden="true"><h2 data-i18n="tcharth2">Tide Chart</h2>
+        <span class="updated" id="tidechart-updated"></span>
+      </div>
+      <p class="card-note" data-i18n="tchartnote">The whole curve, not just the turns — NOAA's predicted height hour by hour, today through the next two days, for the same three bays. Pick a bay and watch the water move.</p>
+      <div id="tidechart-body" class="panel-body"><p class="loading">Loading the tide curve…</p></div>
+      <p class="card-note small" data-i18n="tchartnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (Garibaldi 9437540, Netarts Bay 9437262, Nehalem 9437908), in feet above mean lower low water. Netarts and Nehalem are high/low stations, so their curves are drawn through NOAA's own predicted turns. A <strong>King tide</strong> tag marks a high tide in the top handful of the whole year for that station. Predictions, not measurements — wind and river flow push real water off them.</p>
     </div>
 
     <div class="card" id="tides-card">
