@@ -1,64 +1,65 @@
 {
- "fetched_at": "2026-11-25T03:22:38Z",
+ "fetched_at": "2026-11-25T03:52:39Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367375750,
-   "lat": 46.18893,
-   "lon": -123.86009,
-   "sog_kn": 0.2,
-   "cog": 38.3,
-   "heading": 511,
-   "updated": "2026-11-25 03:23:21.992497529 +0000 UTC"
+   "mmsi": 368259990,
+   "lat": 46.18848,
+   "lon": -123.85988,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 306,
+   "updated": "2026-11-25 03:53:17.271205214 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28139,
-   "lon": -124.0467,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-25 03:23:25.232435522 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.91792,
+   "sog_kn": 0,
+   "cog": 6.7,
+   "heading": 178,
+   "updated": "2026-11-25 03:53:19.702828476 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16843,
-   "lon": -123.91833,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 240.6,
+   "heading": 96,
+   "updated": "2026-11-25 03:53:23.707327002 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19034,
+   "lon": -123.82949,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 03:23:21.465024035 +0000 UTC"
+   "updated": "2026-11-25 03:53:25.058137997 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.8297,
+   "mmsi": 368202070,
+   "name": "TERILYN",
+   "lat": 46.20029,
+   "lon": -123.76151,
    "sog_kn": 0,
-   "cog": 100.7,
-   "heading": 167,
-   "updated": "2026-11-25 03:23:08.242444942 +0000 UTC"
+   "cog": 197.6,
+   "heading": 162,
+   "updated": "2026-11-25 03:53:04.935115491 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.3046,
-   "lon": -124.04027,
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.20078,
+   "lon": -123.75362,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 347.4,
    "heading": 511,
-   "updated": "2026-11-25 03:23:15.145982446 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.20018,
-   "lon": -123.76128,
-   "sog_kn": 0,
-   "cog": 310,
-   "heading": 342,
-   "updated": "2026-11-25 03:23:03.444754667 +0000 UTC"
+   "updated": "2026-11-25 03:53:11.878373707 +0000 UTC"
   }
  ]
 }
