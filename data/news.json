@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T18:23:32Z",
+ "fetched_at": "2026-11-25T18:29:04Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -268,15 +268,6 @@
    "tier": "useful"
   },
   {
-   "title": "CANNON BEACH POLICE DEPT.: KING TIDES – A POWERFUL REMINDER OF THE DANGERS OF THE OCEAN, MAN & DOG SWEPT INTO SURF, ESCAPE WITHOUT INJURY NOV. 24, 2026",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/cannon-beach-police-dept-king-tides-a-powerful-reminder-of-the-dangers-of-the-ocean-man-dog-swept-into-surf-escape-without-injury-nov-24-2026/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/CBTolovanaKingTides11.24.mp4",
-   "date": "2026-11-24",
-   "summary": "The Cannon Beach Police Department would like to remind residents and visitors of the extreme dangers associated with King Tides. An incident captured in this video serves as a powerful reminder of...",
-   "tier": "useful"
-  },
-  {
    "title": "Port board temporarily extends OCSR lease",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
@@ -310,6 +301,15 @@
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/overdrive-unit-map-odf.png",
    "date": "2026-11-24",
    "summary": "Stimson Lumber bid $527.53 per thousand board feet of Douglas-fir for Overdrive, two clearcuts totaling 230 acres off Belding Road in the Tillamook State Forest.",
+   "tier": "routine"
+  },
+  {
+   "title": "Banks-Vernonia Trail to close from Banks to Manning for tree clearing",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/banks-vernonia-trail-to-close-from-banks-to-manning-for-tree-clearing/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/BVTrail-Hikers-Horses-Fall.jpg",
+   "date": "2026-11-24",
+   "summary": "A contractor will remove about 100 dead and unhealthy trees along the path between Nov. 30 and Dec. 14, the Oregon Parks and Recreation Department said.",
    "tier": "routine"
   }
  ]
