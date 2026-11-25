@@ -1,95 +1,37 @@
 {
- "fetched_at": "2026-11-25T09:52:43Z",
+ "fetched_at": "2026-11-25T10:22:43Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
-  {
-   "mmsi": 367617080,
-   "lat": 46.16742,
-   "lon": -123.91534,
-   "sog_kn": 0,
-   "cog": 305.2,
-   "heading": 511,
-   "updated": "2026-11-25 09:53:34.85042666 +0000 UTC"
-  },
-  {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.20313,
-   "lon": -124.35454,
-   "sog_kn": 1,
-   "cog": 84.5,
-   "heading": 149,
-   "updated": "2026-11-25 09:53:29.997086829 +0000 UTC"
-  },
-  {
-   "mmsi": 369493007,
-   "name": "CG47207",
-   "lat": 46.28133,
-   "lon": -124.04695,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-25 09:53:23.993687377 +0000 UTC"
-  },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20543,
-   "lon": -123.80417,
-   "sog_kn": 0.1,
-   "cog": 266.3,
-   "heading": 267,
-   "updated": "2026-11-25 09:53:33.26781622 +0000 UTC"
+   "lat": 46.20502,
+   "lon": -123.80411,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 10:23:06.897673835 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04024,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19997,
+   "lon": -123.76047,
    "sog_kn": 0,
-   "cog": 357.3,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 09:53:36.330668988 +0000 UTC"
-  },
-  {
-   "mmsi": 367516350,
-   "name": "MISS MOLLY",
-   "lat": 46.19027,
-   "lon": -123.85673,
-   "sog_kn": 0.2,
-   "cog": 308.9,
-   "heading": 511,
-   "updated": "2026-11-25 09:53:40.913169628 +0000 UTC"
+   "updated": "2026-11-25 10:23:12.010499677 +0000 UTC"
   },
   {
    "mmsi": 367046890,
    "name": "PACIFIC FUTURE",
-   "lat": 46.16775,
-   "lon": -123.91438,
+   "lat": 46.16778,
+   "lon": -123.91446,
    "sog_kn": 0,
-   "cog": 212.2,
+   "cog": 269.4,
    "heading": 511,
-   "updated": "2026-11-25 09:53:22.377349139 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19034,
-   "lon": -123.82951,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-25 09:53:25.658296482 +0000 UTC"
-  },
-  {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.35888,
-   "lon": -124.71854,
-   "sog_kn": 5,
-   "cog": 154.7,
-   "heading": 165,
-   "updated": "2026-11-25 09:53:21.179380368 +0000 UTC"
+   "updated": "2026-11-25 10:23:21.564391987 +0000 UTC"
   }
  ]
 }
