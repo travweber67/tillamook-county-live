@@ -1,57 +1,76 @@
 {
- "fetched_at": "2026-11-25T17:22:49Z",
+ "fetched_at": "2026-11-25T17:52:50Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.2008,
-   "lon": -123.80754,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-25 17:23:38.893652131 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16814,
-   "lon": -123.9183,
-   "sog_kn": 3.3,
-   "cog": 180.4,
-   "heading": 1,
-   "updated": "2026-11-25 17:23:29.458906937 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.3046,
-   "lon": -124.04027,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-25 17:23:46.834362568 +0000 UTC"
+   "cog": 218.2,
+   "heading": 177,
+   "updated": "2026-11-25 17:53:18.502941042 +0000 UTC"
   },
   {
-   "mmsi": 368288370,
-   "name": "LEGENDZ",
-   "lat": 46.30611,
-   "lon": -124.04448,
-   "sog_kn": 0.5,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16873,
+   "lon": -123.91402,
+   "sog_kn": 0,
+   "cog": 40.3,
+   "heading": 96,
+   "updated": "2026-11-25 17:53:23.121238798 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18992,
+   "lon": -123.85422,
+   "sog_kn": 0,
+   "cog": 336.3,
+   "heading": 511,
+   "updated": "2026-11-25 17:53:30.459084129 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19034,
+   "lon": -123.82952,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-25 17:53:25.524226101 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.17253,
+   "lon": -124.45836,
+   "sog_kn": 1.3,
+   "cog": 287.4,
+   "heading": 216,
+   "updated": "2026-11-25 17:53:11.20344983 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 273.6,
+   "heading": 308,
+   "updated": "2026-11-25 17:53:27.974923512 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16849,
+   "lon": -123.91406,
+   "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-25 17:23:39.647363973 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19635,
-   "lon": -123.7971,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-25 17:23:37.224544956 +0000 UTC"
+   "updated": "2026-11-25 17:53:27.630489811 +0000 UTC"
   }
  ]
 }
