@@ -1,16 +1,67 @@
 {
- "fetched_at": "2026-11-25T07:22:41Z",
+ "fetched_at": "2026-11-25T07:52:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19033,
-   "lon": -123.82952,
+   "mmsi": 366979360,
+   "name": "ARTHUR FOSS",
+   "lat": 46.20061,
+   "lon": -123.75839,
+   "type_code": 31,
+   "type": "Towing",
+   "destination": "SEATTLE",
+   "updated": "2026-11-25 07:53:20.584749246 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16872,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 289.8,
+   "heading": 98,
+   "updated": "2026-11-25 07:53:02.405394237 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20622,
+   "lon": -123.80413,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-25 07:53:07.568610141 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16781,
+   "lon": -123.91438,
+   "sog_kn": 0,
+   "cog": 266.8,
+   "heading": 511,
+   "updated": "2026-11-25 07:53:11.871068485 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18996,
+   "lon": -123.85416,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-25 07:23:25.449042238 +0000 UTC"
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-25 07:53:28.5897886 +0000 UTC"
+  },
+  {
+   "mmsi": 366970430,
+   "name": "TRIUMPH II",
+   "lat": 46.18971,
+   "lon": -123.85402,
+   "sog_kn": 0.1,
+   "cog": 68,
+   "heading": 511,
+   "updated": "2026-11-25 07:53:18.66178986 +0000 UTC"
   }
  ]
 }
