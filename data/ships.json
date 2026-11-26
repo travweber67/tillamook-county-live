@@ -1,84 +1,47 @@
 {
- "fetched_at": "2026-11-26T02:52:57Z",
+ "fetched_at": "2026-11-26T03:22:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338424194,
-   "lat": 46.30559,
-   "lon": -124.03861,
-   "sog_kn": 0,
-   "cog": 71.3,
-   "heading": 511,
-   "updated": "2026-11-26 02:53:31.204188065 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.914,
+   "mmsi": 366954430,
+   "name": "CAPT RYAN",
+   "lat": 46.16724,
+   "lon": -123.91596,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-26 02:53:37.778102826 +0000 UTC"
+   "destination": "",
+   "updated": "2026-11-26 03:23:59.596795963 +0000 UTC"
   },
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19856,
-   "lon": -123.80883,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-26 02:53:38.705138424 +0000 UTC"
-  },
-  {
-   "mmsi": 367355270,
-   "name": "CALAMARI",
-   "lat": 46.16789,
-   "lon": -123.91434,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16557,
+   "lon": -123.92199,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 199.9,
    "heading": 511,
-   "updated": "2026-11-26 02:53:43.230437025 +0000 UTC"
+   "updated": "2026-11-26 03:24:09.545983498 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04025,
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16871,
+   "lon": -123.91402,
    "sog_kn": 0,
-   "cog": 148.7,
-   "heading": 511,
-   "updated": "2026-11-26 02:53:35.218397406 +0000 UTC"
+   "cog": 233.6,
+   "heading": 96,
+   "updated": "2026-11-26 03:24:01.249696424 +0000 UTC"
   },
   {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28145,
-   "lon": -124.04696,
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16776,
+   "lon": -123.91441,
    "sog_kn": 0,
-   "cog": 347.6,
+   "cog": 307,
    "heading": 511,
-   "updated": "2026-11-26 02:53:45.923105923 +0000 UTC"
-  },
-  {
-   "mmsi": 303324000,
-   "name": "TAASINGE",
-   "lat": 46.16829,
-   "lon": -123.91414,
-   "sog_kn": 0,
-   "cog": 82.4,
-   "heading": 511,
-   "updated": "2026-11-26 02:53:33.72763444 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16847,
-   "lon": -123.91404,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 02:53:25.746820995 +0000 UTC"
+   "updated": "2026-11-26 03:24:12.540231722 +0000 UTC"
   }
  ]
 }

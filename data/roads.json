@@ -1,12 +1,26 @@
 {
- "fetched_at": "2026-11-26T02:52:57Z",
+ "fetched_at": "2026-11-26T03:22:57Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "0 incidents in the county scope; 33 active statewide."
+   "note": "1 incidents in the county scope; 38 active statewide."
   }
  ],
- "incidents": [],
- "odot_active_statewide": 33
+ "incidents": [
+  {
+   "title": "Vehicle Incident \u2014 Crash",
+   "desc": "A crash has occurred. Prepare to slow or move over for worker safety. Estimated delay under 20 minutes.",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "ORE6, 3 miles West of Glenwood",
+   "route": "OR6",
+   "milepost": 36.0,
+   "lat": 45.64858,
+   "lon": -123.33196,
+   "start": "2026-11-25T19:05:45.633-08:00",
+   "updated": "2026-11-25T19:09:53-08:00",
+   "source": "ODOT TripCheck"
+  }
+ ],
+ "odot_active_statewide": 38
 }
