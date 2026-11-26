@@ -1,85 +1,46 @@
 {
- "fetched_at": "2026-11-26T18:53:09Z",
+ "fetched_at": "2026-11-26T19:23:10Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367648110,
-   "lat": 46.30461,
-   "lon": -124.04255,
-   "sog_kn": 0.1,
-   "cog": 35.3,
-   "heading": 511,
-   "updated": "2026-11-26 18:54:12.162671707 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.91402,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 18:53:43.700703598 +0000 UTC"
-  },
-  {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.19361,
-   "lon": -123.85292,
-   "sog_kn": 11.8,
-   "cog": 84.9,
-   "heading": 85,
-   "updated": "2026-11-26 18:53:48.272698932 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-26 18:54:10.050325332 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16779,
-   "lon": -123.91441,
+   "mmsi": 368063210,
+   "lat": 46.18729,
+   "lon": -123.86456,
    "sog_kn": 0,
-   "cog": 263.4,
+   "cog": 129.8,
    "heading": 511,
-   "updated": "2026-11-26 18:54:01.697239868 +0000 UTC"
+   "updated": "2026-11-26 19:23:57.857334954 +0000 UTC"
   },
   {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.23986,
-   "lon": -124.35129,
-   "sog_kn": 11.6,
-   "cog": 78.1,
-   "heading": 101,
-   "updated": "2026-11-26 18:54:14.871366184 +0000 UTC"
-  },
-  {
-   "mmsi": 367648240,
-   "name": "REDEEMER",
-   "lat": 46.30391,
-   "lon": -124.04084,
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.16843,
+   "lon": -123.91861,
    "sog_kn": 0,
-   "cog": 234.4,
-   "heading": 511,
-   "updated": "2026-11-26 18:54:09.051645942 +0000 UTC"
+   "cog": 5.8,
+   "heading": 348,
+   "updated": "2026-11-26 19:24:10.33437605 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 331.8,
-   "heading": 308,
-   "updated": "2026-11-26 18:54:08.135229977 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19379,
+   "lon": -123.84405,
+   "sog_kn": 8,
+   "cog": 85.5,
+   "heading": 91,
+   "updated": "2026-11-26 19:23:50.896216872 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18808,
+   "lon": -123.85903,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-26 19:23:50.194672747 +0000 UTC"
   }
  ]
 }
