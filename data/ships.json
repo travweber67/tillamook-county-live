@@ -1,84 +1,76 @@
 {
- "fetched_at": "2026-11-26T05:52:59Z",
+ "fetched_at": "2026-11-26T06:23:00Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367161930,
-   "lat": 46.16895,
-   "lon": -123.91389,
-   "sog_kn": 0.3,
-   "cog": 200.3,
-   "heading": 511,
-   "updated": "2026-11-26 05:54:02.04487388 +0000 UTC"
-  },
-  {
-   "mmsi": 368327020,
-   "lat": 46.27078,
-   "lon": -123.94662,
-   "sog_kn": 0.2,
-   "cog": 321.3,
-   "heading": 511,
-   "updated": "2026-11-26 05:53:55.680315501 +0000 UTC"
-  },
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19239,
-   "lon": -123.87596,
-   "sog_kn": 0.9,
-   "cog": 272.4,
-   "heading": 277,
-   "updated": "2026-11-26 05:53:47.209459947 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19056,
-   "lon": -123.85698,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-26 05:53:52.888385263 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.2178,
-   "lon": -123.78362,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-26 05:54:01.208952792 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91403,
+   "mmsi": 367617080,
+   "lat": 46.1674,
+   "lon": -123.91532,
    "sog_kn": 0,
-   "cog": 200.8,
-   "heading": 96,
-   "updated": "2026-11-26 05:53:42.177484277 +0000 UTC"
+   "cog": 305.2,
+   "heading": 511,
+   "updated": "2026-11-26 06:23:36.272206203 +0000 UTC"
   },
   {
-   "mmsi": 477854600,
-   "name": "SILVER JOAN",
-   "lat": 46.2154,
-   "lon": -124.86544,
-   "sog_kn": 13.2,
-   "cog": 0.8,
-   "heading": 357,
-   "updated": "2026-11-26 05:54:01.668605721 +0000 UTC"
+   "mmsi": 366979360,
+   "name": "ARTHUR FOSS",
+   "lat": 46.20059,
+   "lon": -123.7584,
+   "type_code": 31,
+   "type": "Towing",
+   "destination": "SEATTLE",
+   "updated": "2026-11-26 06:23:49.021841411 +0000 UTC"
+  },
+  {
+   "mmsi": 366954430,
+   "name": "CAPT RYAN",
+   "lat": 46.16724,
+   "lon": -123.9159,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 174,
+   "updated": "2026-11-26 06:23:57.369147149 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19997,
+   "lon": -123.76042,
+   "sog_kn": 0,
+   "cog": 318.9,
+   "heading": 511,
+   "updated": "2026-11-26 06:23:41.848256067 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20019,
+   "lon": -123.76128,
+   "sog_kn": 0,
+   "cog": 235.8,
+   "heading": 342,
+   "updated": "2026-11-26 06:23:44.255583236 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19638,
+   "lon": -123.79707,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-26 06:23:44.409901837 +0000 UTC"
   },
   {
    "mmsi": 369037000,
    "name": "TEXAS",
-   "lat": 46.28204,
-   "lon": -124.56423,
-   "sog_kn": 2.5,
-   "cog": 323.9,
+   "lat": 46.28855,
+   "lon": -124.581,
+   "sog_kn": 2.4,
+   "cog": 236.1,
    "heading": 209,
-   "updated": "2026-11-26 05:54:00.90750963 +0000 UTC"
+   "updated": "2026-11-26 06:23:49.829403086 +0000 UTC"
   }
  ]
 }
