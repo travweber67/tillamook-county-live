@@ -1,47 +1,45 @@
 {
- "fetched_at": "2026-11-26T03:22:57Z",
+ "fetched_at": "2026-11-26T03:52:57Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16724,
-   "lon": -123.91596,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16852,
+   "lon": -123.91404,
    "type_code": 30,
    "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-26 03:23:59.596795963 +0000 UTC"
+   "updated": "2026-11-26 03:53:46.955861658 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16557,
-   "lon": -123.92199,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16839,
+   "lon": -123.91836,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-26 03:53:44.438951343 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19637,
+   "lon": -123.79707,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-26 03:53:50.787105357 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16852,
+   "lon": -123.91405,
    "sog_kn": 0,
-   "cog": 199.9,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-26 03:24:09.545983498 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 233.6,
-   "heading": 96,
-   "updated": "2026-11-26 03:24:01.249696424 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16776,
-   "lon": -123.91441,
-   "sog_kn": 0,
-   "cog": 307,
-   "heading": 511,
-   "updated": "2026-11-26 03:24:12.540231722 +0000 UTC"
+   "updated": "2026-11-26 03:53:46.061234215 +0000 UTC"
   }
  ]
 }
