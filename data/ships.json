@@ -1,46 +1,46 @@
 {
- "fetched_at": "2026-11-26T19:23:10Z",
+ "fetched_at": "2026-11-26T19:29:26Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368063210,
-   "lat": 46.18729,
-   "lon": -123.86456,
+   "mmsi": 367498220,
+   "lat": 46.16724,
+   "lon": -123.91626,
    "sog_kn": 0,
-   "cog": 129.8,
+   "cog": 43.7,
    "heading": 511,
-   "updated": "2026-11-26 19:23:57.857334954 +0000 UTC"
+   "updated": "2026-11-26 19:29:39.220612571 +0000 UTC"
   },
   {
-   "mmsi": 367605150,
-   "name": "ASTORIA",
-   "lat": 46.16843,
-   "lon": -123.91861,
+   "mmsi": 338376911,
+   "name": "AMERICAN GIRL",
+   "lat": 46.16615,
+   "lon": -123.91807,
    "sog_kn": 0,
-   "cog": 5.8,
-   "heading": 348,
-   "updated": "2026-11-26 19:24:10.33437605 +0000 UTC"
+   "cog": 9.2,
+   "heading": 511,
+   "updated": "2026-11-26 19:29:37.675054774 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19379,
-   "lon": -123.84405,
-   "sog_kn": 8,
-   "cog": 85.5,
-   "heading": 91,
-   "updated": "2026-11-26 19:23:50.896216872 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.2015,
+   "lon": -123.8024,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-26 19:29:37.983212967 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18808,
-   "lon": -123.85903,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-26 19:23:50.194672747 +0000 UTC"
+   "mmsi": 367128220,
+   "name": "KATHY H",
+   "lat": 46.16721,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-26 19:30:07.427144313 +0000 UTC"
   }
  ]
 }
