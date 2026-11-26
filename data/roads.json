@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-26T12:23:04Z",
+ "fetched_at": "2026-11-26T12:53:05Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 31 active statewide."
+   "note": "2 incidents in the county scope; 31 active statewide."
   }
  ],
  "incidents": [
@@ -19,6 +19,19 @@
    "lon": -123.83372,
    "start": "2026-11-26T01:38:05.943-08:00",
    "updated": "2026-11-26T03:11:03-08:00",
+   "source": "ODOT TripCheck"
+  },
+  {
+   "title": "Vehicle Incident \u2014 Disabled Vehicle - Hazard",
+   "desc": "A disabled vehicle is creating a hazard. Prepare to slow or move over for worker safety. Estimated delay under 20 minutes.",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "ORE6, 1 mile East of Tillamook",
+   "route": "OR6",
+   "milepost": 0.5,
+   "lat": 45.45692,
+   "lon": -123.83372,
+   "start": "2026-11-26T04:06:24.82-08:00",
+   "updated": "2026-11-26T04:21:32-08:00",
    "source": "ODOT TripCheck"
   }
  ],
