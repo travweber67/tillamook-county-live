@@ -1,0 +1,255 @@
+{
+ "fetched_at": "2026-11-26T19:29:26Z",
+ "source": "National Weather Service gridpoint forecasts \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions",
+ "places": [
+  {
+   "id": "coast",
+   "label": "The Tillamook Coast",
+   "sub": "Garibaldi and the open water \u2014 all three bays work off this coast",
+   "status": "ok",
+   "wind_now": {
+    "mph": 20,
+    "gust_mph": 25,
+    "dir_deg": 230,
+    "src": "buoy",
+    "t": 1795719600000
+   },
+   "wind_series": [
+    {
+     "t": 1795719600000,
+     "mph": 20,
+     "gust_mph": 30,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795723200000,
+     "mph": 20,
+     "gust_mph": 29,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795726800000,
+     "mph": 18,
+     "gust_mph": 28,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795730400000,
+     "mph": 17,
+     "gust_mph": 26,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795734000000,
+     "mph": 16,
+     "gust_mph": 23,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795737600000,
+     "mph": 13,
+     "gust_mph": 21,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795741200000,
+     "mph": 12,
+     "gust_mph": 18,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795744800000,
+     "mph": 9,
+     "gust_mph": 17,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795748400000,
+     "mph": 8,
+     "gust_mph": 16,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795752000000,
+     "mph": 8,
+     "gust_mph": 15,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795755600000,
+     "mph": 7,
+     "gust_mph": 14,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795759200000,
+     "mph": 6,
+     "gust_mph": 13,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795762800000,
+     "mph": 5,
+     "gust_mph": 12,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795766400000,
+     "mph": 5,
+     "gust_mph": 10,
+     "dir_deg": 220
+    },
+    {
+     "t": 1795770000000,
+     "mph": 3,
+     "gust_mph": 8,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795773600000,
+     "mph": 3,
+     "gust_mph": 8,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795777200000,
+     "mph": 2,
+     "gust_mph": 7,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795780800000,
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795784400000,
+     "mph": 1,
+     "gust_mph": 6,
+     "dir_deg": 240
+    },
+    {
+     "t": 1795788000000,
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 230
+    },
+    {
+     "t": 1795791600000,
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 90
+    },
+    {
+     "t": 1795795200000,
+     "mph": 2,
+     "gust_mph": 6,
+     "dir_deg": 110
+    },
+    {
+     "t": 1795798800000,
+     "mph": 2,
+     "gust_mph": 7,
+     "dir_deg": 80
+    },
+    {
+     "t": 1795802400000,
+     "mph": 3,
+     "gust_mph": 7,
+     "dir_deg": 50
+    },
+    {
+     "t": 1795806000000,
+     "mph": 3,
+     "gust_mph": 7,
+     "dir_deg": 40
+    }
+   ],
+   "wave_now": {
+    "ft": 16.1,
+    "dir_deg": 213,
+    "period_s": 11.0,
+    "src": "buoy",
+    "t": 1795719000000
+   },
+   "wave_series": [
+    {
+     "t": 1795737600000,
+     "ft": 3.0
+    },
+    {
+     "t": 1795748400000,
+     "ft": 2.0
+    },
+    {
+     "t": 1795759200000,
+     "ft": 1.0
+    },
+    {
+     "t": 1795780800000,
+     "ft": 0.0
+    },
+    {
+     "t": 1795802400000,
+     "ft": 1.0
+    },
+    {
+     "t": 1795813200000,
+     "ft": 2.0
+    },
+    {
+     "t": 1795834800000,
+     "ft": 1.0
+    },
+    {
+     "t": 1795845600000,
+     "ft": 0.0
+    }
+   ],
+   "tides": [
+    {
+     "label": "Garibaldi",
+     "state": "rising",
+     "cur_ft": 8.9,
+     "next": {
+      "type": "H",
+      "v": 10.051,
+      "t": 1795727460000
+     }
+    },
+    {
+     "label": "Netarts",
+     "state": "rising",
+     "cur_ft": 7.3,
+     "next": {
+      "type": "H",
+      "v": 8.295,
+      "t": 1795726920000
+     }
+    },
+    {
+     "label": "Nehalem",
+     "state": "rising",
+     "cur_ft": 7.4,
+     "next": {
+      "type": "H",
+      "v": 8.718,
+      "t": 1795726920000
+     }
+    }
+   ],
+   "river": null,
+   "zones": [
+    {
+     "name": "Cape Shoalwater to Cape Falcon \u2014 Today",
+     "text": "S wind 30 to 40 kt with gusts up to 50 kt, becoming SW 15 to 20 kt with gusts up to 25 kt. Seas 14 to 18 ft, subsiding to 12 to 15 ft this afternoon. Wave Detail: SW 16 ft at 13 seconds. A slight chance of tstms early this morning. Rain this morning, then a chance of rain this afternoon."
+    },
+    {
+     "name": "Cape Falcon to Cape Foulweather \u2014 Today",
+     "text": "S wind 30 to 40 kt with gusts up to 50 kt, becoming SW 15 to 20 kt with gusts up to 25 kt. Seas 16 to 19 ft, subsiding to 13 to 15 ft. Wave Detail: SW 17 ft at 13 seconds. Rain this morning, then a chance of rain this afternoon."
+    }
+   ]
+  }
+ ]
+}
