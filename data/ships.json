@@ -1,46 +1,37 @@
 {
- "fetched_at": "2026-11-26T07:23:01Z",
+ "fetched_at": "2026-11-26T07:53:01Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338376911,
-   "lat": 46.16613,
-   "lon": -123.91809,
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.19215,
+   "lon": -123.87729,
+   "sog_kn": 0.7,
+   "cog": 273.6,
+   "heading": 257,
+   "updated": "2026-11-26 07:54:06.13689738 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16775,
+   "lon": -123.91442,
    "sog_kn": 0,
-   "cog": 239.2,
+   "cog": 286.6,
    "heading": 511,
-   "updated": "2026-11-26 07:23:36.914157498 +0000 UTC"
+   "updated": "2026-11-26 07:54:01.533298112 +0000 UTC"
   },
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.20106,
-   "lon": -123.8053,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-26 07:23:37.980211575 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20799,
-   "lon": -123.80597,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-26 07:23:40.894337177 +0000 UTC"
-  },
-  {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.30476,
-   "lon": -124.60804,
-   "sog_kn": 1.6,
-   "cog": 275.9,
-   "heading": 200,
-   "updated": "2026-11-26 07:23:42.983056021 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85904,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-26 07:54:02.529921141 +0000 UTC"
   }
  ]
 }
