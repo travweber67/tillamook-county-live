@@ -1,65 +1,68 @@
 {
- "fetched_at": "2026-11-26T04:22:58Z",
+ "fetched_at": "2026-11-26T04:52:58Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303324000,
-   "lat": 46.1683,
-   "lon": -123.91416,
+   "mmsi": 367355270,
+   "lat": 46.16793,
+   "lon": -123.91434,
    "sog_kn": 0,
-   "cog": 82.4,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-26 04:23:28.964109662 +0000 UTC"
+   "updated": "2026-11-26 04:53:43.210912603 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16838,
-   "lon": -123.91839,
-   "sog_kn": 0,
-   "cog": 21.4,
-   "heading": 350,
-   "updated": "2026-11-26 04:23:30.10676302 +0000 UTC"
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28139,
+   "lon": -124.04672,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-26 04:53:34.036136381 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 185.7,
-   "heading": 177,
-   "updated": "2026-11-26 04:23:29.460113354 +0000 UTC"
-  },
-  {
-   "mmsi": 311001710,
-   "name": "HON HENRY NR JACKMAN",
-   "lat": 45.93441,
-   "lon": -124.41573,
-   "sog_kn": 3.2,
-   "cog": 200.1,
-   "heading": 191,
-   "updated": "2026-11-26 04:23:36.164608988 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19864,
+   "lon": -123.80895,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-26 04:53:39.90943286 +0000 UTC"
   },
   {
    "mmsi": 367037240,
    "name": "IRON LADY",
-   "lat": 46.16809,
-   "lon": -123.91422,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 04:23:34.827372858 +0000 UTC"
+   "lat": 46.16813,
+   "lon": -123.91425,
+   "sog_kn": 0,
+   "cog": 192.3,
+   "heading": 511,
+   "updated": "2026-11-26 04:53:46.367439856 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18995,
-   "lon": -123.85419,
+   "mmsi": 367516350,
+   "name": "MISS MOLLY",
+   "lat": 46.19027,
+   "lon": -123.85675,
    "sog_kn": 0,
-   "cog": 263.6,
+   "cog": 331.9,
    "heading": 511,
-   "updated": "2026-11-26 04:23:31.77964776 +0000 UTC"
+   "updated": "2026-11-26 04:53:29.907253504 +0000 UTC"
+  },
+  {
+   "mmsi": 477854600,
+   "name": "SILVER JOAN",
+   "lat": 45.99648,
+   "lon": -124.86799,
+   "type_code": 80,
+   "type": "Tanker",
+   "destination": "US OTS",
+   "updated": "2026-11-26 04:53:41.450821572 +0000 UTC",
+   "sog_kn": 13.3,
+   "cog": 2,
+   "heading": 358
   }
  ]
 }
