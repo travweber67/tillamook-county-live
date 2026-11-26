@@ -1,75 +1,84 @@
 {
- "fetched_at": "2026-11-26T15:23:06Z",
+ "fetched_at": "2026-11-26T15:53:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367375750,
-   "lat": 46.18878,
-   "lon": -123.85896,
-   "sog_kn": 0,
-   "cog": 183.4,
+   "mmsi": 338376911,
+   "lat": 46.16613,
+   "lon": -123.91807,
+   "sog_kn": 0.1,
+   "cog": 174.4,
    "heading": 511,
-   "updated": "2026-11-26 15:23:23.353557465 +0000 UTC"
+   "updated": "2026-11-26 15:53:38.474677198 +0000 UTC"
+  },
+  {
+   "mmsi": 368063210,
+   "lat": 46.18731,
+   "lon": -123.86451,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-26 15:53:57.757209593 +0000 UTC"
   },
   {
    "mmsi": 368188830,
    "name": "ANITA D",
    "lat": 46.16855,
    "lon": -123.91399,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-26 15:23:46.866728591 +0000 UTC"
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 15:54:04.993358836 +0000 UTC"
   },
   {
-   "mmsi": 311001710,
-   "name": "HON HENRY NR JACKMAN",
-   "lat": 46.11475,
-   "lon": -124.45203,
-   "sog_kn": 6.5,
-   "cog": 179.6,
-   "heading": 183,
-   "updated": "2026-11-26 15:23:29.083207132 +0000 UTC"
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 46.14273,
+   "lon": -124.3304,
+   "sog_kn": 1.3,
+   "cog": 290.9,
+   "heading": 218,
+   "updated": "2026-11-26 15:53:50.281751009 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20574,
-   "lon": -123.80986,
-   "sog_kn": 0.1,
-   "cog": 72.2,
-   "heading": 85,
-   "updated": "2026-11-26 15:23:34.727131573 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19999,
+   "lon": -123.80712,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-26 15:53:40.92545078 +0000 UTC"
   },
   {
    "mmsi": 367037240,
    "name": "IRON LADY",
-   "lat": 46.16814,
-   "lon": -123.91421,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 15:23:31.690882772 +0000 UTC"
+   "lat": 46.16811,
+   "lon": -123.91426,
+   "sog_kn": 0,
+   "cog": 174.3,
+   "heading": 511,
+   "updated": "2026-11-26 15:53:57.606091254 +0000 UTC"
   },
   {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.29916,
-   "lon": -124.70044,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US KAM",
-   "updated": "2026-11-26 15:23:43.319764363 +0000 UTC"
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.28154,
+   "lon": -124.04689,
+   "sog_kn": 0.1,
+   "cog": 36.5,
+   "heading": 511,
+   "updated": "2026-11-26 15:53:48.158848934 +0000 UTC"
   },
   {
-   "mmsi": 636020172,
-   "name": "VITA OLYMPIC",
-   "lat": 46.26874,
-   "lon": -124.47667,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-26 15:23:20.7812046 +0000 UTC"
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16779,
+   "lon": -123.91437,
+   "sog_kn": 0,
+   "cog": 298.5,
+   "heading": 511,
+   "updated": "2026-11-26 15:53:51.847912282 +0000 UTC"
   }
  ]
 }
