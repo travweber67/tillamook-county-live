@@ -1,83 +1,46 @@
 {
- "fetched_at": "2026-11-26T21:53:13Z",
+ "fetched_at": "2026-11-26T22:23:13Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367358520,
-   "lat": 46.16722,
-   "lon": -123.91753,
-   "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-26 21:53:54.368042237 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.1684,
+   "lon": -123.91837,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-26 22:23:32.143815568 +0000 UTC"
   },
   {
-   "mmsi": 368063210,
-   "lat": 46.18731,
-   "lon": -123.86455,
-   "sog_kn": 0,
-   "cog": 129.8,
-   "heading": 511,
-   "updated": "2026-11-26 21:53:57.292128541 +0000 UTC"
-  },
-  {
-   "mmsi": 368327020,
-   "lat": 46.27074,
-   "lon": -123.94661,
-   "sog_kn": 0.2,
-   "cog": 190.5,
-   "heading": 511,
-   "updated": "2026-11-26 21:54:06.353225054 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 9.7,
-   "heading": 511,
-   "updated": "2026-11-26 21:53:46.266879408 +0000 UTC"
-  },
-  {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16725,
-   "lon": -123.91594,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-26 21:54:00.851424152 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16812,
-   "lon": -123.91429,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19996,
+   "lon": -123.76046,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-26 21:53:43.697140554 +0000 UTC"
+   "updated": "2026-11-26 22:23:30.807632595 +0000 UTC"
   },
   {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28146,
-   "lon": -124.04696,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-26 21:53:45.569497284 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18994,
+   "lon": -123.85421,
+   "sog_kn": 0,
+   "cog": 303.7,
+   "heading": 511,
+   "updated": "2026-11-26 22:23:34.775003656 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18808,
-   "lon": -123.85907,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-26 21:53:55.26716104 +0000 UTC"
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.1684,
+   "lon": -123.91413,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-26 22:23:57.737956232 +0000 UTC"
   }
  ]
 }
