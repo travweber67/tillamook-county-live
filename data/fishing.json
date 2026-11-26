@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T19:29:26Z",
+ "fetched_at": "2026-11-26T19:43:05Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions",
  "places": [
   {
@@ -211,17 +211,18 @@
     {
      "label": "Garibaldi",
      "state": "rising",
-     "cur_ft": 8.9,
+     "cur_ft": 9.2,
      "next": {
       "type": "H",
       "v": 10.051,
-      "t": 1795727460000
+      "t": 1795727460000,
+      "king": true
      }
     },
     {
      "label": "Netarts",
      "state": "rising",
-     "cur_ft": 7.3,
+     "cur_ft": 7.5,
      "next": {
       "type": "H",
       "v": 8.295,
@@ -231,7 +232,7 @@
     {
      "label": "Nehalem",
      "state": "rising",
-     "cur_ft": 7.4,
+     "cur_ft": 7.7,
      "next": {
       "type": "H",
       "v": 8.718,
