@@ -1,48 +1,84 @@
 {
- "fetched_at": "2026-11-26T02:22:56Z",
+ "fetched_at": "2026-11-26T02:52:57Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367375750,
-   "lat": 46.18877,
-   "lon": -123.85897,
+   "mmsi": 338424194,
+   "lat": 46.30559,
+   "lon": -124.03861,
    "sog_kn": 0,
-   "cog": 34.7,
+   "cog": 71.3,
    "heading": 511,
-   "updated": "2026-11-26 02:23:22.002941867 +0000 UTC"
+   "updated": "2026-11-26 02:53:31.204188065 +0000 UTC"
+  },
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16853,
+   "lon": -123.914,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 02:53:37.778102826 +0000 UTC"
+  },
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19856,
+   "lon": -123.80883,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-26 02:53:38.705138424 +0000 UTC"
+  },
+  {
+   "mmsi": 367355270,
+   "name": "CALAMARI",
+   "lat": 46.16789,
+   "lon": -123.91434,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-26 02:53:43.230437025 +0000 UTC"
   },
   {
    "mmsi": 367544180,
    "name": "JEANNE ARAIN",
-   "lat": 46.30465,
-   "lon": -124.04026,
+   "lat": 46.30463,
+   "lon": -124.04025,
+   "sog_kn": 0,
+   "cog": 148.7,
+   "heading": 511,
+   "updated": "2026-11-26 02:53:35.218397406 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.28145,
+   "lon": -124.04696,
+   "sog_kn": 0,
+   "cog": 347.6,
+   "heading": 511,
+   "updated": "2026-11-26 02:53:45.923105923 +0000 UTC"
+  },
+  {
+   "mmsi": 303324000,
+   "name": "TAASINGE",
+   "lat": 46.16829,
+   "lon": -123.91414,
+   "sog_kn": 0,
+   "cog": 82.4,
+   "heading": 511,
+   "updated": "2026-11-26 02:53:33.72763444 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16847,
+   "lon": -123.91404,
    "type_code": 30,
    "type": "Fishing",
-   "updated": "2026-11-26 02:23:12.942221722 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18995,
-   "lon": -123.85419,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-26 02:23:33.216928501 +0000 UTC",
-   "sog_kn": 0,
-   "cog": 288.1,
-   "heading": 511
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18812,
-   "lon": -123.86172,
-   "sog_kn": 0,
-   "cog": 257.2,
-   "heading": 307,
-   "updated": "2026-11-26 02:23:17.658976284 +0000 UTC"
+   "updated": "2026-11-26 02:53:25.746820995 +0000 UTC"
   }
  ]
 }
