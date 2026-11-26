@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T20:23:11Z",
+ "fetched_at": "2026-11-26T20:53:11Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions",
  "places": [
   {
@@ -8,11 +8,11 @@
    "sub": "Garibaldi and the open water \u2014 all three bays work off this coast",
    "status": "ok",
    "wind_now": {
-    "mph": 16,
-    "gust_mph": 22,
-    "dir_deg": 230,
-    "src": "buoy",
-    "t": 1795721400000
+    "mph": 20,
+    "gust_mph": 29,
+    "dir_deg": 220,
+    "src": "forecast",
+    "t": 1795723200000
    },
    "wind_series": [
     {
@@ -167,18 +167,18 @@
     }
    ],
    "wave_now": {
-    "ft": 16.4,
-    "dir_deg": 228,
+    "ft": 16.1,
+    "dir_deg": 231,
     "period_s": 11.0,
     "src": "buoy",
-    "t": 1795720800000
+    "t": 1795723800000
    },
    "wave_series": [],
    "tides": [
     {
      "label": "Garibaldi",
      "state": "rising",
-     "cur_ft": 9.7,
+     "cur_ft": 10.0,
      "next": {
       "type": "H",
       "v": 10.051,
@@ -189,7 +189,7 @@
     {
      "label": "Netarts",
      "state": "rising",
-     "cur_ft": 8.0,
+     "cur_ft": 8.2,
      "next": {
       "type": "H",
       "v": 8.295,
@@ -199,7 +199,7 @@
     {
      "label": "Nehalem",
      "state": "rising",
-     "cur_ft": 8.4,
+     "cur_ft": 8.7,
      "next": {
       "type": "H",
       "v": 8.718,

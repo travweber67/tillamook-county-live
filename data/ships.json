@@ -1,65 +1,37 @@
 {
- "fetched_at": "2026-11-26T20:23:11Z",
+ "fetched_at": "2026-11-26T20:53:11Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367358520,
-   "lat": 46.16722,
-   "lon": -123.91751,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16809,
+   "lon": -123.91425,
    "sog_kn": 0,
-   "cog": 160.7,
+   "cog": 189.3,
    "heading": 511,
-   "updated": "2026-11-26 20:23:55.232229703 +0000 UTC"
+   "updated": "2026-11-26 20:53:52.953143929 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28122,
-   "lon": -124.04686,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-26 20:23:46.088305899 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.1684,
-   "lon": -123.9184,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30461,
+   "lon": -124.04027,
    "sog_kn": 0,
-   "cog": 21.4,
-   "heading": 350,
-   "updated": "2026-11-26 20:24:09.760435777 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19994,
-   "lon": -123.7605,
-   "sog_kn": 0,
-   "cog": 349.5,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-26 20:24:12.022019201 +0000 UTC"
+   "updated": "2026-11-26 20:53:45.461312945 +0000 UTC"
   },
   {
    "mmsi": 209243000,
    "name": "PLATANOS",
-   "lat": 46.25686,
-   "lon": -124.06197,
-   "sog_kn": 12.8,
-   "cog": 83.5,
-   "heading": 86,
-   "updated": "2026-11-26 20:23:45.2459108 +0000 UTC"
-  },
-  {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85524,
-   "sog_kn": 0.1,
-   "cog": 9.2,
-   "heading": 511,
-   "updated": "2026-11-26 20:23:57.354263046 +0000 UTC"
+   "lat": 46.20389,
+   "lon": -123.93726,
+   "sog_kn": 12.6,
+   "cog": 133.1,
+   "heading": 136,
+   "updated": "2026-11-26 20:54:05.460428952 +0000 UTC"
   }
  ]
 }
