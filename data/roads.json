@@ -1,26 +1,12 @@
 {
- "fetched_at": "2026-11-26T23:23:14Z",
+ "fetched_at": "2026-11-26T23:53:14Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 33 active statewide."
+   "note": "0 incidents in the county scope; 33 active statewide."
   }
  ],
- "incidents": [
-  {
-   "title": "Obstruction \u2014 High-Water",
-   "desc": "High water. Prepare to slow. No to Minimum Delay.",
-   "impact": "No to Minimum Delay",
-   "place": "ORE6, 1 mile East of Tillamook",
-   "route": "OR6",
-   "milepost": 0.5,
-   "lat": 45.45692,
-   "lon": -123.83372,
-   "start": "2026-11-26T01:38:05.943-08:00",
-   "updated": "2026-11-26T06:38:52-08:00",
-   "source": "ODOT TripCheck"
-  }
- ],
+ "incidents": [],
  "odot_active_statewide": 33
 }

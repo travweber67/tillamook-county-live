@@ -1,49 +1,25 @@
 {
- "fetched_at": "2026-11-26T23:23:14Z",
+ "fetched_at": "2026-11-26T23:53:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28121,
-   "lon": -124.04686,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-26 23:23:45.077203146 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20605,
-   "lon": -123.80879,
-   "sog_kn": 0.7,
-   "cog": 320.8,
-   "heading": 38,
-   "updated": "2026-11-26 23:23:33.271724933 +0000 UTC"
-  },
-  {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.20951,
-   "lon": -123.79978,
-   "sog_kn": 0.2,
-   "cog": 196.6,
-   "heading": 98,
-   "updated": "2026-11-26 23:23:48.045687713 +0000 UTC",
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US KAM"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18992,
-   "lon": -123.85419,
+   "mmsi": 367084780,
+   "lat": 46.18685,
+   "lon": -123.86376,
    "sog_kn": 0,
-   "cog": 312.1,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-26 23:23:34.980376406 +0000 UTC"
+   "updated": "2026-11-26 23:54:57.144814667 +0000 UTC"
+  },
+  {
+   "mmsi": 368444690,
+   "lat": 46.16643,
+   "lon": -123.91726,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-26 23:54:48.9090884 +0000 UTC"
   }
  ]
 }
