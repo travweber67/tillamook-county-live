@@ -1,56 +1,48 @@
 {
- "fetched_at": "2026-11-26T01:52:56Z",
+ "fetched_at": "2026-11-26T02:22:56Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 432666000,
-   "name": "AEGEAN HIGHWAY",
-   "lat": 46.16783,
-   "lon": -124.62856,
-   "sog_kn": 10,
-   "cog": 337.3,
-   "heading": 329,
-   "updated": "2026-11-26 01:54:00.031619533 +0000 UTC"
+   "mmsi": 367375750,
+   "lat": 46.18877,
+   "lon": -123.85897,
+   "sog_kn": 0,
+   "cog": 34.7,
+   "heading": 511,
+   "updated": "2026-11-26 02:23:22.002941867 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16839,
-   "lon": -123.91837,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30465,
+   "lon": -124.04026,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 02:23:12.942221722 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18995,
+   "lon": -123.85419,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-26 01:53:48.005165545 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20473,
-   "lon": -123.81115,
-   "sog_kn": 0.3,
-   "cog": 163,
-   "heading": 77,
-   "updated": "2026-11-26 01:53:33.372268756 +0000 UTC"
-  },
-  {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28142,
-   "lon": -124.04704,
-   "sog_kn": 0.1,
-   "cog": 351.9,
-   "heading": 511,
-   "updated": "2026-11-26 01:53:47.456553317 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19995,
-   "lon": -123.76042,
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-26 02:23:33.216928501 +0000 UTC",
    "sog_kn": 0,
-   "cog": 8.7,
-   "heading": 511,
-   "updated": "2026-11-26 01:53:50.443876721 +0000 UTC"
+   "cog": 288.1,
+   "heading": 511
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18812,
+   "lon": -123.86172,
+   "sog_kn": 0,
+   "cog": 257.2,
+   "heading": 307,
+   "updated": "2026-11-26 02:23:17.658976284 +0000 UTC"
   }
  ]
 }
