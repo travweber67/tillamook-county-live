@@ -1,6 +1,45 @@
 {
- "fetched_at": "2026-11-26T08:23:01Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T08:53:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16855,
+   "lon": -123.91397,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 08:53:45.574789988 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 262.9,
+   "heading": 177,
+   "updated": "2026-11-26 08:53:48.892313219 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76042,
+   "sog_kn": 0,
+   "cog": 352.1,
+   "heading": 511,
+   "updated": "2026-11-26 08:54:00.601306049 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19032,
+   "lon": -123.8295,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-26 08:54:03.593346975 +0000 UTC"
+  }
+ ]
 }
