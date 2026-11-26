@@ -1,63 +1,85 @@
 {
- "fetched_at": "2026-11-26T18:23:09Z",
+ "fetched_at": "2026-11-26T18:53:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16791,
-   "lon": -123.91433,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 367648110,
+   "lat": 46.30461,
+   "lon": -124.04255,
+   "sog_kn": 0.1,
+   "cog": 35.3,
    "heading": 511,
-   "updated": "2026-11-26 18:23:41.647698815 +0000 UTC"
+   "updated": "2026-11-26 18:54:12.162671707 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "lat": 46.18864,
-   "lon": -123.85524,
-   "sog_kn": 0,
-   "cog": 263,
-   "heading": 511,
-   "updated": "2026-11-26 18:23:58.122067536 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16854,
+   "lon": -123.91402,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 18:53:43.700703598 +0000 UTC"
   },
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19056,
-   "lon": -123.85699,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-26 18:24:02.776717035 +0000 UTC"
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 46.19361,
+   "lon": -123.85292,
+   "sog_kn": 11.8,
+   "cog": 84.9,
+   "heading": 85,
+   "updated": "2026-11-26 18:53:48.272698932 +0000 UTC"
   },
   {
    "mmsi": 367156340,
    "name": "GRANADA",
-   "lat": 46.16727,
-   "lon": -123.91788,
+   "lat": 46.16723,
+   "lon": -123.9179,
    "type_code": 30,
    "type": "Fishing",
    "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-26 18:24:09.883497096 +0000 UTC"
+   "updated": "2026-11-26 18:54:10.050325332 +0000 UTC"
   },
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16813,
-   "lon": -123.91424,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 18:23:58.813009012 +0000 UTC"
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16779,
+   "lon": -123.91441,
+   "sog_kn": 0,
+   "cog": 263.4,
+   "heading": 511,
+   "updated": "2026-11-26 18:54:01.697239868 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.20019,
-   "lon": -123.76128,
-   "sog_kn": 0.1,
-   "cog": 312.6,
-   "heading": 341,
-   "updated": "2026-11-26 18:24:04.646928214 +0000 UTC"
+   "mmsi": 209243000,
+   "name": "PLATANOS",
+   "lat": 46.23986,
+   "lon": -124.35129,
+   "sog_kn": 11.6,
+   "cog": 78.1,
+   "heading": 101,
+   "updated": "2026-11-26 18:54:14.871366184 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30391,
+   "lon": -124.04084,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-26 18:54:09.051645942 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86174,
+   "sog_kn": 0,
+   "cog": 331.8,
+   "heading": 308,
+   "updated": "2026-11-26 18:54:08.135229977 +0000 UTC"
   }
  ]
 }
