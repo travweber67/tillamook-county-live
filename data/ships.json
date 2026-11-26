@@ -1,84 +1,77 @@
 {
- "fetched_at": "2026-11-26T15:53:07Z",
+ "fetched_at": "2026-11-26T16:23:07Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338376911,
-   "lat": 46.16613,
-   "lon": -123.91807,
-   "sog_kn": 0.1,
-   "cog": 174.4,
-   "heading": 511,
-   "updated": "2026-11-26 15:53:38.474677198 +0000 UTC"
-  },
-  {
-   "mmsi": 368063210,
-   "lat": 46.18731,
-   "lon": -123.86451,
+   "mmsi": 367358520,
+   "name": "ASHLYNE",
+   "lat": 46.16722,
+   "lon": -123.91752,
    "sog_kn": 0,
-   "cog": 129.8,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-26 15:53:57.757209593 +0000 UTC"
+   "updated": "2026-11-26 16:23:54.55741109 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91399,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 15:54:04.993358836 +0000 UTC"
-  },
-  {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.14273,
-   "lon": -124.3304,
-   "sog_kn": 1.3,
-   "cog": 290.9,
-   "heading": 218,
-   "updated": "2026-11-26 15:53:50.281751009 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19999,
-   "lon": -123.80712,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-26 15:53:40.92545078 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91426,
+   "mmsi": 366954430,
+   "name": "CAPT RYAN",
+   "lat": 46.16723,
+   "lon": -123.91591,
    "sog_kn": 0,
-   "cog": 174.3,
+   "cog": 175.7,
+   "heading": 176,
+   "updated": "2026-11-26 16:23:58.443081467 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16558,
+   "lon": -123.92198,
+   "sog_kn": 0,
+   "cog": 174.5,
    "heading": 511,
-   "updated": "2026-11-26 15:53:57.606091254 +0000 UTC"
+   "updated": "2026-11-26 16:23:59.045841018 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16872,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 276.1,
+   "heading": 96,
+   "updated": "2026-11-26 16:23:52.336761668 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30462,
+   "lon": -124.04024,
+   "sog_kn": 0,
+   "cog": 170,
+   "heading": 511,
+   "updated": "2026-11-26 16:24:08.44048418 +0000 UTC"
   },
   {
    "mmsi": 366999936,
    "name": "MLB 47283",
-   "lat": 46.28154,
-   "lon": -124.04689,
-   "sog_kn": 0.1,
-   "cog": 36.5,
+   "lat": 46.2729,
+   "lon": -124.0309,
+   "sog_kn": 21.9,
+   "cog": 169.1,
    "heading": 511,
-   "updated": "2026-11-26 15:53:48.158848934 +0000 UTC"
+   "updated": "2026-11-26 16:24:05.913786161 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16779,
-   "lon": -123.91437,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76043,
    "sog_kn": 0,
-   "cog": 298.5,
+   "cog": 173.7,
    "heading": 511,
-   "updated": "2026-11-26 15:53:51.847912282 +0000 UTC"
+   "updated": "2026-11-26 16:24:01.060655809 +0000 UTC"
   }
  ]
 }

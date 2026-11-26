@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T15:54:13Z",
+ "fetched_at": "2026-11-26T16:24:17Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -13,6 +13,15 @@
   }
  ],
  "stories": [
+  {
+   "title": "Fraser Road – King Tide Traffic Advisory & Intermittent Closures",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/fraser-road-king-tide-traffic-advisory-intermittent-closures/article_9ad512e6-8e74-47da-8823-6427e3ab0625.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/bd/6bd39ce6-8dc1-11ec-a8d8-8bc2e0e92e2d/620acaff4d035.image.jpg?resize=300%2C158",
+   "date": "2026-11-24",
+   "summary": "Due to the upcoming king tides and anticipated high water levels along Tillamook Bay, Fraser Road will be closed during high tides (greater than 8.8 ft) due to potential flooding and unsafe road conditions.",
+   "tier": "high"
+  },
   {
    "title": "A King Tide Wave Nearly Took a Man and His Dog at Cannon Beach",
    "source": "Tillamook County Live",
@@ -257,15 +266,6 @@
    "date": "2026-11-24",
    "summary": "A new federal option will allow Oregon to delay enforcement of work rules for six months, ensuring Oregon Health Plan members do not lose coverage for failing to meet new requirements while...",
    "tier": "useful"
-  },
-  {
-   "title": "POET-TREE: A favorite famous poem that defies nature",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/poet-tree-a-favorite-famous-poem-that-defies-nature/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/20261107_085229-scaled.jpg",
-   "date": "2026-11-26",
-   "summary": "Submitted by Vic Affolter As a change of pace I’m sending you one of my nature-loving favorite poems with a bit of the back story. I don’t want your readers to...",
-   "tier": "routine"
   },
   {
    "title": "TILLAMOOK COUNTY PARKS DEPARTMENT: Important Safety and Maintenance Notice – Netarts Boat Launch Use Advisory",
