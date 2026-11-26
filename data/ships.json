@@ -1,6 +1,57 @@
 {
- "fetched_at": "2026-11-26T09:23:02Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-26T09:53:02Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20169,
+   "lon": -123.80261,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-26 09:53:40.9056569 +0000 UTC"
+  },
+  {
+   "mmsi": 367128220,
+   "name": "KATHY H",
+   "lat": 46.16722,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-26 09:54:05.847771835 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16774,
+   "lon": -123.91437,
+   "sog_kn": 0,
+   "cog": 218.6,
+   "heading": 511,
+   "updated": "2026-11-26 09:53:54.596968484 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30391,
+   "lon": -124.04083,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-26 09:54:09.069154199 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.25688,
+   "lon": -124.68461,
+   "sog_kn": 0.6,
+   "cog": 217.7,
+   "heading": 210,
+   "updated": "2026-11-26 09:54:10.770964376 +0000 UTC"
+  }
+ ]
 }
