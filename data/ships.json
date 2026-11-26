@@ -1,44 +1,46 @@
 {
- "fetched_at": "2026-11-26T11:53:04Z",
+ "fetched_at": "2026-11-26T12:23:04Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 303324000,
-   "lat": 46.16829,
-   "lon": -123.91415,
+   "mmsi": 367358520,
+   "lat": 46.1672,
+   "lon": -123.91753,
    "sog_kn": 0,
-   "cog": 82.4,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-26 11:53:32.895060371 +0000 UTC"
+   "updated": "2026-11-26 12:23:54.640735747 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16856,
-   "lon": -123.91404,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-26 11:53:45.788601809 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.20241,
-   "lon": -123.80505,
+   "mmsi": 209243000,
+   "name": "PLATANOS",
+   "lat": 45.85851,
+   "lon": -124.90741,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-26 11:53:41.590726844 +0000 UTC"
+   "destination": "US KAM",
+   "updated": "2026-11-26 12:23:49.804671174 +0000 UTC"
   },
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19051,
-   "lon": -123.85695,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-26 11:53:50.144994765 +0000 UTC"
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18993,
+   "lon": -123.85416,
+   "sog_kn": 0,
+   "cog": 267.7,
+   "heading": 511,
+   "updated": "2026-11-26 12:23:33.989966626 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.2565,
+   "lon": -124.74472,
+   "sog_kn": 3,
+   "cog": 198.4,
+   "heading": 137,
+   "updated": "2026-11-26 12:23:56.281424485 +0000 UTC"
   }
  ]
 }
