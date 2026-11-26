@@ -1,36 +1,44 @@
 {
- "fetched_at": "2026-11-26T11:23:03Z",
+ "fetched_at": "2026-11-26T11:53:04Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367358520,
-   "lat": 46.16721,
-   "lon": -123.91752,
+   "mmsi": 303324000,
+   "lat": 46.16829,
+   "lon": -123.91415,
    "sog_kn": 0,
-   "cog": 160.7,
+   "cog": 82.4,
    "heading": 511,
-   "updated": "2026-11-26 11:23:57.069109232 +0000 UTC"
+   "updated": "2026-11-26 11:53:32.895060371 +0000 UTC"
+  },
+  {
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16856,
+   "lon": -123.91404,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 11:53:45.788601809 +0000 UTC"
   },
   {
    "mmsi": 636023742,
    "name": "C-INSPIRATION",
-   "lat": 46.20198,
-   "lon": -123.80314,
+   "lat": 46.20241,
+   "lon": -123.80505,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USPDX",
-   "updated": "2026-11-26 11:23:40.118414571 +0000 UTC"
+   "updated": "2026-11-26 11:53:41.590726844 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91403,
-   "sog_kn": 0,
-   "cog": 109.3,
-   "heading": 97,
-   "updated": "2026-11-26 11:24:01.438160872 +0000 UTC"
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19051,
+   "lon": -123.85695,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-26 11:53:50.144994765 +0000 UTC"
   }
  ]
 }
