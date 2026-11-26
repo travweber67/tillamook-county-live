@@ -1,68 +1,54 @@
 {
- "fetched_at": "2026-11-26T04:52:58Z",
+ "fetched_at": "2026-11-26T05:22:59Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16793,
-   "lon": -123.91434,
+   "mmsi": 303324000,
+   "lat": 46.16831,
+   "lon": -123.91413,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 82.4,
    "heading": 511,
-   "updated": "2026-11-26 04:53:43.210912603 +0000 UTC"
+   "updated": "2026-11-26 05:23:28.836232578 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28139,
-   "lon": -124.04672,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-26 04:53:34.036136381 +0000 UTC"
+   "mmsi": 367498220,
+   "lat": 46.16726,
+   "lon": -123.91623,
+   "sog_kn": 0,
+   "cog": 98.9,
+   "heading": 511,
+   "updated": "2026-11-26 05:23:40.787812002 +0000 UTC"
   },
   {
    "mmsi": 636023742,
    "name": "C-INSPIRATION",
-   "lat": 46.19864,
-   "lon": -123.80895,
+   "lat": 46.19867,
+   "lon": -123.80889,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USPDX",
-   "updated": "2026-11-26 04:53:39.90943286 +0000 UTC"
+   "updated": "2026-11-26 05:23:40.53543361 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.21729,
+   "lon": -123.78386,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-26 05:23:39.382652492 +0000 UTC"
   },
   {
    "mmsi": 367037240,
    "name": "IRON LADY",
-   "lat": 46.16813,
-   "lon": -123.91425,
-   "sog_kn": 0,
-   "cog": 192.3,
-   "heading": 511,
-   "updated": "2026-11-26 04:53:46.367439856 +0000 UTC"
-  },
-  {
-   "mmsi": 367516350,
-   "name": "MISS MOLLY",
-   "lat": 46.19027,
-   "lon": -123.85675,
-   "sog_kn": 0,
-   "cog": 331.9,
-   "heading": 511,
-   "updated": "2026-11-26 04:53:29.907253504 +0000 UTC"
-  },
-  {
-   "mmsi": 477854600,
-   "name": "SILVER JOAN",
-   "lat": 45.99648,
-   "lon": -124.86799,
-   "type_code": 80,
-   "type": "Tanker",
-   "destination": "US OTS",
-   "updated": "2026-11-26 04:53:41.450821572 +0000 UTC",
-   "sog_kn": 13.3,
-   "cog": 2,
-   "heading": 358
+   "lat": 46.16811,
+   "lon": -123.91424,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 05:23:32.751692115 +0000 UTC"
   }
  ]
 }
