@@ -1,36 +1,55 @@
 {
- "fetched_at": "2026-11-25T23:52:55Z",
+ "fetched_at": "2026-11-26T00:22:55Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16792,
-   "lon": -123.91432,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-25 23:53:41.553986106 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04026,
+   "mmsi": 303324000,
+   "lat": 46.16829,
+   "lon": -123.91414,
    "sog_kn": 0,
-   "cog": 323.1,
+   "cog": 82.4,
    "heading": 511,
-   "updated": "2026-11-25 23:53:36.26125056 +0000 UTC"
+   "updated": "2026-11-26 00:23:30.748662579 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16778,
-   "lon": -123.91441,
-   "sog_kn": 0.1,
-   "cog": 289.8,
+   "mmsi": 367516350,
+   "lat": 46.19028,
+   "lon": -123.85673,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-25 23:53:31.147878987 +0000 UTC"
+   "updated": "2026-11-26 00:23:30.317982226 +0000 UTC"
+  },
+  {
+   "mmsi": 338424194,
+   "name": "BLUEFIN",
+   "lat": 46.30559,
+   "lon": -124.03861,
+   "sog_kn": 0,
+   "cog": 109,
+   "heading": 511,
+   "updated": "2026-11-26 00:23:30.316247319 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18807,
+   "lon": -123.85904,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-26 00:23:50.147648217 +0000 UTC"
+  },
+  {
+   "mmsi": 369037000,
+   "name": "TEXAS",
+   "lat": 46.20354,
+   "lon": -124.53843,
+   "sog_kn": 11.9,
+   "cog": 61.1,
+   "heading": 68,
+   "updated": "2026-11-26 00:23:37.401963338 +0000 UTC"
   }
  ]
 }
