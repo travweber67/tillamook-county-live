@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T10:24:15Z",
+ "fetched_at": "2026-11-26T10:53:48Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -268,6 +268,15 @@
    "tier": "routine"
   },
   {
+   "title": "TILLAMOOK COUNTY PARKS DEPARTMENT: Important Safety and Maintenance Notice – Netarts Boat Launch Use Advisory",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/tillamook-county-parks-department-important-safety-and-maintenance-notice-netarts-boat-launch-use-advisory/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TCParksNetartsBoatRamp11.24B-300x225.jpg",
+   "date": "2026-11-25",
+   "summary": "A BIG SHOUT-OUT AND THANK YOU TO OUR TILLAMOOK COUNTY PARKS MAINTENANCE TEAM! Here’s the Netarts Boat Ramp Wednesday afternoon, November 25, 2026! We want to recognize and thank our dedicated Tillamook...",
+   "tier": "routine"
+  },
+  {
    "title": "Wind developer seeks tower to measure wind on Weyerhaeuser land",
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/wind-developer-seeks-tower-to-measure-wind-on-weyerhaeuser-land/",
@@ -283,15 +292,6 @@
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/73/e735bae8-7685-11ec-a582-e76813411731/61e3a0da53ccf.image.jpg?resize=300%2C158",
    "date": "2026-11-25",
    "summary": "High Wind Warning until 07:00AM Thursday",
-   "tier": "routine"
-  },
-  {
-   "title": "TILLAMOOK COUNTY PARKS DEPARTMENT: Important Safety and Maintenance Notice – Netarts Boat Launch Use Advisory",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/tillamook-county-parks-department-important-safety-and-maintenance-notice-netarts-boat-launch-use-advisory/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TCParksNetartsBoatRamp11.24B-300x225.jpg",
-   "date": "2026-11-25",
-   "summary": "A BIG SHOUT-OUT AND THANK YOU TO OUR TILLAMOOK COUNTY PARKS MAINTENANCE TEAM! Here’s the Netarts Boat Ramp Wednesday afternoon, November 25, 2026! We want to recognize and thank our dedicated Tillamook...",
    "tier": "routine"
   },
   {

@@ -1,46 +1,6 @@
 {
- "fetched_at": "2026-11-26T10:23:03Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 367355270,
-   "lat": 46.16795,
-   "lon": -123.91432,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-26 10:23:40.443856882 +0000 UTC"
-  },
-  {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16727,
-   "lon": -123.91595,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-26 10:23:59.6066956 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20835,
-   "lon": -123.80319,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-26 10:23:47.410185364 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18813,
-   "lon": -123.86174,
-   "sog_kn": 0,
-   "cog": 322.2,
-   "heading": 308,
-   "updated": "2026-11-26 10:23:59.75731942 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T10:53:03Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }
