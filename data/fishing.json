@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T22:23:13Z",
+ "fetched_at": "2026-11-26T22:53:14Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions",
  "places": [
   {
@@ -9,10 +9,10 @@
    "status": "ok",
    "wind_now": {
     "mph": 16,
-    "gust_mph": 22,
+    "gust_mph": 20,
     "dir_deg": 240,
     "src": "buoy",
-    "t": 1795728600000
+    "t": 1795730400000
    },
    "wind_series": [
     {
@@ -1467,14 +1467,14 @@
     "dir_deg": 255,
     "period_s": null,
     "src": "buoy",
-    "t": 1795728600000
+    "t": 1795729800000
    },
    "wave_series": [],
    "tides": [
     {
      "label": "Garibaldi",
      "state": "falling",
-     "cur_ft": 9.2,
+     "cur_ft": 8.6,
      "next": {
       "type": "L",
       "v": -1.85,
@@ -1484,7 +1484,7 @@
     {
      "label": "Netarts",
      "state": "falling",
-     "cur_ft": 7.5,
+     "cur_ft": 6.9,
      "next": {
       "type": "L",
       "v": -1.585,
@@ -1494,7 +1494,7 @@
     {
      "label": "Nehalem",
      "state": "falling",
-     "cur_ft": 7.9,
+     "cur_ft": 7.4,
      "next": {
       "type": "L",
       "v": -1.398,
@@ -1506,11 +1506,11 @@
    "zones": [
     {
      "name": "Cape Shoalwater to Cape Falcon \u2014 Today",
-     "text": "S wind 30 to 40 kt with gusts up to 50 kt, becoming SW 15 to 20 kt with gusts up to 25 kt. Seas 14 to 18 ft, subsiding to 12 to 15 ft this afternoon. Wave Detail: SW 16 ft at 13 seconds. A slight chance of tstms early this morning. Rain this morning, then a chance of rain this afternoon."
+     "text": "SW wind 20 to 25 kt, easing to around 15 kt late. Seas 14 to 17 ft. Wave Detail: SW 15 ft at 12 seconds. A chance of rain early this morning, then rain likely late this morning and early afternoon. A slight chance of rain late."
     },
     {
      "name": "Cape Falcon to Cape Foulweather \u2014 Today",
-     "text": "S wind 30 to 40 kt with gusts up to 50 kt, becoming SW 15 to 20 kt with gusts up to 25 kt. Seas 16 to 19 ft, subsiding to 13 to 15 ft. Wave Detail: SW 17 ft at 13 seconds. Rain this morning, then a chance of rain this afternoon."
+     "text": "SW wind 20 to 25 kt, easing to 15 to 20 kt late. Seas 15 to 17 ft. Wave Detail: SW 15 ft at 13 seconds. A chance of rain."
     }
    ]
   }
