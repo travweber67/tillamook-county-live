@@ -1,56 +1,55 @@
 {
- "fetched_at": "2026-11-26T13:53:05Z",
+ "fetched_at": "2026-11-26T14:23:06Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368063210,
-   "lat": 46.1873,
-   "lon": -123.86451,
-   "sog_kn": 0,
-   "cog": 129.8,
-   "heading": 511,
-   "updated": "2026-11-26 13:53:57.904967157 +0000 UTC"
-  },
-  {
-   "mmsi": 432666000,
-   "name": "AEGEAN HIGHWAY",
-   "lat": 46.04701,
-   "lon": -124.48616,
-   "sog_kn": 7,
-   "cog": 267.6,
-   "heading": 250,
-   "updated": "2026-11-26 13:53:37.206234925 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16854,
+   "lon": -123.91405,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 14:23:53.774419793 +0000 UTC"
   },
   {
    "mmsi": 636023742,
    "name": "C-INSPIRATION",
-   "lat": 46.2007,
-   "lon": -123.80784,
+   "lat": 46.20034,
+   "lon": -123.80789,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USPDX",
-   "updated": "2026-11-26 13:53:37.92628236 +0000 UTC"
+   "updated": "2026-11-26 14:23:40.357472456 +0000 UTC"
   },
   {
-   "mmsi": 369493007,
-   "name": "CG47207",
-   "lat": 46.28134,
-   "lon": -124.04694,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-26 13:53:32.773982429 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20587,
+   "lon": -123.80992,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-26 14:23:36.216889752 +0000 UTC"
   },
   {
-   "mmsi": 369037000,
-   "name": "TEXAS",
-   "lat": 46.13112,
-   "lon": -124.47771,
-   "sog_kn": 8.4,
-   "cog": 101.7,
-   "heading": 115,
-   "updated": "2026-11-26 13:53:49.255887959 +0000 UTC"
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16804,
+   "lon": -123.91424,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 14:23:34.46662632 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18997,
+   "lon": -123.85419,
+   "sog_kn": 0,
+   "cog": 147.1,
+   "heading": 511,
+   "updated": "2026-11-26 14:23:31.756020795 +0000 UTC"
   }
  ]
 }
