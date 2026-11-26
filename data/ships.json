@@ -1,46 +1,6 @@
 {
- "fetched_at": "2026-11-26T19:29:26Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 367498220,
-   "lat": 46.16724,
-   "lon": -123.91626,
-   "sog_kn": 0,
-   "cog": 43.7,
-   "heading": 511,
-   "updated": "2026-11-26 19:29:39.220612571 +0000 UTC"
-  },
-  {
-   "mmsi": 338376911,
-   "name": "AMERICAN GIRL",
-   "lat": 46.16615,
-   "lon": -123.91807,
-   "sog_kn": 0,
-   "cog": 9.2,
-   "heading": 511,
-   "updated": "2026-11-26 19:29:37.675054774 +0000 UTC"
-  },
-  {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.2015,
-   "lon": -123.8024,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-26 19:29:37.983212967 +0000 UTC"
-  },
-  {
-   "mmsi": 367128220,
-   "name": "KATHY H",
-   "lat": 46.16721,
-   "lon": -123.91695,
-   "sog_kn": 0,
-   "cog": 126.6,
-   "heading": 511,
-   "updated": "2026-11-26 19:30:07.427144313 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T19:53:10Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }
