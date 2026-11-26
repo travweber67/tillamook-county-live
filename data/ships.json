@@ -1,67 +1,65 @@
 {
- "fetched_at": "2026-11-26T21:23:12Z",
+ "fetched_at": "2026-11-26T21:27:24Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.91401,
-   "sog_kn": 0,
-   "cog": 353.1,
+   "mmsi": 367059190,
+   "lat": 46.19009,
+   "lon": -123.85582,
+   "sog_kn": 0.2,
+   "cog": 139.6,
    "heading": 511,
-   "updated": "2026-11-26 21:24:07.534372615 +0000 UTC"
+   "updated": "2026-11-26 21:28:10.308436129 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 92.9,
-   "heading": 176,
-   "updated": "2026-11-26 21:23:49.13918635 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 180.8,
-   "heading": 97,
-   "updated": "2026-11-26 21:24:01.691812477 +0000 UTC"
-  },
-  {
-   "mmsi": 367648110,
-   "name": "JEANNIE IRENE",
-   "lat": 46.30461,
-   "lon": -124.04256,
-   "sog_kn": 0,
-   "cog": 35.3,
+   "mmsi": 367089450,
+   "lat": 46.19012,
+   "lon": -123.85665,
+   "sog_kn": 0.5,
+   "cog": 129.7,
    "heading": 511,
-   "updated": "2026-11-26 21:24:14.115303924 +0000 UTC"
+   "updated": "2026-11-26 21:28:15.25112773 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18807,
-   "lon": -123.85903,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-26 21:23:50.152973522 +0000 UTC"
+   "mmsi": 368396890,
+   "name": "ARROW NO. 2",
+   "lat": 46.16801,
+   "lon": -123.92025,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-26 21:28:14.547080157 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18815,
-   "lon": -123.86173,
-   "sog_kn": 0.1,
-   "cog": 274.4,
-   "heading": 308,
-   "updated": "2026-11-26 21:23:49.292340291 +0000 UTC"
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16838,
+   "lon": -123.91839,
+   "sog_kn": 0,
+   "cog": 21.4,
+   "heading": 350,
+   "updated": "2026-11-26 21:27:49.690479262 +0000 UTC"
+  },
+  {
+   "mmsi": 303679000,
+   "name": "DEFIANT",
+   "lat": 46.16936,
+   "lon": -123.91361,
+   "sog_kn": 0,
+   "cog": 64.3,
+   "heading": 511,
+   "updated": "2026-11-26 21:28:15.552954609 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19992,
+   "lon": -123.76046,
+   "sog_kn": 0,
+   "cog": 1,
+   "heading": 511,
+   "updated": "2026-11-26 21:28:00.941041986 +0000 UTC"
   }
  ]
 }
