@@ -1,74 +1,83 @@
 {
- "fetched_at": "2026-11-26T17:23:08Z",
+ "fetched_at": "2026-11-26T17:53:09Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16793,
-   "lon": -123.91433,
+   "mmsi": 367617080,
+   "lat": 46.16741,
+   "lon": -123.91533,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 76.9,
    "heading": 511,
-   "updated": "2026-11-26 17:23:43.565892452 +0000 UTC"
+   "updated": "2026-11-26 17:53:38.001395792 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "lat": 46.3039,
-   "lon": -124.04084,
+   "mmsi": 368063210,
+   "lat": 46.18729,
+   "lon": -123.86451,
    "sog_kn": 0,
-   "cog": 234.4,
+   "cog": 129.8,
    "heading": 511,
-   "updated": "2026-11-26 17:24:08.839700626 +0000 UTC"
+   "updated": "2026-11-26 17:53:57.928147934 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "lat": 46.18863,
-   "lon": -123.85524,
-   "sog_kn": 0,
-   "cog": 7.4,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.25283,
+   "lon": -124.02883,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-26 17:53:38.904955021 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20841,
+   "lon": -123.80389,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-26 17:53:56.794259186 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16812,
+   "lon": -123.91426,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-26 17:53:52.375403066 +0000 UTC"
+  },
+  {
+   "mmsi": 366999936,
+   "name": "MLB 47283",
+   "lat": 46.2442,
+   "lon": -124.03583,
+   "sog_kn": 15.1,
+   "cog": 311.3,
    "heading": 511,
-   "updated": "2026-11-26 17:23:57.479637949 +0000 UTC"
+   "updated": "2026-11-26 17:54:01.069563367 +0000 UTC"
   },
   {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.18562,
-   "lon": -124.23357,
-   "sog_kn": 11.8,
-   "cog": 66.3,
-   "heading": 70,
-   "updated": "2026-11-26 17:23:49.147592283 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91401,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20018,
+   "lon": -123.76127,
    "sog_kn": 0,
-   "cog": 277.5,
-   "heading": 96,
-   "updated": "2026-11-26 17:24:02.759564883 +0000 UTC"
+   "cog": 267.7,
+   "heading": 341,
+   "updated": "2026-11-26 17:53:44.253133567 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30464,
-   "lon": -124.04027,
-   "sog_kn": 0,
-   "cog": 138.8,
-   "heading": 511,
-   "updated": "2026-11-26 17:23:56.295644826 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.76048,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-26 17:24:00.932615536 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-26 17:53:51.607031642 +0000 UTC"
   }
  ]
 }
