@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T09:54:17Z",
+ "fetched_at": "2026-11-26T10:24:15Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -13,15 +13,6 @@
   }
  ],
  "stories": [
-  {
-   "title": "Fraser Road – King Tide Traffic Advisory & Intermittent Closures",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/fraser-road-king-tide-traffic-advisory-intermittent-closures/article_9ad512e6-8e74-47da-8823-6427e3ab0625.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/bd/6bd39ce6-8dc1-11ec-a8d8-8bc2e0e92e2d/620acaff4d035.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
-   "summary": "Due to the upcoming king tides and anticipated high water levels along Tillamook Bay, Fraser Road will be closed during high tides (greater than 8.8 ft) due to potential flooding and unsafe road conditions.",
-   "tier": "high"
-  },
   {
    "title": "A King Tide Wave Nearly Took a Man and His Dog at Cannon Beach",
    "source": "Tillamook County Live",
@@ -236,7 +227,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/dramatic-photos-show-the-danger-of-the-pacific-ocean/article_27dbf1df-4f8a-5b6e-9f93-620978b8defe.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/8e/68ed47ba-8f8d-5d3a-8667-ce08aabfe939/6b0690dd58865.image.png?resize=300%2C281",
-   "date": "2026-11-26",
+   "date": "2026-11-25",
    "summary": "The Cannon Beach Police Department has released photos showing the extreme dangers associated with King Tides and surging surf.",
    "tier": "useful"
   },
@@ -245,7 +236,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/tillamook-test-scores-improve-steadily/article_44d26229-70f6-402e-8ce3-ec27ae97d5a4.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/13/213b5a06-4e65-11ed-a172-7354ed8f9a94/634ed482b6b40.image.jpg?resize=300%2C158",
-   "date": "2026-11-26",
+   "date": "2026-11-25",
    "summary": "Tillamook School District students exceeded statewide averages in grade level proficiency in English and language arts, and science last year, while slightly lagging the statewide average in math testing.",
    "tier": "useful"
   },
@@ -254,7 +245,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-keep-holiday-meals-safe-germ-free-clean-separate-cook-chill/",
    "img": "https://content.govdelivery.com/attachments/fancy_images/ORHA/2026/11/14781031/holiday-food-safety-tips-thumbnail_original.png",
-   "date": "2026-11-26",
+   "date": "2026-11-25",
    "summary": "CDC’s steps to food safety stress proper poultry handling, kitchen hygiene (PORTLAND, OR)—Keeping yourself and loved ones safe from foodborne germs this holiday season takes just four easy steps—cleaning, separating,...",
    "tier": "useful"
   },
@@ -263,16 +254,52 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-oha-to-delay-enforcement-of-new-federal-medicaid-work-rules-to-keep-people-in-oregon-insured/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/OHAWorkRequirepaperwork-300x300.jpg",
-   "date": "2026-11-25",
+   "date": "2026-11-24",
    "summary": "A new federal option will allow Oregon to delay enforcement of work rules for six months, ensuring Oregon Health Plan members do not lose coverage for failing to meet new requirements while...",
    "tier": "useful"
+  },
+  {
+   "title": "POET-TREE: A favorite famous poem that defies nature",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/poet-tree-a-favorite-famous-poem-that-defies-nature/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/20261107_085229-scaled.jpg",
+   "date": "2026-11-26",
+   "summary": "Submitted by Vic Affolter As a change of pace I’m sending you one of my nature-loving favorite poems with a bit of the back story. I don’t want your readers to...",
+   "tier": "routine"
+  },
+  {
+   "title": "Wind developer seeks tower to measure wind on Weyerhaeuser land",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/wind-developer-seeks-tower-to-measure-wind-on-weyerhaeuser-land/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/eurus-met-tower-locator-map.jpg",
+   "date": "2026-11-25",
+   "summary": "Eurus would put the 197.7-foot tower in the Trask River watershed for one to three years. Tillamook County is taking written comments until 4 p.m. Dec. 1.",
+   "tier": "routine"
+  },
+  {
+   "title": "High Wind Warning and Advisory into Thursday morning",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/high-wind-warning-and-advisory-into-thursday-morning/article_9cf089ef-da9c-41b6-b367-51960a2590ac.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/73/e735bae8-7685-11ec-a582-e76813411731/61e3a0da53ccf.image.jpg?resize=300%2C158",
+   "date": "2026-11-25",
+   "summary": "High Wind Warning until 07:00AM Thursday",
+   "tier": "routine"
+  },
+  {
+   "title": "TILLAMOOK COUNTY PARKS DEPARTMENT: Important Safety and Maintenance Notice – Netarts Boat Launch Use Advisory",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/tillamook-county-parks-department-important-safety-and-maintenance-notice-netarts-boat-launch-use-advisory/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TCParksNetartsBoatRamp11.24B-300x225.jpg",
+   "date": "2026-11-25",
+   "summary": "A BIG SHOUT-OUT AND THANK YOU TO OUR TILLAMOOK COUNTY PARKS MAINTENANCE TEAM! Here’s the Netarts Boat Ramp Wednesday afternoon, November 25, 2026! We want to recognize and thank our dedicated Tillamook...",
+   "tier": "routine"
   },
   {
    "title": "Port board temporarily extends OCSR lease",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
-   "date": "2026-11-25",
+   "date": "2026-11-24",
    "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
    "tier": "routine"
   },
@@ -281,35 +308,8 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/people-place-possibilities-dreaming-wall-in-nehalem-ready-for-community-hopes-wishes/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/SalmonberryPizzaAward.jpg",
-   "date": "2026-11-25",
+   "date": "2026-11-24",
    "summary": "By Barbara McLaughlin The Dreaming Wall is part of a new program of local nonprofit Fulcrum Community Resources called People, Place & Possibility. It’s a community project designed to bring neighbors together to...",
-   "tier": "routine"
-  },
-  {
-   "title": "OREGON DEPT. OF TRANSPORTATION (ODOT): HWY. 6 Project Update – Guardrail Upgrades",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-dept-of-transportation-odot-hwy-6-project-update-guardrail-upgrades/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/updatesignconstructionworker_crop.gif",
-   "date": "2026-11-25",
-   "summary": "This year, we’ve been working on a project to upgrade the guardrail along OR 6 where needed. Here’s what you need to know if you’re traveling near Tillamook on OR 6...",
-   "tier": "routine"
-  },
-  {
-   "title": "Stimson Lumber top bidder on $5.1 million Salmonberry River timber sale",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/stimson-lumber-top-bidder-on-5-1-million-salmonberry-river-timber-sale/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/overdrive-unit-map-odf.png",
-   "date": "2026-11-25",
-   "summary": "Stimson Lumber bid $527.53 per thousand board feet of Douglas-fir for Overdrive, two clearcuts totaling 230 acres off Belding Road in the Tillamook State Forest.",
-   "tier": "routine"
-  },
-  {
-   "title": "Banks-Vernonia Trail to close from Banks to Manning for tree clearing",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/banks-vernonia-trail-to-close-from-banks-to-manning-for-tree-clearing/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/BVTrail-Hikers-Horses-Fall.jpg",
-   "date": "2026-11-25",
-   "summary": "A contractor will remove about 100 dead and unhealthy trees along the path between Nov. 30 and Dec. 14, the Oregon Parks and Recreation Department said.",
    "tier": "routine"
   }
  ]
