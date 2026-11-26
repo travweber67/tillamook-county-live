@@ -1,37 +1,67 @@
 {
- "fetched_at": "2026-11-26T20:53:11Z",
+ "fetched_at": "2026-11-26T21:23:12Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16809,
-   "lon": -123.91425,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16853,
+   "lon": -123.91401,
    "sog_kn": 0,
-   "cog": 189.3,
+   "cog": 353.1,
    "heading": 511,
-   "updated": "2026-11-26 20:53:52.953143929 +0000 UTC"
+   "updated": "2026-11-26 21:24:07.534372615 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
+   "sog_kn": 0,
+   "cog": 92.9,
+   "heading": 176,
+   "updated": "2026-11-26 21:23:49.13918635 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 180.8,
+   "heading": 97,
+   "updated": "2026-11-26 21:24:01.691812477 +0000 UTC"
+  },
+  {
+   "mmsi": 367648110,
+   "name": "JEANNIE IRENE",
    "lat": 46.30461,
-   "lon": -124.04027,
+   "lon": -124.04256,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 35.3,
    "heading": 511,
-   "updated": "2026-11-26 20:53:45.461312945 +0000 UTC"
+   "updated": "2026-11-26 21:24:14.115303924 +0000 UTC"
   },
   {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.20389,
-   "lon": -123.93726,
-   "sog_kn": 12.6,
-   "cog": 133.1,
-   "heading": 136,
-   "updated": "2026-11-26 20:54:05.460428952 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18807,
+   "lon": -123.85903,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-26 21:23:50.152973522 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18815,
+   "lon": -123.86173,
+   "sog_kn": 0.1,
+   "cog": 274.4,
+   "heading": 308,
+   "updated": "2026-11-26 21:23:49.292340291 +0000 UTC"
   }
  ]
 }
