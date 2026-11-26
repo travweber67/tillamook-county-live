@@ -1,37 +1,6 @@
 {
- "fetched_at": "2026-11-26T07:53:01Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19215,
-   "lon": -123.87729,
-   "sog_kn": 0.7,
-   "cog": 273.6,
-   "heading": 257,
-   "updated": "2026-11-26 07:54:06.13689738 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16775,
-   "lon": -123.91442,
-   "sog_kn": 0,
-   "cog": 286.6,
-   "heading": 511,
-   "updated": "2026-11-26 07:54:01.533298112 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18809,
-   "lon": -123.85904,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-26 07:54:02.529921141 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-26T08:23:01Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }

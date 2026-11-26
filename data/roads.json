@@ -1,26 +1,26 @@
 {
- "fetched_at": "2026-11-26T07:53:01Z",
+ "fetched_at": "2026-11-26T08:23:01Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "1 incidents in the county scope; 39 active statewide."
+   "note": "1 incidents in the county scope; 40 active statewide."
   }
  ],
  "incidents": [
   {
-   "title": "Other Agency \u2014 Pedestrian In Roadway",
-   "desc": "There is a pedestrian in the roadway creating a hazard and causing traffic to slow. Use caution. Estimated delay under 20 minutes.",
+   "title": "Obstruction \u2014 Hazardous Tree Or Vegetation",
+   "desc": "Hazardous tree or vegetation. Prepare to slow. Estimated delay under 20 minutes.",
    "impact": "Estimated delay under 20 minutes",
-   "place": "US101, Gearhart",
+   "place": "US101, Intersection with Salmon River Highway ORE18",
    "route": "US101",
-   "milepost": 19.0,
-   "lat": 46.02144,
-   "lon": -123.91141,
-   "start": "2026-11-25T23:14:34.547-08:00",
-   "updated": "2026-11-25T23:15:26-08:00",
+   "milepost": 105.09,
+   "lat": 45.02081,
+   "lon": -123.97391,
+   "start": "2026-11-26T00:04:45.387-08:00",
+   "updated": "2026-11-26T00:09:17-08:00",
    "source": "ODOT TripCheck"
   }
  ],
- "odot_active_statewide": 39
+ "odot_active_statewide": 40
 }
