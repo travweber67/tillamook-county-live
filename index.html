@@ -33,7 +33,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 <link rel="manifest" href="manifest.webmanifest?v=3">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="style.css?v=51">
+<link rel="stylesheet" href="style.css?v=52">
 <link rel="stylesheet" href="merch.css?v=1">
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png?v=2">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png?v=2">
@@ -198,7 +198,7 @@ document.documentElement.setAttribute("data-theme",t);})();
           <span class="glance-val" id="glance-alerts-val">Checking…</span>
         </span>
       </a>
-      <a class="strip-item glance-tile" href="#tides-card">
+      <a class="strip-item glance-tile" href="#tidechart-card">
         <img class="gl-ico" src="img/icons/icon-river.png" alt="" aria-hidden="true">
         <span class="strip-main">
           <span class="strip-top"><span class="glance-label"><span data-i18n="glriver">Tillamook Bay — Tides</span></span><span class="strip-sep" aria-hidden="true">·</span><span class="glance-sub" id="glance-river-sub">Garibaldi · NOAA</span></span>
@@ -788,14 +788,14 @@ document.documentElement.setAttribute("data-theme",t);})();
       <p class="card-note small" data-i18n="tchartnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (Garibaldi 9437540, Netarts Bay 9437262, Nehalem 9437908), in feet above mean lower low water. Netarts and Nehalem are high/low stations, so their curves are drawn through NOAA's own predicted turns. A <strong>King tide</strong> tag marks a high tide in the top handful of the whole year for that station. Predictions, not measurements — wind and river flow push real water off them.</p>
     </div>
 
-    <div class="card" id="tides-card">
+    <div class="card" id="fishwx-card">
       <div class="card-head">
-        <img class="card-ico" src="img/icons/icon-waves.png" alt="" aria-hidden="true"><h2 data-i18n="tidesh2">Bay Tides</h2>
-        <span class="updated" id="tides-updated"></span>
+        <img class="card-ico" src="img/icons/icon-fish.png" alt="" aria-hidden="true"><h2 data-i18n="fishwxh2">Fishing Conditions</h2>
+        <span class="updated" id="fishwx-updated"></span>
       </div>
-      <p class="card-note" data-i18n="tidesnote">Three bays, three NOAA stations. For the launch, the crab pots, the clam beds or a beach hour, here is the next turn of the tide at Garibaldi (Tillamook Bay), Netarts Bay and Nehalem Bay.</p>
-      <div id="tides-body" class="panel-body"><p class="loading">Loading NOAA tide predictions…</p></div>
-      <p class="card-note small" data-i18n="tidesnote2">Tide <em>predictions</em> from NOAA Tides &amp; Currents (Garibaldi 9437540, Netarts Bay 9437262, Nehalem 9437908), in feet above mean lower low water. Wind and river flow push real water off the prediction — a flooding river runs the bay higher — so treat the times as the plan, not a promise. Nestucca Bay has no NOAA prediction station of its own; the Pacific City launch works off the Garibaldi pattern.</p>
+      <p class="card-note" data-i18n="fishwxnote">Before you launch: the wind, the waves and the tide in one place — the numbers that decide a fishing hour on the bays or the open water, laid out plain.</p>
+      <div id="fishwx-body" class="panel-body"><p class="loading">Loading wind, waves and tides…</p></div>
+      <p class="card-note small" data-i18n="fishwxnote2">Wind and wave forecasts from the National Weather Service; buoy readings from NOAA's National Data Buoy Center (the Tillamook buoy, 46089); tides from NOAA Tides &amp; Currents. Nestucca Bay has no NOAA prediction station of its own; the Pacific City launch works off the Garibaldi pattern. A forecast is a plan, not a promise — read the bar report before you cross.</p>
     </div>
 
     <div class="card" id="crab-card">
@@ -1368,7 +1368,7 @@ document.documentElement.setAttribute("data-theme",t);})();
       <a class="drawer-link" href="#forecast-card" data-i18n="dwforecast">Forecast</a>
       <a class="drawer-link" href="#sky-card" data-i18n="dwsky">Sky &amp; the ISS</a>
       <a class="drawer-link" href="#rivers-card" data-i18n="dwrivers">River levels</a>
-      <a class="drawer-link" href="#tides-card" data-i18n="dwtides">Bay tides</a>
+      <a class="drawer-link" href="#tidechart-card" data-i18n="dwtides">Bay tides</a>
       <a class="drawer-link" href="#ohv-card">OHV — ride areas</a>
       <a class="drawer-link" href="#parks-card">Parks, beaches &amp; trails</a>
       <a class="drawer-link" href="#almanac-card" data-i18n="dwalmanac">The Almanac</a>
@@ -1530,7 +1530,7 @@ document.documentElement.setAttribute("data-theme",t);})();
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
-<script src="app.js?v=54"></script>
+<script src="app.js?v=55"></script>
 <script src="merch.js?v=1" defer></script>
 <script data-goatcounter="https://tillamookcountylive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <link rel="stylesheet" href="offline-map/offline-map.css">
