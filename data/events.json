@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T07:53:19Z",
+ "fetched_at": "2026-11-27T08:23:19Z",
  "sources": [
   {
    "name": "Tillamook County calendar (CivicPlus)",
@@ -13,13 +13,6 @@
   }
  ],
  "events": [
-  {
-   "date": "2026-11-26",
-   "time": "All Day Event",
-   "title": "Thanksgiving Day/Day After Thanksgiving",
-   "source": "Tillamook County",
-   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=642"
-  },
   {
    "date": "2026-11-27",
    "time": "All Day Event",
@@ -54,6 +47,13 @@
    "title": "Community Update",
    "source": "Tillamook County",
    "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1083"
+  },
+  {
+   "date": "2026-12-08",
+   "time": "10:00 AM",
+   "title": "Quarterly Financial Review - Budget Committee Meeting",
+   "source": "Tillamook County",
+   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=1824"
   },
   {
    "date": "2026-12-09",

@@ -1,84 +1,67 @@
 {
- "fetched_at": "2026-11-27T07:53:19Z",
+ "fetched_at": "2026-11-27T08:23:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367355270,
-   "lat": 46.16795,
-   "lon": -123.91434,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 07:53:41.194027001 +0000 UTC"
-  },
-  {
    "mmsi": 368063210,
-   "lat": 46.18731,
+   "name": "AKVAVIT",
+   "lat": 46.1873,
    "lon": -123.86454,
    "sog_kn": 0,
    "cog": 129.8,
    "heading": 511,
-   "updated": "2026-11-27 07:53:57.492255166 +0000 UTC"
+   "updated": "2026-11-27 08:23:57.759880699 +0000 UTC"
   },
   {
-   "mmsi": 567025000,
-   "name": "EAST AYUTTHAYA",
-   "lat": 46.20462,
-   "lon": -123.78775,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.20017,
+   "lon": -123.80448,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US SEA",
-   "updated": "2026-11-27 07:53:52.543880635 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-27 08:24:07.213855463 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16561,
-   "lon": -123.92196,
-   "sog_kn": 0,
-   "cog": 167.9,
-   "heading": 511,
-   "updated": "2026-11-27 07:53:59.511681858 +0000 UTC"
+   "mmsi": 366954430,
+   "name": "CAPT RYAN",
+   "lat": 46.21787,
+   "lon": -123.95531,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "",
+   "updated": "2026-11-27 08:24:06.308106057 +0000 UTC"
   },
   {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20013,
-   "lon": -123.76149,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 07:54:01.379614792 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04024,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16812,
+   "lon": -123.91422,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-27 07:53:55.981643883 +0000 UTC"
+   "updated": "2026-11-27 08:23:59.155742433 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85418,
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30391,
+   "lon": -124.04082,
    "sog_kn": 0,
-   "cog": 279.2,
+   "cog": 234.4,
    "heading": 511,
-   "updated": "2026-11-27 07:53:41.345398308 +0000 UTC"
+   "updated": "2026-11-27 08:24:09.050642996 +0000 UTC"
   },
   {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16846,
-   "lon": -123.91407,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-27 07:53:43.375318556 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18812,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-27 08:24:12.946326931 +0000 UTC"
   }
  ]
 }
