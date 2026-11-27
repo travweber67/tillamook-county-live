@@ -1,35 +1,27 @@
 {
- "fetched_at": "2026-11-27T09:23:20Z",
+ "fetched_at": "2026-11-27T09:53:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367788590,
-   "lat": 46.18863,
-   "lon": -123.85524,
-   "sog_kn": 0,
-   "cog": 335.5,
-   "heading": 511,
-   "updated": "2026-11-27 09:23:59.267062911 +0000 UTC"
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 46.19324,
+   "lon": -124.63221,
+   "sog_kn": 11.5,
+   "cog": 271.5,
+   "heading": 263,
+   "updated": "2026-11-27 09:54:05.386027654 +0000 UTC"
   },
   {
-   "mmsi": 368063210,
-   "lat": 46.1873,
-   "lon": -123.86452,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16811,
+   "lon": -123.91427,
    "sog_kn": 0,
-   "cog": 129.8,
+   "cog": 10.6,
    "heading": 511,
-   "updated": "2026-11-27 09:23:56.745601444 +0000 UTC"
-  },
-  {
-   "mmsi": 367358520,
-   "name": "ASHLYNE",
-   "lat": 46.16721,
-   "lon": -123.91752,
-   "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-27 09:23:54.838274275 +0000 UTC"
+   "updated": "2026-11-27 09:54:09.504024059 +0000 UTC"
   }
  ]
 }
