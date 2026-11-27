@@ -1,63 +1,36 @@
 {
- "fetched_at": "2026-11-27T01:53:15Z",
+ "fetched_at": "2026-11-27T02:23:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366970430,
-   "lat": 46.1897,
-   "lon": -123.85401,
+   "mmsi": 367498220,
+   "lat": 46.16727,
+   "lon": -123.91624,
    "sog_kn": 0,
-   "cog": 159.2,
+   "cog": 43.7,
    "heading": 511,
-   "updated": "2026-11-27 01:53:18.563126444 +0000 UTC"
+   "updated": "2026-11-27 02:23:42.374223162 +0000 UTC"
   },
   {
-   "mmsi": 367358520,
-   "lat": 46.16722,
-   "lon": -123.9175,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19995,
+   "lon": -123.76048,
    "sog_kn": 0,
-   "cog": 160.7,
+   "cog": 174.1,
    "heading": 511,
-   "updated": "2026-11-27 01:53:55.576240453 +0000 UTC"
+   "updated": "2026-11-27 02:23:50.563980105 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.914,
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18995,
+   "lon": -123.85419,
    "sog_kn": 0,
-   "cog": 10.2,
+   "cog": 315.3,
    "heading": 511,
-   "updated": "2026-11-27 01:53:44.710005422 +0000 UTC"
-  },
-  {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28122,
-   "lon": -124.04686,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-27 01:53:45.699953617 +0000 UTC"
-  },
-  {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.2087,
-   "lon": -123.80065,
-   "sog_kn": 0.1,
-   "cog": 150.4,
-   "heading": 67,
-   "updated": "2026-11-27 01:53:25.022095006 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.1903,
-   "lon": -123.82953,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-27 01:53:48.960150315 +0000 UTC"
+   "updated": "2026-11-27 02:23:41.621420331 +0000 UTC"
   }
  ]
 }
