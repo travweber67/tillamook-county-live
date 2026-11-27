@@ -1,65 +1,46 @@
 {
- "fetched_at": "2026-11-27T21:53:28Z",
+ "fetched_at": "2026-11-27T22:23:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367050280,
-   "lat": 46.16716,
-   "lon": -123.91728,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28137,
+   "lon": -124.04671,
    "sog_kn": 0,
-   "cog": 329.5,
+   "cog": 317.4,
    "heading": 511,
-   "updated": "2026-11-27 21:54:14.827335565 +0000 UTC"
+   "updated": "2026-11-27 22:24:09.528366482 +0000 UTC"
   },
   {
-   "mmsi": 367161930,
-   "lat": 46.16894,
-   "lon": -123.91378,
-   "sog_kn": 0.2,
-   "cog": 346.4,
-   "heading": 511,
-   "updated": "2026-11-27 21:53:54.363618854 +0000 UTC"
-  },
-  {
-   "mmsi": 367358520,
-   "name": "ASHLYNE",
-   "lat": 46.1672,
-   "lon": -123.91752,
-   "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-27 21:53:54.518418119 +0000 UTC"
-  },
-  {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20016,
-   "lon": -123.76155,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 21:53:59.85835105 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85906,
-   "type_code": 0,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19048,
+   "lon": -123.82971,
+   "type_code": 57,
    "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-27 21:53:59.336021993 +0000 UTC"
+   "updated": "2026-11-27 22:23:45.361149902 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25691,
+   "lon": -123.98311,
+   "sog_kn": 1,
+   "cog": 311.9,
+   "heading": 303,
+   "updated": "2026-11-27 22:24:11.462242836 +0000 UTC"
   },
   {
    "mmsi": 367170860,
    "name": "WRANGLER",
-   "lat": 46.16849,
-   "lon": -123.91405,
+   "lat": 46.16847,
+   "lon": -123.91407,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 21:54:17.195812335 +0000 UTC"
+   "updated": "2026-11-27 22:23:46.045510938 +0000 UTC"
   }
  ]
 }
