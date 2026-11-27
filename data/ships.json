@@ -1,85 +1,57 @@
 {
- "fetched_at": "2026-11-27T17:53:25Z",
+ "fetched_at": "2026-11-27T18:23:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367516350,
-   "lat": 46.20717,
-   "lon": -123.80116,
-   "sog_kn": 3.7,
-   "cog": 59.6,
+   "mmsi": 369493021,
+   "name": "CG47235",
+   "lat": 45.55997,
+   "lon": -123.93508,
+   "sog_kn": 24,
+   "cog": 132.3,
    "heading": 511,
-   "updated": "2026-11-27 17:54:12.159696964 +0000 UTC"
+   "updated": "2026-11-27 18:24:17.61623513 +0000 UTC"
   },
   {
-   "mmsi": 368327020,
-   "lat": 46.2708,
-   "lon": -123.94661,
-   "sog_kn": 0.1,
-   "cog": 5.5,
-   "heading": 511,
-   "updated": "2026-11-27 17:53:51.454037465 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16854,
-   "lon": -123.91399,
-   "sog_kn": 0,
-   "cog": 189.3,
-   "heading": 511,
-   "updated": "2026-11-27 17:54:15.756128055 +0000 UTC"
-  },
-  {
-   "mmsi": 367358520,
-   "name": "ASHLYNE",
-   "lat": 46.1672,
-   "lon": -123.91752,
-   "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-27 17:53:55.537292025 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-27 18:24:09.82971143 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20473,
-   "lon": -123.81147,
+   "lat": 46.20475,
+   "lon": -123.81136,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-27 17:53:50.816448542 +0000 UTC"
-  },
-  {
-   "mmsi": 563309300,
-   "name": "LIGNUM GRID",
-   "lat": 46.22384,
-   "lon": -124.12405,
-   "sog_kn": 12.7,
-   "cog": 41,
-   "heading": 43,
-   "updated": "2026-11-27 17:54:05.081706771 +0000 UTC"
+   "updated": "2026-11-27 18:24:05.318433464 +0000 UTC"
   },
   {
    "mmsi": 367046890,
    "name": "PACIFIC FUTURE",
-   "lat": 46.16783,
-   "lon": -123.91442,
+   "lat": 46.16925,
+   "lon": -123.91489,
    "sog_kn": 0,
-   "cog": 249.6,
+   "cog": 239.1,
    "heading": 511,
-   "updated": "2026-11-27 17:54:00.679801546 +0000 UTC"
+   "updated": "2026-11-27 18:24:12.343552066 +0000 UTC"
   },
   {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.20744,
-   "lon": -123.76937,
-   "sog_kn": 0.1,
-   "cog": 260.8,
-   "heading": 511,
-   "updated": "2026-11-27 17:54:03.924545959 +0000 UTC"
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19637,
+   "lon": -123.79707,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-27 18:24:04.565739851 +0000 UTC"
   }
  ]
 }
