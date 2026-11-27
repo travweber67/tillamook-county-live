@@ -1,36 +1,66 @@
 {
- "fetched_at": "2026-11-27T00:53:15Z",
+ "fetched_at": "2026-11-27T01:23:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20015,
-   "lon": -123.76151,
-   "type_code": 52,
-   "type": "Tug",
-   "updated": "2026-11-27 00:54:02.829576386 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19995,
-   "lon": -123.76047,
+   "mmsi": 367358520,
+   "lat": 46.16722,
+   "lon": -123.9175,
    "sog_kn": 0,
-   "cog": 185.1,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-27 00:53:41.714580865 +0000 UTC"
+   "updated": "2026-11-27 01:23:54.909508048 +0000 UTC"
   },
   {
-   "mmsi": 440189000,
-   "name": "SM YANTIAN",
-   "lat": 45.81734,
-   "lon": -124.24301,
-   "sog_kn": 10.5,
-   "cog": 352,
-   "heading": 353,
-   "updated": "2026-11-27 00:53:50.466202446 +0000 UTC"
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.16835,
+   "lon": -123.91862,
+   "sog_kn": 0,
+   "cog": 5.8,
+   "heading": 349,
+   "updated": "2026-11-27 01:24:13.59591855 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16775,
+   "lon": -123.91445,
+   "sog_kn": 0,
+   "cog": 242.2,
+   "heading": 511,
+   "updated": "2026-11-27 01:23:51.573030499 +0000 UTC"
+  },
+  {
+   "mmsi": 209243000,
+   "name": "PLATANOS",
+   "lat": 46.20879,
+   "lon": -123.80039,
+   "sog_kn": 0,
+   "cog": 280.8,
+   "heading": 64,
+   "updated": "2026-11-27 01:24:16.813211446 +0000 UTC"
+  },
+  {
+   "mmsi": 367788590,
+   "name": "PROTECTOR",
+   "lat": 46.18863,
+   "lon": -123.85524,
+   "sog_kn": 0.1,
+   "cog": 335.5,
+   "heading": 511,
+   "updated": "2026-11-27 01:23:57.151933689 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30391,
+   "lon": -124.04082,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-27 01:24:08.773979631 +0000 UTC"
   }
  ]
 }
