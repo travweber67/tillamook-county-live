@@ -1,55 +1,76 @@
 {
- "fetched_at": "2026-11-27T11:23:22Z",
+ "fetched_at": "2026-11-27T11:53:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367648110,
-   "lat": 46.30461,
-   "lon": -124.04255,
+   "mmsi": 367197230,
+   "lat": 46.16931,
+   "lon": -123.91362,
    "sog_kn": 0,
-   "cog": 35.3,
+   "cog": 8.2,
    "heading": 511,
-   "updated": "2026-11-27 11:24:10.994486983 +0000 UTC"
+   "updated": "2026-11-27 11:54:21.090347007 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "lat": 46.18863,
-   "lon": -123.85523,
-   "sog_kn": 0.1,
-   "cog": 326,
-   "heading": 511,
-   "updated": "2026-11-27 11:23:57.630552648 +0000 UTC"
-  },
-  {
-   "mmsi": 311054300,
-   "name": "GLOVIS CARAVEL",
-   "lat": 46.18503,
-   "lon": -125.0535,
-   "sog_kn": 11.2,
-   "cog": 269.4,
-   "heading": 267,
-   "updated": "2026-11-27 11:24:06.004011244 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20578,
-   "lon": -123.80505,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-27 11:24:20.791113215 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18815,
-   "lon": -123.86174,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.92198,
    "sog_kn": 0,
-   "cog": 210.8,
-   "heading": 308,
-   "updated": "2026-11-27 11:24:19.267168847 +0000 UTC"
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-27 11:53:59.324889601 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.20563,
+   "lon": -123.79703,
+   "sog_kn": 7.6,
+   "cog": 240.4,
+   "heading": 240,
+   "updated": "2026-11-27 11:54:03.032590538 +0000 UTC"
+  },
+  {
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16811,
+   "lon": -123.91425,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-27 11:54:18.877822325 +0000 UTC"
+  },
+  {
+   "mmsi": 367128220,
+   "name": "KATHY H",
+   "lat": 46.16719,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-27 11:54:06.149256031 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16782,
+   "lon": -123.91439,
+   "sog_kn": 0,
+   "cog": 93.1,
+   "heading": 511,
+   "updated": "2026-11-27 11:54:02.393491194 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 46.2177,
+   "lon": -123.95766,
+   "sog_kn": 9.6,
+   "cog": 315.1,
+   "heading": 315,
+   "updated": "2026-11-27 11:54:17.138417887 +0000 UTC"
   }
  ]
 }
