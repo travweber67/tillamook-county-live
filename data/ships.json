@@ -1,65 +1,36 @@
 {
- "fetched_at": "2026-11-27T00:23:14Z",
+ "fetched_at": "2026-11-27T00:53:15Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "type_code": 57,
-   "type": "Vessel",
-   "updated": "2026-11-27 00:23:56.145029602 +0000 UTC"
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20015,
+   "lon": -123.76151,
+   "type_code": 52,
+   "type": "Tug",
+   "updated": "2026-11-27 00:54:02.829576386 +0000 UTC"
   },
   {
-   "mmsi": 567025000,
-   "name": "EAST AYUTTHAYA",
-   "lat": 46.206,
-   "lon": -123.7895,
-   "sog_kn": 0.1,
-   "cog": 306.2,
-   "heading": 67,
-   "updated": "2026-11-27 00:23:27.0057873 +0000 UTC"
-  },
-  {
-   "mmsi": 368327020,
-   "name": "GRACEE B",
-   "lat": 46.27078,
-   "lon": -123.94661,
-   "sog_kn": 0.2,
-   "cog": 93.1,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19995,
+   "lon": -123.76047,
+   "sog_kn": 0,
+   "cog": 185.1,
    "heading": 511,
-   "updated": "2026-11-27 00:23:55.594978666 +0000 UTC"
+   "updated": "2026-11-27 00:53:41.714580865 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 210.1,
-   "heading": 97,
-   "updated": "2026-11-27 00:23:51.678346398 +0000 UTC"
-  },
-  {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.20898,
-   "lon": -123.80047,
-   "sog_kn": 0,
-   "cog": 333.6,
-   "heading": 68,
-   "updated": "2026-11-27 00:23:56.45500134 +0000 UTC"
-  },
-  {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19033,
-   "lon": -123.82948,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-27 00:23:25.853957197 +0000 UTC"
+   "mmsi": 440189000,
+   "name": "SM YANTIAN",
+   "lat": 45.81734,
+   "lon": -124.24301,
+   "sog_kn": 10.5,
+   "cog": 352,
+   "heading": 353,
+   "updated": "2026-11-27 00:53:50.466202446 +0000 UTC"
   }
  ]
 }
