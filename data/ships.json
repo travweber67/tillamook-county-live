@@ -1,100 +1,35 @@
 {
- "fetched_at": "2026-11-27T08:53:20Z",
+ "fetched_at": "2026-11-27T09:23:20Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.24933,
-   "lon": -124.00309,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-27 08:54:05.772753828 +0000 UTC",
-   "sog_kn": 5.6,
-   "cog": 306.5,
-   "heading": 299
-  },
-  {
-   "mmsi": 311054300,
-   "name": "GLOVIS CARAVEL",
-   "lat": 46.19636,
-   "lon": -124.33895,
-   "sog_kn": 11.8,
-   "cog": 268,
-   "heading": 263,
-   "updated": "2026-11-27 08:53:46.623729155 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16873,
-   "lon": -123.91404,
+   "mmsi": 367788590,
+   "lat": 46.18863,
+   "lon": -123.85524,
    "sog_kn": 0,
-   "cog": 189.4,
-   "heading": 96,
-   "updated": "2026-11-27 08:54:01.359339762 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20671,
-   "lon": -123.80514,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-27 08:54:11.880401825 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91421,
-   "sog_kn": 0,
-   "cog": 0,
+   "cog": 335.5,
    "heading": 511,
-   "updated": "2026-11-27 08:54:08.349071055 +0000 UTC"
+   "updated": "2026-11-27 09:23:59.267062911 +0000 UTC"
   },
   {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28164,
-   "lon": -124.04693,
+   "mmsi": 368063210,
+   "lat": 46.1873,
+   "lon": -123.86452,
    "sog_kn": 0,
-   "cog": 2.3,
+   "cog": 129.8,
    "heading": 511,
-   "updated": "2026-11-27 08:54:09.486708898 +0000 UTC"
+   "updated": "2026-11-27 09:23:56.745601444 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18998,
-   "lon": -123.85418,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-27 08:53:50.174292818 +0000 UTC"
-  },
-  {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.1964,
-   "lon": -123.7971,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-27 08:54:04.379133298 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86175,
+   "mmsi": 367358520,
+   "name": "ASHLYNE",
+   "lat": 46.16721,
+   "lon": -123.91752,
    "sog_kn": 0,
-   "cog": 198.3,
-   "heading": 308,
-   "updated": "2026-11-27 08:53:59.265171261 +0000 UTC"
+   "cog": 160.7,
+   "heading": 511,
+   "updated": "2026-11-27 09:23:54.838274275 +0000 UTC"
   }
  ]
 }
