@@ -1,36 +1,47 @@
 {
- "fetched_at": "2026-11-27T06:53:19Z",
+ "fetched_at": "2026-11-27T07:23:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19058,
-   "lon": -123.85694,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-27 06:54:08.26809159 +0000 UTC"
-  },
-  {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85523,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16853,
+   "lon": -123.914,
    "sog_kn": 0,
-   "cog": 335.5,
+   "cog": 173,
    "heading": 511,
-   "updated": "2026-11-27 06:53:56.495862961 +0000 UTC"
+   "updated": "2026-11-27 07:23:54.147911363 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85906,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-27 06:53:59.393405873 +0000 UTC"
+   "mmsi": 352006955,
+   "name": "CENTURY COSMOS",
+   "lat": 46.21775,
+   "lon": -124.14393,
+   "sog_kn": 11.5,
+   "cog": 71.2,
+   "heading": 77,
+   "updated": "2026-11-27 07:24:00.766483556 +0000 UTC"
+  },
+  {
+   "mmsi": 311054300,
+   "name": "GLOVIS CARAVEL",
+   "lat": 46.22839,
+   "lon": -123.97521,
+   "sog_kn": 13,
+   "cog": 314.7,
+   "heading": 314,
+   "updated": "2026-11-27 07:23:45.631892807 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91788,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-27 07:24:09.466005937 +0000 UTC"
   }
  ]
 }
