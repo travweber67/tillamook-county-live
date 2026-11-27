@@ -1,12 +1,26 @@
 {
- "fetched_at": "2026-11-27T23:23:29Z",
+ "fetched_at": "2026-11-27T23:53:29Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "0 incidents in the county scope; 39 active statewide."
+   "note": "1 incidents in the county scope; 45 active statewide."
   }
  ],
- "incidents": [],
- "odot_active_statewide": 39
+ "incidents": [
+  {
+   "title": "Vehicle Incident \u2014 Crash",
+   "desc": "A crash has occurred. Prepare to slow or move over for worker safety. Estimated delay under 20 minutes.",
+   "impact": "Estimated delay under 20 minutes",
+   "place": "US26, 2 miles East of Elsie",
+   "route": "US26",
+   "milepost": 21.86,
+   "lat": 45.85848,
+   "lon": -123.55246,
+   "start": "2026-11-27T15:48:20.647-08:00",
+   "updated": "2026-11-27T15:49:52-08:00",
+   "source": "ODOT TripCheck"
+  }
+ ],
+ "odot_active_statewide": 45
 }

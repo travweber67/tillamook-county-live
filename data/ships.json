@@ -1,17 +1,35 @@
 {
- "fetched_at": "2026-11-27T23:23:29Z",
+ "fetched_at": "2026-11-27T23:53:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18816,
-   "lon": -123.86176,
+   "mmsi": 367648110,
+   "lat": 46.30461,
+   "lon": -124.04255,
    "sog_kn": 0,
-   "cog": 180.3,
-   "heading": 309,
-   "updated": "2026-11-27 23:24:09.708507858 +0000 UTC"
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 23:53:51.795388381 +0000 UTC"
+  },
+  {
+   "mmsi": 368155260,
+   "lat": 46.2702,
+   "lon": -123.94682,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 23:54:14.923805537 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18806,
+   "lon": -123.85905,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-27 23:53:52.782663226 +0000 UTC"
   }
  ]
 }
