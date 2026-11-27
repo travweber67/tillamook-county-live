@@ -1,27 +1,47 @@
 {
- "fetched_at": "2026-11-27T09:53:21Z",
+ "fetched_at": "2026-11-27T10:23:21Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
    "mmsi": 311054300,
    "name": "GLOVIS CARAVEL",
-   "lat": 46.19324,
-   "lon": -124.63221,
-   "sog_kn": 11.5,
-   "cog": 271.5,
-   "heading": 263,
-   "updated": "2026-11-27 09:54:05.386027654 +0000 UTC"
+   "lat": 46.19014,
+   "lon": -124.77916,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "JP THS",
+   "updated": "2026-11-27 10:24:06.167177468 +0000 UTC"
   },
   {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16811,
-   "lon": -123.91427,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-27 10:24:08.59138564 +0000 UTC"
+  },
+  {
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.20019,
+   "lon": -123.76127,
    "sog_kn": 0,
-   "cog": 10.6,
+   "cog": 273.2,
+   "heading": 342,
+   "updated": "2026-11-27 10:23:54.146454197 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30391,
+   "lon": -124.04083,
+   "sog_kn": 0,
+   "cog": 234.4,
    "heading": 511,
-   "updated": "2026-11-27 09:54:09.504024059 +0000 UTC"
+   "updated": "2026-11-27 10:24:09.083382537 +0000 UTC"
   }
  ]
 }
