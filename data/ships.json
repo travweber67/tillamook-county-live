@@ -1,45 +1,17 @@
 {
- "fetched_at": "2026-11-27T22:53:28Z",
+ "fetched_at": "2026-11-27T23:23:29Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367098090,
-   "lat": 46.1672,
-   "lon": -123.91662,
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18816,
+   "lon": -123.86176,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 22:54:21.144045474 +0000 UTC"
-  },
-  {
-   "mmsi": 311000304,
-   "name": "EVER GRACE",
-   "lat": 46.21943,
-   "lon": -123.7808,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USVAN",
-   "updated": "2026-11-27 22:54:00.330815185 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91792,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-27 22:54:10.903798165 +0000 UTC"
-  },
-  {
-   "mmsi": 367384460,
-   "name": "MAVERICK",
-   "lat": 46.16712,
-   "lon": -123.91807,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-27 22:53:52.779269743 +0000 UTC"
+   "cog": 180.3,
+   "heading": 309,
+   "updated": "2026-11-27 23:24:09.708507858 +0000 UTC"
   }
  ]
 }
