@@ -1,8 +1,17 @@
 {
- "fetched_at": "2026-11-27T01:23:15Z",
+ "fetched_at": "2026-11-27T01:53:15Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 366970430,
+   "lat": 46.1897,
+   "lon": -123.85401,
+   "sog_kn": 0,
+   "cog": 159.2,
+   "heading": 511,
+   "updated": "2026-11-27 01:53:18.563126444 +0000 UTC"
+  },
   {
    "mmsi": 367358520,
    "lat": 46.16722,
@@ -10,57 +19,45 @@
    "sog_kn": 0,
    "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-27 01:23:54.909508048 +0000 UTC"
+   "updated": "2026-11-27 01:53:55.576240453 +0000 UTC"
   },
   {
-   "mmsi": 367605150,
-   "name": "ASTORIA",
-   "lat": 46.16835,
-   "lon": -123.91862,
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16854,
+   "lon": -123.914,
    "sog_kn": 0,
-   "cog": 5.8,
-   "heading": 349,
-   "updated": "2026-11-27 01:24:13.59591855 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16775,
-   "lon": -123.91445,
-   "sog_kn": 0,
-   "cog": 242.2,
+   "cog": 10.2,
    "heading": 511,
-   "updated": "2026-11-27 01:23:51.573030499 +0000 UTC"
+   "updated": "2026-11-27 01:53:44.710005422 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.28122,
+   "lon": -124.04686,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-27 01:53:45.699953617 +0000 UTC"
   },
   {
    "mmsi": 209243000,
    "name": "PLATANOS",
-   "lat": 46.20879,
-   "lon": -123.80039,
-   "sog_kn": 0,
-   "cog": 280.8,
-   "heading": 64,
-   "updated": "2026-11-27 01:24:16.813211446 +0000 UTC"
-  },
-  {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85524,
+   "lat": 46.2087,
+   "lon": -123.80065,
    "sog_kn": 0.1,
-   "cog": 335.5,
-   "heading": 511,
-   "updated": "2026-11-27 01:23:57.151933689 +0000 UTC"
+   "cog": 150.4,
+   "heading": 67,
+   "updated": "2026-11-27 01:53:25.022095006 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "name": "REDEEMER",
-   "lat": 46.30391,
-   "lon": -124.04082,
-   "sog_kn": 0,
-   "cog": 234.4,
-   "heading": 511,
-   "updated": "2026-11-27 01:24:08.773979631 +0000 UTC"
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.1903,
+   "lon": -123.82953,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-27 01:53:48.960150315 +0000 UTC"
   }
  ]
 }

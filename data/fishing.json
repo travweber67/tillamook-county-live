@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T01:23:15Z",
+ "fetched_at": "2026-11-27T01:53:15Z",
  "source": "National Weather Service gridpoint forecasts \u00b7 Open-Meteo 10-day wind outlook \u00b7 NOAA National Data Buoy Center buoy observations \u00b7 NOAA Tides & Currents predictions",
  "places": [
   {
@@ -12,7 +12,7 @@
     "gust_mph": 16,
     "dir_deg": 230,
     "src": "buoy",
-    "t": 1795740600000
+    "t": 1795743000000
    },
    "wind_series": [
     {
@@ -169,97 +169,97 @@
      "t": 1795831200000,
      "mph": 1,
      "gust_mph": 5,
-     "dir_deg": 17
+     "dir_deg": 137
     },
     {
      "t": 1795834800000,
-     "mph": 4,
+     "mph": 6,
      "gust_mph": 9,
-     "dir_deg": 47
+     "dir_deg": 15
     },
     {
      "t": 1795838400000,
      "mph": 4,
      "gust_mph": 9,
-     "dir_deg": 43
+     "dir_deg": 33
     },
     {
      "t": 1795842000000,
      "mph": 3,
      "gust_mph": 6,
-     "dir_deg": 78
+     "dir_deg": 65
     },
     {
      "t": 1795845600000,
      "mph": 3,
      "gust_mph": 3,
-     "dir_deg": 105
+     "dir_deg": 39
     },
     {
      "t": 1795849200000,
-     "mph": 2,
+     "mph": 4,
      "gust_mph": 4,
-     "dir_deg": 74
+     "dir_deg": 23
     },
     {
      "t": 1795852800000,
      "mph": 2,
      "gust_mph": 2,
-     "dir_deg": 107
+     "dir_deg": 24
     },
     {
      "t": 1795856400000,
      "mph": 4,
      "gust_mph": 5,
-     "dir_deg": 66
+     "dir_deg": 37
     },
     {
      "t": 1795860000000,
      "mph": 4,
      "gust_mph": 7,
-     "dir_deg": 47
+     "dir_deg": 38
     },
     {
      "t": 1795863600000,
-     "mph": 5,
+     "mph": 6,
      "gust_mph": 9,
-     "dir_deg": 55
+     "dir_deg": 38
     },
     {
      "t": 1795867200000,
      "mph": 6,
      "gust_mph": 12,
-     "dir_deg": 55
+     "dir_deg": 51
     },
     {
      "t": 1795870800000,
      "mph": 6,
      "gust_mph": 8,
-     "dir_deg": 64
+     "dir_deg": 46
     },
     {
      "t": 1795874400000,
-     "mph": 3,
+     "mph": 2,
      "gust_mph": 5,
-     "dir_deg": 125
+     "dir_deg": 37
     },
     {
      "t": 1795878000000,
-     "mph": 3,
+     "mph": 2,
      "gust_mph": 4,
-     "dir_deg": 159
+     "dir_deg": 156
     },
     {
      "t": 1795881600000,
      "mph": 3,
      "gust_mph": 3,
-     "dir_deg": 198
+     "dir_deg": 178
     },
     {
      "t": 1795885200000,
      "mph": 4,
      "gust_mph": 5,
-     "dir_deg": 75
+     "dir_deg": 88
     },
     {
      "t": 1795888800000,
@@ -301,7 +301,7 @@
      "t": 1795910400000,
      "mph": 4,
      "gust_mph": 6,
-     "dir_deg": 96
+     "dir_deg": 135
     },
     {
      "t": 1795914000000,
@@ -1463,18 +1463,18 @@
     }
    ],
    "wave_now": {
-    "ft": 15.7,
-    "dir_deg": 254,
+    "ft": 15.1,
+    "dir_deg": 264,
     "period_s": 12.0,
     "src": "buoy",
-    "t": 1795740600000
+    "t": 1795742400000
    },
    "wave_series": [],
    "tides": [
     {
      "label": "Garibaldi",
      "state": "falling",
-     "cur_ft": 2.5,
+     "cur_ft": 1.2,
      "next": {
       "type": "L",
       "v": -1.85,
@@ -1484,7 +1484,7 @@
     {
      "label": "Netarts",
      "state": "falling",
-     "cur_ft": 2.3,
+     "cur_ft": 1.3,
      "next": {
       "type": "L",
       "v": -1.585,
@@ -1494,7 +1494,7 @@
     {
      "label": "Nehalem",
      "state": "falling",
-     "cur_ft": 2.9,
+     "cur_ft": 1.9,
      "next": {
       "type": "L",
       "v": -1.398,
