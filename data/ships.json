@@ -1,47 +1,37 @@
 {
- "fetched_at": "2026-11-27T20:53:27Z",
+ "fetched_at": "2026-11-27T21:23:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368327020,
-   "name": "GRACEE B",
-   "lat": 46.2708,
-   "lon": -123.94665,
-   "sog_kn": 0.2,
-   "cog": 270.2,
-   "heading": 511,
-   "updated": "2026-11-27 20:53:50.757854217 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20739,
-   "lon": -123.80506,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-27 20:53:53.744476686 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19991,
-   "lon": -123.76047,
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
    "sog_kn": 0,
-   "cog": 170.8,
-   "heading": 511,
-   "updated": "2026-11-27 20:53:52.804733265 +0000 UTC"
+   "cog": 4.4,
+   "heading": 177,
+   "updated": "2026-11-27 21:24:19.924286546 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.25704,
-   "lon": -123.98291,
-   "sog_kn": 0.6,
-   "cog": 273.8,
-   "heading": 280,
-   "updated": "2026-11-27 20:54:03.605912608 +0000 UTC"
+   "lat": 46.25696,
+   "lon": -123.98298,
+   "sog_kn": 0.4,
+   "cog": 194.4,
+   "heading": 293,
+   "updated": "2026-11-27 21:24:24.506151911 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.21337,
+   "lon": -123.76142,
+   "sog_kn": 11.5,
+   "cog": 69,
+   "heading": 511,
+   "updated": "2026-11-27 21:24:04.202501804 +0000 UTC"
   }
  ]
 }
