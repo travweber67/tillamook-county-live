@@ -1,85 +1,94 @@
 {
- "fetched_at": "2026-11-27T02:53:16Z",
+ "fetched_at": "2026-11-27T03:23:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367605150,
-   "name": "ASTORIA",
-   "lat": 46.21343,
-   "lon": -123.95234,
-   "sog_kn": 14.5,
-   "cog": 313.4,
-   "heading": 307,
-   "updated": "2026-11-27 02:54:10.392064491 +0000 UTC"
+   "mmsi": 367498220,
+   "lat": 46.16726,
+   "lon": -123.91629,
+   "sog_kn": 0,
+   "cog": 43.7,
+   "heading": 511,
+   "updated": "2026-11-27 03:23:38.903865075 +0000 UTC"
   },
   {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16721,
-   "lon": -123.91591,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-27 02:53:59.734406113 +0000 UTC"
+   "mmsi": 368063210,
+   "name": "AKVAVIT",
+   "lat": 46.18728,
+   "lon": -123.86453,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-27 03:23:59.405433532 +0000 UTC"
   },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16843,
-   "lon": -123.91838,
+   "lat": 46.16838,
+   "lon": -123.91836,
    "type_code": 50,
    "type": "Pilot vessel",
-   "updated": "2026-11-27 02:53:46.860427066 +0000 UTC"
+   "updated": "2026-11-27 03:23:40.55541239 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.8297,
-   "sog_kn": 0,
-   "cog": 50,
-   "heading": 168,
-   "updated": "2026-11-27 02:54:04.6562007 +0000 UTC"
+   "mmsi": 567025000,
+   "name": "EAST AYUTTHAYA",
+   "lat": 46.20537,
+   "lon": -123.78993,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US SEA",
+   "updated": "2026-11-27 03:23:46.849173977 +0000 UTC"
   },
   {
    "mmsi": 369970121,
    "name": "ELTON",
    "lat": 46.19056,
-   "lon": -123.85701,
+   "lon": -123.85694,
    "type_code": 35,
    "type": "Military",
-   "updated": "2026-11-27 02:54:02.146772966 +0000 UTC"
+   "updated": "2026-11-27 03:24:04.989657355 +0000 UTC"
   },
   {
-   "mmsi": 367648110,
-   "name": "JEANNIE IRENE",
-   "lat": 46.30461,
-   "lon": -124.04255,
-   "sog_kn": 0,
-   "cog": 35.3,
-   "heading": 511,
-   "updated": "2026-11-27 02:54:11.647022541 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20544,
+   "lon": -123.81168,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-27 03:24:06.057237412 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19993,
-   "lon": -123.76049,
+   "mmsi": 367788590,
+   "name": "PROTECTOR",
+   "lat": 46.18863,
+   "lon": -123.85524,
    "sog_kn": 0,
-   "cog": 191.9,
+   "cog": 335.5,
    "heading": 511,
-   "updated": "2026-11-27 02:54:00.352810159 +0000 UTC"
+   "updated": "2026-11-27 03:23:57.209037379 +0000 UTC"
   },
   {
    "mmsi": 366766530,
    "name": "SALVAGE CHIEF",
-   "lat": 46.19633,
-   "lon": -123.79707,
+   "lat": 46.1963,
+   "lon": -123.79708,
    "type_code": 90,
    "type": "Other vessel",
    "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-27 02:54:01.043603968 +0000 UTC"
+   "updated": "2026-11-27 03:24:03.360705333 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85907,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-27 03:23:49.02270611 +0000 UTC"
   }
  ]
 }
