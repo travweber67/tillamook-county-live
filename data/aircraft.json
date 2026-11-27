@@ -1,17 +1,17 @@
 {
- "fetched_at": "2026-11-27T12:53:23Z",
+ "fetched_at": "2026-11-27T13:23:23Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a69463",
-   "callsign": "DAL485",
-   "type": "A21N",
-   "alt_ft": 28975,
-   "gs_kn": 488.2,
-   "track": 37.18,
-   "lat": 45.139564,
-   "lon": -124.571965
+   "hex": "a79d78",
+   "callsign": "ASA558",
+   "type": "B738",
+   "alt_ft": 8275,
+   "gs_kn": 306.1,
+   "track": 65.28,
+   "lat": 45.236023,
+   "lon": -123.014047
   }
  ]
 }
