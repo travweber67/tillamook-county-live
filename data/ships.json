@@ -1,57 +1,54 @@
 {
- "fetched_at": "2026-11-27T03:53:16Z",
+ "fetched_at": "2026-11-27T04:23:17Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16723,
-   "lon": -123.9179,
+   "mmsi": 367355270,
+   "lat": 46.16794,
+   "lon": -123.91432,
    "sog_kn": 0,
-   "cog": 79.6,
-   "heading": 177,
-   "updated": "2026-11-27 03:53:49.966563355 +0000 UTC"
-  },
-  {
-   "mmsi": 366999936,
-   "name": "MLB 47283",
-   "lat": 46.28148,
-   "lon": -124.04693,
-   "sog_kn": 0,
-   "cog": 165,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 03:53:50.28799569 +0000 UTC"
+   "updated": "2026-11-27 04:23:40.475991235 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16773,
-   "lon": -123.91444,
+   "mmsi": 367498220,
+   "lat": 46.16724,
+   "lon": -123.91627,
    "sog_kn": 0,
-   "cog": 240.5,
+   "cog": 43.7,
    "heading": 511,
-   "updated": "2026-11-27 03:54:02.150813179 +0000 UTC"
+   "updated": "2026-11-27 04:23:38.769942304 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85524,
-   "sog_kn": 0,
-   "cog": 335.5,
-   "heading": 511,
-   "updated": "2026-11-27 03:53:57.845378458 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19872,
+   "lon": -123.80863,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-27 04:23:38.006057325 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19635,
-   "lon": -123.79712,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-27 03:53:52.642716345 +0000 UTC"
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16845,
+   "lon": -123.91409,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-27 04:23:47.849514324 +0000 UTC"
+  },
+  {
+   "mmsi": 538011643,
+   "name": "YASA CAMELLIA",
+   "lat": 46.15347,
+   "lon": -124.2024,
+   "sog_kn": 9,
+   "cog": 275,
+   "heading": 272,
+   "updated": "2026-11-27 04:23:43.358263138 +0000 UTC"
   }
  ]
 }
