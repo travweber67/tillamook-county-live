@@ -1,86 +1,75 @@
 {
- "fetched_at": "2026-11-27T16:23:25Z",
+ "fetched_at": "2026-11-27T16:53:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 367089450,
+   "lat": 46.22891,
+   "lon": -123.9691,
+   "sog_kn": 8.6,
+   "cog": 147.1,
+   "heading": 511,
+   "updated": "2026-11-27 16:54:15.019901426 +0000 UTC"
+  },
+  {
    "mmsi": 368468580,
-   "lat": 46.21293,
-   "lon": -123.94243,
-   "sog_kn": 7.3,
-   "cog": 309.8,
-   "heading": 307,
-   "updated": "2026-11-27 16:24:16.666839355 +0000 UTC"
+   "name": "BLUEJAY.CAL29",
+   "lat": 46.22295,
+   "lon": -123.95183,
+   "sog_kn": 1.9,
+   "cog": 93.3,
+   "heading": 140,
+   "updated": "2026-11-27 16:54:16.339347054 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
-   "sog_kn": 0,
-   "cog": 300.7,
-   "heading": 511,
-   "updated": "2026-11-27 16:24:15.475328997 +0000 UTC"
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19053,
+   "lon": -123.85698,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-27 16:53:55.958804693 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.8297,
-   "sog_kn": 0,
-   "cog": 57.1,
-   "heading": 167,
-   "updated": "2026-11-27 16:24:18.30157564 +0000 UTC"
-  },
-  {
-   "mmsi": 368327020,
-   "name": "GRACEE B",
-   "lat": 46.27078,
-   "lon": -123.94659,
-   "sog_kn": 0,
-   "cog": 204.7,
-   "heading": 511,
-   "updated": "2026-11-27 16:24:01.986601325 +0000 UTC"
-  },
-  {
-   "mmsi": 351421000,
-   "name": "ICY BAY",
-   "lat": 46.15721,
-   "lon": -124.45949,
-   "sog_kn": 6.8,
-   "cog": 269,
-   "heading": 258,
-   "updated": "2026-11-27 16:24:12.892212987 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.1999,
-   "lon": -123.76046,
-   "sog_kn": 0,
-   "cog": 173.6,
-   "heading": 511,
-   "updated": "2026-11-27 16:24:01.085319872 +0000 UTC"
+   "mmsi": 538012677,
+   "name": "GRAND PACE",
+   "lat": 46.18991,
+   "lon": -123.90179,
+   "sog_kn": 11.6,
+   "cog": 94.5,
+   "heading": 93,
+   "updated": "2026-11-27 16:54:06.123539661 +0000 UTC"
   },
   {
    "mmsi": 368486640,
    "name": "OCEAN JOY",
-   "lat": 46.2573,
-   "lon": -123.9835,
-   "sog_kn": 1.1,
-   "cog": 19.3,
-   "heading": 124,
-   "updated": "2026-11-27 16:24:13.274689124 +0000 UTC"
+   "lat": 46.25728,
+   "lon": -123.98349,
+   "sog_kn": 1.7,
+   "cog": 153.9,
+   "heading": 149,
+   "updated": "2026-11-27 16:53:55.199089082 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "name": "REDEEMER",
-   "lat": 46.30389,
-   "lon": -124.04083,
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.20739,
+   "lon": -123.76937,
    "sog_kn": 0,
-   "cog": 234.4,
+   "cog": 309.2,
    "heading": 511,
-   "updated": "2026-11-27 16:24:09.051926536 +0000 UTC"
+   "updated": "2026-11-27 16:53:54.30343556 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18812,
+   "lon": -123.86173,
+   "sog_kn": 0,
+   "cog": 322,
+   "heading": 307,
+   "updated": "2026-11-27 16:54:19.405391339 +0000 UTC"
   }
  ]
 }

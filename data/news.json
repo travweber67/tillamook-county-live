@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T16:24:29Z",
+ "fetched_at": "2026-11-27T16:54:29Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,10 +9,21 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "18 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "19 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
+  {
+   "title": "Green Coast Market Adding a Second Store in Nehalem",
+   "source": "Tillamook County Live",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid021Q3fPDLvoHePTjnN4RxkqdoMwxVfmoi9wapZpNZVpyDGH4UtttnCH6RchpuSffo4l&id=61567082338492",
+   "img": "img/news/nehalem-downtown.jpg",
+   "date": "2026-11-27",
+   "summary": "Green Coast Market, the local-food store in downtown Rockaway Beach, is working on a second location in Nehalem, right across from Wanda's Cafe. Owners Julie and Jason shared the news in a Thanksgiving post, saying they are aiming to open the new store in the first half of 2027. The market stocks food and goods from more than 130 local farmers, fishers, foragers and producers, and runs as a year-round farmers market. The original Rockaway Beach store, at 117 S. Miller Street, will remain open.",
+   "img_origin": "licensed",
+   "img_credit": "Photo of downtown Nehalem looking east along Highway 101, by Ian Poellet (Werewombat) via Wikimedia Commons, CC BY-SA (licensed photo, Tillamook County Live original, 2026-11-27).",
+   "tier": "high"
+  },
   {
    "title": "Native American Hertiage Month Celebrated at Bay City Arts Center with Art, Cultural Exchange, Storytelling & More (VIDEO)",
    "source": "Tillamook County Pioneer",
