@@ -1,57 +1,67 @@
 {
- "fetched_at": "2026-11-27T19:54:01Z",
+ "fetched_at": "2026-11-27T20:23:26Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a23eda",
-   "callsign": "N244",
-   "type": "PC12",
-   "alt_ft": 25000,
-   "gs_kn": 241.4,
-   "track": 176.68,
-   "lat": 45.541901,
-   "lon": -123.376269
+   "hex": "a2de7e",
+   "callsign": "SKW3739",
+   "type": "E75L",
+   "alt_ft": 12300,
+   "gs_kn": 316.1,
+   "track": 181.27,
+   "lat": 44.896468,
+   "lon": -123.282813
   },
   {
-   "hex": "a89bfb",
-   "callsign": "N654EA",
-   "type": "B06",
-   "alt_ft": 750,
-   "gs_kn": 5.4,
-   "track": 158.2,
-   "lat": 45.071503,
-   "lon": -123.132673
+   "hex": "acdfa3",
+   "callsign": "ASA1414",
+   "type": "B39M",
+   "alt_ft": 35325,
+   "gs_kn": 433.2,
+   "track": 175.76,
+   "lat": 45.786314,
+   "lon": -123.077568
   },
   {
-   "hex": "a371ad",
-   "callsign": "N3207R",
-   "type": "P28R",
-   "alt_ft": 950,
-   "gs_kn": 95.7,
-   "track": 237.8,
-   "lat": 45.224625,
-   "lon": -123.07506
+   "hex": "a472ac",
+   "callsign": "N386ME",
+   "type": "C172",
+   "alt_ft": 3800,
+   "gs_kn": 88.0,
+   "track": 130.39,
+   "lat": 45.343462,
+   "lon": -122.959855
   },
   {
-   "hex": "a42b32",
-   "callsign": "DAL2766",
-   "type": "A319",
-   "alt_ft": 2750,
-   "gs_kn": 215.0,
-   "track": 23.58,
-   "lat": 45.6129,
-   "lon": -122.863658
+   "hex": "ad40a5",
+   "callsign": "N953JS",
+   "type": "CL35",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.543137,
+   "lon": -122.956172
   },
   {
-   "hex": "a98121",
-   "callsign": "N711PZ",
-   "type": "BE95",
-   "alt_ft": 2750,
-   "gs_kn": 135.1,
-   "track": 321.01,
-   "lat": 45.412079,
-   "lon": -122.814854
+   "hex": "a022d0",
+   "callsign": "SVL77",
+   "type": "C25B",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.542141,
+   "lon": -122.956091
+  },
+  {
+   "hex": "a33ead",
+   "callsign": "N308SU",
+   "type": "C172",
+   "alt_ft": null,
+   "gs_kn": 0.0,
+   "track": null,
+   "lat": 45.533432,
+   "lon": -122.945088
   }
  ]
 }

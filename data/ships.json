@@ -1,6 +1,67 @@
 {
- "fetched_at": "2026-11-27T19:54:01Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T20:23:26Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04671,
+   "sog_kn": 0.1,
+   "cog": 317.4,
+   "heading": 511,
+   "updated": "2026-11-27 20:23:50.259028816 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16841,
+   "lon": -123.91834,
+   "sog_kn": 0,
+   "cog": 21.4,
+   "heading": 351,
+   "updated": "2026-11-27 20:24:09.771499453 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16559,
+   "lon": -123.922,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-27 20:24:08.258214757 +0000 UTC"
+  },
+  {
+   "mmsi": 368126190,
+   "name": "GERONIMO",
+   "lat": 46.24084,
+   "lon": -124.10225,
+   "sog_kn": 5.7,
+   "cog": 223.3,
+   "heading": 226,
+   "updated": "2026-11-27 20:24:04.082651497 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91402,
+   "sog_kn": 0,
+   "cog": 291.6,
+   "heading": 96,
+   "updated": "2026-11-27 20:24:03.448893857 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16847,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 20:24:17.430389532 +0000 UTC"
+  }
+ ]
 }
