@@ -1,76 +1,35 @@
 {
- "fetched_at": "2026-11-27T05:53:18Z",
+ "fetched_at": "2026-11-27T06:02:18Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367648240,
-   "lat": 46.30391,
-   "lon": -124.04082,
-   "sog_kn": 0,
-   "cog": 234.4,
-   "heading": 511,
-   "updated": "2026-11-27 05:54:10.612424634 +0000 UTC"
-  },
-  {
-   "mmsi": 366954430,
-   "name": "CAPT RYAN",
-   "lat": 46.16726,
-   "lon": -123.91593,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "",
-   "updated": "2026-11-27 05:54:00.631354051 +0000 UTC"
-  },
-  {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16563,
-   "lon": -123.92195,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-27 05:54:09.992841249 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
+   "mmsi": 367498220,
    "lat": 46.16723,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-27 05:54:10.611846524 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16778,
-   "lon": -123.9144,
+   "lon": -123.91627,
    "sog_kn": 0,
-   "cog": 207,
+   "cog": 43.7,
    "heading": 511,
-   "updated": "2026-11-27 05:54:02.769109237 +0000 UTC"
+   "updated": "2026-11-27 06:02:37.77906527 +0000 UTC"
   },
   {
-   "mmsi": 209243000,
-   "name": "PLATANOS",
-   "lat": 46.20848,
-   "lon": -123.8014,
+   "mmsi": 352006955,
+   "name": "CENTURY COSMOS",
+   "lat": 46.12526,
+   "lon": -124.25817,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US KAM",
-   "updated": "2026-11-27 05:54:04.820159848 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-27 06:03:03.459917969 +0000 UTC"
   },
   {
-   "mmsi": 538011643,
-   "name": "YASA CAMELLIA",
-   "lat": 46.14875,
-   "lon": -124.52154,
-   "sog_kn": 8.6,
-   "cog": 263,
-   "heading": 259,
-   "updated": "2026-11-27 05:54:03.459013111 +0000 UTC"
+   "mmsi": 338926456,
+   "name": "CGC DAVID DUREN",
+   "lat": 46.20268,
+   "lon": -123.76352,
+   "type_code": 99,
+   "type": "Other vessel",
+   "updated": "2026-11-27 06:02:37.784213738 +0000 UTC"
   }
  ]
 }

@@ -1,12 +1,12 @@
 {
- "fetched_at": "2026-11-27T05:53:18Z",
+ "fetched_at": "2026-11-27T06:02:18Z",
  "sources": [
   {
    "name": "ODOT TripCheck incidents (keyless feed)",
    "status": "ok",
-   "note": "0 incidents in the county scope; 44 active statewide."
+   "note": "0 incidents in the county scope; 43 active statewide."
   }
  ],
  "incidents": [],
- "odot_active_statewide": 44
+ "odot_active_statewide": 43
 }
