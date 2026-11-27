@@ -1,46 +1,45 @@
 {
- "fetched_at": "2026-11-27T22:23:27Z",
+ "fetched_at": "2026-11-27T22:53:28Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28137,
-   "lon": -124.04671,
-   "sog_kn": 0,
-   "cog": 317.4,
-   "heading": 511,
-   "updated": "2026-11-27 22:24:09.528366482 +0000 UTC"
-  },
-  {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19048,
-   "lon": -123.82971,
-   "type_code": 57,
-   "type": "Vessel",
-   "updated": "2026-11-27 22:23:45.361149902 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25691,
-   "lon": -123.98311,
-   "sog_kn": 1,
-   "cog": 311.9,
-   "heading": 303,
-   "updated": "2026-11-27 22:24:11.462242836 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16847,
-   "lon": -123.91407,
+   "mmsi": 367098090,
+   "lat": 46.1672,
+   "lon": -123.91662,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 22:23:46.045510938 +0000 UTC"
+   "updated": "2026-11-27 22:54:21.144045474 +0000 UTC"
+  },
+  {
+   "mmsi": 311000304,
+   "name": "EVER GRACE",
+   "lat": 46.21943,
+   "lon": -123.7808,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USVAN",
+   "updated": "2026-11-27 22:54:00.330815185 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-27 22:54:10.903798165 +0000 UTC"
+  },
+  {
+   "mmsi": 367384460,
+   "name": "MAVERICK",
+   "lat": 46.16712,
+   "lon": -123.91807,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-27 22:53:52.779269743 +0000 UTC"
   }
  ]
 }
