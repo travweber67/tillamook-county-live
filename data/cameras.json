@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-27T13:23:23Z",
+ "fetched_at": "2026-11-27T13:53:23Z",
  "status": "ok",
- "note": "16 cameras verified live from the TripCheck inventory.",
+ "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): US101 at Seaside.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -51,13 +51,6 @@
    "lon": -123.92736,
    "route": "US101",
    "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20MP22.50%20SB_pid4401.jpg"
-  },
-  {
-   "name": "US101 at Seaside",
-   "lat": 45.96512,
-   "lon": -123.92425,
-   "route": "US101",
-   "image_url": "https://www.tripcheck.com/roadcams/cams/Seaside_pid652.jpg"
   },
   {
    "name": "US101 at Cannon Beach NB",
