@@ -1,57 +1,45 @@
 {
- "fetched_at": "2026-11-27T18:23:25Z",
+ "fetched_at": "2026-11-27T18:53:26Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369493021,
-   "name": "CG47235",
-   "lat": 45.55997,
-   "lon": -123.93508,
-   "sog_kn": 24,
-   "cog": 132.3,
-   "heading": 511,
-   "updated": "2026-11-27 18:24:17.61623513 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-27 18:24:09.82971143 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20475,
-   "lon": -123.81136,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-27 18:24:05.318433464 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16925,
-   "lon": -123.91489,
+   "mmsi": 367050280,
+   "lat": 46.16719,
+   "lon": -123.9173,
    "sog_kn": 0,
-   "cog": 239.1,
+   "cog": 347.5,
    "heading": 511,
-   "updated": "2026-11-27 18:24:12.343552066 +0000 UTC"
+   "updated": "2026-11-27 18:54:13.484298159 +0000 UTC"
   },
   {
-   "mmsi": 366766530,
-   "name": "SALVAGE CHIEF",
-   "lat": 46.19637,
-   "lon": -123.79707,
-   "type_code": 90,
-   "type": "Other vessel",
-   "destination": "AWAITING;ORDERS",
-   "updated": "2026-11-27 18:24:04.565739851 +0000 UTC"
+   "mmsi": 367128220,
+   "lat": 46.16718,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-27 18:54:06.746410785 +0000 UTC"
+  },
+  {
+   "mmsi": 367187080,
+   "name": "OCEAN BEAUT",
+   "lat": 46.16907,
+   "lon": -123.91376,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 18:54:26.151611817 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.21415,
+   "lon": -123.76084,
+   "sog_kn": 5.1,
+   "cog": 87.9,
+   "heading": 511,
+   "updated": "2026-11-27 18:54:04.503597561 +0000 UTC"
   }
  ]
 }
