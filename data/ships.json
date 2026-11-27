@@ -1,36 +1,85 @@
 {
- "fetched_at": "2026-11-27T02:23:15Z",
+ "fetched_at": "2026-11-27T02:53:16Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367498220,
-   "lat": 46.16727,
-   "lon": -123.91624,
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.21343,
+   "lon": -123.95234,
+   "sog_kn": 14.5,
+   "cog": 313.4,
+   "heading": 307,
+   "updated": "2026-11-27 02:54:10.392064491 +0000 UTC"
+  },
+  {
+   "mmsi": 366954430,
+   "name": "CAPT RYAN",
+   "lat": 46.16721,
+   "lon": -123.91591,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "",
+   "updated": "2026-11-27 02:53:59.734406113 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16843,
+   "lon": -123.91838,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-27 02:53:46.860427066 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.8297,
    "sog_kn": 0,
-   "cog": 43.7,
+   "cog": 50,
+   "heading": 168,
+   "updated": "2026-11-27 02:54:04.6562007 +0000 UTC"
+  },
+  {
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19056,
+   "lon": -123.85701,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-27 02:54:02.146772966 +0000 UTC"
+  },
+  {
+   "mmsi": 367648110,
+   "name": "JEANNIE IRENE",
+   "lat": 46.30461,
+   "lon": -124.04255,
+   "sog_kn": 0,
+   "cog": 35.3,
    "heading": 511,
-   "updated": "2026-11-27 02:23:42.374223162 +0000 UTC"
+   "updated": "2026-11-27 02:54:11.647022541 +0000 UTC"
   },
   {
    "mmsi": 367638480,
    "name": "OCEAN HUNTER",
-   "lat": 46.19995,
-   "lon": -123.76048,
+   "lat": 46.19993,
+   "lon": -123.76049,
    "sog_kn": 0,
-   "cog": 174.1,
+   "cog": 191.9,
    "heading": 511,
-   "updated": "2026-11-27 02:23:50.563980105 +0000 UTC"
+   "updated": "2026-11-27 02:54:00.352810159 +0000 UTC"
   },
   {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18995,
-   "lon": -123.85419,
-   "sog_kn": 0,
-   "cog": 315.3,
-   "heading": 511,
-   "updated": "2026-11-27 02:23:41.621420331 +0000 UTC"
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19633,
+   "lon": -123.79707,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-27 02:54:01.043603968 +0000 UTC"
   }
  ]
 }
