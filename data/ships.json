@@ -1,16 +1,45 @@
 {
- "fetched_at": "2026-11-27T12:23:23Z",
+ "fetched_at": "2026-11-27T12:53:23Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367788590,
-   "lat": 46.18863,
-   "lon": -123.85524,
+   "mmsi": 367050280,
+   "lat": 46.16718,
+   "lon": -123.91728,
    "sog_kn": 0,
-   "cog": 326,
+   "cog": 165.3,
    "heading": 511,
-   "updated": "2026-11-27 12:23:57.753387662 +0000 UTC"
+   "updated": "2026-11-27 12:54:13.099485213 +0000 UTC"
+  },
+  {
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19059,
+   "lon": -123.85692,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-27 12:53:56.79406578 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16559,
+   "lon": -123.922,
+   "sog_kn": 0,
+   "cog": 13.4,
+   "heading": 511,
+   "updated": "2026-11-27 12:53:49.906807507 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16847,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 12:53:58.679334257 +0000 UTC"
   }
  ]
 }
