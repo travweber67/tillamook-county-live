@@ -1,37 +1,37 @@
 {
- "board": "Tillamook County school closures and delays \u2014 a curated, hand-updated storm-day board. This file is NOT fetcher output and no automated feed exists for these districts; it is edited by hand on storm mornings only.",
+ "board": "Tillamook County school closures and delays — a curated, hand-updated storm-day board. This file is NOT fetcher output and no automated feed exists for these districts; it is edited by hand on storm mornings only.",
  "districts": [
   {
    "id": "tillamook",
-   "name": "Tillamook School District 9",
-   "status": "no_report",
-   "url": "https://www.tillamook.k12.or.us/",
    "link_label": "District site",
-   "note": "Thanksgiving break \u2014 no school Wed Nov 25 \u2013 Fri Nov 27 (scheduled holiday break)"
+   "name": "Tillamook School District 9",
+   "note": "",
+   "status": "no_report",
+   "url": "https://www.tillamook.k12.or.us/"
   },
   {
    "id": "neah-kah-nie",
-   "name": "Neah-Kah-Nie School District",
-   "status": "no_report",
-   "url": "https://www.nknsd.org/",
    "link_label": "District site",
-   "note": "Thanksgiving break \u2014 no school Wed Nov 25 \u2013 Fri Nov 27 (scheduled holiday break)"
+   "name": "Neah-Kah-Nie School District",
+   "note": "",
+   "status": "no_report",
+   "url": "https://www.nknsd.org/"
   },
   {
    "id": "nestucca",
-   "name": "Nestucca Valley School District",
-   "status": "no_report",
-   "url": "https://www.nestucca.k12.or.us/",
    "link_label": "District site",
-   "note": "Thanksgiving break \u2014 no school Wed Nov 25 \u2013 Fri Nov 27 (scheduled holiday break)"
+   "name": "Nestucca Valley School District",
+   "note": "",
+   "status": "no_report",
+   "url": "https://www.nestucca.k12.or.us/"
   },
   {
    "id": "nwresd",
-   "name": "Northwest Regional ESD (NWRESD)",
-   "status": "no_report",
-   "url": "https://www.nwresd.org/",
    "link_label": "NWRESD site",
-   "note": "Regional programs follow NWRESD's own notices"
+   "name": "Northwest Regional ESD (NWRESD)",
+   "note": "Regional programs follow NWRESD's own notices",
+   "status": "no_report",
+   "url": "https://www.nwresd.org/"
   }
  ]
 }

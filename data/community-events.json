@@ -977,6 +977,17 @@
    "url": "https://www.facebook.com/events/2250106495730986/"
   },
   {
+   "date": "2026-12-19",
+   "img": "img/events/ev-gingerbread.jpg",
+   "location": "Pacific Restaurant, Tillamook",
+   "note": "The Tillamook County Pioneer Museum's Holiday High Tea at Pacific Restaurant in Tillamook, with two seatings at 11:00 AM and 2:00 PM. Each ticket includes unlimited tea plus high tea treats and goodies. Tickets are $30 to $50 in advance at tcpm.org (at the door, $35 for children and $55 for adults). Questions: call the museum at 503-842-4553.",
+   "paid": true,
+   "source": "Facebook",
+   "time": "11:00 AM",
+   "title": "Holiday High Tea",
+   "url": "https://tcpm.org"
+  },
+  {
    "date": "2026-12-20",
    "img": "img/events/ev-beachcleanup.jpg",
    "location": "Elk Flats Trailhead",

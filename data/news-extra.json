@@ -1,6 +1,17 @@
 {
  "stories": [
   {
+   "date": "2026-11-27",
+   "img": "img/news/nehalem-downtown.jpg",
+   "img_credit": "Photo of downtown Nehalem looking east along Highway 101, by Ian Poellet (Werewombat) via Wikimedia Commons, CC BY-SA (licensed photo, Tillamook County Live original, 2026-11-27).",
+   "img_origin": "licensed",
+   "source": "Tillamook County Live",
+   "summary": "Green Coast Market, the local-food store in downtown Rockaway Beach, is working on a second location in Nehalem, right across from Wanda's Cafe. Owners Julie and Jason shared the news in a Thanksgiving post, saying they are aiming to open the new store in the first half of 2027. The market stocks food and goods from more than 130 local farmers, fishers, foragers and producers, and runs as a year-round farmers market. The original Rockaway Beach store, at 117 S. Miller Street, will remain open.",
+   "tier": "high",
+   "title": "Green Coast Market Adding a Second Store in Nehalem",
+   "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid021Q3fPDLvoHePTjnN4RxkqdoMwxVfmoi9wapZpNZVpyDGH4UtttnCH6RchpuSffo4l&id=61567082338492"
+  },
+  {
    "date": "2026-11-26",
    "img": "img/news/salmon-river-estuary-search.jpg",
    "img_credit": "Photo of the Salmon River estuary from Cascade Head, the area being searched near Otis, by Lonelystudentwithtoomuchtime via Wikimedia Commons, CC BY-SA 4.0 (licensed photo, Tillamook County Live original, 2026-11-26).",
@@ -254,5 +265,5 @@
    "url": "https://www.tillamookcountypioneer.net/all-hail-queen-sheba-united-paws-cat-of-the-week/"
   }
  ],
- "updated_at": "2026-11-27T06:01:59Z"
+ "updated_at": "2026-11-27T16:50:11Z"
 }
