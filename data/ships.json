@@ -1,47 +1,84 @@
 {
- "fetched_at": "2026-11-27T07:23:19Z",
+ "fetched_at": "2026-11-27T07:53:19Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.914,
+   "mmsi": 367355270,
+   "lat": 46.16795,
+   "lon": -123.91434,
    "sog_kn": 0,
-   "cog": 173,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 07:23:54.147911363 +0000 UTC"
+   "updated": "2026-11-27 07:53:41.194027001 +0000 UTC"
   },
   {
-   "mmsi": 352006955,
-   "name": "CENTURY COSMOS",
-   "lat": 46.21775,
-   "lon": -124.14393,
-   "sog_kn": 11.5,
-   "cog": 71.2,
-   "heading": 77,
-   "updated": "2026-11-27 07:24:00.766483556 +0000 UTC"
+   "mmsi": 368063210,
+   "lat": 46.18731,
+   "lon": -123.86454,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-27 07:53:57.492255166 +0000 UTC"
   },
   {
-   "mmsi": 311054300,
-   "name": "GLOVIS CARAVEL",
-   "lat": 46.22839,
-   "lon": -123.97521,
-   "sog_kn": 13,
-   "cog": 314.7,
-   "heading": 314,
-   "updated": "2026-11-27 07:23:45.631892807 +0000 UTC"
+   "mmsi": 567025000,
+   "name": "EAST AYUTTHAYA",
+   "lat": 46.20462,
+   "lon": -123.78775,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US SEA",
+   "updated": "2026-11-27 07:53:52.543880635 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91788,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.16561,
+   "lon": -123.92196,
+   "sog_kn": 0,
+   "cog": 167.9,
+   "heading": 511,
+   "updated": "2026-11-27 07:53:59.511681858 +0000 UTC"
+  },
+  {
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20013,
+   "lon": -123.76149,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 07:54:01.379614792 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04024,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-27 07:53:55.981643883 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18993,
+   "lon": -123.85418,
+   "sog_kn": 0,
+   "cog": 279.2,
+   "heading": 511,
+   "updated": "2026-11-27 07:53:41.345398308 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16846,
+   "lon": -123.91407,
    "type_code": 30,
    "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-27 07:24:09.466005937 +0000 UTC"
+   "updated": "2026-11-27 07:53:43.375318556 +0000 UTC"
   }
  ]
 }
