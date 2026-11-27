@@ -1,66 +1,116 @@
 {
- "fetched_at": "2026-11-27T15:23:24Z",
+ "fetched_at": "2026-11-27T15:53:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
+   "mmsi": 368155260,
+   "lat": 46.27016,
+   "lon": -123.94621,
+   "sog_kn": 0.1,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 15:54:16.933313079 +0000 UTC"
+  },
+  {
+   "mmsi": 368063210,
+   "name": "AKVAVIT",
+   "lat": 46.18729,
+   "lon": -123.86455,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-27 15:53:59.189184893 +0000 UTC"
+  },
+  {
    "mmsi": 367358520,
-   "lat": 46.16721,
-   "lon": -123.91753,
+   "name": "ASHLYNE",
+   "lat": 46.1672,
+   "lon": -123.91752,
    "sog_kn": 0,
    "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-27 15:23:54.484853444 +0000 UTC"
+   "updated": "2026-11-27 15:53:54.873772691 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.25558,
-   "lon": -124.05685,
-   "sog_kn": 14.5,
-   "cog": 258.9,
-   "heading": 241,
-   "updated": "2026-11-27 15:24:03.881871833 +0000 UTC"
+   "mmsi": 538012677,
+   "name": "GRAND PACE",
+   "lat": 46.20838,
+   "lon": -124.153,
+   "sog_kn": 14.9,
+   "cog": 52.3,
+   "heading": 55,
+   "updated": "2026-11-27 15:54:19.184998142 +0000 UTC"
   },
   {
-   "mmsi": 368155260,
-   "name": "FLASHER",
-   "lat": 46.26937,
-   "lon": -123.95475,
-   "sog_kn": 24.2,
-   "cog": 192,
-   "heading": 511,
-   "updated": "2026-11-27 15:23:52.783363106 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20481,
+   "lon": -123.81161,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-27 15:54:03.343991631 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16871,
-   "lon": -123.91403,
+   "mmsi": 367037240,
+   "name": "IRON LADY",
+   "lat": 46.16812,
+   "lon": -123.91425,
    "sog_kn": 0,
-   "cog": 287.3,
-   "heading": 97,
-   "updated": "2026-11-27 15:24:02.78430283 +0000 UTC"
+   "cog": 177,
+   "heading": 511,
+   "updated": "2026-11-27 15:53:59.042723577 +0000 UTC"
   },
   {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20014,
-   "lon": -123.76151,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30463,
+   "lon": -124.04027,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-27 15:54:06.249571457 +0000 UTC"
+  },
+  {
+   "mmsi": 367788590,
+   "name": "PROTECTOR",
+   "lat": 46.18863,
+   "lon": -123.85524,
+   "sog_kn": 0,
+   "cog": 326,
+   "heading": 511,
+   "updated": "2026-11-27 15:53:56.629053288 +0000 UTC"
+  },
+  {
+   "mmsi": 367740820,
+   "name": "RELIEF",
+   "lat": 46.18993,
+   "lon": -123.85418,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "destination": "ASTORIA NARBOR OPS",
+   "updated": "2026-11-27 15:54:13.137425947 +0000 UTC"
+  },
+  {
+   "mmsi": 367047250,
+   "name": "VOYAGER",
+   "lat": 46.20031,
+   "lon": -123.75303,
+   "sog_kn": 0,
+   "cog": 271.9,
+   "heading": 511,
+   "updated": "2026-11-27 15:54:03.649090089 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16848,
+   "lon": -123.91407,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 15:24:02.785321762 +0000 UTC"
-  },
-  {
-   "mmsi": 563311600,
-   "name": "STANLEY BAY",
-   "lat": 46.19024,
-   "lon": -123.90902,
-   "sog_kn": 12.2,
-   "cog": 281.2,
-   "heading": 284,
-   "updated": "2026-11-27 15:23:54.635295052 +0000 UTC"
+   "updated": "2026-11-27 15:54:17.083941666 +0000 UTC"
   }
  ]
 }
