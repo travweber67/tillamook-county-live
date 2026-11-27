@@ -1,56 +1,6 @@
 {
- "fetched_at": "2026-11-27T19:23:26Z",
- "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
- "ships": [
-  {
-   "mmsi": 368327020,
-   "lat": 46.27079,
-   "lon": -123.94664,
-   "sog_kn": 0.3,
-   "cog": 167.1,
-   "heading": 511,
-   "updated": "2026-11-27 19:24:04.931934845 +0000 UTC"
-  },
-  {
-   "mmsi": 367358520,
-   "name": "ASHLYNE",
-   "lat": 46.16717,
-   "lon": -123.91751,
-   "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-27 19:23:55.380918807 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30461,
-   "lon": -124.04028,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-27 19:24:15.175033517 +0000 UTC"
-  },
-  {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19992,
-   "lon": -123.76049,
-   "sog_kn": 0,
-   "cog": 357.7,
-   "heading": 511,
-   "updated": "2026-11-27 19:24:00.611952099 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16845,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 19:23:56.651578644 +0000 UTC"
-  }
- ]
+ "fetched_at": "2026-11-27T19:54:01Z",
+ "status": "error",
+ "note": "AISStream collection failed: The read operation timed out",
+ "ships": []
 }
