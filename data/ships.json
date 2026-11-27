@@ -1,116 +1,86 @@
 {
- "fetched_at": "2026-11-27T15:53:25Z",
+ "fetched_at": "2026-11-27T16:23:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368155260,
-   "lat": 46.27016,
-   "lon": -123.94621,
-   "sog_kn": 0.1,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 15:54:16.933313079 +0000 UTC"
+   "mmsi": 368468580,
+   "lat": 46.21293,
+   "lon": -123.94243,
+   "sog_kn": 7.3,
+   "cog": 309.8,
+   "heading": 307,
+   "updated": "2026-11-27 16:24:16.666839355 +0000 UTC"
   },
   {
-   "mmsi": 368063210,
-   "name": "AKVAVIT",
-   "lat": 46.18729,
-   "lon": -123.86455,
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.28138,
+   "lon": -124.04671,
    "sog_kn": 0,
-   "cog": 129.8,
+   "cog": 300.7,
    "heading": 511,
-   "updated": "2026-11-27 15:53:59.189184893 +0000 UTC"
+   "updated": "2026-11-27 16:24:15.475328997 +0000 UTC"
   },
   {
-   "mmsi": 367358520,
-   "name": "ASHLYNE",
-   "lat": 46.1672,
-   "lon": -123.91752,
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.8297,
    "sog_kn": 0,
-   "cog": 160.7,
-   "heading": 511,
-   "updated": "2026-11-27 15:53:54.873772691 +0000 UTC"
+   "cog": 57.1,
+   "heading": 167,
+   "updated": "2026-11-27 16:24:18.30157564 +0000 UTC"
   },
   {
-   "mmsi": 538012677,
-   "name": "GRAND PACE",
-   "lat": 46.20838,
-   "lon": -124.153,
-   "sog_kn": 14.9,
-   "cog": 52.3,
-   "heading": 55,
-   "updated": "2026-11-27 15:54:19.184998142 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20481,
-   "lon": -123.81161,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-27 15:54:03.343991631 +0000 UTC"
-  },
-  {
-   "mmsi": 367037240,
-   "name": "IRON LADY",
-   "lat": 46.16812,
-   "lon": -123.91425,
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.27078,
+   "lon": -123.94659,
    "sog_kn": 0,
-   "cog": 177,
+   "cog": 204.7,
    "heading": 511,
-   "updated": "2026-11-27 15:53:59.042723577 +0000 UTC"
+   "updated": "2026-11-27 16:24:01.986601325 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04027,
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.15721,
+   "lon": -124.45949,
+   "sog_kn": 6.8,
+   "cog": 269,
+   "heading": 258,
+   "updated": "2026-11-27 16:24:12.892212987 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.1999,
+   "lon": -123.76046,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 173.6,
    "heading": 511,
-   "updated": "2026-11-27 15:54:06.249571457 +0000 UTC"
+   "updated": "2026-11-27 16:24:01.085319872 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "name": "PROTECTOR",
-   "lat": 46.18863,
-   "lon": -123.85524,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.2573,
+   "lon": -123.9835,
+   "sog_kn": 1.1,
+   "cog": 19.3,
+   "heading": 124,
+   "updated": "2026-11-27 16:24:13.274689124 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30389,
+   "lon": -124.04083,
    "sog_kn": 0,
-   "cog": 326,
+   "cog": 234.4,
    "heading": 511,
-   "updated": "2026-11-27 15:53:56.629053288 +0000 UTC"
-  },
-  {
-   "mmsi": 367740820,
-   "name": "RELIEF",
-   "lat": 46.18993,
-   "lon": -123.85418,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "destination": "ASTORIA NARBOR OPS",
-   "updated": "2026-11-27 15:54:13.137425947 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.20031,
-   "lon": -123.75303,
-   "sog_kn": 0,
-   "cog": 271.9,
-   "heading": 511,
-   "updated": "2026-11-27 15:54:03.649090089 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16848,
-   "lon": -123.91407,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 15:54:17.083941666 +0000 UTC"
+   "updated": "2026-11-27 16:24:09.051926536 +0000 UTC"
   }
  ]
 }
