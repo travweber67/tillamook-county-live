@@ -1,75 +1,87 @@
 {
- "fetched_at": "2026-11-27T16:53:25Z",
+ "fetched_at": "2026-11-27T17:23:25Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367089450,
-   "lat": 46.22891,
-   "lon": -123.9691,
-   "sog_kn": 8.6,
-   "cog": 147.1,
-   "heading": 511,
-   "updated": "2026-11-27 16:54:15.019901426 +0000 UTC"
-  },
-  {
-   "mmsi": 368468580,
-   "name": "BLUEJAY.CAL29",
-   "lat": 46.22295,
-   "lon": -123.95183,
-   "sog_kn": 1.9,
-   "cog": 93.3,
-   "heading": 140,
-   "updated": "2026-11-27 16:54:16.339347054 +0000 UTC"
-  },
-  {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19053,
-   "lon": -123.85698,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-27 16:53:55.958804693 +0000 UTC"
-  },
-  {
-   "mmsi": 538012677,
-   "name": "GRAND PACE",
-   "lat": 46.18991,
-   "lon": -123.90179,
-   "sog_kn": 11.6,
-   "cog": 94.5,
-   "heading": 93,
-   "updated": "2026-11-27 16:54:06.123539661 +0000 UTC"
-  },
-  {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25728,
-   "lon": -123.98349,
-   "sog_kn": 1.7,
-   "cog": 153.9,
-   "heading": 149,
-   "updated": "2026-11-27 16:53:55.199089082 +0000 UTC"
-  },
-  {
-   "mmsi": 367047250,
-   "name": "VOYAGER",
-   "lat": 46.20739,
-   "lon": -123.76937,
+   "mmsi": 367358520,
+   "name": "ASHLYNE",
+   "lat": 46.1672,
+   "lon": -123.91751,
    "sog_kn": 0,
-   "cog": 309.2,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-27 16:53:54.30343556 +0000 UTC"
+   "updated": "2026-11-27 17:23:54.441634581 +0000 UTC"
   },
   {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18812,
-   "lon": -123.86173,
+   "mmsi": 567025000,
+   "name": "EAST AYUTTHAYA",
+   "lat": 46.20517,
+   "lon": -123.78966,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US SEA",
+   "updated": "2026-11-27 17:24:01.526248243 +0000 UTC"
+  },
+  {
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.92198,
    "sog_kn": 0,
-   "cog": 322,
-   "heading": 307,
-   "updated": "2026-11-27 16:54:19.405391339 +0000 UTC"
+   "cog": 194.5,
+   "heading": 511,
+   "updated": "2026-11-27 17:23:59.632650021 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16723,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-27 17:24:12.451967548 +0000 UTC"
+  },
+  {
+   "mmsi": 351421000,
+   "name": "ICY BAY",
+   "lat": 46.18803,
+   "lon": -124.66236,
+   "sog_kn": 9.6,
+   "cog": 283.1,
+   "heading": 276,
+   "updated": "2026-11-27 17:23:51.49280112 +0000 UTC"
+  },
+  {
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20015,
+   "lon": -123.76151,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 17:24:01.41629488 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16777,
+   "lon": -123.91441,
+   "sog_kn": 0,
+   "cog": 312.7,
+   "heading": 511,
+   "updated": "2026-11-27 17:24:10.776739419 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30389,
+   "lon": -124.04084,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-27 17:24:08.995843896 +0000 UTC"
   }
  ]
 }
