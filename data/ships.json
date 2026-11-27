@@ -1,37 +1,36 @@
 {
- "fetched_at": "2026-11-27T06:23:18Z",
+ "fetched_at": "2026-11-27T06:53:19Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.1656,
-   "lon": -123.92192,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-27 06:23:49.336777717 +0000 UTC"
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19058,
+   "lon": -123.85694,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-27 06:54:08.26809159 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.16776,
-   "lon": -123.91444,
+   "mmsi": 367788590,
+   "name": "PROTECTOR",
+   "lat": 46.18863,
+   "lon": -123.85523,
    "sog_kn": 0,
-   "cog": 209.3,
+   "cog": 335.5,
    "heading": 511,
-   "updated": "2026-11-27 06:24:04.629790853 +0000 UTC"
+   "updated": "2026-11-27 06:53:56.495862961 +0000 UTC"
   },
   {
    "mmsi": 366608000,
    "name": "SEAWARD EXPLORER",
-   "lat": 46.1881,
-   "lon": -123.85901,
+   "lat": 46.18806,
+   "lon": -123.85906,
    "type_code": 0,
    "type": "Vessel",
    "destination": "ASTORIA,0R",
-   "updated": "2026-11-27 06:23:49.039573211 +0000 UTC"
+   "updated": "2026-11-27 06:53:59.393405873 +0000 UTC"
   }
  ]
 }
