@@ -1,67 +1,47 @@
 {
- "fetched_at": "2026-11-27T20:23:26Z",
+ "fetched_at": "2026-11-27T20:53:27Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28138,
-   "lon": -124.04671,
-   "sog_kn": 0.1,
-   "cog": 317.4,
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.2708,
+   "lon": -123.94665,
+   "sog_kn": 0.2,
+   "cog": 270.2,
    "heading": 511,
-   "updated": "2026-11-27 20:23:50.259028816 +0000 UTC"
+   "updated": "2026-11-27 20:53:50.757854217 +0000 UTC"
   },
   {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16841,
-   "lon": -123.91834,
-   "sog_kn": 0,
-   "cog": 21.4,
-   "heading": 351,
-   "updated": "2026-11-27 20:24:09.771499453 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20739,
+   "lon": -123.80506,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-27 20:53:53.744476686 +0000 UTC"
   },
   {
-   "mmsi": 367327250,
-   "name": "ENDEAVOR",
-   "lat": 46.16559,
-   "lon": -123.922,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19991,
+   "lon": -123.76047,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 170.8,
    "heading": 511,
-   "updated": "2026-11-27 20:24:08.258214757 +0000 UTC"
+   "updated": "2026-11-27 20:53:52.804733265 +0000 UTC"
   },
   {
-   "mmsi": 368126190,
-   "name": "GERONIMO",
-   "lat": 46.24084,
-   "lon": -124.10225,
-   "sog_kn": 5.7,
-   "cog": 223.3,
-   "heading": 226,
-   "updated": "2026-11-27 20:24:04.082651497 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91402,
-   "sog_kn": 0,
-   "cog": 291.6,
-   "heading": 96,
-   "updated": "2026-11-27 20:24:03.448893857 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16847,
-   "lon": -123.91404,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 20:24:17.430389532 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25704,
+   "lon": -123.98291,
+   "sog_kn": 0.6,
+   "cog": 273.8,
+   "heading": 280,
+   "updated": "2026-11-27 20:54:03.605912608 +0000 UTC"
   }
  ]
 }
