@@ -1,7 +1,7 @@
 {
- "fetched_at": "2026-11-27T21:23:27Z",
+ "fetched_at": "2026-11-27T21:53:28Z",
  "status": "ok",
- "note": "15 cameras verified live from the TripCheck inventory. Dropped (listed in the inventory but the still image does not resolve): US101 at Lincoln City -  Logan Rd.",
+ "note": "16 cameras verified live from the TripCheck inventory.",
  "cameras": [
   {
    "name": "Barview Jetty Lookout (USCG)",
@@ -65,6 +65,13 @@
    "lon": -123.94987,
    "route": "US101",
    "image_url": "https://www.tripcheck.com/roadcams/cams/US101%20at%20Cannon%20Beach%20SB_pid4431.jpg"
+  },
+  {
+   "name": "US101 at Lincoln City -  Logan Rd",
+   "lat": 44.99569,
+   "lon": -124.00531,
+   "route": "US101",
+   "image_url": "https://www.tripcheck.com/roadcams/cams/LincolnCityLogan_pid633.jpg"
   },
   {
    "name": "US101 at Lincoln City",

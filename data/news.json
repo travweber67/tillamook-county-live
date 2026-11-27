@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-27T21:24:42Z",
+ "fetched_at": "2026-11-27T21:54:31Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -13,6 +13,15 @@
   }
  ],
  "stories": [
+  {
+   "title": "TILLAMOOK COUNTY SHERIFF’S OFFICE: INVESTIGATION, SEARCH & RESCUE FOR MISSING PERSONS NEAR OTIS, OR ON THANKSGIVING NOV. 26",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/tillamook-county-sheriffs-office-investigation-search-rescue-for-missing-persons-near-otis-or-on-thanksgiving-nov-26/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/06/TCSOlogo.jpg",
+   "date": "2026-11-27",
+   "summary": "November 26th, 2026 8:36pm The Tillamook County Sheriff’s Office is currently conducting an investigation involving two missing individuals in the Savage Road area of Otis, Oregon. The missing individuals are a 49-year-old...",
+   "tier": "high"
+  },
   {
    "title": "Green Coast Market Adding a Second Store in Nehalem",
    "source": "Tillamook County Live",
@@ -232,6 +241,15 @@
    "tier": "high"
   },
   {
+   "title": "Oregon Christmas trees create jobs during the holiday season",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/oregon-christmas-trees-create-jobs-during-the-holiday-season/article_1f00a8b4-f4b4-5ea1-8ba6-a386fe977dd8.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/93/293cb22b-92fb-5714-a908-08aa1e1425db/6b09aee72711d.image.png?resize=300%2C199",
+   "date": "2026-11-27",
+   "summary": "Employment at 81 Oregon Christmas tree growers reached 1,170 jobs in November 2025 as farms harvested trees for the holidays. That was 377 jobs above the group’s average of 793 for the year.",
+   "tier": "useful"
+  },
+  {
    "title": "Dramatic photos show the danger of the Pacific Ocean",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/dramatic-photos-show-the-danger-of-the-pacific-ocean/article_27dbf1df-4f8a-5b6e-9f93-620978b8defe.html",
@@ -250,22 +268,22 @@
    "tier": "useful"
   },
   {
-   "title": "OREGON HEALTH AUTHORITY: Keep holiday meals safe, germ-free – Clean, separate, cook, chill",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-keep-holiday-meals-safe-germ-free-clean-separate-cook-chill/",
-   "img": "https://content.govdelivery.com/attachments/fancy_images/ORHA/2026/11/14781031/holiday-food-safety-tips-thumbnail_original.png",
-   "date": "2026-11-25",
-   "summary": "CDC’s steps to food safety stress proper poultry handling, kitchen hygiene (PORTLAND, OR)—Keeping yourself and loved ones safe from foodborne germs this holiday season takes just four easy steps—cleaning, separating,...",
-   "tier": "useful"
+   "title": "Logging and spray notices: Nov. 19 to Nov. 25",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/logging-and-spray-notices-stimson-files-to-log-42-1-acres-near-mohler/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/weekly-2026-11-19-numbered-7.jpg",
+   "date": "2026-11-27",
+   "summary": "Two notices for work in the Tillamook Forest were filed Nov. 19 to Nov. 25, both by Stimson Lumber Company.",
+   "tier": "routine"
   },
   {
-   "title": "OREGON HEALTH AUTHORITY: OHA to delay enforcement of new federal Medicaid work rules to keep people in Oregon insured",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-oha-to-delay-enforcement-of-new-federal-medicaid-work-rules-to-keep-people-in-oregon-insured/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/OHAWorkRequirepaperwork-300x300.jpg",
-   "date": "2026-11-24",
-   "summary": "A new federal option will allow Oregon to delay enforcement of work rules for six months, ensuring Oregon Health Plan members do not lose coverage for failing to meet new requirements while...",
-   "tier": "useful"
+   "title": "Pump prices dropping, but we're paying more than last year",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/pump-prices-dropping-but-were-paying-more-than-last-year/article_069d4978-be6a-5a26-a766-e1a4230fc300.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/31/e314d713-2faa-5b2f-9609-df3758534b70/6b09aee9066d8.image.png?resize=300%2C374",
+   "date": "2026-11-27",
+   "summary": "Drivers are getting a Thanksgiving break at the pumps as gas and diesel prices fall in all 50 states this week, according to the American Automobile Association (AAA).",
+   "tier": "routine"
   },
   {
    "title": "CLATSOP NEHALEM CONFEDERATED TRIBES CELEBRATE NEACOXIE VILLAGE, WELCOME POLE INSTALLATION, TREE PLANTING",
@@ -292,24 +310,6 @@
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/eurus-met-tower-locator-map.jpg",
    "date": "2026-11-25",
    "summary": "Eurus would put the 197.7-foot tower in the Trask River watershed for one to three years. Tillamook County is taking written comments until 4 p.m. Dec. 1.",
-   "tier": "routine"
-  },
-  {
-   "title": "High Wind Warning and Advisory into Thursday morning",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/high-wind-warning-and-advisory-into-thursday-morning/article_9cf089ef-da9c-41b6-b367-51960a2590ac.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/73/e735bae8-7685-11ec-a582-e76813411731/61e3a0da53ccf.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
-   "summary": "High Wind Warning until 07:00AM Thursday",
-   "tier": "routine"
-  },
-  {
-   "title": "Port board temporarily extends OCSR lease",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/port-board-temporarily-extends-ocsr-lease/article_71c29f03-fcb7-489b-861e-19e6f549ccb6.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/c/4d/c4dda128-3347-591b-8c78-9bbe3f2a166c/650b1463dd91d.image.jpg?resize=300%2C200",
-   "date": "2026-11-24",
-   "summary": "With negotiations on a long-term lease near completion with the Oregon Coast Scenic Railroad, the Port of Tillamook Bay’s Board of Commissioners voted to extend the railroad’s current lease to March 31, 2027, at their November 18 board meeting.",
    "tier": "routine"
   }
  ]
