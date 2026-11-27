@@ -1,6 +1,66 @@
 {
- "fetched_at": "2026-11-27T14:53:24Z",
- "status": "error",
- "note": "AISStream collection failed: The read operation timed out",
- "ships": []
+ "fetched_at": "2026-11-27T15:23:24Z",
+ "status": "ok",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "ships": [
+  {
+   "mmsi": 367358520,
+   "lat": 46.16721,
+   "lon": -123.91753,
+   "sog_kn": 0,
+   "cog": 160.7,
+   "heading": 511,
+   "updated": "2026-11-27 15:23:54.484853444 +0000 UTC"
+  },
+  {
+   "mmsi": 369493291,
+   "name": "CG47217",
+   "lat": 46.25558,
+   "lon": -124.05685,
+   "sog_kn": 14.5,
+   "cog": 258.9,
+   "heading": 241,
+   "updated": "2026-11-27 15:24:03.881871833 +0000 UTC"
+  },
+  {
+   "mmsi": 368155260,
+   "name": "FLASHER",
+   "lat": 46.26937,
+   "lon": -123.95475,
+   "sog_kn": 24.2,
+   "cog": 192,
+   "heading": 511,
+   "updated": "2026-11-27 15:23:52.783363106 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16871,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 287.3,
+   "heading": 97,
+   "updated": "2026-11-27 15:24:02.78430283 +0000 UTC"
+  },
+  {
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20014,
+   "lon": -123.76151,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-27 15:24:02.785321762 +0000 UTC"
+  },
+  {
+   "mmsi": 563311600,
+   "name": "STANLEY BAY",
+   "lat": 46.19024,
+   "lon": -123.90902,
+   "sog_kn": 12.2,
+   "cog": 281.2,
+   "heading": 284,
+   "updated": "2026-11-27 15:23:54.635295052 +0000 UTC"
+  }
+ ]
 }
