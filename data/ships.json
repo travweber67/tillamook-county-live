@@ -1,25 +1,65 @@
 {
- "fetched_at": "2026-11-26T23:53:14Z",
+ "fetched_at": "2026-11-27T00:23:14Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367084780,
-   "lat": 46.18685,
-   "lon": -123.86376,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-26 23:54:57.144814667 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.82971,
+   "type_code": 57,
+   "type": "Vessel",
+   "updated": "2026-11-27 00:23:56.145029602 +0000 UTC"
   },
   {
-   "mmsi": 368444690,
-   "lat": 46.16643,
-   "lon": -123.91726,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 567025000,
+   "name": "EAST AYUTTHAYA",
+   "lat": 46.206,
+   "lon": -123.7895,
+   "sog_kn": 0.1,
+   "cog": 306.2,
+   "heading": 67,
+   "updated": "2026-11-27 00:23:27.0057873 +0000 UTC"
+  },
+  {
+   "mmsi": 368327020,
+   "name": "GRACEE B",
+   "lat": 46.27078,
+   "lon": -123.94661,
+   "sog_kn": 0.2,
+   "cog": 93.1,
    "heading": 511,
-   "updated": "2026-11-26 23:54:48.9090884 +0000 UTC"
+   "updated": "2026-11-27 00:23:55.594978666 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91402,
+   "sog_kn": 0,
+   "cog": 210.1,
+   "heading": 97,
+   "updated": "2026-11-27 00:23:51.678346398 +0000 UTC"
+  },
+  {
+   "mmsi": 209243000,
+   "name": "PLATANOS",
+   "lat": 46.20898,
+   "lon": -123.80047,
+   "sog_kn": 0,
+   "cog": 333.6,
+   "heading": 68,
+   "updated": "2026-11-27 00:23:56.45500134 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19033,
+   "lon": -123.82948,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-27 00:23:25.853957197 +0000 UTC"
   }
  ]
 }

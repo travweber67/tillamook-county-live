@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T23:55:20Z",
+ "fetched_at": "2026-11-27T00:24:11Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -9,7 +9,7 @@
   {
    "name": "Second-chance pictures (agent pass)",
    "status": "ok",
-   "note": "19 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
+   "note": "17 stories from data/news-extra.json merged: real local stories that had no source photo, given a sourced openly-licensed photo or a generated generic subject image by the agent pass (Travis, 2026-11-21). Each carries img_origin / img_credit in its record."
   }
  ],
  "stories": [
@@ -210,33 +210,11 @@
    "tier": "high"
   },
   {
-   "title": "Consejo Hispano's Magia Navideña: holiday gifts for local families, from local givers",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/consejo-hispanos-holiday-gift-giving-program-magia-navidena-is-here/",
-   "img": "img/news/magia-navidena.jpg",
-   "date": "2026-11-16",
-   "summary": "Consejo Hispano's annual Holiday Gift Giving Program, Magia Navideña, is underway: community members sponsor a local child and shop for their holiday wishes, bringing a little extra alegría and warmth to families across Tillamook County. Givers are thanked with a Cerveza y Chocolate donor celebration.",
-   "img_origin": "generated",
-   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (News Scout batch 1, 2026-11-21).",
-   "tier": "high"
-  },
-  {
-   "title": "All Hail Queen Sheba, United Paws Cat of the Week",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/all-hail-queen-sheba-united-paws-cat-of-the-week/",
-   "img": "img/news/queen-sheba-cat.jpg",
-   "date": "2026-11-16",
-   "summary": "Meet Sheba, United Paws Cat of the Week. The first thing you will notice about Sheba are her eyes; they are huge saucers, bright yellow, and curious. The next thing you...",
-   "img_origin": "generated",
-   "img_credit": "Generated illustration — generic subject art, not a photo of the story's subject (second-chance picture pass, 2026-11-21).",
-   "tier": "high"
-  },
-  {
    "title": "Dramatic photos show the danger of the Pacific Ocean",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/dramatic-photos-show-the-danger-of-the-pacific-ocean/article_27dbf1df-4f8a-5b6e-9f93-620978b8defe.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/8e/68ed47ba-8f8d-5d3a-8667-ce08aabfe939/6b0690dd58865.image.png?resize=300%2C281",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "The Cannon Beach Police Department has released photos showing the extreme dangers associated with King Tides and surging surf.",
    "tier": "useful"
   },
@@ -245,7 +223,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/tillamook-test-scores-improve-steadily/article_44d26229-70f6-402e-8ce3-ec27ae97d5a4.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/13/213b5a06-4e65-11ed-a172-7354ed8f9a94/634ed482b6b40.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "Tillamook School District students exceeded statewide averages in grade level proficiency in English and language arts, and science last year, while slightly lagging the statewide average in math testing.",
    "tier": "useful"
   },
@@ -254,7 +232,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/oregon-health-authority-keep-holiday-meals-safe-germ-free-clean-separate-cook-chill/",
    "img": "https://content.govdelivery.com/attachments/fancy_images/ORHA/2026/11/14781031/holiday-food-safety-tips-thumbnail_original.png",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "CDC’s steps to food safety stress proper poultry handling, kitchen hygiene (PORTLAND, OR)—Keeping yourself and loved ones safe from foodborne germs this holiday season takes just four easy steps—cleaning, separating,...",
    "tier": "useful"
   },
@@ -272,7 +250,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/tillamook-county-parks-department-important-safety-and-maintenance-notice-netarts-boat-launch-use-advisory/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TCParksNetartsBoatRamp11.24B-300x225.jpg",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "A BIG SHOUT-OUT AND THANK YOU TO OUR TILLAMOOK COUNTY PARKS MAINTENANCE TEAM! Here’s the Netarts Boat Ramp Wednesday afternoon, November 25, 2026! We want to recognize and thank our dedicated Tillamook...",
    "tier": "routine"
   },
@@ -281,7 +259,7 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/wind-developer-seeks-tower-to-measure-wind-on-weyerhaeuser-land/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/eurus-met-tower-locator-map.jpg",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "Eurus would put the 197.7-foot tower in the Trask River watershed for one to three years. Tillamook County is taking written comments until 4 p.m. Dec. 1.",
    "tier": "routine"
   },
@@ -290,7 +268,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/high-wind-warning-and-advisory-into-thursday-morning/article_9cf089ef-da9c-41b6-b367-51960a2590ac.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/73/e735bae8-7685-11ec-a582-e76813411731/61e3a0da53ccf.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "summary": "High Wind Warning until 07:00AM Thursday",
    "tier": "routine"
   },
