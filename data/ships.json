@@ -1,47 +1,114 @@
 {
- "fetched_at": "2026-11-27T10:23:21Z",
+ "fetched_at": "2026-11-27T10:53:22Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 11 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 311054300,
-   "name": "GLOVIS CARAVEL",
-   "lat": 46.19014,
-   "lon": -124.77916,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "JP THS",
-   "updated": "2026-11-27 10:24:06.167177468 +0000 UTC"
+   "mmsi": 367128220,
+   "lat": 46.16721,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-27 10:54:06.175783853 +0000 UTC"
+  },
+  {
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.16838,
+   "lon": -123.91858,
+   "sog_kn": 0,
+   "cog": 4.8,
+   "heading": 349,
+   "updated": "2026-11-27 10:53:48.886599305 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.2126,
+   "lon": -123.77209,
+   "sog_kn": 11.6,
+   "cog": 340.4,
+   "heading": 330,
+   "updated": "2026-11-27 10:53:58.613887967 +0000 UTC"
+  },
+  {
+   "mmsi": 369970121,
+   "name": "ELTON",
+   "lat": 46.19053,
+   "lon": -123.85696,
+   "type_code": 35,
+   "type": "Military",
+   "updated": "2026-11-27 10:54:03.343493159 +0000 UTC"
   },
   {
    "mmsi": 367156340,
    "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
+   "lat": 46.16727,
+   "lon": -123.91792,
    "type_code": 30,
    "type": "Fishing",
    "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-27 10:24:08.59138564 +0000 UTC"
+   "updated": "2026-11-27 10:54:09.184118306 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.20019,
-   "lon": -123.76127,
-   "sog_kn": 0,
-   "cog": 273.2,
-   "heading": 342,
-   "updated": "2026-11-27 10:23:54.146454197 +0000 UTC"
+   "mmsi": 538012677,
+   "name": "GRAND PACE",
+   "lat": 46.35734,
+   "lon": -124.76293,
+   "sog_kn": 3.7,
+   "cog": 127.1,
+   "heading": 144,
+   "updated": "2026-11-27 10:54:05.297429288 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "name": "REDEEMER",
-   "lat": 46.30391,
-   "lon": -124.04083,
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.7605,
    "sog_kn": 0,
-   "cog": 234.4,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-27 10:24:09.083382537 +0000 UTC"
+   "updated": "2026-11-27 10:53:59.870050742 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16775,
+   "lon": -123.91445,
+   "sog_kn": 0,
+   "cog": 249.3,
+   "heading": 511,
+   "updated": "2026-11-27 10:54:12.496702465 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18806,
+   "lon": -123.85905,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-27 10:54:00.973215116 +0000 UTC"
+  },
+  {
+   "mmsi": 477113700,
+   "name": "SHANDONG XIN XING",
+   "lat": 46.21549,
+   "lon": -123.77237,
+   "sog_kn": 8.6,
+   "cog": 242.1,
+   "heading": 243,
+   "updated": "2026-11-27 10:53:48.007902605 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19032,
+   "lon": -123.8295,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-27 10:54:09.331627945 +0000 UTC"
   }
  ]
 }
