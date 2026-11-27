@@ -1,35 +1,37 @@
 {
- "fetched_at": "2026-11-27T06:02:18Z",
+ "fetched_at": "2026-11-27T06:23:18Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367498220,
-   "lat": 46.16723,
-   "lon": -123.91627,
+   "mmsi": 367327250,
+   "name": "ENDEAVOR",
+   "lat": 46.1656,
+   "lon": -123.92192,
    "sog_kn": 0,
-   "cog": 43.7,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-27 06:02:37.77906527 +0000 UTC"
+   "updated": "2026-11-27 06:23:49.336777717 +0000 UTC"
   },
   {
-   "mmsi": 352006955,
-   "name": "CENTURY COSMOS",
-   "lat": 46.12526,
-   "lon": -124.25817,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-27 06:03:03.459917969 +0000 UTC"
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.16776,
+   "lon": -123.91444,
+   "sog_kn": 0,
+   "cog": 209.3,
+   "heading": 511,
+   "updated": "2026-11-27 06:24:04.629790853 +0000 UTC"
   },
   {
-   "mmsi": 338926456,
-   "name": "CGC DAVID DUREN",
-   "lat": 46.20268,
-   "lon": -123.76352,
-   "type_code": 99,
-   "type": "Other vessel",
-   "updated": "2026-11-27 06:02:37.784213738 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.1881,
+   "lon": -123.85901,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-27 06:23:49.039573211 +0000 UTC"
   }
  ]
 }
