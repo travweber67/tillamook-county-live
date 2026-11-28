@@ -1,45 +1,37 @@
 {
- "fetched_at": "2026-11-28T15:23:41Z",
+ "fetched_at": "2026-11-28T15:53:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367098090,
-   "lat": 46.16721,
-   "lon": -123.91662,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 15:24:21.184903339 +0000 UTC"
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.1724,
+   "lon": -123.91264,
+   "sog_kn": 7.3,
+   "cog": 199.6,
+   "heading": 199,
+   "updated": "2026-11-28 15:54:19.321394164 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "lat": 46.3039,
-   "lon": -124.04083,
-   "sog_kn": 0,
-   "cog": 234.4,
-   "heading": 511,
-   "updated": "2026-11-28 15:24:10.82183614 +0000 UTC"
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20475,
+   "lon": -123.81171,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-28 15:54:04.630467071 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.914,
-   "sog_kn": 0,
-   "cog": 4.7,
-   "heading": 511,
-   "updated": "2026-11-28 15:24:27.508859229 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 45.95581,
-   "lon": -124.61893,
-   "sog_kn": 5.8,
-   "cog": 218,
-   "heading": 511,
-   "updated": "2026-11-28 15:24:23.856488521 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18807,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-28 15:54:08.423595486 +0000 UTC"
   }
  ]
 }
