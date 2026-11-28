@@ -1,85 +1,36 @@
 {
- "fetched_at": "2026-11-28T09:53:37Z",
+ "fetched_at": "2026-11-28T10:23:37Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367358520,
+   "mmsi": 367128220,
    "lat": 46.16723,
-   "lon": -123.91751,
+   "lon": -123.91697,
    "sog_kn": 0,
-   "cog": 160.7,
+   "cog": 83.7,
    "heading": 511,
-   "updated": "2026-11-28 09:53:54.285232533 +0000 UTC"
+   "updated": "2026-11-28 10:24:08.042595165 +0000 UTC"
   },
   {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91403,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-28 09:53:58.980795379 +0000 UTC"
-  },
-  {
-   "mmsi": 369493021,
-   "name": "CG47235",
-   "lat": 45.569,
-   "lon": -123.96649,
-   "sog_kn": 24.6,
-   "cog": 106.1,
-   "heading": 511,
-   "updated": "2026-11-28 09:54:14.390107159 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20667,
-   "lon": -123.8057,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-28 09:54:03.341067194 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30462,
-   "lon": -124.04024,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.16839,
+   "lon": -123.91838,
    "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-28 09:53:56.359351288 +0000 UTC"
-  },
-  {
-   "mmsi": 367648110,
-   "name": "JEANNIE IRENE",
-   "lat": 46.30462,
-   "lon": -124.04253,
-   "sog_kn": 0,
-   "cog": 34.3,
-   "heading": 511,
-   "updated": "2026-11-28 09:54:06.116139884 +0000 UTC"
+   "cog": 21.4,
+   "heading": 351,
+   "updated": "2026-11-28 10:24:09.795217708 +0000 UTC"
   },
   {
    "mmsi": 367638480,
    "name": "OCEAN HUNTER",
-   "lat": 46.19991,
-   "lon": -123.76049,
-   "sog_kn": 0,
-   "cog": 47.6,
-   "heading": 511,
-   "updated": "2026-11-28 09:54:10.557956111 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18814,
-   "lon": -123.86173,
-   "sog_kn": 0,
-   "cog": 179.3,
-   "heading": 308,
-   "updated": "2026-11-28 09:53:58.82025551 +0000 UTC"
+   "lat": 46.19995,
+   "lon": -123.7605,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "ASTORIA JAUN",
+   "updated": "2026-11-28 10:24:25.27299442 +0000 UTC"
   }
  ]
 }
