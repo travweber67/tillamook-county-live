@@ -1,16 +1,56 @@
 {
- "fetched_at": "2026-11-28T11:53:38Z",
+ "fetched_at": "2026-11-28T12:23:39Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367648240,
-   "lat": 46.3039,
-   "lon": -124.04083,
+   "mmsi": 367648110,
+   "lat": 46.30461,
+   "lon": -124.04254,
    "sog_kn": 0,
-   "cog": 234.4,
+   "cog": 320.9,
    "heading": 511,
-   "updated": "2026-11-28 11:54:09.102274751 +0000 UTC"
+   "updated": "2026-11-28 12:24:05.933008935 +0000 UTC"
+  },
+  {
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.1684,
+   "lon": -123.91839,
+   "sog_kn": 0,
+   "cog": 21.4,
+   "heading": 350,
+   "updated": "2026-11-28 12:24:09.05863502 +0000 UTC"
+  },
+  {
+   "mmsi": 367128220,
+   "name": "KATHY H",
+   "lat": 46.16722,
+   "lon": -123.91694,
+   "sog_kn": 0,
+   "cog": 83.7,
+   "heading": 511,
+   "updated": "2026-11-28 12:24:07.398695065 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 45.92011,
+   "lon": -124.63609,
+   "sog_kn": 3.1,
+   "cog": 151.1,
+   "heading": 511,
+   "updated": "2026-11-28 12:24:22.679972183 +0000 UTC"
+  },
+  {
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18807,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-28 12:24:03.354201336 +0000 UTC"
   }
  ]
 }
