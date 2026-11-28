@@ -1,97 +1,87 @@
 {
- "fetched_at": "2026-11-28T06:53:34Z",
+ "fetched_at": "2026-11-28T07:23:35Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367605150,
-   "name": "ASTORIA",
-   "lat": 46.16823,
-   "lon": -123.9165,
-   "sog_kn": 5.6,
-   "cog": 250.4,
-   "heading": 251,
-   "updated": "2026-11-28 06:54:25.374121375 +0000 UTC"
-  },
-  {
-   "mmsi": 538009597,
-   "name": "HONG QING",
-   "lat": 46.20082,
-   "lon": -123.82111,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US KAM",
-   "updated": "2026-11-28 06:53:58.661113503 +0000 UTC"
-  },
-  {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20469,
-   "lon": -123.81144,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-28 06:54:04.546433986 +0000 UTC"
-  },
-  {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20017,
-   "lon": -123.7615,
+   "mmsi": 367331730,
+   "name": "COLUMBIA",
+   "lat": 46.1684,
+   "lon": -123.91838,
    "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 06:54:00.419405948 +0000 UTC"
+   "cog": 21.4,
+   "heading": 350,
+   "updated": "2026-11-28 07:24:09.574701258 +0000 UTC"
+  },
+  {
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.19049,
+   "lon": -123.8297,
+   "sog_kn": 0.1,
+   "cog": 150.2,
+   "heading": 169,
+   "updated": "2026-11-28 07:24:09.726791056 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-28 07:24:12.675559789 +0000 UTC"
   },
   {
    "mmsi": 367544180,
    "name": "JEANNE ARAIN",
-   "lat": 46.30464,
-   "lon": -124.04022,
+   "lat": 46.30465,
+   "lon": -124.04024,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-28 06:54:15.459822336 +0000 UTC"
+   "updated": "2026-11-28 07:24:15.179753064 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76045,
+   "sog_kn": 0,
+   "cog": 167.7,
+   "heading": 511,
+   "updated": "2026-11-28 07:24:20.261677549 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19637,
+   "lon": -123.79708,
+   "type_code": 90,
+   "type": "Other vessel",
+   "destination": "AWAITING;ORDERS",
+   "updated": "2026-11-28 07:24:05.304089996 +0000 UTC"
   },
   {
    "mmsi": 368084240,
    "name": "SEA HAWK",
-   "lat": 46.19079,
-   "lon": -123.89112,
-   "sog_kn": 9.2,
-   "cog": 84.6,
-   "heading": 85,
-   "updated": "2026-11-28 06:54:18.139852052 +0000 UTC"
+   "lat": 46.2086,
+   "lon": -123.78983,
+   "sog_kn": 11,
+   "cog": 61.6,
+   "heading": 63,
+   "updated": "2026-11-28 07:24:08.041864255 +0000 UTC"
   },
   {
-   "mmsi": 368489810,
-   "name": "VENTURE",
-   "lat": 46.39569,
-   "lon": -124.98785,
-   "type_code": 52,
-   "type": "Tug",
-   "destination": "SAN FRANCISCO, CA",
-   "updated": "2026-11-28 06:54:24.314777291 +0000 UTC"
-  },
-  {
-   "mmsi": 366264360,
-   "name": "WESTERN   DAWN",
-   "lat": 46.18811,
-   "lon": -123.86171,
-   "sog_kn": 0,
-   "cog": 192.9,
-   "heading": 307,
-   "updated": "2026-11-28 06:54:07.525603758 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16849,
-   "lon": -123.91406,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 06:54:06.576267006 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18805,
+   "lon": -123.85906,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-28 07:24:03.342755134 +0000 UTC"
   }
  ]
 }
