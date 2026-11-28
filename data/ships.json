@@ -1,65 +1,74 @@
 {
- "fetched_at": "2026-11-28T02:23:31Z",
+ "fetched_at": "2026-11-28T02:53:31Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368063210,
-   "lat": 46.18731,
-   "lon": -123.86453,
+   "mmsi": 338160835,
+   "lat": 46.16709,
+   "lon": -123.91809,
    "sog_kn": 0,
-   "cog": 129.8,
+   "cog": 314.9,
    "heading": 511,
-   "updated": "2026-11-28 02:23:56.846737518 +0000 UTC"
+   "updated": "2026-11-28 02:54:07.558756343 +0000 UTC"
+  },
+  {
+   "mmsi": 366999934,
+   "name": "47241",
+   "lat": 46.2814,
+   "lon": -124.0467,
+   "type_code": 51,
+   "type": "Search & rescue",
+   "updated": "2026-11-28 02:53:58.927385104 +0000 UTC"
   },
   {
    "mmsi": 368188830,
    "name": "ANITA D",
-   "lat": 46.16853,
-   "lon": -123.91398,
+   "lat": 46.16852,
+   "lon": -123.914,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-28 02:53:50.195418378 +0000 UTC"
+  },
+  {
+   "mmsi": 338570000,
+   "name": "BAYPORT",
+   "lat": 46.22303,
+   "lon": -123.96608,
+   "sog_kn": 12.6,
+   "cog": 312.9,
+   "heading": 317,
+   "updated": "2026-11-28 02:54:16.202356657 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20484,
+   "lon": -123.81168,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-28 02:53:52.399781215 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19992,
+   "lon": -123.76049,
    "sog_kn": 0,
-   "cog": 177.3,
+   "cog": 199.8,
    "heading": 511,
-   "updated": "2026-11-28 02:24:04.827647037 +0000 UTC"
+   "updated": "2026-11-28 02:54:10.955130209 +0000 UTC"
   },
   {
-   "mmsi": 367529030,
-   "name": "CONNOR FOSS",
-   "lat": 46.19049,
-   "lon": -123.82971,
-   "sog_kn": 0,
-   "cog": 271.2,
-   "heading": 167,
-   "updated": "2026-11-28 02:24:10.137164597 +0000 UTC"
-  },
-  {
-   "mmsi": 368326650,
-   "name": "JACK JACK",
-   "lat": 46.20011,
-   "lon": -123.76149,
-   "type_code": 52,
-   "type": "Tug",
-   "updated": "2026-11-28 02:24:09.698200102 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.01805,
-   "lon": -124.53747,
-   "sog_kn": 7.4,
-   "cog": 242.6,
-   "heading": 511,
-   "updated": "2026-11-28 02:23:52.807774172 +0000 UTC"
-  },
-  {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16846,
-   "lon": -123.91406,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 02:24:07.251597951 +0000 UTC"
+   "mmsi": 366608000,
+   "name": "SEAWARD EXPLORER",
+   "lat": 46.18809,
+   "lon": -123.85908,
+   "type_code": 0,
+   "type": "Vessel",
+   "destination": "ASTORIA,0R",
+   "updated": "2026-11-28 02:54:04.616769967 +0000 UTC"
   }
  ]
 }
