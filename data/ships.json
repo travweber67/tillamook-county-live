@@ -1,36 +1,83 @@
 {
- "fetched_at": "2026-11-28T08:53:36Z",
+ "fetched_at": "2026-11-28T09:23:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367197230,
-   "lat": 46.16929,
-   "lon": -123.91361,
+   "mmsi": 367098090,
+   "lat": 46.1672,
+   "lon": -123.91663,
    "sog_kn": 0,
-   "cog": 108.8,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 08:54:22.121643117 +0000 UTC"
+   "updated": "2026-11-28 09:24:20.916212587 +0000 UTC"
+  },
+  {
+   "mmsi": 367187080,
+   "lat": 46.16907,
+   "lon": -123.91373,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-28 09:24:25.814883607 +0000 UTC"
+  },
+  {
+   "mmsi": 367197230,
+   "lat": 46.16931,
+   "lon": -123.91363,
+   "sog_kn": 0,
+   "cog": 106.1,
+   "heading": 511,
+   "updated": "2026-11-28 09:24:22.489150932 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "lat": 46.30391,
+   "lon": -124.04084,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-28 09:24:09.077128014 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20642,
-   "lon": -123.80586,
+   "lat": 46.20638,
+   "lon": -123.80576,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-28 08:54:20.151614244 +0000 UTC"
+   "updated": "2026-11-28 09:24:03.621223594 +0000 UTC"
   },
   {
-   "mmsi": 367531260,
-   "name": "SOUTHEAST",
-   "lat": 46.16873,
-   "lon": -123.91391,
-   "sog_kn": 0,
-   "cog": 360,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25741,
+   "lon": -123.98468,
+   "sog_kn": 0.5,
+   "cog": 302.9,
+   "heading": 291,
+   "updated": "2026-11-28 09:24:21.9032609 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 45.91333,
+   "lon": -124.63355,
+   "sog_kn": 2.6,
+   "cog": 160.4,
    "heading": 511,
-   "updated": "2026-11-28 08:54:25.062811203 +0000 UTC"
+   "updated": "2026-11-28 09:24:01.060773828 +0000 UTC"
+  },
+  {
+   "mmsi": 338160835,
+   "name": "PACIFIC ROAMER",
+   "lat": 46.1671,
+   "lon": -123.91805,
+   "sog_kn": 0.1,
+   "cog": 293.2,
+   "heading": 511,
+   "updated": "2026-11-28 09:24:07.078748288 +0000 UTC"
   }
  ]
 }
