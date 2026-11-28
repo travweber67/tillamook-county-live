@@ -1,35 +1,45 @@
 {
- "fetched_at": "2026-11-28T01:23:30Z",
+ "fetched_at": "2026-11-28T01:53:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 368327020,
-   "lat": 46.27078,
-   "lon": -123.9466,
-   "sog_kn": 0.3,
-   "cog": 182.3,
+   "mmsi": 367648240,
+   "lat": 46.30392,
+   "lon": -124.04081,
+   "sog_kn": 0,
+   "cog": 234.4,
    "heading": 511,
-   "updated": "2026-11-28 01:23:55.751714916 +0000 UTC"
+   "updated": "2026-11-28 01:54:10.581604449 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25726,
-   "lon": -123.98366,
-   "sog_kn": 0.1,
-   "cog": 78.5,
-   "heading": 116,
-   "updated": "2026-11-28 01:23:43.376636894 +0000 UTC"
+   "mmsi": 368063210,
+   "lat": 46.1873,
+   "lon": -123.86452,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-28 01:54:02.953426309 +0000 UTC"
   },
   {
-   "mmsi": 367023320,
-   "name": "SWIFT",
-   "lat": 46.19035,
-   "lon": -123.82949,
-   "type_code": 50,
-   "type": "Pilot vessel",
-   "updated": "2026-11-28 01:23:57.343382646 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91792,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-28 01:54:10.430591758 +0000 UTC"
+  },
+  {
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.1687,
+   "lon": -123.91404,
+   "sog_kn": 0,
+   "cog": 217.2,
+   "heading": 97,
+   "updated": "2026-11-28 01:54:01.942685223 +0000 UTC"
   }
  ]
 }
