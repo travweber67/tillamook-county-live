@@ -1,55 +1,97 @@
 {
- "fetched_at": "2026-11-28T06:23:34Z",
+ "fetched_at": "2026-11-28T06:53:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367098090,
-   "lat": 46.16721,
-   "lon": -123.9166,
+   "mmsi": 367605150,
+   "name": "ASTORIA",
+   "lat": 46.16823,
+   "lon": -123.9165,
+   "sog_kn": 5.6,
+   "cog": 250.4,
+   "heading": 251,
+   "updated": "2026-11-28 06:54:25.374121375 +0000 UTC"
+  },
+  {
+   "mmsi": 538009597,
+   "name": "HONG QING",
+   "lat": 46.20082,
+   "lon": -123.82111,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US KAM",
+   "updated": "2026-11-28 06:53:58.661113503 +0000 UTC"
+  },
+  {
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20469,
+   "lon": -123.81144,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-28 06:54:04.546433986 +0000 UTC"
+  },
+  {
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20017,
+   "lon": -123.7615,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 06:24:19.995106257 +0000 UTC"
+   "updated": "2026-11-28 06:54:00.419405948 +0000 UTC"
   },
   {
-   "mmsi": 366999934,
-   "name": "47241",
-   "lat": 46.28137,
-   "lon": -124.0467,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "updated": "2026-11-28 06:24:15.827509166 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16856,
-   "lon": -123.91404,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30464,
+   "lon": -124.04022,
    "sog_kn": 0,
    "cog": 0,
    "heading": 511,
-   "updated": "2026-11-28 06:24:15.826567385 +0000 UTC"
+   "updated": "2026-11-28 06:54:15.459822336 +0000 UTC"
   },
   {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-28 06:24:13.40626449 +0000 UTC"
+   "mmsi": 368084240,
+   "name": "SEA HAWK",
+   "lat": 46.19079,
+   "lon": -123.89112,
+   "sog_kn": 9.2,
+   "cog": 84.6,
+   "heading": 85,
+   "updated": "2026-11-28 06:54:18.139852052 +0000 UTC"
   },
   {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.16872,
-   "lon": -123.91402,
+   "mmsi": 368489810,
+   "name": "VENTURE",
+   "lat": 46.39569,
+   "lon": -124.98785,
+   "type_code": 52,
+   "type": "Tug",
+   "destination": "SAN FRANCISCO, CA",
+   "updated": "2026-11-28 06:54:24.314777291 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18811,
+   "lon": -123.86171,
    "sog_kn": 0,
-   "cog": 252.7,
-   "heading": 96,
-   "updated": "2026-11-28 06:24:01.274226161 +0000 UTC"
+   "cog": 192.9,
+   "heading": 307,
+   "updated": "2026-11-28 06:54:07.525603758 +0000 UTC"
+  },
+  {
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16849,
+   "lon": -123.91406,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-28 06:54:06.576267006 +0000 UTC"
   }
  ]
 }
