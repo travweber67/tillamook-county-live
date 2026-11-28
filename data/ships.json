@@ -1,50 +1,35 @@
 {
- "fetched_at": "2026-11-28T00:53:30Z",
+ "fetched_at": "2026-11-28T01:23:30Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338570000,
-   "name": "BAYPORT",
-   "lat": 46.19651,
-   "lon": -123.82735,
-   "sog_kn": 1.9,
-   "cog": 70.6,
-   "heading": 76,
-   "updated": "2026-11-28 00:53:55.977694668 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "sog_kn": 0,
-   "cog": 272.5,
-   "heading": 177,
-   "updated": "2026-11-28 00:54:11.190810028 +0000 UTC",
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.12832,
-   "lon": -124.32771,
-   "sog_kn": 7.5,
-   "cog": 231.8,
+   "mmsi": 368327020,
+   "lat": 46.27078,
+   "lon": -123.9466,
+   "sog_kn": 0.3,
+   "cog": 182.3,
    "heading": 511,
-   "updated": "2026-11-28 00:54:00.766896396 +0000 UTC"
+   "updated": "2026-11-28 01:23:55.751714916 +0000 UTC"
   },
   {
-   "mmsi": 367170860,
-   "name": "WRANGLER",
-   "lat": 46.16844,
-   "lon": -123.91406,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 00:53:56.582694182 +0000 UTC"
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25726,
+   "lon": -123.98366,
+   "sog_kn": 0.1,
+   "cog": 78.5,
+   "heading": 116,
+   "updated": "2026-11-28 01:23:43.376636894 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19035,
+   "lon": -123.82949,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-28 01:23:57.343382646 +0000 UTC"
   }
  ]
 }
