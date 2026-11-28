@@ -1,27 +1,47 @@
 {
- "fetched_at": "2026-11-28T19:23:45Z",
+ "fetched_at": "2026-11-28T19:53:45Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367006570,
-   "name": "JEFFREY S",
-   "lat": 46.24412,
-   "lon": -124.30491,
-   "sog_kn": 10.6,
-   "cog": 312.1,
-   "heading": 316,
-   "updated": "2026-11-28 19:24:30.170758468 +0000 UTC"
+   "mmsi": 369702000,
+   "name": "COASTAL RELIANCE",
+   "lat": 46.38165,
+   "lon": -124.51546,
+   "sog_kn": 9.8,
+   "cog": 139.4,
+   "heading": 139,
+   "updated": "2026-11-28 19:54:09.345717964 +0000 UTC"
   },
   {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 46.14723,
-   "lon": -124.60565,
-   "sog_kn": 7.8,
-   "cog": 353.8,
-   "heading": 511,
-   "updated": "2026-11-28 19:24:12.026641835 +0000 UTC"
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.91788,
+   "sog_kn": 0,
+   "cog": 97.2,
+   "heading": 177,
+   "updated": "2026-11-28 19:54:09.083478263 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19994,
+   "lon": -123.76047,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "ASTORIA JAUN",
+   "updated": "2026-11-28 19:54:26.405950603 +0000 UTC"
+  },
+  {
+   "mmsi": 440189000,
+   "name": "SM YANTIAN",
+   "lat": 46.34378,
+   "lon": -124.38554,
+   "sog_kn": 14.1,
+   "cog": 322.6,
+   "heading": 320,
+   "updated": "2026-11-28 19:54:15.609123623 +0000 UTC"
   }
  ]
 }
