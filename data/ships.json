@@ -1,65 +1,46 @@
 {
- "fetched_at": "2026-11-28T18:23:44Z",
+ "fetched_at": "2026-11-28T18:53:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 4 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367161930,
-   "lat": 46.16909,
-   "lon": -123.91384,
-   "sog_kn": 0.7,
-   "cog": 168.7,
-   "heading": 511,
-   "updated": "2026-11-28 18:24:21.937018183 +0000 UTC"
-  },
-  {
    "mmsi": 367187080,
-   "lat": 46.16904,
+   "lat": 46.16905,
    "lon": -123.91376,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 18:24:26.766079562 +0000 UTC"
+   "updated": "2026-11-28 18:54:27.608687685 +0000 UTC"
   },
   {
-   "mmsi": 205706000,
-   "name": "BOCHEM BAYARD",
-   "lat": 46.19061,
-   "lon": -123.90817,
-   "sog_kn": 12.2,
-   "cog": 278.3,
-   "heading": 282,
-   "updated": "2026-11-28 18:24:34.098637184 +0000 UTC"
+   "mmsi": 367529030,
+   "name": "CONNOR FOSS",
+   "lat": 46.21243,
+   "lon": -123.79118,
+   "sog_kn": 1,
+   "cog": 47.8,
+   "heading": 59,
+   "updated": "2026-11-28 18:54:21.457592888 +0000 UTC"
   },
   {
-   "mmsi": 636023742,
-   "name": "C-INSPIRATION",
-   "lat": 46.19887,
-   "lon": -123.80889,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-28 18:24:33.707550029 +0000 UTC"
+   "mmsi": 367646810,
+   "name": "EMERY ZIDELL",
+   "lat": 46.2996,
+   "lon": -124.39911,
+   "sog_kn": 9.9,
+   "cog": 317.4,
+   "heading": 319,
+   "updated": "2026-11-28 18:54:17.591839948 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20488,
-   "lon": -123.81178,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-28 18:24:17.332367841 +0000 UTC"
-  },
-  {
-   "mmsi": 367089450,
-   "name": "JOHN M",
-   "lat": 46.19232,
-   "lon": -123.86245,
-   "sog_kn": 9.8,
-   "cog": 89.3,
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 46.08096,
+   "lon": -124.58021,
+   "sog_kn": 8.1,
+   "cog": 349.3,
    "heading": 511,
-   "updated": "2026-11-28 18:24:11.85620648 +0000 UTC"
+   "updated": "2026-11-28 18:54:11.061002654 +0000 UTC"
   }
  ]
 }

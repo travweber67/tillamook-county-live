@@ -1,67 +1,87 @@
 {
- "fetched_at": "2026-11-28T18:23:44Z",
+ "fetched_at": "2026-11-28T18:53:44Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
  "aircraft": [
   {
-   "hex": "a90d4d",
-   "callsign": "",
-   "type": "PA16",
+   "hex": "a20385",
+   "callsign": "N229MB",
+   "type": "R22",
+   "alt_ft": 275,
+   "gs_kn": 57.1,
+   "track": 191.11,
+   "lat": 45.205668,
+   "lon": -123.119827
+  },
+  {
+   "hex": "a89bfb",
+   "callsign": "N654EA",
+   "type": "B06",
    "alt_ft": 600,
-   "gs_kn": 82.8,
-   "track": 101.85,
-   "lat": 45.020576,
-   "lon": -123.360186
+   "gs_kn": 13.4,
+   "track": 333.43,
+   "lat": 45.056213,
+   "lon": -123.119659
+  },
+  {
+   "hex": "ace2f9",
+   "callsign": "N9297U",
+   "type": "C150",
+   "alt_ft": 3900,
+   "gs_kn": 74.4,
+   "track": 276.17,
+   "lat": 45.322449,
+   "lon": -123.109327
+  },
+  {
+   "hex": "~2ba009",
+   "callsign": "",
+   "type": "",
+   "alt_ft": 400,
+   "gs_kn": 53.5,
+   "track": 172.48,
+   "lat": 45.325378,
+   "lon": -123.066232
+  },
+  {
+   "hex": "ad7eb0",
+   "callsign": "N969MH",
+   "type": "G2CA",
+   "alt_ft": 325,
+   "gs_kn": 66.1,
+   "track": 273.47,
+   "lat": 45.326843,
+   "lon": -123.065774
   },
   {
    "hex": "ab13dc",
    "callsign": "N8125L",
    "type": "PA44",
-   "alt_ft": 5000,
-   "gs_kn": 113.4,
-   "track": 123.13,
-   "lat": 45.45165,
-   "lon": -123.14669
+   "alt_ft": 5300,
+   "gs_kn": 108.7,
+   "track": 296.8,
+   "lat": 45.449432,
+   "lon": -122.994036
   },
   {
-   "hex": "a5622d",
-   "callsign": "N446PA",
-   "type": "PA44",
-   "alt_ft": 3850,
-   "gs_kn": 100.9,
-   "track": 109.69,
-   "lat": 45.213455,
-   "lon": -123.095136
+   "hex": "aa4001",
+   "callsign": "N76JK",
+   "type": "C177",
+   "alt_ft": 3250,
+   "gs_kn": 66.6,
+   "track": 144.16,
+   "lat": 45.40561,
+   "lon": -122.971913
   },
   {
-   "hex": "a174f7",
-   "callsign": "SKW3404",
-   "type": "E75L",
-   "alt_ft": 36075,
-   "gs_kn": 431.2,
-   "track": 175.74,
-   "lat": 45.631388,
-   "lon": -123.061638
-  },
-  {
-   "hex": "a56d0c",
-   "callsign": "N449LF",
-   "type": "B407",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.542324,
-   "lon": -122.955126
-  },
-  {
-   "hex": "a85e74",
-   "callsign": "N63843",
-   "type": "C172",
-   "alt_ft": null,
-   "gs_kn": 0.0,
-   "track": null,
-   "lat": 45.534679,
-   "lon": -122.946412
+   "hex": "a6bba3",
+   "callsign": "ASA670",
+   "type": "B738",
+   "alt_ft": 2450,
+   "gs_kn": 164.8,
+   "track": 113.61,
+   "lat": 45.666628,
+   "lon": -122.807304
   }
  ]
 }
