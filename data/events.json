@@ -1,10 +1,10 @@
 {
- "fetched_at": "2026-11-28T07:53:35Z",
+ "fetched_at": "2026-11-28T08:23:36Z",
  "sources": [
   {
    "name": "Tillamook County calendar (CivicPlus)",
    "status": "ok",
-   "note": "8 events in the next 14 days."
+   "note": "7 events in the next 14 days."
   },
   {
    "name": "City of Tillamook calendar (CivicPlus)",
@@ -13,13 +13,6 @@
   }
  ],
  "events": [
-  {
-   "date": "2026-11-27",
-   "time": "All Day Event",
-   "title": "Thanksgiving Day/Day After Thanksgiving",
-   "source": "Tillamook County",
-   "url": "https://tillamookcounty.gov/Calendar.aspx?EID=642"
-  },
   {
    "date": "2026-12-01",
    "time": "8:00 AM",

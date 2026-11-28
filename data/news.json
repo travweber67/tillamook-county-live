@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T07:54:33Z",
+ "fetched_at": "2026-11-28T08:24:35Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -18,17 +18,8 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/tillamook-county-sheriffs-office-investigation-search-rescue-for-missing-persons-near-otis-or-on-thanksgiving-nov-26/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2025/06/TCSOlogo.jpg",
-   "date": "2026-11-28",
-   "summary": "November 26th, 2026 8:36pm The Tillamook County Sheriff’s Office is currently conducting an investigation involving two missing individuals in the Savage Road area of Otis, Oregon. The missing individuals are a 49-year-old...",
-   "tier": "high"
-  },
-  {
-   "title": "Native American Hertiage Month Celebrated at Bay City Arts Center with Art, Cultural Exchange, Storytelling & More (VIDEO)",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/native-american-hertiage-month-celebrated-at-bay-city-arts-center-with-art-cultural-exchange-storytelling-more-video/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/BCAC-Narive-American-4279-200x300.jpg",
    "date": "2026-11-27",
-   "summary": "Photos & Video by Don Backman Bay City Arts Center (BCAC), Friends of Netarts Bay WEBS, and the Tillamook County Pioneer Museum partnered together to bring the community a celebration of Native...",
+   "summary": "November 26th, 2026 8:36pm The Tillamook County Sheriff’s Office is currently conducting an investigation involving two missing individuals in the Savage Road area of Otis, Oregon. The missing individuals are a 49-year-old...",
    "tier": "high"
   },
   {
@@ -40,6 +31,15 @@
    "summary": "Green Coast Market, the local-food store in downtown Rockaway Beach, is working on a second location in Nehalem, right across from Wanda's Cafe. Owners Julie and Jason shared the news in a Thanksgiving post, saying they are aiming to open the new store in the first half of 2027. The market stocks food and goods from more than 130 local farmers, fishers, foragers and producers, and runs as a year-round farmers market. The original Rockaway Beach store, at 117 S. Miller Street, will remain open.",
    "img_origin": "licensed",
    "img_credit": "Photo of downtown Nehalem looking east along Highway 101, by Ian Poellet (Werewombat) via Wikimedia Commons, CC BY-SA (licensed photo, Tillamook County Live original, 2026-11-27).",
+   "tier": "high"
+  },
+  {
+   "title": "Native American Hertiage Month Celebrated at Bay City Arts Center with Art, Cultural Exchange, Storytelling & More (VIDEO)",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/native-american-hertiage-month-celebrated-at-bay-city-arts-center-with-art-cultural-exchange-storytelling-more-video/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/BCAC-Narive-American-4279-200x300.jpg",
+   "date": "2026-11-26",
+   "summary": "Photos & Video by Don Backman Bay City Arts Center (BCAC), Friends of Netarts Bay WEBS, and the Tillamook County Pioneer Museum partnered together to bring the community a celebration of Native...",
    "tier": "high"
   },
   {
@@ -234,7 +234,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/oregon-christmas-trees-create-jobs-during-the-holiday-season/article_1f00a8b4-f4b4-5ea1-8ba6-a386fe977dd8.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/93/293cb22b-92fb-5714-a908-08aa1e1425db/6b09aee72711d.image.png?resize=300%2C199",
-   "date": "2026-11-28",
+   "date": "2026-11-27",
    "summary": "Employment at 81 Oregon Christmas tree growers reached 1,170 jobs in November 2025 as farms harvested trees for the holidays. That was 377 jobs above the group’s average of 793 for the year.",
    "tier": "useful"
   },
@@ -261,7 +261,7 @@
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/logging-and-spray-notices-stimson-files-to-log-42-1-acres-near-mohler/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/weekly-2026-11-19-numbered-7.jpg",
-   "date": "2026-11-28",
+   "date": "2026-11-27",
    "summary": "Two notices for work in the Tillamook Forest were filed Nov. 19 to Nov. 25, both by Stimson Lumber Company.",
    "tier": "routine"
   },
@@ -270,7 +270,7 @@
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/pump-prices-dropping-but-were-paying-more-than-last-year/article_069d4978-be6a-5a26-a766-e1a4230fc300.html",
    "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/e/31/e314d713-2faa-5b2f-9609-df3758534b70/6b09aee9066d8.image.png?resize=300%2C374",
-   "date": "2026-11-28",
+   "date": "2026-11-27",
    "summary": "Drivers are getting a Thanksgiving break at the pumps as gas and diesel prices fall in all 50 states this week, according to the American Automobile Association (AAA).",
    "tier": "routine"
   },
@@ -279,7 +279,7 @@
    "source": "Tillamook County Pioneer",
    "url": "https://www.tillamookcountypioneer.net/clatsop-nehalem-confederated-tribes-celebrate-neacoxie-village-welcome-pole-installation-tree-planting/",
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ClatsopNehalemTotemNeacoxieVillage11.26-225x300.jpg",
-   "date": "2026-11-27",
+   "date": "2026-11-26",
    "summary": "On Saturday, November 7th Clatsop-Nehalem tribal members and guests gathered at Neacoxie to celebrate the installation of the Neacoxie Village sign and the Welcome Pole. Traditional Lands Committee Chairman Hugh Morrison introduced...",
    "tier": "routine"
   },
