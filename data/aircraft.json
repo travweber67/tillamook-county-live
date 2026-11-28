@@ -1,17 +1,6 @@
 {
- "fetched_at": "2026-11-28T05:53:34Z",
+ "fetched_at": "2026-11-28T06:23:34Z",
  "status": "ok",
  "note": "ADS-B snapshot from adsb.fi (community ADS-B receivers).",
- "aircraft": [
-  {
-   "hex": "a29cbf",
-   "callsign": "ASA1389",
-   "type": "B739",
-   "alt_ft": 5900,
-   "gs_kn": 272.3,
-   "track": 209.48,
-   "lat": 45.627457,
-   "lon": -122.810602
-  }
- ]
+ "aircraft": []
 }
