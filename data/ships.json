@@ -1,64 +1,56 @@
 {
- "fetched_at": "2026-11-28T14:23:40Z",
+ "fetched_at": "2026-11-28T14:53:41Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367197230,
-   "lat": 46.16929,
-   "lon": -123.91363,
-   "sog_kn": 0,
-   "cog": 2.4,
-   "heading": 511,
-   "updated": "2026-11-28 14:24:21.778880778 +0000 UTC"
-  },
-  {
-   "mmsi": 367531260,
-   "lat": 46.16873,
-   "lon": -123.91393,
+   "mmsi": 367098090,
+   "lat": 46.16721,
+   "lon": -123.91662,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 14:24:25.462016268 +0000 UTC"
+   "updated": "2026-11-28 14:54:22.654151174 +0000 UTC"
   },
   {
-   "mmsi": 367648240,
-   "lat": 46.30388,
-   "lon": -124.04084,
+   "mmsi": 367197230,
+   "name": "BUCK N ANN",
+   "lat": 46.16929,
+   "lon": -123.91364,
    "sog_kn": 0,
-   "cog": 234.4,
+   "cog": 2.4,
    "heading": 511,
-   "updated": "2026-11-28 14:24:09.047317112 +0000 UTC"
+   "updated": "2026-11-28 14:54:23.287924441 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30462,
-   "lon": -124.04025,
+   "mmsi": 367187080,
+   "name": "OCEAN BEAUT",
+   "lat": 46.16909,
+   "lon": -123.9138,
    "sog_kn": 0,
-   "cog": 0,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 14:24:26.596532843 +0000 UTC"
+   "updated": "2026-11-28 14:54:26.073786327 +0000 UTC"
   },
   {
-   "mmsi": 367638480,
-   "name": "OCEAN HUNTER",
-   "lat": 46.19993,
-   "lon": -123.76045,
+   "mmsi": 368486640,
+   "name": "OCEAN JOY",
+   "lat": 46.25843,
+   "lon": -123.9892,
+   "sog_kn": 0.1,
+   "cog": 169.6,
+   "heading": 93,
+   "updated": "2026-11-28 14:54:42.028643534 +0000 UTC"
+  },
+  {
+   "mmsi": 366766530,
+   "name": "SALVAGE CHIEF",
+   "lat": 46.19638,
+   "lon": -123.7971,
    "sog_kn": 0,
-   "cog": 337.6,
+   "cog": 16,
    "heading": 511,
-   "updated": "2026-11-28 14:24:34.79816437 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 45.95974,
-   "lon": -124.62088,
-   "sog_kn": 2.3,
-   "cog": 36.4,
-   "heading": 511,
-   "updated": "2026-11-28 14:24:13.358925796 +0000 UTC"
+   "updated": "2026-11-28 14:54:40.311019233 +0000 UTC"
   }
  ]
 }
