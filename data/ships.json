@@ -1,83 +1,85 @@
 {
- "fetched_at": "2026-11-28T09:23:36Z",
+ "fetched_at": "2026-11-28T09:53:37Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367098090,
-   "lat": 46.1672,
-   "lon": -123.91663,
+   "mmsi": 367358520,
+   "lat": 46.16723,
+   "lon": -123.91751,
    "sog_kn": 0,
-   "cog": 360,
+   "cog": 160.7,
    "heading": 511,
-   "updated": "2026-11-28 09:24:20.916212587 +0000 UTC"
+   "updated": "2026-11-28 09:53:54.285232533 +0000 UTC"
   },
   {
-   "mmsi": 367187080,
-   "lat": 46.16907,
-   "lon": -123.91373,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-28 09:24:25.814883607 +0000 UTC"
+   "mmsi": 368188830,
+   "name": "ANITA D",
+   "lat": 46.16855,
+   "lon": -123.91403,
+   "type_code": 30,
+   "type": "Fishing",
+   "updated": "2026-11-28 09:53:58.980795379 +0000 UTC"
   },
   {
-   "mmsi": 367197230,
-   "lat": 46.16931,
-   "lon": -123.91363,
-   "sog_kn": 0,
+   "mmsi": 369493021,
+   "name": "CG47235",
+   "lat": 45.569,
+   "lon": -123.96649,
+   "sog_kn": 24.6,
    "cog": 106.1,
    "heading": 511,
-   "updated": "2026-11-28 09:24:22.489150932 +0000 UTC"
-  },
-  {
-   "mmsi": 367648240,
-   "lat": 46.30391,
-   "lon": -124.04084,
-   "sog_kn": 0,
-   "cog": 234.4,
-   "heading": 511,
-   "updated": "2026-11-28 09:24:09.077128014 +0000 UTC"
+   "updated": "2026-11-28 09:54:14.390107159 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20638,
-   "lon": -123.80576,
+   "lat": 46.20667,
+   "lon": -123.8057,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-28 09:24:03.621223594 +0000 UTC"
+   "updated": "2026-11-28 09:54:03.341067194 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25741,
-   "lon": -123.98468,
-   "sog_kn": 0.5,
-   "cog": 302.9,
-   "heading": 291,
-   "updated": "2026-11-28 09:24:21.9032609 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 45.91333,
-   "lon": -124.63355,
-   "sog_kn": 2.6,
-   "cog": 160.4,
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30462,
+   "lon": -124.04024,
+   "sog_kn": 0,
+   "cog": 0,
    "heading": 511,
-   "updated": "2026-11-28 09:24:01.060773828 +0000 UTC"
+   "updated": "2026-11-28 09:53:56.359351288 +0000 UTC"
   },
   {
-   "mmsi": 338160835,
-   "name": "PACIFIC ROAMER",
-   "lat": 46.1671,
-   "lon": -123.91805,
-   "sog_kn": 0.1,
-   "cog": 293.2,
+   "mmsi": 367648110,
+   "name": "JEANNIE IRENE",
+   "lat": 46.30462,
+   "lon": -124.04253,
+   "sog_kn": 0,
+   "cog": 34.3,
    "heading": 511,
-   "updated": "2026-11-28 09:24:07.078748288 +0000 UTC"
+   "updated": "2026-11-28 09:54:06.116139884 +0000 UTC"
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19991,
+   "lon": -123.76049,
+   "sog_kn": 0,
+   "cog": 47.6,
+   "heading": 511,
+   "updated": "2026-11-28 09:54:10.557956111 +0000 UTC"
+  },
+  {
+   "mmsi": 366264360,
+   "name": "WESTERN   DAWN",
+   "lat": 46.18814,
+   "lon": -123.86173,
+   "sog_kn": 0,
+   "cog": 179.3,
+   "heading": 308,
+   "updated": "2026-11-28 09:53:58.82025551 +0000 UTC"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-28T09:24:35Z",
+ "fetched_at": "2026-11-28T09:54:33Z",
  "sources": [
   {
    "name": "Oregon Civic Newsstand — Tillamook County week view",
@@ -31,15 +31,6 @@
    "summary": "Green Coast Market, the local-food store in downtown Rockaway Beach, is working on a second location in Nehalem, right across from Wanda's Cafe. Owners Julie and Jason shared the news in a Thanksgiving post, saying they are aiming to open the new store in the first half of 2027. The market stocks food and goods from more than 130 local farmers, fishers, foragers and producers, and runs as a year-round farmers market. The original Rockaway Beach store, at 117 S. Miller Street, will remain open.",
    "img_origin": "licensed",
    "img_credit": "Photo of downtown Nehalem looking east along Highway 101, by Ian Poellet (Werewombat) via Wikimedia Commons, CC BY-SA (licensed photo, Tillamook County Live original, 2026-11-27).",
-   "tier": "high"
-  },
-  {
-   "title": "Native American Hertiage Month Celebrated at Bay City Arts Center with Art, Cultural Exchange, Storytelling & More (VIDEO)",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/native-american-hertiage-month-celebrated-at-bay-city-arts-center-with-art-cultural-exchange-storytelling-more-video/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/BCAC-Narive-American-4279-200x300.jpg",
-   "date": "2026-11-26",
-   "summary": "Photos & Video by Don Backman Bay City Arts Center (BCAC), Friends of Netarts Bay WEBS, and the Tillamook County Pioneer Museum partnered together to bring the community a celebration of Native...",
    "tier": "high"
   },
   {
@@ -230,6 +221,15 @@
    "tier": "high"
   },
   {
+   "title": "ODE releases Statewide Annual Report Card",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/ode-releases-statewide-annual-report-card/article_7524f17e-cb40-57b6-b127-ddb2f5f80dd5.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/1/00/100b0537-b065-55a7-8d0a-10963d210743/6b0690deda36a.image.png?resize=300%2C200",
+   "date": "2026-11-27",
+   "summary": "The Oregon Department of Education (ODE) has released its Statewide Annual Report Card covering the 2025-26 school year, bringing together key information about Oregon’s public schools, students, and teachers.",
+   "tier": "useful"
+  },
+  {
    "title": "Oregon Christmas trees create jobs during the holiday season",
    "source": "Headlight Herald",
    "url": "https://www.tillamookheadlightherald.com/news/oregon-christmas-trees-create-jobs-during-the-holiday-season/article_1f00a8b4-f4b4-5ea1-8ba6-a386fe977dd8.html",
@@ -239,30 +239,48 @@
    "tier": "useful"
   },
   {
-   "title": "Dramatic photos show the danger of the Pacific Ocean",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/dramatic-photos-show-the-danger-of-the-pacific-ocean/article_27dbf1df-4f8a-5b6e-9f93-620978b8defe.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/6/8e/68ed47ba-8f8d-5d3a-8667-ce08aabfe939/6b0690dd58865.image.png?resize=300%2C281",
-   "date": "2026-11-25",
-   "summary": "The Cannon Beach Police Department has released photos showing the extreme dangers associated with King Tides and surging surf.",
-   "tier": "useful"
-  },
-  {
-   "title": "Tillamook test scores improve steadily",
-   "source": "Headlight Herald",
-   "url": "https://www.tillamookheadlightherald.com/news/tillamook-test-scores-improve-steadily/article_44d26229-70f6-402e-8ce3-ec27ae97d5a4.html",
-   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/2/13/213b5a06-4e65-11ed-a172-7354ed8f9a94/634ed482b6b40.image.jpg?resize=300%2C158",
-   "date": "2026-11-25",
-   "summary": "Tillamook School District students exceeded statewide averages in grade level proficiency in English and language arts, and science last year, while slightly lagging the statewide average in math testing.",
-   "tier": "useful"
-  },
-  {
    "title": "Logging and spray notices: Nov. 19 to Nov. 25",
    "source": "Salmonberry Magazine",
    "url": "https://www.salmonberrytrail.com/logging-and-spray-notices-stimson-files-to-log-42-1-acres-near-mohler/",
    "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/weekly-2026-11-19-numbered-7.jpg",
    "date": "2026-11-27",
    "summary": "Two notices for work in the Tillamook Forest were filed Nov. 19 to Nov. 25, both by Stimson Lumber Company.",
+   "tier": "routine"
+  },
+  {
+   "title": "10TH ANNUAL TILLAMOOK COUNTY GIVING GUIDE – ALL WE NEED IS LOVE",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/10th-annual-tillamook-county-giving-guide-all-we-need-is-love/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/03/Fulcrumletterheadlogo-300x71.png",
+   "date": "2026-11-27",
+   "summary": "Fulcrum Community Resources and the Tillamook County Pioneer are pleased to present this 10th annual publication, to provide information and encouragement to support these vitally important organizations. Each hour and dollar...",
+   "tier": "routine"
+  },
+  {
+   "title": "Search underway for two people missing near Otis",
+   "source": "Headlight Herald",
+   "url": "https://www.tillamookheadlightherald.com/news/search-underway-for-two-people-missing-near-otis/article_f57f8c22-a58a-5fd4-8be7-f1cc656d31b0.html",
+   "img": "https://bloximages.chicago2.vip.townnews.com/tillamookheadlightherald.com/content/tncms/assets/v3/editorial/f/3b/f3bdbaf8-0cfc-56d8-9f72-b5b7fbcd58e4/6b0a2b28eec7b.image.png?resize=300%2C307",
+   "date": "2026-11-27",
+   "summary": "The Tillamook County Sheriff’s Office (TCSO) is currently conducting an investigation involving two missing individuals in the Savage Road area of Otis.",
+   "tier": "routine"
+  },
+  {
+   "title": "North County Recreation District Awarded $51,000 Grant to Improve Rex Champ Field",
+   "source": "Tillamook County Pioneer",
+   "url": "https://www.tillamookcountypioneer.net/north-county-recreation-district-awarded-51000-grant-to-improve-rex-champ-field/",
+   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/NCRDLogo-Traditional-300x245.jpg",
+   "date": "2026-11-27",
+   "summary": "Investment will enhance recreational opportunities, improve field conditions, and support local youth sports. (NEHALEM, OR) – The North County Recreation District (NCRD) is excited to announce that it has been...",
+   "tier": "routine"
+  },
+  {
+   "title": "Tillamook County approves $100,000 grant to Salmonberry Trail Foundation",
+   "source": "Salmonberry Magazine",
+   "url": "https://www.salmonberrytrail.com/tillamook-county-approves-100-000-grant-to-salmonberry-trail-foundation/",
+   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/tillamook-commissioners-nov-25-2026-salmonberry.jpg",
+   "date": "2026-11-27",
+   "summary": "Tillamook County commissioners approved a $100,000 lodging-tax grant to the Salmonberry Trail Foundation on Nov. 25, the sixth year of county money for what the grant agreement calls the foundation's \"organizational capacity.\"",
    "tier": "routine"
   },
   {
@@ -281,24 +299,6 @@
    "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/ClatsopNehalemTotemNeacoxieVillage11.26-225x300.jpg",
    "date": "2026-11-26",
    "summary": "On Saturday, November 7th Clatsop-Nehalem tribal members and guests gathered at Neacoxie to celebrate the installation of the Neacoxie Village sign and the Welcome Pole. Traditional Lands Committee Chairman Hugh Morrison introduced...",
-   "tier": "routine"
-  },
-  {
-   "title": "TILLAMOOK COUNTY PARKS DEPARTMENT: Important Safety and Maintenance Notice – Netarts Boat Launch Use Advisory",
-   "source": "Tillamook County Pioneer",
-   "url": "https://www.tillamookcountypioneer.net/tillamook-county-parks-department-important-safety-and-maintenance-notice-netarts-boat-launch-use-advisory/",
-   "img": "https://www.tillamookcountypioneer.net/wp-content/uploads/2026/11/TCParksNetartsBoatRamp11.24B-300x225.jpg",
-   "date": "2026-11-25",
-   "summary": "A BIG SHOUT-OUT AND THANK YOU TO OUR TILLAMOOK COUNTY PARKS MAINTENANCE TEAM! Here’s the Netarts Boat Ramp Wednesday afternoon, November 25, 2026! We want to recognize and thank our dedicated Tillamook...",
-   "tier": "routine"
-  },
-  {
-   "title": "Wind developer seeks tower to measure wind on Weyerhaeuser land",
-   "source": "Salmonberry Magazine",
-   "url": "https://www.salmonberrytrail.com/wind-developer-seeks-tower-to-measure-wind-on-weyerhaeuser-land/",
-   "img": "https://storage.ghost.io/c/65/10/65101974-f4c8-4f52-a984-a571db8c259b/content/images/2026/11/eurus-met-tower-locator-map.jpg",
-   "date": "2026-11-25",
-   "summary": "Eurus would put the 197.7-foot tower in the Trask River watershed for one to three years. Tillamook County is taking written comments until 4 p.m. Dec. 1.",
    "tier": "routine"
   }
  ]
