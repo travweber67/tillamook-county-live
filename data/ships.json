@@ -1,37 +1,96 @@
 {
- "fetched_at": "2026-11-28T04:11:50Z",
+ "fetched_at": "2026-11-28T04:23:34Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 9 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338616000,
-   "name": "DUBLIN SEA",
-   "lat": 46.36626,
-   "lon": -124.47671,
-   "sog_kn": 9.8,
-   "cog": 140.4,
-   "heading": 140,
-   "updated": "2026-11-28 04:12:43.279082322 +0000 UTC"
+   "mmsi": 367128220,
+   "lat": 46.16721,
+   "lon": -123.91695,
+   "sog_kn": 0,
+   "cog": 126.6,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:06.180401276 +0000 UTC"
   },
   {
-   "mmsi": 368084240,
-   "name": "SEA HAWK",
-   "lat": 46.34304,
-   "lon": -124.32714,
-   "sog_kn": 10.6,
-   "cog": 167.9,
-   "heading": 167,
-   "updated": "2026-11-28 04:12:39.626116339 +0000 UTC"
+   "mmsi": 367161930,
+   "lat": 46.16893,
+   "lon": -123.91382,
+   "sog_kn": 0.1,
+   "cog": 150.3,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:09.883506391 +0000 UTC"
+  },
+  {
+   "mmsi": 368327020,
+   "lat": 46.27076,
+   "lon": -123.94656,
+   "sog_kn": 0.1,
+   "cog": 64.1,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:16.103699798 +0000 UTC"
+  },
+  {
+   "mmsi": 367156340,
+   "name": "GRANADA",
+   "lat": 46.16725,
+   "lon": -123.9179,
+   "type_code": 30,
+   "type": "Fishing",
+   "destination": "WARRENTON,OREGON",
+   "updated": "2026-11-28 04:24:19.606379774 +0000 UTC",
+   "sog_kn": 0,
+   "cog": 344.4,
+   "heading": 177
+  },
+  {
+   "mmsi": 367638480,
+   "name": "OCEAN HUNTER",
+   "lat": 46.19993,
+   "lon": -123.76048,
+   "sog_kn": 0,
+   "cog": 180.8,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:20.309397371 +0000 UTC"
+  },
+  {
+   "mmsi": 367046890,
+   "name": "PACIFIC FUTURE",
+   "lat": 45.91375,
+   "lon": -124.63372,
+   "sog_kn": 1.1,
+   "cog": 303.3,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:14.424967785 +0000 UTC"
+  },
+  {
+   "mmsi": 338160835,
+   "name": "PACIFIC ROAMER",
+   "lat": 46.16717,
+   "lon": -123.918,
+   "sog_kn": 0.1,
+   "cog": 132.1,
+   "heading": 511,
+   "updated": "2026-11-28 04:24:06.793916627 +0000 UTC"
+  },
+  {
+   "mmsi": 367023320,
+   "name": "SWIFT",
+   "lat": 46.19031,
+   "lon": -123.82954,
+   "type_code": 50,
+   "type": "Pilot vessel",
+   "updated": "2026-11-28 04:24:04.639217042 +0000 UTC"
   },
   {
    "mmsi": 636017002,
    "name": "SYROS I",
-   "lat": 46.23306,
-   "lon": -124.80633,
+   "lat": 46.23368,
+   "lon": -124.74768,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "USPDX",
-   "updated": "2026-11-28 04:12:34.627739213 +0000 UTC"
+   "updated": "2026-11-28 04:24:01.00047493 +0000 UTC"
   }
  ]
 }
