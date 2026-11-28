@@ -1,36 +1,36 @@
 {
- "fetched_at": "2026-11-28T16:53:43Z",
+ "fetched_at": "2026-11-28T17:23:46Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 369970121,
-   "name": "ELTON",
-   "lat": 46.19052,
-   "lon": -123.85699,
-   "type_code": 35,
-   "type": "Military",
-   "updated": "2026-11-28 16:54:04.630200071 +0000 UTC"
+   "mmsi": 367516350,
+   "lat": 46.20094,
+   "lon": -123.82158,
+   "sog_kn": 0.2,
+   "cog": 284.4,
+   "heading": 511,
+   "updated": "2026-11-28 17:24:54.052159173 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20494,
-   "lon": -123.81183,
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19889,
+   "lon": -123.80892,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-28 16:54:11.546026157 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-28 17:25:07.719515093 +0000 UTC"
   },
   {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30465,
-   "lon": -124.04025,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-28 16:54:24.783230306 +0000 UTC"
+   "mmsi": 311001710,
+   "name": "HON HENRY NR JACKMAN",
+   "lat": 46.37286,
+   "lon": -124.46529,
+   "sog_kn": 12.8,
+   "cog": 323.1,
+   "heading": 320,
+   "updated": "2026-11-28 17:24:46.815620732 +0000 UTC"
   }
  ]
 }
