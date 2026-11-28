@@ -1,37 +1,37 @@
 {
- "fetched_at": "2026-11-28T04:53:33Z",
+ "fetched_at": "2026-11-28T05:23:34Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 567025000,
-   "name": "EAST AYUTTHAYA",
-   "lat": 46.20529,
-   "lon": -123.78988,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "US SEA",
-   "updated": "2026-11-28 04:54:00.666010824 +0000 UTC"
+   "mmsi": 367450580,
+   "name": "GRUMPY J",
+   "lat": 46.16871,
+   "lon": -123.91403,
+   "sog_kn": 0,
+   "cog": 7.3,
+   "heading": 96,
+   "updated": "2026-11-28 05:25:11.177711029 +0000 UTC"
   },
   {
-   "mmsi": 368486640,
-   "name": "OCEAN JOY",
-   "lat": 46.25727,
-   "lon": -123.98366,
-   "sog_kn": 0.3,
-   "cog": 82.7,
-   "heading": 123,
-   "updated": "2026-11-28 04:54:19.655418996 +0000 UTC"
+   "mmsi": 368084240,
+   "name": "SEA HAWK",
+   "lat": 46.20947,
+   "lon": -124.17696,
+   "sog_kn": 11.2,
+   "cog": 75,
+   "heading": 75,
+   "updated": "2026-11-28 05:24:48.791426152 +0000 UTC"
   },
   {
    "mmsi": 636017002,
    "name": "SYROS I",
-   "lat": 46.22497,
-   "lon": -124.61947,
-   "type_code": 70,
-   "type": "Cargo ship",
-   "destination": "USPDX",
-   "updated": "2026-11-28 04:54:03.695259317 +0000 UTC"
+   "lat": 46.2233,
+   "lon": -124.56761,
+   "sog_kn": 2.4,
+   "cog": 87.2,
+   "heading": 110,
+   "updated": "2026-11-28 05:24:44.585550365 +0000 UTC"
   }
  ]
 }
