@@ -1,37 +1,56 @@
 {
- "fetched_at": "2026-11-28T15:53:42Z",
+ "fetched_at": "2026-11-28T16:23:42Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367605150,
-   "name": "ASTORIA",
-   "lat": 46.1724,
-   "lon": -123.91264,
-   "sog_kn": 7.3,
-   "cog": 199.6,
-   "heading": 199,
-   "updated": "2026-11-28 15:54:19.321394164 +0000 UTC"
+   "mmsi": 367197230,
+   "lat": 46.16929,
+   "lon": -123.91364,
+   "sog_kn": 0,
+   "cog": 61.2,
+   "heading": 511,
+   "updated": "2026-11-28 16:24:21.603593239 +0000 UTC"
   },
   {
-   "mmsi": 636018831,
-   "name": "IOANNIS K",
-   "lat": 46.20475,
-   "lon": -123.81171,
+   "mmsi": 367662190,
+   "name": "CASSANDRA ANN",
+   "lat": 45.77174,
+   "lon": -124.77305,
+   "sog_kn": 0.9,
+   "cog": 316,
+   "heading": 511,
+   "updated": "2026-11-28 16:24:35.742742326 +0000 UTC"
+  },
+  {
+   "mmsi": 367648240,
+   "name": "REDEEMER",
+   "lat": 46.30389,
+   "lon": -124.04084,
+   "sog_kn": 0,
+   "cog": 234.4,
+   "heading": 511,
+   "updated": "2026-11-28 16:24:09.055398187 +0000 UTC"
+  },
+  {
+   "mmsi": 636017002,
+   "name": "SYROS I",
+   "lat": 46.19733,
+   "lon": -124.23699,
    "type_code": 70,
    "type": "Cargo ship",
-   "destination": "US VAN",
-   "updated": "2026-11-28 15:54:04.630467071 +0000 UTC"
+   "destination": "USPDX",
+   "updated": "2026-11-28 16:24:14.76309844 +0000 UTC"
   },
   {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18807,
-   "lon": -123.85906,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-28 15:54:08.423595486 +0000 UTC"
+   "mmsi": 367170860,
+   "name": "WRANGLER",
+   "lat": 46.16848,
+   "lon": -123.91408,
+   "sog_kn": 0,
+   "cog": 360,
+   "heading": 511,
+   "updated": "2026-11-28 16:24:07.678008391 +0000 UTC"
   }
  ]
 }
