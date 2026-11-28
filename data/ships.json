@@ -1,27 +1,74 @@
 {
- "fetched_at": "2026-11-28T13:23:40Z",
+ "fetched_at": "2026-11-28T13:53:40Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 2 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
+  {
+   "mmsi": 367197230,
+   "lat": 46.16932,
+   "lon": -123.91362,
+   "sog_kn": 0,
+   "cog": 19.7,
+   "heading": 511,
+   "updated": "2026-11-28 13:54:21.151589829 +0000 UTC"
+  },
+  {
+   "mmsi": 367788590,
+   "lat": 46.18864,
+   "lon": -123.85525,
+   "sog_kn": 0,
+   "cog": 204.6,
+   "heading": 511,
+   "updated": "2026-11-28 13:53:57.153775565 +0000 UTC"
+  },
+  {
+   "mmsi": 368063210,
+   "lat": 46.1873,
+   "lon": -123.8645,
+   "sog_kn": 0,
+   "cog": 129.8,
+   "heading": 511,
+   "updated": "2026-11-28 13:53:56.904829677 +0000 UTC"
+  },
   {
    "mmsi": 367331730,
    "name": "COLUMBIA",
-   "lat": 46.16838,
-   "lon": -123.91838,
+   "lat": 46.1684,
+   "lon": -123.91837,
    "sog_kn": 0,
    "cog": 21.4,
    "heading": 350,
-   "updated": "2026-11-28 13:24:19.207903489 +0000 UTC"
+   "updated": "2026-11-28 13:54:00.123307051 +0000 UTC"
   },
   {
    "mmsi": 367156340,
    "name": "GRANADA",
-   "lat": 46.16725,
+   "lat": 46.16723,
    "lon": -123.9179,
    "type_code": 30,
    "type": "Fishing",
    "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-28 13:24:11.428719603 +0000 UTC"
+   "updated": "2026-11-28 13:54:12.261704288 +0000 UTC"
+  },
+  {
+   "mmsi": 367544180,
+   "name": "JEANNE ARAIN",
+   "lat": 46.30461,
+   "lon": -124.04029,
+   "sog_kn": 0,
+   "cog": 0,
+   "heading": 511,
+   "updated": "2026-11-28 13:54:14.583666063 +0000 UTC"
+  },
+  {
+   "mmsi": 636017002,
+   "name": "SYROS I",
+   "lat": 46.24843,
+   "lon": -124.45932,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-28 13:54:24.988073253 +0000 UTC"
   }
  ]
 }
