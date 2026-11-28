@@ -1,35 +1,36 @@
 {
- "fetched_at": "2026-11-27T23:53:29Z",
+ "fetched_at": "2026-11-28T00:23:29Z",
  "status": "ok",
  "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367648110,
-   "lat": 46.30461,
-   "lon": -124.04255,
+   "mmsi": 367358520,
+   "lat": 46.16717,
+   "lon": -123.91754,
+   "sog_kn": 0,
+   "cog": 160.7,
+   "heading": 511,
+   "updated": "2026-11-28 00:23:55.994261674 +0000 UTC"
+  },
+  {
+   "mmsi": 538009597,
+   "name": "HONG QING",
+   "lat": 46.18704,
+   "lon": -124.46046,
+   "sog_kn": 6.9,
+   "cog": 90.2,
+   "heading": 94,
+   "updated": "2026-11-28 00:24:19.060339921 +0000 UTC"
+  },
+  {
+   "mmsi": 368326650,
+   "name": "JACK JACK",
+   "lat": 46.20019,
+   "lon": -123.76148,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-27 23:53:51.795388381 +0000 UTC"
-  },
-  {
-   "mmsi": 368155260,
-   "lat": 46.2702,
-   "lon": -123.94682,
-   "sog_kn": 0,
-   "cog": 360,
-   "heading": 511,
-   "updated": "2026-11-27 23:54:14.923805537 +0000 UTC"
-  },
-  {
-   "mmsi": 366608000,
-   "name": "SEAWARD EXPLORER",
-   "lat": 46.18806,
-   "lon": -123.85905,
-   "type_code": 0,
-   "type": "Vessel",
-   "destination": "ASTORIA,0R",
-   "updated": "2026-11-27 23:53:52.782663226 +0000 UTC"
+   "updated": "2026-11-28 00:24:02.254544181 +0000 UTC"
   }
  ]
 }
