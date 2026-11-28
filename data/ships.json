@@ -1,89 +1,65 @@
 {
- "fetched_at": "2026-11-28T17:53:43Z",
+ "fetched_at": "2026-11-28T18:23:44Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 8 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 6 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 338570894,
-   "lat": 46.3036,
-   "lon": -124.04139,
+   "mmsi": 367161930,
+   "lat": 46.16909,
+   "lon": -123.91384,
+   "sog_kn": 0.7,
+   "cog": 168.7,
+   "heading": 511,
+   "updated": "2026-11-28 18:24:21.937018183 +0000 UTC"
+  },
+  {
+   "mmsi": 367187080,
+   "lat": 46.16904,
+   "lon": -123.91376,
    "sog_kn": 0,
    "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 17:54:27.456901374 +0000 UTC"
+   "updated": "2026-11-28 18:24:26.766079562 +0000 UTC"
   },
   {
-   "mmsi": 367197230,
-   "name": "BUCK N ANN",
-   "lat": 46.16928,
-   "lon": -123.91362,
-   "sog_kn": 0,
-   "cog": 76.9,
-   "heading": 511,
-   "updated": "2026-11-28 17:54:23.19777861 +0000 UTC"
+   "mmsi": 205706000,
+   "name": "BOCHEM BAYARD",
+   "lat": 46.19061,
+   "lon": -123.90817,
+   "sog_kn": 12.2,
+   "cog": 278.3,
+   "heading": 282,
+   "updated": "2026-11-28 18:24:34.098637184 +0000 UTC"
   },
   {
-   "mmsi": 369493291,
-   "name": "CG47217",
-   "lat": 46.28125,
-   "lon": -124.04686,
-   "sog_kn": 0,
-   "cog": 180,
-   "heading": 511,
-   "updated": "2026-11-28 17:53:57.218978553 +0000 UTC"
-  },
-  {
-   "mmsi": 367331730,
-   "name": "COLUMBIA",
-   "lat": 46.16837,
-   "lon": -123.91836,
-   "sog_kn": 0,
-   "cog": 21.4,
-   "heading": 350,
-   "updated": "2026-11-28 17:54:10.126640011 +0000 UTC"
-  },
-  {
-   "mmsi": 367646810,
-   "name": "EMERY ZIDELL",
-   "lat": 46.20448,
-   "lon": -124.21839,
-   "sog_kn": 10,
-   "cog": 288.9,
-   "heading": 291,
-   "updated": "2026-11-28 17:54:05.083461394 +0000 UTC",
-   "type_code": 80,
-   "type": "Tanker",
-   "destination": "SEATTLE, WA"
-  },
-  {
-   "mmsi": 367353080,
-   "name": "EMPIRE STATE",
-   "lat": 46.09711,
-   "lon": -124.40089,
-   "sog_kn": 8.9,
-   "cog": 64.2,
-   "heading": 67,
-   "updated": "2026-11-28 17:54:26.494753517 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.9179,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-28 17:54:14.834230637 +0000 UTC"
+   "mmsi": 636023742,
+   "name": "C-INSPIRATION",
+   "lat": 46.19887,
+   "lon": -123.80889,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "USPDX",
+   "updated": "2026-11-28 18:24:33.707550029 +0000 UTC"
   },
   {
    "mmsi": 636018831,
    "name": "IOANNIS K",
-   "lat": 46.20484,
-   "lon": -123.81176,
+   "lat": 46.20488,
+   "lon": -123.81178,
    "type_code": 70,
    "type": "Cargo ship",
    "destination": "US VAN",
-   "updated": "2026-11-28 17:54:11.162059751 +0000 UTC"
+   "updated": "2026-11-28 18:24:17.332367841 +0000 UTC"
+  },
+  {
+   "mmsi": 367089450,
+   "name": "JOHN M",
+   "lat": 46.19232,
+   "lon": -123.86245,
+   "sog_kn": 9.8,
+   "cog": 89.3,
+   "heading": 511,
+   "updated": "2026-11-28 18:24:11.85620648 +0000 UTC"
   }
  ]
 }
