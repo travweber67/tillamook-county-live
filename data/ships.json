@@ -1,54 +1,16 @@
 {
- "fetched_at": "2026-11-28T11:23:38Z",
+ "fetched_at": "2026-11-28T11:53:38Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 5 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 1 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367050280,
-   "lat": 46.16717,
-   "lon": -123.91728,
-   "sog_kn": 0,
-   "cog": 167.8,
-   "heading": 511,
-   "updated": "2026-11-28 11:24:18.339994564 +0000 UTC"
-  },
-  {
    "mmsi": 367648240,
-   "lat": 46.30391,
+   "lat": 46.3039,
    "lon": -124.04083,
    "sog_kn": 0,
    "cog": 234.4,
    "heading": 511,
-   "updated": "2026-11-28 11:24:08.897456159 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16857,
-   "lon": -123.914,
-   "type_code": 30,
-   "type": "Fishing",
-   "updated": "2026-11-28 11:24:01.539513335 +0000 UTC"
-  },
-  {
-   "mmsi": 367544180,
-   "name": "JEANNE ARAIN",
-   "lat": 46.30463,
-   "lon": -124.04027,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-28 11:24:26.281301886 +0000 UTC"
-  },
-  {
-   "mmsi": 367046890,
-   "name": "PACIFIC FUTURE",
-   "lat": 45.90192,
-   "lon": -124.63278,
-   "sog_kn": 5.5,
-   "cog": 293.6,
-   "heading": 511,
-   "updated": "2026-11-28 11:24:22.094913725 +0000 UTC"
+   "updated": "2026-11-28 11:54:09.102274751 +0000 UTC"
   }
  ]
 }
