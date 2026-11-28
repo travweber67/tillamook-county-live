@@ -1,75 +1,36 @@
 {
- "fetched_at": "2026-11-28T08:23:36Z",
+ "fetched_at": "2026-11-28T08:53:36Z",
  "status": "ok",
- "note": "Live AIS via AISStream (free tier): 7 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
+ "note": "Live AIS via AISStream (free tier): 3 vessels with positions in the north-coast box (Columbia mouth to Newport, ~100 NM offshore).",
  "ships": [
   {
-   "mmsi": 367358520,
-   "lat": 46.16719,
-   "lon": -123.9175,
+   "mmsi": 367197230,
+   "lat": 46.16929,
+   "lon": -123.91361,
    "sog_kn": 0,
-   "cog": 160.7,
+   "cog": 108.8,
    "heading": 511,
-   "updated": "2026-11-28 08:23:56.897859986 +0000 UTC"
+   "updated": "2026-11-28 08:54:22.121643117 +0000 UTC"
   },
   {
-   "mmsi": 367788590,
-   "lat": 46.18864,
-   "lon": -123.85525,
+   "mmsi": 636018831,
+   "name": "IOANNIS K",
+   "lat": 46.20642,
+   "lon": -123.80586,
+   "type_code": 70,
+   "type": "Cargo ship",
+   "destination": "US VAN",
+   "updated": "2026-11-28 08:54:20.151614244 +0000 UTC"
+  },
+  {
+   "mmsi": 367531260,
+   "name": "SOUTHEAST",
+   "lat": 46.16873,
+   "lon": -123.91391,
    "sog_kn": 0,
-   "cog": 204.6,
+   "cog": 360,
    "heading": 511,
-   "updated": "2026-11-28 08:23:56.898131165 +0000 UTC"
-  },
-  {
-   "mmsi": 368188830,
-   "name": "ANITA D",
-   "lat": 46.16855,
-   "lon": -123.91398,
-   "sog_kn": 0,
-   "cog": 0,
-   "heading": 511,
-   "updated": "2026-11-28 08:24:15.460727116 +0000 UTC"
-  },
-  {
-   "mmsi": 369493007,
-   "name": "CG47207",
-   "lat": 46.28134,
-   "lon": -124.04696,
-   "type_code": 51,
-   "type": "Search & rescue",
-   "destination": "COLUMBIA RIVER",
-   "updated": "2026-11-28 08:23:56.14334326 +0000 UTC"
-  },
-  {
-   "mmsi": 367156340,
-   "name": "GRANADA",
-   "lat": 46.16725,
-   "lon": -123.91788,
-   "type_code": 30,
-   "type": "Fishing",
-   "destination": "WARRENTON,OREGON",
-   "updated": "2026-11-28 08:24:11.891783747 +0000 UTC"
-  },
-  {
-   "mmsi": 367450580,
-   "name": "GRUMPY J",
-   "lat": 46.1687,
-   "lon": -123.91405,
-   "sog_kn": 0,
-   "cog": 334.3,
-   "heading": 97,
-   "updated": "2026-11-28 08:24:01.394940092 +0000 UTC"
-  },
-  {
-   "mmsi": 367128220,
-   "name": "KATHY H",
-   "lat": 46.16722,
-   "lon": -123.91694,
-   "sog_kn": 0,
-   "cog": 126.6,
-   "heading": 511,
-   "updated": "2026-11-28 08:24:06.309449493 +0000 UTC"
+   "updated": "2026-11-28 08:54:25.062811203 +0000 UTC"
   }
  ]
 }
